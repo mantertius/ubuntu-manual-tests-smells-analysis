@@ -1,0 +1,103 @@
+<strong>Gedit typing test</strong>
+
+Case ID: kbt-001
+
+Using Unity
+<dl>
+    <dt>Press the Super Windows Key or click the Ubuntu logo on the unity panel, and search Text Editor.</dt>
+    <dt>Type in a paragraph that uses every character on your keyboard.</dt>
+    <dt>Attempt to close the window, then select Save</dt>
+    <dt>In the new window type in demo1.txt, Select your Home Folder and click on Save</dt>
+    <dt>Select Home Folder on the unity panel.</dt>
+    <dt>Select demo1.txt.</dt>
+    <dt>Once it opens ensure that every character is displayed as expected.</dt> 
+
+Using GNOME Classic
+<dl>
+    <dt>Open Applications->Accessories->Text Editor</dt>
+    <dt>Type in a paragraph that uses every character on your keyboard</dt>
+    <dt>Click on Save</dt>
+    <dt>In the new window type in demo1.txt, Select Home Folder and click on Save</dt>
+    <dt>Now open Places->Home Folder.</dt>
+    <dt>Double click on demo1.txt.</dt>
+    <dt>Once it opens ensure that every character is displayed as expected.</dt> 
+</dl>
+
+Verification
+
+    <dd>Verify that the text editor opens.</dd>
+    <dd>Verify that all keyboard keys are working correctly.</dd>
+    <dd>Verify that the file can be saved and reopened correctly. </dd>
+
+
+
+<strong>Terminal typing test</strong>
+
+Case ID: kbt-002
+
+Using Unity
+<dl>
+    <dt>Press the Super Windows Key or click on the Ubuntu logo on the Unity panel, and search Terminal (Or press Ctrl+Alt+T)</dt>
+    <dt>Type in nano and press Enter</dt>
+    <dt>Type in a paragraph that uses every character on your keyboard</dt>
+    <dt>Press Ctrl-x</dt>
+    <dt>Press y</dt>
+    <dt>Type in demo2.txt and press Enter
+    <dt>On the Unity Panel, Select Home Folder.
+    <dt>Select demo2.txt.
+    <dt>Once it opens ensure that every character is displayed as expected 
+
+Using GNOME Classic
+<dl>
+    <dt>Open Applications->Accessories->Terminal</dt>
+    <dt>Type in nano and press Enter</dt>
+    <dt>Type in a paragraph that uses every character on your keyboard</dt>
+    <dt>Press Ctrl-x</dt>
+    <dt>Press y</dt>
+    <dt>Type in demo2.txt and press Enter</dt>
+    <dt>Now open Places->Home Folder</dt>
+    <dt>Double click on demo2.txt.</dt>
+    <dt>Once it opens ensure that every character is displayed as expected.</dt> 
+</dl>
+Verification
+
+    <dd>Verify that the terminal opens correctly.</dd>
+    <dd>Verify that text appears in the terminal correctly.</dd>
+    <dd>Verify that the file can be saved and reopened correctly.</dd> 
+
+
+<strong>Typing in LibreOffice Writer</strong>
+
+Case ID: kbt-003
+
+Using Unity
+<dl>
+    <dt>On the Unity Panel click on LibreOffice Writer.</dt>
+    <dt>Type in a paragraph that uses every character of your keyboard.</dt>
+    <dt>Attempt to close the window, click Save.</dt>
+    <dt>In the new window type in demo3.odt select your home folder and click on Save</dt>
+    <dt>On the Unity Panel, Select Home Folder.</dt>
+    <dt>Open demo3.odt.</dt>
+    <dt>Once it opens, ensure that every character is displayed as expected.</dt> 
+</dl>
+
+Using GNOME Classic
+<dl>
+    <dt>Open Applications->Office->LibreOffice Writer</dt>
+    <dt>Type in a paragraph that uses every character on your keyboard</dt>
+    <dt>Click on Save</dt>
+    <dt>In the new window type in demo3.odt and click on Save</dt>
+    <dt>Now open Places->Home Folder.</dt>
+    <dt>Double click on demo3.odt.</dt>
+    <dt>Once it opens ensure that every character is displayed as expected.</dt>
+</dl>
+
+Verification
+
+    <dd>Verify that LibreOffice Writer opens correctly.</dd>
+    <dd>Verify that text appears in the word processor correctly.</dd>
+    <dd>Verify that the file can be saved and reopened correctly. </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

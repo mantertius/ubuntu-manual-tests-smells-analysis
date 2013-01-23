@@ -1,0 +1,80 @@
+Scope of this test is to verify that the system is installed, you can login into it, Apache and MySQL are working.
+<dl>
+	<dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+	<dt>Choose the desired language</dt>
+	<dt>Select "Install Ubuntu Server"</dt>
+	<dt>Choose the language</dt>
+	<dt>Select your location</dt>
+	<dt>Configure locales</dt>
+	<dt>At configure keyboard page, select NO </dt>
+	<dt>Select the country of the keyboard</dt>
+	<dt>Select the keyboard layout</dt>
+	<dt>Select hostname ubuntu as default</dt>
+	<dt>Inser the name for the new user</dt>
+	<dt>Insert the name for the account</dt>
+	<dt>Choose a password</dt>
+	<dt>Reinsert the password</dt>
+	<dt>At encrypt request select NO</dt>
+	<dt>Verify or setup the timezone</dt>
+	<dt>At partitioning select "Guided - Use entire disk"</dt>
+	<dt>Select disk to partition</dt>
+	<dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
+	<dt>At "http proxy" request, let it blank and press enter</dt>
+	<dt>At managing upgrades select "No automatic updates"</dt>
+	<dt>At Software selection, choose "LAMP server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
+	<dt>Select to install Grub in the master boot record</dt>
+	<dt>Remove the installation media (CDROM or USB key)</dt>
+	<dt>Wait that the system reboot and login</dt>
+	<dt>Test Apache:</dt>
+		<dd>w3m http://127.0.0.1/<dd>
+		<dd>Press q and confirm to exit</dd>
+	<dt>Test MySQL:</dt>
+		<dd>mysql -u root -p</dd>
+		<dd>If you set the MySQL root account with a password, you will be prompted to enter it now. You should then be presented with a mysql prompt mysql>  where you can enter some mysql commands:</dd>
+		<pre>show databases; connect mysql; select host,user from user;</pre>
+		<dd>that will produce an output like:</dd>
+			<pre>
+				+--------------------+
+				| Database           |
+				+--------------------+
+				| information_schema |
+				| mysql              |
+				| performace_schema  |
+				| test               |
+				+--------------------+
+				4 rows in set (0.00 sec)
+
+				Reading table information for completion of table and column  names
+				You can turn off this feature to get a quicker start up with -A
+
+				Connection id:    41
+				Current database: mysql
+
+				+-----------+--------------------------+
+				| host      | user                     |
+				+-----------+--------------------------+
+				| 127.0.0.1 | root                     |
+				| ::1       | root                     |
+				| localhost |                          |
+				| localhost | debian-sys-maint         |
+				| localhost | root                     |
+				| ubuntu    |                          |
+				| ubuntu    | root                     |
+				+-----------+--------------------------+
+				7 rows in set (0.00 sec)
+			</pre>
+	<dt>Type exit to exit mysql</dt>
+	<dt>Test PHP (command line)</dt>
+		<dd>php -r 'phpinfo();'</dd>
+		<dd>That will produce about 600 lines.</dd>
+	<dt>Test PHP (Apache mod_php)</dt>
+	<dt>Create a file called /var/www/phptest.php:</dt>
+		<dd>sudo nano /var/www/phptest.php</dd>
+		<dd>add the following text to the file:</dd>
+		<pre><? phpinfo(); ?></pre>
+	<dt>run it on w3m</dt>
+		<dd>w3m localhost/phptest.php</dd>
+		<dd>Verify it outputs the text from phpinfo()</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

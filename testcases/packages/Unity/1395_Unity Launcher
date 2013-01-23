@@ -1,0 +1,509 @@
+Test-case launcher/tooltip
+<ol>
+<li title="action">Move your mouse cursor over an application launcher icon</li>
+<ol>
+<li title="expected_result">A tooltip with the application name should appear</li>
+</ol>
+<li title="action">Hover other application launcher icons</li>
+<ol>
+<li title="expected_result">The other tooltips should appear, one at a time</li>
+</ol>
+</ol>
+Test-case launcher/startapp
+<ol>
+<li title="action">Click on a launcher icon for an application which is not running</li>
+<ol>
+<li title="expected_result">Launcher icon should be flashing while the application is opening</li>
+<li title="expected_result">An arrow on the left of the launcher icon should appear, indicating there is an instance opened</li>
+<li title="expected_result">An arrow on the right of the launcher icon should appear, indicating that it's the current application</li>
+</ol>
+</ol>
+Test-case launcher/always-visible
+<ol>
+<li title="action">Make sure auto-hide is disabled (it is disabled by default)</li>
+<li title="action">Open an application, and move it under the launcher</li>
+<ol>
+<li title="expected_result">The launcher should be visible above the window, hiding parts of the application</li>
+</ol>
+<li title="action">Move the application outside of the launcher area</li>
+<ol>
+<li title="expected_result">The launcher should still be visible</li>
+</ol>
+<li title="action">Maximize the application</li>
+<ol>
+<li title="expected_result">The launcher should be visible alongside of the maximized application, with the application window occupying the rest of the screen</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide
+<ol>
+<li title="action">Open the  System Settings and click on the Appearence icon</li>
+<li title="action">Go to the Behavior tab</li>
+<li title="action">Switch the "Auto-hide the Launcher" switch to the enabled state</li>
+<ol>
+<li title="expected_result">The Launcher should hide</li>
+</ol>
+<li title="action">Switch the "Auto-hide the Launcher" switch back to the disabled state</li>
+<ol>
+<li title="expected_result">The Launcher should re-appear and remain visible</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide-behavior
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Move the mouse on the edge and:
+<br> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal in unity 3D
+<br> - put your mouse at x=0 and wait until the launcher reveal in unity 2D</li>
+<ol>
+<li title="expected_result">The launcher should appear</li>
+</ol>
+<li title="action">Put the mouse outside of the launcher area</li>
+<ol>
+<li title="expected_result">The launcher should disappear again after around a second</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide-maximize
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Start Firefox, maximize its window.</li>
+<ol>
+<li title="expected_result">Firefox should be maximized and occupy the whole width of the screen</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide-clickhold
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Move the mouse to the left edge of the screen and make the launcher revealing (by other pushing on the left for 3D or just waiting for 2D)</li>
+<ol>
+<li title="expected_result">Launcher appears</li>
+</ol>
+<li title="action">Click on an application launcher icon and don't move the mouse</li>
+<ol>
+<li title="expected_result">Launcher should disappear [2D: fail, lp:898238]</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide-clickmove
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Move the mouse to the left edge of the screen and make the launcher revealing (by other pushing on the left for 3D or just waiting for 2D)</li>
+<ol>
+<li title="expected_result">Launcher appears</li>
+</ol>
+<li title="action">Click on an application launcher icon and immediately move the mouse to another launcher icon</li>
+<ol>
+<li title="expected_result">Launcher should not disappear</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide-mouseunderlauncher
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Move the mouse in the area which is normally covered by the launcher (without revealing it)</li>
+<li title="action">Press super and keep it pressed</li>
+<li title="action">Once the launcher is displayed, release super</li>
+<ol>
+<li title="expected_result">Launcher should disappear [2D: fail, lp:898239]</li>
+</ol>
+</ol>
+Test-case launcher/auto-hide-mousemove-afterlauncherappear
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Move the mouse in the area which is normally covered by the launcher (without revealing it)</li>
+<li title="action">Press super and keep it pressed</li>
+<ol>
+<li title="expected_result">Launcher should appear</li>
+</ol>
+<li title="action">Move the mouse to get to another launcher icon</li>
+<li title="action">Release super</li>
+<ol>
+<li title="expected_result">Launcher shouldn't disappear</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-launch
+<ol>
+<li title="action">Start Firefox, maximize its window. Launcher should be visible alongside the application.</li>
+<li title="action">Press super and keep it pressed</li>
+<ol>
+<li title="expected_result">After a while, some numbers (0-9) should appear in the first launcher icons. Also, in unity 3D only, a window with the keyboard shortcuts should be centered on the monitor.</li>
+</ol>
+<li title="action">Press one of the numbers (without any modifier) for a non started application</li>
+<ol>
+<li title="expected_result">The application should start</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-shift-launch
+<ol>
+<li title="action">Start Firefox, maximize its window. Launcher should be visible alongside the application.</li>
+<li title="action">Press super and keep it pressed</li>
+<ol>
+<li title="expected_result">After a while, some numbers (0-9) should appear in the first launcher icons.</li>
+</ol>
+<li title="action">With super still pressed, press shift + the Firefox corresponding number</li>
+<ol>
+<li title="expected_result">A new Firefox window should appear</li>
+</ol>
+</ol>
+Test-case launcher/minimize-app
+<ol>
+<li title="action">Start Nautilus, maximize its window. Start Firefox, maximize its window.</li>
+<ol>
+<li title="expected_result">Launcher should be visible</li>
+</ol>
+<li title="action">Minimize the Firefox window</li>
+<ol>
+<li title="expected_result">The Firefox icon's border on the Launcher should animate slightly</li>
+</ol>
+</ol>
+Test-case launcher/minimize-app-auto-hide
+<ol>
+<li title="action">Make sure auto-hide is enabled.</li>
+<li title="action">Start Nautilus, maximize its window. Start Firefox, maximize its window.</li>
+<ol>
+<li title="expected_result">Launcher should be hidden</li>
+</ol>
+<li title="action">Minimize the Firefox window</li>
+<ol>
+<li title="expected_result">Half of the Firefox icon should pop out of the left side for a moment with its border animating slightly</li>
+</ol>
+</ol>
+Test-case launcher/application-request-attention
+Test-case launcher/application-get-focus
+<ol>
+<li title="action">Have two different applications opened</li>
+<li title="action">Click on the launcher icon corresponding to the application without the focus</li>
+<ol>
+<li title="expected_result">This application should get the focus</li>
+</ol>
+</ol>
+Test-case launcher/quicklist
+<ol>
+<li title="action">Start System Settings and right click its launcher icon</li>
+<ol>
+<li title="expected_result">A quicklist is displayed, showing the following entries:
+<br> - System Settings
+<br> - "Lock to Launcher" or "Unlock from launcher"
+<br> - Quit</li>
+</ol>
+<li title="action">Move the mouse over the quicklist items</li>
+<ol>
+<li title="expected_result">The launcher should stay visible and quicklist elements under the cursor should highlight</li>
+</ol>
+<li title="action">Click on "quit"</li>
+<ol>
+<li title="expected_result">System Settings should close</li>
+</ol>
+</ol>
+Test-case launcher/quicklist-close
+<ol>
+<li title="action">Right-click on the launcher icon for a running application</li>
+<li title="action">Press Escape</li>
+<ol>
+<li title="expected_result">The quicklist should close</li>
+</ol>
+<li title="action">Open the quicklist again</li>
+<li title="action">Click outside of the quicklist</li>
+<ol>
+<li title="expected_result">the quicklist should close</li>
+</ol>
+</ol>
+Test-case launcher/quicklist-open
+<ol>
+<li title="action">Ensure System Settings is not running</li>
+<li title="action">Right-click on its launcher icon and click on the "System Settings" entry</li>
+<ol>
+<li title="expected_result">System Settings should start</li>
+</ol>
+<li title="action">Focus another window</li>
+<li title="action">Right-click on its launcher icon and click on the "System Settings" entry</li>
+<ol>
+<li title="expected_result">The System Settings window should be focused</li>
+</ol>
+</ol>
+Test-case launcher/quicklist-pin
+<ol>
+<li title="action">Start gcalctool (assuming it is not already in the launcher)</li>
+<li title="action">Right click its launcher icon</li>
+<ol>
+<li title="expected_result">A quicklist is displayed, showing the following entries:
+<br> - Calculator
+<br> - Lock to launcher
+<br> - Quit</li>
+</ol>
+<li title="action">Click "Lock to launcher"</li>
+<li title="action">Quit gcalctool</li>
+<ol>
+<li title="expected_result">Launcher icon for gcalctool should stay in the launcher</li>
+</ol>
+<li title="action">Start gcalctool again</li>
+<li title="action">Open the quicklist and click "Unlock from launcher"</li>
+<ol>
+<li title="expected_result">Launcher icon stays</li>
+</ol>
+<li title="action">Quit gcalctool</li>
+<ol>
+<li title="expected_result">Launcher icon disappears</li>
+</ol>
+</ol>
+Test-case launcher/quicklist-static
+<ol>
+<li title="action">Open Firefox</li>
+<li title="action">Right-click on the launcher icon for Firefox</li>
+<ol>
+<li title="expected_result">You should see a Firefox-specific entry: "Open a new window"</li>
+</ol>
+<li title="action">Click on it</li>
+<ol>
+<li title="expected_result">A second Firefox window should appear</li>
+</ol>
+</ol>
+Test-case launcher/arrows-multipleapps
+<ol>
+<li title="action">Open Firefox</li>
+<ol>
+<li title="expected_result">An arrow should appear on the left of the launcher icon, and another one on the right (current application)</li>
+</ol>
+<li title="action">Open a new Firefox window (through its quicklist) on the same monitor</li>
+<ol>
+<li title="expected_result">Two arrows should now be visible on the left of the launcher icon</li>
+</ol>
+<li title="action">Open a new Firefox window on the same monitor</li>
+<ol>
+<li title="expected_result">A third arrow should now be visible on the left of the launcher icon</li>
+</ol>
+<li title="action">Open a new Firefox window on the same monitor</li>
+<ol>
+<li title="expected_result">There should still be three arrows on the left of the launcher icon</li>
+</ol>
+</ol>
+Test-case launcher/expose-app
+<ol>
+<li title="action">With Firefox having the focus and more than one Firefox window, click on the Firefox launcher icon</li>
+<ol>
+<li title="expected_result">You should see the Firefox windows being exposed (all visible at the same time, zoomed out) and the launcher should still be visible.</li>
+</ol>
+<li title="action">Click on one of them</li>
+<ol>
+<li title="expected_result">The selected one should be focused</li>
+</ol>
+</ol>
+Test-case launcher/expose-minimizedapp
+<ol>
+<li title="action">With Firefox having the focus and more than one Firefox window, minimize one of the Firefox window.</li>
+<li title="action">Make sure that one Firefox window still have the focus</li>
+<li title="action">Click on the Firefox launcher icon</li>
+<ol>
+<li title="expected_result">All Firefox windows (even the minimized ones) should be exposed</li>
+</ol>
+<li title="action">Click on the minimized window</li>
+<ol>
+<li title="expected_result">this window should be restored and visible</li>
+</ol>
+</ol>
+Test-case launcher/move-icons
+<ol>
+<li title="action">Click on an application launcher icon, keep the mouse button pressed for more than 0.5s</li>
+<ol>
+<li title="expected_result">You should see the icon being detached from the launcher</li>
+</ol>
+<li title="action">Drag it to another position and release the mouse button</li>
+<ol>
+<li title="expected_result">You should see the icon changing positions</li>
+<li title="expected_result">It should be possible to drop it to another position between the first icon and the last application icon. Dropping the icon before the first icon shouldn't be possible.</li>
+</ol>
+</ol>
+Test-case launcher/fold-apps
+<ol>
+<li title="action">Open a bunch of applications on your desktop so that you have more than what the launcher can show</li>
+<ol>
+<li title="expected_result">The launcher should fold the icons</li>
+</ol>
+<li title="action">Point with your mouse to a folded launcher icon</li>
+<ol>
+<li title="expected_result">The launcher should unfold the icons and your cursor should be on the one you pointed [2D: fail]</li>
+</ol>
+<li title="action">Put your mouse outside of the launcher</li>
+<ol>
+<li title="expected_result">The launcher icons should fold again</li>
+</ol>
+</ol>
+Test-case launcher/scroll
+<ol>
+<li title="action">Open a bunch of applications on your desktop so that you have more than what the launcher can show</li>
+<li title="action">Put your mouse again at the very bottom of the launcher</li>
+<ol>
+<li title="expected_result">The launcher should scroll to the last icon</li>
+</ol>
+<li title="action">Put your mouse again at the very top of the launcher</li>
+<ol>
+<li title="expected_result">The launcher should scroll to the first icon</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-nav
+<ol>
+<li title="action">Press alt + F1</li>
+<ol>
+<li title="expected_result">The first icon should get highlighted</li>
+</ol>
+<li title="action">Press up and down keyboard arrow keys</li>
+<ol>
+<li title="expected_result">The focused launcher icon should change</li>
+</ol>
+<li title="action">Press escape</li>
+<ol>
+<li title="expected_result">No launcher icon should be focused anymore</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-nav-exit
+<ol>
+<li title="action">Press alt + F1</li>
+<ol>
+<li title="expected_result">The first icon should get highlighted</li>
+</ol>
+<li title="action">Press alt + F1 again</li>
+<ol>
+<li title="expected_result">No launcher icon should be focused</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-nav-auto-hide
+<ol>
+<li title="action">Make sure auto-hide is enabled</li>
+<li title="action">Press alt + F1</li>
+<ol>
+<li title="expected_result">The launcher should appear</li>
+</ol>
+<li title="action">Press escape</li>
+<ol>
+<li title="expected_result">The launcher should disappear</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-nav-startapp
+<ol>
+<li title="action">Press alt + F1</li>
+<li title="action">Focus a launcher icon for an application which is not opened</li>
+<li title="action">Press enter</li>
+<ol>
+<li title="expected_result">The application should be started</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-nav-startappwindow
+<ol>
+<li title="action">Ensure you have a Firefox window opened</li>
+<li title="action">Press alt + F1</li>
+<li title="action">Press down until you focus Firefox</li>
+<li title="action">Press space</li>
+<ol>
+<li title="expected_result">a new Firefox window should open</li>
+</ol>
+</ol>
+Test-case launcher/keyboard-nav-quicklist
+<ol>
+<li title="action">Press alt + F1</li>
+<li title="action">Press down until you focus an opened application launcher icon</li>
+<li title="action">Use the right-arrow key</li>
+<ol>
+<li title="expected_result">The quicklist for the application should be displayed</li>
+</ol>
+<li title="action">Press down to highlight "quit"</li>
+<li title="action">Press enter</li>
+<ol>
+<li title="expected_result">The application should close and the launcher should loose the focus</li>
+</ol>
+</ol>
+Test-case launcher/workspace-switcher
+<ol>
+<li title="action">Click on the workspace switcher launcher icon</li>
+<ol>
+<li title="expected_result">all workspaces should be visible with windows exposed on all workspaces</li>
+</ol>
+<li title="action">Click on a window application and move to another workspace [2D: fail]</li>
+<ol>
+<li title="expected_result">you should see the window set in the destination workspace. Also, the orange border showing the current workspace should change. [2D: fail]</li>
+</ol>
+<li title="action">Double click on one workspace which isn't the current one</li>
+<ol>
+<li title="expected_result">the chosen workspace should be zoomed in and become the current one.</li>
+</ol>
+</ol>
+Test-case launcher/arrows-notin-currentws
+<ol>
+<li title="action">Start Nautilus on workspace 1, with only one window.</li>
+<li title="action">Switch to workspace 2.</li>
+<ol>
+<li title="expected_result">Launcher arrow for Nautilus should be unfilled [2D: fail]</li>
+</ol>
+<li title="action">Switch to workspace 1, open a second window for Nautilus on the same monitor.</li>
+<ol>
+<li title="expected_result">A second arrow appears on the left of the launcher icon.</li>
+</ol>
+<li title="action">Switch to workspace 2.</li>
+<ol>
+<li title="expected_result">Only one unfilled arrow is displayed on the left of the launcher icon. [2D: fail]</li>
+</ol>
+<li title="action">Move the second window from workspace 1 to workspace 2, on the same monitor.</li>
+<ol>
+<li title="expected_result">Only one arrow should be displayed.</li>
+</ol>
+</ol>
+Test-case launcher/focus-apps-other-ws
+<ol>
+<li title="action">Start Nautilus with one window on workspace 1</li>
+<li title="action">Move to workspace 2</li>
+<li title="action">Click on Nautilus launcher icon</li>
+<ol>
+<li title="expected_result">You should be moved to workspace 1 and Nautilus window should be focused</li>
+</ol>
+</ol>
+Test-case launcher/expose-apps-only-current-ws
+<ol>
+<li title="action">Start Nautilus with two windows on workspace 1 and one window on workspace 2.</li>
+<li title="action">Move back to workspace 1 and make sure one of the windows is focused.</li>
+<li title="action">Click on Nautilus launcher icon</li>
+<ol>
+<li title="expected_result">You should see only the windows from the current workspace exposed</li>
+</ol>
+</ol>
+Test-case launcher/trash-open
+<ol>
+<li title="action">Open Nautilus</li>
+<li title="action">Open the context menu and select "Create New Document > Empty Document"</li>
+<li title="action">Delete the file with the Del key</li>
+<ol>
+<li title="expected_result">the trash icon should show a "full trash" icon</li>
+</ol>
+<li title="action">Click on the trash</li>
+<ol>
+<li title="expected_result">nautilus should open with in the trash directory</li>
+</ol>
+<li title="action">Restore every files</li>
+<ol>
+<li title="expected_result">the trash icon should show an "empty trash" icon</li>
+</ol>
+</ol>
+Test-case launcher/trash-empty
+<ol>
+<li title="action">Open Nautilus</li>
+<li title="action">Open the context menu and select "Create New Document > Empty Document"</li>
+<li title="action">Delete the file with the Del key</li>
+<li title="action">Right click on the trash launcher icon and select "Empty Trash..."</li>
+<ol>
+<li title="expected_result">A confirmation dialog appear</li>
+</ol>
+<li title="action">Select "Empty Trash"</li>
+<ol>
+<li title="expected_result">The trash should be emptied, trash icon should show an "empty trash" icon</li>
+</ol>
+</ol>
+Test-case launcher/skype-minimizing
+<ol>
+<li title="action">Start skype</li>
+<li title="action">Minimize the main skype window</li>
+<ol>
+<li title="expected_result">Check that there is still a launcher icon shown</li>
+</ol>
+<li title="action">Click on the skype launcher icon</li>
+<ol>
+<li title="expected_result">The previous skype instance should be raised again</li>
+</ol>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

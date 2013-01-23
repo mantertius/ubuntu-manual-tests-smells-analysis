@@ -1,0 +1,114 @@
+Test-case name: eog/eog-001
+This test will check that Eye Of Gnome can display images correctly
+<ol>
+<li title="action"> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</li>
+<ol>
+<li title="expected_result">Image Viewer should launch</li>
+</ol>
+<li title="action"> Open an image file by selecting file, open and then choosing an image file</li>
+<ol>
+<li title="expected_result">Is the image being displayed correctly?</li>
+</ol>
+</ol>
+Test-case name: eog/eog-002
+This test will check that Eye Of Gnome can move images to Trash
+<ol>
+<li title="action"> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</li>
+<ol>
+<li title="expected_result">Image Viewer should launch</li>
+</ol>
+<li title="action"> Open an image file by selecting file, open and then choosing an image file</li>
+<li title="action"> Select edit, move to trash</li>
+<ol>
+<li title="expected_result">Has the image been moved to Trash and the next image in the directory is shown?</li>
+</ol>
+</ol>
+Test-case name: eog/eog-003
+This test will check that Eye Of Gnome can show previous and next images
+<ol>
+<li title="action"> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</li>
+<ol>
+<li title="expected_result">Image Viewer should launch</li>
+</ol>
+<li title="action"> Open an image file by selecting file, open and then choosing an image file</li>
+<li title="action"> Press the Previous button</li>
+<li title="action"> Press the Next button</li>
+<ol>
+<li title="expected_result">Is the image viewer displaying the previous and next images correctly?</li>
+</ol>
+</ol>
+Test-case name: eog/eog-004
+<ol>
+<li title="expected_result">depends:</li>
+</ol>
+<ol>
+<li title="expected_result">eog/eog-002</li>
+</ol>
+<ol>
+<li title="expected_result">eog/eog-003</li>
+</ol>
+This test will check that Eye Of Gnome can show previous image after restoring from Trash
+<ol>
+<li title="action"> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</li>
+<ol>
+<li title="expected_result">Image Viewer should launch</li>
+</ol>
+<li title="action"> Open an image file by selecting file, open and then choosing an image file</li>
+<li title="action"> Select edit, move to trash</li>
+<li title="action"> Click the trash can on the launcher</li>
+<ol>
+<li title="expected_result">trash folder is launched</li>
+</ol>
+<li title="action"> Highlight the deleted image file from earlier and select restore. Resume focus on the image viewer application and click the previous button</li>
+<ol>
+<li title="expected_result">Is the restored image once again displayed?</li>
+</ol>
+</ol>
+Test-case name: eog/eog-005
+This test will check that Eye Of Gnome can flip images horizontally and vertically
+<ol>
+<li title="action"> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</li>
+<ol>
+<li title="expected_result">Image Viewer should launch</li>
+</ol>
+<li title="action"> Open an image file by selecting file, open and then choosing an image file</li>
+<li title="action"> Select edit, flip horizontial</li>
+<ol>
+<li title="expected_result">The image is flipped horizontially</li>
+</ol>
+<li title="action"> Select edit, flip vertically</li>
+<ol>
+<li title="expected_result">The image is flipped vertically</li>
+</ol>
+<li title="action"> Select edit, flip vertically</li>
+<ol>
+<li title="expected_result">The image is flipped vertically</li>
+</ol>
+<li title="action"> Select edit, flip horizontial</li>
+<ol>
+<li title="expected_result">The image is flipped horizontially</li>
+</ol>
+<ol>
+<li title="expected_result">Is the image that was being flipped correctly and now restored to its original state?</li>
+</ol>
+</ol>
+Test-case name: eog/eog-006
+This test will check that Eye Of Gnome can flip horizontally and vertically
+<ol>
+<li title="action"> Open the dash and launch Image Viewer by pressing the super key, and then entering ‘Image Viewer’</li>
+<ol>
+<li title="expected_result">Image Viewer should launch</li>
+</ol>
+<li title="action"> Open an image file by selecting file, open and then choosing an image file</li>
+<li title="action"> Select edit, toolbar</li>
+<ol>
+<li title="expected_result">The toolbar editor appears</li>
+</ol>
+<li title="action"> Drag and drop the gallery icon onto the image viewer toolbar</li>
+<ol>
+<li title="expected_result">Is the gallery icon now present on the toolbar?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -1,0 +1,151 @@
+Test-case multimonitor/multi-launchers
+<ol>
+<li title="action">In the Diplays settings, ensure that Launcher placement is set to "All displays"</li>
+<li title="action">Ensure you have not any other opened application than checkbox-unity</li>
+<ol>
+<li title="expected_result">You should see one Launcher on every screen</li>
+</ol>
+</ol>
+Test-case multimonitor/multi-reveal-launcher-monitor2
+<ol>
+<li title="action">Put your mouse on this monitor, and try to reveal the launcher by pressing against the left edge</li>
+<ol>
+<li title="expected_result">The launcher should reveal</li>
+</ol>
+</ol>
+Test-case multimonitor/multi-super-reveal
+<ol>
+<li title="action">Press super and hold it</li>
+<ol>
+<li title="expected_result">The launcher on the monitor where your mouse is should reveal, with the numbers and the shortcuts window displayed. The other monitor shouldn't get any of them displayed.</li>
+</ol>
+<li title="action">Bring your cursor to the other monitor and press super</li>
+<ol>
+<li title="expected_result">Check that those items are only displayed on the monitor where the cursor is.</li>
+</ol>
+</ol>
+Test-case multimonitor/multi-arrow-monitor-launcher
+<ol>
+<li title="action">Have an application on one monitor (one window only)</li>
+<ol>
+<li title="expected_result">The launcher should have a white arrow on the left of the launcher icon on the monitor where the application is. It should be unfilled on the launcher sitting on the other monitor</li>
+</ol>
+<li title="action">Open a second instance of that application</li>
+<ol>
+<li title="expected_result">The launcher should have two white arrows on the left of the launcher icon on the monitor where the application is. It should still present a unfilled one on the other launcher</li>
+</ol>
+</ol>
+Test-case multimonitor/multi-reorder-other-monitor
+<ol>
+<li title="action">On the rightmost monitor, reorder the launcher icon (and eventually add/remove icons)</li>
+<ol>
+<li title="expected_result">Check that the reording/addition/removal are impact both launchers</li>
+</ol>
+</ol>
+Test-case multimonitor/multi-show-dash-on-monitor
+<ol>
+<li title="action">Click on the first item of the launcher icon to show the dash</li>
+<ol>
+<li title="expected_result">The dash should be displayed on the corresponding monitor</li>
+</ol>
+<li title="action">Now click on the first item of the other launcher to open the dash</li>
+<ol>
+<li title="expected_result">The dash should be displayed on the other monitor</li>
+</ol>
+</ol>
+Test-case multimonitor/alttab-per-monitor
+<ol>
+<li title="action">Press alt + tab to reveal the alt tab switcher</li>
+<ol>
+<li title="expected_result">Check that Alt - Tab is shown on the monitor where your cursor is</li>
+</ol>
+<li title="action">Put your cursor on the other monitor, and again, press alt + tab to reveal the alt tab switcher</li>
+<ol>
+<li title="expected_result">check that Alt - Tab is shown on the newly monitor where your cursor is</li>
+</ol>
+</ol>
+Test-case multimonitor/workspace-switcher
+<ol>
+<li title="action">Click on the worspace switcher switcher button in one launcher.</li>
+<ol>
+<li title="expected_result">You should on each monitor the worspace switcher previews.</li>
+<li title="expected_result">The launcher should be displayed on each monitor.</li>
+</ol>
+</ol>
+Test-case multimonitor/launch-application-per-monitor
+<ol>
+<li title="action">Click on a launcher icon to start an application</li>
+<ol>
+<li title="expected_result">The application should be opened on the monitor where your cursor is</li>
+</ol>
+<li title="action">Press Super + number to start an application</li>
+<ol>
+<li title="expected_result">The application should be opened on the monitor where your cursor is</li>
+</ol>
+<li title="action">Repeat the same with the cursor on the other monitor</li>
+<ol>
+<li title="expected_result">Ensure the application is always opened on the monitor where your cursor is</li>
+</ol>
+</ol>
+Test-case multimonitor/sticky-edge
+<ol>
+<li title="action">In the Diplays settings, ensure that Sticky edges are enabled</li>
+<li title="action">Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</li>
+<li title="action">Try moving your cursor over to the screen to the right</li>
+<ol>
+<li title="expected_result">There should be a feeling of resistance when trying to push on the edge of the screen</li>
+<li title="expected_result">After applying some force, the cursor should move over to the desired screen</li>
+</ol>
+</ol>
+Test-case multimonitor/sticky-edge-hold
+<ol>
+<li title="action">In the Diplays settings, ensure that Sticky edges are enabled</li>
+<li title="action">Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</li>
+<li title="action">Try pushing the mouse cursor very slowly onto the edge</li>
+<ol>
+<li title="expected_result">You should feel the mouse cursor resisting on the edge</li>
+<li title="expected_result">If not much force is applied and the movement is slow, the mouse cursor should stay on the screen</li>
+</ol>
+</ol>
+Test-case multimonitor/sticky-edge-disabled
+<ol>
+<li title="action">In the Diplays settings, ensure that Sticky edges are disabled</li>
+<li title="action">Move your mouse cursor to the right edge of the leftmost monitor adjacent to your enabled second screen</li>
+<li title="action">Try moving your cursor over to the screen to the right</li>
+<ol>
+<li title="expected_result">There should be no feeling of resistance on the edge, the cursor should move to the other screen with ease</li>
+</ol>
+</ol>
+Test-case multimonitor/single-launcher
+<ol>
+<li title="action">In the Diplays settings, ensure that Launcher placement is set to a single screen</li>
+<li title="action">Ensure you have not any other opened application than checkbox-unity</li>
+<ol>
+<li title="expected_result">You should see only one Launcher on the previously selected screen</li>
+</ol>
+</ol>
+Test-case multimonitor/single-show-dash-on-monitor
+<ol>
+<li title="action">Click on the first item of the launcher icon to show the dash</li>
+<ol>
+<li title="expected_result">The dash should be displayed on the primary screen where the Launcher is located</li>
+</ol>
+<li title="action">Move your cursor to the other screen and press Super</li>
+<ol>
+<li title="expected_result">The dash should be displayed on the primary screen where the Launcher is located</li>
+</ol>
+</ol>
+Test-case multimonitor/single-arrow-monitor-launcher
+<ol>
+<li title="action">Run an application and move it to a screen with no Launcher</li>
+<ol>
+<li title="expected_result">The launcher should have a white arrow on the left of the launcher icon on the primary screen</li>
+</ol>
+<li title="action">Open a second instance of that application</li>
+<ol>
+<li title="expected_result">The launcher should have two white arrows on the left of the launcher icon on the primary screen, regardless of where the application is positioned</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

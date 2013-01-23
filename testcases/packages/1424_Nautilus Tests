@@ -1,0 +1,160 @@
+Test-case name: nautilus/TC-NFM-001
+This test will check that user can create files in Nautilus
+<ol>
+<li title="action"> Open Dash, input 'Nautilus' and select 'Home folder'</li>
+<ol>
+<li title="expected_result">Nautilus is opened, Home Folder is selected</li>
+</ol>
+<li title="action"> In Home Folder right click on a blank section and select Create Document, Empty Document. Name the resulting file moveme.txt.</li>
+<ol>
+<li title="expected_result">Empty document moveme.txt is created</li>
+</ol>
+<ol>
+<li title="expected_result">Was the empty document moveme.txt created?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-002
+<ol>
+<li title="expected_result">depends: nautilus/TC-NFM-001</li>
+</ol>
+This test will check that user can create folders in Nautilus
+<ol>
+<li title="action"> In Home Folder right click on a blank section and select ""Create New Folder"".</li>
+<ol>
+<li title="expected_result">A folder named 'Untitled Folder' appears in the directory</li>
+</ol>
+<li title="action"> Rename the folder 'test'</li>
+<ol>
+<li title="expected_result">Was the folders name changed to 'test'?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-003
+<ol>
+<li title="expected_result">depends: nautilus/TC-NFM-002</li>
+</ol>
+This test will check that user can move files to folders.
+<ol>
+<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
+<li title="action"> Drag moveme.txt and drop into the folder test.</li>
+<ol>
+<li title="expected_result">Is the file moveme.txt now located in 'test' folder?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-004
+<ol>
+<li title="expected_result">depends: nautilus/TC-NFM-003</li>
+</ol>
+This test will check that user can delete files and folders to Trash
+<ol>
+<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
+<li title="action"> Right click on 'test' folder and select Move to Trash</li>
+<ol>
+<li title="expected_result">test folder is removed.Trash folder icon is changed to Not empty</li>
+</ol>
+<li title="action"> Click the Trash Icon in the sidebar</li>
+<ol>
+<li title="expected_result">Does the Trash show the 'test' folder inside of it?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-005
+This test will check that user can connect to Samba shares and copy files from the share
+<ol>
+<li title="action"> Please ensure you have access to a samba share containing a file</li>
+<li title="action"> On a local network try connecting to a shared Samba or Windows folder</li>
+<ol>
+<li title="expected_result">Files in the share are displayed</li>
+</ol>
+<li title="action"> Copy a document from the share</li>
+<ol>
+<li title="expected_result">File is copied from the shared folder to user computer</li>
+</ol>
+<li title="action"> Open the copied document</li>
+<ol>
+<li title="expected_result">Did the copied file is open correctly, with it's contents the same as in the file on the share?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-006
+This test will check that user can connect to the Samba share and copy files to the share
+<ol>
+<li title="action"> Please ensure you have access to a samba share containing a file</li>
+<li title="action"> On a local network try connecting to a shared Samba or Windows folder</li>
+<ol>
+<li title="expected_result">Files in the share are displayed</li>
+</ol>
+<li title="action"> Copy any document to the writable folder on the share</li>
+<ol>
+<li title="expected_result">File is copied from user computer to the shared folder</li>
+</ol>
+<li title="action"> Open the copied document on the share</li>
+<ol>
+<li title="expected_result">Did the copied file is open correctly, with it's contents the same as in the file on the share?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-007
+This test will check that a mounted USB drive appears in Nautilus
+<ol>
+<li title="action"> Please ensure you have a USB drive available and the system under test has available USB ports.</li>
+<li title="action"> Insert the USB drive into the USB port of the system under test and check the 'Devices' section of Nautilus' left hand pane to see that the USB drive appeared there.</li>
+<ol>
+<li title="expected_result">The 'Devices' section should show the USB drive that was just inserted.</li>
+</ol>
+<li title="action"> Click on the USB drive entry in ""Devices"" section</li>
+<ol>
+<li title="expected_result">Are the USB drive contents displayed?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-008
+This test will check that 'Open' dialog appears when plugging in a music device
+<ol>
+<li title="action"> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
+<li title="action"> Insert the player into the USB port of the system under tests and wait for new dialog to appear</li>
+<ol>
+<li title="expected_result">'Open' dialog appears with 'Rhythmbox Music Player' application selected</li>
+</ol>
+<li title="action"> Click OK button in the dialog box</li>
+<ol>
+<li title="expected_result">Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-009
+This test will check that 'Open' dialog appears when inserting a DVD
+<ol>
+<li title="action"> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
+<li title="action"> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</li>
+<ol>
+<li title="expected_result">'Open' dialog appears with 'Movie Player (Totem)' application selected</li>
+</ol>
+<li title="action"> Click OK button in the dialog box</li>
+<ol>
+<li title="expected_result">Did DVD playback start in Totem?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-010
+This test will check that 'Open' dialog appears on inserting an Audio CD
+<ol>
+<li title="action"> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
+<li title="action"> Insert the Audio CD into the CD drive of the system under tests and wait for new dialog to appear</li>
+<ol>
+<li title="expected_result">'Open' dialog appears with 'Rhythmbox Music Player' application selected</li>
+</ol>
+<li title="action"> Click OK button in the dialog box</li>
+<ol>
+<li title="expected_result">Did Rhythmbox open with the Audio CD displayed in left panel tree?</li>
+</ol>
+</ol>
+Test-case name: nautilus/TC-NFM-011
+This test will check that 'Open' dialog appears on inserting a camera
+<ol>
+<li title="action"> Please ensure you have a camera available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
+<li title="action"> Plug in the camera to the system under test and wait for new dialog to appear</li>
+<ol>
+<li title="expected_result">'Open' dialog appears with Shotwell' application selected</li>
+</ol>
+<li title="action"> Click OK button in the dialog box</li>
+<ol>
+<li title="expected_result">Did Shotwell open with the camera displayed in left panel tree?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

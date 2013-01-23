@@ -1,0 +1,46 @@
+These tests check that the Google Docs Lens works.
+<ol>
+<li title="action">Open the Dash</li>
+<ol>
+<li title="expected_result">Dash must show the Google Docs search icon at the bottom</li>
+</ol>
+<li title="action">Open System Settings</li>
+<ol>
+<li title="expected_result">System Settings will open</li>
+</ol>
+<li title="action">Open Online Accounts</li>
+<ol>
+<li title="expected_result">Online Accounts will be displayed</li>
+</ol>
+<li title="action">Remove all accounts</li>
+<li title="action">Create a Google account
+<ul>
+    <li title="action">Introduce the credentials (username and password)</li>
+    <li title="action">Accept permissions</li>
+    <li title="action">When asked, introduce the password of your ubuntu user to access the keyring</li>
+</ul>
+</li>
+<li title="action">Wait a minute</li>
+<li title="action">Open the Dash</li>
+<li title="action">Go to Google Docs search (click on the icon, at the bottom)</li>
+<li title="action">Search the title of an existing document</li>
+<ol>
+<li title="expected_result">Dash must show the document in the results</li>
+</ol>
+<li title="action">Open the Dash</li>
+<ol>
+<li title="expected_result">The dash will open correctly</li>
+</ol>
+<li title="action">Go to Google Docs search (click on the icon, at the bottom)</li>
+<li title="action">Click on “Filters”</li>
+<ol>
+<li title="expected_result">"Filters" dialog will be displayed</li>
+</ol>
+<li title="action">Click on the different filters (text documents, spreadsheets, drawings, PDF files)</li>
+<ol>
+<li title="expected_result">Dash must filter the latest documents correctly</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

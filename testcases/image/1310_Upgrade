@@ -1,0 +1,17 @@
+<dl>
+	<dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is availabe, and click Install to install them</dt>
+	<dt>Ensure FAMILY is looking from all new versions by running 'software sources'. Select the updates tab, and make sure the 'Notify me of a new FAMILY version' option has the 'For any new version' selection</dt>
+	<dt>Run update-manager -d -c from a terminal</dt>
+	<dt>Click the upgrade version button</dt>
+	<dt>Watch it upgrade, noting any errors</dt>
+	<dt>Reboot into your new system:
+		<ul>
+			<li>Any errors encountered during the upgrade?</li>
+			<li>Any errors encountered after rebooting to new desktop?</li>
+			<li>Does your hardware still work properly?</li>
+			<li>Are you experiencing any application or background service crashes?</li>
+		</ul>
+	</dt>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

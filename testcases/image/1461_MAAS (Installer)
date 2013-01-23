@@ -1,0 +1,23 @@
+This will test that you can install the MAAS server on machine running Ubuntu 12.04 LTS or later. You need a machine dedicated to run MAAS, control of the network and internet access or a local mirror of the Ubuntu archive.
+<dl>
+    <dt>Follow the steps described in the INSTALL.txt document (http://bazaar.launchpad.net/~maas-maintainers/maas/trunk/view/head:/INSTALL.txt)</dt>
+    <dt>Visit the MAAS interface in your browser http://localhost/MAAS</dt>
+        <dd>Could you login into the MAAS server using the admin account created during installation?</dd>
+</dl>
+
+This will test that an admin can add a new user to the MAAS server and the user is able to login with his own credentials.
+
+<dl>
+    <dt>Open the main page to the MAAS server: http://localhost/MAAS</dt>
+    <dt>Login with the admin test account (admin/test)</dt>
+    <dt>Click the settings icon on the right side</dt>
+    <dt>Click the Add user button</dt>
+    <dt>Fill in the required fields: username and password</dt>
+    <dt>Check the newly added user is shown on http://localhost/MAAS/settings/</dt>
+    <dt>Log out from the MAAS</dt>
+    <dt>Log back in using the username and password created on step 5</dt>
+        <dd>Did you successfully login into the MAAS server with the user created?</dd>
+</dl>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

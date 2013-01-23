@@ -1,0 +1,127 @@
+Test-case name: empathy/emp-001
+This test will check that Empathy can be started
+<ol>
+<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<ol>
+<li title="expected_result">Is Empathy launched?</li>
+</ol>
+</ol>
+Test-case name: empathy/emp-002
+This test will check that Empathy can send messages via Google Talk
+<ol>
+<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<ol>
+<li title="expected_result">Empathy should launch</li>
+</ol>
+<li title="action"> Select 'Empathy - Accounts' from menu</li>
+<ol>
+<li title="expected_result">'Online accounts' dialog is displayed</li>
+</ol>
+<li title="action"> Select 'Add account...' at the left (if not already selected)</li>
+<ol>
+<li title="expected_result">'Show accounts that ...' step appears at right</li>
+</ol>
+<li title="action"> Select 'Google' in right-hand pane</li>
+<ol>
+<li title="expected_result">New step with Google sign-in box appears</li>
+</ol>
+<li title="action"> Fill in your Google credentials, click 'Sign in'</li>
+<ol>
+<li title="expected_result"> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</li>
+</ol>
+<li title="action"> Click 'No thanks'</li>
+<ol>
+<li title="expected_result">Wizard is closed</li>
+</ol>
+<li title="action"> Check contact list</li>
+<ol>
+<li title="expected_result">Contact list displays your online Google contacts</li>
+</ol>
+<li title="action"> Check that you can send and receive messages</li>
+<ol>
+<li title="expected_result">Are messages being delivered and displayed correctly?</li>
+</ol>
+</ol>
+Test-case name: empathy/emp-003
+This test will check that Empathy can send messages via IRC
+<ol>
+<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<ol>
+<li title="expected_result">empathy should launch</li>
+</ol>
+<li title="action"> Select 'Edit - Accounts' from menu</li>
+<ol>
+<li title="expected_result">'Messaging and VOIP Accounts Assistant' wizard appears, 'Welcome to Empathy' step is displayed</li>
+</ol>
+<li title="action"> Select 'Yes, I'll enter my account details now'</li>
+<ol>
+<li title="expected_result">'Enter your account details' step appears</li>
+</ol>
+<li title="action"> Select 'IRC' in 'What kind of chat account do you have?' combobox</li>
+<ol>
+<li title="expected_result">IRC is selected</li>
+</ol>
+<li title="action"> Fill in nickname, click 'Log in'</li>
+<ol>
+<li title="expected_result">IRC connection status changes to 'Connecting...'. After the process is complete, user status is 'Available'</li>
+</ol>
+<li title="action"> Click 'Close'</li>
+<ol>
+<li title="expected_result">Wizard closes</li>
+</ol>
+<li title="action"> Select 'Room - Join' from 'Contact List' menu</li>
+<ol>
+<li title="expected_result">'Join Room' window appears</li>
+</ol>
+<li title="action"> Input '#ubuntu' in 'Room' textbox, click Join</li>
+<ol>
+<li title="expected_result">'#ubuntu' channel is open</li>
+</ol>
+<li title="action"> Check that you can send and receive messages</li>
+<ol>
+<li title="expected_result">Are messages are being delivered and displayed correctly?</li>
+</ol>
+</ol>
+Test-case name: empathy/emp-004
+This test will check that Empathy can send messages via Facebook
+<ol>
+<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<ol>
+<li title="expected_result">empathy should launch</li>
+</ol>
+<li title="action"> Select 'Edit - Accounts' from menu</li>
+<ol>
+<li title="expected_result">'Messaging and VOIP Accounts Assistant' wizard appears, 'Welcome to Empathy' step is displayed</li>
+</ol>
+<li title="action"> Select 'Yes, I'll enter my account details now'</li>
+<ol>
+<li title="expected_result">'Enter your account details' step appears</li>
+</ol>
+<li title="action"> Select 'Facebook chat' in 'What kind of chat account do you have?' combobox</li>
+<ol>
+<li title="expected_result">Facebook is selected</li>
+</ol>
+<li title="action"> Fill your facebook username, click 'Apply'</li>
+<ol>
+<li title="expected_result">IRC connection status changes to 'Connecting...'. After the process is complete, contact list shows new toolbar - 'Password required'</li>
+</ol>
+<li title="action"> Click on plus button in the toolbar in contact list</li>
+<ol>
+<li title="expected_result">A password request window appears</li>
+</ol>
+<li title="action"> Input a correct password, click OK</li>
+<ol>
+<li title="expected_result">Facebook connection status is changed to 'Available'</li>
+</ol>
+<li title="action"> Check contacts in Contact List</li>
+<ol>
+<li title="expected_result">Your online facebook contacts are displayed in contact list</li>
+</ol>
+<li title="action"> Check that you can send and receive messages</li>
+<ol>
+<li title="expected_result">Are messages being delivered and displayed correctly?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

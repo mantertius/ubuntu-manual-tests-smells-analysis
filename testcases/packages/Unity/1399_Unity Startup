@@ -1,0 +1,15 @@
+Test-case unity/startup
+<ol>
+<li title="action">Login and ensure Unity starts and is displayed.</li>
+<ol>
+<li title="expected_result">you should see a panel (top bar) and a launcher (left bar) with buttons.</li>
+</ol>
+</ol>
+Test-case unity/i18n
+<ol>
+<li title="action">Look at different text parts of the interface and check they are translated.</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

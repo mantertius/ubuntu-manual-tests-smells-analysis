@@ -1,0 +1,146 @@
+Test-case name: gedit/ged-001
+This test will check that GEdit can save and open saved files
+<ol>
+<li title="action"> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</li>
+<ol>
+<li title="expected_result">Gedit should launch</li>
+</ol>
+<li title="action"> Type in “The quick brown foxes jump over the lazy dog”</li>
+<ol>
+<li title="expected_result">Text appears</li>
+</ol>
+<li title="action"> Click on Save</li>
+<ol>
+<li title="expected_result">'Save as' window appears</li>
+</ol>
+<li title="action"> Type in 'gedit.txt' for the name of the file, select any folder and press the save button</li>
+<ol>
+<li title="expected_result">'Save as' window closes</li>
+</ol>
+<li title="action"> Close the text editor by pressing the ‘x’ in the left hand corner</li>
+<ol>
+<li title="expected_result">Gedit closes</li>
+</ol>
+<li title="action"> Open the dash and launch nautilus by pressing the super key, and then entering ‘nautilus’</li>
+<ol>
+<li title="expected_result">nautilus should launch</li>
+</ol>
+<li title="action"> Navigate to the directory where you saved the file and double click it to launch gedit</li>
+<ol>
+<li title="expected_result">Does gedit launch and the display the the file with the text “The quick brown foxes jump over the lazy dog”?</li>
+</ol>
+</ol>
+Test-case name: gedit/ged-002
+This test will check that GEdit can save HTML files correctly
+<ol>
+<li title="action"> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</li>
+<ol>
+<li title="expected_result">Gedit should launch</li>
+</ol>
+<li title="action"> Type in “<a href="http://www.ubuntu.com">Link To Ubuntu</a>”</li>
+<ol>
+<li title="expected_result">Text appears</li>
+</ol>
+<li title="action"> Click on Save</li>
+<ol>
+<li title="expected_result">'Save as' window appears</li>
+</ol>
+<li title="action"> Type in gedit.html for the name of the file, select any folder and press the save button</li>
+<ol>
+<li title="expected_result">'Save as' window closes</li>
+</ol>
+<li title="action"> Close the text editor by pressing the ‘x’ in the left hand corner</li>
+<ol>
+<li title="expected_result">Gedit closes</li>
+</ol>
+<li title="action"> Open the dash and launch nautilus by pressing the super key, and then entering ‘nautilus’</li>
+<ol>
+<li title="expected_result">nautilus should launch</li>
+</ol>
+<li title="action"> Navigate to the directory where you saved the file and double the file it to launch the default browser and display the html file</li>
+<ol>
+<li title="expected_result">Does your default browser launch and the display a page with a link to the ubuntu website?</li>
+</ol>
+</ol>
+Test-case name: gedit/ged-003
+This test will check that GEdit can replace text
+<ol>
+<li title="action"> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</li>
+<ol>
+<li title="expected_result">Gedit should launch</li>
+</ol>
+<li title="action"> Type in “The quick brown foxes jump over the lazy dog”</li>
+<ol>
+<li title="expected_result">Text appears</li>
+</ol>
+<li title="action"> Press "Ctrl+H"</li>
+<ol>
+<li title="expected_result">'Replace' dialog appears</li>
+</ol>
+<li title="action"> In the 'Search for' box type ‘foxes’, and in the 'Replace with' box, type ‘fox’. Then click "Replace all"</li>
+<ol>
+<li title="expected_result">'Replace' dialog is not closed</li>
+</ol>
+<ol>
+<li title="expected_result">Does the text displayed now read “The quick brown fox jump over the lazy dog”?</li>
+</ol>
+</ol>
+Test-case name: gedit/ged-004
+This test will check that GEdit can find and hightlight searched text
+<ol>
+<li title="action"> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</li>
+<ol>
+<li title="expected_result">Gedit should launch</li>
+</ol>
+<li title="action"> Type in “The quick brown fox jump over the lazy dog”</li>
+<ol>
+<li title="expected_result">Text appears</li>
+</ol>
+<li title="action"> Press 'Ctrl+F'</li>
+<ol>
+<li title="expected_result">the search box appears, input focus is in search box</li>
+</ol>
+<li title="action"> Type 't'</li>
+<ol>
+<li title="expected_result">all 't' letters in the document are highlighted</li>
+</ol>
+<li title="action"> Type 'he'</li>
+<ol>
+<li title="expected_result">all 'the' or 'The' words in the document are highlighted</li>
+</ol>
+<li title="action"> Click down arrow button in the search box</li>
+<ol>
+<li title="expected_result">text cursor moves to grey-highlighted 'the' in 'over the lazy dog'</li>
+</ol>
+<li title="action"> Click up arrow button in the search box</li>
+<ol>
+<li title="expected_result">text cursor moves to grey-highlighted 'The' in 'The quick brown'..</li>
+</ol>
+<li title="action"> Press ESC button</li>
+<ol>
+<li title="expected_result">Did the search box close and focus return to the document, with the search term highlighted?</li>
+</ol>
+</ol>
+Test-case name: gedit/ged-005
+This test will check that GEdit can display File Browser panel
+<ol>
+<li title="action"> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</li>
+<ol>
+<li title="expected_result">Gedit should launch</li>
+</ol>
+<li title="action"> Click on Edit -> Preferences -> Plugins. Then ensure the “File Browser Panel” plugin is checked. Close the window by pressing close.</li>
+<ol>
+<li title="expected_result">Preferences window is closed</li>
+</ol>
+<li title="action"> Press F9</li>
+<ol>
+<li title="expected_result">The side panel appears with the file browser panel included</li>
+</ol>
+<li title="action"> Press F9 again</li>
+<ol>
+<li title="expected_result">Did the side panel open and close properly?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

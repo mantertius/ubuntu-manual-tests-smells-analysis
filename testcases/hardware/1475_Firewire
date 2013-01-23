@@ -1,0 +1,15 @@
+<dl>
+    <dt>Connect a Firewire external hard drive to the first Firewire port on the computer.</dt>
+    <dt>Verify that the drive is automatically mounted and an icon appears on the desktop.</dt>
+    <dt>Right-click the drive icon and select Unmount Volume.</dt>
+    <dt>Disconnect the Firewire external hard drive from the computer.</dt>
+    <dt>Repeat for each Firewire port on the computer.</dt> 
+</dl>
+<strong>Verification</strong>
+
+    <dd>Verify that the drive icon appears on the desktop.</dd>
+    <dd>Verify that the drive icon disappears when unmounted. </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

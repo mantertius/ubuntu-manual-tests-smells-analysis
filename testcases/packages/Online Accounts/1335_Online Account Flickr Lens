@@ -1,0 +1,19 @@
+These tests check that the Flickr lens works.
+<ol>
+<li title="action">Open the dash</li>
+<ol>
+<li title="expected_result">The dash dialog will be displayed</li>
+</ol>
+<li title="action">Go to "Photos"</li>
+<ol>
+<li title="expected_result">"Photos" dialog will be displayed</li>
+</ol>
+<li title="action">Click on "Filter Results"</li>
+<li title="action">Click on "All"</li>
+<ol>
+<li title="expected_result"><li title="expected_result">"Photos" dialog will be displayed</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

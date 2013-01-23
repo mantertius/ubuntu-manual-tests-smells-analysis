@@ -1,0 +1,59 @@
+Test-case name: ubuntuone-client/ubo-001
+This test will check that Ubuntu One client can be installed
+<ol>
+<li title="action"> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</li>
+<ol>
+<li title="expected_result">ubuntuone-client should launch</li>
+</ol>
+<li title="action"> Press the install button in the lower right hand corner</li>
+<ol>
+<li title="expected_result">Did the Ubuntu One client install and launch?</li>
+</ol>
+</ol>
+Test-case name: ubuntuone-client/ubo-002
+This test will check that Ubuntu One client can display user information
+<ol>
+<li title="action"> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</li>
+<ol>
+<li title="expected_result">ubuntuone-client should launch</li>
+</ol>
+<li title="action"> Press the install button in the lower right hand corner</li>
+<ol>
+<li title="expected_result">Ubuntu One client installs and launches</li>
+</ol>
+<li title="action"> Enter your ubuntu account details and press login</li>
+<ol>
+<li title="expected_result">Did the ubuntu One client load up your information?</li>
+</ol>
+</ol>
+Test-case name: ubuntuone-client/ubo-003
+<ol>
+<li title="expected_result">depends: ubuntuone-client/ubo-002</li>
+</ol>
+This test will check that Ubuntu One client can sync files
+<ol>
+<li title="action"> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</li>
+<ol>
+<li title="expected_result">ubuntuone-client should launch</li>
+</ol>
+<li title="action"> Click the folders tab</li>
+<ol>
+<li title="expected_result">Ubuntu One switches to folder display</li>
+</ol>
+<li title="action"> Click the explore button next to the 'Ubuntu One' folder</li>
+<ol>
+<li title="expected_result">Nautilus should launch showing the ubuntu one folder</li>
+</ol>
+<li title="action"> Right nautilus and select 'create new document,empty document'</li>
+<ol>
+<li title="expected_result">A file named 'Untitled Document' appears in the directory with a sync symbol (2 arrows in a circle)</li>
+</ol>
+<li title="action"> Close nautilus and wait for a notify-osd bubble to appear declaring the file sync to ubuntu one is complete (should take less than 1 min on a fast connection)</li>
+<li title="action"> Refocus ubuntu one and click the explore button next to the 'Ubuntu One' folder</li>
+<ol>
+<li title="expected_result">Did nautilus launch showing the ubuntu one folder, with the 'untitled document' file displaying a checkbox as it's icon (as a visual indicator it is synced)?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

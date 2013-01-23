@@ -1,0 +1,69 @@
+<ol>
+<li title="action">Boot up the iso using a CD/DVD or USB Key</li>
+<ol>
+<li title="expected_result">System boots to 'Select Language'</li>
+</ol>
+<li title="action">Select Install Ubuntu and press Enter</li>
+<ol>
+<li title="expected_result">System displays 'Select Location'</li>
+</ol><li title="action">Select location and press Enter</li>
+<ol>
+<li title="expected_result">The default for your location and language should already be selected.</li>
+</ol><li title="action">Select the layout you wish to use on the keyboard and press Enter</li>
+<ol>
+<li title="expected_result">The default for your location and language should already be selected.</li>
+</ol><li title="action">Add a hostname for the machine and press Enter</li>
+<ol>
+<li title="expected_result">You should be prompted for your name</li>
+</ol><li title="action">Type in your name and press Enter</li>
+<ol>
+<li title="expected_result">You should be prompted for a user name</li>
+</ol><li title="action">Type in your user name and press Enter (you can accept the default if you wish).</li>
+<ol>
+<li title="expected_result">You should be prompted to enter a password</li>
+</ol><li title="action">Add a password and press Enter</li>
+<ol>
+<li title="expected_result">You should be prompted to confirm ( If you entered a weak password, confirm that you want to keep it or select no and enter a stronger one).</li>
+</ol><li title="action">Confirm password and press Enter</li>
+<ol>
+<li title="expected_result">You should be asked if you wish to encrypt your home directory</li>
+</ol><li title="action">Select No for encrypted home directory and press Enter</li>
+<ol>
+<li title="expected_result">You should see confirmation of your time zone</li>
+</ol><li title="action">Verify that the pre-selected time zone is correct or select your time zone and press Enter</li>
+<ol>
+<li title="expected_result">You will be presented with formatting options</li>
+</ol><li title="action">Select Guided - use entire disk and press Enter</li>
+<ol>
+<li title="expected_result">You should see an option to select a disk to install on</li>
+</ol><li title="action">Select the disk to use and press Enter</li>
+<ol>
+<li title="expected_result">You should be asked to confirm the action</li>
+</ol><li title="action">Select Yes to accept the changes and press Enter</li>
+<ol>
+<li title="expected_result">You should see a request for http proxy information</li>
+</ol><li title="action">Input http proxy info or press Enter</li>
+<ol>
+<li title="expected_result">Wait for a while -  The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty3 (alt + f4).</li>
+</ol><li title="action">Select Yes to install grub boot loader to master boot record and press Enter</li>
+<ol>
+<li title="expected_result">You should see a request to confirm date and time</li>
+</ol><li title="action">Select Yes to setting your clock to utc and press Enter</li>
+<ol>
+<li title="expected_result">You should be requested to remove the CD / USB key</li>
+</ol><li title="action">Remove the CD / USB key and press Enter</li>
+<ol>
+<li title="expected_result">This should then reboot the machine</li>
+</ol><li title="action">Log in and check the desktop is installed</li>
+<ol>
+<li title="expected_result">You should be able to log in and the desktop should be displayed</li>
+</ol><li title="action">Ask the machine to reboot</li>
+<ol>
+<li title="expected_result">Machine should reboot</li>
+</ol><li title="action">Login and check the system installed correctly</li>
+<ol>
+<li title="expected_result">Menus should be displayed</li>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

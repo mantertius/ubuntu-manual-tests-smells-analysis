@@ -1,0 +1,208 @@
+Test-case wm/close button
+<ol>
+<li title="action">Press super+w</li>
+<li title="action">Hover over an application</li>
+<ol>
+<li title="expected_result">The application contains a close button</li>
+</ol>
+<li title="action">Click the close button</li>
+<ol>
+<li title="expected_result">The application closes</li>
+</ol>
+</ol>
+Test-case wm/move
+<ol>
+<li title="action">Open a window</li>
+<li title="action">Drag the title bar</li>
+<ol>
+<li title="expected_result">Window moves</li>
+</ol>
+</ol>
+Test-case wm/move_edge_resistance
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Drag the title bar slowly to the left or right of the screen until the window edge gets out of the screen</li>
+<ol>
+<li title="expected_result">Window resists a bit before getting out of the screen</li>
+</ol>
+</ol>
+Test-case wm/active
+<ol>
+<li title="action">Start two applications</li>
+<li title="action">Click on the window for the inactive application</li>
+<ol>
+<li title="expected_result">Window gets the focus and is shown above the other application window.</li>
+<li title="expected_result">Window title bar lights up (lighter title, colored buttons).</li>
+<li title="expected_result">Previous active window title bar darkens (dark title, monochrome buttons).</li>
+</ol>
+</ol>
+Test-case wm/close
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Click on the close button in the title bar</li>
+<ol>
+<li title="expected_result">Window closes</li>
+</ol>
+</ol>
+Test-case wm/minimize
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Click on the minimize button of the title bar</li>
+<ol>
+<li title="expected_result">A fast animation shows the window minimizing to its launcher icon</li>
+<li title="expected_result">Window is minimized</li>
+</ol>
+</ol>
+Test-case wm/maximize
+<ol>
+<li title="action">Open an application, make sure it is not maximized</li>
+<li title="action">Click on the maximize button of the title bar</li>
+<ol>
+<li title="expected_result">Window is maximized</li>
+</ol>
+</ol>
+Test-case wm/maximize_double_click
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Double-click on the title bar</li>
+<ol>
+<li title="expected_result">Window is maximized</li>
+</ol>
+</ol>
+Test-case wm/drag_to_maximize
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Drag the title bar to the top unity panel</li>
+<ol>
+<li title="expected_result">A maximize preview shows, covering the whole screen</li>
+</ol>
+<li title="action">Release mouse button</li>
+<ol>
+<li title="expected_result">Window is maximized</li>
+</ol>
+<li title="action">Drag the title bar from the unity panel downwards</li>
+<ol>
+<li title="expected_result">Window is restored</li>
+</ol>
+<li title="action">Drag the title bar to the left so that the mouse cursor is on the left edge of the screen</li>
+<ol>
+<li title="expected_result">A maximize preview shows, covering the left-half of the screen</li>
+</ol>
+<li title="action">Release mouse button</li>
+<ol>
+<li title="expected_result">Window is semi-maximized to the left of the screen</li>
+</ol>
+<li title="action">Drag the title bar to the right so that the mouse cursor is on the right edge of the screen</li>
+<ol>
+<li title="expected_result">A maximize preview shows, covering the right-half of the screen</li>
+</ol>
+<li title="action">Release mouse button</li>
+<ol>
+<li title="expected_result">Window is semi-maximized to the right of the screen</li>
+</ol>
+</ol>
+Test-case wm/resize
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Move the mouse next to the right edge of the window</li>
+<ol>
+<li title="expected_result">the cursor should transform into a resize cursor ( â†’| )</li>
+</ol>
+<li title="action">Drag the edge to resize to window</li>
+<ol>
+<li title="expected_result">A preview rectangle appears [2D: fail]</li>
+</ol>
+<li title="action">Release the mouse button</li>
+<ol>
+<li title="expected_result">Window is resized</li>
+</ol>
+<li title="action">Ensure the other edges behave the same</li>
+<li title="action">Ensure the corners behave the same (to resize both width and height at the same time)</li>
+</ol>
+Test-case wm/menu_basic
+<ol>
+<li title="action">Open an application (not maximized)</li>
+<li title="action">Right click on the title bar</li>
+<ol>
+<li title="expected_result">A context menu appears</li>
+</ol>
+<li title="action">Ensure the minimize/maximize/move/close entries work</li>
+</ol>
+Test-case wm/always_on_top
+<ol>
+<li title="action">Open 2 applications (not maximized)</li>
+<li title="action">Right click on the title bar, click "Always On Top"</li>
+<li title="action">Click the other application window</li>
+<ol>
+<li title="expected_result">The other application window is activated, but stays behind the "always on top" window</li>
+</ol>
+<li title="action">Show context menu for "always on top" window again; click on "Always On Top"</li>
+<li title="action">Click the other application window</li>
+<ol>
+<li title="expected_result">The other application window is activated and is moved in front of the previous window</li>
+</ol>
+</ol>
+Test-case wm/workspace_always_visible
+<ol>
+<li title="action">Open an application (not maximized)</li>
+<li title="action">Right click on the title bar, click on "Always on Visible Workspace"</li>
+<li title="action">Click on the spread icon in the Launcher</li>
+<ol>
+<li title="expected_result">The window is visible in all workspaces</li>
+</ol>
+<li title="action">Select the window</li>
+<li title="action">Right click on the title bar, click on "Only on This Workspace" [2D: "Always on visible workspace"]</li>
+<li title="action">Click on the spread icon in the Launcher</li>
+<ol>
+<li title="expected_result">The window is only visible in the current workspace</li>
+</ol>
+</ol>
+Test-case wm/workspace_move_to
+<ol>
+<li title="action">Open an application (not maximized)</li>
+<li title="action">Right click on the title bar, click on "Move to Workspace Right"</li>
+<ol>
+<li title="expected_result">Window disappears</li>
+</ol>
+<li title="action">Click on the spread icon in the Launcher</li>
+<ol>
+<li title="expected_result">Window is visible on the top-right workspace</li>
+</ol>
+<li title="action">Select the window</li>
+<li title="action">Right click on the title bar</li>
+<ol>
+<li title="expected_result">Menu entry title has changed to "Move to Workspace Left"</li>
+</ol>
+<li title="action">Move the mouse to the "Move to Another Workspace" menu item</li>
+<ol>
+<li title="expected_result">4 items appear, item "Workspace 2" is disabled</li>
+</ol>
+<li title="action">Click on "Workspace 1"</li>
+<ol>
+<li title="expected_result">Window disappears</li>
+</ol>
+<li title="action">Click on the spread icon in the Launcher</li>
+<ol>
+<li title="expected_result">Window is visible on the top-left workspace</li>
+</ol>
+</ol>
+Test-case wm/management_shortcuts
+<ol>
+<li title="action">Open an application</li>
+<li title="action">Make sure the application is focused.</li>
+<li title="action">Press ALT + F4</li>
+<ol>
+<li title="expected_result">The application should close</li>
+</ol>
+Test-case wm/stacking
+<ol>
+<li title="action">open an application and make it maximised</li>
+<li title="action">Attempt to open the dash</li>
+<li title="action">Attempt to open indicators</li>
+<ol>
+<li title="expected_result">The dash and all indicators appear stacked correctly on top of the window</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

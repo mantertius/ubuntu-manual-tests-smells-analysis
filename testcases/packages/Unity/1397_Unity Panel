@@ -1,0 +1,218 @@
+Test-case panel/appmenu_desktop
+<ol>
+<li title="action">Click on the desktop</li>
+<ol>
+<li title="expected_result">"Ubuntu Desktop" (or any localized string) appears in the panel</li>
+</ol>
+<li title="action">Move the mouse over the panel</li>
+<ol>
+<li title="expected_result">"Ubuntu Desktop" label fades out [2D: no fade, it vanishes] and Desktop menubar items appear</li>
+</ol>
+</ol>
+Test-case panel/appmenu_mouse_click
+<ol>
+<li title="action">Start Gedit</li>
+<li title="action">Move the mouse over the panel</li>
+<ol>
+<li title="expected_result">Gedit menubar items appear</li>
+</ol>
+<li title="action">Click on "Search"</li>
+<ol>
+<li title="expected_result">"Seach" menu appears</li>
+</ol>
+<li title="action">Click back in the application</li>
+<ol>
+<li title="expected_result">"Search" menu closes and menubar items disappear</li>
+</ol>
+</ol>
+Test-case panel/appmenu_mouse_click2
+<ol>
+<li title="action">Start Firefox</li>
+<li title="action">Move the mouse over the panel and click on "File"</li>
+<ol>
+<li title="expected_result">"File" menu appears</li>
+</ol>
+<li title="action">Without moving the mouse, left-click again</li>
+<ol>
+<li title="expected_result">"File" menu disappear, the menu titles are still visible on the launcher though</li>
+</ol>
+</ol>
+Test-case panel/appmenu_mouse_hovering
+<ol>
+<li title="action">Start Firefox</li>
+<li title="action">Move the mouse over the panel and click on "File"</li>
+<ol>
+<li title="expected_result">"File" menu appears</li>
+</ol>
+<li title="action">Move the mouse to the "Edit" item</li>
+<ol>
+<li title="expected_result">"File" menu disappears, "Edit" menu appears</li>
+</ol>
+</ol>
+Test-case panel/appmenu_keyboard
+<ol>
+<li title="action">Start Firefox</li>
+<li title="action">Move the mouse over the panel and click on "File"</li>
+<ol>
+<li title="expected_result">"File" menu appears</li>
+</ol>
+<li title="action">Press the "Right arrow" keyboard key:</li>
+<ol>
+<li title="expected_result">"File" menu disappears, "Edit" menu appears</li>
+</ol>
+<li title="action">Press the "Left arrow" keyboard key:</li>
+<ol>
+<li title="expected_result">"Edit" menu disappears, "File" menu appears</li>
+</ol>
+</ol>
+Test-case panel/appmenu_keyboard_f10
+<ol>
+<li title="action">Start Firefox</li>
+<li title="action">Press Alt+F10</li>
+<ol>
+<li title="expected_result">Firefox menubar appears, first menubar item is selected and its menu appears</li>
+</ol>
+</ol>
+Test-case panel/appmenu_keyboard_mnemonic
+<ol>
+<li title="action">Start Firefox</li>
+<li title="action">Press Alt + F (or any accelerator corresponding to the "File" item in your language)</li>
+<ol>
+<li title="expected_result">Firefox menubar appears, first menubar item is selected and its menu appears</li>
+</ol>
+</ol>
+Test-case panel/appmenu_keyboard_desktop_f10
+<ol>
+<li title="action">Click on the desktop</li>
+<li title="action">Press Alt+F10</li>
+<ol>
+<li title="expected_result">Desktop menubar appears, first menubar item is selected and its menu appears</li>
+</ol>
+</ol>
+Test-case panel/appmenu_keyboard_desktop_mnemonic
+<ol>
+<li title="action">Click on the desktop</li>
+<li title="action">Press Alt + F (or any accelerator corresponding to the "File" item in your language)</li>
+<ol>
+<li title="expected_result">Desktop menubar appears, first menubar item is selected and its menu appears</li>
+</ol>
+</ol>
+Test-case panel/titlebar_not_maximized
+<ol>
+<li title="action">Start Nautilus</li>
+<li title="action">Make sure it is not maximized</li>
+<ol>
+<li title="expected_result">Panel does not show window buttons</li>
+<li title="expected_result">Panel shows application title (Same text as the tooltip for Nautilus launcher icon)</li>
+</ol>
+<li title="action">Move the mouse over the panel</li>
+<ol>
+<li title="expected_result">Panel does not show window buttons</li>
+<li title="expected_result">Title is partially faded on the right side, Nautilus menubar items are visible</li>
+</ol>
+</ol>
+Test-case panel/titlebar_maximized
+<ol>
+<li title="action">Start Nautilus</li>
+<li title="action">Maximize the window</li>
+<ol>
+<li title="expected_result">Panel does not show window buttons</li>
+<li title="expected_result">Panel shows the window title</li>
+</ol>
+<li title="action">Move the mouse over the panel</li>
+<ol>
+<li title="expected_result">Panel shows window buttons</li>
+<li title="expected_result">Panel shows Nautilus menubar items</li>
+</ol>
+<li title="action">Click on the "restore" window button</li>
+<ol>
+<li title="expected_result">Nautilus window is restored (ie. not maximized anymore)</li>
+<li title="expected_result">Panel does not show window buttons</li>
+<li title="expected_result">Panel shows the window title</li>
+</ol>
+<li title="action">Maximize window again</li>
+<li title="action">Click on the "close" window button</li>
+<ol>
+<li title="expected_result">Nautilus window closes</li>
+</ol>
+</ol>
+Test-case panel/titlebar_maximized2
+<ol>
+<li title="action">Start Nautilus</li>
+<li title="action">Maximize the window</li>
+<li title="action">Double-click on the unity panel, outside of the menubar</li>
+<ol>
+<li title="expected_result">Nautilus window is restored (ie. not maximized anymore)</li>
+</ol>
+</ol>
+Test-case panel/titlebar_multi_windows
+<ol>
+<li title="action">Have a maximized window and a restored one in the same workspace</li>
+<li title="action">Focus the restored window and move the mouse over the panel</li>
+<ol>
+<li title="expected_result">Panel does not show window buttons</li>
+<li title="expected_result">Titlebar and menubar are those of the focused window</li>
+</ol>
+<li title="action">Click on an empty space of the panel</li>
+<ol>
+<li title="expected_result">Maximized window gets the focus [2D: known fail, lp:731761]</li>
+</ol>
+</ol>
+Test-case panel/indicators
+<ol>
+<li title="action">Check the right part of the panel shows the following indicators:
+<br> - Messaging indicator: envelop icon
+<br> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged
+<br> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon
+<br> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon
+<br> - Sound indicator: volume icon
+<br> - Time indicator: the current time
+<br> - Session indicator: your name or nickname (/!\ Not visible in the live CD)
+<br> - System indicator: power icon</br>
+</ol>
+Test-case panel/indicators_mouse
+<ol>
+<li title="action">Click on the messaging indicator</li>
+<ol>
+<li title="expected_result">Messaging menu appears</li>
+</ol>
+<li title="action">Move mouse to the System indicator</li>
+<ol>
+<li title="expected_result">Menus for all indicators appear and disappear as you move the mouse</li>
+</ol>
+</ol>
+Test-case panel/appindicator
+<ol>
+<li title="action">Start gtk-recordmydesktop (or any application with an appindicator)</li>
+<ol>
+<li title="expected_result">Application indicator appears in the panel</li>
+</ol>
+<li title="action">Click on the indicator</li>
+<ol>
+<li title="expected_result">Application indicator menu appears</li>
+</ol>
+<li title="action">Click on "close" or "quit"</li>
+<ol>
+<li title="expected_result">Application closes</li>
+<li title="expected_result">Application indicator menu disappears</li>
+</ol>
+</ol>
+Test-case panel/appindicator_sni_qt
+<ol>
+<li title="action">Start Skype or Mumble</li>
+<ol>
+<li title="expected_result">Application indicator appears in the panel</li>
+</ol>
+<li title="action">Click on the indicator</li>
+<ol>
+<li title="expected_result">Application indicator menu appears</li>
+</ol>
+<li title="action">Click on "close" or "quit"</li>
+<ol>
+<li title="expected_result">Application closes</li>
+<li title="expected_result">Application indicator menu disappears</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

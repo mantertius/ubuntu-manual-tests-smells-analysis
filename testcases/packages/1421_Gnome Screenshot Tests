@@ -1,0 +1,43 @@
+Test-case name: gnomescreenshot/gns-001
+This test will check that Gnome Screenshot can save screenshot of the whole screen
+<ol>
+<li title="action"> Open gnome-screenshot using the dash, and typing 'screenshot'</li>
+<li title="action"> Select Grab the whole desktop</li>
+<li title="action"> Click on Take Screenshot</li>
+<li title="action"> Name it shot1.png</li>
+<li title="action"> Select your home folder for the image to be saved to</li>
+<li title="action"> Click Save</li>
+<ol>
+<li title="expected_result">Is the screenshot image saved to your home directory? Is it a valid image file containing your screen?</li>
+</ol>
+</ol>
+Test-case name: gnomescreenshot/gns-002
+This test will check that Gnome Screenshot can save screenshot of selected window
+<ol>
+<li title="action"> Open gnome-screenshot using the dash, and typing 'screenshot'</li>
+<li title="action"> Select Grab the current window</li>
+<li title="action"> Click on Take Screenshot</li>
+<li title="action"> Name it shot2.png</li>
+<li title="action"> Select your home folder for the image to be saved to</li>
+<li title="action"> Click Save</li>
+<ol>
+<li title="expected_result">Is the screenshot image saved to your home directory? Is it a valid image file containing your selected window?</li>
+</ol>
+</ol>
+Test-case name: gnomescreenshot/gns-003
+This test will check that Gnome Screenshot can save screenshot of selected window
+<ol>
+<li title="action"> Open gnome-screenshot using the dash, and typing 'screenshot'</li>
+<li title="action"> Select Grab the current window</li>
+<li title="action"> Select Drop shadow from the Apply effect drop down menu</li>
+<li title="action"> Click on Take Screenshot</li>
+<li title="action"> Name it shot2.png</li>
+<li title="action"> Select your home folder for the image to be saved to</li>
+<li title="action"> Click Save</li>
+<ol>
+<li title="expected_result">Is the screenshot image saved to your home directory? Is it a valid image file containing your selected window, with the drop shadow effect?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

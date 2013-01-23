@@ -1,0 +1,47 @@
+Test-case name: firefox/fir-001
+This test will check that Firefox can display webpages
+<ol>
+<li title="action"> Open the dash and launch Firefox by pressing the super key, and then entering ‘firefox’</li>
+<ol>
+<li title="expected_result">Firefox should launch</li>
+</ol>
+<li title="action"> In the address bar type http://planet.ubuntu.com. Click on the green arrow</li>
+<ol>
+<li title="expected_result">Did the Planet Ubuntu site open?</li>
+</ol>
+</ol>
+Test-case name: firefox/fir-002
+This test will check that Firefox can display search suggestions
+<ol>
+<li title="action"> Open the dash and launch Firefox by pressing the super key, and then entering ‘firefox’</li>
+<ol>
+<li title="expected_result">Firefox should launch</li>
+</ol>
+<li title="action"> Click on the Search bar, type in Ubuntu server docs</li>
+<ol>
+<li title="expected_result">Relevant suggestions for this query are displayed</li>
+</ol>
+<li title="action"> Hit Enter</li>
+<ol>
+<li title="expected_result">Did the selected search engine (default - Google) results page for query "Ubuntu server docs" open?</li>
+</ol>
+</ol>
+Test-case name: firefox/fir-003
+This test will check that Firefox can use different search engines
+<ol>
+<li title="action"> Open the dash and launch Firefox by pressing the super key, and then entering ‘firefox’</li>
+<ol>
+<li title="expected_result">Firefox should launch</li>
+</ol>
+<li title="action"> Click on the Google icon in the search bar and change it to Wikipedia</li>
+<ol>
+<li title="expected_result">Wikipedia search engine selected</li>
+</ol>
+<li title="action"> Type in Linux</li>
+<ol>
+<li title="expected_result">Did the Wikipedia page for linux open?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

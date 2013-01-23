@@ -1,0 +1,28 @@
+<strong>Verify Screen Functionality</strong>
+
+Case ID: pem-001
+
+Using Unity
+<dl>
+    <dt>Boot the computer. Verify that the Ubuntu login screen is displayed.</dt>
+    <dt>Log into the computer. Verify that the desktop wallpaper and panels are displayed.</dt>
+    <dt>Click on Ubuntu Logo and search Monitor.</dt>
+    <dt>Change the screen resolution by selecting a different resolution from the Resolution dropdown list.</dt>
+    <dt>Press 'Apply'. Verify that the new resolution is set correctly and that the screen is still visible. </dt>
+</dl>
+Using GNOME Classic
+<dl>
+    <dt>Boot the computer. Verify that the Ubuntu login screen is displayed.</dt>
+    <dt>Log into the computer. Verify that the desktop wallpaper and panels are displayed.</dt>
+    <dt>Open System Monitor (System → Administration → System Monitor).</dt>
+    <dt>Change the screen resolution by selecting a different resolution from the Resolution dropdown list.</dt>
+    <dt>Press 'Apply'. Verify that the new resolution is set correctly and that the screen is still visible. </dt>
+</dl>
+Verification
+
+    <dd>Verify that the display is functioning properly.</dd>
+    <dd>Verify that the resolution can be changed. </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

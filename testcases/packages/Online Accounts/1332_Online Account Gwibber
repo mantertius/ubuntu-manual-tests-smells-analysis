@@ -1,0 +1,66 @@
+These tests check that Gwibber integration works.
+<ol>
+<li title="action">Open System Settings</li>
+<ol>
+<li title="expected_result">System Settings will open</li>
+</ol>
+<li title="action">Open Online Accounts</li>
+<ol>
+<li title="expected_result">Online Accounts will be displayed</li>
+</ol>
+<li title="action">Remove all accounts</li>
+<li title="action">Create a Twitter account
+<ul>
+    <li title="action">Introduce the credentials (username and password)</li>
+    <li title="action">Accept permissions</li>
+    <li title="action">When asked, introduce the password of your ubuntu user to access the keyring</li>
+</ul>
+</li>
+<li title="action">Open Gwibber</li>
+<ol>
+<li title="expected_result">Gwibber must display Twitter’s timeline</li>
+</ol>
+<li title="action">Open System Settings</li>
+<ol>
+<li title="expected_result">System Settings will open</li>
+</ol>
+<li title="action">Open Online Accounts</li>
+<ol>
+<li title="expected_result">Online Accounts will be displayed</li>
+</ol>
+<li title="action">Remove all accounts</li>
+<li title="action">Create a Facebook account
+<ul>
+    <li title="action">Introduce the credentials (username and password)</li>
+    <li title="action">Accept permissions</li>
+    <li title="action">When asked, introduce the password of your ubuntu user to access the keyring</li>
+</ul>
+</li>
+<li title="action">Open Gwibber</li>
+<ol>
+<li title="expected_result">Gwibber must display Facebook’s timeline</li>
+</ol>
+<li title="action">Open System Settings</li>
+<ol>
+<li title="expected_result">System Settings will open</li>
+</ol>
+<li title="action">Open Online Accounts</li>
+<ol>
+<li title="expected_result">Online Accounts will be displayed</li>
+</ol>
+<li title="action">Remove all accounts</li>
+<li title="action">Create a Flickr account
+<ul>
+    <li title="action">Introduce the credentials (username and password)</li>
+    <li title="action">Accept permissions</li>
+    <li title="action">When asked, introduce the password of your ubuntu user to access the keyring</li>
+</ul>
+</li>
+<li title="action">Open Gwibber</li>
+<ol>
+<li title="expected_result">Gwibber must display links to Flickr's latest images</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

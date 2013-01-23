@@ -1,0 +1,107 @@
+Test-case hud/show
+<ol>
+<li title="action">Tap ALT once</li>
+<ol>
+<li title="expected_result">The HUD should appear, with "Type your command" text in the input field</li>
+<li title="expected_result">The Unity Launcher should desaturate</li>
+</ol>
+<li title="action">Type any text to search for menu entries</li>
+<ol>
+<li title="expected_result">The HUD should display entries matching the given search entry</li>
+</ol>
+<li title="action">Tap ALT once again</li>
+<ol>
+<li title="expected_result">The HUD should close</li>
+</ol>
+</ol>
+Test-case hud/show-hide
+<ol>
+<li title="action">Tap ALT once</li>
+<ol>
+<li title="expected_result">The HUD should appear</li>
+</ol>
+<li title="action">Press escape</li>
+<ol>
+<li title="expected_result">The HUD should close</li>
+</ol>
+<li title="action">Tap ALT once again</li>
+<li title="action">Click outside of the HUD area</li>
+<ol>
+<li title="expected_result">The HUD should close</li>
+</ol>
+</ol>
+Test-case hud/normal-menu
+<ol>
+<li title="action">Open any application</li>
+<li title="action">Press and hold ALT</li>
+<ol>
+<li title="expected_result">The menu contents should appear on the global Unity panel</li>
+</ol>
+</ol>
+Test-case hud/arrow-navigate
+<ol>
+<li title="action">Tap ALT once to show the HUD</li>
+<li title="action">Type any text in the HUD search input field that returns more than one entry</li>
+<li title="action">Use the UP and DOWN arrow keys to navigate through the displayed entries</li>
+<ol>
+<li title="expected_result">The currently selected entry should light up and have a thicker border</li>
+</ol>
+</ol>
+Test-case hud/mouse-navigate
+<ol>
+<li title="action">Tap ALT once to show the HUD</li>
+<li title="action">Type any text in the HUD search input field that returns entries</li>
+<li title="action">Click on one of the displayed menu entries</li>
+<ol>
+<li title="expected_result">The clicked menu entry command should be executed</li>
+</ol>
+</ol>
+Test-case hud/cancel-search
+<ol>
+<li title="action">Tap ALT once</li>
+<ol>
+<li title="expected_result">The HUD should appear</li>
+</ol>
+<li title="action">Type any text in the HUD search input field</li>
+<li title="action">Press escape</li>
+<ol>
+<li title="expected_result">The HUD should still be visible, but the list of entries empty and the search field displaying the default "Type your command" text</li>
+</ol>
+</ol>
+Test-case hud/search
+<ol>
+<li title="action">Open gedit</li>
+<li title="action">Move the mouse cursor to the global menu area of the Unity panel</li>
+<ol>
+<li title="expected_result">The gedit menu should become visible</li>
+</ol>
+<li title="action">Open the menu and locate a random menu entry (e.g. Quit, Preferences)</li>
+<li title="action">Tap ALT once to show the HUD</li>
+<li title="action">Try finding the menu entry as located during step 3 - using the HUD search field</li>
+<ol>
+<li title="expected_result">After typing in text representing the menu entry it should appear in the list of recommended entries</li>
+</ol>
+<li title="action">Using the UP and DOWN arrows navigate to the entry of interest</li>
+<li title="action">Press ENTER</li>
+<ol>
+<li title="expected_result">The selected menu command should be executed (e.g. if Quit was selected, gedit should quit)</li>
+</ol>
+</ol>
+Test-case hud/search-indicators
+<ol>
+<li title="action">Click on any of the system indicators (located in the right-most part the panel)</li>
+<li title="action">Locate a random menu entry</li>
+<li title="action">Tap ALT once to show the HUD</li>
+<li title="action">Try finding the menu entry as located during step 2 - using the HUD search field</li>
+<ol>
+<li title="expected_result">After typing in text representing the menu entry it should appear in the list of recommended entries</li>
+</ol>
+<li title="action">Using the UP and DOWN arrows navigate to the entry of interest</li>
+<li title="action">Press ENTER</li>
+<ol>
+<li title="expected_result">The selected menu command should be executed</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

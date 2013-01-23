@@ -1,0 +1,34 @@
+This testcase is intended to check to ensure your settings migrate properly to the new control center. Please DON'T install from the ppa until you have completed the initial steps of verifying and changing settings.
+<ol>
+<li title="action">Open the dash and launch 'appearance'</li>
+<ol>
+<li title="expected_result">Appearance applet launches</li>
+</ol>
+<li title="action">Click the behaviour tab and change the settings to a non-default setting (remember the setting chosen!)</li>
+<ol>
+<li title="expected_result">Settings update successfully</li>
+</ol>
+<li title="action">Open the dash and launch 'keyboard'</li>
+<ol>
+<li title="expected_result">Keyboard applet launches</li>
+</ol>
+<li title="action">Click the shortcuts tab and change some shortcuts to non-default settings (remember the settings chosen!) </li>
+<ol>
+<li title="expected_result">Settings update successfully</li>
+</ol>
+<li title="action">Follow the <a href="../../downloads">installation instructions</a> to install the new packages from the ppa</li>
+<ol>
+<li title="expected_result">Packages update properly</li>
+</ol>
+<li title="action">Restart your sessions (log out and login again)</li>
+<ol>
+<li title="expected_result">Session restarts properly</li>
+</ol>
+<li title="action">Open the keyboard and appearance applets</li>
+<ol>
+<li title="expected_result">All settings chosen above are remembered</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

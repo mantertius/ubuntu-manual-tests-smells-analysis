@@ -1,0 +1,66 @@
+These tests check that Flickr and Facebook integration with Shotwell works.
+<ol>
+<li title="action">Open Shotwell</li>
+<ol>
+<li title="expected_result">Shotwell opens properly and images are displayed</li>
+</ol>
+<li title="action">Select an image</li>
+<ol>
+<li title="expected_result">Image will be selected</li>
+</ol>
+<li title="action">Go to "File>"Publish..."</li>
+<ol>
+<li title="expected_result">Facebook must be available in the menu "Publish photos to"</li>
+</ol>
+<li title="action">Open Shotwell</li>
+<ol>
+<li title="expected_result">Shotwell opens properly and images are displayed</li>
+</ol>
+<li title="action">Select an image</li>
+<ol>
+<li title="expected_result">Image will be selected</li>
+</ol>
+<li title="action">Go to "File>"Publish..."</li>
+<ol>
+<li title="expected_result">Facebook must be available in the menu "Publish photos to"</li>
+</ol>
+<li title="action">Select “Publish photos to Facebook”</li>
+<ol>
+<li title="expected_result">Login dialog will be displayed</li>
+</ol>
+<li title="action">Click to "Login" into Facebook</li>
+<ol>
+<li title="expected_result">Publish photos dialog will be displayed</li>
+</ol>
+<li title="action">Click on "Publish"</li>
+<ol>
+<li title="expected_result">The photo must be published in Facebook</li>
+</ol>
+<li title="action">Open Shotwell</li>
+<ol>
+<li title="expected_result">Shotwell opens properly and images are displayed</li>
+</ol>
+<li title="action">Select an image</li>
+<ol>
+<li title="expected_result">Image will be selected</li>
+</ol>
+<li title="action">Go to "File>"Publish..."</li>
+<ol>
+<li title="expected_result">File Menu dialog will be displayed</li>
+</ol>
+<li title="action">Select “Publish photos to Flickr”</li>
+<ol>
+<li title="expected_result">Login dialog will be displayed</li>
+</ol>
+<li title="action">Click to "Login" into Flickr</li>
+<ol>
+<li title="expected_result">Publish photos dialog will be displayed</li>
+</ol>
+<li title="action">Click on "Publish"</li>
+<ol>
+<li title="expected_result">The photo must be published in Flickr</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

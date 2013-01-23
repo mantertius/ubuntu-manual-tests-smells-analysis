@@ -1,0 +1,26 @@
+This tests check whether the browser extensions are available.
+<ol>
+<li title="action">Open Firefox</li>
+<ol>
+<li title="expected_result">Firefox opens</li>
+</ol>
+<li title="action">Open the "add-ons" dialog by pressing shift+ctrl+a or by using the Tools->addons menu link</li>
+<ol>
+<li title="expected_result">The addons page opens in a new tab</li>
+</ol>
+<li title="action">Check for the Unity Websites Integration and Unity Desktop Integration extensions</li>
+<ol>
+<li title="expected_result">Both extensions are listed and enabled</li>
+</ol>
+<li title="action">Open Chromium</li>
+<ol>
+<li title="expected_result">Chromium opens</li>
+</ol>
+<li title="action">Open the “Extensions” menu: Tools > Extensions</li>
+<ol>
+<li title="expected_result">The extensions page opens showing “Unity Websites Integration” as enabled</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

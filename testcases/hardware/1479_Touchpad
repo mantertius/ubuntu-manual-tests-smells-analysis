@@ -1,0 +1,54 @@
+<strong>Test Touchpad</strong>
+
+Case ID: hmo-001
+<dl>
+    <dt>Move a finger on the touchpad. Verify that the mouse cursor moves onscreen.</dt> 
+    <dt>Right-click on the desktop using the touchpad buttons. Select Create Document → Create Empty File. Title it test.txt.</dt> 
+    <dt>Double-click using the touchpad buttons the test.txt file you created. Verify that the double-click is responded to by a text editor opening.</dt> 
+    <dt>Close the text editor.</dt> 
+    <dt>Drag test.txt from the desktop into the Trash icon, on the Unity panel, using the touchpad buttons.</dt> 
+    <dt>Verify that dragging works properly.</dt> 
+    <dt>Tap on the right-bottom corner of the touchpad on the desktop. Verify that the right-click menu appears. Select Create Document → Create Empty File. Title it test2.txt.</dt> 
+    <dt>Double-tap with one finger on the test2.txt file. Verify that the double-tap is treated as a double-click and that the file is opened in a text editor.</dt> 
+    <dt>Type a sample sentence in the text editor. Highlight it.</dt> 
+    <dt>Click with the two touchpad buttons. Verify that a middle-click is sent and that the highlighted text is pasted into the document.</dt> 
+    <dt>Close the text editor.</dt> 
+    <dt>Double-tap-drag the test2.txt file to the Trash icon. Verify that dragging works correctly.</dt> 
+</dl>
+
+
+Verification
+
+    <dd>Verify that the touchpad controls the mouse cursor onscreen.</dd> 
+    <dd>Verify that left- and right-clicking work with the touchpad buttons.</dd> 
+    <dd>Verify that tapping the touchpad works as a click.</dd> 
+    <dd>Verify that dragging works with both the touchpad buttons and by tap-and-drag on the touchpad.</dd> 
+
+
+<strong>Test Trackpad (Mac only)</strong>
+
+Case ID: hmt-001
+<dl>
+    <dt>Move a finger on the trackpad. Verify that the mouse cursor moves onscreen.</dt>
+    <dt>Right-click on the desktop using the trackpad buttons. Select Create Document → Create Empty File. Title it test.txt.</dt>
+    <dt>Double-click using the trackpad buttons the test.txt file you created. Verify that the double-click is responded to by a text editor opening.</dt>
+    <dt>Close the text editor.</dt>
+    <dt>Drag test.txt from the desktop into the Trash icon using the trackpad buttons. Verify that dragging works properly.</dt>
+    <dt>Tap with three fingers on the desktop. Verify that the right-click menu appears. Select Create Document -> Create Empty File. Title it test2.txt.</dt>
+    <dt>Double-tap with one finger on the test2.txt file. Verify that the double-tap is treated as a double-click and that the file is opened in a text editor.</dt>
+    <dt>Type a sample sentence in the text editor. Highlight it.</dt>
+    <dt>Tap with two fingers. Verify that a middle-click is sent and that the highlighted text is pasted into the document.</dt>
+    <dt>Close the text editor.</dt>
+    <dt>Double-tap-drag the test2.txt file into the Trash icon. Verify that dragging works correctly. </dt>
+</dl>
+
+Verification
+
+    <dd>Verify that the trackpad controls the mouse cursor onscreen.</dd>
+    <dd>Verify that left- and right-clicking work with the trackpad buttons.</dd>
+    <dd>Verify that tapping the trackpad works as a click.</dd>
+    <dd>Verify that dragging works with both the trackpad buttons and by tap-and-drag on the trackpad. </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

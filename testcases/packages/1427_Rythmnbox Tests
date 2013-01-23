@@ -1,0 +1,133 @@
+Test-case name: rhythmbox/rhy-001
+This test will check that Rhythmbox can play internet radio
+<ol>
+<li title="action"> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</li>
+<ol>
+<li title="expected_result">rhythmbox should launch</li>
+</ol>
+<li title="action"> In the Library list, select Radio</li>
+<ol>
+<li title="expected_result">Genre and Radio lists appear</li>
+</ol>
+<li title="action"> Select any genre</li>
+<ol>
+<li title="expected_result">Radio stations are filtered by selected genre</li>
+</ol>
+<li title="action"> Pick a station and press the play button.</li>
+<ol>
+<li title="expected_result">Does the radio start playing?</li>
+</ol>
+</ol>
+Test-case name: rhythmbox/rhy-002
+This test will check that Rhythmbox can play play podcast episodes
+<ol>
+<li title="action"> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</li>
+<ol>
+<li title="expected_result">rhythmbox should launch</li>
+</ol>
+<li title="action"> Right-click on Podcasts, select New Podcast Feed</li>
+<ol>
+<li title="expected_result">New Podcast Feed window appears</li>
+</ol>
+<li title="action"> Add the URI to your favourite podcast or http://feeds.feedburner.com/UbuntuUkPodcastOgg-high?format=xml</li>
+<ol>
+<li title="expected_result">Podcast is added to the list</li>
+</ol>
+<ol>
+<li title="expected_result">Notification on new podcast appears</li>
+</ol>
+<ol>
+<li title="expected_result">List of episodes is downloaded</li>
+</ol>
+<ol>
+<li title="expected_result">Last episode is downloaded</li>
+</ol>
+<li title="action"> Double click on any episode</li>
+<ol>
+<li title="expected_result">Progress bar appears in Status column</li>
+</ol>
+<li title="action"> Wait until episode is downloaded</li>
+<ol>
+<li title="expected_result">Status for episode changes to Downloaded</li>
+</ol>
+<li title="action"> Double click on downloaded episode</li>
+<ol>
+<li title="expected_result">Does episode playback start?</li>
+</ol>
+</ol>
+Test-case name: rhythmbox/rhy-003
+This test will check that Rhythmbox can install codecs and play stream from MTP-compatible players
+<ol>
+<ol>
+<li title="expected_result">Have any MTP-compatible MP3 player</li>
+</ol>
+<li title="action"> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</li>
+<ol>
+<li title="expected_result">rhythmbox should launch</li>
+</ol>
+<li title="action"> Plug a music player device containing MP3 files into your system and check whether rhythmbox imports the music correctly.</li>
+<ol>
+<li title="expected_result">A new entry Devices appears</li>
+</ol>
+<li title="action"> Test playing music from the device.</li>
+<ol>
+<li title="expected_result">Did the easy codec installer recognize any codecs that aren't installed and install them? Did playback start?</li>
+</ol>
+</ol>
+Test-case name: rhythmbox/rhy-004
+This test will check that Rhythmbox can play Last.FM radio
+<ol>
+<ol>
+<li title="expected_result">Have Last.fm Account must be pre-registered and used for a time in order to get a play list.</li>
+</ol>
+<li title="action"> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</li>
+<ol>
+<li title="expected_result">rhythmbox should launch</li>
+</ol>
+<li title="action"> Click on Library - Last.fm entry</li>
+<ol>
+<li title="expected_result">'You are not currently logged in' toolbar with 'Log in' button appears</li>
+</ol>
+<li title="action"> Click 'Log in' button</li>
+<ol>
+<li title="expected_result">'Waiting for authentication' label with 'Cancel' button appear on toolbar</li>
+</ol>
+<ol>
+<li title="expected_result">Last.fm authorization page is opened in default browser</li>
+</ol>
+<li title="action"> Login to Last.fm using your credentials in the browser</li>
+<ol>
+<li title="expected_result">'Connect application' Last.fm page appears</li>
+</ol>
+<ol>
+<li title="expected_result">The page contains the following elements:</li>
+</ol>
+<ol>
+<li title="expected_result">- 'The application Rhythmbox would like permission to access your Last.fm account. You should only give access to your Last.fm account to third parties you trust.' label</li>
+</ol>
+<ol>
+<li title="expected_result">- 'Yes, allow access' button</li>
+</ol>
+<ol>
+<li title="expected_result">- 'cancel' link</li>
+</ol>
+<li title="action"> Click 'Yes, allow access' button</li>
+<ol>
+<li title="expected_result">'Application authenticated' page appears</li>
+</ol>
+<li title="action"> Switch to Rhythmbox window</li>
+<ol>
+<li title="expected_result">User is authenticated, Last.fm page appears</li>
+</ol>
+<li title="action"> Expand 'Last.fm' item in the left list view, select 'My Library'</li>
+<ol>
+<li title="expected_result">Track listview contains some played tracks</li>
+</ol>
+<li title="action"> Select any track, click 'Play'</li>
+<ol>
+<li title="expected_result">Did playback start?</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

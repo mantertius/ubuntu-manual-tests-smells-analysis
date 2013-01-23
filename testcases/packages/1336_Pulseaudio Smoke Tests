@@ -1,0 +1,12 @@
+<ol>
+<li>Does your audio work properly?</li>
+<li>Are you still able to control sound via the sound applet?</li>
+<li>If you use pavucontrol (sudo apt-get install pavucontrol), are you still able to control sound and input devices properly?</li>
+<li>Is your sound hardware recognized properly?</li>
+<li>Does hotplugging a microphone or headset work properly?</li>
+<li>If you have bluetooth audio hardware, does it work properly once paired?</li>
+<li>Overall, does everything function the same or better than the stable version?</li>
+</ol>
+<strong>
+If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

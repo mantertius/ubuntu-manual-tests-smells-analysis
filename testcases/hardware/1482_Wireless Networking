@@ -1,0 +1,43 @@
+<strong>Test Automatic Connectivity</strong>
+
+Case ID: hwn-001
+Using Unity
+<dl>
+    <dt>Ensure that Network Manager is running and that no networks are currently connected. (Network Manager icon, in the notification area. (Blank slice of pizza)</dt>
+    <dt>Press the Super Windows Key, or click on the Ubuntu logo on the Unity panel, and search Terminal. or (Ctrl+Alt+T).</dt>
+    <dt>Right-click on the Network Manager icon and ensure that Enable Wireless is checked.</dt>
+    <dt>After approximately 30 seconds, left-click on the Network Manager icon. Verify that one or more wireless networks are visible.</dt>
+    <dt>Select an open network (If one is available, otherwise select your own wireless connection) and left-click it. Verify that the network connection succeeds and that the Network Manager icon now resembles 1/4 of a shooting target. (Refer to your wireless router documentation for help with your wireless connection)</dt>
+    <dt>Run ifconfig in the terminal. Verify that a new network interface (e.g. "wlan") is present and has received an IP address. Note the interface name (e.g. "wlan").</dt>
+    <dt>In the terminal, run route -n. Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
+    <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above. </dt>
+</dl>
+<dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
+
+Using GNOME Classic
+<dl>
+    <dt>Ensure that Network Manager is running and that no networks are currently connected. (Network Manager icon in the notification area should look like a blank slice of pizza)</dt>
+    <dt>Open the Terminal (Applications -> Accessories -> Terminal).</dt>
+    <dt>Right-click on the Network Manager icon and ensure that Enable Wireless is checked.</dt>
+    <dt>After approximately 30 seconds, left-click on the Network Manager icon. Verify that one or more wireless networks are visible.</dt>
+    <dt>Select an open network (If one is available, otherwise select your own wireless connection) and left-click it. Verify that the network connection succeeds and that the Network Manager icon (slice of pizza) now resembles 1/4 of a shooting target. (Refer to your router documentation for help with your wireless connection)</dt>
+    <dt>Run ifconfig in the terminal. Verify that a new network interface is present (e.g. wlan) and has received an IP address. Note the interface name (e.g. wlan).</dt>
+    <dt>In the terminal, run route -n. Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
+    <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above. </dt>
+</dl>
+<dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
+
+<strong>Verify Manual Connectivity</strong>
+
+Case ID: hwn-003
+<dl>
+    <dt>In the terminal, run sudo ifconfig [interface] [staticIP] where [interface] is the interface name (e.g. wlan) and [staticIP] is a valid unused IP address on the current network. (If you are on a home network try using the previously used IP address, (still listed on the terminal) (Consult your network administrator if you do not know such an address.)</dt>
+    <dt>In the terminal, run ifconfig. Verify that the network device is again listed (e.g. wlan) and has the IP ([staticIP]) address listed as given above.</dt>
+    <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above. </dt>
+</dl>
+<dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
+<dd>(In the terminal, run sudo ifconfig [interface] down where [interface] is the interface name, above. This releases the static IP address back to the server. Then you will need to run sudo ifconfig [interface] up in order to enable your wireless network and allow the server to assign an IP address as needed.) </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

@@ -1,0 +1,82 @@
+<strong>Connect USB Mouse</strong>
+
+Case ID: hmu-001
+
+Using Unity
+<dl>
+    <dt>Click on Ubuntu Logo and search Terminal.</dt> 
+    <dt>Run lsusb in the terminal. Verify that no USB mouse is listed.</dt> 
+    <dt>Connect the USB mouse to the computer.</dt> 
+    <dt>Run lsusb in the terminal. Verify that the USB mouse is now listed.</dt> 
+</dl>
+
+
+Using GNOME Classic
+<dl>
+    <dt>Open the Terminal (Applications -> Accessories -> Terminal).</dt> 
+    <dt>Run lsusb in the terminal. Verify that no USB mouse is listed.</dt> 
+    <dt>Connect the USB mouse to the computer.</dt> 
+    <dt>Run lsusb in the terminal. Verify that the USB mouse is now listed. </dt> 
+</dl>
+
+
+Verification
+
+    <dd>Verify that the mouse is detected by lsusb when connected.</dd>
+    <dd> Please include your device's model in your feedback. </dd>
+
+
+<strong>Test USB Mouse</strong>
+
+Case ID: hmu-002
+<dl>
+    <dt>Move the mouse. Verify that the mouse cursor moves on screen.</dt>
+    <dt>Right-click on the desktop. Select Create Document → Create Empty File. Title it test.txt.</dt>
+    <dt>Double-click the test.txt file you created. Verify that the double-click is responded to by a text editor opening.</dt>
+    <dt>Close the text editor.</dt>
+    <dt>Drag test.txt to the trash can. Verify that dragging works properly.</dt> 
+</dl>
+
+
+Verification
+
+    <dd>Verify that the mouse controls the cursor onscreen.</dd>
+    <dd>Verify that left- and right-clicking work.</dd>
+    <dd>Verify that dragging works.</dd> 
+    <dd>Please include your device's model in your feedback.</dd> 
+
+
+<strong>Disconnect USB Mouse</strong>
+
+Case ID: hmu-003
+<dl>
+    <dt>In the terminal, run lsusb. Verify that the USB mouse is listed.</dt>
+    <dt>Disconnect the mouse from the computer.</dt>
+    <dt>In the terminal, run lsusb. Verify that the USB mouse is no longer listed.</dt> 
+</dl>
+
+Verification
+
+    <dd>Verify that the mouse is no longer detected by lsusb when disconnected.</dd> 
+    <dd>Please include your device's model in your feedback.</dd> 
+
+
+<strong>Reconnect USB Mouse</strong>
+
+Case ID: hmu-004
+<dl>
+    <dt>In the terminal, run lsusb. Verify that no USB mouse is listed.</dt>
+    <dt>Connect the USB mouse to the computer.</dt>
+    <dt>In the terminal, run lsusb. Verify that the the USB mouse is now listed.</dt>
+    <dt>Move the mouse and verify that the cursor moves onscreen. </dt>
+</dl>
+
+Verification
+
+    <dd>Verify that the mouse is detected by lsusb when reconnected.</dd> 
+    <dd>Verify that the mouse controls the cursor onscreen.</dd>   
+    <dd>Please include your device's model in your feedback.</dd> 
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

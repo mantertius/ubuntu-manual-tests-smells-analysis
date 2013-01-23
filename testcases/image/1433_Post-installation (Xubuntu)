@@ -1,0 +1,40 @@
+<dl>
+  <dt>Log in with the Xubuntu session</dt>
+    <dd>Confirm the screen resolution is as expected</dd>
+  <dt>Open Ubuntu Software Center and install applications you would like to use</dt>
+    <dd>Ensure the applications are installed correctly and appear in the applications menu</dd>
+  <dt>If you have a USB drive, plug it in</dt>
+    <dd>Check that the USB drive is mounted and that you can open files from it</dd>
+  <dt>If you have a DVD or an audio CD, insert it</dt>
+    <dd>Check that the disk is mounted and that you can open and/or play files/tracks from it</dd>
+  <dt>Log out, shutdown or restart</dt>
+    <dd>Confirm the session is terminated properly</dd>
+</dl>
+<strong>Panel icons</strong>
+<dl>
+  <dt>Move the mouse to the bottom of the screen</dt>
+    <dd>Does the launcher panel pop up?</dd>
+  <dt>Click the Application Finder icon and run any application from it</dt>
+    <dd>Does Application Finder open and does the application open as expected?</dd>
+</dl>
+<strong>Settings Manager</strong>
+<dl>
+  <dt>Open the applications menu from the top left corner and run Settings Manager</dt>
+  <dt>Click on Window Manager Tweaks and open the Compositor tab</dt>
+  <dt>Click on Enable display compositing, if it is not checked</dt>
+  <dt>Make some adjustments</dt>
+    <dd>Are the adjustments applied as expected?</dd>
+  <dt>Uncheck Enable display compositing</dt>
+    <dd>Are the effects turned off?</dd>
+</dl>
+<strong>Applications</strong>
+<dl>
+  <dt>Open Abiword and write some text</dt>
+    <dd>Is the keyboard layout as expected?</dd>
+  <dt>Save the Abiword document</dt>
+    <dd>Is the document saved to hard disk?</dd>
+  <dt>If you are connected to the Internet, Open Firefox and load xubuntu.org</dt>
+    <dd>Confirm that the page loads</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

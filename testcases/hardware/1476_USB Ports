@@ -1,0 +1,49 @@
+<strong>Test-case name: Port Connectivity</strong>
+
+Case ID: hiu-001
+
+    <dt>Connect a USB mouse to the first USB port on the computer.</dt>
+    <dt>Verify that moving the USB mouse controls the pointer on-screen.</dt>
+    <dt>Disconnect the USB mouse from the computer.</dt>
+    <dt>Repeat for every USB port on the computer. </dt>
+
+Verification
+
+    <dd>Verify that the mouse controls the cursor correctly. </dd>
+
+
+<strong>Test Port Recognition</strong>
+
+Case ID: hiu-002
+
+    <dt>Connect a usb based music player to a usb port</dt>
+    <dt>Check that the suggestion box says Open Banshee Music Player.</dt>
+    <dt>Click on Ok.</dt>
+    <dt>Ensure the the music files are listed under the device name in Banshee.</dt>
+
+Verification
+
+    <dd>Verify that the music player is detected.</dd>
+    <dd>Verify that the files it contains are displayed within Banshee.</dd>
+
+
+<strong>Test Port Recognition 2</strong>
+
+Case ID: hiu-003
+
+<dl>
+    <dt>Connect a usb pen drive to the device.</dt>
+    <dt>A nautilus (file browser) window should open with the device name as a title.</dt>
+    <dt>Move files back and forth.</dt>
+    <dt>Unmount and remove the drive.</dt>
+    <dt>Insert the drive again and ensure that the files are on the drive and not corrupted.</dt>
+</dl>
+Verification
+
+    <dd>Verify that the the device icon is displayed automatically.</dd>
+    <dd>Verify that files can be copied back and forth.</dd>
+    <dd>Verify that the drive can be unmounted and the icon disappears. </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

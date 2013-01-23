@@ -1,0 +1,33 @@
+<strong>Test Picture</strong>
+
+Case ID: hiw-001
+
+Using Unity
+<dl>
+    <dt>Press the Super Windows Key or click on the Ubuntu logo on the Unity panel and search Software Sources.</dt>
+    <dt>Ensure that the universe and multiverse sources are enabled.</dt>
+    <dt>Click on Ubuntu Software Center on the Unity panel.</dt>
+    <dt>Search and install cheese.</dt>
+    <dt>Close Ubuntu Software center.</dt>
+    <dt>Press the Super Windows Key or click on the Ubuntu logo on the Unity panel and search Cheese.</dt>
+    <dt>Verify that the camera image is displayed properly.</dt>
+    <dt>Close "cheese". </dt>
+</dl>
+Using GNOME Classic
+<dl>
+    <dt>Open Software Sources.</dt>
+    <dt>Ensure that the universe and multiverse sources are enabled.</dt>
+    <dt>Open Ubuntu Software Center (Application→Ubuntu Software Center).</dt>
+    <dt>Search and install cheese.</dt>
+    <dt>Close Ubuntu Software center.</dt>
+    <dt>Open cheese (Applications -> Sound & Video -> Cheese).</dt>
+    <dt>Verify that the camera image is displayed properly.</dt>
+    <dt>Close "cheese". </dt>
+
+Verification
+
+    <dd>Verify that the webcam image is displayed correctly. </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

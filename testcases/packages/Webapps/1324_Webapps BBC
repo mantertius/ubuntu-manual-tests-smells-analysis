@@ -1,0 +1,54 @@
+This test checks whether BBC integration is working
+<ol>
+<li title="action">Open Firefox and navigate to http://www.bbc.co.uk/news/</li>
+<ol>
+<li title="expected_result">The site opens and displays a prompt asking if you want ubuntu to integrate with the website</li>
+</ol>
+<li title="action">Click on the button "Integrate"</li>
+<ol>
+<li title="expected_result">The BBC icon appears in the launcher, and news appears as notifications</li>
+</ol>
+<li title="action">Open a second tab and go to http://www.ubuntu.com/</li>
+<ol>
+<li title="expected_result">The ubuntu.com website is display in the new tab</li>
+</ol>
+<li title="action">Click on the BBC’s Launcher icon</li>
+<ol>
+<li title="expected_result">The BBC tab is raised and is now visible</li>
+</ol>
+<li title="action">Close the BBC tab.</li>
+<ol>
+<li title="expected_result">The icon must disappear from the Launcher.</li>
+</ol>
+<li title="action">Go to http://www.bbc.co.uk/news</li>
+<ol>
+<li title="expected_result">The BBC news site loads</li>
+</ol>
+<li title="action">Right click on the BBC’s Launcher icon and select "quit"</li>
+<ol>
+<li title="expected_result">The icon disappears from the Launcher</li>
+</ol>
+<li title="action">Go to http://www.bbc.co.uk/news</li>
+<ol>
+<li title="expected_result">The BBC news site loads</li>
+</ol>
+<li title="action">Right click on the BBC’s Launcher icon and select "Lock to the Launcher"</li>
+<ol>
+<li title="expected_result">The Launcher icon is locked to the launcher</li>
+</ol>
+<li title="action">Close Firefox</li>
+<ol>
+<li title="expected_result">Firefox is closed</li>
+</ol>
+<li title="action">Click on the BBC’s Launcher icon.</li>
+<ol>
+<li title="expected_result">The browser opens a tab with BBC News</li>
+</ol>
+<li title="action">Repeat the above steps using chromium</li>
+<ol>
+<li title="expected_result">All of the expected results are the same using chromium instead of firefox</li>
+</ol>
+</ol>
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

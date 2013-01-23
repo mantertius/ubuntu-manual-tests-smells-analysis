@@ -1,0 +1,33 @@
+<strong> Using Unity </strong>
+
+<dd>Ensure that the sound volume is turned to a reasonable level and that the sound is not muted by clicking on the Volume Control applet (the speaker icon in the notification area) and setting the volume. </dd>
+
+<dl>
+  <dt>Select home folder on the unity panel.</dt>
+  <dt>Open the Examples folder, Open the Ubuntu_Free_Culture_Showcase folder. </dt>
+  <dt>Select either of the .ogg files. A media player will open. </dt>
+  <dt>Verify that sound is played through the headphones without noises or distortions. </dt>
+  <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dt>
+  <dt>Right-click the Volume Control icon and check Mute. Verify that the audio is muted. </dt>
+  <dt>Right-click the Volume Control icon and uncheck Mute. Verify that the audio resumes. </dt>
+</dl>
+
+<dt> Using Gnome Classic</dt>
+
+<dd>Ensure that the sound volume is turned to a reasonable level and that the sound is not muted by clicking on the Volume Control applet (the speaker icon in the notification area) and setting the volume. </dd>
+
+  <dt>Open the Home Folder in the file manager (Places -> Home Folder). </dt>
+  <dt>Open Examples folder. </dt>
+  <dt>Select either of the .ogg files. Banshee media player will open. </dt>
+  <dt>Verify that sound is played through the headphones without noises or distortions. </dt>
+  <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes. </dt>
+  <dt>Right-click the Volume Control icon and check Mute. Verify that the audio is muted. </dt>
+  <dt>Right-click the Volume Control icon and uncheck Mute. Verify that the audio resumes. </dt>
+</dl>
+
+<strong> Verification </strong>
+<dd> Verify that sound is played through the headphones.  </dd>
+
+<strong>
+If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
