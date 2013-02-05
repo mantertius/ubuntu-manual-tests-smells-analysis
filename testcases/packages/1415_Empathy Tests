@@ -1,27 +1,23 @@
 Test-case name: empathy/emp-001
 This test will check that Empathy can be started
 <ol>
-<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<li title="action"> Look for Empathy and launch it</li>
 <ol>
 <li title="expected_result">Is Empathy launched?</li>
 </ol>
 </ol>
 Test-case name: empathy/emp-002
+<ol>
+<li title="expected_result">depends: empathy/emp-001</li>
+</ol>
 This test will check that Empathy can send messages via Google Talk
 <ol>
-<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<li title="action"> Look for Empathy and launch it</li>
 <ol>
 <li title="expected_result">Empathy should launch</li>
+<li title="expected_result">A new 'Online Accounts' window should be displayed</li>
 </ol>
-<li title="action"> Select 'Empathy - Accounts' from menu</li>
-<ol>
-<li title="expected_result">'Online accounts' dialog is displayed</li>
-</ol>
-<li title="action"> Select 'Add account...' at the left (if not already selected)</li>
-<ol>
-<li title="expected_result">'Show accounts that ...' step appears at right</li>
-</ol>
-<li title="action"> Select 'Google' in right-hand pane</li>
+<li title="action"> Select 'Google' in right-hand pane from the 'Online Accounts' window</li>
 <ol>
 <li title="expected_result">New step with Google sign-in box appears</li>
 </ol>
@@ -29,9 +25,9 @@ This test will check that Empathy can send messages via Google Talk
 <ol>
 <li title="expected_result"> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</li>
 </ol>
-<li title="action"> Click 'No thanks'</li>
+<li title="action"> Click 'Grant access'</li>
 <ol>
-<li title="expected_result">Wizard is closed</li>
+<li title="expected_result">The 'Online Accounts' window show the new Google account</li>
 </ol>
 <li title="action"> Check contact list</li>
 <ol>
@@ -43,33 +39,46 @@ This test will check that Empathy can send messages via Google Talk
 </ol>
 </ol>
 Test-case name: empathy/emp-003
+<ol>
+<li title="expected_result">depends: empathy/emp-001</li>
+<li title="expected_result">depends: empathy/emp-002</li>
+</ol>
 This test will check that Empathy can send messages via IRC
 <ol>
-<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<li title="action"> Look for Terminal and launch it</li>
 <ol>
-<li title="expected_result">empathy should launch</li>
+<li title="expected_result">Terminal is opened</li>
 </ol>
-<li title="action"> Select 'Edit - Accounts' from menu</li>
+<li title="action"> Type 'sudo apt-get install account-plugin-irc'</li>
+<li title="action"> Authenticate when Terminal ask for</li>
 <ol>
-<li title="expected_result">'Messaging and VOIP Accounts Assistant' wizard appears, 'Welcome to Empathy' step is displayed</li>
+<li title="expected_result">'account-plugin-irc' should be installed</li>
 </ol>
-<li title="action"> Select 'Yes, I'll enter my account details now'</li>
+<li title="action"> Look for Empathy and launch it</li>
 <ol>
-<li title="expected_result">'Enter your account details' step appears</li>
+<li title="expected_result">Empathy should launch</li>
 </ol>
-<li title="action"> Select 'IRC' in 'What kind of chat account do you have?' combobox</li>
+<li title="action"> Select 'Accounts' from the Empathy menu</li>
 <ol>
-<li title="expected_result">IRC is selected</li>
+<li title="expected_result">A new 'Online Accounts' window should be displayed</li>
 </ol>
-<li title="action"> Fill in nickname, click 'Log in'</li>
+<li title="action"> Press 'Add account...'</li>
 <ol>
-<li title="expected_result">IRC connection status changes to 'Connecting...'. After the process is complete, user status is 'Available'</li>
+<li title="expected_result">The 'Online Accounts' window display a list of services in the right-hand pane</li>
+</ol>
+<li title="action"> Scroll down the 'Online Accounts' window and select 'IRC'</li>
+<ol>
+<li title="expected_result">The 'Online Accounts' window request IRC credentials</li>
+</ol>
+<li title="action"> Fill in nickname, click 'Done'</li>
+<ol>
+<li title="expected_result">The 'Online Accounts' window show the new IRC account</li>
 </ol>
 <li title="action"> Click 'Close'</li>
 <ol>
-<li title="expected_result">Wizard closes</li>
+<li title="expected_result">The 'Online Accounts' window closes</li>
 </ol>
-<li title="action"> Select 'Room - Join' from 'Contact List' menu</li>
+<li title="action"> Select 'Rooms' - 'Join' from the Empathy menu</li>
 <ol>
 <li title="expected_result">'Join Room' window appears</li>
 </ol>
@@ -83,39 +92,43 @@ This test will check that Empathy can send messages via IRC
 </ol>
 </ol>
 Test-case name: empathy/emp-004
+<ol>
+<li title="expected_result">depends: empathy/emp-001</li>
+<li title="expected_result">depends: empathy/emp-002</li>
+</ol>
 This test will check that Empathy can send messages via Facebook
 <ol>
-<li title="action"> Open the dash and launch empathy by pressing the super key, and then entering ‘empathy’</li>
+<li title="action"> Look for Empathy and launch it</li>
 <ol>
-<li title="expected_result">empathy should launch</li>
+<li title="expected_result">Empathy should launch</li>
 </ol>
-<li title="action"> Select 'Edit - Accounts' from menu</li>
+<li title="action"> Select 'Accounts' from the Empathy menu</li>
 <ol>
-<li title="expected_result">'Messaging and VOIP Accounts Assistant' wizard appears, 'Welcome to Empathy' step is displayed</li>
+<li title="expected_result">A new 'Online Accounts' window should be displayed</li>
 </ol>
-<li title="action"> Select 'Yes, I'll enter my account details now'</li>
+<li title="action"> Press 'Add account...'</li>
 <ol>
-<li title="expected_result">'Enter your account details' step appears</li>
+<li title="expected_result">The 'Online Accounts' window display a list of services in the right-hand pane</li>
 </ol>
-<li title="action"> Select 'Facebook chat' in 'What kind of chat account do you have?' combobox</li>
+<li title="action"> Select 'Facebook'</li>
 <ol>
-<li title="expected_result">Facebook is selected</li>
+<li title="expected_result">New step with Facebook sign-in box appears</li>
 </ol>
-<li title="action"> Fill your facebook username, click 'Apply'</li>
+<li title="action"> Fill in your Facebook credentials, click 'Log In'</li>
 <ol>
-<li title="expected_result">IRC connection status changes to 'Connecting...'. After the process is complete, contact list shows new toolbar - 'Password required'</li>
+<li title="expected_result"> Facebook authorization page appears: 'Allow login with Facebook'</li>
 </ol>
-<li title="action"> Click on plus button in the toolbar in contact list</li>
+<li title="action"> Click 'Allow login with Faceboook'</li>
 <ol>
-<li title="expected_result">A password request window appears</li>
+<li title="expected_result"> Facebook ask for additional permissions</li>
 </ol>
-<li title="action"> Input a correct password, click OK</li>
+<li title="action"> Select 'Allow'</li>
 <ol>
-<li title="expected_result">Facebook connection status is changed to 'Available'</li>
+<li title="expected_result">The 'Online Accounts' window show the new Facebook account</li>
 </ol>
-<li title="action"> Check contacts in Contact List</li>
+<li title="action"> Check contact list</li>
 <ol>
-<li title="expected_result">Your online facebook contacts are displayed in contact list</li>
+<li title="expected_result">Contact list displays your online Facebook contacts</li>
 </ol>
 <li title="action"> Check that you can send and receive messages</li>
 <ol>
