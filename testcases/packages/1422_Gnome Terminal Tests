@@ -1,75 +1,54 @@
 Test-case name: gnometerminal/ter-001
-This test will check that basic terminal commands work in Gnome Terminal
-<ol>
-<li title="action"> Open Terminal using the dash, and typing 'terminal'</li>
-<li title="action"> Type in sudo apt-get update and press Enter</li>
-<ol>
-<li title="expected_result">You are asked for [sudo] password for USER: (where USER is your user name).</li>
-</ol>
-<li title="action"> Enter your password and wait for the command to complete.</li>
-<ol>
-<li title="expected_result">Command finishes and leaves you at an empty prompt</li>
-</ol>
-<li title="action"> Enter ls -al</li>
-<ol>
-<li title="expected_result">This should list all file in full in the folder you are currently in</li>
-</ol>
-<li title="action"> Press the up arrow on your keyboard</li>
-<ol>
-<li title="expected_result">Does the ls -al command you just entered appear?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that basic terminal commands work in Gnome Terminal
+	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> Type in sudo apt-get update and press Enter</dt>
+		<dd>You are asked for [sudo] password for USER: (where USER is your user name).</dd>
+	<dt> Enter your password and wait for the command to complete.</dt>
+		<dd>Command finishes and leaves you at an empty prompt</dd>
+	<dt> Enter ls -al</dt>
+		<dd>This should list all file in full in the folder you are currently in</dd>
+	<dt> Press the up arrow on your keyboard</dt>
+		<dd>Does the ls -al command you just entered appear?</dd>
+</dl>
 Test-case name: gnometerminal/ter-002
-This test will check that terminal colors and zoom level can be changed
-<ol>
-<li title="action"> Open Terminal using the dash, and typing 'terminal'</li>
-<li title="action"> Click on Edit, select Profiles, select Edit and select colours.</li>
-<li title="action"> Modify the colours to a different set</li>
-<ol>
-<li title="expected_result">Colors change in terminal</li>
-</ol>
-<li title="action"> Set a Background Image</li>
-<ol>
-<li title="expected_result">Terminal background changes</li>
-</ol>
-<li title="action"> Change the Zoom Level</li>
-<ol>
-<li title="expected_result">Did the zoom level change in terminal?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that terminal colors and zoom level can be changed
+	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> Click on Edit, select Profiles, select Edit and select colours.</dt>
+	<dt> Modify the colours to a different set</dt>
+		<dd>Colors change in terminal</dd>
+	<dt> Set a Background Image</dt>
+		<dd>Terminal background changes</dd>
+	<dt> Change the Zoom Level</dt>
+		<dd>Did the zoom level change in terminal?</dd>
+</dl>
 Test-case name: gnometerminal/ter-003
-This test will check that terminal coloring is active
-<ol>
-<li title="action"> Open Terminal using the dash, and typing 'terminal'</li>
-<li title="action"> Type in touch text1.txt</li>
-<li title="action"> type in ls</li>
-<li title="action">txt is in black</li>
-<li title="action"> Type in chmod 777 text1.txt</li>
-<li title="action"> Type in ls</li>
-<li title="action">txt should now green?</li>
-</ol>
+<dl>
+		This test will check that terminal coloring is active
+	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> Type in touch text1.txt</dt>
+	<dt> type in ls</dt>
+	<dt>txt is in black</dt>
+	<dt> Type in chmod 777 text1.txt</dt>
+	<dt> Type in ls</dt>
+	<dt>txt should now green?</dt>
+</dl>
 Test-case name: gnometerminal/ter-004
-This test will check that the terminal tab launches succesfully
-<ol>
-<li title="action"> Open Terminal using the dash, and typing 'terminal'</li>
-<li title="action"> Press Ctrl+Alt+T</li>
-<ol>
-<li title="expected_result">Is an instance of gnome-terminal with the title '<user>@<hostname>: ~' opened, with the current directory set to the users home directory?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that the terminal tab launches succesfully
+	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> Press Ctrl+Alt+T</dt>
+		<dd>Is an instance of gnome-terminal with the title '<user>@<hostname>: ~' opened, with the current directory set to the users home directory?</dd>
+</dl>
 Test-case name: gnometerminal/ter-005
-This test will check that the terminal can be given a new title
-<ol>
-<li title="action"> Open Terminal using the dash, and typing 'terminal'</li>
-<li title="action"> From the main menu select 'Terminal > Set Title...'</li>
-<ol>
-<li title="expected_result">The Set Title dialog appears</li>
-</ol>
-<li title="action"> Enter 'Test Title' and click OK</li>
-<ol>
-<li title="expected_result">Is the title of the window now 'Test Title'?</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+<dl>
+		This test will check that the terminal can be given a new title
+	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> From the main menu select 'Terminal > Set Title...'</dt>
+		<dd>The Set Title dialog appears</dd>
+	<dt> Enter 'Test Title' and click OK</dt>
+		<dd>Is the title of the window now 'Test Title'?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

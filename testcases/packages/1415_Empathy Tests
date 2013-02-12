@@ -1,141 +1,80 @@
 Test-case name: empathy/emp-001
-This test will check that Empathy can be started
-<ol>
-<li title="action"> Look for Empathy and launch it</li>
-<ol>
-<li title="expected_result">Is Empathy launched?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Empathy can be started
+	<dt> Look for Empathy and launch it</dt>
+		<dd>Is Empathy launched?</dd>
+</dl>
 Test-case name: empathy/emp-002
-<ol>
-<li title="expected_result">depends: empathy/emp-001</li>
-</ol>
-This test will check that Empathy can send messages via Google Talk
-<ol>
-<li title="action"> Look for Empathy and launch it</li>
-<ol>
-<li title="expected_result">Empathy should launch</li>
-<li title="expected_result">A new 'Online Accounts' window should be displayed</li>
-</ol>
-<li title="action"> Select 'Google' in right-hand pane from the 'Online Accounts' window</li>
-<ol>
-<li title="expected_result">New step with Google sign-in box appears</li>
-</ol>
-<li title="action"> Fill in your Google credentials, click 'Sign in'</li>
-<ol>
-<li title="expected_result"> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</li>
-</ol>
-<li title="action"> Click 'Grant access'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window show the new Google account</li>
-</ol>
-<li title="action"> Check contact list</li>
-<ol>
-<li title="expected_result">Contact list displays your online Google contacts</li>
-</ol>
-<li title="action"> Check that you can send and receive messages</li>
-<ol>
-<li title="expected_result">Are messages being delivered and displayed correctly?</li>
-</ol>
-</ol>
+<dl>
+	depends: empathy/emp-001
+		This test will check that Empathy can send messages via Google Talk
+	<dt> Look for Empathy and launch it</dt>
+		<dd>Empathy should launch</dd>
+		<dd>A new 'Online Accounts' window should be displayed</dd>
+	<dt> Select 'Google' in right-hand pane from the 'Online Accounts' window</dt>
+		<dd>New step with Google sign-in box appears</dd>
+	<dt> Fill in your Google credentials, click 'Sign in'</dt>
+		<dd> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</dd>
+	<dt> Click 'Grant access'</dt>
+		<dd>The 'Online Accounts' window show the new Google account</dd>
+	<dt> Check contact list</dt>
+		<dd>Contact list displays your online Google contacts</dd>
+	<dt> Check that you can send and receive messages</dt>
+		<dd>Are messages being delivered and displayed correctly?</dd>
+</dl>
 Test-case name: empathy/emp-003
-<ol>
-<li title="expected_result">depends: empathy/emp-001</li>
-<li title="expected_result">depends: empathy/emp-002</li>
-</ol>
-This test will check that Empathy can send messages via IRC
-<ol>
-<li title="action"> Please ensure you have 'universe' and 'multiverse' repositories enabled (off by default in live session)</li>
-<li title="action"> Look for Terminal and launch it</li>
-<ol>
-<li title="expected_result">Terminal is opened</li>
-</ol>
-<li title="action"> Type 'sudo apt-get install account-plugin-irc'</li>
-<li title="action"> Authenticate when Terminal ask for</li>
-<ol>
-<li title="expected_result">'account-plugin-irc' should be installed</li>
-</ol>
-<li title="action"> Look for Empathy and launch it</li>
-<ol>
-<li title="expected_result">Empathy should launch</li>
-</ol>
-<li title="action"> Select 'Accounts' from the Empathy menu</li>
-<ol>
-<li title="expected_result">A new 'Online Accounts' window should be displayed</li>
-</ol>
-<li title="action"> Press 'Add account...'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window display a list of services in the right-hand pane</li>
-</ol>
-<li title="action"> Scroll down the 'Online Accounts' window and select 'IRC'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window request IRC credentials</li>
-</ol>
-<li title="action"> Fill in nickname, click 'Done'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window show the new IRC account</li>
-</ol>
-<li title="action"> Click 'Close'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window closes</li>
-</ol>
-<li title="action"> Select 'Rooms' - 'Join' from the Empathy menu</li>
-<ol>
-<li title="expected_result">'Join Room' window appears</li>
-</ol>
-<li title="action"> Input '#ubuntu' in 'Room' textbox, click Join</li>
-<ol>
-<li title="expected_result">'#ubuntu' channel is open</li>
-</ol>
-<li title="action"> Check that you can send and receive messages</li>
-<ol>
-<li title="expected_result">Are messages are being delivered and displayed correctly?</li>
-</ol>
-</ol>
+<dl>
+	depends: empathy/emp-001
+	depends: empathy/emp-002
+		This test will check that Empathy can send messages via IRC
+	<dt> Please ensure you have 'universe' and 'multiverse' repositories enabled (off by default in live session)</dt>
+	<dt> Look for Terminal and launch it</dt>
+		<dd>Terminal is opened</dd>
+	<dt> Type 'sudo apt-get install account-plugin-irc'</dt>
+	<dt> Authenticate when Terminal ask for</dt>
+		<dd>'account-plugin-irc' should be installed</dd>
+	<dt> Look for Empathy and launch it</dt>
+		<dd>Empathy should launch</dd>
+	<dt> Select 'Accounts' from the Empathy menu</dt>
+		<dd>A new 'Online Accounts' window should be displayed</dd>
+	<dt> Press 'Add account...'</dt>
+		<dd>The 'Online Accounts' window display a list of services in the right-hand pane</dd>
+	<dt> Scroll down the 'Online Accounts' window and select 'IRC'</dt>
+		<dd>The 'Online Accounts' window request IRC credentials</dd>
+	<dt> Fill in nickname, click 'Done'</dt>
+		<dd>The 'Online Accounts' window show the new IRC account</dd>
+	<dt> Click 'Close'</dt>
+		<dd>The 'Online Accounts' window closes</dd>
+	<dt> Select 'Rooms' - 'Join' from the Empathy menu</dt>
+		<dd>'Join Room' window appears</dd>
+	<dt> Input '#ubuntu' in 'Room' textbox, click Join</dt>
+		<dd>'#ubuntu' channel is open</dd>
+	<dt> Check that you can send and receive messages</dt>
+		<dd>Are messages are being delivered and displayed correctly?</dd>
+</dl>
 Test-case name: empathy/emp-004
-<ol>
-<li title="expected_result">depends: empathy/emp-001</li>
-<li title="expected_result">depends: empathy/emp-002</li>
-</ol>
-This test will check that Empathy can send messages via Facebook
-<ol>
-<li title="action"> Look for Empathy and launch it</li>
-<ol>
-<li title="expected_result">Empathy should launch</li>
-</ol>
-<li title="action"> Select 'Accounts' from the Empathy menu</li>
-<ol>
-<li title="expected_result">A new 'Online Accounts' window should be displayed</li>
-</ol>
-<li title="action"> Press 'Add account...'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window display a list of services in the right-hand pane</li>
-</ol>
-<li title="action"> Select 'Facebook'</li>
-<ol>
-<li title="expected_result">New step with Facebook sign-in box appears</li>
-</ol>
-<li title="action"> Fill in your Facebook credentials, click 'Log In'</li>
-<ol>
-<li title="expected_result"> Facebook authorization page appears: 'Allow login with Facebook'</li>
-</ol>
-<li title="action"> Click 'Allow login with Faceboook'</li>
-<ol>
-<li title="expected_result"> Facebook ask for additional permissions</li>
-</ol>
-<li title="action"> Select 'Allow'</li>
-<ol>
-<li title="expected_result">The 'Online Accounts' window show the new Facebook account</li>
-</ol>
-<li title="action"> Check contact list</li>
-<ol>
-<li title="expected_result">Contact list displays your online Facebook contacts</li>
-</ol>
-<li title="action"> Check that you can send and receive messages</li>
-<ol>
-<li title="expected_result">Are messages being delivered and displayed correctly?</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+<dl>
+	depends: empathy/emp-001
+	depends: empathy/emp-002
+		This test will check that Empathy can send messages via Facebook
+	<dt> Look for Empathy and launch it</dt>
+		<dd>Empathy should launch</dd>
+	<dt> Select 'Accounts' from the Empathy menu</dt>
+		<dd>A new 'Online Accounts' window should be displayed</dd>
+	<dt> Press 'Add account...'</dt>
+		<dd>The 'Online Accounts' window display a list of services in the right-hand pane</dd>
+	<dt> Select 'Facebook'</dt>
+		<dd>New step with Facebook sign-in box appears</dd>
+	<dt> Fill in your Facebook credentials, click 'Log In'</dt>
+		<dd> Facebook authorization page appears: 'Allow login with Facebook'</dd>
+	<dt> Click 'Allow login with Faceboook'</dt>
+		<dd> Facebook ask for additional permissions</dd>
+	<dt> Select 'Allow'</dt>
+		<dd>The 'Online Accounts' window show the new Facebook account</dd>
+	<dt> Check contact list</dt>
+		<dd>Contact list displays your online Facebook contacts</dd>
+	<dt> Check that you can send and receive messages</dt>
+		<dd>Are messages being delivered and displayed correctly?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

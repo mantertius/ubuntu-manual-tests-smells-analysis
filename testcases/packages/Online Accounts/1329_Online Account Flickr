@@ -1,84 +1,45 @@
 These tests check that Flickr authorization works.
-<ol>
-<li title="action">Open System Settings</li>
-<ol>
-<li title="expected_result">Open System Setting dialog will appear</li>
-</ol>
-<li title="action">Open Online Accounts</li>
-<ol>
-<li title="expected_result">Online Accounts dialog will appear</li>
-</ol>
-<li title="action">Click on "Add account...">Flickr</li>
-<ol>
-<li title="expected_result">Credentials dialog will appear</li>
-</ol>
-<li title="action">Introduce the credentials (username and password)</li>
-<ol>
-<li title="expected_result">Permissions dialog will appear</li>
-</ol>
-<li title="action">Accept permissions</li>
-<ol>
-<li title="expected_result">Keyring dialog will appear</li>
-</ol>
-<li title="action">When asked, introduce the password of your ubuntu user to access the keyring</li>
-<ol>
-<li title="expected_result">Flickr authorized account must be listed in Online Account's left column</li>
-</ol>
-<li title="action">Open System Settings</li>
-<ol>
-<li title="expected_result">Open System Setting dialog will appear</li>
-</ol>
-<li title="action">Open Online Accounts</li>
-<ol>
-<li title="expected_result">Online Accounts dialog will appear</li>
-</ol>
-<li title="action">Click on authorized Flickr account (left column)</li>
-<ol>
-<li title="expected_result">Account is active (“ON”).  Gwibber must be listed as integrated application.  Dash must be listed as integrated application.  Shotwell must be listed as integrated application.</li>
-</ol>
-<li title="action">Open System Settings</li>
-<ol>
-<li title="expected_result">Open System Setting dialog will appear</li>
-</ol>
-<li title="action">Open Online Accounts</li>
-<ol>
-<li title="expected_result">Online Accounts dialog will appear</li>
-</ol>
-<li title="action">Remove "Flickr" account</li>
-<li title="action">Open Firefox</li>
-<ol>
-<li title="expected_result">Firefox will open properly</li>
-</ol>
-<li title="action">Go to http://www.flickr.com/</li>
-<ol>
-<li title="expected_result">Credentials dialog will appear</li>
-</ol>
-<li title="action">Introduce your credentials</li>
-<ol>
-<li title="expected_result">Online Accounts displays a new account for Flickr</li>
-</ol>
-<li title="action">Open System Settings</li>
-<ol>
-<li title="expected_result">Open System Setting dialog will appear</li>
-</ol>
-<li title="action">Open Online Accounts</li>
-<ol>
-<li title="expected_result">Online Accounts dialog will appear</li>
-</ol>
-<li title="action">Remove "Flickr" account</li>
-<li title="action">Open Chromium</li>
-<ol>
-<li title="expected_result">Chromium will open properly</li>
-</ol>
-<li title="action">Go to http://www.flickr.com/</li>
-<ol>
-<li title="expected_result">Credentials dialog will appear</li>
-</ol>
-<li title="action">Introduce your credentials</li>
-<ol>
-<li title="expected_result">Online Accounts displays a new account for Flickr</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+<dl>
+	<dt>Open System Settings</dt>
+		<dd>Open System Setting dialog will appear</dd>
+	<dt>Open Online Accounts</dt>
+		<dd>Online Accounts dialog will appear</dd>
+	<dt>Click on "Add account...">Flickr</dt>
+		<dd>Credentials dialog will appear</dd>
+	<dt>Introduce the credentials (username and password)</dt>
+		<dd>Permissions dialog will appear</dd>
+	<dt>Accept permissions</dt>
+		<dd>Keyring dialog will appear</dd>
+	<dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+		<dd>Flickr authorized account must be listed in Online Account's left column</dd>
+	<dt>Open System Settings</dt>
+		<dd>Open System Setting dialog will appear</dd>
+	<dt>Open Online Accounts</dt>
+		<dd>Online Accounts dialog will appear</dd>
+	<dt>Click on authorized Flickr account (left column)</dt>
+		<dd>Account is active (“ON”).  Gwibber must be listed as integrated application.  Dash must be listed as integrated application.  Shotwell must be listed as integrated application.</dd>
+	<dt>Open System Settings</dt>
+		<dd>Open System Setting dialog will appear</dd>
+	<dt>Open Online Accounts</dt>
+		<dd>Online Accounts dialog will appear</dd>
+	<dt>Remove "Flickr" account</dt>
+	<dt>Open Firefox</dt>
+		<dd>Firefox will open properly</dd>
+	<dt>Go to http://www.flickr.com/</dt>
+		<dd>Credentials dialog will appear</dd>
+	<dt>Introduce your credentials</dt>
+		<dd>Online Accounts displays a new account for Flickr</dd>
+	<dt>Open System Settings</dt>
+		<dd>Open System Setting dialog will appear</dd>
+	<dt>Open Online Accounts</dt>
+		<dd>Online Accounts dialog will appear</dd>
+	<dt>Remove "Flickr" account</dt>
+	<dt>Open Chromium</dt>
+		<dd>Chromium will open properly</dd>
+	<dt>Go to http://www.flickr.com/</dt>
+		<dd>Credentials dialog will appear</dd>
+	<dt>Introduce your credentials</dt>
+		<dd>Online Accounts displays a new account for Flickr</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -1,311 +1,202 @@
 Test-case name: nautilus/TC-NFM-001
-This test will check that user can create files in Nautilus
-<ol>
-<li title="action"> Look for Terminal and launch it</li>
-<ol>
-<li title="expected_result">Terminal is opened</li>
-</ol>
-<li title="action"> Type touch "$HOME/Templates/Empty Document.txt"</li>
-<ol>
-<li title="expected_result">Terminal returns the prompt</li>
-</ol>
-<li title="action"> Look for Nautilus and launch it</li>
-<ol>
-<li title="expected_result">Nautilus is opened, Home is selected</li>
-</ol>
-<li title="action"> In Home folder right click on a blank section and select New Document, Empty Document. Name the resulting file 'moveme.txt'</li>
-<ol>
-<li title="expected_result">Empty document moveme.txt is created</li>
-</ol>
-<ol>
-<li title="expected_result">Was the empty document moveme.txt created?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that user can create files in Nautilus
+	<dt> Look for Terminal and launch it</dt>
+		<dd>Terminal is opened</dd>
+	<dt> Type touch "$HOME/Templates/Empty Document.txt"</dt>
+		<dd>Terminal returns the prompt</dd>
+	<dt> Look for Nautilus and launch it</dt>
+		<dd>Nautilus is opened, Home is selected</dd>
+	<dt> In Home folder right click on a blank section and select New Document, Empty Document. Name the resulting file 'moveme.txt'</dt>
+		<dd>Empty document moveme.txt is created</dd>
+		<dd>Was the empty document moveme.txt created?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-002
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-001</li>
-</ol>
-This test will check that user can create folders in Nautilus
-<ol>
-<li title="action"> In Home Folder right click on a blank section and select 'Create New Folder'.</li>
-<ol>
-<li title="expected_result">A folder named 'Untitled Folder' appears in the directory</li>
-</ol>
-<li title="action"> Rename the folder to 'test'</li>
-<ol>
-<li title="expected_result">Was the folders name changed to 'test'?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-001
+		This test will check that user can create folders in Nautilus
+	<dt> In Home Folder right click on a blank section and select 'Create New Folder'.</dt>
+		<dd>A folder named 'Untitled Folder' appears in the directory</dd>
+	<dt> Rename the folder to 'test'</dt>
+		<dd>Was the folders name changed to 'test'?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-003
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-002</li>
-</ol>
-This test will check that user can move files to folders.
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Drag moveme.txt and drop into the folder test.</li>
-<ol>
-<li title="expected_result">Is the file moveme.txt now located in 'test' folder?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-002
+		This test will check that user can move files to folders.
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Drag moveme.txt and drop into the folder test.</dt>
+		<dd>Is the file moveme.txt now located in 'test' folder?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-004
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-003</li>
-</ol>
-This test will check that user can delete files and folders to Trash
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Right click on 'test' folder and select Move to Trash</li>
-<ol>
-<li title="expected_result">test folder is removed. Trash folder icon is changed to Not empty</li>
-</ol>
-<li title="action"> Click the Trash Icon in the sidebar</li>
-<ol>
-<li title="expected_result">Does the Trash show the 'test' folder inside of it?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-003
+		This test will check that user can delete files and folders to Trash
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Right click on 'test' folder and select Move to Trash</dt>
+		<dd>test folder is removed. Trash folder icon is changed to Not empty</dd>
+	<dt> Click the Trash Icon in the sidebar</dt>
+		<dd>Does the Trash show the 'test' folder inside of it?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-005
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-004</li>
-</ol>
-This test will check that user can recover delete files and folders from Trash
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Click the Trash Icon in the sidebar</li>
-<ol>
-<li title="expected_result">test folder is showed.</li>
-</ol>
-<li title="action"> Select 'test' folder and click 'Restore' in the top of the window</li>
-<li title="action"> Click the Home Icon in the sidebar</li>
-<ol>
-<li title="expected_result">The 'test' folder was recovered successfully?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-004
+		This test will check that user can recover delete files and folders from Trash
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Click the Trash Icon in the sidebar</dt>
+		<dd>test folder is showed.</dd>
+	<dt> Select 'test' folder and click 'Restore' in the top of the window</dt>
+	<dt> Click the Home Icon in the sidebar</dt>
+		<dd>The 'test' folder was recovered successfully?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-006
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-005</li>
-</ol>
-This test will check that the search functionality works
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Click the Search Icon in the top</li>
-<li title="action"> Input 'test'</li>
-<ol>
-<li title="expected_result">the 'test' folder was shown?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-005
+		This test will check that the search functionality works
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Click the Search Icon in the top</dt>
+	<dt> Input 'test'</dt>
+		<dd>the 'test' folder was shown?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-007
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-005</li>
-</ol>
-This test will check the Recent functionality works
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Double click in the 'test' folder</li>
-<li title="action"> Double click in the 'moveme.txt' file</li>
-<ol>
-<li title="expected_result">A black file should be shown in the Editor</li>
-</ol>
-<li title="action"> Close the Editor</li>
-<ol>
-<li title="expected_result">'moveme.txt' should be selected</li>
-</ol>
-<li title="action"> Click the Recent Icon in the sidebar</li>
-<ol>
-<li title="expected_result">The 'moveme.txt' file is shown?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-005
+		This test will check the Recent functionality works
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Double click in the 'test' folder</dt>
+	<dt> Double click in the 'moveme.txt' file</dt>
+		<dd>A black file should be shown in the Editor</dd>
+	<dt> Close the Editor</dt>
+		<dd>'moveme.txt' should be selected</dd>
+	<dt> Click the Recent Icon in the sidebar</dt>
+		<dd>The 'moveme.txt' file is shown?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-008
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-007</li>
-</ol>
-This test will check the clean Recent functionality works
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Click the Recent Icon in the sidebar</li>
-<ol>
-<li title="expected_result">The 'moveme.txt' file is shown</li>
-</ol>
-<li title="action"> Select the file</li>
-<li title="action"> Right click and select 'Delete'</li>
-<ol>
-<li title="expected_result">Recent place should be empty</li>
-</ol>
-<li title="action"> Click the Home Icon in the sidebar</li>
-<li title="action"> Click the Recent Icon in the sidebar</li>
-<ol>
-<li title="expected_result">Is the 'moveme.txt' file gone?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-007
+		This test will check the clean Recent functionality works
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Click the Recent Icon in the sidebar</dt>
+		<dd>The 'moveme.txt' file is shown</dd>
+	<dt> Select the file</dt>
+	<dt> Right click and select 'Delete'</dt>
+		<dd>Recent place should be empty</dd>
+	<dt> Click the Home Icon in the sidebar</dt>
+	<dt> Click the Recent Icon in the sidebar</dt>
+		<dd>Is the 'moveme.txt' file gone?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-009
-This test will check that the view modes works
-<ol>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Click the List Icon in the top</li>
-<ol>
-<li title="expected_result">Items should be shown in a list</li>
-</ol>
-<li title="action"> Click the Grid Icon in the top</li>
-<ol>
-<li title="expected_result">Items are shown in a grid view?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that the view modes works
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Click the List Icon in the top</dt>
+		<dd>Items should be shown in a list</dd>
+	<dt> Click the Grid Icon in the top</dt>
+		<dd>Items are shown in a grid view?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-010
-This test will check that user can connect to Samba shares and copy files from the share
-<ol>
-<li title="action"> Please ensure you have access to a samba share containing a file</li>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> On a local network, press 'Browse Network' in Nautilus and later 'Windows Network'</li>
-<ol>
-<li title="expected_result">Default Share Group should be shown</li>
-</ol>
-<li title="action"> Press the Default Share Group and later 'DESKTOP'</li>
-<ol>
-<li title="expected_result">Shared directories are shown</li>
-</ol>
-<li title="action"> Select a document from the share, righ click on it and choose 'Copy', left click on the 'Documents' section, right click in a empty space and select 'Paste'</li>
-<ol>
-<li title="expected_result">File is copied from shared folder to user computer</li>
-</ol>
-<li title="action"> Open the copied document</li>
-<ol>
-<li title="expected_result">Did the copied file is open correctly, with it's contents the same as in the file on the share?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that user can connect to Samba shares and copy files from the share
+	<dt> Please ensure you have access to a samba share containing a file</dt>
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> On a local network, press 'Browse Network' in Nautilus and later 'Windows Network'</dt>
+		<dd>Default Share Group should be shown</dd>
+	<dt> Press the Default Share Group and later 'DESKTOP'</dt>
+		<dd>Shared directories are shown</dd>
+	<dt> Select a document from the share, righ click on it and choose 'Copy', left click on the 'Documents' section, right click in a empty space and select 'Paste'</dt>
+		<dd>File is copied from shared folder to user computer</dd>
+	<dt> Open the copied document</dt>
+		<dd>Did the copied file is open correctly, with it's contents the same as in the file on the share?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-011
-This test will check that user can connect to the Samba share and copy files to the share
-<ol>
-<li title="action"> Please ensure you have access to a samba writable system</li>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Click the Home Icon in the sidebar and double click on 'Examples' and later on 'Ubuntu_Free_Culture_Showcase'</li>
-<li title="action"> Select one file, right click on it and choose 'Copy'
-<li title="action"> On a local network, press 'Browse Network' in Nautilus and later 'Windows Network'</li>
-<ol>
-<li title="expected_result">Default Share Group should be shown</li>
-</ol>
-<li title="action"> Press the Default Share Group and later 'DESKTOP'</li>
-<ol>
-<li title="expected_result">Shared directories are shown</li>
-</ol>
-<li title="action"> Double click on a Shared directory, right click on a blank section an select 'Paste'</li>
-<ol>
-<li title="expected_result">File is copied from the user computer to the shared folder</li>
-</ol>
-<li title="action"> Open the copied document on the share</li>
-<ol>
-<li title="expected_result">Did the copied file is open correctly, with it's contents the same as in the file on the share?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that user can connect to the Samba share and copy files to the share
+	<dt> Please ensure you have access to a samba writable system</dt>
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Click the Home Icon in the sidebar and double click on 'Examples' and later on 'Ubuntu_Free_Culture_Showcase'</dt>
+	<dt> Select one file, right click on it and choose 'Copy'
+	<dt> On a local network, press 'Browse Network' in Nautilus and later 'Windows Network'</dt>
+		<dd>Default Share Group should be shown</dd>
+	<dt> Press the Default Share Group and later 'DESKTOP'</dt>
+		<dd>Shared directories are shown</dd>
+	<dt> Double click on a Shared directory, right click on a blank section an select 'Paste'</dt>
+		<dd>File is copied from the user computer to the shared folder</dd>
+	<dt> Open the copied document on the share</dt>
+		<dd>Did the copied file is open correctly, with it's contents the same as in the file on the share?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-012
-<ol>
-<li title="expected_result">depends: nautilus/TC-NFM-005</li>
-</ol>
-This test will check that user can share documents to another system using Samba
-<ol>
-<li title="action"> Please ensure you have access to an Internet connection</li>
-<li title="action"> Please ensure you have access to an extern samba system</li>
-<li title="action"> Please ensure the Nautilus window is running and the Nautilus window is focused</li>
-<li title="action"> Right click on the 'test' folder and select 'Sharing Options'</li>
-<ol>
-<li title="expected_result">A new window called 'Folder Sharing' is shown</li>
-</ol>
-<li title="action"> Enable the 'Share this folder' option</li>
-<ol>
-<li title="expected_result">A warning message is shown asking for installing the Sharing service</li>
-</ol>
-<li title="action"> Select install service</li>
-<ol>
-<li title="expected_result">A new window asking for installing additional software is shown</li>
-</ol>
-<li title="action"> Select 'Install'</li>
-<ol>
-<li title="expected_result">A window asking for authentication is shown</li>
-</ol>
-<li title="action"> Input your password</li>
-<li title="action"> Select 'Authenticate'</li>
-<ol>
-<li title="expected_result">A new window will be shown 'Applying changes'</li>
-<li title="expected_result">The new window will close itself and the previous window will take the focus</li>
-</ol>
-<li title="action"> Enable the 'Guest access' option</li>
-<li title="action"> Select 'Create Share'</li>
-<li title="action"> From an extern Samba | Windows system go to shares</li>
-<ol>
-<li title="expected_result">'test' folder is visible in the local network</li>
-</ol>
-<li title="action"> Double click on 'test' folder, right click on 'moveme.txt' file and select 'copy'</li>
-<li title="action"> Go to the local drive of the extern system and paste 'moveme.txt' there</li>
-<ol>
-<li title="expected_result">is 'moveme.txt' pasted?</li>
-<li title="expected_result">have the same content?</li>
-</ol>
-</ol>
+<dl>
+	depends: nautilus/TC-NFM-005
+		This test will check that user can share documents to another system using Samba
+	<dt> Please ensure you have access to an Internet connection</dt>
+	<dt> Please ensure you have access to an extern samba system</dt>
+	<dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
+	<dt> Right click on the 'test' folder and select 'Sharing Options'</dt>
+		<dd>A new window called 'Folder Sharing' is shown</dd>
+	<dt> Enable the 'Share this folder' option</dt>
+		<dd>A warning message is shown asking for installing the Sharing service</dd>
+	<dt> Select install service</dt>
+		<dd>A new window asking for installing additional software is shown</dd>
+	<dt> Select 'Install'</dt>
+		<dd>A window asking for authentication is shown</dd>
+	<dt> Input your password</dt>
+	<dt> Select 'Authenticate'</dt>
+		<dd>A new window will be shown 'Applying changes'</dd>
+		<dd>The new window will close itself and the previous window will take the focus</dd>
+	<dt> Enable the 'Guest access' option</dt>
+	<dt> Select 'Create Share'</dt>
+	<dt> From an extern Samba | Windows system go to shares</dt>
+		<dd>'test' folder is visible in the local network</dd>
+	<dt> Double click on 'test' folder, right click on 'moveme.txt' file and select 'copy'</dt>
+	<dt> Go to the local drive of the extern system and paste 'moveme.txt' there</dt>
+		<dd>is 'moveme.txt' pasted?</dd>
+		<dd>have the same content?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-013
-This test will check that a mounted USB drive appears in Nautilus
-<ol>
-<li title="action"> Please ensure you have a USB drive available and the system under test has available USB ports.</li>
-<li title="action"> Insert the USB drive into the USB port of the system under test</li>
-<ol>
-<li title="expected_result">A new window of Nautilus should be open with the contents of the USB</li>
-<li title="expected_result">The 'Devices' section should show the USB drive that was just inserted.</li>
-</ol>
-<li title="action"> Click on 'Documents' and then right back to the USB drive entry in 'Devices' section</li>
-<ol>
-<li title="expected_result">Are the USB drive contents displayed?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that a mounted USB drive appears in Nautilus
+	<dt> Please ensure you have a USB drive available and the system under test has available USB ports.</dt>
+	<dt> Insert the USB drive into the USB port of the system under test</dt>
+		<dd>A new window of Nautilus should be open with the contents of the USB</dd>
+		<dd>The 'Devices' section should show the USB drive that was just inserted.</dd>
+	<dt> Click on 'Documents' and then right back to the USB drive entry in 'Devices' section</dt>
+		<dd>Are the USB drive contents displayed?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-014
-This test will check that 'Open' dialog appears when plugging in a music device
-<ol>
-<li title="action"> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
-<li title="action"> Insert the player into the USB port of the system under tests and wait for new dialog to appear</li>
-<ol>
-<li title="expected_result">'Open' dialog appears with 'Rhythmbox Music Player' application selected</li>
-</ol>
-<li title="action"> Click OK button in the dialog box</li>
-<ol>
-<li title="expected_result">Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that 'Open' dialog appears when plugging in a music device
+	<dt> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
+	<dt> Insert the player into the USB port of the system under tests and wait for new dialog to appear</dt>
+		<dd>'Open' dialog appears with 'Rhythmbox Music Player' application selected</dd>
+	<dt> Click OK button in the dialog box</dt>
+		<dd>Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-015
-This test will check that 'Open' dialog appears when inserting a DVD
-<ol>
-<li title="action"> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
-<li title="action"> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</li>
-<ol>
-<li title="expected_result">'Open' dialog appears with 'Movie Player (Totem)' application selected</li>
-</ol>
-<li title="action"> Click OK button in the dialog box</li>
-<ol>
-<li title="expected_result">Did DVD playback start in Totem?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that 'Open' dialog appears when inserting a DVD
+	<dt> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
+	<dt> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</dt>
+		<dd>'Open' dialog appears with 'Movie Player (Totem)' application selected</dd>
+	<dt> Click OK button in the dialog box</dt>
+		<dd>Did DVD playback start in Totem?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-016
-This test will check that 'Open' dialog appears on inserting an Audio CD
-<ol>
-<li title="action"> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
-<li title="action"> Insert the Audio CD into the CD drive of the system under tests and wait for new dialog to appear</li>
-<ol>
-<li title="expected_result">'Open' dialog appears with 'Rhythmbox Music Player' application selected</li>
-</ol>
-<li title="action"> Click OK button in the dialog box</li>
-<ol>
-<li title="expected_result">Did Rhythmbox open with the Audio CD displayed in left panel tree?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that 'Open' dialog appears on inserting an Audio CD
+	<dt> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
+	<dt> Insert the Audio CD into the CD drive of the system under tests and wait for new dialog to appear</dt>
+		<dd>'Open' dialog appears with 'Rhythmbox Music Player' application selected</dd>
+	<dt> Click OK button in the dialog box</dt>
+		<dd>Did Rhythmbox open with the Audio CD displayed in left panel tree?</dd>
+</dl>
 Test-case name: nautilus/TC-NFM-017
-This test will check that 'Open' dialog appears on inserting a camera
-<ol>
-<li title="action"> Please ensure you have a camera available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</li>
-<li title="action"> Plug in the camera to the system under test and wait for new dialog to appear</li>
-<ol>
-<li title="expected_result">'Open' dialog appears with 'Shotwell' application selected</li>
-</ol>
-<li title="action"> Click OK button in the dialog box</li>
-<ol>
-<li title="expected_result">Did Shotwell open with the camera displayed in left panel tree?</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+<dl>
+		This test will check that 'Open' dialog appears on inserting a camera
+	<dt> Please ensure you have a camera available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
+	<dt> Plug in the camera to the system under test and wait for new dialog to appear</dt>
+		<dd>'Open' dialog appears with 'Shotwell' application selected</dd>
+	<dt> Click OK button in the dialog box</dt>
+		<dd>Did Shotwell open with the camera displayed in left panel tree?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

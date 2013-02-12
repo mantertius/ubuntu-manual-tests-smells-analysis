@@ -1,58 +1,31 @@
 Test-case name: totem/tot-001
-This test will check that Totem can playback youtube video
-<ol>
-<li title="action"> Open the dash and launch movie player by pressing the super key, and then entering ‘totem’</li>
-<ol>
-<li title="expected_result">movie player should launch</li>
-</ol>
-<li title="action"> Press the F9 button</li>
-<ol>
-<li title="expected_result">the sidebar should open</li>
-</ol>
-<li title="action"> Select 'Youtube' from the dropdown list enter 'ubuntu' as the search term and press find</li>
-<ol>
-<li title="expected_result">videos should populate below in the search results</li>
-</ol>
-<li title="action"> Double-click the first video</li>
-<ol>
-<li title="expected_result">Video should begin playing in the window</li>
-</ol>
-<li title="action"> Press the pause button</li>
-<ol>
-<li title="expected_result">Video should pause and the button becomes a play button</li>
-</ol>
-<li title="action"> Press the play button</li>
-<ol>
-<li title="expected_result">Video should begin playing</li>
-</ol>
-<li title="action"> Press the play button</li>
-<ol>
-<li title="expected_result">Video should begin playing</li>
-</ol>
-<li title="action"> Press the full screen button</li>
-<ol>
-<li title="expected_result">Video should go to fullscreen and continue playing</li>
-</ol>
-<li title="action"> Press the full screen button</li>
-<ol>
-<li title="expected_result">Video should go to fullscreen and continue playing</li>
-</ol>
-<li title="action"> Hover your mouse along the button of the screen</li>
-<ol>
-<li title="expected_result">The controls menu should display</li>
-</ol>
-<li title="action"> Move your mouse to the middle of the screen</li>
-<ol>
-<li title="expected_result">The controls menu should disappear</li>
-</ol>
-<li title="action"> Press Escape</li>
-<ol>
-<li title="expected_result">The video should return to normal size</li>
-</ol>
-<ol>
-<li title="expected_result">Did the video respond properly to the commands given?</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+<dl>
+		This test will check that Totem can playback youtube video
+	<dt> Open the dash and launch movie player by pressing the super key, and then entering ‘totem’</dt>
+		<dd>movie player should launch</dd>
+	<dt> Press the F9 button</dt>
+		<dd>the sidebar should open</dd>
+	<dt> Select 'Youtube' from the dropdown list enter 'ubuntu' as the search term and press find</dt>
+		<dd>videos should populate below in the search results</dd>
+	<dt> Double-click the first video</dt>
+		<dd>Video should begin playing in the window</dd>
+	<dt> Press the pause button</dt>
+		<dd>Video should pause and the button becomes a play button</dd>
+	<dt> Press the play button</dt>
+		<dd>Video should begin playing</dd>
+	<dt> Press the play button</dt>
+		<dd>Video should begin playing</dd>
+	<dt> Press the full screen button</dt>
+		<dd>Video should go to fullscreen and continue playing</dd>
+	<dt> Press the full screen button</dt>
+		<dd>Video should go to fullscreen and continue playing</dd>
+	<dt> Hover your mouse along the button of the screen</dt>
+		<dd>The controls menu should display</dd>
+	<dt> Move your mouse to the middle of the screen</dt>
+		<dd>The controls menu should disappear</dd>
+	<dt> Press Escape</dt>
+		<dd>The video should return to normal size</dd>
+		<dd>Did the video respond properly to the commands given?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

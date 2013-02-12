@@ -1,30 +1,21 @@
 Test-case softwarecenter/install-app
-<ol>
-<li title="action">Open the Software Center</li>
-<li title="action">Search and select any graphical application that has not been yet installed</li>
-<li title="action">Press Install to install the application</li>
-<ol>
-<li title="expected_result">A standard authentication dialog should pop out</li>
-<li title="expected_result">The icon for the installing application should appear on the Launcher</li>
-<li title="expected_result">After hovering the mouse pointer over the installing application icon on the Launcher a "Waiting to install" tooltip should appear</li>
-</ol>
-<li title="action">Proceed with the installation process</li>
-<ol>
-<li title="expected_result">After installing the application, its icon should be visible on the Launcher</li>
-</ol>
-</ol>
+<dl>
+	<dt>Open the Software Center</dt>
+	<dt>Search and select any graphical application that has not been yet installed</dt>
+	<dt>Press Install to install the application</dt>
+		<dd>A standard authentication dialog should pop out</dd>
+		<dd>The icon for the installing application should appear on the Launcher</dd>
+		<dd>After hovering the mouse pointer over the installing application icon on the Launcher a "Waiting to install" tooltip should appear</dd>
+	<dt>Proceed with the installation process</dt>
+		<dd>After installing the application, its icon should be visible on the Launcher</dd>
+</dl>
 Test-case softwarecenter/uninstall-app
-<ol>
-<li title="action">Open the Software Center</li>
-<li title="action">Search and install any graphical application</li>
-<ol>
-<li title="expected_result">Its icon should be added to the Launcher</li>
-</ol>
-<li title="action">Using Software Center uninstall the newly installed application</li>
-<ol>
-<li title="expected_result">The uninstalled application icon should disappear from the Launcher</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+<dl>
+	<dt>Open the Software Center</dt>
+	<dt>Search and install any graphical application</dt>
+		<dd>Its icon should be added to the Launcher</dd>
+	<dt>Using Software Center uninstall the newly installed application</dt>
+		<dd>The uninstalled application icon should disappear from the Launcher</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

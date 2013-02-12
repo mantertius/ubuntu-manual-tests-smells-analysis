@@ -1,135 +1,86 @@
 Test-case name: orca/starting_orca
-This test will check that Orca can play a welcome message
-<ol>
-<li title="action"> Open Dash type 'system settings' and launch the system settings tool</li>
-<ol>
-<li title="expected_result">system settings opens and contains the Universal Access section</li>
-</ol>
-<li title="action"> Select the Universal Access section</li>
-<ol>
-<li title="expected_result">a dialog with accessiblity settings opens, you are on the 'seeing' tab.</li>
-</ol>
-<li title="action"> Select the Screen Reader option</li>
-<ol>
-<li title="expected_result">Did a voice say "welcome to orca"?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can play a welcome message
+	<dt> Open Dash type 'system settings' and launch the system settings tool</dt>
+		<dd>system settings opens and contains the Universal Access section</dd>
+	<dt> Select the Universal Access section</dt>
+		<dd>a dialog with accessiblity settings opens, you are on the 'seeing' tab.</dd>
+	<dt> Select the Screen Reader option</dt>
+		<dd>Did a voice say "welcome to orca"?</dd>
+</dl>
 Test-case name: orca/dash
-This test will check that Orca can announce text in the dash
-<ol>
-<li title="action"> press the super(windows) key to bring up the dash</li>
-<ol>
-<li title="expected_result">a voice says 'Dash frame'</li>
-</ol>
-<li title="action"> use the cursor keys to navigate around the dash</li>
-<ol>
-<li title="expected_result">a voice should read out options as you select them</li>
-</ol>
-<li title="action"> move down to the lens list at the bottom of the dash</li>
-<ol>
-<li title="expected_result">a voice reads the names of the lenses you have installed</li>
-</ol>
-<li title="action"> select the apps lens and press return</li>
-<ol>
-<li title="expected_result">Did the voice annouce you are on the applications lens?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce text in the dash
+	<dt> press the super(windows) key to bring up the dash</dt>
+		<dd>a voice says 'Dash frame'</dd>
+	<dt> use the cursor keys to navigate around the dash</dt>
+		<dd>a voice should read out options as you select them</dd>
+	<dt> move down to the lens list at the bottom of the dash</dt>
+		<dd>a voice reads the names of the lenses you have installed</dd>
+	<dt> select the apps lens and press return</dt>
+		<dd>Did the voice annouce you are on the applications lens?</dd>
+</dl>
 Test-case name: orca/HUD
-This test will check that Orca can announce text in the HUD
-<ol>
-<li title="action"> from the dash launch the gedit application</li>
-<ol>
-<li title="expected_result">the text editor opens and a voice says gedit frame</li>
-</ol>
-<li title="action"> press alt to bring up the HUD</li>
-<ol>
-<li title="expected_result">a voice indicates you are in the hud</li>
-</ol>
-<li title="action"> type 'edit' then use cursor down to read the suggested matching menu items</li>
-<ol>
-<li title="expected_result">Are the options read out by orca? Does selecting an option operate that menu item in the gedit window?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce text in the HUD
+	<dt> from the dash launch the gedit application</dt>
+		<dd>the text editor opens and a voice says gedit frame</dd>
+	<dt> press alt to bring up the HUD</dt>
+		<dd>a voice indicates you are in the hud</dd>
+	<dt> type 'edit' then use cursor down to read the suggested matching menu items</dt>
+		<dd>Are the options read out by orca? Does selecting an option operate that menu item in the gedit window?</dd>
+</dl>
 Test-case name: orca/Ubiquity
-This test will check that Orca can announce text in Ubiquity
-<ol>
-<li title="action"> boot a live CD, when you hear the drums press ctrl+s</li>
-<ol>
-<li title="expected_result">a voice should welcome you to orca</li>
-</ol>
-<li title="action"> alt-tab to get back to ubiquity and proceed through the wizard using only the keyboard</li>
-<ol>
-<li title="expected_result">Are you able to hear all of the options read by orca? Are you able to install without needing to use the mouse?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce text in Ubiquity
+	<dt> boot a live CD, when you hear the drums press ctrl+s</dt>
+		<dd>a voice should welcome you to orca</dd>
+	<dt> alt-tab to get back to ubiquity and proceed through the wizard using only the keyboard</dt>
+		<dd>Are you able to hear all of the options read by orca? Are you able to install without needing to use the mouse?</dd>
+</dl>
 Test-case name: orca/globalmenu
-This test will check that Orca can announce text in global menu
-<ol>
-<li title="action"> in an application with a global menu press alt to bring up the menu</li>
-<ol>
-<li title="expected_result">the name of the menu should be read out (file menu)</li>
-</ol>
-<li title="action"> using cursor keys navigate around the menu</li>
-<ol>
-<li title="expected_result">you should get a commentary of the menu</li>
-</ol>
-<li title="action"> find a menu item with a shortcut like ctrl+s</li>
-<ol>
-<li title="expected_result">Is the shortcut read to you?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce text in global menu
+	<dt> in an application with a global menu press alt to bring up the menu</dt>
+		<dd>the name of the menu should be read out (file menu)</dd>
+	<dt> using cursor keys navigate around the menu</dt>
+		<dd>you should get a commentary of the menu</dd>
+	<dt> find a menu item with a shortcut like ctrl+s</dt>
+		<dd>Is the shortcut read to you?</dd>
+</dl>
 Test-case name: orca/indicators
-This test will check that Orca can announce text in indicators
-<ol>
-<li title="action"> press F10 to get to the global menu then use the right cursor to go through the menu to the indicators</li>
-<ol>
-<li title="expected_result">the indicator names should be read out</li>
-</ol>
-<li title="action"> press F10 to leave the menu then F10 again to go back, but this time go left</li>
-<ol>
-<li title="expected_result">this should take you direct to the indicators</li>
-</ol>
-<li title="action"> navigate around the indicators using the cursor keys</li>
-<ol>
-<li title="expected_result">you should get a commentary of all items and should not get stuck anywhere.</li>
-</ol>
-<li title="action"> in the sound indicator use the cursor keys</li>
-<ol>
-<li title="expected_result">volume should be adjustable with cursors left and right on the volume slider</li>
-</ol>
-<li title="action"> in the sound indicator go to the play controls</li>
-<ol>
-<li title="expected_result">Did the music application start? It should not start without asking it to do so.</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce text in indicators
+	<dt> press F10 to get to the global menu then use the right cursor to go through the menu to the indicators</dt>
+		<dd>the indicator names should be read out</dd>
+	<dt> press F10 to leave the menu then F10 again to go back, but this time go left</dt>
+		<dd>this should take you direct to the indicators</dd>
+	<dt> navigate around the indicators using the cursor keys</dt>
+		<dd>you should get a commentary of all items and should not get stuck anywhere.</dd>
+	<dt> in the sound indicator use the cursor keys</dt>
+		<dd>volume should be adjustable with cursors left and right on the volume slider</dd>
+	<dt> in the sound indicator go to the play controls</dt>
+		<dd>Did the music application start? It should not start without asking it to do so.</dd>
+</dl>
 Test-case name: orca/notifications
-This test will check that Orca can announce notifications
-<ol>
-<li title="action"> cause a notification to happen by sending yourself an email, instant message, irc message, etc.</li>
-<ol>
-<li title="expected_result">Does the screen reader should read notification out loud?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce notifications
+	<dt> cause a notification to happen by sending yourself an email, instant message, irc message, etc.</dt>
+		<dd>Does the screen reader should read notification out loud?</dd>
+</dl>
 Test-case name: orca/launcher
-This test will check that Orca can announce text in quicklists
-<ol>
-<li title="action"> press alt+f1 to get to keyboard navigation of the launcher</li>
-<ol>
-<li title="expected_result">orca should read application names as you move up and down</li>
-</ol>
-<li title="action"> move right on a running application to the quicklists</li>
-<ol>
-<li title="expected_result">Does orca read the quicklist contents?</li>
-</ol>
-</ol>
+<dl>
+		This test will check that Orca can announce text in quicklists
+	<dt> press alt+f1 to get to keyboard navigation of the launcher</dt>
+		<dd>orca should read application names as you move up and down</dd>
+	<dt> move right on a running application to the quicklists</dt>
+		<dd>Does orca read the quicklist contents?</dd>
+</dl>
 Test-case name: orca/workspace_switcher
-This test will check that Orca can announce text in workspace switcher
-<ol>
-<li title="action"> try using the workspace switcher with the screen reader</li>
-<ol>
-<li title="expected_result">Are you able to use the switcher without looking at the screen and understanding where your applications are?</li>
-</ol>
-</ol>
-<strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+<dl>
+		This test will check that Orca can announce text in workspace switcher
+	<dt> try using the workspace switcher with the screen reader</dt>
+		<dd>Are you able to use the switcher without looking at the screen and understanding where your applications are?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
