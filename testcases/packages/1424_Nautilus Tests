@@ -13,7 +13,7 @@ This test will check that user can create files in Nautilus
 <ol>
 <li title="expected_result">Nautilus is opened, Home is selected</li>
 </ol>
-<li title="action"> In Home folder right click on a blank section and select Create Document, Empty Document. Name the resulting file 'moveme.txt'</li>
+<li title="action"> In Home folder right click on a blank section and select New Document, Empty Document. Name the resulting file 'moveme.txt'</li>
 <ol>
 <li title="expected_result">Empty document moveme.txt is created</li>
 </ol>
