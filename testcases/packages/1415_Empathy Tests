@@ -45,6 +45,7 @@ Test-case name: empathy/emp-003
 </ol>
 This test will check that Empathy can send messages via IRC
 <ol>
+<li title="action"> Please ensure you have 'universe' and 'multiverse' repositories enabled (off by default in live session)</li>
 <li title="action"> Look for Terminal and launch it</li>
 <ol>
 <li title="expected_result">Terminal is opened</li>
