@@ -192,7 +192,7 @@ Test-case name: nautilus/TC-NFM-016
 Test-case name: nautilus/TC-NFM-017
 <dl>
 		This test will check that 'Open' dialog appears on inserting a camera
-	<dt> Please ensure you have a camera available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
+	<dt> Please ensure you have a camera available. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
 	<dt> Plug in the camera to the system under test and wait for new dialog to appear</dt>
 		<dd>'Open' dialog appears with 'Shotwell' application selected</dd>
 	<dt> Click OK button in the dialog box</dt>
