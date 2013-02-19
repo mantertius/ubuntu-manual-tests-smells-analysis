@@ -3,7 +3,7 @@ Test-case name: nautilus/TC-NFM-001
 		This test will check that user can create files in Nautilus
 	<dt> Look for Terminal and launch it</dt>
 		<dd>Terminal is opened</dd>
-	<dt> Type touch "$HOME/Templates/Empty Document.txt"</dt>
+	<dt> Type FIELD=`cat ~/.config/user-dirs.dirs | grep XDG_TEMPLATES_DIR |sed 's/XDG_TEMPLATES_DIR=\"\(.*\)\"/\1/'` && eval "touch $FIELD/Empty Document.txt"</dt>
 		<dd>Terminal returns the prompt</dd>
 	<dt> Look for Nautilus and launch it</dt>
 		<dd>Nautilus is opened, Home is selected</dd>
