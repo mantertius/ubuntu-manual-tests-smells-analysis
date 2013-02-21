@@ -1,0 +1,47 @@
+Test-case name: thunderbird/tb-001
+<dl>
+	This test will check that Thunderbird can receive and send email
+	<dt> Open Thunderbird</dt>
+		<dd>Did Thunderbird launch?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-002
+<dl>
+	This test will check that Thunderbird can receive and send messages. 
+	<em>Note that errors might be caused by issues related to username, password, server configuration, mail provider, network or ISP</em>
+	<dt> The first time opening Thunderbird, a "Welcome to Thunderbird" window could appear with a commercial offer to create a personalized email domain.</dt>
+	<dt>To skip this you can click "Skip this and configure my existing email</dt>
+	<dt> Set up an existing account using the "Mail Account Setup" window.</dt>
+	<dt> Enter your name, email address and password</dt>
+		<dd> Thunderbird should automatically find the server configuration in the Mozilla ISP databse (major providers). Otherwise click the "Manual config" button and set up your account manually</dd>
+	<dt>Click on your inbox, retrieve your mail by clicking on the "Get Mail" button in the top panel</dt>
+	<dt>Send an email to your own account</dt>
+	<dt>Retrieve your mail again</dt>
+	<dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-003
+<dl>
+                    This test will check that Thunderbird can create Address Books, Contacts and Mailing Lists
+	<dt>Click on "Address Book" in the top panel</dt>
+		<dd>The Address Book should come up.</dd>
+	<dt>Create a new address book (File > New > Address Book)</dt>
+	<dt>Create a new contact (File > New > Address Book Contact)</dt>
+	<dt>Create a new mailing list (File > New > Mailing List)</dt>
+		<dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-004
+<dl>
+                    This test will check that Thunderbird can filter incomming messages.
+	<dt>In Thunderbird, on the left panel right-click on your account and select "New Folder"</dt>
+	<dt>Name the folder "TestMe"</dt>
+	<dt>Create a new email filter (Filter Name: TestMe, Match All of the Following, From contains <youremail>, Preform these actions: Copy Message to "TestMe" folder)</dt>
+	<dt>Send yourself an email or test the filter on your inbox</dt>
+		<dd>A copy of all emails you send yourself should be in the TestMe folder</dd>
+		<dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+
