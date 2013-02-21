@@ -13,7 +13,7 @@ Test-case name: thunderbird/tb-002
 	<dt>To skip this you can click "Skip this and configure my existing email</dt>
 	<dt> Set up an existing account using the "Mail Account Setup" window.</dt>
 	<dt> Enter your name, email address and password</dt>
-		<dd> Thunderbird should automatically find the server configuration in the Mozilla ISP databse (major providers). Otherwise click the "Manual config" button and set up your account manually</dd>
+		<dd> Thunderbird should automatically find the server configuration in the Mozilla ISP database (major providers). Otherwise click the "Manual config" button and set up your account manually</dd>
 	<dt>Click on your inbox, retrieve your mail by clicking on the "Get Mail" button in the top panel</dt>
 	<dt>Send an email to your own account</dt>
 	<dt>Retrieve your mail again</dt>
@@ -33,7 +33,7 @@ Test-case name: thunderbird/tb-003
 
 Test-case name: thunderbird/tb-004
 <dl>
-                    This test will check that Thunderbird can filter incomming messages.
+                    This test will check that Thunderbird can filter incoming messages.
 	<dt>In Thunderbird, on the left panel right-click on your account and select "New Folder"</dt>
 	<dt>Name the folder "TestMe"</dt>
 	<dt>Create a new email filter (Filter Name: TestMe, Match All of the Following, From contains <youremail>, Preform these actions: Copy Message to "TestMe" folder)</dt>
