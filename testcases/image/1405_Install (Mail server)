@@ -31,7 +31,7 @@ Scope of this test is to verify that the system is installed, you can login into
 		<dd>telnet 127.0.0.1 25</dd>
 		<dd>Has to return: Ubuntu ESMTP Postfix (Ubuntu). Type quit to exit</dd>
 	<dt>Verify that dovecot pop3 and imap servers are running:</dt>
-		<dd>sudo netstat -ltnp | grep dovecot
+		<dd>sudo netstat -ltnp | grep dovecot</dd>
 		<dd>should list 8 dovecot instances (port 110, 143, 993 and 995) 4 for tcp and 4 tcp6</dd>
 	<dt>Try to send a test email:</dt>
 		<dd>echo foo | mail -s test ${USER}</dd>

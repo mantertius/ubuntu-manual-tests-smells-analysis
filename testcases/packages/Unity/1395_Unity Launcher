@@ -5,6 +5,7 @@ Test-case launcher/tooltip
 	<dt>Hover other application launcher icons</dt>
 		<dd>The other tooltips should appear, one at a time</dd>
 </dl>
+
 Test-case launcher/startapp
 <dl>
 	<dt>Click on a launcher icon for an application which is not running</dt>
@@ -12,6 +13,7 @@ Test-case launcher/startapp
 		<dd>An arrow on the left of the launcher icon should appear, indicating there is an instance opened</dd>
 		<dd>An arrow on the right of the launcher icon should appear, indicating that it's the current application</dd>
 </dl>
+
 Test-case launcher/always-visible
 <dl>
 	<dt>Make sure auto-hide is disabled (it is disabled by default)</dt>
@@ -22,6 +24,7 @@ Test-case launcher/always-visible
 	<dt>Maximize the application</dt>
 		<dd>The launcher should be visible alongside of the maximized application, with the application window occupying the rest of the screen</dd>
 </dl>
+
 Test-case launcher/auto-hide
 <dl>
 	<dt>Open the  System Settings and click on the Appearence icon</dt>
@@ -31,13 +34,17 @@ Test-case launcher/auto-hide
 	<dt>Switch the "Auto-hide the Launcher" switch back to the disabled state</dt>
 		<dd>The Launcher should re-appear and remain visible</dd>
 </dl>
+
 Test-case launcher/auto-hide-behavior
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
 	<dt>Move the mouse on the edge and:
-		<br> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal in unity 3D
-		<br> - put your mouse at x=0 and wait until the launcher reveal in unity 2D</li>
-		<dd>The launcher should appear</dd>
+            <ul>
+		<li> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal in unity 3D</li>
+		<li> - put your mouse at x=0 and wait until the launcher reveal in unity 2D</li>
+            </ul>
+        </dt>
+	<dd>The launcher should appear</dd>
 	<dt>Put the mouse outside of the launcher area</dt>
 		<dd>The launcher should disappear again after around a second</dd>
 </dl>
@@ -47,6 +54,7 @@ Test-case launcher/auto-hide-maximize
 	<dt>Start Firefox, maximize its window.</dt>
 		<dd>Firefox should be maximized and occupy the whole width of the screen</dd>
 </dl>
+
 Test-case launcher/auto-hide-clickhold
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
@@ -55,6 +63,7 @@ Test-case launcher/auto-hide-clickhold
 	<dt>Click on an application launcher icon and don't move the mouse</dt>
 		<dd>Launcher should disappear [2D: fail, lp:898238]</dd>
 </dl>
+
 Test-case launcher/auto-hide-clickmove
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
@@ -63,6 +72,7 @@ Test-case launcher/auto-hide-clickmove
 	<dt>Click on an application launcher icon and immediately move the mouse to another launcher icon</dt>
 		<dd>Launcher should not disappear</dd>
 </dl>
+
 Test-case launcher/auto-hide-mouseunderlauncher
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
@@ -71,6 +81,7 @@ Test-case launcher/auto-hide-mouseunderlauncher
 	<dt>Once the launcher is displayed, release super</dt>
 		<dd>Launcher should disappear [2D: fail, lp:898239]</dd>
 </dl>
+
 Test-case launcher/auto-hide-mousemove-afterlauncherappear
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
@@ -81,6 +92,7 @@ Test-case launcher/auto-hide-mousemove-afterlauncherappear
 	<dt>Release super</dt>
 		<dd>Launcher shouldn't disappear</dd>
 </dl>
+
 Test-case launcher/keyboard-launch
 <dl>
 	<dt>Start Firefox, maximize its window. Launcher should be visible alongside the application.</dt>
@@ -89,6 +101,7 @@ Test-case launcher/keyboard-launch
 	<dt>Press one of the numbers (without any modifier) for a non started application</dt>
 		<dd>The application should start</dd>
 </dl>
+
 Test-case launcher/keyboard-shift-launch
 <dl>
 	<dt>Start Firefox, maximize its window. Launcher should be visible alongside the application.</dt>
@@ -97,6 +110,7 @@ Test-case launcher/keyboard-shift-launch
 	<dt>With super still pressed, press shift + the Firefox corresponding number</dt>
 		<dd>A new Firefox window should appear</dd>
 </dl>
+
 Test-case launcher/minimize-app
 <dl>
 	<dt>Start Nautilus, maximize its window. Start Firefox, maximize its window.</dt>
@@ -104,6 +118,7 @@ Test-case launcher/minimize-app
 	<dt>Minimize the Firefox window</dt>
 		<dd>The Firefox icon's border on the Launcher should animate slightly</dd>
 </dl>
+
 Test-case launcher/minimize-app-auto-hide
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
@@ -112,27 +127,34 @@ Test-case launcher/minimize-app-auto-hide
 	<dt>Minimize the Firefox window</dt>
 		<dd>Half of the Firefox icon should pop out of the left side for a moment with its border animating slightly</dd>
 </dl>
+
 Test-case launcher/application-request-attention
 <dl>
 </dl>
+
 Test-case launcher/application-get-focus
 <dl>
 	<dt>Have two different applications opened</dt>
 	<dt>Click on the launcher icon corresponding to the application without the focus</dt>
 		<dd>This application should get the focus</dd>
 </dl>
+
 Test-case launcher/quicklist
 <dl>
 	<dt>Start System Settings and right click its launcher icon</dt>
 		<dd>A quicklist is displayed, showing the following entries:
-			<br> - System Settings
-			<br> - "Lock to Launcher" or "Unlock from launcher"
-			<br> - Quit</li>
+                    <ul>
+			<li> - System Settings</li>
+			<li> - "Lock to Launcher" or "Unlock from launcher"</li>
+			<li> - Quit</li>
+                    </ul>
+                </dd>
 	<dt>Move the mouse over the quicklist items</dt>
 		<dd>The launcher should stay visible and quicklist elements under the cursor should highlight</dd>
 	<dt>Click on "quit"</dt>
 		<dd>System Settings should close</dd>
 </dl>
+
 Test-case launcher/quicklist-close
 <dl>
 	<dt>Right-click on the launcher icon for a running application</dt>
@@ -142,6 +164,7 @@ Test-case launcher/quicklist-close
 	<dt>Click outside of the quicklist</dt>
 		<dd>the quicklist should close</dd>
 </dl>
+
 Test-case launcher/quicklist-open
 <dl>
 	<dt>Ensure System Settings is not running</dt>
@@ -151,14 +174,18 @@ Test-case launcher/quicklist-open
 	<dt>Right-click on its launcher icon and click on the "System Settings" entry</dt>
 		<dd>The System Settings window should be focused</dd>
 </dl>
+
 Test-case launcher/quicklist-pin
 <dl>
 	<dt>Start gcalctool (assuming it is not already in the launcher)</dt>
 	<dt>Right click its launcher icon</dt>
 		<dd>A quicklist is displayed, showing the following entries:
-			<br> - Calculator
-			<br> - Lock to launcher
-			<br> - Quit</li>
+                    <ul>
+			<li> - Calculator</li>
+			<li> - Lock to launcher</li>
+			<li> - Quit</li>
+                    </ul>
+                </dd>
 	<dt>Click "Lock to launcher"</dt>
 	<dt>Quit gcalctool</dt>
 		<dd>Launcher icon for gcalctool should stay in the launcher</dd>
@@ -168,6 +195,7 @@ Test-case launcher/quicklist-pin
 	<dt>Quit gcalctool</dt>
 		<dd>Launcher icon disappears</dd>
 </dl>
+
 Test-case launcher/quicklist-static
 <dl>
 	<dt>Open Firefox</dt>
@@ -176,6 +204,7 @@ Test-case launcher/quicklist-static
 	<dt>Click on it</dt>
 		<dd>A second Firefox window should appear</dd>
 </dl>
+
 Test-case launcher/arrows-multipleapps
 <dl>
 	<dt>Open Firefox</dt>
@@ -187,6 +216,7 @@ Test-case launcher/arrows-multipleapps
 	<dt>Open a new Firefox window on the same monitor</dt>
 		<dd>There should still be three arrows on the left of the launcher icon</dd>
 </dl>
+
 Test-case launcher/expose-app
 <dl>
 	<dt>With Firefox having the focus and more than one Firefox window, click on the Firefox launcher icon</dt>
@@ -194,6 +224,7 @@ Test-case launcher/expose-app
 	<dt>Click on one of them</dt>
 		<dd>The selected one should be focused</dd>
 </dl>
+
 Test-case launcher/expose-minimizedapp
 <dl>
 	<dt>With Firefox having the focus and more than one Firefox window, minimize one of the Firefox window.</dt>
@@ -203,6 +234,7 @@ Test-case launcher/expose-minimizedapp
 	<dt>Click on the minimized window</dt>
 		<dd>this window should be restored and visible</dd>
 </dl>
+
 Test-case launcher/move-icons
 <dl>
 	<dt>Click on an application launcher icon, keep the mouse button pressed for more than 0.5s</dt>
@@ -211,6 +243,7 @@ Test-case launcher/move-icons
 		<dd>You should see the icon changing positions</dd>
 		<dd>It should be possible to drop it to another position between the first icon and the last application icon. Dropping the icon before the first icon shouldn't be possible.</dd>
 </dl>
+
 Test-case launcher/fold-apps
 <dl>
 	<dt>Open a bunch of applications on your desktop so that you have more than what the launcher can show</dt>
@@ -220,6 +253,7 @@ Test-case launcher/fold-apps
 	<dt>Put your mouse outside of the launcher</dt>
 		<dd>The launcher icons should fold again</dd>
 </dl>
+
 Test-case launcher/scroll
 <dl>
 	<dt>Open a bunch of applications on your desktop so that you have more than what the launcher can show</dt>
@@ -228,6 +262,7 @@ Test-case launcher/scroll
 	<dt>Put your mouse again at the very top of the launcher</dt>
 		<dd>The launcher should scroll to the first icon</dd>
 </dl>
+
 Test-case launcher/keyboard-nav
 <dl>
 	<dt>Press alt + F1</dt>
@@ -237,6 +272,7 @@ Test-case launcher/keyboard-nav
 	<dt>Press escape</dt>
 		<dd>No launcher icon should be focused anymore</dd>
 </dl>
+
 Test-case launcher/keyboard-nav-exit
 <dl>
 	<dt>Press alt + F1</dt>
@@ -244,6 +280,7 @@ Test-case launcher/keyboard-nav-exit
 	<dt>Press alt + F1 again</dt>
 		<dd>No launcher icon should be focused</dd>
 </dl>
+
 Test-case launcher/keyboard-nav-auto-hide
 <dl>
 	<dt>Make sure auto-hide is enabled</dt>
@@ -252,6 +289,7 @@ Test-case launcher/keyboard-nav-auto-hide
 	<dt>Press escape</dt>
 		<dd>The launcher should disappear</dd>
 </dl>
+
 Test-case launcher/keyboard-nav-startapp
 <dl>
 	<dt>Press alt + F1</dt>
@@ -259,6 +297,7 @@ Test-case launcher/keyboard-nav-startapp
 	<dt>Press enter</dt>
 		<dd>The application should be started</dd>
 </dl>
+
 Test-case launcher/keyboard-nav-startappwindow
 <dl>
 	<dt>Ensure you have a Firefox window opened</dt>
@@ -267,6 +306,7 @@ Test-case launcher/keyboard-nav-startappwindow
 	<dt>Press space</dt>
 		<dd>a new Firefox window should open</dd>
 </dl>
+
 Test-case launcher/keyboard-nav-quicklist
 <dl>
 	<dt>Press alt + F1</dt>
@@ -277,6 +317,7 @@ Test-case launcher/keyboard-nav-quicklist
 	<dt>Press enter</dt>
 		<dd>The application should close and the launcher should loose the focus</dd>
 </dl>
+
 Test-case launcher/workspace-switcher
 <dl>
 	<dt>Click on the workspace switcher launcher icon</dt>
@@ -286,6 +327,7 @@ Test-case launcher/workspace-switcher
 	<dt>Double click on one workspace which isn't the current one</dt>
 		<dd>the chosen workspace should be zoomed in and become the current one.</dd>
 </dl>
+
 Test-case launcher/arrows-notin-currentws
 <dl>
 	<dt>Start Nautilus on workspace 1, with only one window.</dt>
@@ -298,6 +340,7 @@ Test-case launcher/arrows-notin-currentws
 	<dt>Move the second window from workspace 1 to workspace 2, on the same monitor.</dt>
 		<dd>Only one arrow should be displayed.</dd>
 </dl>
+
 Test-case launcher/focus-apps-other-ws
 <dl>
 	<dt>Start Nautilus with one window on workspace 1</dt>
@@ -305,6 +348,7 @@ Test-case launcher/focus-apps-other-ws
 	<dt>Click on Nautilus launcher icon</dt>
 		<dd>You should be moved to workspace 1 and Nautilus window should be focused</dd>
 </dl>
+
 Test-case launcher/expose-apps-only-current-ws
 <dl>
 	<dt>Start Nautilus with two windows on workspace 1 and one window on workspace 2.</dt>
@@ -312,6 +356,7 @@ Test-case launcher/expose-apps-only-current-ws
 	<dt>Click on Nautilus launcher icon</dt>
 		<dd>You should see only the windows from the current workspace exposed</dd>
 </dl>
+
 Test-case launcher/trash-open
 <dl>
 	<dt>Open Nautilus</dt>
@@ -323,6 +368,7 @@ Test-case launcher/trash-open
 	<dt>Restore every files</dt>
 		<dd>the trash icon should show an "empty trash" icon</dd>
 </dl>
+
 Test-case launcher/trash-empty
 <dl>
 	<dt>Open Nautilus</dt>
@@ -333,6 +379,7 @@ Test-case launcher/trash-empty
 	<dt>Select "Empty Trash"</dt>
 		<dd>The trash should be emptied, trash icon should show an "empty trash" icon</dd>
 </dl>
+
 Test-case launcher/skype-minimizing
 <dl>
 	<dt>Start skype</dt>

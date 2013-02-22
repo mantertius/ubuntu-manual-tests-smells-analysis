@@ -5,6 +5,7 @@ Test-case panel/appmenu_desktop
 	<dt>Move the mouse over the panel</dt>
 		<dd>"Ubuntu Desktop" label fades out [2D: no fade, it vanishes] and Desktop menubar items appear</dd>
 </dl>
+
 Test-case panel/appmenu_mouse_click
 <dl>
 	<dt>Start Gedit</dt>
@@ -15,6 +16,7 @@ Test-case panel/appmenu_mouse_click
 	<dt>Click back in the application</dt>
 		<dd>"Search" menu closes and menubar items disappear</dd>
 </dl>
+
 Test-case panel/appmenu_mouse_click2
 <dl>
 	<dt>Start Firefox</dt>
@@ -23,6 +25,7 @@ Test-case panel/appmenu_mouse_click2
 	<dt>Without moving the mouse, left-click again</dt>
 		<dd>"File" menu disappear, the menu titles are still visible on the launcher though</dd>
 </dl>
+
 Test-case panel/appmenu_mouse_hovering
 <dl>
 	<dt>Start Firefox</dt>
@@ -31,6 +34,7 @@ Test-case panel/appmenu_mouse_hovering
 	<dt>Move the mouse to the "Edit" item</dt>
 		<dd>"File" menu disappears, "Edit" menu appears</dd>
 </dl>
+
 Test-case panel/appmenu_keyboard
 <dl>
 	<dt>Start Firefox</dt>
@@ -41,30 +45,35 @@ Test-case panel/appmenu_keyboard
 	<dt>Press the "Left arrow" keyboard key:</dt>
 		<dd>"Edit" menu disappears, "File" menu appears</dd>
 </dl>
+
 Test-case panel/appmenu_keyboard_f10
 <dl>
 	<dt>Start Firefox</dt>
 	<dt>Press Alt+F10</dt>
 		<dd>Firefox menubar appears, first menubar item is selected and its menu appears</dd>
 </dl>
+
 Test-case panel/appmenu_keyboard_mnemonic
 <dl>
 	<dt>Start Firefox</dt>
 	<dt>Press Alt + F (or any accelerator corresponding to the "File" item in your language)</dt>
 		<dd>Firefox menubar appears, first menubar item is selected and its menu appears</dd>
 </dl>
+
 Test-case panel/appmenu_keyboard_desktop_f10
 <dl>
 	<dt>Click on the desktop</dt>
 	<dt>Press Alt+F10</dt>
 		<dd>Desktop menubar appears, first menubar item is selected and its menu appears</dd>
 </dl>
+
 Test-case panel/appmenu_keyboard_desktop_mnemonic
 <dl>
 	<dt>Click on the desktop</dt>
 	<dt>Press Alt + F (or any accelerator corresponding to the "File" item in your language)</dt>
 		<dd>Desktop menubar appears, first menubar item is selected and its menu appears</dd>
 </dl>
+
 Test-case panel/titlebar_not_maximized
 <dl>
 	<dt>Start Nautilus</dt>
@@ -75,6 +84,7 @@ Test-case panel/titlebar_not_maximized
 		<dd>Panel does not show window buttons</dd>
 		<dd>Title is partially faded on the right side, Nautilus menubar items are visible</dd>
 </dl>
+
 Test-case panel/titlebar_maximized
 <dl>
 	<dt>Start Nautilus</dt>
@@ -92,6 +102,7 @@ Test-case panel/titlebar_maximized
 	<dt>Click on the "close" window button</dt>
 		<dd>Nautilus window closes</dd>
 </dl>
+
 Test-case panel/titlebar_maximized2
 <dl>
 	<dt>Start Nautilus</dt>
@@ -99,6 +110,7 @@ Test-case panel/titlebar_maximized2
 	<dt>Double-click on the unity panel, outside of the menubar</dt>
 		<dd>Nautilus window is restored (ie. not maximized anymore)</dd>
 </dl>
+
 Test-case panel/titlebar_multi_windows
 <dl>
 	<dt>Have a maximized window and a restored one in the same workspace</dt>
@@ -108,17 +120,21 @@ Test-case panel/titlebar_multi_windows
 	<dt>Click on an empty space of the panel</dt>
 		<dd>Maximized window gets the focus [2D: known fail, lp:731761]</dd>
 </dl>
+
 Test-case panel/indicators
 <dl>
 	<dt>Check the right part of the panel shows the following indicators:
-		<br> - Messaging indicator: envelop icon
-		<br> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged
-		<br> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon
-		<br> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon
-		<br> - Sound indicator: volume icon
-		<br> - Time indicator: the current time
-		<br> - Session indicator: your name or nickname (/!\ Not visible in the live CD)
-		<br> - System indicator: power icon</br>
+            <ul>
+		<li> - Messaging indicator: envelop icon</li>
+		<li> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged</li>
+		<li> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon</li>
+		<li> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon</li>
+		<li> - Sound indicator: volume icon</li>
+		<li> - Time indicator: the current time</li>
+		<li> - Session indicator: your name or nickname (/!\ Not visible in the live CD)</li>
+		<li> - System indicator: power icon</li>
+            </ul>
+        </dt>
 </dl>
 Test-case panel/indicators_mouse
 <dl>

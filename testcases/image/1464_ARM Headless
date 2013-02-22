@@ -1,6 +1,6 @@
 <dl>
     <dt>Follow the installation steps at <a href="https://wiki.ubuntu.com/ARM/OMAPHeadlessInstall">OMAPHeadlessInstall</a></dt>
-    <dt>Once logged in, verify that:
+    <dt>Once logged in, verify that:</dt>
         <dd>The root filesystem uses most of the SD card.</dd>
         <dd>There will be some space used for the hidden boot partition.</dd>
         <dd>Check for errors in dmesg & jasper log.</dd>

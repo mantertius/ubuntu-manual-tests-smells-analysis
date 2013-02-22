@@ -10,7 +10,7 @@
   <dt>Boot the newly created guest</dt>
   <dt>Log in</dt>
   <dt>Check that the uname -r returns a -virtual kernel:</dt>
-      <dd>uname -r</dt>
+      <dd>uname -r</dd>
   <dt>Check that the linux-virtual package is installed:</dt>
       <dd>dpkg -l linux-virtual</dd>
   <dt>Ping outside network</dt>

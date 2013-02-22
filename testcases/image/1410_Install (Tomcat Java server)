@@ -31,9 +31,9 @@ Scope of this test is to verify that the system is installed, you can login into
 	<dt>Verify  that Tomcat is working properly:</dt>
 		<dd>w3m http://127.0.0.1:8080</dd>
 		<dd>should bring up a "It works !" page</dd>
-	<dt>w3m http://localhost:8080/examples/servlets/servlet/HelloWorldExample
+	<dt>w3m http://localhost:8080/examples/servlets/servlet/HelloWorldExample</dt>
 		<dd>should bring up a "Hello World!" page</dd>
-	<dt>w3m http://localhost:8080/examples/jsp/jsp2/el/basic-arithmetic.jsp
+	<dt>w3m http://localhost:8080/examples/jsp/jsp2/el/basic-arithmetic.jsp</dt>
 		<dd>should bring a page containing basic arithmetics.</dd>
 	<dt>NB: w3m basics: moving cursor and hit 'Enter' to follow links, 'B' to come back to the previous page, 'q' to quit</dt>	
 </dl>

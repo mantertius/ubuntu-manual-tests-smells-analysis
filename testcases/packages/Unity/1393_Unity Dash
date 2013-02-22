@@ -101,9 +101,12 @@ Test-case dash/home
 <dl>
 	<dt>Press super to show the home dash</dt>
 		<dd>You should see:
-			<br> - Recent applications
-			<br> - Recent files
-			<br> - The last downloads you have done in your download folder (if any)</li>
+                    <ul>
+			<li> - Recent applications </li>
+			<li> - Recent files </li>
+			<li> - The last downloads you have done in your download folder (if any)</li>
+                    </ul>
+                </dd>
 	<dt>Make a search</dt>
 		<dd>Some results from the different lenses should appear</dd>
 	<dt>Press escape</dt>
@@ -134,21 +137,27 @@ Test-case dash/keyboard-navigation
 	<dt>Tap super to show the dash</dt>
 	<dt>Go to a lens having multiple results and a category with "see xx more results"</dt>
 	<dt>Navigate between the items between the results:
-			<br> - If you press the down key on your keyboard once, the category should have the focus, if you press it again, you should go to the result of this category. If you press down again, it should go to next category.
-			<br> - The focus change on result (not category) should show the same hovering hint than the one with the mouse
-			<br> - If you press left and right, the focus should go left or right
-			<br> - If you press left and then enter once the focus is in a category title containing "see xx more results", the content of this category should expand (and using the key arrays should enable you to scroll the full view).
-			<br> - If you go to a category below an expanded category and press up to go over the content of the previous category, the first item of the last line of this category should get highlighted
-			<br> - If you refocus the same "show less results" and press enter, the content of this category should collapse.
-			<br> - Tab should navigate yourself between categories [2D: fail, lp:891648]
-			<br> - If you press shift + tab, you should navigate between categories backwards</li>
+                <ul>
+			<li> - If you press the down key on your keyboard once, the category should have the focus, if you press it again, you should go to the result of this category. If you press down again, it should go to next category.</li>
+			<li> - The focus change on result (not category) should show the same hovering hint than the one with the mouse</li>
+			<li> - If you press left and right, the focus should go left or right</li>
+			<li> - If you press left and then enter once the focus is in a category title containing "see xx more results", the content of this category should expand (and using the key arrays should enable you to scroll the full view).</li>
+			<li> - If you go to a category below an expanded category and press up to go over the content of the previous category, the first item of the last line of this category should get highlighted</li>
+			<li> - If you refocus the same "show less results" and press enter, the content of this category should collapse.</li>
+			<li> - Tab should navigate yourself between categories [2D: fail, lp:891648]</li>
+			<li> - If you press shift + tab, you should navigate between categories backwards</li>
+                </ul>
+        </dt>
 </dl>
 Test-case dash/keyboard-navigation-filters
 <dl>
 	<dt>Tap super to show the dash</dt>
 	<dt>Go to a lens with the "Filter Results" filter button visible</dt>
 	<dt>Tap the tab key to navigate to the filter button
-			<br> - After navigating through all categories, the filter button should be focused next</li>
+                    <ul>
+			<li> - After navigating through all categories, the filter button should be focused next</li>
+                    </ul>
+        </dt>
 	<dt>Press enter</dt>
 		<dd>The filter view should appear</dd>
 	<dt>Tap the tab key to navigate</dt>
