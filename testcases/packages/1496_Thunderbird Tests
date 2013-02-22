@@ -69,13 +69,13 @@ Test-case name: thunderbird/tb-007
 	<dt>Click on "Address Book" in the top panel</dt>
 		<dd>The Address Book should come up</dd>
 	<dt>Create a new LDAP Directory</dt>
-	<dt>Give it a name such as "UTexas" and a provide the address of a public server such as "ldap.utexas.edu" (<a href="http://www.emailman.com/ldap/public.html">More Public LDAP Servers</a>)</dt>
-	<dt>Select the UTexas LDAP directory and search for "Bob"</dt>
+ 	<dt>Give it a name and provide the address of a server. If unsure, try using a public server such as use public Debian directory - Name: Debian - Server: db.debian.org - Base DN: dc=debian,dc=org</dt>
+	<dt>Select the Debian LDAP directory and search for "al"</dt>
 		<dd>Search results should show up</dd>
-	<dt>Holding down Ctrl, drag one contact from the directory to a local address book</dt>
+	<dt>Drag one contact from the LDAP directory (hold Ctrl) and drop it on a local address book</dt>
 		<dd>The contact should now be copied to the local address book</dd>
-	<dt>Select multiple contacts in the LDAP direcotry. Holding down Ctrl, drag multiple contacts from the directory to a local address book</dt>
-		<dd>The contact should now be copied to the local address book</dd>
+	<dt>Select multiple contacts in the LDAP direcotry. Drag multiple contacts (hold Ctrl) from the directory to a local address book</dt>
+		<dd>The contacts should now be copied to the local address book</dd>
 		<dd>Do all of these actions complete with no errors?</dd>
 </dl>
 
