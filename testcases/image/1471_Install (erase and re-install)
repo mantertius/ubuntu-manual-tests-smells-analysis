@@ -80,7 +80,7 @@
         <dd>The system boots properly and loads into FAMILY</dd>
     <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
         <dd>The new user's desktop is presented</dd>
-    <dt>Check that the 'test' folder created on the first install has disappeard from the desktop, open Firefox and check that in the history tab has no browsing history, then open a Terminal typing  CTRL+ALT+T and type  'df -h' in it without quotes, there should be no /home partition</dd>
+    <dt>Check that the 'test' folder created on the first install has disappeard from the desktop, open Firefox and check that in the history tab has no browsing history, then open a Terminal typing  CTRL+ALT+T and type  'df -h' in it without quotes, there should be no /home partition</dt>
         <dd>You should verify that the /home partition has been wiped out an no previous data has been left back </dd>
 </dl>
 

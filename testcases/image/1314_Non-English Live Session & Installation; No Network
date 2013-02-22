@@ -2,11 +2,8 @@ The goal of this test case is to check that localization support is functional d
 <dl>
 	<dt>Power up your machine insert the install media</dt>
 	<dt>Select English as language and press Enter</dt>
-	<dt>Select Try without any change to your computer and press Enter
-		<ul>
-			<dt>Once the live session has started, verify that the system is in English</dt>
-		</ul>
-	</dt>
+	<dt>Select Try without any change to your computer and press Enter</dt>
+			<dd>Once the live session has started, verify that the system is in English</dd>
 	<dt>Select the Install FAMILY option</dt>
 	<dt>Once Ubiquity starts click on Forward</dt>
 	<dt>Select the same non English language from the list and click Forward</dt>
@@ -21,18 +18,19 @@ The goal of this test case is to check that localization support is functional d
 	<dt>Allow the machine to reboot and login</dt>
 	<dt>Verify that your system is localized:
 		<ul>
-			<li>Language packs included in the Live CD: Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt), Xhosa (xh)  (Note: this list might vary between milestones)
-			<li>If your language is one in the list above:
+			<li>Language packs included in the Live CD: Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt), Xhosa (xh)  (Note: this list might vary between milestones)</li>
+			<li>If your language is one in the list above:</li>
 			<ul>
-				<li>Common translations are installed as part of language packs
-				<li>A pop up shows saying your language support is not complete
+				<li>Common translations are installed as part of language packs</li>
+				<li>A pop up shows saying your language support is not complete</li>
 			</ul>
-			<li>If your language is not in the list above:
+			<li>If your language is not in the list above:</li>
 			<ul>
-			<li>Common translations in language packs will not be installed
-				<li>A pop up shows saying your language support is not complete
+			<li>Common translations in language packs will not be installed</li>
+				<li>A pop up shows saying your language support is not complete</li>
 			</ul>
 		</ul>
+        </dt>
 	<dt>Check that the calendar shows the regional settings correctly (Note: only in languages on the list above)</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
