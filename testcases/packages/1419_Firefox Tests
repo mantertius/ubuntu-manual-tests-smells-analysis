@@ -1,30 +1,19 @@
 Test-case name: firefox/fir-001
 <dl>
-		This test will check that Firefox can display webpages
-	<dt> Open the dash and launch Firefox by pressing the super key, and then entering ‘firefox’</dt>
-		<dd>Firefox should launch</dd>
-	<dt> In the address bar type http://planet.ubuntu.com. Click on the green arrow</dt>
-		<dd>Did the Planet Ubuntu site open?</dd>
+    This test will check that Firefox can display webpages
+	<dt>Open Firefox</dt>
+		<dd>Did Firefox open?</dd>
+	<dt>Go to ubuntu.com</dt>
+		<dd>Did the web site open?</dd>
 </dl>
+
 Test-case name: firefox/fir-002
 <dl>
-		This test will check that Firefox can display search suggestions
-	<dt> Open the dash and launch Firefox by pressing the super key, and then entering ‘firefox’</dt>
-		<dd>Firefox should launch</dd>
-	<dt> Click on the Search bar, type in Ubuntu server docs</dt>
-		<dd>Relevant suggestions for this query are displayed</dd>
-	<dt> Hit Enter</dt>
-		<dd>Did the selected search engine (default - Google) results page for query "Ubuntu server docs" open?</dd>
-</dl>
-Test-case name: firefox/fir-003
-<dl>
-		This test will check that Firefox can use different search engines
-	<dt> Open the dash and launch Firefox by pressing the super key, and then entering ‘firefox’</dt>
-		<dd>Firefox should launch</dd>
-	<dt> Click on the Google icon in the search bar and change it to Wikipedia</dt>
-		<dd>Wikipedia search engine selected</dd>
-	<dt> Type in Linux</dt>
-		<dd>Did the Wikipedia page for linux open?</dd>
+    This test will check that Firefox can display search suggestions and results for a query
+	<dt>In the Search area, type a word</dt>
+		<dd>Are relevant suggestions for this query displayed?</dd>
+	<dt>Hit Enter</dt>
+		<dd>Do all search engines display search suggestions and a results page for query?</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
