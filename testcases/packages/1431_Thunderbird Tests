@@ -7,7 +7,7 @@ Test-case name: thunderbird/tb-001
 
 Test-case name: thunderbird/tb-002
 <dl>
-	This test will check that Thunderbird can receive and send messages. 
+	This test will check that Thunderbird can receive and send messages
 	<em>Note that errors might be caused by issues related to username, password, server configuration, mail provider, network or ISP</em>
 	<dt> The first time opening Thunderbird, a "Welcome to Thunderbird" window could appear with a commercial offer to create a personalized email domain.</dt>
 	<dt>To skip this you can click "Skip this and configure my existing email</dt>
@@ -33,12 +33,21 @@ Test-case name: thunderbird/tb-003
 
 Test-case name: thunderbird/tb-004
 <dl>
-                    This test will check that Thunderbird can filter incoming messages.
+                    This test will check that Thunderbird can filter incoming messages
 	<dt>In Thunderbird, on the left panel right-click on your account and select "New Folder"</dt>
 	<dt>Name the folder "TestMe"</dt>
 	<dt>Create a new email filter (Filter Name: TestMe, Match All of the Following, From contains <youremail>, Preform these actions: Copy Message to "TestMe" folder)</dt>
 	<dt>Send yourself an email or test the filter on your inbox</dt>
 		<dd>A copy of all emails you send yourself should be in the TestMe folder</dd>
+		<dd>Do all of these actions complete with no errors?</dd>
+</dl>
+
+Test-case name: thunderbird/tb-005
+<dl>
+                    This test will check that Thunderbird can send messages using mailto: links found on web sites.
+	<dt>Clicking <a href="mailto:someone@example.com">here</a> should open a new email in Thunderbird with someone@example.com as the recipient.</dt>
+	<dt>Clicking <a href="mailto:someone@example.com?subject=Just%20Testing">here</a> should open a new email in Thunderbird with someone@example.com as the recipient and "Just Testing" as the subject</dt>
+	<dt>Clicking <a href="mailto:someone@example.com?subject=Just%20Testing&body=Thank you for using Ubuntu%0Ahttp%3A%2F%2Fwww.ubuntu.com%2F">here</a> should open a new email in Thunderbird with someone@example.com as the recipient, "Just Testing" as the Subject and should put two lines of text in the email body.</dt>
 		<dd>Do all of these actions complete with no errors?</dd>
 </dl>
 
