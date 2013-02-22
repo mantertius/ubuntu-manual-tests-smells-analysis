@@ -1,35 +1,35 @@
 Test-case name: gedit/ged-001
 <dl>
 		This test will check that GEdit can save and open saved files
-	<dt> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</dt>
+	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
-	<dt> Type in “The quick brown foxes jump over the lazy dog”</dt>
+	<dt> Type in "The quick brown foxes jump over the lazy dog"</dt>
 		<dd>Text appears</dd>
 	<dt> Click on Save</dt>
 		<dd>'Save as' window appears</dd>
 	<dt> Type in 'gedit.txt' for the name of the file, select any folder and press the save button</dt>
 		<dd>'Save as' window closes</dd>
-	<dt> Close the text editor by pressing the ‘x’ in the left hand corner</dt>
+	<dt> Close the text editor by pressing the 'x' in the left hand corner</dt>
 		<dd>Gedit closes</dd>
-	<dt> Open the dash and launch nautilus by pressing the super key, and then entering ‘nautilus’</dt>
+	<dt> Open the dash and launch nautilus by pressing the super key, and then entering 'nautilus'</dt>
 		<dd>nautilus should launch</dd>
 	<dt> Navigate to the directory where you saved the file and double click it to launch gedit</dt>
-		<dd>Does gedit launch and the display the the file with the text “The quick brown foxes jump over the lazy dog”?</dd>
+		<dd>Does gedit launch and the display the the file with the text "The quick brown foxes jump over the lazy dog"?</dd>
 </dl>
 Test-case name: gedit/ged-002
 <dl>
 		This test will check that GEdit can save HTML files correctly
-	<dt> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</dt>
+	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
-	<dt> Type in “<a href="http://www.ubuntu.com">Link To Ubuntu</a>”</dt>
+	<dt> Type in <pre>&#60;a href="http://www.ubuntu.com"&#62;Link To Ubuntu&#60;a/a&#62;</pre></dt>
 		<dd>Text appears</dd>
 	<dt> Click on Save</dt>
 		<dd>'Save as' window appears</dd>
 	<dt> Type in gedit.html for the name of the file, select any folder and press the save button</dt>
 		<dd>'Save as' window closes</dd>
-	<dt> Close the text editor by pressing the ‘x’ in the left hand corner</dt>
+	<dt> Close the text editor by pressing the 'x' in the left hand corner</dt>
 		<dd>Gedit closes</dd>
-	<dt> Open the dash and launch nautilus by pressing the super key, and then entering ‘nautilus’</dt>
+	<dt> Open the dash and launch nautilus by pressing the super key, and then entering 'nautilus'</dt>
 		<dd>nautilus should launch</dd>
 	<dt> Navigate to the directory where you saved the file and double the file it to launch the default browser and display the html file</dt>
 		<dd>Does your default browser launch and the display a page with a link to the ubuntu website?</dd>
@@ -37,22 +37,22 @@ Test-case name: gedit/ged-002
 Test-case name: gedit/ged-003
 <dl>
 		This test will check that GEdit can replace text
-	<dt> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</dt>
+	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
-	<dt> Type in “The quick brown foxes jump over the lazy dog”</dt>
+	<dt> Type in "The quick brown foxes jump over the lazy dog"</dt>
 		<dd>Text appears</dd>
 	<dt> Press "Ctrl+H"</dt>
 		<dd>'Replace' dialog appears</dd>
-	<dt> In the 'Search for' box type ‘foxes’, and in the 'Replace with' box, type ‘fox’. Then click "Replace all"</dt>
+	<dt> In the 'Search for' box type 'foxes', and in the 'Replace with' box, type 'fox'. Then click "Replace all"</dt>
 		<dd>'Replace' dialog is not closed</dd>
-		<dd>Does the text displayed now read “The quick brown fox jump over the lazy dog”?</dd>
+		<dd>Does the text displayed now read "The quick brown fox jump over the lazy dog"?</dd>
 </dl>
 Test-case name: gedit/ged-004
 <dl>
 		This test will check that GEdit can find and hightlight searched text
-	<dt> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</dt>
+	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
-	<dt> Type in “The quick brown fox jump over the lazy dog”</dt>
+	<dt> Type in "The quick brown fox jump over the lazy dog"</dt>
 		<dd>Text appears</dd>
 	<dt> Press 'Ctrl+F'</dt>
 		<dd>the search box appears, input focus is in search box</dd>
@@ -70,9 +70,9 @@ Test-case name: gedit/ged-004
 Test-case name: gedit/ged-005
 <dl>
 		This test will check that GEdit can display File Browser panel
-	<dt> Open the dash and launch gedit by pressing the super key, and then entering ‘gedit’</dt>
+	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
-	<dt> Click on Edit -> Preferences -> Plugins. Then ensure the “File Browser Panel” plugin is checked. Close the window by pressing close.</dt>
+	<dt> Click on Edit -> Preferences -> Plugins. Then ensure the "File Browser Panel" plugin is checked. Close the window by pressing close.</dt>
 		<dd>Preferences window is closed</dd>
 	<dt> Press F9</dt>
 		<dd>The side panel appears with the file browser panel included</dd>
