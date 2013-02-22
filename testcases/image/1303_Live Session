@@ -20,7 +20,7 @@ Test-case Live Session Persistence
 	<dt>Launch Startup Disk Creator</dt>
 	<dt>Select the source disc image of the build you are testing</dt>
 	<dt>Select the USB disk to use and click "Erase" (all data will be removed)</dt>
-		<dd>Provide password if requested. Pausing at this point should not cause an error
+		<dd>Provide password if requested. Pausing at this point should not cause an error</dd>
 	<dt>Select the persistence option to have documents and settings "Stored in reserved extra space"</dt>
 	<dt>Use the slider bar to set up to 4GB for persistence</dt>
 	<dt>Create a bootable USB drive by clicking "Make Startup Disk"</dt>
@@ -35,5 +35,6 @@ Test-case Live Session Persistence
 	<dt>Restart live image back into a persistent session</dt>
                 <dd>Your files, browsing history, and bookmarks should all be there</dd>
 </dl>
+<strong>
 If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

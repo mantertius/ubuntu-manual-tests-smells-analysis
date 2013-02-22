@@ -8,7 +8,7 @@ Start by downloading the boot.img-[fb|serial] file from http://ports.ubuntu.com/
 				<li>No encryption on home directory</li>
 				<li>Pick a task (note not all graphical environments have been tested on armel)</li>
 			</ul>
-	</dt>
+        </dt>
 </dl>
 
 The install will pull the necessary packages from the ports.ubuntu.com repository (alternatively you can pull from a local mirror). Record any failures during the install process. Success is determined when the system completes the installation and reboots into a working image.

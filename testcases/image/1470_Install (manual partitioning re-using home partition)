@@ -80,9 +80,9 @@
         <dd>The system boots properly and loads into FAMILY</dd>
     <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
         <dd>The new user's desktop is presented</dd>
-    <dt>Check that the 'test' folder created on the first install is still there, open Firefox and check that in the history tab you find the sites you browsed previously then finaly open a Terminal typing CTRL+ALT+T type 'df -h' in it without the quotes and verify that the /home partition is still there</dd>
+    <dt>Check that the 'test' folder created on the first install is still there, open Firefox and check that in the history tab you find the sites you browsed previously then finaly open a Terminal typing CTRL+ALT+T type 'df -h' in it without the quotes and verify that the /home partition is still there</dt>
         <dd>You should verify that the /home partition has been re-used and has all the data it had previously to the reinstall of FAMILY</dd>
 </dl>
 
-<p><strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.<br />
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong></p>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.<br />
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

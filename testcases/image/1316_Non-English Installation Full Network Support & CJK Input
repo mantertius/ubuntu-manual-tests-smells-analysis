@@ -104,6 +104,7 @@ The goal of this test case is to check that localization support is functional d
 				</ul>
 			</li>
 		</ul>
+        </dt>
 	<dt>Check that the calendar shows the regional settings correctly.</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

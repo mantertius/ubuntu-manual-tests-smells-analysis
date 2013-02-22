@@ -48,11 +48,11 @@ Server basic RAID1 install
         <dd>Disconnect the first disk (disk1) - disk 1 disconnected, disk 2 connected.</dd>
         <dd>Poweron the system.</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array on a single disk:</dd>
-            <dd>cat /proc/mdstat</dt>
+            <dd>cat /proc/mdstat</dd>
     <dt>Test automatic syncing of degraded array:</dt>
         <dd>Poweroff the system</dd>
         <dd>Reconnect the first disk (so both are now connected)</dd>
-        <dd>Poweron the system</dt>
+        <dd>Poweron the system</dd>
     <dt>Wait for both drives to be back in sync:</dt>
         <dd>cat /proc/mdstat</dd>
     <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
@@ -190,7 +190,7 @@ Server with LVM on LUKS on RAID1 install
     <dt>Make sure that grub has been installed on both disks:</dt>
         <dd>sudo apt-get install -y binutils</dd>
         <dd>for i in $(sudo mdadm -Q --detail $(df -P /boot | grep ^/dev/ | cut -d" " -f1) | grep " /dev/" | awk '{print $NF}' | sed -e 's/[0-9]$//'); do sudo dd if=$i bs=512 count=1 2>/dev/null | strings -a | grep -q GRUB && echo $i: ok || echo $i: FAIL; done</dd>
-    <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dd>
+    <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
         <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
     <dt>Test booting from a cold-degraded array:</dt>
         <dd>Poweroff the system</dd>
