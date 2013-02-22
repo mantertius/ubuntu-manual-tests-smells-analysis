@@ -21,7 +21,7 @@ Test-case name: gedit/ged-002
 		This test will check that GEdit can save HTML files correctly
 	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
-	<dt> Type in "<a href="http://www.ubuntu.com">Link To Ubuntu</a>"</dt>
+	<dt> Type in <pre>&#60;a href="http://www.ubuntu.com"&#62;Link To Ubuntu&#60;a/a&#62;</pre></dt>
 		<dd>Text appears</dd>
 	<dt> Click on Save</dt>
 		<dd>'Save as' window appears</dd>
