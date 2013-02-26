@@ -1,0 +1,27 @@
+Netboot i686/amd64 desktop
+<dl>
+    <dt>Ensure you have a dhcp, pxe and tftp servers running.</dt>
+    <dt>Ensure your pxe configuration have "lang= locale=en_US priority=critical text hostname=raring" added to the append line.</dt>
+    <dt>Boot using the <a href="https://help.ubuntu.com/community/Installation/Netboot" target="_blank">pxe-tftp setup</a>.</dt>
+        <dd>The installer should load and retrieve additional components</dd>
+    <dt>Type your full name (using capitals) then press Enter.</dt>
+        <dd>The select username page loads with a capital-less version of your first name.</dd>
+    <dt>Choose a username the press enter.</dt>
+    <dt>Type and confirm a password that is below 8 character long.</dt>
+        <dd>A warning that you have chosen a weak password should appear.</dd>
+    <dt>Select "no" then type and confirm the password you want to use.</dt>
+        <dd>The <strong>partition disks</strong> page should loads</dd>
+    <dt>Select "Guided - use entire disk".</dt>
+    <dt>Select the disk you would like to use.</dt>
+    <dt>Agree to the changes to be made.</dt>
+        <dd>The installer continues with the installation process (this may take a while on older hardware)</dd>
+        <dd>The installer prompts the installation is complete.</dd>
+    <dt>Select continue.</dt>
+        <dd>The system restarts.</dd>
+    <dt>Remove the installation media.</dt>
+        <dd>The system boots properly and ask for login credentials</dd>
+    <dt>Fill login credentials.</dt>
+        <dd>The system accepted credentials?, shows information about Ubuntu and presents a bash prompt?</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
