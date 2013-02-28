@@ -1,22 +1,20 @@
 Test-case name: totem/tot-001
 <dl>
-		This test will check that Totem can playback youtube video
-	<dt> Open the dash and launch movie player by pressing the super key, and then entering ‘totem’</dt>
-		<dd>movie player should launch</dd>
+	This test will check that Totem can playback youtube video
+	<dt> Open Totem</dt>
+		<dd>Movie player should launch</dd>
 	<dt> Press the F9 button</dt>
-		<dd>the sidebar should open</dd>
-	<dt> Select 'Youtube' from the dropdown list enter 'ubuntu' as the search term and press find</dt>
-		<dd>videos should populate below in the search results</dd>
-	<dt> Double-click the first video</dt>
+		<dd>The sidebar should open and you must see the playlist</dd>
+	<dt> Select the add icon (+) from the dropdown list and go to (/usr/share/example-contect/Ubuntu_Free_Culture_Showcase) once there select the video (how fast.ogg)</dt>
 		<dd>Video should begin playing in the window</dd>
 	<dt> Press the pause button</dt>
 		<dd>Video should pause and the button becomes a play button</dd>
 	<dt> Press the play button</dt>
 		<dd>Video should begin playing</dd>
-	<dt> Press the play button</dt>
-		<dd>Video should begin playing</dd>
 	<dt> Press the full screen button</dt>
 		<dd>Video should go to fullscreen and continue playing</dd>
+	<dt> Move the Volume control (up/down)</dt>
+		<dd> Did you feel the change of volume?</dd>
 	<dt> Press the full screen button</dt>
 		<dd>Video should go to fullscreen and continue playing</dd>
 	<dt> Hover your mouse along the button of the screen</dt>
