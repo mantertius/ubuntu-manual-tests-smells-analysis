@@ -9,12 +9,8 @@ Test-case name: fileroller/flr-001
 		<dd>A new empty archive with specified name and format is created</dd>
 	<dt> Click 'Add files to archive' button from toolbar</dt>
 		<dd>'Add Files' file open dialog is displayed</dd>
-	<dt> Select any files to be added to the archive, click 'Add' button</dt>
-		<dd>Selected files are displayed in the archive contents list</dd>
-	<dt> Click 'Add a folder to archive' button from toolbar</dt>
-		<dd>'Add a Folder' file open dialog is displayed</dd>
-	<dt> Select any non-empty folder to be added to the archive, click 'Add' button</dt>
-		<dd>Selected folder is displayed in the archive contents list</dd>
+	<dt> Select any files and/or folders to be added to the archive, click 'Add' button</dt>
+		<dd>Selected files and/or folders are displayed in the archive contents list</dd>
 	<dt> Close file-roller, open nautilus and navigate to the folder where the archive has been created</dt>
 		<dd>Archive is present in the folder</dd>
 	<dt> Open the archive using file-roller</dt>
