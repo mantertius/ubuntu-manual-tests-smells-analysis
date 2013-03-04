@@ -1,7 +1,7 @@
 Test-case name: gnometerminal/ter-001
 <dl>
 		This test will check that basic terminal commands work in Gnome Terminal
-	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> Open the Terminal application</dt>
 	<dt> Type in sudo apt-get update and press Enter</dt>
 		<dd>You are asked for [sudo] password for USER: (where USER is your user name).</dd>
 	<dt> Enter your password and wait for the command to complete.</dt>
@@ -15,40 +15,41 @@ Test-case name: gnometerminal/ter-001
 Test-case name: gnometerminal/ter-002
 <dl>
 		This test will check that terminal colors and zoom level can be changed
-	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
-	<dt> Click on Edit, select Profiles, select Edit and select colours.</dt>
-	<dt> Modify the colours to a different set</dt>
-		<dd>Colors change in terminal</dd>
-	<dt> Set a Background Image</dt>
-		<dd>Terminal background changes</dd>
-	<dt> Change the Zoom Level</dt>
+	<dt> Open the Terminal application</dt>
+	<dt>Click on Edit, select Profiles, select Edit and select "Colors"</dt>
+	<dt>Using the options contained in the "Colors" tab modify the color palette, choosing some non-default colors or a different color scheme</dt>
+		<dd>The colors in your terminal match your modifications</dd>
+	<dt>Click on Edit, select Profiles, select Edit and select "Background"</dt>
+	<dt> Set the terminal choosing the option "Background Image"</dt>
+		<dd>Terminal background changes to the current wallpaper</dd>
+	<dt> Change the Zoom Level using the key combination "Ctrl++" and "Ctrl--"</dt>
 		<dd>Did the zoom level change in terminal?</dd>
 </dl>
 
 Test-case name: gnometerminal/ter-003
 <dl>
 		This test will check that terminal coloring is active
-	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
-	<dt> Type in touch text1.txt</dt>
-	<dt> type in ls</dt>
+	<dt> Open the Terminal application</dt>
+	<dt> Type "touch text1.txt"</dt>
+	<dt> type "ls"</dt>
 	<dt>txt is in black</dt>
-	<dt> Type in chmod 777 text1.txt</dt>
-	<dt> Type in ls</dt>
-	<dt>txt should now green?</dt>
+	<dt> Type  "chmod 777 text1.txt"</dt>
+	<dt> Type "ls"</dt>
+		<dd>text1.txt is enlighten in green?</dd>
 </dl>
 
 Test-case name: gnometerminal/ter-004
 <dl>
 		This test will check that the terminal tab launches succesfully
-	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
-	<dt> Press Ctrl+Alt+T</dt>
+	<dt> Open the Terminal application</dt>
+	<dt> Press "Ctrl+Alt+T"</dt>
 		<dd>Is an instance of gnome-terminal with the title 'user@hostname: ~' opened, with the current directory set to the users home directory?</dd>
 </dl>
 
 Test-case name: gnometerminal/ter-005
 <dl>
 		This test will check that the terminal can be given a new title
-	<dt> Open Terminal using the dash, and typing 'terminal'</dt>
+	<dt> Open the Terminal application</dt>
 	<dt> From the main menu select 'Terminal > Set Title...'</dt>
 		<dd>The Set Title dialog appears</dd>
 	<dt> Enter 'Test Title' and click OK</dt>
