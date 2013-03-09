@@ -1,5 +1,5 @@
 <dl>
-    <dd> To execute this test is needed an installed release of FAMILY and some files or applications installed</dd>
+    <dd>To execute this test, a pre-existing ubuntu (or derivative) installation is needed</dd>
 	<dt>Boot up the iso using a CD/DVD or USB Key </dt>
 		<dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
 	<dt>Click on the Install FAMILY button </dt>
