@@ -17,7 +17,7 @@
         <dd>'Installation type' screen is displayed</dd>
     <dt>Select the 'Upgrade ubuntu (or derivative name)' option </dt>
 	<dt>Click 'Install Now' button </dt>
-		<dd>'Where are you?' screen is displayed</dt>
+		<dd>'Where are you?' screen is displayed</dd>
 	<dt>If connected, verify that your timezone is proposed correctly </dt>
 	<dt>Click on the Continue button</dt>
 		<dd>'Keyboard layout' screen is displayed</dd>
