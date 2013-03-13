@@ -1,34 +1,18 @@
-<strong>Desktop Test</strong>
-<dl>
-  <dt>Boot into Ubuntu Studio and login as user</dt>
-  <strong>Note: make sure to reboot after any software updates before testing, even if not asked to.</strong>
-    <dd>Confirm the screen resolution is as expected</dd>
-  <dt>Open Ubuntu Software Center and install applications you would like to use</dt>
-    <dd>Ensure the applications are installed correctly and appear in the applications menu</dd>
-  <dt>If you have a USB drive, plug it in</dt>
-    <dd>Check that the USB drive is mounted and that you can open files from it</dd>
-  <strong>Note: Ubuntu Studio does not mount any hot plugged devices by default. </strong>
-  <dt>If you have a DVD or an audio CD, insert it</dt>
-    <dd>Check that the disk is mounted and that you can open and/or play files/tracks from it</dd>
-  <dt>Log out, shutdown or restart</dt>
-    <dd>Confirm the session is terminated properly</dd>
-</dl>
-<strong>Applications</strong>
-<dl>
-  <dt>Click the "Ubuntu Studio Information" item menu in the menu.</dt>
-    <dd>Does all the links included in there work? (e.g. Ubuntu Studio IRC, Ubuntu Studio Forums, etc.)</dd>
 <strong>Audio Check </strong>
-Please first make sure no audio applications are running (including any web pages).
+Before you begin, make sure you are booted into a fresh session, and that you haven't opened any audio applications - including any browser pages with audio content.
 <dl>
-  <dt>Open qjackctl</dt>
-    <dd>Start jack and confirm the jack starts in real time mode. Then  stop jack and confirm it closes properly. </dd>
-  <dt>Look in Qjackctl -> “Connect” to confirm that pulseaudio sink and source are created after starting jack. Open the pulseaudio mixer.</dt>
-   <dd>Set Pulseaudio to use jack output and input, and test sound.</dd>
-  <dt>Open PulseAudio. Use the volume applet and click "Sound Settings" to open the pulseaudio mixer.</dt>
-    <dd>Open firefox and go to any page that has audio content to confirm desktop audio is working. </dd>
-   <strong>If you are not getting any sound after a fresh boot, and you're sure you've chosen the right device, see http://help.ubuntu.com/community/UbuntuStudio/ProAudioIntro/1204#No_Volume.3F. </strong>
-  <dt>If you are connected to the Internet, Open Firefox and load ubuntustudio.org</dt>
-    <dd>Confirm that the page loads</dd>
+  <dt>Open qjackctl from the menu</dt>
+    <dd>Start jack and confirm the jack starts in real time mode. Then stop jack to confirm it closes properly.</dd>
+  <dt>Open Hydrogen from the menu</dt>
+    <dd>Create a quick beat and play it - you should hear sound. If you aren't hearing any sound, make sure that connections are accurate in <strong>Qjackctl -> Connect</strong>, and that your hardware levels are not muted.<dd>
+    <dd>See http://help.ubuntu.com/community/UbuntuStudio/ProAudioIntro for more info on audio on Ubuntu Studio if you're having trouble. </dd>
+    <dd>You can close Hydrogen once you are done</dd>
+  <dt>Make sure pulseaudio is connected to jack</dt>
+    <dd>In <strong>Qjackctl -> Connect</strong> make sure that pulseaudio sink and source exist.</dd>
+  <dt>Open the pulseaudio mixer (pavucontrol).</dt>
+   <dd>Set Pulseaudio to use jack in both "output devices" and "input devices"</dd>
+  <dt>Test desktop sound through jack</dt>
+    <dd>Open firefox and go to any page that has audio. Flash video will not work, so html5 is preferred - such as http://youtube.com/html5. </dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
