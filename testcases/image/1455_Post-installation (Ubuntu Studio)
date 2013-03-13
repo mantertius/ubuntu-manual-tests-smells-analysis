@@ -2,7 +2,7 @@
 Before you begin, make sure you are booted into a fresh session, and that you haven't opened any audio applications - including any browser pages with audio content.
 <dl>
   <dt>Open qjackctl from the menu</dt>
-    <dd>Start jack and confirm the jack starts in real time mode. Then stop jack to confirm it closes properly.</dd>
+    <dd>Start jack and confirm the jack starts in real time mode. Then stop jack to confirm it closes properly. Finish by starting jack and keeping it on for the duration of this test.</dd>
   <dt>Open Hydrogen from the menu</dt>
     <dd>Create a quick beat and play it - you should hear sound. If you aren't hearing any sound, make sure that connections are accurate in <strong>Qjackctl -> Connect</strong>, and that your hardware levels are not muted.</dd>
     <dd>See http://help.ubuntu.com/community/UbuntuStudio/ProAudioIntro for more info on audio on Ubuntu Studio if you're having trouble. </dd>
