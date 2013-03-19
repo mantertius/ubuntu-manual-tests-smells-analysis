@@ -1,9 +1,18 @@
 These tests check the Gwibber application and its integration to Twitter, Facebook and Flickr.
 <dl>
+        Test-Case Name: gwibber/gwb-001
+                        Test how gwibber launches if no online accounts are setup
+
 	<dt>Open Gwibber Social Client</dt>
 		<dd>Gwibber window will appear</dd>
 		<dd>If no online accounts have been setup, the online accounts window from system settings should appear.</dd>
 		<dd>Online Accounts window should display a list of available online services, those available for integration with Gwibber include: Facebook, Flickr, Twitter and identi.ca </dd>
+ 
+
+        Test-Case Name: gwibber/gwb-002
+                        Test twitter integration
+                   
+
 	<dt>Create a Twitter account</dt>
 		<ul>
 			<dt>Introduce the credentials (username and password)</dt>
@@ -45,6 +54,10 @@ These tests check the Gwibber application and its integration to Twitter, Facebo
             <dd>Gwibber should not display any "new" feeds from a deleted account. Old feeds are however still present.</dd>
 
 
+        Test-Case Name: gwibber/gwb-003
+                        Test facebook integration
+
+
 	<dt>Create a Facebook account
 		<ul>
 			<dt>Introduce the credentials (username and password)</dt>
@@ -83,6 +96,11 @@ These tests check the Gwibber application and its integration to Twitter, Facebo
 	<dt>Remove all existing accounts</dt>
             <dd>Gwibber should not display any "new" feeds from a deleted account. </dd>
 
+
+        Test-Case Name: gwibber/gwb-004
+                        Test flicker integration
+
+
 	<dt>Create a Flickr account
 		<ul>
 			<dt>Introduce the credentials (username and password)</dt>
@@ -99,6 +117,9 @@ These tests check the Gwibber application and its integration to Twitter, Facebo
 		<dd>Gwibber should display a list of any Flickr's updates containing images from the Flickr's timeline when you click the "Attachments" button. </dd>
          <dt>Click on the "New Messsage" button</dt>
                 <dd> A popup should appear below with a textfield. Updates cannot however be sent to Flickr since flickr it is not that type of service.</dd>
+
+         Test-Case Name: gwibber/gwb-005
+                        Test gwibber feed after deleting all online accounts.
                
 	<dt>Open Online Accounts by selecting "Accounts" from Gwibber's "Edit" menu</dt>
             <dd>Online Accounts window will be displayed</dd>
