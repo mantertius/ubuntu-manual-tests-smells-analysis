@@ -59,7 +59,7 @@ Test-case more_suggestions-ddg_related
     <dt>Right click on a result</dt>
         <dd>A preview of the result is created</dd>
     <dt>Left click the result</dt>
-        <dd>The browser will be opened on the duckduckgo web site, on the page showing results for the result you clicked</dd>
+        <dd>The browser will be opened on the duckduckgo web site, on the page showing results for the related topic you clicked</dd>
 </dl>
 
 Test-case reference-wikipedia
