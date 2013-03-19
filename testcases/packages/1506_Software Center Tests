@@ -27,7 +27,7 @@ Test-case name: SoftwareCenter/sc-002
        <dt>Click the "History" button at the top of the Software Center</dt>
                 <dd>The VLC media mplayer is shown in the logs</dd>
         <dt>Press the "back" button at the left top of the Software Center</dt>
-               <dd>A list of media applications is shown and vlc is selected</dd>                      
+               <dd>A list of media applications is shown and vlc is selected</dd>
         <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
               <dd>The Software Centes shows the "whats' new" section</dd>
         <dt>Look for the VLC media player and launch it</dt>
@@ -52,7 +52,7 @@ Test-case name: SoftwareCenter/sc-003
         <dt>Press the "Remove" button</dt>
                 <dd>A new window appears asking for authentication credentials</dd>
         <dt>Authenticate with your credentials</dt>
-                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd> 
+                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
        <dt>Wait for the application to be removed</dt>
                 <dd>The "Progress" icon dissapears</dd>
                 <dd>The sublist reloads and no longer shows VLC</dd>
@@ -97,7 +97,7 @@ Test-case name: SoftwareCenter/sc-005
        <dt>Click the "History" button at the top of the Software Center</dt>
                 <dd>The VLC media mplayer is shown in the logs</dd>
         <dt>Press the "back" button at the left top of the Software Center</dt>
-               <dd>A list of media applications is shown and vlc is selected</dd>                      
+               <dd>A list of media applications is shown and vlc is selected</dd>
         <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
               <dd>The Software Centes shows the "whats' new" section</dd>
         <dt>Look for the VLC media player and launch it</dt>
@@ -108,7 +108,7 @@ Test-case name: SoftwareCenter/sc-005
 
 Test-case name: SoftwareCenter/sc-006
                depends: SoftwareCenter/sc-001
-	       depends: SoftwareCenter/sc-004     
+	       depends: SoftwareCenter/sc-004
                depends: SoftwareCenter/sc-005
 <dl>
         This tests will check that Software Center can remove applications correctly
@@ -124,7 +124,7 @@ Test-case name: SoftwareCenter/sc-006
         <dt>Press the "Remove" button</dt>
                 <dd>A new window appears asking for authentication credentials</dd>
         <dt>Authenticate with your credentials</dt>
-                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd> 
+                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
        <dt>Wait for the application to be removed</dt>
                 <dd>The "Progress" icon dissapears</dd>
                 <dd>The sublist reloads and no longer shows VLC</dd>
@@ -148,7 +148,7 @@ Test-case name: SoftwareCenter/sc-007
                 <dd>A window confirming you're already logged into Ubuntu Software Center appears</dd>
         <dt>Close the "Connect to Ubuntu Software Center" window</dt>
                 <dd>The recommended for you section reloads?<dd>
-                <dd>Does it show recommendations?</dd>                
+                <dd>Does it show recommendations?</dd>
 </dl>
 
 
@@ -159,7 +159,7 @@ Test-case name: SoftwareCenter/sc-008
         <dt>Open the Ubuntu Software Center</dt>
                 <dd>The Ubuntu Software Center is launched</dd>
         <dt>Go to the top bar and click on "View" and later on "Turn Off Recommendations"</dt>
-                <dd>Does the recommendation section shows a "Turn On Recommendations" button?</dd> 
+                <dd>Does the recommendation section shows a "Turn On Recommendations" button?</dd>
 </dl>
 
 
@@ -217,4 +217,4 @@ Test-case name: SoftwareCenter/sc-011
 		<dd>If you click on "Credits" can you see it?</dd>
 </dl>
 
-
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
