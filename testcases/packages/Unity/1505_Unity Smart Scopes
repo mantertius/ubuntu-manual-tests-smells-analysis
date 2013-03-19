@@ -70,7 +70,7 @@ Test-case reference-wikipedia
     <dt> Enter on the search field something you will expect to find on Wikipedia, for example: ubuntu.</dt>
     <dt>Click the arrow next to the search field</dt>
         <dd>The dash will show the Categories filter</dd>
-    <dt>Click the more Reference category.</dt>
+    <dt>Click the Reference category.</dt>
         <dd>The Reference section of the dash will show your entered value as a result.</dd>
     <dt>Right click on a result</dt>
         <dd>A preview of the result is created</dd>
