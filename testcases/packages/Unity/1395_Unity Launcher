@@ -40,9 +40,7 @@ Test-case launcher/auto-hide-behavior
 	<dt>Make sure auto-hide is enabled.</dt>
 	<dt>Move the mouse on the edge and:
             <ul>
-		<li> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal in unity 3D</li>
-		<li> - put your mouse at x=0 and wait until the launcher reveal in unity 2D</li>
-            </ul>
+		<li> - continue pushing to the left (as if you want to put the mouse offscreen) until the launcher reveal</li>
         </dt>
 	<dd>The launcher should appear</dd>
 	<dt>Put the mouse outside of the launcher area</dt>
@@ -58,16 +56,16 @@ Test-case launcher/auto-hide-maximize
 Test-case launcher/auto-hide-clickhold
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
-	<dt>Move the mouse to the left edge of the screen and make the launcher revealing (by other pushing on the left for 3D or just waiting for 2D)</dt>
+	<dt>Move the mouse to the left edge of the screen and make the launcher revealing by other pushing on the left</dt>
 		<dd>Launcher appears</dd>
 	<dt>Click on an application launcher icon and don't move the mouse</dt>
-		<dd>Launcher should disappear [2D: fail, lp:898238]</dd>
+		<dd>Launcher should disappear</dd>
 </dl>
 
 Test-case launcher/auto-hide-clickmove
 <dl>
 	<dt>Make sure auto-hide is enabled.</dt>
-	<dt>Move the mouse to the left edge of the screen and make the launcher revealing (by other pushing on the left for 3D or just waiting for 2D)</dt>
+	<dt>Move the mouse to the left edge of the screen and make the launcher revealing by other pushing on the left</dt>
 		<dd>Launcher appears</dd>
 	<dt>Click on an application launcher icon and immediately move the mouse to another launcher icon</dt>
 		<dd>Launcher should not disappear</dd>
@@ -79,7 +77,7 @@ Test-case launcher/auto-hide-mouseunderlauncher
 	<dt>Move the mouse in the area which is normally covered by the launcher (without revealing it)</dt>
 	<dt>Press super and keep it pressed</dt>
 	<dt>Once the launcher is displayed, release super</dt>
-		<dd>Launcher should disappear [2D: fail, lp:898239]</dd>
+		<dd>Launcher should disappear</dd>
 </dl>
 
 Test-case launcher/auto-hide-mousemove-afterlauncherappear
@@ -249,7 +247,7 @@ Test-case launcher/fold-apps
 	<dt>Open a bunch of applications on your desktop so that you have more than what the launcher can show</dt>
 		<dd>The launcher should fold the icons</dd>
 	<dt>Point with your mouse to a folded launcher icon</dt>
-		<dd>The launcher should unfold the icons and your cursor should be on the one you pointed [2D: fail]</dd>
+		<dd>The launcher should unfold the icons and your cursor should be on the one you pointed</dd>
 	<dt>Put your mouse outside of the launcher</dt>
 		<dd>The launcher icons should fold again</dd>
 </dl>
@@ -322,8 +320,8 @@ Test-case launcher/workspace-switcher
 <dl>
 	<dt>Click on the workspace switcher launcher icon</dt>
 		<dd>all workspaces should be visible with windows exposed on all workspaces</dd>
-	<dt>Click on a window application and move to another workspace [2D: fail]</dt>
-		<dd>you should see the window set in the destination workspace. Also, the orange border showing the current workspace should change. [2D: fail]</dd>
+	<dt>Click on a window application and move to another workspace</dt>
+		<dd>you should see the window set in the destination workspace. Also, the orange border showing the current workspace should change.</dd>
 	<dt>Double click on one workspace which isn't the current one</dt>
 		<dd>the chosen workspace should be zoomed in and become the current one.</dd>
 </dl>
@@ -332,11 +330,11 @@ Test-case launcher/arrows-notin-currentws
 <dl>
 	<dt>Start Nautilus on workspace 1, with only one window.</dt>
 	<dt>Switch to workspace 2.</dt>
-		<dd>Launcher arrow for Nautilus should be unfilled [2D: fail]</dd>
+		<dd>Launcher arrow for Nautilus should be unfilled</dd>
 	<dt>Switch to workspace 1, open a second window for Nautilus on the same monitor.</dt>
 		<dd>A second arrow appears on the left of the launcher icon.</dd>
 	<dt>Switch to workspace 2.</dt>
-		<dd>Only one unfilled arrow is displayed on the left of the launcher icon. [2D: fail]</dd>
+		<dd>Only one unfilled arrow is displayed on the left of the launcher icon.</dd>
 	<dt>Move the second window from workspace 1 to workspace 2, on the same monitor.</dt>
 		<dd>Only one arrow should be displayed.</dd>
 </dl>

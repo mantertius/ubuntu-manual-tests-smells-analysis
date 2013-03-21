@@ -3,7 +3,7 @@ Test-case panel/appmenu_desktop
 	<dt>Click on the desktop</dt>
 		<dd>"Ubuntu Desktop" (or any localized string) appears in the panel</dd>
 	<dt>Move the mouse over the panel</dt>
-		<dd>"Ubuntu Desktop" label fades out [2D: no fade, it vanishes] and Desktop menubar items appear</dd>
+		<dd>"Ubuntu Desktop" label fades out and Desktop menubar items appear</dd>
 </dl>
 
 Test-case panel/appmenu_mouse_click
@@ -118,21 +118,21 @@ Test-case panel/titlebar_multi_windows
 		<dd>Panel does not show window buttons</dd>
 		<dd>Titlebar and menubar are those of the focused window</dd>
 	<dt>Click on an empty space of the panel</dt>
-		<dd>Maximized window gets the focus [2D: known fail, lp:731761]</dd>
+		<dd>Maximized window gets the focus</dd>
 </dl>
 
 Test-case panel/indicators
 <dl>
 	<dt>Check the right part of the panel shows the following indicators:
             <ul>
-		<li> - Messaging indicator: envelop icon</li>
+		<li> - Messaging indicator: envelope icon</li>
 		<li> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged</li>
 		<li> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon</li>
 		<li> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon</li>
+        <li> - (if system has ubuntu one) Ubuntu one indicator: a cloud icon</li>
 		<li> - Sound indicator: volume icon</li>
 		<li> - Time indicator: the current time</li>
-		<li> - Session indicator: your name or nickname (/!\ Not visible in the live CD)</li>
-		<li> - System indicator: power icon</li>
+		<li> - Session/System indicator: power icon</li>
             </ul>
         </dt>
 </dl>

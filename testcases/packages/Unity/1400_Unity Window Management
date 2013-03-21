@@ -75,7 +75,7 @@ Test-case wm/resize
 	<dt>Move the mouse next to the right edge of the window</dt>
 		<dd>the cursor should transform into a resize cursor ( â†’| )</dd>
 	<dt>Drag the edge to resize to window</dt>
-		<dd>A preview rectangle appears [2D: fail]</dd>
+		<dd>A preview rectangle appears</dd>
 	<dt>Release the mouse button</dt>
 		<dd>Window is resized</dd>
 	<dt>Ensure the other edges behave the same</dt>
@@ -105,7 +105,7 @@ Test-case wm/workspace_always_visible
 	<dt>Click on the spread icon in the Launcher</dt>
 		<dd>The window is visible in all workspaces</dd>
 	<dt>Select the window</dt>
-	<dt>Right click on the title bar, click on "Only on This Workspace" [2D: "Always on visible workspace"]</dt>
+	<dt>Right click on the title bar, click on "Only on This Workspace"</dt>
 	<dt>Click on the spread icon in the Launcher</dt>
 		<dd>The window is only visible in the current workspace</dd>
 </dl>

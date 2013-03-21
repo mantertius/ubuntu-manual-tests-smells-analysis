@@ -117,7 +117,7 @@ Test-case dash/drag-item-to-launcher
 	<dt>Tap super to show the dash</dt>
 	<dt>Click on the application lens icon</dt>
 	<dt>Drag an item which is not in the launcher to the launcher</dt>
-		<dd>All launcher icons should become colored again and an empty place should appear in the launcher [2D: fail, lp:898247]</dd>
+		<dd>All launcher icons should become colored again and an empty place should appear in the launcher</dd>
 	<dt>Drop the item in the launcher</dt>
 		<dd>A new launcher icon should appear and stick in the launcher</dd>
 </dl>
@@ -144,7 +144,7 @@ Test-case dash/keyboard-navigation
 			<li> - If you press left and then enter once the focus is in a category title containing "see xx more results", the content of this category should expand (and using the key arrays should enable you to scroll the full view).</li>
 			<li> - If you go to a category below an expanded category and press up to go over the content of the previous category, the first item of the last line of this category should get highlighted</li>
 			<li> - If you refocus the same "show less results" and press enter, the content of this category should collapse.</li>
-			<li> - Tab should navigate yourself between categories [2D: fail, lp:891648]</li>
+			<li> - Tab should navigate yourself between categories</li>
 			<li> - If you press shift + tab, you should navigate between categories backwards</li>
                 </ul>
         </dt>
@@ -172,7 +172,7 @@ Test-case dash/state-lenses
 	<dt>Reopen the dash:</dt>
 		<dd>The main dash home shouldn't contain previous search</dd>
 	<dt>Open on the previous lens</dt>
-		<dd>You should see the same search results, with the same filter enabled [2D: fail]</dd>
+		<dd>You should see the same search results, with the same filter enabled</dd>
 	<dt>Click on other lenses:</dt>
 </dl>
 Test-case dash/state-dash
