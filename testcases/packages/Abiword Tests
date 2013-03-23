@@ -1,4 +1,4 @@
-﻿Test-case name:
+﻿Test-case name:abiword/abi-001
 This test will check that Abiword can be started
 <dl>
 
@@ -7,7 +7,7 @@ This test will check that Abiword can be started
 
 </dl>
 
-Test-case name:
+Test-case name:abiword/abi-002
 This test will check that  Abiword can open and save .abw files
 <dl>
 
@@ -27,7 +27,7 @@ This test will check that  Abiword can open and save .abw files
 
 </dl>
 
-Test-case name: 
+Test-case name:abiword/abi-003
 This test will check that Abiword can spell check
 
 <dl>
