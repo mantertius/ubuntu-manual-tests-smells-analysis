@@ -2,7 +2,7 @@
 This test will check that Abiword can be started
 <dl>
 
-<dt>Go to 'Applications' click 'Office' then choose 'AbiWord Word Processor'.</dt>
+<dt>Open Abiword.</dt>
 	<dd>Did Abiword launch?</dd>
 
 </dl>
