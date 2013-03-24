@@ -1,0 +1,49 @@
+Test-case name:simple-scan/simp-001
+This test will check that simple-scan can be started.
+
+<dl>
+
+<dt>Open simple-scan.</dt>
+	<dd>Did simple-Scan launch?</dd>
+	<dd>Did simple-scan detect your scanner?</dd>
+	
+	<dd>if simple-scan did not detect your scanner did you get an error message displaying "No scanners detected"?</dd>
+
+</dl>
+
+Test-case name:simple-scan/simp-002
+This test will check that simple-scan can scan and then save files.
+
+<dl>
+
+<dt>Put a document into the scanner and Click "Scan".</dt>
+	<dd>Has the document Scanned?</dd>
+	<dd>Has the Scanned Document been displayed on screen?</dd>
+<dt>Save the file.</dt>
+	<dd>Did the file save correctly?</dd>
+	<dd>Did the file save as jpg?</dd>
+
+<dt>Navigate to Scanned Document.jpg (by default this should be in /home/USERNAME/Documents/)</dt>
+	<dd>Did the file open correctly as a jpg?</dd>
+
+</dl>
+	
+Test-case name:simple-scan/simp-003
+This test will check that simple-scan can scan and then save pdf files.
+
+<dl>
+
+<dt>Put a document into the scanner and Click "Scan".</dt>
+	<dd>Has the document Scanned?</dd>
+	<dd>Has the Scanned Document been displayed on screen?</dd>
+<dt>Save the file and change the extention from Scanned Document.jpg to Scanned Document.pdf</dt>
+	<dd>Did the file save correctly?</dd>
+	<dd>Did the file save as pdf?</dd>
+
+<dt>Navigate to Scanned Document.pdf (by default this should be in /home/USERNAME/Documents/) </dt>
+	<dd>Did the file open correctly as a pdf?<dd>
+<dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+
