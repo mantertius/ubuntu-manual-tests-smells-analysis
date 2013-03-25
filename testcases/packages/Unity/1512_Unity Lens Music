@@ -123,5 +123,59 @@ Test-case music-lens/download-with-wrong-password
         <dd>The dash will show the payment confirmation again, with the message: Wrong password</dd>
 </dl>
 
+Test-case music-lens/change-payment-method
+<dl>
+    <dt>Sign in with Ubuntu One on your desktop.</dt>
+    <dt>Sign in to https://pay.ubuntu.com/, click the link with your user name and enable automatic payments. (This requires that you have completed a payment before)</dt>
+    <dt>Click the Dash icon.</dt>
+        <dd>The Dash will appear showing the home lens.</dd>
+    <dt>Click the Music lens icon in the bottom of the dash.</dt>
+        <dd>The Music lens will appear.</dd>
+    <dt>Search for Willie Nelson (or any other music artist).</dt>
+        <dd>On the Albums section, there will appear albums by Willie Nelson.</dd>
+    <dt>Click the first album.</dt>
+        <dd>The information of the album will appear in the Dash.</dd>
+    <dt>Click the Download button.</dt>
+        <dd>The Ubuntu One payment confirmation will appear in the Dash.</dd>
+    <dt>Click the change payment method link.</dt>
+        <dd>The browser will be opened and you will be taken to the Ubuntu Pay website, on the Your preferences page.</dd>
+</dl>
+
+Test-case music-lens/reset-password
+<dl>
+    <dt>Sign in with Ubuntu One on your desktop.</dt>
+    <dt>Sign in to https://pay.ubuntu.com/, click the link with your user name and enable automatic payments. (This requires that you have completed a payment before)</dt>
+    <dt>Click the Dash icon.</dt>
+        <dd>The Dash will appear showing the home lens.</dd>
+    <dt>Click the Music lens icon in the bottom of the dash.</dt>
+        <dd>The Music lens will appear.</dd>
+    <dt>Search for Willie Nelson (or any other music artist).</dt>
+        <dd>On the Albums section, there will appear albums by Willie Nelson.</dd>
+    <dt>Click the first album.</dt>
+        <dd>The information of the album will appear in the Dash.</dd>
+    <dt>Click the Download button.</dt>
+        <dd>The Ubuntu One payment confirmation will appear in the Dash.</dd>
+    <dt>Click the forgotten your Ubuntu One password? link</dt>
+        <dd>The browser will be opened and you will be taken to the Ubuntu single sign on website, on the Reset your Ubuntu Single Sign On password page.</dd>
+</dl>
+
+Test-case music-lens/cancel-purchase
+<dl>
+    <dt>Sign in with Ubuntu One on your desktop.</dt>
+    <dt>Sign in to https://pay.ubuntu.com/, click the link with your user name and enable automatic payments. (This requires that you have completed a payment before)</dt>
+    <dt>Click the Dash icon.</dt>
+        <dd>The Dash will appear showing the home lens.</dd>
+    <dt>Click the Music lens icon in the bottom of the dash.</dt>
+        <dd>The Music lens will appear.</dd>
+    <dt>Search for Willie Nelson (or any other music artist).</dt>
+        <dd>On the Albums section, there will appear albums by Willie Nelson.</dd>
+    <dt>Click the first album.</dt>
+        <dd>The information of the album will appear in the Dash.</dd>
+    <dt>Click the Download button.</dt>
+        <dd>The Ubuntu One payment confirmation will appear in the Dash.</dd>
+    <dt>Click the Cancel button</dt>
+        <dd>The information of the album will appear in the Dash again.</dd>
+</dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
