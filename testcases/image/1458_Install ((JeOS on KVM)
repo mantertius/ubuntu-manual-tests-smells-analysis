@@ -9,7 +9,7 @@
     <dt>No software selection.</dt>
     <dt>Boot the newly created guest</dt>
     <dt>Log in</dt>
-    <dt>Check that the uname -r returns a -virtual kernel (on Lucid AMD64, it should return a -server; on i386 it will always install a -pae, see https://launchpad.net/bugs/227869):</dt>
+    <dt>Check that the uname -r returns a -generic kernel</dt>
         <dd>uname -r</dd>
     <dt>Check that the linux-virtual package is installed:</dt>
         <dd>dpkg -l linux-virtual</dd>
@@ -19,7 +19,7 @@
         <dd>dpkg -l ubuntu-standard</dd>
     <dt>Check that the size of the kernel modules is below 40M:</dt>
         <dd>du -sh /lib/modules/</dd>
-    <dt>Check that the size of the installed system is below 500M:</dt>
+    <dt>Check that the size of the installed system is below 800M:</dt>
         <dd>df -h</dd>
 </dl>
 <strong>
