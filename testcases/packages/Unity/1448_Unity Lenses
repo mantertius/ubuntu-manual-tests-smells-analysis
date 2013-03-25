@@ -46,45 +46,6 @@ Test-case dash/file-lens-search
 		<dd>It should change the results, at least on one category</dd>
 </dl>
 
-Test-case dash/music-lens
-<dl>
-	<dt>Tap super to show the dash</dt>
-	<dt>Click on the music lens icon</dt>
-	    <dd>the search entry should show "search music" and you should have two categories, filled with the indexed music
-                <ul>
-                            <li>tracks</li>
-                            <li>albums</li>
-                </ul>
-            </dd>
-</dl>
-
-Test-case dash/music-lens-search
-<dl>
-	<dt>Tap super to show the dash</dt>
-	<dt>Click on the music lens icon</dt>
-	<dt>Make a search</dt>
-		<dd>it should impact the result on each category. A search for a popular group like "u2" should show some online result in an additional category</dd>
-	<dt>Open the filter by clicking on "Filter Results"</dt>
-	<dt>Change the filters for each of filter type</dt>
-		<dd>It should change the results, at least on one category</dd>
-</dl>
-
-Test-case dash/lens-preview-music
-<dl>
-	<dt>Tap super to show the dash</dt>
-	<dt>Click on the music lens icon</dt>
-	<dt>Make a search</dt>
-		<dd>it should impact the result on each category. A search for a popular group like "u2" should show some online result in an additional category</dd>
-	<dt>Right click on an album</dt>
-		<dd>A lens preview should appear showing the album cover, with right and left buttons to scroll between previews, and a list of songs within the album. Further a Download or buy button should be located below the track listing</dd>
-	<dt>Click the play button next to a track</dt>
-		<dd>The button should change to a pause button and begin playing, showing the track progress as it plays</dd>
-	<dt>Click the pause button next to a track and then click the play button again</dt>
-		<dd>The track should stop playing and then start again from the same location in the song</dd>
-	<dt>Click the right and left arrows next to the preview</dt>
-		<dd>The item in the list to the right and left of the preview should display</dd>
-</dl>
-
 Test-case dash/lens-preview-file
 <dl>
 	<dt>Tap super to show the dash</dt>
