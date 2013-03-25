@@ -6,8 +6,6 @@ This tests the applications list
     <dt>Double Click on <em>Internet</em>.</dt>
         <dd>PCManFM window shows identical listing to that provided by clicking on <em>Menu</em>  -->; <em>Internet</em>.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-002
 This tests basic file management
@@ -55,8 +53,6 @@ This tests basic file management
     <dt> Click on 'X' at top of PCManFM window.</dt>
         <dd>PCManFM closes.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-003
 This tests boomark management
@@ -72,8 +68,6 @@ This tests boomark management
     <dt>Right click on  <em>Del</em> and select <em>Remove  from Bookmark</em>.</dt>
         <dd>The entry <strong>Del</strong> no longer appears in the sidebar.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 
 Test-case name: pcmanfm/pcm-004
@@ -90,8 +84,6 @@ This tests the 'open as root' functionality
     <dt>Click <em>X</em> at top right of the window.</dt>
         <dd>Window closes.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-005
 This tests the 'open in terminal' functionality
@@ -101,8 +93,6 @@ This tests the 'open in terminal' functionality
     <dt>Click on <em>Tools</em> and select <em>Open Current Folder in Terminal</em>.</dt>
         <dd>Terminal launches showing the Desktop directory.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-006
 This tests the 'right click' functionality
@@ -112,8 +102,6 @@ This tests the 'right click' functionality
     <dt>Right click on <em>Desktop</em>.</dt>
         <dd>A second menu appears, offering such things as options to open, copy folder etc.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-007
 Thise tests tab management
@@ -125,8 +113,6 @@ Thise tests tab management
     <dt>Click on the <em>X</em> on the tab label.</dt>
         <dd>Tab closes.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-008
 This tests usb device management
@@ -160,8 +146,6 @@ This tests usb device management
     <dt>Right click on the USB device in the PCManFM panel, select <em>Eject Removable Media</em>.</dt>
         <dd>The USB device is no longer listed in the PCManFM panel.</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
 Test-case name: pcmanfm/pcm-009
 This tests views
