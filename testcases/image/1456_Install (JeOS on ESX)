@@ -19,7 +19,7 @@
       <dd>dpkg -l ubuntu-standard</dd>
   <dt>Check that the size of the kernel modules is below 40M:</dt>
       <dd>du -sh /lib/modules/</dd>
-  <dt>Check that the size of the installed system is below 500M:</dt>
+  <dt>Check that the size of the installed system is below 800M:</dt>
       <dd>df -h</dd>
 </dl>
 <strong>
