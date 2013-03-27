@@ -1,131 +1,97 @@
 These tests check the Gwibber application and its integration to Twitter, Facebook and Flickr.
-<dl>
-        Test-Case Name: gwibber/gwb-001
-        Test how gwibber launches if no online accounts are setup
 
-	<dt>Open Gwibber Social Client</dt>
-		<dd>Gwibber window will appear</dd>
-		<dd>If no online accounts have been setup, the online accounts window from system settings should appear.</dd>
-		<dd>Online Accounts window should display a list of available online services, those available for integration with Gwibber include: Facebook, Flickr, Twitter and identi.ca </dd>
+Test-Case name: gwibber/gwb-001
+<dl>
+    This test will check that Gwibber can be started
+    <dt> Look for Gwibber and launch it</dt>
+        <dd>Is Gwibber launched?</dd>
 </dl>
 
-        Test-Case Name: gwibber/gwb-002
-        Test twitter integration
-
+Test-Case name: gwibber/gwb-002
 <dl>
-	<dt>Create a Twitter account</dt>
-		<ul>
-			<dt>Introduce the credentials (username and password)</dt>
-			<dt>Accept permissions</dt>
-			<dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
-		</ul>
-	</dt>
-        <dt>Close Online Accounts Window</dt>
-
-	<dt>Open Gwibber</dt>
-		<dd>Gwibber should display Twitter’s timeline on the home screen or when you click on the 'Home' button</dd>
-        <dt>Click on the "Messages" button</dt>
-		<dd>Gwibber should display a list of twitter messages when you click on the 'Messages' button.</dd>
-        <dt>Click on the "Reply" button</dt>
-		<dd>Gwibber should display a list of @reply twitter messages when you click on the 'Reply' button.</dd>
-        <dt>Click on the "Private Messages" button</dt>
-		<dd>Gwibber should display a list of private twitter messages when you click on the 'Private Messages' button.</dd>
-        <dt>Click on the "Attachments" button</dt>
-		<dd>Gwibber should display a list of any tweets containing images, links or videos from the Twitter's timeline when you click the "Attachments" button. </dd>
-        <dt>Click on the "Searches" button</dt>
-		<dd>Gwibber should display a search box to allow you to search for mentioned terms or topics in Twitter's timeline when you click the "Searches" button. </dd>
-        <dt>Click on the "Users" button</dt>
-		<dd>Gwibber should display a list of people you follow on Twitter when you click the "Users" button. </dd>
-        <dt>Click on a user's picture or user's name on Twitter's timeline</dt>
-            <dd>Gwibber should open a link to the user's post on the default browser.</dd>
-        <dt>Click on the "New Messsage" button</dt>
-                <dd>A popup should appear below with a textfield.</dd>
-                <dd>A tiny twitter icon should appear below the textfield to show that any update you post here will be posted on twitter.</dd>
- 		<dd>A tiny "character counter" should appear below the textfield showing the amount of characters you have left. 140 characters is the maximum for twitter. </dd>
-                <dd>A send button should appear below the textfield</dd>
-        <dt>Click on send with content in the textfield</td>
-                <dd>Gwibber should post the update to twitter so long as the twitter icon below the textfield is active</dd>
-        <dt>Click on send with content in the textfield and the twitter icon below the textfield is inactive</td>
-                <dd>Gwibber should not post the update to twitter</dd>
-
-	<dt>Open Online Accounts by selecting "Accounts" from Gwibber's "Edit" menu</dt>
-            <dd>Online Accounts window will be displayed</dd>
-	<dt>Remove all existing accounts</dt>
-            <dd>Gwibber should not display any "new" feeds from a deleted account. Old feeds are however still present.</dd>
+    depends: gwibber/gwb-001
+    This test will check the Facebook integration
+    <dt>Open the Online Accounts application</dt>
+        <dd>The Online Accounts window appear</dd>
+    <dt>Select "Facebook"</dt>
+        <dd>A screen asking for authentication is displayed</dd>
+    <dt>Fill the fields with your credencials and click on the "Log In" button</dt>
+        <dd>The accounts gets added and in the right pannel the Gwibber turn on button is enabled</dd>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber displays Facebook's timeline on window screen and notifications are shown with previous messages</dd>
+    <dt>Drag down and up with the cursor the timeline</dt>
+        <dd>Displayed messages moves up and down</dd>
+    <dt>Click on a random message</dt>
+        <dd>New elements appear below the message; previous comments, a star, an input field with the phrase "Reply" and a "Send" button</dd>
+    <dt>Click on the same message</dt>
+        <dd>Additional elements dissapear</dd>
+    <dt>Click one more time on the same message</dt>
+    <dt>Write "ping" into the "Reply" input field, press "Send" and drag up to the top of the timeline</dt>
+        <dd>A message containing "ping" is shown at the top of the timeline</dd>
+    <dt>Click on the "Post" button</dt>
+        <dd>The "Share with your friends" window is shown, it contains your nickname in Facebook, a "Compose" input file, and a "Send" button</dd>
+    <dt>Write some text and press "Send"</dt>
+        <dd>Gwibber goes back to the timeline window</dd>
+    <dt>Click the "Top" button</dt>
+        <dd>The text previously written is shown into the top of the timeline on your Facebook account</dd>
+    <dt>Make someone write in your wall</dt>
+    <dt>Click on the mention message in the timeline window</dt>
+    <dt>Write a reply into the "Reply" input field and press "Send"</dt>
+        <dd>The timeline window shown the message used to reply</dd>
+    <dt>Click on some random message</dt>
+        <dd>New elements appear below the message; previous comments, a star, an input field with the phrase "Reply" and a "Send" button</dd>
+    <dt>Click the star button on the left</dt>
+        <dd>The "# people liked this" increments one"</dd>
+    <dt>Go to the Online Accounts application</dt>
+    <dt>Select "Remove Account" to delete the Facebook account</dt>
+        <dd>A confirmation dialog is shown</dd>
+    <dt>Select "Remove"</dt>
+    <dt>Go back to Gwibber</dt>
+        <dd>Is the Gwibber Timeline window blank?</dd>
 </dl>
 
-        Test-Case Name: gwibber/gwb-003
-        Test facebook integration
-
+Test-Case name: gwibber/gwb-003
 <dl>
-	<dt>Create a Facebook account
-		<ul>
-			<dt>Introduce the credentials (username and password)</dt>
-			<dt>Accept permissions</dt>
-			<dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
-		</ul>
-	</dt>
-	<dt>Close Online Accounts Window</dt>
-
-	<dt>Open Gwibber</dt>
-		<dd>Gwibber should display Facebook’s timeline on the home screen or when you click on the 'Home' button</dd>
-        <dt>Click on the "Messages" button</dt>
-		<dd>Gwibber should display a list of Facebook messages when you click on the 'Messages' button.</dd>
-        <dt>Click on the "Reply" button</dt>
-		<dd>Gwibber should display a list of private Facebook messages when you click on the 'Private Messages' button.</dd>
-        <dt>Click on the "Attachments" button</dt>
-		<dd>Gwibber should display a list of any Facebook updates containing images, links or videos from the Facebook's timeline when you click the "Attachments" button. </dd>
-        <dt>Click on the "Searches" button</dt>
-		<dd>Gwibber should display a search box to allow you to search for mentioned terms or topics in Facebook's timeline when you click the "Searches" button. </dd>
-        <dt>Click on the "Users" button</dt>
-		<dd>Gwibber should display a list of people you are friends with on Facebook when you click the "Users" button. </dd>
-        <dt>Click on a user's picture or user's name on Facebook's timeline</dt>
-            <dd>Gwibber should open a link to the user's post on the default browser.</dd>
-        <dt>Click on the "New Messsage" button</dt>
-                <dd>A popup should appear below with a textfield.</dd>
-                <dd>A tiny Facebook icon should appear below the textfield to show that any update you post here will be posted on Facebook.</dd>
- 		<dd>A tiny "character counter" should appear below the textfield showing the amount of characters you have left. 140 characters is the maximum</dd>
-                <dd>A send button should appear below the textfield</dd>
-        <dt>Click on send with content in the textfield</td>
-                <dd>Gwibber should post the update to Facebook so long as the Facebook icon below the textfield is active</dd>
-        <dt>Click on send with content in the textfield and the Facebook icon below the textfield is inactive</td>
-                <dd>Gwibber should not post the update to Facebook</dd>
-
-	<dt>Open Online Accounts by selecting "Accounts" from Gwibber's "Edit" menu</dt>
-            <dd>Online Accounts window will be displayed</dd>
-	<dt>Remove all existing accounts</dt>
-            <dd>Gwibber should not display any "new" feeds from a deleted account. </dd>
-</dl>
-
-        Test-Case Name: gwibber/gwb-004
-        Test flicker integration
-
-<dl>
-	<dt>Create a Flickr account
-		<ul>
-			<dt>Introduce the credentials (username and password)</dt>
-			<dt>Accept permissions</dt>
-			<dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
-		</ul>
-	</dt>
-
-	<dt>Close Online Accounts Window</dt>
-
-	<dt>Open Gwibber</dt>
-		<dd>Gwibber should display Flickr’s timeline on the home screen or when you click on the 'Home' button</dd>
-       <dt>Click on the "Attachments" button</dt>
-		<dd>Gwibber should display a list of any Flickr's updates containing images from the Flickr's timeline when you click the "Attachments" button. </dd>
-         <dt>Click on the "New Messsage" button</dt>
-                <dd> A popup should appear below with a textfield. Updates cannot however be sent to Flickr since flickr it is not that type of service.</dd>
-</dl>
-         Test-Case Name: gwibber/gwb-005
-        Test gwibber feed after deleting all online accounts.
-<dl>
-	<dt>Open Online Accounts by selecting "Accounts" from Gwibber's "Edit" menu</dt>
-            <dd>Online Accounts window will be displayed</dd>
-	<dt>Remove all existing accounts</dt>
-            <dd>Gwibber should not display any "new" feeds from a deleted account. </dd>
+    depends: gwibber/gwb-001
+    This test will check the Twitter integration
+    <dt>Open the Online Accounts application</dt>
+        <dd>The Online Accounts window appear</dd>
+    <dt>Select "Twitter"</dt>
+        <dd>A screen asking for authentication is displayed</dd>
+    <dt>Fill the fields with your credencials and click on the "Authorize app" button</dt>
+        <dd>The accounts gets added and in the right pannel the Gwibber turn on button is enabled</dd>
+    <dt>Open Gwibber</dt>
+        <dd>Gwibber displays Twitter’s timeline on window screen and notifications are shown with previous messages</dd>
+    <dt>Drag down and up with the cursor the timeline</dt>
+        <dd>Displayed messages moves up and down</dd>
+    <dt>Click on a random message</dt>
+        <dd>New elements appear below the message; a "Send" button, a "retwitt" button and an Input field with the phrase "Reply"</dd>
+    <dt>Click on the same message</dt>
+        <dd>Additional elements dissapear</dd>
+    <dt>Click one more time on the same message</dt>
+    <dt>Write "ping" into the "Reply" input field, press "Send" and drag up to the top of the timeline</dt>
+        <dd>A message containing "ping" is shown at the top of the timeline</dd>
+    <dt>Click on the "Post" button</dt>
+        <dd>The "Share with your friends" window is shown, it contains your nickname in Twitter, a "Compose" input file, and a "Send" button</dd>
+    <dt>Write some text and press "Send"</dt>
+        <dd>Gwibber goes back to the timeline window</dd>
+    <dt>Click the "Top" button</dt>
+        <dd>The text previously written is shown into the top of the timeline on your Twitter account</dd>
+    <dt>Make someone mention you</dt>
+    <dt>Click on the mention message in the timeline window</dt>
+    <dt>Write a reply into the "Reply" input field and press "Send"</dt>
+        <dd>The timeline window shown the message and autocompletes your friend's nickname</dd>
+    <dt>Click on some random message</dt>
+        <dd>New elements appear below the message; a "Send" button, a "retwitt" button and an Input field with the phrase "Reply"</dd>
+    <dt>Click the retwitt button on the left</dt>
+        <dd>A new message appears at the top of the timeline with the word "RT" at the beggining and the random message after</dd>
+    <dt>Go to the Online Accounts application</dt>
+    <dt>Select "Remove Account" to delete the Twitter account</dt>
+        <dd>A confirmation dialog is shown</dd>
+    <dt>Select "Remove"</dt>
+    <dt>Go back to Gwibber</dt>
+        <dd>Is the Gwibber Timeline window blank?</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
