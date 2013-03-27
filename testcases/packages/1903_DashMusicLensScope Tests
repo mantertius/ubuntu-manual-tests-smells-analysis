@@ -1,0 +1,18 @@
+Test-case name: DashMusicLensScope
+<dl>
+    This test will check each basic function of Dash Music Lens Scope.
+	<dt>Click the button of Dash, select the fourth icon in the interface of Dash. Enter the song name or album name you like in the search bar of the music search interface and execute carriage return</dt>
+		<dd>If the information you entered exist related songs and albums, the related contents will display in the music search interface as the search results.</dd>
+	<dt>Click one of the search results you like</dt>
+		<dd>We will go to the download page of that song or album you selected. You can choose to download it or listen to it online.</dd>
+	<dt>Right click one of the search results you like</dt>
+		<dd>We will see the detail information of the song or album you selected in the interface of Dash, we called this page “Quick Preview Interface”.</dd>
+	<dt>Click the picture of the song or album in the Quick Preview Interface</dt>
+		<dd>We will back to the music search interface of Dash.</dd>
+	<dt>If the buttons “>” and “<” exist in the Quick Preview Interface, click the button “>”/“<”</dt>
+		<dd>This button will help us to switch among the search results.</dd>
+	<dt>If you have searched many times, select the first icon in the interface of Dash</dt>
+		<dd>We can search out the song or album that we had searched lately.</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

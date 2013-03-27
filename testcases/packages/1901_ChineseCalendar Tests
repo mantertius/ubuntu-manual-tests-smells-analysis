@@ -19,5 +19,42 @@ Test-case name: ChineseCalendar/chi-002
 	<dt>Click the indicator icon of Chinese Calendar and select "普通模式" menu item</dt>
 		<dd>Is the main window showed as normal application window?</dd>
 </dl>
+
+Test-case name: ChineseCalendar/chi-003
+<dl>
+    This test will check each basic function of Chinese Calendar.
+	<dt>Click the non blank part on the application window of Chinese Calendar for any date</dt>
+		<dd>Are the lunar date, the compatibility and incompatibility of the lunar calendar and the schedule that day showed on the right of the application window correct?</dd>
+	<dt>Click the drop-down box of “年” on the application window change the current year</dt>
+		<dd>Is the modified date showed in the application window correct?</dd>
+	<dt>Click the drop-down box of “月” on the application window change the current month</dt>
+		<dd>Is the modified date showed in the application window correct?</dd>
+	<dt>Click the button of “今日” on the application window</dt>
+		<dd>Is the date information of today correct?</dd>
+	<dt>Click the time display top right corner of the application window</dt>
+		<dd>Is it consistent with the system time?</dd>
+</dl>
+
+Test-case name: ChineseCalendar/chi-004
+<dl>
+    This test will check the Memo function of Chinese Calendar.
+	<dt>Double click the non blank part on the application window of Chinese Calendar for any date</dt>
+		<dd>Does the Memo editor window pop up?</dd>
+	<dt>Double click the blank part on the application window of Chinese Calendar</dt>
+		<dd>Does the Memo editor window pop up? No respond is right.</dd>
+	<dt>Add content to the popped up Meno, then click the green tick</dt>
+		<dd>Does the bottom of the application window showed “今日有行程安排” for that day?</dd>
+		<dd>Does the Meno for that day showed the content what you have just write？</dd>
+	<dt>Add content to the popped up Meno, then click the red cross</dt>
+		<dd>Does the bottom of the application window showed “今日无行程安排” for that day?</dd>
+		<dd>Does the Meno for that day showed anything?</dd>
+	<dt>Click the “清空计划” on the popped up Meno, then click the green tick</dt>
+		<dd>Does the content that you have just write be deleted when clicked the “清空计划” on the popped up Meno?</dd>
+		<dd>Does the bottom of the application window showed “今日无行程安排” for that day then click the green tick?</dd>
+	<dt>Click the “清空计划” on the popped up Meno, then click the red cross</dt>
+		<dd>Does the content that you have just write be deleted when clicked the “清空计划” on the popped up Meno?</dd>
+		<dd>Do the Memo and the information of scheduling change for that day?</dd>
+    Note:The information of scheduling on the bottom of the main application window is non real-time display. The information of scheduling on the bottom of the main application window will update only when we clicked the button for that date or any other date.
+</dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
