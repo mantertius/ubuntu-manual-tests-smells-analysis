@@ -18,9 +18,9 @@ Case ID: him-001
 </dl>
 Verification
 
-    <dd>Card is detected.</dd>
-    <dd>A file can be created and deleted on the card.</dd>
-    <dd>The card can be unmounted and disappears from the desktop. </dd>
+<dd>Card is detected.</dd>
+<dd>A file can be created and deleted on the card.</dd>
+<dd>The card can be unmounted and disappears from the desktop. </dd>
 
 <strong>Reconnect Card Reader and Verify Remounting</strong>
 
@@ -33,9 +33,9 @@ Case ID: him-002
 </dl>
 Verification
 
-    <dd>Card is detected.</dd>
-    <dd>The card can be unmounted and disappears from the desktop. </dd>
+<dd>Card is detected.</dd>
+<dd>The card can be unmounted and disappears from the desktop. </dd>
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

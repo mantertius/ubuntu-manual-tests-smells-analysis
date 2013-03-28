@@ -124,17 +124,17 @@ Test-case panel/titlebar_multi_windows
 Test-case panel/indicators
 <dl>
     <dt>Check the right part of the panel shows the following indicators:
-          <ul>
-        <li> - Messaging indicator: envelope icon</li>
-        <li> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged</li>
-        <li> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon</li>
-        <li> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon</li>
-       <li> - (if system has ubuntu one) Ubuntu one indicator: a cloud icon</li>
-        <li> - Sound indicator: volume icon</li>
-        <li> - Time indicator: the current time</li>
-        <li> - Session/System indicator: power icon</li>
-          </ul>
-       </dt>
+        <ul>
+            <li> - Messaging indicator: envelope icon</li>
+            <li> - (if system is a laptop, may be hidden depending on indicator settings) Battery indicator: battery icon, either charging or plugged</li>
+            <li> - (if system has bluetooth) Bluetooth indicator: Bluetooth icon</li>
+            <li> - (if system has network) Network indicator: either an "unplugged", "plugged", or "wifi" icon</li>
+            <li> - (if system has ubuntu one) Ubuntu one indicator: a cloud icon</li>
+            <li> - Sound indicator: volume icon</li>
+            <li> - Time indicator: the current time</li>
+            <li> - Session/System indicator: power icon</li>
+        </ul>
+    </dt>
 </dl>
 Test-case panel/indicators_mouse
 <dl>
@@ -164,4 +164,4 @@ Test-case panel/appindicator_sni_qt
         <dd>Application indicator menu disappears</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

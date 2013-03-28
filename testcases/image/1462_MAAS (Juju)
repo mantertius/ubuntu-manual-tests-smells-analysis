@@ -2,7 +2,7 @@ This will test that you can bootstrap a Juju environment using a MAAS server.
 <dl>
     <dt>Bootstrap a new environment using juju pointing to a MAAS server.</dt>
     <dt>Run juju status</dt>
-       <dd>Can you use juju status and see the available nodes?</dd>
+        <dd>Can you use juju status and see the available nodes?</dd>
 </dl>
 
 This will test that you can succesfully deploy to MAAS nodes using Juju
@@ -10,8 +10,8 @@ This will test that you can succesfully deploy to MAAS nodes using Juju
 <dl>
     <dt>Bootstrap a new environment using juju pointing to a MAAS server.</dt>
     <dt>Run juju deploy $someservice</dt>
-       <dd>Can you use juju deploy $someservice and have it deployed in the MAAS node?</dd>
+        <dd>Can you use juju deploy $someservice and have it deployed in the MAAS node?</dd>
 </dl>
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

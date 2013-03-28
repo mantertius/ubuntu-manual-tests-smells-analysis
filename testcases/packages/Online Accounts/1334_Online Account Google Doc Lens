@@ -9,9 +9,9 @@ These tests check that the Google Docs Lens works.
     <dt>Remove all accounts</dt>
     <dt>Create a Google account
         <ul>
-    <dt>Introduce the credentials (username and password)</dt>
-    <dt>Accept permissions</dt>
-    <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
+            <dt>Introduce the credentials (username and password)</dt>
+            <dt>Accept permissions</dt>
+            <dt>When asked, introduce the password of your ubuntu user to access the keyring</dt>
         </ul>
     </dt>
     <dt>Wait a minute</dt>
@@ -28,4 +28,4 @@ These tests check that the Google Docs Lens works.
         <dd>Dash must filter the latest documents correctly</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

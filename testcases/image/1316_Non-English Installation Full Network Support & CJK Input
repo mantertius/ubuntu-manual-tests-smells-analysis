@@ -75,37 +75,37 @@ The goal of this test case is to check that localization support is functional d
     <dt>Verify that the input method works correctly.
         <ul>
             <li>Simplified Chinese:
-                <ul>
-                    <li>Open Applications > Accessories > gedit Text Editor (TODO: translations of menu entries in Simpl. Chinese)</li>
-                    <li>Click on the keyboard icon on the notification area and select Pinyin as the input method to switch to.</li>
-                    <li>Type renlei in the new gedit document and see if it turns out to be 人类</li>
-                </ul>
+            <ul>
+                <li>Open Applications > Accessories > gedit Text Editor (TODO: translations of menu entries in Simpl. Chinese)</li>
+                <li>Click on the keyboard icon on the notification area and select Pinyin as the input method to switch to.</li>
+                <li>Type renlei in the new gedit document and see if it turns out to be 人类</li>
+            </ul>
             </li>
             <li>Traditional Chinese:
-                <ul>
-                    <li>Open Applications > Accessories > gedit Text Editor (TODO: translations of menu entries in Trad. Chinese) </li>
-                    <li>Click on the keyboard icon on the notification area and select Chewing (酷音) as the input method to switch to. </li>
-                    <li>Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類 </li>
-                </ul>
+            <ul>
+                <li>Open Applications > Accessories > gedit Text Editor (TODO: translations of menu entries in Trad. Chinese) </li>
+                <li>Click on the keyboard icon on the notification area and select Chewing (酷音) as the input method to switch to. </li>
+                <li>Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類 </li>
+            </ul>
             </li>
             <li>Japanese:
-                <ul>
-                    <li>Open アプリケーション > アクセサリ > テキストエディタ </li>
-                    <li>Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. </li>
-                    <li>Type nihon in the new gedit document, press Enter and see if it turns out to be にほん. </li>
-                    <li>Type nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessary</li>
-                </ul>
+            <ul>
+                <li>Open アプリケーション > アクセサリ > テキストエディタ </li>
+                <li>Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. </li>
+                <li>Type nihon in the new gedit document, press Enter and see if it turns out to be にほん. </li>
+                <li>Type nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessary</li>
+            </ul>
             </li>
             <li>Korean:
-                <ul>
-                    <li>Open Applications > Accessories > gedit Text Editor (TODO: translations of menu entries in Korean) </li>
-                    <li>Click on the keyboard icon on the notification area and, select Hangul (한국어) and then han2 (m17n) as the input method to switch to. </li>
-                    <li>Type gks rmf in the new gedit document and see if it turns out to be 한 글 </li>
-                </ul>
+            <ul>
+                <li>Open Applications > Accessories > gedit Text Editor (TODO: translations of menu entries in Korean) </li>
+                <li>Click on the keyboard icon on the notification area and, select Hangul (한국어) and then han2 (m17n) as the input method to switch to. </li>
+                <li>Type gks rmf in the new gedit document and see if it turns out to be 한 글 </li>
+            </ul>
             </li>
         </ul>
-       </dt>
+    </dt>
     <dt>Check that the calendar shows the regional settings correctly.</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -2,25 +2,25 @@ Test-case name: empathy/emp-001
 <dl>
     This test will check that Empathy can be started
     <dt> Look for Empathy and launch it</dt>
-      <dd>Is Empathy launched?</dd>
+        <dd>Is Empathy launched?</dd>
 </dl>
 Test-case name: empathy/emp-002
 <dl>
     depends: empathy/emp-001
     This test will check that Empathy can send messages via Google Talk
     <dt> Look for Empathy and launch it</dt>
-      <dd>Empathy should launch</dd>
-      <dd>A new 'Online Accounts' window should be displayed</dd>
+        <dd>Empathy should launch</dd>
+        <dd>A new 'Online Accounts' window should be displayed</dd>
     <dt> Select 'Google' in right-hand pane from the 'Online Accounts' window</dt>
-      <dd>New step with Google sign-in box appears</dd>
+        <dd>New step with Google sign-in box appears</dd>
     <dt> Fill in your Google credentials, click 'Sign in'</dt>
-      <dd> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</dd>
+        <dd> Google authorization page appears: "Ubuntu desktop is requesting permission ..."</dd>
     <dt> Click 'Grant access'</dt>
-      <dd>The 'Online Accounts' window show the new Google account</dd>
+        <dd>The 'Online Accounts' window show the new Google account</dd>
     <dt> Check contact list</dt>
-      <dd>Contact list displays your online Google contacts</dd>
+        <dd>Contact list displays your online Google contacts</dd>
     <dt> Check that you can send and receive messages</dt>
-      <dd>Are messages being delivered and displayed correctly?</dd>
+        <dd>Are messages being delivered and displayed correctly?</dd>
 </dl>
 Test-case name: empathy/emp-003
 <dl>
@@ -29,28 +29,28 @@ Test-case name: empathy/emp-003
     This test will check that Empathy can send messages via IRC
     <dt> Please ensure you have 'universe' and 'multiverse' repositories enabled (off by default in live session)</dt>
     <dt> Look for Terminal and launch it</dt>
-      <dd>Terminal is opened</dd>
+        <dd>Terminal is opened</dd>
     <dt> Type 'sudo apt-get install account-plugin-irc'</dt>
     <dt> Authenticate when Terminal ask for</dt>
-      <dd>'account-plugin-irc' should be installed</dd>
+        <dd>'account-plugin-irc' should be installed</dd>
     <dt> Look for Empathy and launch it</dt>
-      <dd>Empathy should launch</dd>
+        <dd>Empathy should launch</dd>
     <dt> Select 'Accounts' from the Empathy menu</dt>
-      <dd>A new 'Online Accounts' window should be displayed</dd>
+        <dd>A new 'Online Accounts' window should be displayed</dd>
     <dt> Press 'Add account...'</dt>
-      <dd>The 'Online Accounts' window display a list of services in the right-hand pane</dd>
+        <dd>The 'Online Accounts' window display a list of services in the right-hand pane</dd>
     <dt> Scroll down the 'Online Accounts' window and select 'IRC'</dt>
-      <dd>The 'Online Accounts' window request IRC credentials</dd>
+        <dd>The 'Online Accounts' window request IRC credentials</dd>
     <dt> Fill in nickname, click 'Done'</dt>
-      <dd>The 'Online Accounts' window show the new IRC account</dd>
+        <dd>The 'Online Accounts' window show the new IRC account</dd>
     <dt> Click 'Close'</dt>
-      <dd>The 'Online Accounts' window closes</dd>
+        <dd>The 'Online Accounts' window closes</dd>
     <dt> Select 'Rooms' - 'Join' from the Empathy menu</dt>
-      <dd>'Join Room' window appears</dd>
+        <dd>'Join Room' window appears</dd>
     <dt> Input '#ubuntu' in 'Room' textbox, click Join</dt>
-      <dd>'#ubuntu' channel is open</dd>
+        <dd>'#ubuntu' channel is open</dd>
     <dt> Check that you can send and receive messages</dt>
-      <dd>Are messages are being delivered and displayed correctly?</dd>
+        <dd>Are messages are being delivered and displayed correctly?</dd>
 </dl>
 Test-case name: empathy/emp-004
 <dl>
@@ -58,23 +58,23 @@ Test-case name: empathy/emp-004
     depends: empathy/emp-002
     This test will check that Empathy can send messages via Facebook
     <dt> Look for Empathy and launch it</dt>
-      <dd>Empathy should launch</dd>
+        <dd>Empathy should launch</dd>
     <dt> Select 'Accounts' from the Empathy menu</dt>
-      <dd>A new 'Online Accounts' window should be displayed</dd>
+        <dd>A new 'Online Accounts' window should be displayed</dd>
     <dt> Press 'Add account...'</dt>
-      <dd>The 'Online Accounts' window display a list of services in the right-hand pane</dd>
+        <dd>The 'Online Accounts' window display a list of services in the right-hand pane</dd>
     <dt> Select 'Facebook'</dt>
-      <dd>New step with Facebook sign-in box appears</dd>
+        <dd>New step with Facebook sign-in box appears</dd>
     <dt> Fill in your Facebook credentials, click 'Log In'</dt>
-      <dd> Facebook authorization page appears: 'Allow login with Facebook'</dd>
+        <dd> Facebook authorization page appears: 'Allow login with Facebook'</dd>
     <dt> Click 'Allow login with Faceboook'</dt>
-      <dd> Facebook ask for additional permissions</dd>
+        <dd> Facebook ask for additional permissions</dd>
     <dt> Select 'Allow'</dt>
-      <dd>The 'Online Accounts' window show the new Facebook account</dd>
+        <dd>The 'Online Accounts' window show the new Facebook account</dd>
     <dt> Check contact list</dt>
-      <dd>Contact list displays your online Facebook contacts</dd>
+        <dd>Contact list displays your online Facebook contacts</dd>
     <dt> Check that you can send and receive messages</dt>
-      <dd>Are messages being delivered and displayed correctly?</dd>
+        <dd>Are messages being delivered and displayed correctly?</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

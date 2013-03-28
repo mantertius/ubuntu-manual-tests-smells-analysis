@@ -19,10 +19,10 @@ Case ID: hmo-001
 
 Verification
 
-    <dd>Verify that the touchpad controls the mouse cursor onscreen.</dd> 
-    <dd>Verify that left- and right-clicking work with the touchpad buttons.</dd> 
-    <dd>Verify that tapping the touchpad works as a click.</dd> 
-    <dd>Verify that dragging works with both the touchpad buttons and by tap-and-drag on the touchpad.</dd> 
+<dd>Verify that the touchpad controls the mouse cursor onscreen.</dd> 
+<dd>Verify that left- and right-clicking work with the touchpad buttons.</dd> 
+<dd>Verify that tapping the touchpad works as a click.</dd> 
+<dd>Verify that dragging works with both the touchpad buttons and by tap-and-drag on the touchpad.</dd> 
 
 
 <strong>Test Trackpad (Mac only)</strong>
@@ -44,11 +44,11 @@ Case ID: hmt-001
 
 Verification
 
-    <dd>Verify that the trackpad controls the mouse cursor onscreen.</dd>
-    <dd>Verify that left- and right-clicking work with the trackpad buttons.</dd>
-    <dd>Verify that tapping the trackpad works as a click.</dd>
-    <dd>Verify that dragging works with both the trackpad buttons and by tap-and-drag on the trackpad. </dd>
+<dd>Verify that the trackpad controls the mouse cursor onscreen.</dd>
+<dd>Verify that left- and right-clicking work with the trackpad buttons.</dd>
+<dd>Verify that tapping the trackpad works as a click.</dd>
+<dd>Verify that dragging works with both the trackpad buttons and by tap-and-drag on the trackpad. </dd>
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

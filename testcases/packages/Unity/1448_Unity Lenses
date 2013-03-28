@@ -2,13 +2,13 @@ Test-case dash/application-lens
 <dl>
     <dt>Tap super to show the dash</dt>
     <dt>Click on the application lens icon</dt>
-          <dd>The search entry should show "search applications" and you should have three categories:
-             <ul>
+        <dd>The search entry should show "search applications" and you should have three categories:
+            <ul>
                 <li> - recently used apps </li>
                 <li> - installed </li>
                 <li> - apps available for download</li>
-             </ul>
-          </dd>
+            </ul>
+        </dd>
 </dl>
 
 Test-case dash/application-lens-search
@@ -27,12 +27,12 @@ Test-case dash/file-lens
     <dt>Tap super to show the dash</dt>
     <dt>Click on the file lens icon</dt>
         <dd>The search entry should show "search files" and you should have three categories:
-             <ul>
-                       <li> - recent (if you opened at least one file on your computer) </li>
-                       <li> - download (if you have files in ~/Download) </li>
-                       <li> - folder </li>
-             </ul>
-          </dd>
+            <ul>
+                <li> - recent (if you opened at least one file on your computer) </li>
+                <li> - download (if you have files in ~/Download) </li>
+                <li> - folder </li>
+            </ul>
+        </dd>
 </dl>
 
 Test-case dash/file-lens-search
@@ -97,4 +97,4 @@ Test-case dash/more-suggestions
         <dd>A web browser should launch loading the amazon page containing the item</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

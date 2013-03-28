@@ -3,7 +3,7 @@ The goal of this test case is to check that localization support is functional d
     <dt>Power up your machine insert the install media</dt>
     <dt>Select English as language and press Enter</dt>
     <dt>Select Try without any change to your computer and press Enter</dt>
-            <dd>Once the live session has started, verify that the system is in English</dd>
+        <dd>Once the live session has started, verify that the system is in English</dd>
     <dt>Select the Install FAMILY option</dt>
     <dt>Once Ubiquity starts click on Forward</dt>
     <dt>Select the same non English language from the list and click Forward</dt>
@@ -26,12 +26,12 @@ The goal of this test case is to check that localization support is functional d
             </ul>
             <li>If your language is not in the list above:</li>
             <ul>
-            <li>Common translations in language packs will not be installed</li>
+                <li>Common translations in language packs will not be installed</li>
                 <li>A pop up shows saying your language support is not complete</li>
             </ul>
         </ul>
-       </dt>
+    </dt>
     <dt>Check that the calendar shows the regional settings correctly (Note: only in languages on the list above)</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

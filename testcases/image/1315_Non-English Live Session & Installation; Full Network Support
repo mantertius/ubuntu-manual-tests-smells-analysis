@@ -6,7 +6,7 @@ The goal of this test case is to check that localization support is functional d
         <ul>
             <li>Once the live session has started, verify that the system is in English</li>
         </ul>
-       </dt>
+    </dt>
     <dt>Double click on the Install icon</dt>
     <dt>Once Ubiquity starts click on Forward</dt>
     <dt>Select the same non English language from the list and click Forward</dt>
@@ -23,8 +23,8 @@ The goal of this test case is to check that localization support is functional d
         <ul>
             <li>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</li>
         </ul>
-       </dt>
+    </dt>
     <dt>Check that the calendar shows the regional settings correctly</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -20,14 +20,14 @@ Case ID: khk-001
 
 Verification
 
-    <dd>Verify that the Play key starts playing the playlist.</dd> 
-    <dd>Verify that the Pause (or Play key if there is no separate Pause key) pauses playback.</dd> 
-    <dd>Verify that the Play key resumes playing.</dd> 
-    <dd>Verify that the Volume Up key increases the volume.</dd> 
-    <dd>Verify that the Volume Down key decreases the volume.</dd> 
-    <dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd> 
-    <dd>Verify that the Forward Track key skips forward by a track.</dd> 
-    <dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
+<dd>Verify that the Play key starts playing the playlist.</dd> 
+<dd>Verify that the Pause (or Play key if there is no separate Pause key) pauses playback.</dd> 
+<dd>Verify that the Play key resumes playing.</dd> 
+<dd>Verify that the Volume Up key increases the volume.</dd> 
+<dd>Verify that the Volume Down key decreases the volume.</dd> 
+<dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd> 
+<dd>Verify that the Forward Track key skips forward by a track.</dd> 
+<dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
 
 
 <strong>Multimedia keys (Rhythmbox or Banshee)</strong>
@@ -49,14 +49,14 @@ Case ID: khk-002
 
 Verification
 
-    <dd>Verify that the Play key begins playback.</dd>
-    <dd>Verify that the Stop key stops playback.</dd>
-    <dd>Verify that the Play key resumes or restarts playback.</dd>
-    <dd>Verify that the Volume Up key increases the volume.</dd>
-    <dd>Verify that the Volume Down key decreases the volume.</dd>
-    <dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd>
-    <dd>Verify that the Forward Track key skips forward by a track.</dd>
-    <dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
+<dd>Verify that the Play key begins playback.</dd>
+<dd>Verify that the Stop key stops playback.</dd>
+<dd>Verify that the Play key resumes or restarts playback.</dd>
+<dd>Verify that the Volume Up key increases the volume.</dd>
+<dd>Verify that the Volume Down key decreases the volume.</dd>
+<dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd>
+<dd>Verify that the Forward Track key skips forward by a track.</dd>
+<dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
 
 
 <strong>Email (Thunderbird or Evolution)</strong>
@@ -72,7 +72,7 @@ Case ID: khk-003
 
 Verification
 
-    <dd>Verify that the email application opens.</dd> 
+<dd>Verify that the email application opens.</dd> 
 
 
 <strong>Internet (firefox)</strong>
@@ -94,13 +94,13 @@ Case ID: khk-004
 
 
 Verification
-    <dd>Verify that a web browser is opened.</dd>
-    <dd>Verify that web pages are loaded correctly.</dd>
-    <dd>Verify that the Back key goes back one page.</dd>
-    <dd>Verify that the Forward key goes forward one page.</dd>
-    <dd>Verify that the Stop key stops a page loading.</dd>
-    <dd>Verify that the Home key returns the browser to the home page.</dd>
-    <dd>Verify that the Favorites key opens the bookmarks sidebar. </dd>
+<dd>Verify that a web browser is opened.</dd>
+<dd>Verify that web pages are loaded correctly.</dd>
+<dd>Verify that the Back key goes back one page.</dd>
+<dd>Verify that the Forward key goes forward one page.</dd>
+<dd>Verify that the Stop key stops a page loading.</dd>
+<dd>Verify that the Home key returns the browser to the home page.</dd>
+<dd>Verify that the Favorites key opens the bookmarks sidebar. </dd>
 
 
 <strong>Search (tracker)</strong>
@@ -113,8 +113,8 @@ Case ID: khk-005
 
 
 Verification
-    <dd>Verify that the desktop search tool is opened.</dd>
+<dd>Verify that the desktop search tool is opened.</dd>
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

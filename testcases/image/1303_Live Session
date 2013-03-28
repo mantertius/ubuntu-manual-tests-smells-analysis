@@ -33,8 +33,8 @@ Test-case Live Session Persistence
     <dt>Browse around to a few websites in the default browser. Save a few as bookmarks</dt>
     <dt>Create a new text or image file in your favorite editor and save it to you home directory</dt>
     <dt>Restart live image back into a persistent session</dt>
-             <dd>Your files, browsing history, and bookmarks should all be there</dd>
+        <dd>Your files, browsing history, and bookmarks should all be there</dd>
 </dl>
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -7,7 +7,7 @@ The goal of this test case is to check that localization support is functional d
         <ul>
             <li>(The installer should be localized from the first screen onwards)</li>
         </ul>
-       </dt>
+    </dt>
     <dt>Check the language you selected is correct on the list and click Forward</dt>
     <dt>Select your timezone and click Forward</dt>
     <dt>Check your keyboard layout is correct or alter and click Forward</dt>
@@ -20,8 +20,8 @@ The goal of this test case is to check that localization support is functional d
     <dt>Remove the disc and press Enter</dt>
     <dt>Allow the machine to reboot</dt>
     <dt>Verify that your system is localized</dt>
-            <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
+        <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
     <dt>Check that the calendar shows the regional settings correctly</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

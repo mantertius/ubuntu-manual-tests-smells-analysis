@@ -37,5 +37,5 @@ Case ID: hcn-003
 <dd>(In the terminal, run sudo ifconfig [interface] down where [interface] is the interface name above. This releases the static IP address back to the server. Then you will need to run sudo ifconfig [interface] up in order to enable your wired network and allow the server to assign an IP address as needed.) </dd>
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

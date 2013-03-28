@@ -1,16 +1,16 @@
 <strong>Unity</strong>
 
 <dl>
-  <dt>Connect the microphone to the computer.  (If you don't have a microphone a set of headphones will work.)</dt>
-  <dt>Right click on the '''Volume Control''' icon on the right side of the top panel </dt>
-  <dt>Open ''Sound Preferences'' or ''Sound Setting''. </dt>
-  <dt>Go to the ''Input'' tab and ensure that the ''Input'' volume of the microphone is set to an appropriate level and is not muted.</dt>
-  <dt>Press the ''Super Windows key'', or click the Ubuntu logo in the upper left hand unity panel and search '''Sound Recorder'''.</dt>
-  <dt>Click the ''Record'' button (the red circle).</dt>
-  <dt>Talk briefly into the microphone.</dt>
-  <dt>Click the ''Stop'' button (the gray square).</dt>
-  <dt>Click the ''Play'' button (the right-facing triangle).  Verify that your voice is played back and that no words have been dropped. (Remember to reset your microphone volume to prevent feedback on the internal microphone.)</dt>
-       <dd>Verify that sound is recorded through the microphone.</dd>
+    <dt>Connect the microphone to the computer.  (If you don't have a microphone a set of headphones will work.)</dt>
+    <dt>Right click on the '''Volume Control''' icon on the right side of the top panel </dt>
+    <dt>Open ''Sound Preferences'' or ''Sound Setting''. </dt>
+    <dt>Go to the ''Input'' tab and ensure that the ''Input'' volume of the microphone is set to an appropriate level and is not muted.</dt>
+    <dt>Press the ''Super Windows key'', or click the Ubuntu logo in the upper left hand unity panel and search '''Sound Recorder'''.</dt>
+    <dt>Click the ''Record'' button (the red circle).</dt>
+    <dt>Talk briefly into the microphone.</dt>
+    <dt>Click the ''Stop'' button (the gray square).</dt>
+    <dt>Click the ''Play'' button (the right-facing triangle).  Verify that your voice is played back and that no words have been dropped. (Remember to reset your microphone volume to prevent feedback on the internal microphone.)</dt>
+        <dd>Verify that sound is recorded through the microphone.</dd>
 </dl>
 
 <strong>GNOME Classic</strong>
@@ -24,9 +24,9 @@
     <dt>Talk briefly into the microphone.</dt>
     <dt>Click the Stop button (the gray square).</dt>
     <dt>Click the Play button (the right-facing triangle). Verify that your voice is played back and that no words have been dropped. (Remember to reset your microphone volume to prevent feedback on the internal microphone.)</dt>
-       <dd>Verify that sound is recorded through the microphone.</dd>
+        <dd>Verify that sound is recorded through the microphone.</dd>
 </dl>
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

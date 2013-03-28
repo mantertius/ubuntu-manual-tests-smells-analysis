@@ -23,7 +23,7 @@ This will perform 5 suspend/resume tests. If your system does not wake itself up
 <strong>Deprecated</strong>
 
 <dd>As of 10.04, hibernate is no longer installed by default, so this testcase is no longer relevant for the default installation
-Hibernate/Resume smoke test (to be done on installed systems only, not live environments)</dd>
+    Hibernate/Resume smoke test (to be done on installed systems only, not live environments)</dd>
 
 Case ID: snr-003
 <dl>
@@ -36,5 +36,5 @@ Case ID: snr-003
     <dt>Verify that the desktop loads as before, at the correct resolution, that your applications are still running and that you can connect to the net.</dt> 
 </dl>
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

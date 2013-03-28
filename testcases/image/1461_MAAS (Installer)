@@ -1,25 +1,25 @@
 Test-case name: maas/maas-001
 <dl>
-       This test will check that the MAAS server can be installed from packages.
+    This test will check that the MAAS server can be installed from packages.
 
     <dt> Please ensure you have the lastest Ubuntu development version in a dedicated machine</dt>
     <dt> Please ensure you have full control over the network</dt>
     <dt> Please ensure you have internet access or a local mirror of the Ubuntu archive</dt>
-       <dt> Install MAAS, in a terminal type: "sudo apt-get install maas maas-dhcp maas-dns"</dt>
+    <dt> Install MAAS, in a terminal type: "sudo apt-get install maas maas-dhcp maas-dns"</dt>
         <dd>After some minutes, it shows a dialog with the IP of the MAAS server</dd>
-       <dt> Press enter and let it finish the installation</dt>
-       <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
-          <dd>MAAS interface display a warning telling no admin user has been created</dd>
+    <dt> Press enter and let it finish the installation</dt>
+    <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
+        <dd>MAAS interface display a warning telling no admin user has been created</dd>
     <dt> Run "sudo maas createsuperuser" in your MAAS computer and fill the input fields</dt>
-          <dd>MAAS interface ask your credentials</dd>
-       <dt> Fill the input fields and press "Login"</dt>
-          <dd>Could you login into the MAAS server using the admin account created previously?</dd>
-          <dd>You get a free of warnings index page?</dd>
+        <dd>MAAS interface ask your credentials</dd>
+    <dt> Fill the input fields and press "Login"</dt>
+        <dd>Could you login into the MAAS server using the admin account created previously?</dd>
+        <dd>You get a free of warnings index page?</dd>
 </dl>
 
 Test-case name: maas/maas-002
 <dl>
-       This test will check that the MAAS server can be installed from the Ubuntu Server iso.
+    This test will check that the MAAS server can be installed from the Ubuntu Server iso.
 
     <dt> Please ensure you have the <a href="http://cdimage.ubuntu.com/ubuntu-server/daily/current/">latest Ubuntu Server development version</a> in an iso</dt>
     <dt> Please ensure you have a dedicated machine</dt>
@@ -67,193 +67,193 @@ Test-case name: maas/maas-002
         <dd>Installer asks to activate the "Automatic updates"</dd>
     <dt> At managing upgrades select "No automatic updates"</dt>
         <dd>After some minutes, it shows a dialog with the IP of the MAAS server</dd>
-       <dt> Press enter and let it finish the installation</dt>
+    <dt> Press enter and let it finish the installation</dt>
         <dd>A grub dialog is displayed</dd>
-       <dt> Answer 'Yes' to the 'Install the GRUB boot loader to the master boot record?' question</dt>
+    <dt> Answer 'Yes' to the 'Install the GRUB boot loader to the master boot record?' question</dt>
         <dd>A dialog asking for UTC setup is displayed</dd>
-       <dt> Select 'Yes' to the 'Is the system clock set to UTC? question</dt>
-          <dd>A final dialog is displayed indicating the installation is complete</dd>
+    <dt> Select 'Yes' to the 'Is the system clock set to UTC? question</dt>
+        <dd>A final dialog is displayed indicating the installation is complete</dd>
     <dt> Select 'Continue'</dt>
-          <dd>The computer get restarted</dd>
+        <dd>The computer get restarted</dd>
     <dt> After the machine got restarted, wait for the login screen and enter your user credentials</dt>
     <dt> Type "ifconfig" and look for the ip assigned to the machine</dt>
-       <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
-          <dd>MAAS interface display a warning telling no admin user has been created</dd>
+    <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
+        <dd>MAAS interface display a warning telling no admin user has been created</dd>
     <dt> Run "sudo maas createsuperuser" in your MAAS computer and fill the input fields</dt>
-          <dd>MAAS interface ask your credentials</dd>
-       <dt> Fill the input fields and press "Login"</dt>
-          <dd>Could you login into the MAAS server using the admin account created during previously?</dd>
+        <dd>MAAS interface ask your credentials</dd>
+    <dt> Fill the input fields and press "Login"</dt>
+        <dd>Could you login into the MAAS server using the admin account created during previously?</dd>
     <dt> Run "sudo maas createsuperuser" in your MAAS computer and fill the input fields</dt>
-          <dd>MAAS interface ask your credentials</dd>
-       <dt> Fill the input fields and press "Login"</dt>
-          <dd>Could you login into the MAAS server using the admin account created previously?</dd>
-          <dd>You get a free of warnings index page?</dd>
+        <dd>MAAS interface ask your credentials</dd>
+    <dt> Fill the input fields and press "Login"</dt>
+        <dd>Could you login into the MAAS server using the admin account created previously?</dd>
+        <dd>You get a free of warnings index page?</dd>
 </dl>
 
 Test-case name: maas/maas-003
-    depends: maas/maas-001
-    depends: maas/maas-002
+depends: maas/maas-001
+depends: maas/maas-002
 <dl>
     This test will check that an admin can add a new user to the MAAS server.
 
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
-          <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
     <dt> Click the settings icon on the right side</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
     <dt> Click the 'Add user' button</dt>
-          <dd>A web page is loaded which asks the details of a new user</dd>
+        <dd>A web page is loaded which asks the details of a new user</dd>
     <dt> Fill in the required fields, use 'ubuntuser' as the username</dt>
     <dt> Click the 'Add user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the new 'ubuntuser' user</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the new 'ubuntuser' user</dd>
     <dt> Log out from MAAS, click you admin name (root by default) and select 'logout'</dt>
-          <dd>A web page is loaded which asks for login credentials</dd>
+        <dd>A web page is loaded which asks for login credentials</dd>
     <dt> Log back in using the username 'ubuntuser' and password created previously</dt>
-       <dd>Did you successfully login into the MAAS server with the user created?</dd>
+        <dd>Did you successfully login into the MAAS server with the user created?</dd>
 </dl>
 
 Test-case name: maas/maas-004
-    depends: maas/maas-001
-    depends: maas/maas-002
+depends: maas/maas-001
+depends: maas/maas-002
 <dl>
     This test will check that an admin can add an admin user to the MAAS server.
 
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
-          <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
     <dt> Click the settings icon on the right side</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
     <dt> Click the 'Add user' button</dt>
-          <dd>A web page is loaded which asks the details of a new user</dd>
+        <dd>A web page is loaded which asks the details of a new user</dd>
     <dt> Fill in the required fields and mark the 'MAAS administrator' field, use 'ubuntuadm' as username</dt>
     <dt> Click the 'Add user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the new 'ubuntuadm' user, it must have the word 'yes' in the column of 'MAAS Admin'</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the new 'ubuntuadm' user, it must have the word 'yes' in the column of 'MAAS Admin'</dd>
     <dt> Log out from MAAS, click you admin name (root by default) and select 'logout'</dt>
-          <dd>A web page is loaded which asks for login credentials</dd>
+        <dd>A web page is loaded which asks for login credentials</dd>
     <dt> Log back in using the username 'ubuntuadm' and password created previously</dt>
-       <dd>Did you successfully login into the MAAS server with the admin user created?</dd>
+        <dd>Did you successfully login into the MAAS server with the admin user created?</dd>
 </dl>
 
 Test-case name: maas/maas-005
-    depends: maas/maas-001
-    depends: maas/maas-002
-    depends: maas/maas-003
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-003
 <dl>
     This test will check that an admin can edit an user account from the MAAS server.
 
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
-          <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
     <dt> Click the settings icon on the right side</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
     <dt> Click on the 'ubuntuser' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuntuser'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuntuser'</dd>
     <dt> Click the 'Edit user' button</dt>
-          <dd>A web page is loaded which shows input fields with information about 'ubuntuser'</dd>
+        <dd>A web page is loaded which shows input fields with information about 'ubuntuser'</dd>
     <dt> Change the username from 'ubuntuser' to 'ubuser'</dt>
     <dt> Click in the 'Save user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed instead of 'ubuntuser'</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed instead of 'ubuntuser'</dd>
     <dt> Click on the 'ubuser' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuser'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuser'</dd>
     <dt> Click the 'Edit user' button</dt>
-          <dd>A web page is loaded which shows input fields with information about 'ubuser'</dd>
+        <dd>A web page is loaded which shows input fields with information about 'ubuser'</dd>
     <dt> Change the password for the 'ubuser' account</dt>
     <dt> Click in the 'Change password' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed</dd>
     <dt> Click on the 'ubuser' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuser'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuser'</dd>
     <dt> Click the 'Edit user' button</dt>
-          <dd>A web page is loaded which shows input fields with information about 'ubuser'</dd>
+        <dd>A web page is loaded which shows input fields with information about 'ubuser'</dd>
     <dt> Mark the 'MAAS administrator' checkbox</dt>
     <dt> Click in the 'Save user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed as 'MAAS administrator'</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuser' username is listed as 'MAAS administrator'</dd>
     <dt> Log out from MAAS, click your admin name (root by default) and select 'logout'</dt>
-          <dd>A web page is loaded which asks for login credentials</dd>
+        <dd>A web page is loaded which asks for login credentials</dd>
     <dt> Log back in using the username 'ubuser' and password edited previously</dt>
-       <dd>Did you successfully login into the MAAS server with the 'ubuser' account?</dd>
+        <dd>Did you successfully login into the MAAS server with the 'ubuser' account?</dd>
 </dl>
 
 Test-case name: maas/maas-006
-    depends: maas/maas-001
-    depends: maas/maas-002
-    depends: maas/maas-004
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-004
 <dl>
     This test will check that an admin can edit an admin account from the MAAS server.
 
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
-          <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
     <dt> Click the settings icon on the right side</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
     <dt> Click on the 'ubuntuadm' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuntuadm'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuntuadm'</dd>
     <dt> Click the 'Edit user' button</dt>
-          <dd>A web page is loaded which shows input fields with information about 'ubuntuser'</dd>
+        <dd>A web page is loaded which shows input fields with information about 'ubuntuser'</dd>
     <dt> Change the username from 'ubuntuadm' to 'ubuadm'</dt>
     <dt> Click in the 'Save user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed instead of 'ubuntuadm'</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed instead of 'ubuntuadm'</dd>
     <dt> Click on the 'ubuadm' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
     <dt> Click the 'Edit user' button</dt>
-          <dd>A web page is loaded which shows input fields with information about 'ubuadm'</dd>
+        <dd>A web page is loaded which shows input fields with information about 'ubuadm'</dd>
     <dt> Change the password for the 'ubuadm' account</dt>
     <dt> Click in the 'Change password' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed</dd>
     <dt> Click on the 'ubuadm' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
     <dt> Click the 'Edit user' button</dt>
-          <dd>A web page is loaded which shows input fields with information about 'ubuadm'</dd>
+        <dd>A web page is loaded which shows input fields with information about 'ubuadm'</dd>
     <dt> Unmark the 'MAAS administrator' checkbox</dt>
     <dt> Click in the 'Save user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed as normal user</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and the 'ubuadm' username is listed as normal user</dd>
     <dt> Log out from MAAS, click your admin name (root by default) and select 'logout'</dt>
-          <dd>A web page is loaded which asks for login credentials</dd>
+        <dd>A web page is loaded which asks for login credentials</dd>
     <dt> Log back in using the username 'ubuadm' and password edited previously</dt>
-       <dd>Did you successfully login into the MAAS server with the 'ubuadm' account?</dd>
+        <dd>Did you successfully login into the MAAS server with the 'ubuadm' account?</dd>
 </dl>
 
 Test-case name: maas/maas-007
-    depends: maas/maas-001
-    depends: maas/maas-002
-    depends: maas/maas-004
-    depends: maas/maas-006
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-004
+depends: maas/maas-006
 <dl>
     This test will check that an user can't edit nor delete any account from the MAAS server.
 
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the username 'ubuadm' and password  defined in maas-004 and maas-006</dt>
-          <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
     <dt> Go to http://192.168.1.66/MAAS/settings/</dt>
-          <dd>Do you see a login screen?</dd>
+        <dd>Do you see a login screen?</dd>
 </dl>
 
 Test-case name: maas/maas-008
-    depends: maas/maas-001
-    depends: maas/maas-002
-    depends: maas/maas-003
-    depends: maas/maas-004
-    depends: maas/maas-005
-    depends: maas/maas-006
+depends: maas/maas-001
+depends: maas/maas-002
+depends: maas/maas-003
+depends: maas/maas-004
+depends: maas/maas-005
+depends: maas/maas-006
 <dl>
     This test will check that an admin can delete user and admin accounts from the MAAS server.
 
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
-          <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
+        <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
     <dt> Click the settings icon on the right side</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server</dd>
     <dt> Click on the 'ubuadm' user</dt>
-          <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
+        <dd>A web page is loaded which shows general information about 'ubuadm'</dd>
     <dt> Click the 'Delete user' button</dt>
-          <dd>A web page is loaded which asks for confirmation</dd>
+        <dd>A web page is loaded which asks for confirmation</dd>
     <dt> Click the 'Delete user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
-          <dd>A web page is loaded which asks for confirmation</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
+        <dd>A web page is loaded which asks for confirmation</dd>
     <dt> Click the 'Delete user' button</dt>
-          <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
-       <dd>Did you successfully deleted both accounts?</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
+        <dd>Did you successfully deleted both accounts?</dd>
 </dl>
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

@@ -2,64 +2,64 @@ Test-case name: networkmanager/TC-NMA-001
 <dl>
     This test will check that Network Manager can establish an ethernet connection
     <dt> Plug in the cable in ethernet port</dt>
-      <dd>NetworkManager's icon swirls and then changes to "ethernet connection up" icon (2 arrows, 1 pointing up and 1 pointing down by default)</dd>
+        <dd>NetworkManager's icon swirls and then changes to "ethernet connection up" icon (2 arrows, 1 pointing up and 1 pointing down by default)</dd>
     <dt> Wait till notification appears</dt>
-      <dd>Notification on established connection appears</dd>
+        <dd>Notification on established connection appears</dd>
     <dt> Click on the applet, select 'Connection Information'</dt>
-      <dd>'Connection Information' dialog appears</dd>
-      <dd>Does the information presented in the dialog make sense in your environment?</dd>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 Test-case name: networkmanager/TC-NMA-002
 <dl>
     This test will check that Network Manager can establish a WPA/WPA2 encrypted Wi-Fi connection
     <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WPA/WPA2 encrypted Wi-Fi AP available</dt>
     <dt> Open the applet and select WPA/WPA2 encrypted network</dt>
-      <dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
+        <dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
     <dt> Enter AP password</dt>
-      <dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
+        <dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
     <dt> Wait till notification appears</dt>
-      <dd>Notification on established connection appears</dd>
+        <dd>Notification on established connection appears</dd>
     <dt> Click on the applet, select 'Connection Information'</dt>
-      <dd>'Connection Information' dialog appears</dd>
-      <dd>Does the information presented in the dialog make sense in your environment?</dd>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 Test-case name: networkmanager/TC-NMA-003
 <dl>
     This test will check that Network Manager can establish a WEP encrypted Wi-Fi connection
     <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WEP encrypted Wi-Fi AP available</dt>
     <dt> Open the applet and select WEP encrypted network</dt>
-      <dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
+        <dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
     <dt> Enter AP password</dt>
-      <dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
+        <dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
     <dt> Wait till notification appears</dt>
-      <dd>Notification on established connection appears</dd>
+        <dd>Notification on established connection appears</dd>
     <dt> Click on the applet, select 'Connection Information'</dt>
-      <dd>'Connection Information' dialog appears</dd>
-      <dd>Does the information presented in the dialog make sense in your environment?</dd>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 Test-case name: networkmanager/TC-NMA-004
 <dl>
     This test will check that Network Manager can establish an unencrypted Wi-Fi connection
     <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and an unencrypted Wi-Fi AP available</dt>
     <dt> Open the applet and select an unencrypted network</dt>
-      <dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
+        <dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
     <dt> Wait till notification appears</dt>
-      <dd>Notification on established connection appears</dd>
+        <dd>Notification on established connection appears</dd>
     <dt> Click on the applet, select 'Connection Information'</dt>
-      <dd>'Connection Information' dialog appears</dd>
-      <dd>Does the information presented in the dialog make sense in your environment?</dd>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 Test-case name: networkmanager/TC-NMA-005
 <dl>
     This test will check that Network Manager can establish a 3G connection
     <dt> Please ensure you have a 3G card/dongle with installed drivers, switched on and a good 3G signal from your service provider</dt>
     <dt> Plug in the 3G dongle</dt>
-      <dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
+        <dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
     <dt> Wait till notification appears</dt>
-      <dd>Notification on established connection appears</dd>
+        <dd>Notification on established connection appears</dd>
     <dt> Click on the applet, select 'Connection Information'</dt>
-      <dd>'Connection Information' dialog appears</dd>
-      <dd>Does the information presented in the dialog make sense in your environment?</dd>
+        <dd>'Connection Information' dialog appears</dd>
+        <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 Test-case name: networkmanager/nm-vpnc-001
 <dl>
@@ -75,8 +75,8 @@ Test-case name: networkmanager/nm-vpnc-001
     <dt> Click on the NetworkManager icon</dt>
     <dt> Click on your VPN profile under "VPN Connections"</dt>
     <dt> Enter credentials if prompted.</dt>
-      <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
-      <dd>Are you now able to access resources restricted to your VPN?</dd>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you now able to access resources restricted to your VPN?</dd>
 </dl>
 Test-case name: networkmanager/nm-vpnc-001
 <dl>
@@ -88,7 +88,7 @@ Test-case name: networkmanager/nm-vpnc-001
     <dt> Select a VPN profile and click Export.</dt>
     <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
     <dt> Click Import.</dt>
-      <dd>Does the profile import properly?</dd>
+        <dd>Does the profile import properly?</dd>
 </dl>
 Test-case name: networkmanager/nm-openvpn-001
 <dl>
@@ -104,8 +104,8 @@ Test-case name: networkmanager/nm-openvpn-001
     <dt> Click on the NetworkManager icon</dt>
     <dt> Click on your VPN profile under "VPN Connections"</dt>
     <dt> Enter credentials if prompted.</dt>
-      <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
-      <dd>Are you able to access the resources provided by your VPN?</dd>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you able to access the resources provided by your VPN?</dd>
 </dl>
 Test-case name: networkmanager/nm-openvpn-002
 <dl>
@@ -117,7 +117,7 @@ Test-case name: networkmanager/nm-openvpn-002
     <dt> Select a VPN profile and click Export.</dt>
     <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
     <dt> Click Import.</dt>
-      <dd>Does the profile import properly?</dd>
+        <dd>Does the profile import properly?</dd>
 </dl>
 Test-case name: networkmanager/nm-pptp-001
 <dl>
@@ -133,8 +133,8 @@ Test-case name: networkmanager/nm-pptp-001
     <dt> Click on the NetworkManager icon</dt>
     <dt> Click on your VPN profile under "VPN Connections"</dt>
     <dt> Enter credentials if prompted.</dt>
-      <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
-      <dd>Are you able to access the resources provided by your VPN?</dd>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you able to access the resources provided by your VPN?</dd>
 </dl>
 Test-case name: networkmanager/nm-pptp-002
 <dl>
@@ -146,7 +146,7 @@ Test-case name: networkmanager/nm-pptp-002
     <dt> Select a VPN profile and click Export.</dt>
     <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
     <dt> Click Import.</dt>
-      <dd>Does the profile import properly?</dd>
+        <dd>Does the profile import properly?</dd>
 </dl>
 Test-case name: networkmanager/nm-oc-001
 <dl>
@@ -162,8 +162,8 @@ Test-case name: networkmanager/nm-oc-001
     <dt> Click on the NetworkManager icon</dt>
     <dt> Click on your VPN profile under "VPN Connections"</dt>
     <dt> Enter credentials if prompted.</dt>
-      <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
-      <dd>Are you able to access the resources provided by your VPN?</dd>
+        <dd>The NetworkManager icon will "swirl", then you should see a small lock at the bottom right corner of the normal connection icon (half-circles or arrows).</dd>
+        <dd>Are you able to access the resources provided by your VPN?</dd>
 </dl>
 Test-case name: networkmanager/nm-oc-002
 <dl>
@@ -175,7 +175,7 @@ Test-case name: networkmanager/nm-oc-002
     <dt> Select a VPN profile and click Export</dt>
     <dt> Verify that you can properly export a profile to a file on your hard drive.</dt>
     <dt> Click Import.</dt>
-      <dd>Does the profile import properly?</dd>
+        <dd>Does the profile import properly?</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

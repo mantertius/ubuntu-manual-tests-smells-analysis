@@ -22,8 +22,8 @@ Using GNOME Classic
 
 Verification
 
-    <dd>Verify that the mouse is detected by lsusb when connected.</dd>
-    <dd> Please include your device's model in your feedback. </dd>
+<dd>Verify that the mouse is detected by lsusb when connected.</dd>
+<dd> Please include your device's model in your feedback. </dd>
 
 
 <strong>Test USB Mouse</strong>
@@ -40,10 +40,10 @@ Case ID: hmu-002
 
 Verification
 
-    <dd>Verify that the mouse controls the cursor onscreen.</dd>
-    <dd>Verify that left- and right-clicking work.</dd>
-    <dd>Verify that dragging works.</dd> 
-    <dd>Please include your device's model in your feedback.</dd> 
+<dd>Verify that the mouse controls the cursor onscreen.</dd>
+<dd>Verify that left- and right-clicking work.</dd>
+<dd>Verify that dragging works.</dd> 
+<dd>Please include your device's model in your feedback.</dd> 
 
 
 <strong>Disconnect USB Mouse</strong>
@@ -57,8 +57,8 @@ Case ID: hmu-003
 
 Verification
 
-    <dd>Verify that the mouse is no longer detected by lsusb when disconnected.</dd> 
-    <dd>Please include your device's model in your feedback.</dd> 
+<dd>Verify that the mouse is no longer detected by lsusb when disconnected.</dd> 
+<dd>Please include your device's model in your feedback.</dd> 
 
 
 <strong>Reconnect USB Mouse</strong>
@@ -73,10 +73,10 @@ Case ID: hmu-004
 
 Verification
 
-    <dd>Verify that the mouse is detected by lsusb when reconnected.</dd> 
-    <dd>Verify that the mouse controls the cursor onscreen.</dd>   
-    <dd>Please include your device's model in your feedback.</dd> 
+<dd>Verify that the mouse is detected by lsusb when reconnected.</dd> 
+<dd>Verify that the mouse controls the cursor onscreen.</dd>   
+<dd>Please include your device's model in your feedback.</dd> 
 
 <strong>
-If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
