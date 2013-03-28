@@ -1,6 +1,6 @@
 Test-case name: gnomescreenshot/gns-001
 <dl>
-		This test will check that Gnome Screenshot can save screenshot of the whole screen
+    This test will check that Gnome Screenshot can save screenshot of the whole screen
 	<dt> Open gnome-screenshot using the dash, and typing 'screenshot'</dt>
 	<dt> Select Grab the whole desktop</dt>
 	<dt> Click on Take Screenshot</dt>
@@ -11,7 +11,7 @@ Test-case name: gnomescreenshot/gns-001
 </dl>
 Test-case name: gnomescreenshot/gns-002
 <dl>
-		This test will check that Gnome Screenshot can save screenshot of selected window
+    This test will check that Gnome Screenshot can save screenshot of selected window
 	<dt> Open gnome-screenshot using the dash, and typing 'screenshot'</dt>
 	<dt> Select Grab the current window</dt>
 	<dt> Click on Take Screenshot</dt>
@@ -22,7 +22,7 @@ Test-case name: gnomescreenshot/gns-002
 </dl>
 Test-case name: gnomescreenshot/gns-003
 <dl>
-		This test will check that Gnome Screenshot can save screenshot of selected window
+    This test will check that Gnome Screenshot can save screenshot of selected window
 	<dt> Open gnome-screenshot using the dash, and typing 'screenshot'</dt>
 	<dt> Select Grab the current window</dt>
 	<dt> Select Drop shadow from the Apply effect drop down menu</dt>

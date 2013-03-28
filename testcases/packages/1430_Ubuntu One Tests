@@ -1,6 +1,6 @@
 Test-case name: ubuntuone-client/ubo-001
 <dl>
-		This test will check that Ubuntu One client can be installed
+	This test will check that Ubuntu One client can be installed
 	<dt> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</dt>
 		<dd>ubuntuone-client should launch</dd>
 	<dt> Press the install button in the lower right hand corner</dt>
@@ -8,7 +8,7 @@ Test-case name: ubuntuone-client/ubo-001
 </dl>
 Test-case name: ubuntuone-client/ubo-002
 <dl>
-		This test will check that Ubuntu One client can display user information
+	This test will check that Ubuntu One client can display user information
 	<dt> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</dt>
 		<dd>ubuntuone-client should launch</dd>
 	<dt> Press the install button in the lower right hand corner</dt>
@@ -19,7 +19,7 @@ Test-case name: ubuntuone-client/ubo-002
 Test-case name: ubuntuone-client/ubo-003
 <dl>
 	depends: ubuntuone-client/ubo-002
-		This test will check that Ubuntu One client can sync files
+	This test will check that Ubuntu One client can sync files
 	<dt> Open the dash and launch ubuntuone-client by pressing the super key, and then entering ‘ubuntuone’</dt>
 		<dd>ubuntuone-client should launch</dd>
 	<dt> Click the folders tab</dt>

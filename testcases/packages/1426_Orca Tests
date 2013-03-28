@@ -1,16 +1,16 @@
 Test-case name: orca/starting_orca
 <dl>
-		This test will check that Orca can play a welcome message
+	This test will check that Orca can play a welcome message
 	<dt> Open Dash type 'system settings' and launch the system settings tool</dt>
 		<dd>system settings opens and contains the Universal Access section</dd>
 	<dt> Select the Universal Access section</dt>
-		<dd>a dialog with accessiblity settings opens, you are on the 'seeing' tab.</dd>
+		<dd>a dialog with accessibility settings opens, you are on the 'seeing' tab.</dd>
 	<dt> Select the Screen Reader option</dt>
 		<dd>Did a voice say "welcome to orca"?</dd>
 </dl>
 Test-case name: orca/dash
 <dl>
-		This test will check that Orca can announce text in the dash
+	This test will check that Orca can announce text in the dash
 	<dt> press the super(windows) key to bring up the dash</dt>
 		<dd>a voice says 'Dash frame'</dd>
 	<dt> use the cursor keys to navigate around the dash</dt>
@@ -18,11 +18,11 @@ Test-case name: orca/dash
 	<dt> move down to the lens list at the bottom of the dash</dt>
 		<dd>a voice reads the names of the lenses you have installed</dd>
 	<dt> select the apps lens and press return</dt>
-		<dd>Did the voice annouce you are on the applications lens?</dd>
+		<dd>Did the voice announce you are on the applications lens?</dd>
 </dl>
 Test-case name: orca/HUD
 <dl>
-		This test will check that Orca can announce text in the HUD
+	This test will check that Orca can announce text in the HUD
 	<dt> from the dash launch the gedit application</dt>
 		<dd>the text editor opens and a voice says gedit frame</dd>
 	<dt> press alt to bring up the HUD</dt>
@@ -32,7 +32,7 @@ Test-case name: orca/HUD
 </dl>
 Test-case name: orca/Ubiquity
 <dl>
-		This test will check that Orca can announce text in Ubiquity
+	This test will check that Orca can announce text in Ubiquity
 	<dt> boot a live CD, when you hear the drums press ctrl+s</dt>
 		<dd>a voice should welcome you to orca</dd>
 	<dt> alt-tab to get back to ubiquity and proceed through the wizard using only the keyboard</dt>
@@ -40,7 +40,7 @@ Test-case name: orca/Ubiquity
 </dl>
 Test-case name: orca/globalmenu
 <dl>
-		This test will check that Orca can announce text in global menu
+	This test will check that Orca can announce text in global menu
 	<dt> in an application with a global menu press alt to bring up the menu</dt>
 		<dd>the name of the menu should be read out (file menu)</dd>
 	<dt> using cursor keys navigate around the menu</dt>
@@ -50,7 +50,7 @@ Test-case name: orca/globalmenu
 </dl>
 Test-case name: orca/indicators
 <dl>
-		This test will check that Orca can announce text in indicators
+	This test will check that Orca can announce text in indicators
 	<dt> press F10 to get to the global menu then use the right cursor to go through the menu to the indicators</dt>
 		<dd>the indicator names should be read out</dd>
 	<dt> press F10 to leave the menu then F10 again to go back, but this time go left</dt>
@@ -64,13 +64,13 @@ Test-case name: orca/indicators
 </dl>
 Test-case name: orca/notifications
 <dl>
-		This test will check that Orca can announce notifications
+	This test will check that Orca can announce notifications
 	<dt> cause a notification to happen by sending yourself an email, instant message, irc message, etc.</dt>
 		<dd>Does the screen reader should read notification out loud?</dd>
 </dl>
 Test-case name: orca/launcher
 <dl>
-		This test will check that Orca can announce text in quicklists
+	This test will check that Orca can announce text in quicklists
 	<dt> press alt+f1 to get to keyboard navigation of the launcher</dt>
 		<dd>orca should read application names as you move up and down</dd>
 	<dt> move right on a running application to the quicklists</dt>
@@ -78,7 +78,7 @@ Test-case name: orca/launcher
 </dl>
 Test-case name: orca/workspace_switcher
 <dl>
-		This test will check that Orca can announce text in workspace switcher
+	This test will check that Orca can announce text in workspace switcher
 	<dt> try using the workspace switcher with the screen reader</dt>
 		<dd>Are you able to use the switcher without looking at the screen and understanding where your applications are?</dd>
 </dl>

@@ -2,7 +2,7 @@ Test-case name: pcmanfm/pcm-001
 This tests the applications list
 <dl>
     <dt>Click on <em>Applications</em> in left hand panel.</dt>
-         <dd>PCManFM shows catagory listing of applications.</dd>
+         <dd>PCManFM shows category listing of applications.</dd>
     <dt>Double Click on <em>Internet</em>.</dt>
         <dd>PCManFM window shows identical listing to that provided by clicking on <em>Menu</em>  -->; <em>Internet</em>.</dd>
 </dl>
@@ -76,8 +76,8 @@ This tests the 'open as root' functionality
     <dt>Click on <em>PCManFM</em> icon in task bar.</dt>
         <dd>PCManFM window opens and shows your user name in left panel to the right of the <strong>I^l</strong> icon.</dd>
     <dt>Click on <em>Tools</em> then <em>Open Current Folder as Root</em>.</dt>
-        <dd>Window appears prompting for your admistrative password..</dd>
-    <dt>Enter your adminstative password and click <em>OK</em>.</dt>
+        <dd>Window appears prompting for your administrative password..</dd>
+    <dt>Enter your administrative password and click <em>OK</em>.</dt>
         <dd>A new window opens which shows <strong>root</strong> in left panel to the right of the <strong>I^l</strong> icon.</dd>
     <dt>Click <em>root</em> in the left hand panel.</dt>
         <dd>Address bar shows <strong>/root</strong>.</dd>
@@ -151,7 +151,7 @@ Test-case name: pcmanfm/pcm-009
 This tests views
 <dl>
     <dt>Click on <em>Home Folder</em> in left hand panel.</dt>
-        <dd>PCManFM shows contenst of home directory.</dd>
+        <dd>PCManFM shows contents of home directory.</dd>
     <dt>Click on <em>View</em> and select <em>Show Hidden</em>.</dt>
         <dd>Files beginning with <em>.</em> are listed.</dd>
     <dt>Hold down  <em>Fn/em>; key and press <em>PrtSC</em> key.</em></dt>

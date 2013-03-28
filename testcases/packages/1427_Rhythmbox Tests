@@ -1,6 +1,6 @@
 Test-case name: rhythmbox/rhy-001
 <dl>
-		This test will check that Rhythmbox can play internet radio
+	This test will check that Rhythmbox can play internet radio
 	<dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
 		<dd>rhythmbox should launch</dd>
 	<dt> In the Library list, select Radio</dt>
@@ -12,12 +12,12 @@ Test-case name: rhythmbox/rhy-001
 </dl>
 Test-case name: rhythmbox/rhy-002
 <dl>
-		This test will check that Rhythmbox can play play podcast episodes
+	This test will check that Rhythmbox can play play podcast episodes
 	<dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
 		<dd>rhythmbox should launch</dd>
 	<dt> Right-click on Podcasts, select New Podcast Feed</dt>
 		<dd>New Podcast Feed window appears</dd>
-	<dt> Add the URI to your favourite podcast or http://feeds.feedburner.com/UbuntuUkPodcastOgg-high?format=xml</dt>
+	<dt> Add the URI to your favorite podcast or http://feeds.feedburner.com/UbuntuUkPodcastOgg-high?format=xml</dt>
 		<dd>Podcast is added to the list</dd>
 		<dd>Notification on new podcast appears</dd>
 		<dd>List of episodes is downloaded</dd>
@@ -31,7 +31,7 @@ Test-case name: rhythmbox/rhy-002
 </dl>
 Test-case name: rhythmbox/rhy-003
 <dl>
-		This test will check that Rhythmbox can install codecs and play stream from MTP-compatible players
+	This test will check that Rhythmbox can install codecs and play stream from MTP-compatible players
 		<dd>Have any MTP-compatible MP3 player</dd>
 	<dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
 		<dd>rhythmbox should launch</dd>
@@ -42,7 +42,7 @@ Test-case name: rhythmbox/rhy-003
 </dl>
 Test-case name: rhythmbox/rhy-004
 <dl>
-		This test will check that Rhythmbox can play Last.FM radio
+	This test will check that Rhythmbox can play Last.FM radio
 		<dd>Have Last.fm Account must be pre-registered and used for a time in order to get a play list.</dd>
 	<dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
 		<dd>rhythmbox should launch</dd>

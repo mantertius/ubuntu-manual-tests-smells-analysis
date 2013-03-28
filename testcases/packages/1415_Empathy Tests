@@ -1,13 +1,13 @@
 Test-case name: empathy/emp-001
 <dl>
-		This test will check that Empathy can be started
+	This test will check that Empathy can be started
 	<dt> Look for Empathy and launch it</dt>
 		<dd>Is Empathy launched?</dd>
 </dl>
 Test-case name: empathy/emp-002
 <dl>
 	depends: empathy/emp-001
-		This test will check that Empathy can send messages via Google Talk
+	This test will check that Empathy can send messages via Google Talk
 	<dt> Look for Empathy and launch it</dt>
 		<dd>Empathy should launch</dd>
 		<dd>A new 'Online Accounts' window should be displayed</dd>
@@ -26,7 +26,7 @@ Test-case name: empathy/emp-003
 <dl>
 	depends: empathy/emp-001
 	depends: empathy/emp-002
-		This test will check that Empathy can send messages via IRC
+	This test will check that Empathy can send messages via IRC
 	<dt> Please ensure you have 'universe' and 'multiverse' repositories enabled (off by default in live session)</dt>
 	<dt> Look for Terminal and launch it</dt>
 		<dd>Terminal is opened</dd>
@@ -56,7 +56,7 @@ Test-case name: empathy/emp-004
 <dl>
 	depends: empathy/emp-001
 	depends: empathy/emp-002
-		This test will check that Empathy can send messages via Facebook
+	This test will check that Empathy can send messages via Facebook
 	<dt> Look for Empathy and launch it</dt>
 		<dd>Empathy should launch</dd>
 	<dt> Select 'Accounts' from the Empathy menu</dt>

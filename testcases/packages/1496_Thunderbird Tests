@@ -74,7 +74,7 @@ Test-case name: thunderbird/tb-007
 		<dd>Search results should show up</dd>
 	<dt>Drag one contact from the LDAP directory (hold Ctrl) and drop it on a local address book</dt>
 		<dd>The contact should now be copied to the local address book</dd>
-	<dt>Select multiple contacts in the LDAP direcotry. Drag multiple contacts (hold Ctrl) from the directory to a local address book</dt>
+	<dt>Select multiple contacts in the LDAP directory. Drag multiple contacts (hold Ctrl) from the directory to a local address book</dt>
 		<dd>The contacts should now be copied to the local address book</dd>
 		<dd>Do all of these actions complete with no errors?</dd>
 </dl>

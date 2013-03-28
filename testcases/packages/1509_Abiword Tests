@@ -33,9 +33,9 @@ This test will check that Abiword can spell check
 <dl>
 
 <dt>Enter a few spelling errors.</dt>
-	<dd>Are there Red wave lines under mispelt words in the document?</dd>
+	<dd>Are there red wave lines under misspelled words in the document?</dd>
 <dt>Now Press F7.</dt>
-	<dd>A window titled with "Spellling” should appear, there now should be some suggestion words in the suggestions list?</dd>
+	<dd>A window titled with "Spelling” should appear, there now should be some suggestion words in the suggestions list?</dd>
 <dt>Select a word from the suggestion list and press the "Change" button.</dt>
 	<dd>The word in the document should be replaced with the one you selected from the suggestion list, and it should be no longer marked with a red wave line in the document.</dd>
 <dt>Press the “Change” button as many times as necessary till there are no more spelling mistakes in the document.</dt>

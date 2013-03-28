@@ -1,6 +1,6 @@
 Test-case name: gedit/ged-001
 <dl>
-		This test will check that GEdit can save and open saved files
+    This test will check that GEdit can save and open saved files
 	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
 	<dt> Type in "The quick brown foxes jump over the lazy dog"</dt>
@@ -18,7 +18,7 @@ Test-case name: gedit/ged-001
 </dl>
 Test-case name: gedit/ged-002
 <dl>
-		This test will check that GEdit can save HTML files correctly
+	This test will check that GEdit can save HTML files correctly
 	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
 	<dt> Type in <pre>&#60;a href="http://www.ubuntu.com"&#62;Link To Ubuntu&#60;a/a&#62;</pre></dt>
@@ -36,7 +36,7 @@ Test-case name: gedit/ged-002
 </dl>
 Test-case name: gedit/ged-003
 <dl>
-		This test will check that GEdit can replace text
+	This test will check that GEdit can replace text
 	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
 	<dt> Type in "The quick brown foxes jump over the lazy dog"</dt>
@@ -49,7 +49,7 @@ Test-case name: gedit/ged-003
 </dl>
 Test-case name: gedit/ged-004
 <dl>
-		This test will check that GEdit can find and hightlight searched text
+	This test will check that GEdit can find and hightlight searched text
 	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
 	<dt> Type in "The quick brown fox jump over the lazy dog"</dt>
@@ -57,19 +57,19 @@ Test-case name: gedit/ged-004
 	<dt> Press 'Ctrl+F'</dt>
 		<dd>the search box appears, input focus is in search box</dd>
 	<dt> Type 't'</dt>
-		<dd>all 't' letters in the document are highlighted</dd>
+		<dd>All 't' letters in the document are highlighted</dd>
 	<dt> Type 'he'</dt>
-		<dd>all 'the' or 'The' words in the document are highlighted</dd>
+		<dd>All 'the' or 'The' words in the document are highlighted</dd>
 	<dt> Click down arrow button in the search box</dt>
-		<dd>text cursor moves to grey-highlighted 'the' in 'over the lazy dog'</dd>
+		<dd>Text cursor moves to grey-highlighted 'the' in 'over the lazy dog'</dd>
 	<dt> Click up arrow button in the search box</dt>
-		<dd>text cursor moves to grey-highlighted 'The' in 'The quick brown'..</dd>
+		<dd>Text cursor moves to grey-highlighted 'The' in 'The quick brown'..</dd>
 	<dt> Press ESC button</dt>
 		<dd>Did the search box close and focus return to the document, with the search term highlighted?</dd>
 </dl>
 Test-case name: gedit/ged-005
 <dl>
-		This test will check that GEdit can display File Browser panel
+	This test will check that GEdit can display File Browser panel
 	<dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
 		<dd>Gedit should launch</dd>
 	<dt> Click on Edit -> Preferences -> Plugins. Then ensure the "File Browser Panel" plugin is checked. Close the window by pressing close.</dt>

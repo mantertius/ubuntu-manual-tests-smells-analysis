@@ -1,6 +1,6 @@
 Test-case name: dejadup/dej-001
 <dl>
-		This test will check that Dejadup can backup and restore files
+	This test will check that Dejadup can backup and restore files
 	<dt> Create a test folder in your home directory with one test text file.</dt>
 	<dt> Open the dash and launch backup by pressing the super key, and then entering ‘backup’</dt>
 		<dd>Backup should launch</dd>
@@ -12,7 +12,7 @@ Test-case name: dejadup/dej-001
 		<dd>Backup location and folder are specified</dd>
 	<dt> Click 'Overview' tab and click 'Back Up Now' button</dt>
 		<dd>A 'Back Up' window launches and starts scanning and backing up your folder</dd>
-	<dt> If 'Back Up' window requests a password, select 'Allow restoring without a password' radiobutton and click 'Continue'</dt>
+	<dt> If 'Back Up' window requests a password, select 'Allow restoring without a password' radio button and click 'Continue'</dt>
 		<dd>Back up process is resumed</dd>
 	<dt> Wait for the backup to end, then delete your test folder from your home directory</dt>
 		<dd>test folder is deleted</dd>

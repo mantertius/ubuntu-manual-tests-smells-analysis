@@ -1,8 +1,8 @@
 Test-case name: networkmanager/TC-NMA-001
 <dl>
-		This test will check that Network Manager can establish an ethernet connection
+	This test will check that Network Manager can establish an ethernet connection
 	<dt> Plug in the cable in ethernet port</dt>
-		<dd>NetworkManager's icon swirls and then changes to ""ethenet connection up"" icon (2 arrows, 1 pointing up and 1 pointing down by default)</dd>
+		<dd>NetworkManager's icon swirls and then changes to "ethernet connection up" icon (2 arrows, 1 pointing up and 1 pointing down by default)</dd>
 	<dt> Wait till notification appears</dt>
 		<dd>Notification on established connection appears</dd>
 	<dt> Click on the applet, select 'Connection Information'</dt>
@@ -11,12 +11,12 @@ Test-case name: networkmanager/TC-NMA-001
 </dl>
 Test-case name: networkmanager/TC-NMA-002
 <dl>
-		This test will check that Network Manager can establish a WPA/WPA2 encrypted Wi-Fi connection
+	This test will check that Network Manager can establish a WPA/WPA2 encrypted Wi-Fi connection
 	<dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WPA/WPA2 encrypted Wi-Fi AP available</dt>
 	<dt> Open the applet and select WPA/WPA2 encrypted network</dt>
 		<dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
 	<dt> Enter AP password</dt>
-		<dd>NetworkManager's icon changes to ""encrypted wireless connection up"" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
+		<dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
 	<dt> Wait till notification appears</dt>
 		<dd>Notification on established connection appears</dd>
 	<dt> Click on the applet, select 'Connection Information'</dt>
@@ -25,12 +25,12 @@ Test-case name: networkmanager/TC-NMA-002
 </dl>
 Test-case name: networkmanager/TC-NMA-003
 <dl>
-		This test will check that Network Manager can establish a WEP encrypted Wi-Fi connection
+	This test will check that Network Manager can establish a WEP encrypted Wi-Fi connection
 	<dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WEP encrypted Wi-Fi AP available</dt>
 	<dt> Open the applet and select WEP encrypted network</dt>
 		<dd>NetworkManager's icon swirls. 'Enter password' window appears</dd>
 	<dt> Enter AP password</dt>
-		<dd>NetworkManager's icon changes to ""encrypted wireless connection up"" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
+		<dd>NetworkManager's icon changes to "encrypted wireless connection up" icon (4 half-circles with a small lock on the bottom-right corner icon by default)</dd>
 	<dt> Wait till notification appears</dt>
 		<dd>Notification on established connection appears</dd>
 	<dt> Click on the applet, select 'Connection Information'</dt>
@@ -39,10 +39,10 @@ Test-case name: networkmanager/TC-NMA-003
 </dl>
 Test-case name: networkmanager/TC-NMA-004
 <dl>
-		This test will check that Network Manager can establish an unencrypted Wi-Fi connection
+	This test will check that Network Manager can establish an unencrypted Wi-Fi connection
 	<dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and an unencrypted Wi-Fi AP available</dt>
 	<dt> Open the applet and select an unencrypted network</dt>
-		<dd>NetworkManager's icon swirls and then changes to ""unecrypted wireless connection up"" icon (4 half-circles icon by default)</dd>
+		<dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
 	<dt> Wait till notification appears</dt>
 		<dd>Notification on established connection appears</dd>
 	<dt> Click on the applet, select 'Connection Information'</dt>
@@ -51,10 +51,10 @@ Test-case name: networkmanager/TC-NMA-004
 </dl>
 Test-case name: networkmanager/TC-NMA-005
 <dl>
-		This test will check that Network Manager can establish a 3G connection
+	This test will check that Network Manager can establish a 3G connection
 	<dt> Please ensure you have a 3G card/dongle with installed drivers, switched on and a good 3G signal from your service provider</dt>
 	<dt> Plug in the 3G dongle</dt>
-		<dd>NetworkManager's icon swirls and then changes to ""unencryped wireless connection up"" icon (4 half-circles icon by default)</dd>
+		<dd>NetworkManager's icon swirls and then changes to "unencrypted wireless connection up" icon (4 half-circles icon by default)</dd>
 	<dt> Wait till notification appears</dt>
 		<dd>Notification on established connection appears</dd>
 	<dt> Click on the applet, select 'Connection Information'</dt>
@@ -63,7 +63,7 @@ Test-case name: networkmanager/TC-NMA-005
 </dl>
 Test-case name: networkmanager/nm-vpnc-001
 <dl>
-		This test will check that Network Manager can establish a connection to Cisco VPN
+	This test will check that Network Manager can establish a connection to Cisco VPN
 	<dt> Please ensure you have a Cisco VPN to connect to.</dt>
 	<dt> Install the network-manager-vpnc package, make sure both network-manager-vpnc and network-manager-vpnc-gnome get installed.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
@@ -80,7 +80,7 @@ Test-case name: networkmanager/nm-vpnc-001
 </dl>
 Test-case name: networkmanager/nm-vpnc-001
 <dl>
-		This test will check that Network Manager can export and import Cisco VPN connections
+	This test will check that Network Manager can export and import Cisco VPN connections
 	<dt> Please ensure you have a Cisco VPN to connect to.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
 	<dt> Click Edit Connections...</dt>
@@ -92,7 +92,7 @@ Test-case name: networkmanager/nm-vpnc-001
 </dl>
 Test-case name: networkmanager/nm-openvpn-001
 <dl>
-		This test will check that Network Manager can establish a connection to OpenVPN
+	This test will check that Network Manager can establish a connection to OpenVPN
 	<dt> Please ensure you have an OpenVPN server to connect to.</dt>
 	<dt> Install the network-manager-openvpn package, make sure both network-manager-openvpn and network-manager-openvpn-gnome get installed.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
@@ -109,7 +109,7 @@ Test-case name: networkmanager/nm-openvpn-001
 </dl>
 Test-case name: networkmanager/nm-openvpn-002
 <dl>
-		This test will check that Network Manager can export and import OpenVPN connections
+	This test will check that Network Manager can export and import OpenVPN connections
 	<dt> Please ensure you have an OpenVPN server to connect to.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
 	<dt> Click Edit Connections...</dt>
@@ -121,7 +121,7 @@ Test-case name: networkmanager/nm-openvpn-002
 </dl>
 Test-case name: networkmanager/nm-pptp-001
 <dl>
-		This test will check that Network Manager can establish a connection to PPTP VPN
+	This test will check that Network Manager can establish a connection to PPTP VPN
 	<dt> Please ensure you have a PPTP VPN gateway to connect to.</dt>
 	<dt> Install the network-manager-pptp package, make sure both network-manager-pptp and network-manager-pptp-gnome get installed.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
@@ -138,7 +138,7 @@ Test-case name: networkmanager/nm-pptp-001
 </dl>
 Test-case name: networkmanager/nm-pptp-002
 <dl>
-		This test will check that Network Manager can export and import PPTP connections
+	This test will check that Network Manager can export and import PPTP connections
 	<dt> Please ensure you have a PPTP VPN gateway to connect to.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
 	<dt> Click Edit Connections...</dt>
@@ -150,7 +150,7 @@ Test-case name: networkmanager/nm-pptp-002
 </dl>
 Test-case name: networkmanager/nm-oc-001
 <dl>
-		This test will check that Network Manager can establish a connection to OpenConnect VPN
+	This test will check that Network Manager can establish a connection to OpenConnect VPN
 	<dt> Please ensure you have a Cisco AnyConnect VPN gateway to connect to.</dt>
 	<dt> Install the network-manager-openconnect package, make sure both network-manager-openconnect and network-manager-openconnect-gnome get installed.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
@@ -167,7 +167,7 @@ Test-case name: networkmanager/nm-oc-001
 </dl>
 Test-case name: networkmanager/nm-oc-002
 <dl>
-		This test will check that Network Manager can export and import OpenConnect VPN connections
+	This test will check that Network Manager can export and import OpenConnect VPN connections
 	<dt> Please ensure you have a Cisco AnyConnect VPN gateway to connect to.</dt>
 	<dt> Right-click on the NetworkManager icon</dt>
 	<dt> Click Edit Connections</dt>
