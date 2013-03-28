@@ -1,6 +1,6 @@
 <dl>
   <dt>Boot using the installation media</dt>
-     <dd>The installer should load</dd>
+    <dd>The installer should load</dd>
   <dt>Select <strong>install</strong></dt>
   <dt>Select your language and press Enter.</dt>
   <dt>Select your country and press Enter.</dt>
@@ -33,7 +33,7 @@
   <dt>At the GRUB installation prompt, select the value appropiate to your system (in general, the default works).</dt>
   <dt>Click on the Continue button.</dt>
   <dt>The installer prompts "Is the system clock set to UTC?".</dt>
-     <dd>Select Yes or No, depending on your setup (select No if your clock is set to localtime).</dd>
+    <dd>Select Yes or No, depending on your setup (select No if your clock is set to localtime).</dd>
   <dt>Click on the Continue button.</dt>
   <dt>The installer prompts to restart and to remove the installation media. Remove it and click on the Continue button.</dt>
     <dd>The system restarts and runs the choosen FAMILY environement.</dd>

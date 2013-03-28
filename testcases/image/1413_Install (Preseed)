@@ -4,36 +4,36 @@ Scope of this test is to verify that the system is installed in itself starting 
 On a trash and burn server, boot the UBuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).</strong>
 
 <dl>
-	<dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
-	<dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:
-		Boot Options file=/cdrom/preseed/ubuntu-server.seed vga=788 initrd=/install/initrd.gz quiet --</dt>
-	<dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto url=http://people.canonical.com/~cerdea/preseed.cfg'. The Boot Options line should now look like:
-		Boot Options auto url=http://people.canonical.com/~cerdea/preseed.cfg vga=788 initrd=/install/initrd.gz quiet --</dt>
-	<dt>Press Enter to accept the boot command line and start the installation</dt>
-	<dt>Choose the language</dt>
-	<dt>Select your location</dt>
-	<dt>Configure locales</dt>
-	<dt>At configure keyboard page, select NO </dt>
-	<dt>Select the country of the keyboard</dt>
-	<dt>Select the keyboard layout</dt>
-	<dt>Select hostname ubuntu as default</dt>
-	<dt>From this point on, the installation should proceed automatically. Wait until the system reboots. </dt>
-	<dt>At the login insert ubuntu as userid and <strong>ubuntu</strong> as password</dt>
-	<dt>Verify that the server is working executing:</dt>
-		<dd>ntptime</dd>
-		<dd>the output should look like:</dd>
-			<pre>
-				njin@quantic:~/Ubuntu$ ntptime
-				ntp_gettime() returns code 0 (OK)
-				time d3d92552.3858c000  Fri, Aug 17 2012 22:17:22.220, (.220104),
-				maximum error 4516 us, estimated error 16 us, TAI offset 0
-				ntp_adjtime() returns code 0 (OK)
-				modes 0x0 (),
-				offset 0.000 us, frequency 0.000 ppm, interval 1 s,
-				maximum error 4516 us, estimated error 16 us,
-				status 0x1 (PLL),
-				time constant 7, precision 1.000 us, tolerance 500 ppm,
-			</pre>
+    <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+    <dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:
+        Boot Options file=/cdrom/preseed/ubuntu-server.seed vga=788 initrd=/install/initrd.gz quiet --</dt>
+    <dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto url=http://people.canonical.com/~cerdea/preseed.cfg'. The Boot Options line should now look like:
+        Boot Options auto url=http://people.canonical.com/~cerdea/preseed.cfg vga=788 initrd=/install/initrd.gz quiet --</dt>
+    <dt>Press Enter to accept the boot command line and start the installation</dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure locales</dt>
+    <dt>At configure keyboard page, select NO </dt>
+    <dt>Select the country of the keyboard</dt>
+    <dt>Select the keyboard layout</dt>
+    <dt>Select hostname ubuntu as default</dt>
+    <dt>From this point on, the installation should proceed automatically. Wait until the system reboots. </dt>
+    <dt>At the login insert ubuntu as userid and <strong>ubuntu</strong> as password</dt>
+    <dt>Verify that the server is working executing:</dt>
+        <dd>ntptime</dd>
+        <dd>the output should look like:</dd>
+            <pre>
+                njin@quantic:~/Ubuntu$ ntptime
+                ntp_gettime() returns code 0 (OK)
+                time d3d92552.3858c000  Fri, Aug 17 2012 22:17:22.220, (.220104),
+                maximum error 4516 us, estimated error 16 us, TAI offset 0
+                ntp_adjtime() returns code 0 (OK)
+                modes 0x0 (),
+                offset 0.000 us, frequency 0.000 ppm, interval 1 s,
+                maximum error 4516 us, estimated error 16 us,
+                status 0x1 (PLL),
+                time constant 7, precision 1.000 us, tolerance 500 ppm,
+            </pre>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -4,7 +4,7 @@
     <dt>On the Unity panel, select Home Folder.</dt>
     <dt>Open the Examples folder. Open the Ubuntu_Free_Culture_Showcase folder.</dt>
     <dt>Select either of the .ogg files. A media player will open.</dt>
-        <dt>Verify that sound is played through the speakers without noises or distortions.</dt>
+       <dt>Verify that sound is played through the speakers without noises or distortions.</dt>
     <dt>Adjust the volume with the Volume Control applet. Verify that the audio volume changes.</dt>
     <dt>Right-click the Volume Control applet and check Mute. Verify that the audio is muted.</dt>
     <dt>Right-click the Volume Control applet and uncheck Mute. Verify that the audio resumes.</dt> 

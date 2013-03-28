@@ -1,27 +1,27 @@
 The goal of this test case is to check that localization support is functional during the installation and that language packs are downloaded and installed correctly from the Internet.
 <dl>
-	<dt>Power up your machine and insert the install media</dt>
-	<dt>Select a non English language for the install and press Enter</dt>
-	<dt>Select the Install FAMILY option </dt>
-	<dt>Once Ubiquity starts click on Forward
-		<ul>
-			<li>(The installer should be localized from the first screen onwards)</li>
-		</ul>
-        </dt>
-	<dt>Check the language you selected is correct on the list and click Forward</dt>
-	<dt>Select your timezone and click Forward</dt>
-	<dt>Check your keyboard layout is correct or alter and click Forward</dt>
-	<dt>Select Erase and use the entire disk and click Forward</dt>
-	<dt>Input your initial user details and password (Note admin can not be used it is a dedicated Linux User)</dt>
-	<dt>Tick Log in automatically and click on Forward</dt>
-	<dt>Check the details are correct on the final page and click Install</dt>
-	<dt>Check that the installer's slideshow slides are localized</dt>
-	<dt>Once the installer has finished choose to Restart the system now</dt>
-	<dt>Remove the disc and press Enter</dt>
-	<dt>Allow the machine to reboot</dt>
-	<dt>Verify that your system is localized</dt>
-		    <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
-	<dt>Check that the calendar shows the regional settings correctly</dt>
+    <dt>Power up your machine and insert the install media</dt>
+    <dt>Select a non English language for the install and press Enter</dt>
+    <dt>Select the Install FAMILY option </dt>
+    <dt>Once Ubiquity starts click on Forward
+        <ul>
+            <li>(The installer should be localized from the first screen onwards)</li>
+        </ul>
+       </dt>
+    <dt>Check the language you selected is correct on the list and click Forward</dt>
+    <dt>Select your timezone and click Forward</dt>
+    <dt>Check your keyboard layout is correct or alter and click Forward</dt>
+    <dt>Select Erase and use the entire disk and click Forward</dt>
+    <dt>Input your initial user details and password (Note admin can not be used it is a dedicated Linux User)</dt>
+    <dt>Tick Log in automatically and click on Forward</dt>
+    <dt>Check the details are correct on the final page and click Install</dt>
+    <dt>Check that the installer's slideshow slides are localized</dt>
+    <dt>Once the installer has finished choose to Restart the system now</dt>
+    <dt>Remove the disc and press Enter</dt>
+    <dt>Allow the machine to reboot</dt>
+    <dt>Verify that your system is localized</dt>
+            <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
+    <dt>Check that the calendar shows the regional settings correctly</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

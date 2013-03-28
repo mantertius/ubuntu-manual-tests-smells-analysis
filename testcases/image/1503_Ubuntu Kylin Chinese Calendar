@@ -1,23 +1,23 @@
 Test-case name: ChineseCalendar/chi-001
 <dl>
     This test will check that Chinese Calendar can display calendar and the main windows may hide.
-	<dt>Find the indicator icon of Chinese Calendar</dt>
-		<dd>Did ChineseCalendar autostart?</dd>
-	<dt>Click the indicator icon of Chinese Calendar and select "隐藏/显示" menu item</dt>
-		<dd>Did the Chinese calendar main window display?</dd>
-	<dt>Click the indicator icon of Chinese Calendar and select "隐藏/显示" menu item again</dt>
-		<dd>Did the Chinese calendar main window disappear?</dd>
+    <dt>Find the indicator icon of Chinese Calendar</dt>
+        <dd>Did ChineseCalendar autostart?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "隐藏/显示" menu item</dt>
+        <dd>Did the Chinese calendar main window display?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "隐藏/显示" menu item again</dt>
+        <dd>Did the Chinese calendar main window disappear?</dd>
 </dl>
 
 Test-case name: ChineseCalendar/chi-002
 <dl>
     This test will check that Chinese Calendar can be configured to show the main window in different mode.
-	<dt>Click the indicator icon of Chinese Calendar and select "总在最前" menu item</dt>
-		<dd>Is the main window showed in front of all other windows?</dd>
-	<dt>Click the indicator icon of Chinese Calendar and select "总在最后" menu item</dt>
-		<dd>Is the main window showed behind all other windows except the desktop?</dd>
-	<dt>Click the indicator icon of Chinese Calendar and select "普通模式" menu item</dt>
-		<dd>Is the main window showed as normal application window?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "总在最前" menu item</dt>
+        <dd>Is the main window showed in front of all other windows?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "总在最后" menu item</dt>
+        <dd>Is the main window showed behind all other windows except the desktop?</dd>
+    <dt>Click the indicator icon of Chinese Calendar and select "普通模式" menu item</dt>
+        <dd>Is the main window showed as normal application window?</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

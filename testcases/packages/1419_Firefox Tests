@@ -1,19 +1,19 @@
 Test-case name: firefox/fir-001
 <dl>
     This test will check that Firefox can display webpages
-	<dt>Open Firefox</dt>
-		<dd>Did Firefox open?</dd>
-	<dt>Go to ubuntu.com</dt>
-		<dd>Did the web site open?</dd>
+    <dt>Open Firefox</dt>
+      <dd>Did Firefox open?</dd>
+    <dt>Go to ubuntu.com</dt>
+      <dd>Did the web site open?</dd>
 </dl>
 
 Test-case name: firefox/fir-002
 <dl>
     This test will check that Firefox can display search suggestions and results for a query
-	<dt>In the Search area, type a word</dt>
-		<dd>Are relevant suggestions for this query displayed?</dd>
-	<dt>Hit Enter</dt>
-		<dd>Do all search engines display search suggestions and a results page for query?</dd>
+    <dt>In the Search area, type a word</dt>
+      <dd>Are relevant suggestions for this query displayed?</dd>
+    <dt>Hit Enter</dt>
+      <dd>Do all search engines display search suggestions and a results page for query?</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

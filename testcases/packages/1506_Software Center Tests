@@ -1,220 +1,220 @@
 Test-case name: SoftwareCenter/sc-001
 <dl>
-        This test will check that SoftwareCenter can be open correctly
-        <dt>Open Ubuntu Software Center</dt>
-                <dd>Did Ubuntu Software Center launch?</dd>
+      This test will check that SoftwareCenter can be open correctly
+      <dt>Open Ubuntu Software Center</dt>
+           <dd>Did Ubuntu Software Center launch?</dd>
 </dl>
 
 
 Test-case name: SoftwareCenter/sc-002
-        depends: SoftwareCenter/sc-001
+      depends: SoftwareCenter/sc-001
 <dl>
-        This tests will check that Software Center can installs applications by Categories
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Go to the Categories panel and click on "Sound & Video"</dt>
-                <dd>A list with multimedia applications is shown</dd>
-        <dt>Click on the VLC media player</dt>
-                <dd>Two new buttons appear, "More info" and "Install"</dd>
-        <dt>Press the "Install" button</dt>
-                <dd>A new window appears asking for authentication credentials</dd>
-        <dt>Authenticate with your credentials</dt>
-                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
-       <dt>Wait for the application to be installed</dt>
-                <dd>The "Progress" icon disappears</dd>
-                <dd>The icon application has a green tick</dd>
-                <dd>The icon application has two buttons, "More info" and "Remove"</dd>
-       <dt>Click the "History" button at the top of the Software Center</dt>
-                <dd>The VLC media mplayer is shown in the logs</dd>
-        <dt>Press the "back" button at the left top of the Software Center</dt>
-               <dd>A list of media applications is shown and vlc is selected</dd>
-        <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
-              <dd>The Software Center shows the "whats' new" section</dd>
-        <dt>Look for the VLC media player and launch it</dt>
-             <dd>Is the VLC media player opened?</dd>
+      This tests will check that Software Center can installs applications by Categories
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Go to the Categories panel and click on "Sound & Video"</dt>
+           <dd>A list with multimedia applications is shown</dd>
+      <dt>Click on the VLC media player</dt>
+           <dd>Two new buttons appear, "More info" and "Install"</dd>
+      <dt>Press the "Install" button</dt>
+           <dd>A new window appears asking for authentication credentials</dd>
+      <dt>Authenticate with your credentials</dt>
+           <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+     <dt>Wait for the application to be installed</dt>
+           <dd>The "Progress" icon disappears</dd>
+           <dd>The icon application has a green tick</dd>
+           <dd>The icon application has two buttons, "More info" and "Remove"</dd>
+     <dt>Click the "History" button at the top of the Software Center</dt>
+           <dd>The VLC media mplayer is shown in the logs</dd>
+      <dt>Press the "back" button at the left top of the Software Center</dt>
+          <dd>A list of media applications is shown and vlc is selected</dd>
+      <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
+          <dd>The Software Center shows the "whats' new" section</dd>
+      <dt>Look for the VLC media player and launch it</dt>
+         <dd>Is the VLC media player opened?</dd>
 </dl>
 
 
 
 Test-case name: SoftwareCenter/sc-003
-               depends: SoftwareCenter/sc-001
-               depends: SoftwareCenter/sc-002
+          depends: SoftwareCenter/sc-001
+          depends: SoftwareCenter/sc-002
 <dl>
-        This tests will check that Software Center can remove applications correctly
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Click on the "Installed" icon</dt>
-                <dd>A list with categories is shown</dd>
-        <dt>Select "Sound & Video"</dt>
-                <dd>A sublist with multimedia applications is displayed</dd>
-        <dt>Scroll down and press the VLC icon</dt>
-                <dd>Two new buttons appear, "More info" and "Remove"</dd>
-        <dt>Press the "Remove" button</dt>
-                <dd>A new window appears asking for authentication credentials</dd>
-        <dt>Authenticate with your credentials</dt>
-                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
-       <dt>Wait for the application to be removed</dt>
-                <dd>The "Progress" icon disappears</dd>
-                <dd>The sublist reloads and no longer shows VLC</dd>
-        <dt>Look for VLC and launch it</dt>
-                <dd>The VLC media player was uninstalled successfully?</dd>
+      This tests will check that Software Center can remove applications correctly
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Click on the "Installed" icon</dt>
+           <dd>A list with categories is shown</dd>
+      <dt>Select "Sound & Video"</dt>
+           <dd>A sublist with multimedia applications is displayed</dd>
+      <dt>Scroll down and press the VLC icon</dt>
+           <dd>Two new buttons appear, "More info" and "Remove"</dd>
+      <dt>Press the "Remove" button</dt>
+           <dd>A new window appears asking for authentication credentials</dd>
+      <dt>Authenticate with your credentials</dt>
+           <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+     <dt>Wait for the application to be removed</dt>
+           <dd>The "Progress" icon disappears</dd>
+           <dd>The sublist reloads and no longer shows VLC</dd>
+      <dt>Look for VLC and launch it</dt>
+           <dd>The VLC media player was uninstalled successfully?</dd>
 </dl>
 
 
 Test-case name: SoftwareCenter/sc-004
 <dl>
-        This test will check that the search feature works
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
-                <dd>The search box gets the focus</dd>
-        <dt>Write "Vlc" and wait</dt>
-                <dd> The Software Center return matches which contains Vlc?</dd>
+      This test will check that the search feature works
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
+           <dd>The search box gets the focus</dd>
+      <dt>Write "Vlc" and wait</dt>
+           <dd> The Software Center return matches which contains Vlc?</dd>
 </dl>
 
 
 Test-case name: SoftwareCenter/sc-005
-	depends: SoftwareCenter/sc-001
-        depends: SoftwareCenter/sc-004
+    depends: SoftwareCenter/sc-001
+      depends: SoftwareCenter/sc-004
 <dl>
-        This tests will check that Software Center can installs applications by search feature
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
-                <dd>The search box gets the focus</dd>
-        <dt>Write "Vlc" and wait</dt>
-                <dd> The Software Center return matches which contains Vlc?</dd>
-        <dt>Click on the VLC media player</dt>
-                <dd>Two new buttons appear, "More info" and "Install"</dd>
-        <dt>Press the "Install" button</dt>
-                <dd>A new window appears asking for authentication credentials</dd>
-        <dt>Authenticate with your credentials</dt>
-                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
-       <dt>Wait for the application to be installed</dt>
-                <dd>The "Progress" icon disappears</dd>
-                <dd>The icon application has a green tick</dd>
-                <dd>The icon application has two buttons, "More info" and "Remove"</dd>
-       <dt>Click the "History" button at the top of the Software Center</dt>
-                <dd>The VLC media mplayer is shown in the logs</dd>
-        <dt>Press the "back" button at the left top of the Software Center</dt>
-               <dd>A list of media applications is shown and vlc is selected</dd>
-        <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
-              <dd>The Software Center shows the "whats' new" section</dd>
-        <dt>Look for the VLC media player and launch it</dt>
-             <dd>Is the VLC media player opened?</dd>
+      This tests will check that Software Center can installs applications by search feature
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
+           <dd>The search box gets the focus</dd>
+      <dt>Write "Vlc" and wait</dt>
+           <dd> The Software Center return matches which contains Vlc?</dd>
+      <dt>Click on the VLC media player</dt>
+           <dd>Two new buttons appear, "More info" and "Install"</dd>
+      <dt>Press the "Install" button</dt>
+           <dd>A new window appears asking for authentication credentials</dd>
+      <dt>Authenticate with your credentials</dt>
+           <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+     <dt>Wait for the application to be installed</dt>
+           <dd>The "Progress" icon disappears</dd>
+           <dd>The icon application has a green tick</dd>
+           <dd>The icon application has two buttons, "More info" and "Remove"</dd>
+     <dt>Click the "History" button at the top of the Software Center</dt>
+           <dd>The VLC media mplayer is shown in the logs</dd>
+      <dt>Press the "back" button at the left top of the Software Center</dt>
+          <dd>A list of media applications is shown and vlc is selected</dd>
+      <dt>Click the "All Software" icon at the bottom of the Software Center</dt>
+          <dd>The Software Center shows the "whats' new" section</dd>
+      <dt>Look for the VLC media player and launch it</dt>
+         <dd>Is the VLC media player opened?</dd>
 </dl>
 
 
 
 Test-case name: SoftwareCenter/sc-006
-               depends: SoftwareCenter/sc-001
-	       depends: SoftwareCenter/sc-004
-               depends: SoftwareCenter/sc-005
+          depends: SoftwareCenter/sc-001
+        depends: SoftwareCenter/sc-004
+          depends: SoftwareCenter/sc-005
 <dl>
-        This tests will check that Software Center can remove applications correctly
-        This tests will check that Software Center can installs applications by search feature
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
-                <dd>The search box gets the focus</dd>
-        <dt>Write "Vlc" and wait</dt>
-                <dd> The Software Center return matches which contains Vlc?</dd>
-        <dt>Scroll down and press the VLC icon</dt>
-                <dd>Two new buttons appear, "More info" and "Remove"</dd>
-        <dt>Press the "Remove" button</dt>
-                <dd>A new window appears asking for authentication credentials</dd>
-        <dt>Authenticate with your credentials</dt>
-                <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
-       <dt>Wait for the application to be removed</dt>
-                <dd>The "Progress" icon disappears</dd>
-                <dd>The sublist reloads and no longer shows VLC</dd>
-        <dt>Look for VLC and launch it</dt>
-                <dd>The VLC media player was uninstalled successfully?</dd>
+      This tests will check that Software Center can remove applications correctly
+      This tests will check that Software Center can installs applications by search feature
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
+           <dd>The search box gets the focus</dd>
+      <dt>Write "Vlc" and wait</dt>
+           <dd> The Software Center return matches which contains Vlc?</dd>
+      <dt>Scroll down and press the VLC icon</dt>
+           <dd>Two new buttons appear, "More info" and "Remove"</dd>
+      <dt>Press the "Remove" button</dt>
+           <dd>A new window appears asking for authentication credentials</dd>
+      <dt>Authenticate with your credentials</dt>
+           <dd>A "Progress" icon is shown in the bottom panel with a number of process</dd>
+     <dt>Wait for the application to be removed</dt>
+           <dd>The "Progress" icon disappears</dd>
+           <dd>The sublist reloads and no longer shows VLC</dd>
+      <dt>Look for VLC and launch it</dt>
+           <dd>The VLC media player was uninstalled successfully?</dd>
 </dl>
 
 
 
 Test-case name: SoftwareCenter/sc-007
-	depends: SoftwareCenter/sc-001
+    depends: SoftwareCenter/sc-001
 <dl>
-        This tests will check that Recommendations can be turned on
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Go to the top bar and click on "View" and later on "Turn On Recommendations"</dt>
-                <dd> A window acknowledging the change appears</dd>
-        <dt>Select "Turn On Recommendations"</dt>
-                <dd>A new window asking for an Ubuntu Software Center account appears</dd>
-        <dt>Fill the required data and click "Forward"</dt>
-                <dd>A window confirming you're already logged into Ubuntu Software Center appears</dd>
-        <dt>Close the "Connect to Ubuntu Software Center" window</dt>
-                <dd>The recommended for you section reloads?</dd>
-                <dd>Does it show recommendations?</dd>
+      This tests will check that Recommendations can be turned on
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Go to the top bar and click on "View" and later on "Turn On Recommendations"</dt>
+           <dd> A window acknowledging the change appears</dd>
+      <dt>Select "Turn On Recommendations"</dt>
+           <dd>A new window asking for an Ubuntu Software Center account appears</dd>
+      <dt>Fill the required data and click "Forward"</dt>
+           <dd>A window confirming you're already logged into Ubuntu Software Center appears</dd>
+      <dt>Close the "Connect to Ubuntu Software Center" window</dt>
+           <dd>The recommended for you section reloads?</dd>
+           <dd>Does it show recommendations?</dd>
 </dl>
 
 
 Test-case name: SoftwareCenter/sc-008
-	depends: SoftwareCenter/sc-001
+    depends: SoftwareCenter/sc-001
 <dl>
-        This tests will check that Recommendations can be turned off
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Go to the top bar and click on "View" and later on "Turn Off Recommendations"</dt>
-                <dd>Does the recommendation section shows a "Turn On Recommendations" button?</dd>
+      This tests will check that Recommendations can be turned off
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Go to the top bar and click on "View" and later on "Turn Off Recommendations"</dt>
+           <dd>Does the recommendation section shows a "Turn On Recommendations" button?</dd>
 </dl>
 
 
 
 Test-case name: SoftwareCenter/sc-009
-	depends: SoftwareCenter/sc-001
+    depends: SoftwareCenter/sc-001
 <dl>
-        This test will check that Software Sources works
-        <dt>Open the Ubuntu Software Center</dt>
-                <dd>The Ubuntu Software Center is launched</dd>
-        <dt>Go to the top bar and click on "Edit" and later on "software Sources.."</dt>
-	<dt>A new window appears "software & Updates", here we are going to get a new server doing Click on "Download from" and choosing "Main Server"</dt>
-                <dd>A new window appears asking for authentication credentials</dd>
-        <dt>Authenticate with your credentials</dt>
-		<dd>Does this change work?</dd>
+      This test will check that Software Sources works
+      <dt>Open the Ubuntu Software Center</dt>
+           <dd>The Ubuntu Software Center is launched</dd>
+      <dt>Go to the top bar and click on "Edit" and later on "software Sources.."</dt>
+    <dt>A new window appears "software & Updates", here we are going to get a new server doing Click on "Download from" and choosing "Main Server"</dt>
+           <dd>A new window appears asking for authentication credentials</dd>
+      <dt>Authenticate with your credentials</dt>
+      <dd>Does this change work?</dd>
 </dl>
 
 
 Test-case name: SoftwareCenter/sc-010
-	depends: SoftwareCenter/sc-001
+    depends: SoftwareCenter/sc-001
 <dl>
-        This test will check that Reviews work
-        <dt>Reviews should be appear below</dt>
-		<dd>Can you see it?</dd>
-	<dt>Try to change the language from "English" to "Any Language"</dt>
-		<dd>A new list with reviews in different language should appear, right?</dd>
-	<dt>Try to change the order of reviews from "Most Helpful First" to "Newest First"</dt>
-		<dd>A new list with reviews should appear, right?</dd>
-	<dt>Click on "write your own review"</dt>
-		<dd>A new window should appear for writing our own review</dd>
-	<dt>Fill all fields, summit your review and click on "Publish"</dt>
-		<dd>Did the new review publish with the correct information?</dd>
-	<dt>Pick out a review, read it, and answer the question: "Was this review helpful? Yes/No"</dt>
-		<dd>Is your answer taken?</dd>
+      This test will check that Reviews work
+      <dt>Reviews should be appear below</dt>
+      <dd>Can you see it?</dd>
+    <dt>Try to change the language from "English" to "Any Language"</dt>
+      <dd>A new list with reviews in different language should appear, right?</dd>
+    <dt>Try to change the order of reviews from "Most Helpful First" to "Newest First"</dt>
+      <dd>A new list with reviews should appear, right?</dd>
+    <dt>Click on "write your own review"</dt>
+      <dd>A new window should appear for writing our own review</dd>
+    <dt>Fill all fields, summit your review and click on "Publish"</dt>
+      <dd>Did the new review publish with the correct information?</dd>
+    <dt>Pick out a review, read it, and answer the question: "Was this review helpful? Yes/No"</dt>
+      <dd>Is your answer taken?</dd>
 </dl>
 
 
 Test-case name: SoftwareCenter/sc-011
-	depends: SoftwareCenter/sc-001
+    depends: SoftwareCenter/sc-001
 <dl>
-        this test will check that Menu Help Works
-        <dt>Press "F1" to get help directly</dt>
-		<dd>A new window should appear</dd>
-	<dt>Try to navigate for all information there</dt>
-		<dd>is there a issue with the content?</dd>
-	<dt>Go to the top bar and click on "Help" and later on "Ubuntu Software Center Help"</dt>
-		<dd>Do you see the same window of the previous step?</dd>
-	<dt>Go to the top bar and click on "Help" and later on "For Software Developers"</dt>
-		<dd>Did you default browser open and redirect to <a href="http://developer.ubuntu.com">http://developer.ubuntu.com<a/>?</dd>
-	<dt>Go to the top bar and click on "Help" and later on "Terms of Use"</dt>
-		<dd>Did you default browser open and redirect to <a href="http://apps.ubuntu.com/cat/tos/">http://apps.ubuntu.com/cat/tos/</a>?</dd>
-	<dt>Go to the top bar and click on "Help" and later on "About"</dt>
-		<dd>A new window should appear</dd>
-		<dd>Does "launchpad.net/software-center" work?</dd>
-		<dd>If you click on "Credits" can you see it?</dd>
+      this test will check that Menu Help Works
+      <dt>Press "F1" to get help directly</dt>
+      <dd>A new window should appear</dd>
+    <dt>Try to navigate for all information there</dt>
+      <dd>is there a issue with the content?</dd>
+    <dt>Go to the top bar and click on "Help" and later on "Ubuntu Software Center Help"</dt>
+      <dd>Do you see the same window of the previous step?</dd>
+    <dt>Go to the top bar and click on "Help" and later on "For Software Developers"</dt>
+      <dd>Did you default browser open and redirect to <a href="http://developer.ubuntu.com">http://developer.ubuntu.com<a/>?</dd>
+    <dt>Go to the top bar and click on "Help" and later on "Terms of Use"</dt>
+      <dd>Did you default browser open and redirect to <a href="http://apps.ubuntu.com/cat/tos/">http://apps.ubuntu.com/cat/tos/</a>?</dd>
+    <dt>Go to the top bar and click on "Help" and later on "About"</dt>
+      <dd>A new window should appear</dd>
+      <dd>Does "launchpad.net/software-center" work?</dd>
+      <dd>If you click on "Credits" can you see it?</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

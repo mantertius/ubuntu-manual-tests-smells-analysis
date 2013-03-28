@@ -1,6 +1,6 @@
 <dl>
   <dt>Boot the pc using the installation media (hold down <strong>c</strong> on ppc macs to boot from a cd).</dt>
-     <dd>The installer should load</dd>
+    <dd>The installer should load</dd>
   <dt>Select your language and press Enter.</dt>
   <dt>Select your country and press Enter.</dt>
     <dd>The detect keyboard layout screen should appear.</dd>
@@ -26,7 +26,7 @@
     <dd>The installation begins (this might take a long time on the older hardware)</dd>
   <dt>Select to not install updates.</dt>
   <dt>The installer prompts "Is the system clock set to UTC?"</dt>
-     <dd>Select yes or no, depending on your setup (select no if your clock is set to localtime)</dd>
+    <dd>Select yes or no, depending on your setup (select no if your clock is set to localtime)</dd>
   <dt>Select continue.</dt>
     <dd>The system restarts.</dd>
   <dt>Remove the installation media.</dt>
