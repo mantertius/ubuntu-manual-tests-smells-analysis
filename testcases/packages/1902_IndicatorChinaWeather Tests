@@ -1,22 +1,20 @@
 Test-case name: IndicatorChinaWeather
 <dl>
-    This test will check if the Indicator China Weather can display the right weather informations and  if you can configure the application rightly.
+    This test will check the Indicator China Weather can display the right weather information and  you can configure the application rightly.
 	<dt>Find the indicator icon of Indicator China Weather</dt>
-		<dd>Whether the Indicator can autostart.</dd>
-	<dt>Configure the app for your first installation</dt>
-		<dd>If you first instsall the app,when the application starts you need to configure your location.Click "配置..." menu,then click "地点" and click "添加(A)" button,input the location in chinese or in pinyin to textarea,click "查找" button choose an location then click "前进(F)" button till "应用(A)" button,put the "确定(O)" button for your first installation.Whether the app display the weather informations about your location.</dd>
-	<dt>Show the weather forecast about later 6 days</dt>
-		<dd>Click the "天气预报" menu, wether the app displays 6 day weather forecast.</dd>
-	<dt>Update the weather informations and check if the "更新" label changes every 60 seconds</dt>
-		<dd>Click the “更新” menu,whether the app gets new weather informations.Whether the "更新" label changes every 60 second and displays how long it updated the informations.</dd>
-	<dt>Show temperature beside the icon of the tray</dt>
-		<dd>Click "配置..." menu, then Click "图标旁显示温度" checkbox and click "确定(O)" button，check if the app displays temperature beside the icon of the tray.</dd>
-	<dt>The weather informations Real-time update</dt>
-		<dd>Check if the weather informations update every several minuts.You can get the rate from the config widget and change the rate as you wish.</dd>
-	<dt>Add location and change location from one to another</dt>
-		<dd>Add several locations, check if the informations change when you change location from one to another. Whether the forecast informations belong to the location you choose.</dd>
-	<dt>Delete location</dt>
-		<dd>Delete locations and click the "确定(O)" button,check if the location informaitons change when you delete the selected location.</dd>
+		<dd>Did the Indicator China Weather autostart?</dd>
+	<dt>Configure the Indicator China Weather when first startup</dt>
+		<dd>When you firstly startup the Indicator China Weather, you need to configure your location. Click "Configure..." menu,then click "Locale" and click "Add(A)" button,input the location in chinese or in pinyin,click "Search" button and choose a locale then click "Forward(F)" and "Apply(A)" button,then click the "OK(O)" button to finish the configuration.Did the app display the weather information of your locale?</dd>
+	<dt>Show the weather forecast of next 6 days</dt>
+		<dd>Click the "Weather forecast" menu, did the app show 6 days weather forecast.</dd>
+	<dt>Show temperature beside the indicator icon</dt>
+		<dd>Click "Configure..." menu, then Click "Show temperature beside icon" checkbox and click "OK(O)" button，did the app display temperature beside the icon?</dd>
+	<dt>The weather information update in configured time interval.</dt>
+		<dd>Did the weather information update every several minutes according to the configuration?</dd>
+	<dt>Add multi-locale and change locale from one to another</dt>
+		<dd>Add several locales, did the information change corresponding to the change of locale?</dd>
+	<dt>Open configuration dialog of locale. Select a locale and delete it. </dt>
+		<dd>Can the locale be deleted?</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
