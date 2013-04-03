@@ -1,4 +1,4 @@
-<strong>To perform this test you need a an active internet connection, a wireless card or a wireless USB dongle, as well as a webcam</strong>
+<strong>To perform this test you need a an active internet connection, and a wireless card, wireless USB dongle, or mobile network card</strong>
 
 <dl>
     <dt>Boot up the iso using a CD/DVD or USB Key to a Live Session</dt>
@@ -22,7 +22,7 @@
         <dd>You should connect to the wireless network you selected</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
-    <dt>Select the installation type you want to carry out (not important for this kind of test) </dt>
+    <dt>Select the installation type you want to carry out (any installation type will work; the type of installation is not important for this test) </dt>
     <dt>Click on the continue button </dt>
         <dd>The 'Where are you?' screen is displayed</dd>
     <dt>On the 'Where are you?' screen note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
@@ -44,13 +44,6 @@
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
-        <dd>The 'Choose a picture' window  is displayed</dd>
-        <dd>In the 'Take a photo' box you should see yourself in the webcam</dd>
-    <dt>Click on the 'Take a photo' button </dt>
-        <dd>Verify that a photo of you is displayed under the 'Take a photo' button</dd>
-    <dt>Click on the 'Take a photo' button again</dt>
-        <dd>Verify that the new photo of you is displayed under the 'Take a photo' button in place of the other one taken</dd>
-    <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY' slide is displayed</dd>
     <dt>Wait for the installation to proceed and the slide to change automatically</dt>
         <dd>The slideshow appears correct, the installer displays installation details along the bottom and the slideshow changes slides</dd>
@@ -66,10 +59,6 @@
         <dd>The system boots properly and loads into FAMILY</dd>
     <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
         <dd>The new user's desktop is presented</dd>
-    <dt>Click on the gear icon on the Status Menu</dt>
-        <dd>Verify that next to your username is the photo taken during install</dd>
-    <dt>Click on the gear icon on the Status Menu and select 'System Settings' and then 'User Accounts'</dt>
-        <dd>Verify that the user your are logged in as has the photo taken during install as it's picture</dd>
     <dt>Click on the Network Manager icon on the Status Menu</dt>
         <dd>Verify you are already connected to the Wireless network you configured in the Wireless window during install</dd>
     <dt>Click on the time on the Status Menu and select 'Time and date settings' </dt>
@@ -78,5 +67,5 @@
         <dd>Verify that the keyboard is the one you configured in the 'Keyboard layout' window during install</dd>
 </dl>
 
-<p><strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.<br />
-    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong></p>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
