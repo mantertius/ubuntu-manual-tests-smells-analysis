@@ -1,27 +1,22 @@
 Scope of this test is to verify that the system is installed in itself starting from the setting hostname step.
 
 <strong>WARNING This test uses pre-selected answers to installation questions (the preseed file). The preseed in use will unilaterally allocate the whole hard drive for the install.<strong> This will cause the complete loss of any data then in the hard drive</strong>. We strongly recommend you to use a 'trash and burn' system -- i.e., a system you do not mind losing the contents of the hard drive(s). Virtual machines are also a good option (and a nice helper to boot an Ubuntu ISO is testdrive). It is also a good idea to disconnect any external hard drive(s) you do not want to participate in the reformatting.
-    On a trash and burn server, boot the UBuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).</strong>
+    On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).</strong>
 
 <dl>
     <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
     <dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:
         Boot Options file=/cdrom/preseed/ubuntu-server.seed vga=788 initrd=/install/initrd.gz quiet --</dt>
-    <dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto url=http://people.canonical.com/~cerdea/preseed.cfg'. The Boot Options line should now look like:
-        Boot Options auto url=http://people.canonical.com/~cerdea/preseed.cfg vga=788 initrd=/install/initrd.gz quiet --</dt>
+    <dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto
+        url=http://people.canonical.com/~plars/default.cfg auto=true
+        priority=critical'. The Boot Options line should now look like:
+        Boot Options auto url=http://people.canonical.com/~plars/default.cfg auto=true priority=critical vga=788 initrd=/install/initrd.gz quiet --</dt>
     <dt>Press Enter to accept the boot command line and start the installation</dt>
-    <dt>Choose the language</dt>
-    <dt>Select your location</dt>
-    <dt>Configure locales</dt>
-    <dt>At configure keyboard page, select NO </dt>
-    <dt>Select the country of the keyboard</dt>
-    <dt>Select the keyboard layout</dt>
-    <dt>Select hostname ubuntu as default</dt>
     <dt>From this point on, the installation should proceed automatically. Wait until the system reboots. </dt>
     <dt>At the login insert ubuntu as userid and <strong>ubuntu</strong> as password</dt>
     <dt>Verify that the server is working executing:</dt>
         <dd>ntptime</dd>
-        <dd>the output should look like:</dd>
+        <dd>the output should look like:
             <pre>
                 njin@quantic:~/Ubuntu$ ntptime
                 ntp_gettime() returns code 0 (OK)
@@ -34,6 +29,7 @@ Scope of this test is to verify that the system is installed in itself starting 
                 status 0x1 (PLL),
                 time constant 7, precision 1.000 us, tolerance 500 ppm,
             </pre>
-        </dl>
-        <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+        </dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
