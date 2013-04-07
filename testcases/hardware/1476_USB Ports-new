@@ -1,0 +1,11 @@
+<strong>Test-case name: Port Connectivity</strong>
+<p>This test aims to test USB port connectivity by verifying the correct functioning of all different type of USB devices like: pen drives, mice, music players, keyboards, cameras, headphones etc.</p>
+<dl>
+  <dt>When plugged in, is the USB device correctly detected by the system ? </dt>
+  <dt>Does the software normally used with the device function correctly with it ? </dt>
+  <dt>Does the USB connected device behave as expected ?</dt>
+  <dt>Does the USB device work on all the laptop's USB ports ?</dt>
+  <dt>Are you able to disconnect and re-connect the USB device correctly without errors ?</dt>
+<dl>
+<strong>If you answer 'yes' to all questions, please <a href="results#add_result">submit</a> a 'passed' result.
+If you answer 'no' to any question, then please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
