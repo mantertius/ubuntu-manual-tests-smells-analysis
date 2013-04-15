@@ -106,11 +106,11 @@ Test-case name: nautilus/TC-NFM-009
 Test-case name: nautilus/TC-NFM-010
 <dl>
     depends: nautilus/TC-NFM-001
-    This test will check that new files can be added to the "New Document" submenú
+    This test will check that new files can be added to the "New Document" submenu
     <dt> Look for the Terminal application and launch it</dt>
         <dd>The Terminal applications is open and a prompt displayed</dd>
-    <dt> Type FIELD=`cat ~/.config/user-dirs.dirs | grep XDG_TEMPLATES_DIR |sed 's/XDG_TEMPLATES_DIR=\"\(.*\)\"/\1/'` && eval "touch $HOME/Templates/Another Empty Document"</dt>
-        <dd>The Terminal returns the prompt and a new file called "Another Empty Document" is created in $HOME/Templates/</dd>
+    <dt> Type FIELD=`cat ~/.config/user-dirs.dirs | grep XDG_TEMPLATES_DIR |sed 's/XDG_TEMPLATES_DIR=\"\(.*\)\"/\1/'` && eval "touch $FIELD/Another Empty Document"</dt>
+        <dd>The Terminal returns the prompt and a new file called "Another Empty Document" is created in the templates directory</dd>
     <dt> Look for Nautilus and launch it</dt>
         <dd>Nautilus is opened, Home is selected</dd>
     <dt> In Home folder right click on a blank section and select New Document -> Another Empty Document. Name the resulting file 'another.txt'</dt>
