@@ -1,0 +1,17 @@
+<dl>
+    <dt>Open the Phone application</dt>
+        <dd>If not previously open, it shall open in the Dialer pane</dd>
+    <dt>Navigate to the Contacts pane</dt>
+    <dt>Search for a contact and select</dt>
+        <dd>Contact information shall be displayed</dd>
+    <dt>Select phone number</dt>
+        <dd>Phone application shall move to the Dialer pane with the phone number filled in</dd>
+    <dt>Select the call button</dt>
+        <dd>Internal speaker shall provide feedback tone on ring</dd>
+    <dt>Answer call on destination</dt>
+        <dd>Voice shall be bidirectional</dd>
+    <dt>End call from originator</dt>
+        <dd>Repeat by ending call from target</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
