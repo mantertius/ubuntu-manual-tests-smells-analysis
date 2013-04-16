@@ -1,0 +1,17 @@
+<dl>
+    <dt>Go to the Appliaction lens</dt>
+    <dt>Focus on the search box</dt>
+        <dd>On small displays the search box is hidden thus search is accessed by accessing it through the Search text</dd>
+    <dt>Input search text for applications known to be found</dt>
+        <dd>The lens shall filter the content with matching items</dd>
+    <dt>Mark the text as to be erased</dt>
+        <dd>The search term shall be seen in a drop down menu</dd>
+    <dt>Input search text for items known to not be found</dt>
+        <dd>The lens shall display no unmatching items</dd>
+    <dt>Launch an application and return to the Application lens</dt>
+        <dd>The application shall be seen as a Running apps</dd>
+    <dt>Search for the running application</dt>
+        <dd>The running application shall be seen in Running apps and all the other scopes</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

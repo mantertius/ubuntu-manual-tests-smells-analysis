@@ -1,0 +1,8 @@
+<dl>
+    <dt>Boot the device</dt>
+        <dd>Greeter shall be displayed on devices with required resolutions (e.g.; manta).</dd>
+    <dt>Select Guest</dt>
+        <dd>unLocking shall be possible by selecting Tap to Unlock</dd>
+        <dd>unLocking shall be possible by a right to left edge swipe through the launcher</dd>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

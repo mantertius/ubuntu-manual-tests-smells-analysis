@@ -1,0 +1,17 @@
+<dl>
+    <dt>Go to the Video lens</dt>
+    <dt>Select a video from the carousel</dt>
+        <dd>Video's summary shall be displayed</dd>
+        <dd>If the video is available, a playback button shall be displayed</dd>
+        <dd>Playback shall raise the Media Player application</dd>
+        <dd>Summary can be dismissed by accessing the lower region of the screen</dd>
+    <dt>Input search text for videos known to be found</dt>
+        <dd>The lens shall filter the content with matching items</dd>
+    <dt>Select the matching video</dt>
+        <dd>Videos's summary shall be displayed</dd>
+        <dd>Summary can be dismissed by accessing the lower region of the screen</dd>
+    <dt>Dismiss the search</dt>
+        <dd>The lens' unfiltered view shall be rendered</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
