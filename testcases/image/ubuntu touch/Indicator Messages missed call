@@ -1,0 +1,17 @@
+<dl>
+    <dt>Swipe down the Messages Indicator</dt>
+    <dt>Swipe to the very bottom and select Clear All</dt>
+        <dd>The Messages Indicator icon shall turn grey</dd>
+    <dt>Create a call from a supplementary device and hangup without answering on SUT</dt>
+        <dd>Notification shall be seen about missed call</dd>
+        <dd>The Messages Indicator icon shall turn blue</dd>
+    <dt>Swipe down the Messages Indicator</dt>
+        <dd>The message about the missed call shall be seen</dd>
+    <dt>Select the message about the missed call</dt>
+        <dd>Call back and Message option shall be displayed</dd>
+    <dt>Select the Message button</dt> 
+        <dd>Quick messages shall be displayed</dd>
+        <dd>Input box for custom message shall be displayed</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
