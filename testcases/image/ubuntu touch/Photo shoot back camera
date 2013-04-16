@@ -1,5 +1,11 @@
 <dl>
-    <dt>Open the Gallery application</dt>
+    <dt>Open the Camera application</dt>
+    <dt>Select the shutter icon</dt>
+        <dd>Camera application shall emit sound indicating photo was taken</dd>
+        <dd>Camera application shall slide the photo out while it gets ready for the next photo</dd>
+    <dt>From the Camera toolbar open the Gallery application</dt>
+        <dd>The Gallery application shall open</dd>
+        <dd>The Gallery application shall display the recently taken photo</dd>
     <dt>From the Gallery open the Camera application</dt>
         <dd>Bottom swipe raises the toolbar</dd>
         <dd>The Camera application shall open</dd>
