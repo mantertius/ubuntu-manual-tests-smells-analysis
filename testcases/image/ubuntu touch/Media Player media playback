@@ -1,0 +1,19 @@
+<dl>
+    <dt>Go to the Video lens</dt>
+    <dt>Locate a playable video</dt>
+        <dd>Current ones in the developer preview are Sintel, Tears of Steel and Rip</dd>
+    <dt>Play the selected video</dt>
+    <dt>Rotate in all 4 directions</dt>
+        <dd>Video shall rotate according to current orientation</dd>
+    <dt>Tap the screen where the video is playing</dt>
+        <dd>Media Controls shall be displayed</dd>
+    <dt>Pause video</dt>
+        <dd>Video shall pause</dd>
+    <dt>Unpause video</dt>
+        <dd>Video shall continue playback from where it was paused</dd>
+    <dt>Seek through video</dt>
+        <dd>Video shall play from the selected location</dd>
+        <dd>On larger screen estates, scene selection shall be displayed</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
