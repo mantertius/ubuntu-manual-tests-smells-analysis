@@ -15,7 +15,7 @@
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select Something Else</dt>
         <dd>A screen showing the current hard disks and partition layouts is displayed</dd>
-    <dt>Select the drive you wish to partition and use the 'Add', 'Change', and 'Delete' buttons to create your desired scheme</dt>
+    <dt>Select the drive you wish to partition and use the Add '+', Change 'Change...', and Delete '-' buttons to create your desired scheme</dt>
         <dd>The screen updates showing your desired partitions and mount points</dd>
     <dt>Once you have you partitioning scheme laid out and are happy click on Install Now</dt>
         <dd>The partitions and disk layouts are created. Then, the 'Where are you?' screen is displayed</dd>
