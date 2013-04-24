@@ -1,10 +1,10 @@
 The goal of this test case is to check that localization support is functional during the installation, that language packs are downloaded and installed correctly from the Internet and that the input methods for either Chinese, Japanese or Korean are working.
 <dl>
     <dt>Power up your machine and insert the install media</dt>
-    <dt>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dt>
     <dt>Select 中文(简体) (Simplified Chinese), 中文(繁體) (Traditional Chinese), 日本語 (Japanese) or 한국어 (Korean) as language</dt>
         <dd>The installer should be localized from now on</dd>
-    <dt>Click on the Install FAMILY button</dt>
+    <dt>Click on the Install FAMILY button
         <ul>
             <li>In Simplified Chinese "安装 FAMILY"</li>
             <li>In Traditional Chinese "安裝 FAMILY"</li>
@@ -12,7 +12,7 @@ The goal of this test case is to check that localization support is functional d
             <li>In Korean "Ubuntu 설치"</li>
         </ul>
     </dt>
-    <dt>The 'Preparing to install FAMILY' screen is displayed, click on the Continue button</dt>
+    <dt>The 'Preparing to install FAMILY' screen is displayed, click on the Continue button
         <ul>
             <li>In Simplified Chinese "继续"</li>
             <li>In Traditional Chinese "繼續"</li>
@@ -63,21 +63,21 @@ The goal of this test case is to check that localization support is functional d
         <ul>
             <li>Simplified Chinese:
             <ul>
-                <li>Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.</dt>
+                <li>Open dash and type gedit into the search box. Click on the editor (文本编辑器) icon.</li>
                 <li>Click on the keyboard icon on the top panel area and select SunPinyin as the input method to switch to.</li>
                 <li>Type renlei in the new gedit document, press Space, and see if it turns out to be 人类</li>
             </ul>
             </li>
             <li>Traditional Chinese:
             <ul>
-                <li>Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.</dt>
+                <li>Open dash and type gedit into the search box. Click on the editor (文字编辑器) icon.</li>
                 <li>Click on the keyboard icon on the top panel area and select Chewing (酷音) as the input method to switch to. </li>
                 <li>Type bp6xo4 in the new gedit document (or if you have a keyboard with Bopomofo, type ㄖㄣˊㄌㄟˋ), press Enter, and see if it turns out to be 人類</li>
             </ul>
             </li>
             <li>Japanese:
             <ul>
-                <li>Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.</dt>
+                <li>Open dash and type gedit into the search box. Click on the editor (テキストエディター) icon.</li>
                 <li>Click on the keyboard icon on the notification area, select 日本語 - Anthy as the input method to switch to. </li>
                 <li>Type nihon in the new gedit document, press Enter and see if it turns out to be にほん</li>
                 <li>Type nihon again, then press space and see if it turns out to be 日本 or 二本. Keep pressing space to cycle between the presented options, if necessary</li>
@@ -85,7 +85,7 @@ The goal of this test case is to check that localization support is functional d
             </li>
             <li>Korean:
             <ul>
-                <li>Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.</dt>
+                <li>Open dash and type gedit into the search box. Click on the editor (텍스트 편집기) icon.</li>
                 <li>Click on the keyboard icon on the notification area, select Hangul (한국어) as the input method to switch to.</li>
                 <li>Type gks rmf in the new gedit document and see if it turns out to be 한 글</li>
             </ul>
