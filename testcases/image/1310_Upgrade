@@ -1,5 +1,5 @@
 <dl>
-    <dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is availabe, and click Install to install them</dt>
+    <dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is available, and click Install to install them</dt>
     <dt>Ensure FAMILY is looking from all new versions by running 'software sources'. Select the updates tab, and make sure the 'Notify me of a new FAMILY version' option has the 'For any new version' selection</dt>
     <dt>Run update-manager -d -c from a terminal</dt>
     <dt>Click the upgrade version button</dt>

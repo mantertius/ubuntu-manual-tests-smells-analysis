@@ -1,11 +1,12 @@
-This will test that you can bootstrap a Juju environment using a MAAS server.
+This will test that you can bootstrap a Juju environment using a MAAS server. In order to test this, you will need to have 2 nodes deployed in maas for juju, plus as many additional nodes as needed for the services you will deploy using juju.
 <dl>
-    <dt>Bootstrap a new environment using juju pointing to a MAAS server.</dt>
+    <dt>Bootstrap a new environment using juju pointing to a MAAS server. <strong>NOTE: You can use <a href="http://maas.ubuntu.com/docs/juju-quick-start.html">this guide for specifics on setting up your environment</a></strong></dt>
+     <dd>Juju is setup properly and bootstrapped</dd>
     <dt>Run juju status</dt>
         <dd>Can you use juju status and see the available nodes?</dd>
 </dl>
 
-This will test that you can succesfully deploy to MAAS nodes using Juju
+This will test that you can successfully deploy to MAAS nodes using Juju
 
 <dl>
     <dt>Bootstrap a new environment using juju pointing to a MAAS server.</dt>

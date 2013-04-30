@@ -1,0 +1,10 @@
+<dl>
+    <dt>Launch video with sound</dt>
+        <dd>Sound shall be played out through the speakers</dd>
+    <dt>Swipe down the Sound Indicator</dt>
+    <dt>Move the volume bar</dt>
+        <dd>Volume shall decrease as the control moves to the left</dd>
+        <dd>Volume shall increase as the control moves to the right</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
