@@ -250,9 +250,12 @@ depends: maas/maas-006
         <dd>A web page is loaded which asks for confirmation</dd>
     <dt> Click the 'Delete user' button</dt>
         <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
+    <dt> Click on the 'ubuser' user</dt>
+        <dd>A web page is loaded which shows general information about 'ubuser'</dd>
+    <dt> Click the 'Delete user' button</dt>
         <dd>A web page is loaded which asks for confirmation</dd>
     <dt> Click the 'Delete user' button</dt>
-        <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuadm' deleted user</dd>
+        <dd>A web page is loaded which shows general information about the MAAS server and an announcement about the 'ubuser' deleted user</dd>
         <dd>Did you successfully deleted both accounts?</dd>
 </dl>
 
