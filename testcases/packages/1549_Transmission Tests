@@ -1,0 +1,105 @@
+Test-case name: transmission/tra-001
+<dl>
+    This test will check that transmission manage torrents correctly
+    <dt> Open transmission</dt>
+        <dd>Can you open transmission correctly?</dd>
+    <dt> Click on "Open a Torrent" button</dt>
+        <dd>A new window must appear and select a torrent file</dd>
+        <dd>The torrent starts to be downloaded?</dd>
+    <dt> Click on "Pause Torrent" button</dt>
+        <dd>Was the torrent paused?</dd>
+    <dt> Click on "Start Torrent"</dt>
+        <dd>The torrent must continue its download</dd>
+    <dt> Click on "Properties"</dt>
+        <dd>A new window should appear and you must see information about the torrent there.</dd>
+    <dt>Click on "Remove Torrent"</dt>
+        <dd>The torrent should disappear</dd>
+    <dt>Open a new torrent using the key combination: Ctrl+O</dt>
+        <dd>Could you open the torrent correctly?</dd>
+    <dt>Open a new torrent (url) using the key combination: Ctrl+U</dt>
+        <dd>Could you open the torrent correctly?</dd>
+    <dt>Go to the top bar and click on "View" and later choose different bars (Toolbar, Filterbar, Statusbar, Compact View)</dt>
+        <dd>Is there any problem with the bars?</dd>
+    <dt>Go to the top bar and click on "View" and later choose different Sorts (by Activity, by Age, by Name, by Progress,...)</dt>
+        <dd>Is there any problem with the sorts?</dd>
+</dl>
+
+
+Test-case name: transmission/tra-002
+depends: transmission/tra-001
+<dl>
+    This test will check that the Torrent menu Works
+    <dt>Open the transmission</dt>
+        <dd>Can you open transmission correctly?</dd>
+    <dt>Select a torrent and click on "Properties"</dt>
+        <dd>Can you see the same properties interface?</dd>
+    <dt>Try to get the same result using the key-combination: Alt+Return</dt>
+        <dd>Can you see the same interface?</dd>
+    <dt>Select a torrent and click on "Open Folder"</dt>
+        <dd>A new window should appear and you will be in the torrent folder</dd>
+    <dt>Select a torrent and stop it</dt>
+    <dt>Select the same torrent and click on "Start"</dt>
+        <dd>Does the torrent start correctly?</dd>
+    <dt>Click on "Pause"</dt>
+        <dd>Is the torrent pause?</dd>
+    <dt>click on "Start Now"</dt>
+        <dd>Does the torrent start correctly?</dd>
+    <dt>Try to get the same result using the key-combinations: Start(Ctrl+S), Pause(Ctrl+P) and Start Now(Shift+Ctrl+S)</dt>
+        <dd>Did you get any problem with some key-combination?</dd>
+        <em>You need at least 3 torrents for this test</em>
+        <dt>Click on "Queue" and try the options (Move to Top, Move Up, Move Down and Move to Bottom)</dt>
+            <dd>Did you have problems with some option?</dd>
+        <dt>Click on "Set Location"</dt>
+            <dd>A new interface should appear and you can select a new folder</dd>
+        <dt>Click on "Verify Local Data"</dt>
+            <dd>In the torrent space appears the verification, Can you see it?</dd>
+        <dt>Click on "Remove"</dt>
+            <dd>Is the torrent remove correctly?</dd>
+        <dt>Click on "Delete Files and Remove"</dt>
+            <dd>Is the torrent and its files remove correctly?</dd>
+</dl>
+
+
+Test-case name: transmission/tra-003
+depends: transmission/tra-001
+<dl>
+    This test will check that the Help menu works
+    <dt>Open the transmission </dt>
+        <dd>Can you open transmission correctly?</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "Message Log"</dt>
+        <dd>A new interface should appear</dd>
+    <dt>Go to "Level" and change the filter (information, error, debug)</dt>
+        <dd>Can you see the change?</dd>
+    <dt>Click on "Pause"</dt>
+        <dd>Did you notice that the button change the color?</dd>
+    <dt>Click on "save As"</dt>
+        <dd>Can you save the log correctly?</dd>
+    <dt>Click on "Clear"</dt>
+        <dd>Is the list empty?</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "Statistics"</dt>
+        <dd>A new interface should appear and you must see a lot of information about your moves</dd>
+    <dt>Click on "Reset"</dt>
+        <dd>A confirmation message will appear after it, all your statistics will be reset</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "Donate"</dt>
+        <dd>Firefox will open the donation page of the Transmission project</dd>
+    <dt>Press "F1"</dt>
+        <dd>Firefox will open the site about Transmission help</dd>
+    <dt>Navigate main topics</dt>
+        <dd>Is there any issue with the content?</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "Contents"</dt>
+        <dd>The same content which was displayed in the previous step is shown</dd>
+    <dt>Close the "transmission Help" window</dt>
+        <dd>The main transmission window is displayed</dd>
+    <dt>Go to the top bar and click the "Help" menu and later "About"</dt>
+        <dd>A new "About transmission" window appears</dd>
+    <dt>Press the "transmission Homepage" link</dt>
+        <dd>Firefox open a valid url?</dd>
+    <dt>Go back to the "About transmission" window</dt>
+    <dt>Press the "Credits" button</dt>
+        <dd>The interface shows credits?</dd>
+    <dt>Press the "License" button</dt>
+        <dd>The interface shows a licence?</dd>
+</dl>
+
+strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
