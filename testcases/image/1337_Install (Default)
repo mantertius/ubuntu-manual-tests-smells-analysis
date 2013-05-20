@@ -10,7 +10,7 @@ Scope of this test is to verify that the system is installed and you can login i
     <dt>Select the country of the keyboard</dt>
     <dt>Select the keyboard layout</dt>
     <dt>Select hostname ubuntu as default</dt>
-    <dt>Inser the name for the new user</dt>
+    <dt>Insert the name for the new user</dt>
     <dt>Insert the name for the account</dt>
     <dt>Choose a password</dt>
     <dt>Reinsert the password</dt>
