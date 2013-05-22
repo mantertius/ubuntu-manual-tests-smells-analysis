@@ -195,7 +195,8 @@ Test-case name: nautilus/TC-NFM-015
     This test will check that 'Open' dialog appears when plugging in a music device
     <dt> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the player into the USB port of the system under tests and wait for new dialog to appear</dt>
-        <dd>'Open' dialog appears with 'Rhythmbox Music Player' application selected</dd>
+        <dd>An 'Open' dialog window will appear offering you options.</dd> 
+    <dt>Select the 'Rhythmbox Music Player' application, if not already selected</dt>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</dd>
 </dl>
@@ -205,7 +206,8 @@ Test-case name: nautilus/TC-NFM-016
     This test will check that 'Open' dialog appears when inserting a DVD
     <dt> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</dt>
-        <dd>'Open' dialog appears with 'Movie Player (Totem)' application selected</dd>
+        <dd>An 'Open' dialog window will appear offering you options.</dd> 
+    <dt>Select the 'Movie Player (Totem)' application, if not already selected</dt>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did DVD playback start in Totem?</dd>
 </dl>
@@ -215,7 +217,8 @@ Test-case name: nautilus/TC-NFM-017
     This test will check that 'Open' dialog appears on inserting an Audio CD
     <dt> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the Audio CD into the CD drive of the system under tests and wait for new dialog to appear</dt>
-        <dd>'Open' dialog appears with 'Rhythmbox Music Player' application selected</dd>
+        <dd>An 'Open' dialog window will appear offering you options.</dd> 
+    <dt>Select the 'Rhythmbox Music Player' application, if not already selected</dt>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Rhythmbox open with the Audio CD displayed in left panel tree?</dd>
 </dl>
@@ -224,8 +227,9 @@ Test-case name: nautilus/TC-NFM-018
 <dl>
     This test will check that 'Open' dialog appears on inserting a camera
     <dt> Please ensure you have a camera available. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
-    <dt> Plug in the camera to the system under test and wait for new dialog to appear</dt>
-        <dd>'Open' dialog appears with 'Shotwell' application selected</dd>
+    <dt> Plug in the camera to the system under test and wait for new dialog to appear.</dt>
+        <dd>An 'Open' dialog window will appear offering you options.</dd> 
+    <dt>Select the 'Shotwell' application, if not already selected.</dt>
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Shotwell open with the camera displayed in left panel tree?</dd>
 </dl>
