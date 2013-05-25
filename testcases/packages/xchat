@@ -1,0 +1,22 @@
+﻿Test-case name:xchat
+This test will check that Xchat can be started and connect to both a server and channel. 
+<dl>
+    <dt>Open Xchat.</dt>
+        <dd>Did Xchat launch?</dd>
+    <dt>Select Ubuntu Servers and Connect</dt>
+        <dd>Does Xchat connect to #ubuntu and a Connection window open?</dd>
+    <dt>Does XChat connect to #ubuntu</dt>
+        <dd>Did #ubuntu open in a new tab?</dd>
+    <dt>Enter a channel name in the connection window under Join this channel - eg #xubuntu-offtopic</dt>
+        <dd>Did #xubuntu-offtopic open in a new tab</dd>
+    <dt>Select #xubuntu-offtopic from channel list.</dt>
+        <dd>Does window content change to match selected channel?</dd>
+    <dt>Type some text, example "Testing xchat" and enter</dt>
+        <dd>Did your text appear in the channel?</dd>
+    <dt>Close Xchat</dt>
+        <dd>Did a dialog box asking if you are sure you want to quit appear?</dd>
+        <dd>Did the Application correctly close without error?</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
