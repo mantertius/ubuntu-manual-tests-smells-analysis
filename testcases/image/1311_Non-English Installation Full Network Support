@@ -3,11 +3,12 @@ The goal of this test case is to check that localization support is functional d
     <dt>Power up your machine and insert the install media</dt>
     <dt>Select a non English language for the install and press Enter</dt>
     <dt>Select the Install FAMILY option </dt>
-    <dt>Once Ubiquity starts click on Forward
-        <ul>
-            <li>(The installer should be localized from the first screen onwards)</li>
-        </ul>
-    </dt>
+    <dt>Once Ubiquity starts click on Forward</dt>
+        <dd>
+            <ul>
+                <li>(The installer should be localized from the first screen onwards)</li>
+            </ul>
+        </dd>
     <dt>Check the language you selected is correct on the list and click Forward</dt>
     <dt>Select your timezone and click Forward</dt>
     <dt>Check your keyboard layout is correct or alter and click Forward</dt>

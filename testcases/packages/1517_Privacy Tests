@@ -1,6 +1,6 @@
 Test-case name: privacy/privacy-001
+This test will test whether the program loads correctly.
 <dl>
-    This test will test whether the program loads correctly.
     <dt>In the Unity menu, type "privacy" and click on the "Privacy" application.</dt>
         <dd>The "Privacy" settings window should display inside the Settings Window.</dd>
         <dd>Five tabs should be visible: "Search Results," "Recent Items," "Files," "Applications," and "Diagnostics."</dd>
@@ -16,9 +16,10 @@ Test-case name: privacy/privacy-001
         <dd>The privacy settings should close (Including "Record Activity") and you should be back at the "All Settings" page.</dd>
     <dt>Open the privacy settings again (in any fashion) to continue with the testing.</dt>
 </dl>
+
 Test-case name: privacy/privacy-002
+This test will test whether clicking on the tabs displays the correct content.
 <dl>
-    This test will test whether clicking on the tabs displays the correct content.
     <dt>Click on the "Search Results" tab.</dt>
         <dd>Is it displaying correctly and clearly?</dd>
     <dt>Click on the "Recent Items" tab.</dt>
@@ -36,9 +37,10 @@ Test-case name: privacy/privacy-002
     <dt>Click on the "Search Results" tab again</dt>
         <dd>Has the "Search results" page rendered again?</dd>
 </dl>
+
 Test-case name: privacy/privacy-003
+This test will check the functionality the "Search Results" tab.
 <dl>
-    This test will check the functionality the "Search Results" tab.
     <dt>Click the toggle switch to the right of "Include online search results" to
         the "OFF" position.</dt>
     <dt>Click on the unity menu, and type a search; "Big Buck Bunny" for instance.</dt>
@@ -46,9 +48,10 @@ Test-case name: privacy/privacy-003
     <dt>Switch "Include online search results" to "ON." Open the unity menu. If you need to retype the search, do so.</dt>
         <dd>Were online results displayed?</dd>
 </dl>
+
 Test-case name: privacy/privacy-004
+This test will check the functionality of the "Recent Items" tab.
 <dl>
-    This test will check the functionality of the "Recent Items" tab.
     <dt>Click on the spin button to the right of "Forget activities"</dt>
         <dd>There should be 5 categories: "The past (hour/day/week)", "All" and "Advanced."</dd>
     <dt>Select "The past (hour/day/week)" or "All" from the spinbutton.</dt>
@@ -70,9 +73,10 @@ Test-case name: privacy/privacy-004
     <dt>Open the Unity menu.</dt>
         <dd>Your recent documents should be deleted.</dd>
 </dl>
+
 Test-case name: privacy/privacy-005
+This test will check the functionality of the "Files" tab.
 <dl>
-    This test will check the functionality of the "Files" tab.
     <dt>Check several combinations of the check boxes under "Don't record activity for the following type of files:"</dt>
         <dd>The items should be checked.</dd>
     <dt>Underneath the "Don't record activity in the following folders:" box should be a "+" and "-" button. Click on the "+" button</dt>
@@ -100,9 +104,10 @@ Test-case name: privacy/privacy-005
         <dd>A scroll bar should appear on the right. Does the list still display correctly?</dd>
     <dt>Delete all the documents you added.</dt>
 </dl>
+
 Test-case name: privacy/privacy-006
+This test will check the functionality of the "Applications" tab.
 <dl>
-    This test will check the functionality of the "Applications" tab.
     <dt>Near the bottom should be a "+" button and a "-" button. Click on the "+" button.</dt>
         <dd>A pop-up should appear listing all the applications on your computer.</dd>
         <dd>You should not be able to interact with anything in the main window while the application dialog is active</dd>
@@ -128,9 +133,10 @@ Test-case name: privacy/privacy-006
         <dd>Does the list still display correctly?</dd>
     <dt>Delete all the applications you just added.</dt>
 </dl>
+
 Test-case name: privacy/privacy-007
+This test will check the functionality of the "Diagnostics" tab.
 <dl>
-    This test will check the functionality of the "Diagnostics" tab.
     <dt>Look at the content of the "Diagnostics" page.</dt>
         <dd>Unless you opened the "privacy" application as root the "Send error reports to Canonical" checkbox should be disabled.</dd>
     <dt>Click on the "privacy policy" button</dt>
@@ -147,9 +153,10 @@ Test-case name: privacy/privacy-007
         <dd>The "Lock" button should say "Unlock"</dd>
         <dd>and the "Send error reports to Canonical" checkbox should be disabled.</dd>
 </dl>
+
 Test-case name: privacy/privacy-008
+This test will check whether the settings are saved.
 <dl>
-    This test will check whether the settings are saved.
     <dt>Modify all fields possible and close the window.</dt>
     <dt>Open the "Privacy" window again.</dt>
         <dd>Are the settings restored as you set them?</dd>
@@ -157,15 +164,17 @@ Test-case name: privacy/privacy-008
     <dt>Log back in again and open the privacy settings.</dt>
         <dd>Are the settings restored as you set them?</dd>
 </dl>
+
 Test-case name: privacy/privacy-009
+This test will cover any test cases not appropriate for the categories above.
 <dl>
-    This test will cover any test cases not appropriate for the categories above.
     <dt>Click the "Record Activity" toggle button at the bottom of the privacy window.</dt>
         <dd>The button should toggle be switched to "OFF" if it's in the "ON" position.</dd>
     <dt>Ensure the "Record Activity" toggle button is set to "OFF"</dt>
     <dt>Observe your activity for a few minutes (e.g. chat in IRC, run some applications, create some documents)</dt>
         <dd>Unity should not be showing any new activity.</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 

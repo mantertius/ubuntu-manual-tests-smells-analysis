@@ -10,6 +10,6 @@
         <dt>After the device boots up, you should see the oem installer, asking you to select your time zone, username, etc. Complete this portion of the install as well</dt>
             <dd>After all installation steps are complete, you should be at an Ubuntu desktop</dd>
         <dt>Make sure the Dash works by pressing the dash icon on the launcher at the left-hand side of the screen</dt>
-    </dl>
-    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

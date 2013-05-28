@@ -1,6 +1,6 @@
 Test-case name: DashMusicLensScope
+This test will check basic functions of Dash Music Lens Scope.
 <dl>
-    This test will check basic functions of Dash Music Lens Scope.
     <dt>Click the button of Dash, select the music icon in Dash. Enter the song name or album name in the search bar</dt>
         <dd>Did the dash show related results of your search?</dd>
     <dt>Click one of the search results to download or listen the song</dt>

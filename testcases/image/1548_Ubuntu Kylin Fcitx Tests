@@ -1,7 +1,7 @@
 Test-case name: Fcitx
+This test will check basic functions and settings of Fcitx input method.
 <dl>
-    This test will check basic functions and settings of Fcitx input method.
-    <dt> Open gedit from dash or terminal. Use Ctrl + Space to switch input method from English to Fcitx.</dt>
+    <dt>Open gedit from dash or terminal. Use Ctrl + Space to switch input method from English to Fcitx.</dt>
         <dd>Did the input method changed to Fcitx?</dd>
     <dt>In the gedit window, type some Chinese words into the opened file</dt>
         <dd>Were the Chinese words input correctly with Fcitx?</dd>

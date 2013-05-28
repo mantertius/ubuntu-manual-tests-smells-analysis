@@ -32,15 +32,15 @@ Scope of this test is to verify that the system is installed, you can login into
         <dd>mysql -u root -p</dd>
         <dd>If you set the MySQL root account with a password, you will be prompted to enter it now. You should then be presented with a mysql prompt mysql>  where you can enter some mysql commands:</dd>
         <pre>show databases; connect mysql; select host,user from user;</pre>
-        <dd>that will produce an output like:</dd>
+        <dd>that will produce an output like:
             <pre>
                 +--------------------+
-                | Database         |
+                | Database           |
                 +--------------------+
                 | information_schema |
-                | mysql            |
+                | mysql              |
                 | performace_schema  |
-                | test            |
+                | test               |
                 +--------------------+
                 4 rows in set (0.00 sec)
 
@@ -51,18 +51,19 @@ Scope of this test is to verify that the system is installed, you can login into
                 Current database: mysql
 
                 +-----------+--------------------------+
-                | host     | user                 |
+                | host      | user                     |
                 +-----------+--------------------------+
-                | 127.0.0.1 | root                 |
-                | ::1      | root                 |
-                | localhost |                     |
-                | localhost | debian-sys-maint        |
-                | localhost | root                 |
-                | ubuntu    |                     |
-                | ubuntu    | root                 |
+                | 127.0.0.1 | root                     |
+                | ::1       | root                     |
+                | localhost |                          |
+                | localhost | debian-sys-maint         |
+                | localhost | root                     |
+                | ubuntu    |                          |
+                | ubuntu    | root                     |
                 +-----------+--------------------------+
                 7 rows in set (0.00 sec)
             </pre>
+        </dd>
     <dt>Type exit to exit mysql</dt>
     <dt>Test PHP (command line)</dt>
         <dd>php -r 'phpinfo();'</dd>
@@ -70,8 +71,9 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>Test PHP (Apache mod_php)</dt>
     <dt>Create a file called /var/www/phptest.php:</dt>
         <dd>sudo nano /var/www/phptest.php</dd>
-        <dd>add the following text to the file:</dd>
-        <pre><? phpinfo(); ?></pre>
+        <dd>add the following text to the file:
+            <pre>&lt;? phpinfo(); ?&gt;</pre>
+        </dd>
     <dt>run it on w3m</dt>
         <dd>w3m localhost/phptest.php</dd>
         <dd>Verify it outputs the text from phpinfo()</dd>

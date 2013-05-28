@@ -1,9 +1,8 @@
 These testcases test install MAAS from an image or previously installed system. You can also <a href="http://maas.ubuntu.com/docs/install.html">follow the documentation for help</a>. NOTE, if a Virtualbox is used, in network settings bridged adapter must be enabled, promiscuous mode must be enabled, and you must use the PCnet-FAST III adapater.
 
 Test-case name: maas/maas-001
+This test will check that the MAAS server can be installed from packages.
 <dl>
-    This test will check that the MAAS server can be installed from packages.
-
     <dt> Please ensure you have the latest Ubuntu development version in a dedicated machine</dt>
     <dt> Please ensure you have full control over the network</dt>
     <dt> Please ensure you have internet access or a local mirror of the Ubuntu archive</dt>
@@ -20,9 +19,8 @@ Test-case name: maas/maas-001
 </dl>
 
 Test-case name: maas/maas-002
+This test will check that the MAAS server can be installed from the Ubuntu Server iso.
 <dl>
-    This test will check that the MAAS server can be installed from the Ubuntu Server iso.
-
     <dt> Please ensure you have the <a href="http://cdimage.ubuntu.com/ubuntu-server/daily/current/">latest Ubuntu Server development version</a> in an iso</dt>
     <dt> Please ensure you have a dedicated machine</dt>
     <dt> Please ensure you have full control over the network</dt>
@@ -95,9 +93,8 @@ Test-case name: maas/maas-002
 Test-case name: maas/maas-003
 depends: maas/maas-001
 depends: maas/maas-002
+This test will check that an admin can add a new user to the MAAS server.
 <dl>
-    This test will check that an admin can add a new user to the MAAS server.
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
         <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
@@ -117,9 +114,8 @@ depends: maas/maas-002
 Test-case name: maas/maas-004
 depends: maas/maas-001
 depends: maas/maas-002
+This test will check that an admin can add an admin user to the MAAS server.
 <dl>
-    This test will check that an admin can add an admin user to the MAAS server.
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
         <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
@@ -140,9 +136,8 @@ Test-case name: maas/maas-005
 depends: maas/maas-001
 depends: maas/maas-002
 depends: maas/maas-003
+This test will check that an admin can edit an user account from the MAAS server.
 <dl>
-    This test will check that an admin can edit an user account from the MAAS server.
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
         <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
@@ -179,9 +174,8 @@ Test-case name: maas/maas-006
 depends: maas/maas-001
 depends: maas/maas-002
 depends: maas/maas-004
+This test will check that an admin can edit an admin account from the MAAS server.
 <dl>
-    This test will check that an admin can edit an admin account from the MAAS server.
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
         <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
@@ -219,9 +213,8 @@ depends: maas/maas-001
 depends: maas/maas-002
 depends: maas/maas-004
 depends: maas/maas-006
+This test will check that an user can't edit nor delete any account from the MAAS server.
 <dl>
-    This test will check that an user can't edit nor delete any account from the MAAS server.
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the username 'ubuadm' and password  defined in maas-004 and maas-006</dt>
         <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
@@ -236,9 +229,8 @@ depends: maas/maas-003
 depends: maas/maas-004
 depends: maas/maas-005
 depends: maas/maas-006
+This test will check that an admin can delete user and admin accounts from the MAAS server.
 <dl>
-    This test will check that an admin can delete user and admin accounts from the MAAS server.
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Login with the admin account, defined in maas-001 or maas-002</dt>
         <dd>A web page is loaded which shows 0 as the total number of nodes</dd>
@@ -262,9 +254,8 @@ depends: maas/maas-006
 Test-case name: maas/maas-009
 depends: maas/maas-001
 depends: maas/maas-002
+This test will check that you can do the initial image import
 <dl>
-    This test will check that you can do the initial image import
-
     <dt> Open the main page to the MAAS server: http://IP/MAAS</dt>
     <dt> Click the gear or navigate to: http://IP/MAAS/settings</dt>
     <dt> Under cluster controllers, click the "Import boot images" button</dt>
@@ -275,10 +266,9 @@ depends: maas/maas-002
 
 Test-case name: maas/maas-010
 depends: maas/maas-009
+This test will check that you deploy a node for MAAS
 <dl>
-    This test will check that you deploy a node for MAAS
-
-<dt> Please ensure you have the <a href="http://cdimage.ubuntu.com/ubuntu-server/daily/current/">latest Ubuntu Server development version</a> in an iso</dt>
+    <dt> Please ensure you have the <a href="http://cdimage.ubuntu.com/ubuntu-server/daily/current/">latest Ubuntu Server development version</a> in an iso</dt>
     <dt> Boot up the iso using a CD/DVD or USB Key</dt>
         <dd>Language selector boot screen is displayed</dd>
     <dt> Choose your prefered language</dt>

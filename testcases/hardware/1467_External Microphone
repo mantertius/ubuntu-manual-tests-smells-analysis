@@ -10,7 +10,6 @@
     <dt>Talk briefly into the microphone.</dt>
     <dt>Click the ''Stop'' button (the gray square).</dt>
     <dt>Click the ''Play'' button (the right-facing triangle).  Verify that your voice is played back and that no words have been dropped. (Remember to reset your microphone volume to prevent feedback on the internal microphone.)</dt>
-        <dd>Verify that sound is recorded through the microphone.</dd>
 </dl>
 
 <strong>GNOME Classic</strong>
@@ -24,7 +23,12 @@
     <dt>Talk briefly into the microphone.</dt>
     <dt>Click the Stop button (the gray square).</dt>
     <dt>Click the Play button (the right-facing triangle). Verify that your voice is played back and that no words have been dropped. (Remember to reset your microphone volume to prevent feedback on the internal microphone.)</dt>
-        <dd>Verify that sound is recorded through the microphone.</dd>
+</dl>
+
+<strong>Verification</strong>
+
+<dl>
+    <dd>Verify that sound is recorded through the microphone.</dd>
 </dl>
 
 <strong>

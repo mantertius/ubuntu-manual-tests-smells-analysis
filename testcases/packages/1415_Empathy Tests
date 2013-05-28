@@ -1,13 +1,14 @@
 Test-case name: empathy/emp-001
+This test will check that Empathy can be started
 <dl>
-    This test will check that Empathy can be started
     <dt> Look for Empathy and launch it</dt>
         <dd>Is Empathy launched?</dd>
 </dl>
+
 Test-case name: empathy/emp-002
+depends: empathy/emp-001
+This test will check that Empathy can send messages via Google Talk
 <dl>
-    depends: empathy/emp-001
-    This test will check that Empathy can send messages via Google Talk
     <dt> Look for Empathy and launch it</dt>
         <dd>Empathy should launch</dd>
         <dd>A new 'Online Accounts' window should be displayed</dd>
@@ -22,11 +23,12 @@ Test-case name: empathy/emp-002
     <dt> Check that you can send and receive messages</dt>
         <dd>Are messages being delivered and displayed correctly?</dd>
 </dl>
+
 Test-case name: empathy/emp-003
+depends: empathy/emp-001
+depends: empathy/emp-002
+This test will check that Empathy can send messages via IRC
 <dl>
-    depends: empathy/emp-001
-    depends: empathy/emp-002
-    This test will check that Empathy can send messages via IRC
     <dt> Please ensure you have 'universe' and 'multiverse' repositories enabled (off by default in live session)</dt>
     <dt> Look for Terminal and launch it</dt>
         <dd>Terminal is opened</dd>
@@ -52,11 +54,12 @@ Test-case name: empathy/emp-003
     <dt> Check that you can send and receive messages</dt>
         <dd>Are messages are being delivered and displayed correctly?</dd>
 </dl>
+
 Test-case name: empathy/emp-004
+depends: empathy/emp-001
+depends: empathy/emp-002
+This test will check that Empathy can send messages via Facebook
 <dl>
-    depends: empathy/emp-001
-    depends: empathy/emp-002
-    This test will check that Empathy can send messages via Facebook
     <dt> Look for Empathy and launch it</dt>
         <dd>Empathy should launch</dd>
     <dt> Select 'Accounts' from the Empathy menu</dt>
@@ -76,5 +79,6 @@ Test-case name: empathy/emp-004
     <dt> Check that you can send and receive messages</dt>
         <dd>Are messages being delivered and displayed correctly?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

@@ -2,11 +2,12 @@ The goal of this test case is to check that localization support is functional d
 <dl>
     <dt>Power up your machine and insert the install media</dt>
     <dt>Select English as language and press Enter</dt>
-    <dt>Select Try FAMILY without any change to your computer and press Enter
-        <ul>
-            <li>Once the live session has started, verify that the system is in English</li>
-        </ul>
-    </dt>
+    <dt>Select Try FAMILY without any change to your computer and press Enter</dt>
+        <dd>
+            <ul>
+                <li>Once the live session has started, verify that the system is in English</li>
+            </ul>
+        </dd>
     <dt>Double click on the Install icon</dt>
     <dt>Once Ubiquity starts click on Forward</dt>
     <dt>Select the same non English language from the list and click Forward</dt>
@@ -19,11 +20,12 @@ The goal of this test case is to check that localization support is functional d
     <dt>Once the installer has finished choose to Restart the system now</dt>
     <dt>Remove the disc and press Enter</dt>
     <dt>Allow the machine to reboot</dt>
-    <dt>Verify that your system is localized:
-        <ul>
-            <li>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</li>
-        </ul>
-    </dt>
+    <dt>Verify that your system is localized:</dt>
+        <dd>
+            <ul>
+                <li>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</li>
+            </ul>
+        </dd>
     <dt>Check that the calendar shows the regional settings correctly</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

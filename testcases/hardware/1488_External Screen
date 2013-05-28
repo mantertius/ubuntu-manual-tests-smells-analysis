@@ -19,9 +19,10 @@ Using GNOME Classic
     <dt>Press 'Apply'. Verify that the new resolution is set correctly and that the screen is still visible. </dt>
 </dl>
 Verification
-
-<dd>Verify that the display is functioning properly.</dd>
-<dd>Verify that the resolution can be changed. </dd>
+<dl>
+    <dd>Verify that the display is functioning properly.</dd>
+    <dd>Verify that the resolution can be changed. </dd>
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

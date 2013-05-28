@@ -23,10 +23,12 @@ Using GNOME Classic
     <dt>Open cheese (Applications -> Sound & Video -> Cheese).</dt>
     <dt>Verify that the camera image is displayed properly.</dt>
     <dt>Close "cheese". </dt>
+</dl>
 
-    Verification
-
+Verification
+<dl>
     <dd>Verify that the webcam image is displayed correctly. </dd>
+</dl>
 
     <strong>
         If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

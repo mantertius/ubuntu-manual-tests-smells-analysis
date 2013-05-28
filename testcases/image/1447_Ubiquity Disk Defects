@@ -6,7 +6,7 @@
         <dd>The test should finish and show any errors</dd>
     <dt>Press <strong>ESC twice</strong></dt>
         <dd>Ensure that the system restarts</dd>
-<dl>
+</dl>
 
     <strong>
         If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

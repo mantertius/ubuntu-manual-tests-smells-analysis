@@ -3,13 +3,14 @@
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components
-        <ul>
-            <li>Your system have at least the amount a space indicated</li>
-            <li>(If on a 'laptop'). Is plugged to a power source</li>
-            <li>Is connected to the Internet</li>
-        </ul>
-    </dt>
+    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components<dt>
+        <dd>
+            <ul>
+                <li>Your system have at least the amount a space indicated</li>
+                <li>(If on a 'laptop'). Is plugged to a power source</li>
+                <li>Is connected to the Internet</li>
+            </ul>
+        </dd>
         <dd>Check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
@@ -48,13 +49,14 @@
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components
-        <ul>
-            <li>Your system have at least the amount a space indicated</li>
-            <li>(If on a 'laptop'). Is plugged to a power source</li>
-            <li>Is connected to the Internet</li>
-        </ul>
-    </dt>
+    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
+        <dd>
+            <ul>
+                <li>Your system have at least the amount a space indicated</li>
+                <li>(If on a 'laptop'). Is plugged to a power source</li>
+                <li>Is connected to the Internet</li>
+            </ul>
+        </dd>
         <dd>Check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>

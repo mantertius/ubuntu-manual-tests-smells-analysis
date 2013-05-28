@@ -1,6 +1,6 @@
 Test-case name: ChineseCalendar/chi-001
+This test will check that Chinese Calendar can display calendar and the main window may hide.
 <dl>
-    This test will check that Chinese Calendar can display calendar and the main window may hide.
     <dt>Find the indicator icon of Chinese Calendar to check whether it autostart</dt>
         <dd>Did Chinese Calendar autostart?</dd>
     <dt>Click the indicator icon of Chinese Calendar and select "Hide/Show" menu item</dt>
@@ -10,8 +10,8 @@ Test-case name: ChineseCalendar/chi-001
 </dl>
 
 Test-case name: ChineseCalendar/chi-002
+This test will check that Chinese Calendar can be configured to show the main window in different mode.
 <dl>
-    This test will check that Chinese Calendar can be configured to show the main window in different mode.
     <dt>Click the indicator icon of Chinese Calendar and select "Always Top" menu item</dt>
         <dd>Is the main window showed in front of all other windows?</dd>
     <dt>Click the indicator icon of Chinese Calendar and select "Always Bottom" menu item</dt>
@@ -21,8 +21,8 @@ Test-case name: ChineseCalendar/chi-002
 </dl>
 
 Test-case name: ChineseCalendar/chi-003
+This test will check each basic function of Chinese Calendar.
 <dl>
-    This test will check each basic function of Chinese Calendar.
     <dt>Click the non blank part on the application window of Chinese Calendar for any date</dt>
         <dd>Are the lunar date, the compatibility and incompatibility of the lunar calendar and the schedule that day showed on the right of the application window correct?</dd>
     <dt>Click the drop-down box of “Year” on the application window to change the current year</dt>
@@ -36,8 +36,8 @@ Test-case name: ChineseCalendar/chi-003
 </dl>
 
 Test-case name: ChineseCalendar/chi-004
+This test will check the Memo function of Chinese Calendar.
 <dl>
-    This test will check the Memo function of Chinese Calendar.
     <dt>Double click the non blank part on the application window of Chinese Calendar for any date</dt>
         <dd>Did the Memo editor window pop up?</dd>
     <dt>Double click the blank part on the application window of Chinese Calendar</dt>

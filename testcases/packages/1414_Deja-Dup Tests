@@ -1,6 +1,6 @@
 Test-case name: dejadup/dej-001
+This test will check that Dejadup can backup and restore files
 <dl>
-    This test will check that Dejadup can backup and restore files
     <dt> Create a test folder in your home directory with one test text file.</dt>
     <dt> Open the dash and launch backup by pressing the super key, and then entering ‘backup’</dt>
         <dd>Backup should launch</dd>
@@ -31,5 +31,6 @@ Test-case name: dejadup/dej-001
     <dt> Open Nautilus and check that test folder and files are created correctly</dt>
         <dd>Was your test folder and the test file contained within it restored correctly to your home folder?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

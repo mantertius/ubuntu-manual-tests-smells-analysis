@@ -1,6 +1,6 @@
 Test-case name: fileroller/flr-001
+This test will check that File Roller can archive and extract files
 <dl>
-    This test will check that File Roller can archive and extract files
     <dt> Open the dash and launch file-roller by pressing the super key, and then entering ‘file-roller’</dt>
         <dd>file-roller should launch</dd>
     <dt> Click 'New' button from the toolbar</dt>
@@ -24,5 +24,6 @@ Test-case name: fileroller/flr-001
     <dt> Open Nautilus and navigate to the selected extract folder</dt>
         <dd>Are the files and folders from archive extracted correctly in the selected folder?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

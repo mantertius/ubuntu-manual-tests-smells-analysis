@@ -1,6 +1,6 @@
 Test-case name: nautilus/TC-NFM-001
+This test will check that user can create files in Nautilus
 <dl>
-    This test will check that user can create files in Nautilus
     <dt> Look for Nautilus and launch it</dt>
         <dd>Nautilus is opened, Home is selected</dd>
     <dt> In Home folder right click on a blank section and select New Document, Empty Document. Name the resulting file 'moveme.txt'</dt>
@@ -9,9 +9,9 @@ Test-case name: nautilus/TC-NFM-001
 </dl>
 
 Test-case name: nautilus/TC-NFM-002
+depends: nautilus/TC-NFM-001
+This test will check that user can create folders in Nautilus
 <dl>
-    depends: nautilus/TC-NFM-001
-    This test will check that user can create folders in Nautilus
     <dt> In Home Folder right click on a blank section and select 'New Folder'.</dt>
         <dd>A folder named 'Untitled Folder' appears in the directory</dd>
     <dt> Rename the folder to 'test'</dt>
@@ -19,18 +19,18 @@ Test-case name: nautilus/TC-NFM-002
 </dl>
 
 Test-case name: nautilus/TC-NFM-003
+depends: nautilus/TC-NFM-002
+This test will check that user can move files to folders.
 <dl>
-    depends: nautilus/TC-NFM-002
-    This test will check that user can move files to folders.
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Drag moveme.txt and drop into the folder test.</dt>
         <dd>Is the file moveme.txt now located in 'test' folder?</dd>
 </dl>
 
 Test-case name: nautilus/TC-NFM-004
+depends: nautilus/TC-NFM-003
+This test will check that user can delete files and folders to Trash
 <dl>
-    depends: nautilus/TC-NFM-003
-    This test will check that user can delete files and folders to Trash
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Right click on 'test' folder and select Move to Trash</dt>
         <dd>test folder is removed. Trash folder icon is changed to Not empty</dd>
@@ -39,9 +39,9 @@ Test-case name: nautilus/TC-NFM-004
 </dl>
 
 Test-case name: nautilus/TC-NFM-005
+depends: nautilus/TC-NFM-004
+This test will check that user can recover delete files and folders from Trash
 <dl>
-    depends: nautilus/TC-NFM-004
-    This test will check that user can recover delete files and folders from Trash
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Trash Icon in the sidebar</dt>
         <dd>test folder is showed.</dd>
@@ -51,9 +51,9 @@ Test-case name: nautilus/TC-NFM-005
 </dl>
 
 Test-case name: nautilus/TC-NFM-006
+depends: nautilus/TC-NFM-005
+This test will check that the search functionality works
 <dl>
-    depends: nautilus/TC-NFM-005
-    This test will check that the search functionality works
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Search Icon in the top</dt>
     <dt> Input 'test'</dt>
@@ -61,9 +61,9 @@ Test-case name: nautilus/TC-NFM-006
 </dl>
 
 Test-case name: nautilus/TC-NFM-007
+depends: nautilus/TC-NFM-005
+This test will check the Recent functionality works
 <dl>
-    depends: nautilus/TC-NFM-005
-    This test will check the Recent functionality works
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Double click in the 'test' folder</dt>
     <dt> Double click in the 'moveme.txt' file</dt>
@@ -75,9 +75,9 @@ Test-case name: nautilus/TC-NFM-007
 </dl>
 
 Test-case name: nautilus/TC-NFM-008
+depends: nautilus/TC-NFM-007
+This test will check the clean Recent functionality works
 <dl>
-    depends: nautilus/TC-NFM-007
-    This test will check the clean Recent functionality works
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Recent Icon in the sidebar</dt>
         <dd>The 'moveme.txt' file is shown</dd>
@@ -90,8 +90,8 @@ Test-case name: nautilus/TC-NFM-008
 </dl>
 
 Test-case name: nautilus/TC-NFM-009
+This test will check the clean Recent functionality works
 <dl>
-    This test will check the clean Recent functionality works
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Recent Icon in the sidebar</dt>
         <dd>The 'moveme.txt' file is shown</dd>
@@ -104,9 +104,9 @@ Test-case name: nautilus/TC-NFM-009
 </dl>
 
 Test-case name: nautilus/TC-NFM-010
+depends: nautilus/TC-NFM-001
+This test will check that new files can be added to the "New Document" submenu
 <dl>
-    depends: nautilus/TC-NFM-001
-    This test will check that new files can be added to the "New Document" submenu
     <dt> Look for the Terminal application and launch it</dt>
         <dd>The Terminal applications is open and a prompt displayed</dd>
     <dt> Type FIELD=`cat ~/.config/user-dirs.dirs | grep XDG_TEMPLATES_DIR |sed 's/XDG_TEMPLATES_DIR=\"\(.*\)\"/\1/'` && eval "touch $FIELD/Another Empty Document"</dt>
@@ -119,8 +119,8 @@ Test-case name: nautilus/TC-NFM-010
 </dl>
 
 Test-case name: nautilus/TC-NFM-011
+This test will check that user can connect to Samba shares and copy files from the share
 <dl>
-    This test will check that user can connect to Samba shares and copy files from the share
     <dt> Please ensure you have access to a samba share containing a file</dt>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> On a local network, press 'Browse Network' in Nautilus and later 'Windows Network'</dt>
@@ -134,8 +134,8 @@ Test-case name: nautilus/TC-NFM-011
 </dl>
 
 Test-case name: nautilus/TC-NFM-012
+This test will check that user can connect to the Samba share and copy files to the share
 <dl>
-    This test will check that user can connect to the Samba share and copy files to the share
     <dt> Please ensure you have access to a samba writable system</dt>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Home Icon in the sidebar and double click on 'Examples' and later on 'Ubuntu_Free_Culture_Showcase'</dt>
@@ -151,9 +151,9 @@ Test-case name: nautilus/TC-NFM-012
 </dl>
 
 Test-case name: nautilus/TC-NFM-013
+depends: nautilus/TC-NFM-005
+This test will check that user can share documents to another system using Samba
 <dl>
-    depends: nautilus/TC-NFM-005
-    This test will check that user can share documents to another system using Samba
     <dt> Please ensure you have access to an Internet connection</dt>
     <dt> Please ensure you have access to an extern samba system</dt>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
@@ -180,8 +180,8 @@ Test-case name: nautilus/TC-NFM-013
 </dl>
 
 Test-case name: nautilus/TC-NFM-014
+This test will check that a mounted USB drive appears in Nautilus
 <dl>
-    This test will check that a mounted USB drive appears in Nautilus
     <dt> Please ensure you have a USB drive available and the system under test has available USB ports.</dt>
     <dt> Insert the USB drive into the USB port of the system under test</dt>
         <dd>A new window of Nautilus should be open with the contents of the USB</dd>
@@ -191,8 +191,8 @@ Test-case name: nautilus/TC-NFM-014
 </dl>
 
 Test-case name: nautilus/TC-NFM-015
+This test will check that 'Open' dialog appears when plugging in a music device
 <dl>
-    This test will check that 'Open' dialog appears when plugging in a music device
     <dt> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the player into the USB port of the system under tests and wait for new dialog to appear</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
@@ -202,8 +202,8 @@ Test-case name: nautilus/TC-NFM-015
 </dl>
 
 Test-case name: nautilus/TC-NFM-016
+This test will check that 'Open' dialog appears when inserting a DVD
 <dl>
-    This test will check that 'Open' dialog appears when inserting a DVD
     <dt> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
@@ -213,8 +213,8 @@ Test-case name: nautilus/TC-NFM-016
 </dl>
 
 Test-case name: nautilus/TC-NFM-017
+This test will check that 'Open' dialog appears on inserting an Audio CD
 <dl>
-    This test will check that 'Open' dialog appears on inserting an Audio CD
     <dt> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the Audio CD into the CD drive of the system under tests and wait for new dialog to appear</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
@@ -224,8 +224,8 @@ Test-case name: nautilus/TC-NFM-017
 </dl>
 
 Test-case name: nautilus/TC-NFM-018
+This test will check that 'Open' dialog appears on inserting a camera
 <dl>
-    This test will check that 'Open' dialog appears on inserting a camera
     <dt> Please ensure you have a camera available. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Plug in the camera to the system under test and wait for new dialog to appear.</dt>
         <dd>An 'Open' dialog window will appear offering you options.</dd> 
@@ -233,5 +233,6 @@ Test-case name: nautilus/TC-NFM-018
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Shotwell open with the camera displayed in left panel tree?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

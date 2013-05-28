@@ -1,6 +1,6 @@
 Test-case name: gedit/ged-001
+This test will check that GEdit can save and open saved files
 <dl>
-    This test will check that GEdit can save and open saved files
     <dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
         <dd>Gedit should launch</dd>
     <dt> Type in "The quick brown foxes jump over the lazy dog"</dt>
@@ -16,9 +16,10 @@ Test-case name: gedit/ged-001
     <dt> Navigate to the directory where you saved the file and double click it to launch gedit</dt>
         <dd>Does gedit launch and the display the the file with the text "The quick brown foxes jump over the lazy dog"?</dd>
 </dl>
+
 Test-case name: gedit/ged-002
+This test will check that GEdit can save HTML files correctly
 <dl>
-    This test will check that GEdit can save HTML files correctly
     <dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
         <dd>Gedit should launch</dd>
     <dt> Type in <pre>&#60;a href="http://www.ubuntu.com"&#62;Link To Ubuntu&#60;a/a&#62;</pre></dt>
@@ -34,9 +35,10 @@ Test-case name: gedit/ged-002
     <dt> Navigate to the directory where you saved the file and double the file it to launch the default browser and display the html file</dt>
         <dd>Does your default browser launch and the display a page with a link to the ubuntu website?</dd>
 </dl>
+
 Test-case name: gedit/ged-003
+This test will check that GEdit can replace text
 <dl>
-    This test will check that GEdit can replace text
     <dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
         <dd>Gedit should launch</dd>
     <dt> Type in "The quick brown foxes jump over the lazy dog"</dt>
@@ -48,8 +50,8 @@ Test-case name: gedit/ged-003
         <dd>Does the text displayed now read "The quick brown fox jump over the lazy dog"?</dd>
 </dl>
 Test-case name: gedit/ged-004
+This test will check that GEdit can find and hightlight searched text
 <dl>
-    This test will check that GEdit can find and hightlight searched text
     <dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
         <dd>Gedit should launch</dd>
     <dt> Type in "The quick brown fox jump over the lazy dog"</dt>
@@ -67,9 +69,10 @@ Test-case name: gedit/ged-004
     <dt> Press ESC button</dt>
         <dd>Did the search box close and focus return to the document, with the search term highlighted?</dd>
 </dl>
+
 Test-case name: gedit/ged-005
+This test will check that GEdit can display File Browser panel
 <dl>
-    This test will check that GEdit can display File Browser panel
     <dt> Open the dash and launch gedit by pressing the super key, and then entering 'gedit'</dt>
         <dd>Gedit should launch</dd>
     <dt> Click on Edit -> Preferences -> Plugins. Then ensure the "File Browser Panel" plugin is checked. Close the window by pressing close.</dt>
@@ -79,5 +82,6 @@ Test-case name: gedit/ged-005
     <dt> Press F9 again</dt>
         <dd>Did the side panel open and close properly?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

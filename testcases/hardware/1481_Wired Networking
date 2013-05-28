@@ -10,8 +10,8 @@ Using Unity
     <dt>After approximately 30 seconds, run ifconfig in the terminal. Verify that a cabled network device (e.g. '"eth0") is present and has received an IP address. Note the interface name (e.g. "eth0"). (The Network Manager icon should change to 2 solid arrows one pointing up, one down)</dt>
     <dt>In the terminal, run route -n. Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
     <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above.</dt> 
+        <dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
 </dl>
-<dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
 
 Using GNOME Classic
 <dl>
@@ -21,8 +21,8 @@ Using GNOME Classic
     <dt>After approximately 30 seconds, run ifconfig in the terminal. Verify that a cabled network device is present (e.g. eth0) and has received an IP address. Note the interface name (e.g. eth0). (The slice of pizza should change to 2 arrows, one up, one down)</dt>
     <dt>In the terminal, run route -n. Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
     <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above. </dt>
+        <dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd> 
 </dl>
-<dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd> 
 
 <strong>Verify Manual Connectivity</strong>
 
@@ -31,10 +31,10 @@ Case ID: hcn-003
     <dt>In the terminal, run sudo ifconfig [interface] [staticIP] where [interface] is the interface name (e.g. eth0) and [staticIP] is a valid unused IP address on the current network. (If you are on a home network try using the previously used IP address, (still listed on the terminal) (Consult your network administrator if you do not know such an address.)</dt>
     <dt>In the terminal, run ifconfig. Verify that the network device is again listed (e.g. eth0) and has the IP address listed([staticIP]) as given above.</dt>
     <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above.</dt> 
+        <dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
+        <dd>(In the terminal, run sudo ifconfig [interface] down where [interface] is the interface name above. This releases the static IP address back to the server. Then you will need to run sudo ifconfig [interface] up in order to enable your wired network and allow the server to assign an IP address as needed.) </dd>
 </dl>
 
-<dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
-<dd>(In the terminal, run sudo ifconfig [interface] down where [interface] is the interface name above. This releases the static IP address back to the server. Then you will need to run sudo ifconfig [interface] up in order to enable your wired network and allow the server to assign an IP address as needed.) </dd>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

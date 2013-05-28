@@ -1,16 +1,16 @@
 These tests check the Gwibber application and its integration to Twitter, Facebook and Flickr.
 
 Test-Case name: gwibber/gwb-001
+This test will check that Gwibber can be started
 <dl>
-    This test will check that Gwibber can be started
     <dt> Look for Gwibber and launch it</dt>
         <dd>Is Gwibber launched?</dd>
 </dl>
 
 Test-Case name: gwibber/gwb-002
+depends: gwibber/gwb-001
+This test will check the Facebook integration
 <dl>
-    depends: gwibber/gwb-001
-    This test will check the Facebook integration
     <dt>Open the Online Accounts application</dt>
         <dd>The Online Accounts window appear</dd>
     <dt>Select "Facebook"</dt>
@@ -51,9 +51,9 @@ Test-Case name: gwibber/gwb-002
 </dl>
 
 Test-Case name: gwibber/gwb-003
+depends: gwibber/gwb-001
+This test will check the Twitter integration
 <dl>
-    depends: gwibber/gwb-001
-    This test will check the Twitter integration
     <dt>Open the Online Accounts application</dt>
         <dd>The Online Accounts window appear</dd>
     <dt>Select "Twitter"</dt>

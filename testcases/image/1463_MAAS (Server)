@@ -8,7 +8,6 @@ This will test that the MAAS server offers an option to periodically update clou
 </dl>
 
 This will test that the MAAS server offers an option to cache archives locally.
-
 <dl>
     <dt>Open the main page to the MAAS server</dt>
     <dt>Find the option in the MAAS server preferences to cache archives locally</dt>

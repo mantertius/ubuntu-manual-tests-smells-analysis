@@ -1,6 +1,6 @@
 Test-case name: totem/tot-001
+This test will check that Totem can playback video
 <dl>
-    This test will check that Totem can playback video
     <dt> Open Totem</dt>
         <dd>Movie player should launch</dd>
     <dt> Press the F9 button</dt>
@@ -39,11 +39,9 @@ Test-case name: totem/tot-001
         <dd>Did the video respond properly to the commands given?</dd>
 </dl>
 
-
-
 Test-case name: totem/tot-002
+This test will check that the plugins Work
 <dl>
-    This test will check that the plugins Work
     <dt>Open the Totem</dt>
         <dd>Can you open Totem correctly?</dd>
     <dt>Go to the top bar and click on "Edit" and later on "Plugins"</dt>
@@ -54,7 +52,6 @@ Test-case name: totem/tot-002
     <dt>Select "Close"</dt>
         <dd>The changes were applied successfully?</dd>
 </dl>
-
 
 
 Test-case name: totem/tot-003
@@ -93,10 +90,9 @@ This test will check that the Preferences Work
             <dd>Can you feel any difference?</dd>
 </dl>
 
-
 Test-case name: totem/tot-004
+This testcase will check that videos mode work, we're going to need at least three videos
 <dl>
-    This testcase will check that videos mode work, we're going to need at least three videos
     <dt>Open Totem</dt>
         <dd>Can you open totem correctly?</dd>
     <dt>Open a video</dt>
@@ -117,8 +113,8 @@ Test-case name: totem/tot-004
 </dl>
 
 Test-case name: totem/tot-005
+This test will check that the Help menu works
 <dl>
-    This test will check that the Help menu works
     <dt>Open the Totem Disc Burner</dt>
         <dd>Can you open Totem correctly?</dd>
     <dt>Press "F1"</dt>
@@ -141,5 +137,6 @@ Test-case name: totem/tot-005
     <dt>Press the "License" button</dt>
         <dd>The interface shows a license?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

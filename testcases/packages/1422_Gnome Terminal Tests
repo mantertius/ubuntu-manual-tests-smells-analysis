@@ -1,6 +1,6 @@
 Test-case name: gnometerminal/ter-001
+This test will check that basic terminal commands work in Gnome Terminal
 <dl>
-    This test will check that basic terminal commands work in Gnome Terminal
     <dt> Open the Terminal application</dt>
     <dt> Type in sudo apt-get update and press Enter</dt>
         <dd>You are asked for [sudo] password for USER: (where USER is your user name).</dd>
@@ -13,8 +13,8 @@ Test-case name: gnometerminal/ter-001
 </dl>
 
 Test-case name: gnometerminal/ter-002
+This test will check that terminal colors and zoom level can be changed
 <dl>
-    This test will check that terminal colors and zoom level can be changed
     <dt> Open the Terminal application</dt>
     <dt>Click on Edit, select Profiles, select Edit and select "Colors"</dt>
     <dt>Using the options contained in the "Colors" tab modify the color palette, choosing some non-default colors or a different color scheme</dt>
@@ -27,8 +27,8 @@ Test-case name: gnometerminal/ter-002
 </dl>
 
 Test-case name: gnometerminal/ter-003
+This test will check that terminal coloring is active
 <dl>
-    This test will check that terminal coloring is active
     <dt> Open the Terminal application</dt>
     <dt> Type "touch text1.txt"</dt>
     <dt> type "ls"</dt>
@@ -39,21 +39,22 @@ Test-case name: gnometerminal/ter-003
 </dl>
 
 Test-case name: gnometerminal/ter-004
+This test will check that the terminal tab launches successfully
 <dl>
-    This test will check that the terminal tab launches successfully
     <dt> Open the Terminal application</dt>
     <dt> Press "Ctrl+Alt+T"</dt>
         <dd>Is an instance of gnome-terminal with the title 'user@hostname: ~' opened, with the current directory set to the users home directory?</dd>
 </dl>
 
 Test-case name: gnometerminal/ter-005
+This test will check that the terminal can be given a new title
 <dl>
-    This test will check that the terminal can be given a new title
     <dt> Open the Terminal application</dt>
     <dt> From the main menu select 'Terminal > Set Title...'</dt>
         <dd>The Set Title dialog appears</dd>
     <dt> Enter 'Test Title' and click OK</dt>
         <dd>Is the title of the window now 'Test Title'?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
