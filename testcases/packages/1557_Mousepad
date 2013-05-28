@@ -2,69 +2,69 @@ Test-case name:Mousepad
 
 <dl>This test will check that Mousepad opens
     <dt>Open Mousepad from menu</dt>
-	<dd>Mousepad opens with an unnamed text document</dd>
+        <dd>Mousepad opens with an unnamed text document</dd>
 </dl>
 <dl>This test will check that Mousepad can save and open saved files
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
-	<dd>Text appears in window</dd>
+        <dd>Text appears in window</dd>
     <dt>Click File - Save</dt>
-	<dd>Save As window opens</dd>
+        <dd>Save As window opens</dd>
     <dt>type test.txt in Name box</dt>
     <dt>Select any folder to save file to</dt>
-    	<dd>Chosen file name and target folder remain as selected</dd>
+        <dd>Chosen file name and target folder remain as selected</dd>
     <dt>Click Save button</dt>
-	<dd>Save as dialogue closes</dd>
+        <dd>Save as dialogue closes</dd>
     <dt>Close Mousepad with File - Close Window</dt>
-	<dd>Mousepad closes</dd>
+        <dd>Mousepad closes</dd>
     <dt>Open File Manager from Menu - Accessories, navigate to saved file and double click to open in Mousepad</dt>
-	<dd>Mousepad opens with saved text</dd>
+        <dd>Mousepad opens with saved text</dd>
 </dl>
 <dl>This test will check that Mousepad can find and highlight searched text
     <dt>Open Mousepad from menu</dt>
-	<dd>Mousepad opens with an unnamed text document</dd>
+        <dd>Mousepad opens with an unnamed text document</dd>
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
-	<dd>Text appears in window</dd>
+        <dd>Text appears in window</dd>
     <dt>Press Ctrl+F</dt>
-	<dd>Search box appears</dd>
+        <dd>Search box appears</dd>
     <dt>Type t in the box</dt>
-	<dd>First t is found in the text document</dt>
+        <dd>First t is found in the text document</dd>
     <dt>Press F3</dt>
-	<dd>Next t is found in the text document</dt>
+        <dd>Next t is found in the text document</dd>
     <dt>Type he in the search box</dt>
-	<dd>The is found in the document</dd>
+        <dd>The is found in the document</dd>
     <dt>Press F3</dt>
-	<dd>Next the is found in the document</dd>
+        <dd>Next the is found in the document</dd>
     <dt>Press esc</dt>
-	<dd>Search box closes, focus returns to text document with search term highlighted</dd>
+        <dd>Search box closes, focus returns to text document with search term highlighted</dd>
 </dl>
 <dl>This test will check that Mousepad can find and replace text, including case sensitivity and saves on close
     <dt>Open Mousepad from menu</dt>
-	<dd>Mousepad opens with an unnamed text document</dd>
+        <dd>Mousepad opens with an unnamed text document</dd>
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
-	<dd>Text appears in window</dd>
+        <dd>Text appears in window</dd>
     <dt>Press Ctrl+R</dt>
-	<dd>Replace dialogue opens</dd>
+        <dd>Replace dialogue opens</dd>
     <dt>Type fox in the search for box</dt>
     <dt>Type cat in the replace with box and click Replace All</dt>
-	<dd>Replace dialogue does not close</dd>
-	<dd>Text now reads "The quick brown cat jumps over the lazy dog"</dd>
+        <dd>Replace dialogue does not close</dd>
+        <dd>Text now reads "The quick brown cat jumps over the lazy dog"</dd>
     <dt>Type the in the search for box</dt>
     <dt>Type a in the replace with box</dt>
     <dt>Click Case Sensitive box and click Replace All</dt>
-	<dd>Replace dialogue does not close</dd>
-	<dd>Text now reads "The quick brown cat jumps over a lazy dog"</dd>
+        <dd>Replace dialogue does not close</dd>
+        <dd>Text now reads "The quick brown cat jumps over a lazy dog"</dd>
     <dt>Click Close in Replace box</dt>
-	<dd>Replace box closes</dd>
+        <dd>Replace box closes</dd>
     <dt>Close Mousepad with File - Close Window</dt>
-	<dd>Save before closing dialogue appears</dd>
+        <dd>Save before closing dialogue appears</dd>
     <dt>Click Save</dt>
-	<dd>Mousepad closes</dd>
+        <dd>Mousepad closes</dd>
     <dt>Open File Manager from Menu - Accessories, navigate to saved file and double click to open in Mousepad</dt>
-	<dd>Mousepad opens with saved text</dd>
+        <dd>Mousepad opens with saved text</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
-    
+
 
