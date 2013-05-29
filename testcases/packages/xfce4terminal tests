@@ -2,16 +2,16 @@ Test-case name: xfce4 terminal/xfce4-terminal-001
 <dl>
 	This test will check that Xfce4 Terminal opens from desktop
 	<dt>Point your mouse cursor to the desktop and press the right mouse button</dt>
-		<dd>A context menu should appear</dd>
+		<dd>A popup menu should appear</dd>
 	<dt>Select the Open Terminal Here option</dt>
 		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-002
 <dl>
-	This test will check that Xfce4 Terminal opens from a command line
+	This test will check that Xfce4 Terminal opens from Application Finder
 	<dt>Hit Alt-F2 keys</dt>
 		<dd>Application Finder window should open</dd>
-	<dt>Type Xfce Terminal in the windows's input text box</dt>
+	<dt>Type Xfce Terminal in the window text box</dt>
 		<dd>The Launch button should now be enabled and clickable</dd>
 	<dt>Click the Launch button</dt>
 		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
@@ -26,14 +26,14 @@ Test-case name: xfce4 terminal/xfce4-terminal-004
 <dl>
 	This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window by right clicking on it
 	<dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
-		<dd>A context menu should appear</dd>
+		<dd>A popup menu should appear</dd>
 	<dt>Select the Open Terminal option</dt>
 		<dd>A new terminal window should open, inheriting the working directory from its parent terminal</dd>
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-005
 <dl>
-	This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window from the window's menu
-	<dt>Open a terminal window and click on File on the top left of the window</dt>
+	This test will check that Xfce4 Terminal opens a new terminal window from the menubar of a already open terminal window
+	<dt>Open a terminal window and click on File on the menubar</dt>
 		<dd>A menu should drop down</dd>
 	<dt>Select the Open Terminal option</dt>
 		<dd>A new terminal window should open, inheriting the working directory from its parent terminal</dd>
@@ -48,17 +48,81 @@ Test-case name: xfce4 terminal/xfce4-terminal-007
 <dl>
 	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window by right clicking on it
 	<dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
-		<dd>A context menu should appear</dd>
+		<dd>A popup menu should appear</dd>
 	<dt>Select the Open Tab option</dt>
 		<dd>A new terminal tab should open, inheriting the working directory from the previously active terminal.</dd>
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-008
 <dl>
-	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window right from the window's menu
-	<dt>Open a terminal window and click on File on the top left of the window</dt>
+	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window from the menubar
+	<dt>Open a terminal window and click on File on the menubar</dt>
 		<dd>A menu should drop down</dd>
 	<dt>Select the Open Tab option</dt>
 		<dd>A new terminal tab should open, inheriting the working directory from the previously active terminal.</dd>		
 </dl>
+Test-case name: xfce4 terminal/xfce4-terminal-009
+<dl>
+	This test will check that Xfce4 Terminal closes the terminal and terminates any subprocesses that you opened from the terminal
+	<dt>Open a terminal window and click on File on the menubar</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Close Window option</dt>
+		<dd>The terminal window should close and any subprocesses that you opened from the terminal should terminate</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-010
+<dl>
+	This test will check that Xfce4 Terminal performs searches in the Terminal Contents from the menubar
+	<dt>Open a terminal window and click on Terminal on the menubar</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Find option</dt>
+		<dd>Find dialog window should open</dd>
+	<dt>Type the search pattern in the Search text box</dt>
+		<dd>The Previous and Next buttons should now be enabled and clickable to perform the search for the given pattern</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-011
+<dl>
+	This test will check that Xfce4 Terminal performs searches in the Terminal Contents with Shift+Ctrl+F keys
+	<dt>Open a terminal window and Shift+Ctrl+F keys</dt>
+		<dd>Find dialog window should open</dd>
+	<dt>Type the search pattern in the Search text box</dt>
+		<dd>The Previous and Next buttons should now be enabled and clickable to perform the search for the given pattern</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-012
+<dl>
+	This test will check that Xfce4 Terminal changes the title of the currently displayed terminal from the menubar
+	<dt>Open a terminal window and click on Terminal on the menubar</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Set Title... option</dt>
+		<dd>Set Title dialog should open</dd>
+	<dt>Type the new title in the Title text box</dt>
+		<dd>Terminal should apply the change immediately</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-013
+<dl>
+	This test will check that Xfce4 Terminal hides the menubar
+	<dt>Open a terminal window and click on View on the menubar</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Show Menubar option</dt>
+		<dd>Terminal menubar should hide</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-014
+<dl>
+	This test will check that Xfce4 Terminal show a hidden menubar
+	<dt>Open a terminal window and click on View on the menubar</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Show Menubar option</dt>
+		<dd>Terminal menubar should hide</dd>
+	<dt>Right click the terminal window</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Select Show Menubar option</dt>
+		<dd>Terminal menubar should unhide</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-015
+<dt>
+	This test will check that Xfce4 Terminal maximizes into fullscreen
+	<dt>Open a terminal window and click on View on the menubar</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Fullscreen option</dt>
+		<dd>Terminal window should maximize into fullscreen</dd>
+</dt>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
