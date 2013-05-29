@@ -1,0 +1,64 @@
+Test-case name: xfce4 terminal/xfce4-terminal-001
+<dl>
+	This test will check that Xfce4 Terminal opens from desktop
+	<dt>Point your mouse cursor to the desktop and press the right mouse button</dt>
+		<dd>A context menu should appear</dd>
+	<dt>Select the Open Terminal Here option</dt>
+		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt.</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-002
+<dl>
+	This test will check that Xfce4 Terminal opens from a command line
+	<dt>Hit Alt-F2 keys</dt>
+		<dd>Application Finder window should open</dd>
+	<dt>Type Xfce Terminal in the windows's input text box</dt>
+		<dd>The Launch button should now be enabled and clickable</dd>
+	<dt>Click the Launch button</dt>
+		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt.</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-003
+<dl>
+	This test will check that Xfce4 Terminal opens with Super-T keys
+	<dt>Hit Alt-F2 keys</dt>
+		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt.</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-004
+<dl>
+	This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window right clicking on it
+	<dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
+		<dd>A context menu should appear</dd>
+	<dt>Select the Open Terminal option</dt>
+		<dd>A new terminal window should open, inheriting the working directory from its parent terminal</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-005
+<dl>
+	This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window from the window's menu
+	<dt>Open a terminal window and click on File on the top left of the window</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Open Terminal option</dt>
+		<dd>A new terminal window should open, inheriting the working directory from its parent terminal</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-006
+<dl>
+	This test will check that Xfce4 Terminal opens a new terminal window with Ctrl+Shift+N keys
+	<dt>Open a terminal window and hit Ctrl+Shift+N keys</dt>
+		<dd>A new terminal window should open, inheriting the working directory from its parent terminal</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-007
+<dl>
+	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window right clicking on it
+	<dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
+		<dd>A context menu should appear</dd>
+	<dt>Select the Open Tab option</dt>
+		<dd>A new terminal tab should open, inheriting the working directory from the previously active terminal.</dd>
+</dl>
+Test-case name: xfce4 terminal/xfce4-terminal-008
+<dl>
+	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window right from the window's menu
+	<dt>Open a terminal window and click on File on the top left of the window</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Open Tab option</dt>
+		<dd>A new terminal tab should open, inheriting the working directory from the previously active terminal.</dd>		
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
