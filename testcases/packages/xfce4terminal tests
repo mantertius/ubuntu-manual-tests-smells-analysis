@@ -4,7 +4,7 @@ Test-case name: xfce4 terminal/xfce4-terminal-001
 	<dt>Point your mouse cursor to the desktop and press the right mouse button</dt>
 		<dd>A context menu should appear</dd>
 	<dt>Select the Open Terminal Here option</dt>
-		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt.</dd>
+		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-002
 <dl>
@@ -14,17 +14,17 @@ Test-case name: xfce4 terminal/xfce4-terminal-002
 	<dt>Type Xfce Terminal in the windows's input text box</dt>
 		<dd>The Launch button should now be enabled and clickable</dd>
 	<dt>Click the Launch button</dt>
-		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt.</dd>
+		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-003
 <dl>
 	This test will check that Xfce4 Terminal opens with Super-T keys
-	<dt>Hit Alt-F2 keys</dt>
-		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt.</dd>
+	<dt>Hit Super-T keys</dt>
+		<dd>A terminal window should open with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-004
 <dl>
-	This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window right clicking on it
+	This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window by right clicking on it
 	<dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
 		<dd>A context menu should appear</dd>
 	<dt>Select the Open Terminal option</dt>
@@ -46,7 +46,7 @@ Test-case name: xfce4 terminal/xfce4-terminal-006
 </dl>
 Test-case name: xfce4 terminal/xfce4-terminal-007
 <dl>
-	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window right clicking on it
+	This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window by right clicking on it
 	<dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
 		<dd>A context menu should appear</dd>
 	<dt>Select the Open Tab option</dt>
