@@ -1,0 +1,101 @@
+Test-case name:Catfish
+
+<dl>This test will check that Catfish opens
+    <dt>Open Catfish from menu</dt>
+        <dd>Catfish opens with empty search box</dd>
+</dl>
+<dl>This test will check that Update Search Index works
+    <dt>Open a terminal from the menu</dt>
+        <dd>Terminal opens</dd>
+    <dt>Type cd Desktop and enter</dt>
+        <dd>Terminal prompt changes to ~/Desktop$</dd>
+    <dt>Type touch test Test and enter</dt>
+        <dd>New files named test and Test appear on Desktop</dd>
+    <dt>Open Catfish from menu</dt>
+        <dd>Catfish opens with empty search box</dd>
+    <dt>Click icon to right of search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Update Search Index</dt>
+        <dd>Update Search Index opens</dd>
+    <dt>Click Unlock</dt>
+        <dd>Password Entry box opens</dd>
+    <dt>Enter your password and Enter</dt>
+        <dd>Password box closes</dd>
+        <dd>Update Search Index box shows index being updated</dd>
+    <dt>When Search Index reports Locate database updated successfully, click Close</dt>
+        <dd>Search Index box closes</dd>
+    <dt>Close Catfish with X in the top left corner</dt>
+        <dd>Catfish closes</dd>
+</dl>
+<dl>This test will check that Catfish will search for files
+    <dt>Open a terminal from the menu</dt>
+        <dd>Terminal opens</dd>
+    <dt>Type cd Desktop and enter</dt>
+        <dd>Terminal prompt changes to ~/Desktop$</dd>
+    <dt>Type touch test Test and enter</dt>
+        <dd>New files named test and Test appear on Desktop</dd>
+    <dt>Open Catfish from menu</dt>
+        <dd>Catfish opens with empty search box</dd>
+    <dt>Click icon to right of search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Update Search Index</dt>
+        <dd>Update Search Index opens</dd>
+    <dt>Click Unlock</dt>
+        <dd>Password Entry box opens</dd>
+    <dt>Enter your password and Enter</dt>
+        <dd>Password box closes</dd>
+        <dd>Update Search Index box shows index being updated</dd>
+    <dt>When Search Index reports Locate database updated successfully, click Close</dt>
+        <dd>Search Index box closes</dd>
+    <dt>Click on Folder icon to right of search term box</dt>
+        <dd>Folder list appears</dd>
+    <dt>Click on Desktop</dt>
+        <dd>Folder name changes to Desktop</dd>
+    <dt>Type test in Search Term box and enter</dt>
+        <dd>Results appear for both Test and test files on Desktop</dd>
+    <dt>Close Catfish with X in the top left corner</dt>
+        <dd>Catfish closes</dd>
+</dl>
+<dl>This test will check that Catfish will use case sensitivity when searching and will search for hidden files
+    <dt>Open a terminal from the menu</dt>
+        <dd>Terminal opens</dd>
+    <dt>Type cd Desktop and enter</dt>
+        <dd>Terminal prompt changes to ~/Desktop$</dd>
+    <dt>Type touch .test test Test and enter</dt>
+        <dd>New files named test and Test appear on Desktop</dd>
+    <dt>Open Catfish from menu</dt>
+        <dd>Catfish opens with empty search box</dd>
+    <dt>Click icon to right of search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Update Search Index</dt>
+        <dd>Update Search Index opens</dd>
+    <dt>Click Unlock</dt>
+        <dd>Password Entry box opens</dd>
+    <dt>Enter your password and Enter</dt>
+        <dd>Password box closes</dd>
+        <dd>Update Search Index box shows index being updated</dd>
+    <dt>When Search Index reports Locate database updated successfully, click Close</dt>
+        <dd>Search Index box closes</dd>
+    <dt>Click on Folder icon to right of search term box</dt>
+        <dd>Folder list appears</dd>
+    <dt>Click on Desktop</dt>
+        <dd>Folder name changes to Desktop</dd>
+    <dt>Click icon to right of search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Exact Match in menu</dt>
+        <dd>Menu closes</dd>
+    <dt>Type Test in Search Term box and enter</dt>
+        <dd>Result appears for Test file on Desktop</dd>
+    <dt>Type test in Search Term box and enter</dt>
+        <dd>Result appears for test file on Desktop</dd>
+    <dt>Click icon to right of search box</dt>
+        <dd>Menu appears</dd>
+    <dt>Click Hidden Files in menu</dt>
+        <dd>Menu closes</dd>
+        <dd>Results appear for test and .test files on Desktop</dd>
+    <dt>Close Catfish with X in the top left corner</dt>
+        <dd>Catfish closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
