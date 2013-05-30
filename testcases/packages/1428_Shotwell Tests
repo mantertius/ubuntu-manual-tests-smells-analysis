@@ -1,6 +1,6 @@
 Test-case name: shotwell/swp-001
+This test will check that Shotwell can import pictures from camera
 <dl>
-    This test will check that Shotwell can import pictures from camera
     <dt> Plug in your camera using a USB cable. Your camera may need to be switched on, check the camera manual</dt>
         <dd>A window should appear telling you that it has detected media that contain digital photos</dd>
     <dt> Select ‘shotwell’ in the dropdown and click ok</dt>
@@ -12,9 +12,10 @@ Test-case name: shotwell/swp-001
     <dt> Select “last import” in the left hand pane</dt>
         <dd>Does shotwell display the picture you imported?</dd>
 </dl>
+
 Test-case name: shotwell/swp-002
+This test will check that Shotwell can edit images
 <dl>
-    This test will check that Shotwell can edit images
     <dt> Ensure shotwell is still loaded and displaying your import picture. Double click the picture thumbnail</dt>
         <dd>The image is enlarged and editing buttons exist below the image: Rotate, Crop, Red-eye, Adjust, Enhance</dd>
     <dt> Click rotate button four times</dt>
@@ -44,9 +45,10 @@ Test-case name: shotwell/swp-002
     <dt> Press ctrl+z</dt>
         <dd>Did the photo respond properly to the editing, and is now restored to it’s original condition?</dd>
 </dl>
+
 Test-case name: shotwell/swp-003
+This test will check that Shotwell can publish images online
 <dl>
-    This test will check that Shotwell can publish images online
     <dt> Select an image you want to publish in thumbnail view, and then select File, Publish.</dt>
         <dd>The shotwell publish dialog appears</dd>
     <dt> Select an on-line provider from the dropdown and press Login</dt>
@@ -56,9 +58,10 @@ Test-case name: shotwell/swp-003
     <dt> Name the new album and hit publish</dt>
         <dd>Are the images published to the online provider?</dd>
 </dl>
+
 Test-case name: shotwell/swp-004
+This test will check that Shotwell can export pictures to folder
 <dl>
-    This test will check that Shotwell can export pictures to folder
     <dt> Select an image you want to export in thumbnail view, and then select File, Export</dt>
         <dd>Export dialog appears</dd>
     <dt> Click ok</dt>
@@ -66,15 +69,17 @@ Test-case name: shotwell/swp-004
     <dt> Select folder and hit save</dt>
         <dd>Did the Picture get exported to a new location?</dd>
 </dl>
+
 Test-case name: shotwell/swp-005
+This test will check that Shotwell can set image as desktop background
 <dl>
-    This test will check that Shotwell can set image as desktop background
     <dt> Select an image you want to set as your desktop background in thumbnail view, and then select File, Set As Desktop Background</dt>
         <dd>Is your desktop background now set to the picture you selected?</dd>
 </dl>
+
 Test-case name: shotwell/swp-006
+This test will check that Shotwell can set images as desktop slideshow
 <dl>
-    This test will check that Shotwell can set images as desktop slideshow
     <dt> Select a group of images you want to set as your desktop slideshow in thumbnail view, and then select File, Set As Desktop Slideshow</dt>
         <dd>The Set as Desktop Slideshow dialog appears</dd>
     <dt> Slide the slider to set show each photo for 5 seconds.</dt>
@@ -82,5 +87,6 @@ Test-case name: shotwell/swp-006
     <dt> Minimize windows so you can see your desktop.</dt>
         <dd>Is your desktop background now set to the images you selected? Are they rotating every 5 seconds as set?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

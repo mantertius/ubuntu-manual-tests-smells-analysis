@@ -13,8 +13,9 @@ Using GNOME Classic
     <dt>Ensure that the quantity of memory in the machine tallies with that on the System Tab. </dt>
 </dl>
 Verification
-
-<dd>Verify that the correct amount of memory is reported in the System Monitor.</dd>
+<dl>
+    <dd>Verify that the correct amount of memory is reported in the System Monitor.</dd>
+</dl>
 
 <strong>Open Applications</strong>
 
@@ -35,8 +36,9 @@ Using GNOME Classic
     <dt>Leave this to run for a while to check for memory leaks. </dt>
 </dl>
 Verification
-
-<dd>Verify that memory usage remains relatively stable when no additional applications are opened. </dd>
+<dl>
+    <dd>Verify that memory usage remains relatively stable when no additional applications are opened. </dd>
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

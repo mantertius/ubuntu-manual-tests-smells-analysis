@@ -1,6 +1,6 @@
 Test-case name: orca/starting_orca
+This test will check that Orca can play a welcome message
 <dl>
-    This test will check that Orca can play a welcome message
     <dt> Open Dash type 'system settings' and launch the system settings tool</dt>
         <dd>system settings opens and contains the Universal Access section</dd>
     <dt> Select the Universal Access section</dt>
@@ -8,9 +8,10 @@ Test-case name: orca/starting_orca
     <dt> Select the Screen Reader option</dt>
         <dd>Did a voice say "welcome to orca"?</dd>
 </dl>
+
 Test-case name: orca/dash
+This test will check that Orca can announce text in the dash
 <dl>
-    This test will check that Orca can announce text in the dash
     <dt> press the super(windows) key to bring up the dash</dt>
         <dd>a voice says 'Dash frame'</dd>
     <dt> use the cursor keys to navigate around the dash</dt>
@@ -20,9 +21,10 @@ Test-case name: orca/dash
     <dt> select the apps lens and press return</dt>
         <dd>Did the voice announce you are on the applications lens?</dd>
 </dl>
+
 Test-case name: orca/HUD
+This test will check that Orca can announce text in the HUD
 <dl>
-    This test will check that Orca can announce text in the HUD
     <dt> from the dash launch the gedit application</dt>
         <dd>the text editor opens and a voice says gedit frame</dd>
     <dt> press alt to bring up the HUD</dt>
@@ -30,17 +32,19 @@ Test-case name: orca/HUD
     <dt> type 'edit' then use cursor down to read the suggested matching menu items</dt>
         <dd>Are the options read out by orca? Does selecting an option operate that menu item in the gedit window?</dd>
 </dl>
+
 Test-case name: orca/Ubiquity
+This test will check that Orca can announce text in Ubiquity
 <dl>
-    This test will check that Orca can announce text in Ubiquity
     <dt> boot a live CD, when you hear the drums press ctrl+s</dt>
         <dd>a voice should welcome you to orca</dd>
     <dt> alt-tab to get back to ubiquity and proceed through the wizard using only the keyboard</dt>
         <dd>Are you able to hear all of the options read by orca? Are you able to install without needing to use the mouse?</dd>
 </dl>
+
 Test-case name: orca/globalmenu
+This test will check that Orca can announce text in global menu
 <dl>
-    This test will check that Orca can announce text in global menu
     <dt> in an application with a global menu press alt to bring up the menu</dt>
         <dd>the name of the menu should be read out (file menu)</dd>
     <dt> using cursor keys navigate around the menu</dt>
@@ -48,9 +52,10 @@ Test-case name: orca/globalmenu
     <dt> find a menu item with a shortcut like ctrl+s</dt>
         <dd>Is the shortcut read to you?</dd>
 </dl>
+
 Test-case name: orca/indicators
+This test will check that Orca can announce text in indicators
 <dl>
-    This test will check that Orca can announce text in indicators
     <dt> press F10 to get to the global menu then use the right cursor to go through the menu to the indicators</dt>
         <dd>the indicator names should be read out</dd>
     <dt> press F10 to leave the menu then F10 again to go back, but this time go left</dt>
@@ -62,25 +67,29 @@ Test-case name: orca/indicators
     <dt> in the sound indicator go to the play controls</dt>
         <dd>Did the music application start? It should not start without asking it to do so.</dd>
 </dl>
+
 Test-case name: orca/notifications
+This test will check that Orca can announce notifications
 <dl>
-    This test will check that Orca can announce notifications
     <dt> cause a notification to happen by sending yourself an email, instant message, irc message, etc.</dt>
         <dd>Does the screen reader should read notification out loud?</dd>
 </dl>
+
 Test-case name: orca/launcher
+This test will check that Orca can announce text in quicklists
 <dl>
-    This test will check that Orca can announce text in quicklists
     <dt> press alt+f1 to get to keyboard navigation of the launcher</dt>
         <dd>orca should read application names as you move up and down</dd>
     <dt> move right on a running application to the quicklists</dt>
         <dd>Does orca read the quicklist contents?</dd>
 </dl>
+
 Test-case name: orca/workspace_switcher
+This test will check that Orca can announce text in workspace switcher
 <dl>
-    This test will check that Orca can announce text in workspace switcher
     <dt> try using the workspace switcher with the screen reader</dt>
         <dd>Are you able to use the switcher without looking at the screen and understanding where your applications are?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

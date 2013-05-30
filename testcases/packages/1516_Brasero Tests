@@ -1,6 +1,6 @@
 Test-case name: brasero/bra-001
+This test will check that Audio project menu Works
 <dl>
-    This test will check that Audio project menu Works
     <dt>Open "Brasero Disc Burner"</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Click "Audio project"</dt>
@@ -88,8 +88,8 @@ Test-case name: brasero/bra-001
 
 
 Test-case name: brasero/bra-002
+This test will check that Data project Works
 <dl>
-    This test will check that Data project Works
     <dt>Open Brasero Disc Burner</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Click "Data project"</dt>
@@ -116,8 +116,8 @@ Test-case name: brasero/bra-002
 
 
 Test-case name: brasero/bra-003
+This test will check that the Video project menu works
 <dl>
-    This test will check that the Video project menu works
     <dt>Open the Brasero Disc Burner</dt>
     <dt>Click "Video project"</dt>
         <dd>A "New Video Disc Project" window is shown</dd>
@@ -137,8 +137,8 @@ Test-case name: brasero/bra-003
 
 
 Test-case name: brasero/bra-004
+This test will check that the Copy disc feature works
 <dl>
-    This test will check that the Copy disc feature works
     <dt>Open the Brasero Disc Burner</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Click "Disc copy"</dt>
@@ -154,8 +154,8 @@ Test-case name: brasero/bra-004
 
 
 Test-case name: brasero/bra-005
+This test will check that Burn image feature works
 <dl>
-    This test will check that Burn image feature works
     <dt>Open "Brasero Disc Burner"</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Click on "Burn image"</dt>
@@ -173,8 +173,8 @@ Test-case name: brasero/bra-005
 
 
 Test-case name: brasero/bra-006
+This test will check that the plugins Work
 <dl>
-    This test will check that the plugins Work
     <dt>Open the Brasero Disc Burner</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Go to the top bar and click on "Edit" and later on "Plugins"</dt>
@@ -191,8 +191,8 @@ Test-case name: brasero/bra-006
 
 
 Test-case name: brasero/bra-007
+This test will check that the Help menu works
 <dl>
-    This test will check that the Help menu works
     <dt>Open the Brasero Disc Burner</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Press "F1"</dt>
@@ -217,8 +217,8 @@ Test-case name: brasero/bra-007
 </dl>
 
 Test-case name: brasero/bra-008
+This test will check that the Tools menu work
 <dl>
-    This test will check that the Tools menu work
     <dt>Open the Brasero Disc Burner</dt>
         <dd>Can you open Brasero correctly?</dd>
     <dt>Go to the top bar and click the "Tools" menu and later "Cover Editor"</dt>

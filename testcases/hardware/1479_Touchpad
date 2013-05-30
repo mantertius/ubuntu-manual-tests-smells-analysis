@@ -16,13 +16,13 @@ Case ID: hmo-001
     <dt>Double-tap-drag the test2.txt file to the Trash icon. Verify that dragging works correctly.</dt> 
 </dl>
 
-
 Verification
-
-<dd>Verify that the touchpad controls the mouse cursor onscreen.</dd> 
-<dd>Verify that left- and right-clicking work with the touchpad buttons.</dd> 
-<dd>Verify that tapping the touchpad works as a click.</dd> 
-<dd>Verify that dragging works with both the touchpad buttons and by tap-and-drag on the touchpad.</dd> 
+<dl>
+    <dd>Verify that the touchpad controls the mouse cursor onscreen.</dd> 
+    <dd>Verify that left- and right-clicking work with the touchpad buttons.</dd> 
+    <dd>Verify that tapping the touchpad works as a click.</dd> 
+    <dd>Verify that dragging works with both the touchpad buttons and by tap-and-drag on the touchpad.</dd> 
+</dl>
 
 
 <strong>Test Trackpad (Mac only)</strong>
@@ -43,11 +43,12 @@ Case ID: hmt-001
 </dl>
 
 Verification
-
-<dd>Verify that the trackpad controls the mouse cursor onscreen.</dd>
-<dd>Verify that left- and right-clicking work with the trackpad buttons.</dd>
-<dd>Verify that tapping the trackpad works as a click.</dd>
-<dd>Verify that dragging works with both the trackpad buttons and by tap-and-drag on the trackpad. </dd>
+<dl>
+    <dd>Verify that the trackpad controls the mouse cursor onscreen.</dd>
+    <dd>Verify that left- and right-clicking work with the trackpad buttons.</dd>
+    <dd>Verify that tapping the trackpad works as a click.</dd>
+    <dd>Verify that dragging works with both the trackpad buttons and by tap-and-drag on the trackpad. </dd>
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

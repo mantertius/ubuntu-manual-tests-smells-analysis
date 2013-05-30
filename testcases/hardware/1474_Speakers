@@ -21,7 +21,9 @@
     <dt>Left-click the Volume Control applet and uncheck Mute. Verify that the audio resumes.</dt> 
 </dl>
 <strong>Verification</strong>
-<dd>Verify that sound is played through the speakers.</dd> 
+<dl>
+    <dd>Verify that sound is played through the speakers.</dd>
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

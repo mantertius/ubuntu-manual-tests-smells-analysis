@@ -7,13 +7,14 @@
         <dd>The default desktop is displayed</dd>
     <dt>Use the desktop and open some applications to try FAMILY before installing</dt>
         <dd>Go to the Install FAMILY icon (usually on the desktop) and install from the Live session </dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components
-        <ul>
-            <li>Your system have at least the amount a space indicated</li>
-            <li>(If on a 'laptop'). Is plugged to a power source</li>
-            <li>Is connected to the Internet</li>
-        </ul>
-    </dt>
+    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
+        <dd>
+             <ul>
+                 <li>Your system have at least the amount a space indicated</li>
+                 <li>(If on a 'laptop'). Is plugged to a power source</li>
+                 <li>Is connected to the Internet</li>
+             </ul>
+        </dd>
         <dd>Check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>

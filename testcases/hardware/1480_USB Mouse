@@ -1,5 +1,4 @@
 <strong>Connect USB Mouse</strong>
-
 Case ID: hmu-001
 
 Using Unity
@@ -10,7 +9,6 @@ Using Unity
     <dt>Run lsusb in the terminal. Verify that the USB mouse is now listed.</dt> 
 </dl>
 
-
 Using GNOME Classic
 <dl>
     <dt>Open the Terminal (Applications -> Accessories -> Terminal).</dt> 
@@ -19,15 +17,14 @@ Using GNOME Classic
     <dt>Run lsusb in the terminal. Verify that the USB mouse is now listed. </dt> 
 </dl>
 
-
 Verification
-
-<dd>Verify that the mouse is detected by lsusb when connected.</dd>
-<dd> Please include your device's model in your feedback. </dd>
+<dl>
+    <dd>Verify that the mouse is detected by lsusb when connected.</dd>
+    <dd> Please include your device's model in your feedback. </dd>
+</dl>
 
 
 <strong>Test USB Mouse</strong>
-
 Case ID: hmu-002
 <dl>
     <dt>Move the mouse. Verify that the mouse cursor moves on screen.</dt>
@@ -37,17 +34,16 @@ Case ID: hmu-002
     <dt>Drag test.txt to the trash can. Verify that dragging works properly.</dt> 
 </dl>
 
-
 Verification
-
-<dd>Verify that the mouse controls the cursor onscreen.</dd>
-<dd>Verify that left- and right-clicking work.</dd>
-<dd>Verify that dragging works.</dd> 
-<dd>Please include your device's model in your feedback.</dd> 
+<dl>
+    <dd>Verify that the mouse controls the cursor onscreen.</dd>
+    <dd>Verify that left- and right-clicking work.</dd>
+    <dd>Verify that dragging works.</dd> 
+    <dd>Please include your device's model in your feedback.</dd> 
+</dl>
 
 
 <strong>Disconnect USB Mouse</strong>
-
 Case ID: hmu-003
 <dl>
     <dt>In the terminal, run lsusb. Verify that the USB mouse is listed.</dt>
@@ -56,13 +52,13 @@ Case ID: hmu-003
 </dl>
 
 Verification
-
-<dd>Verify that the mouse is no longer detected by lsusb when disconnected.</dd> 
-<dd>Please include your device's model in your feedback.</dd> 
+<dl>
+    <dd>Verify that the mouse is no longer detected by lsusb when disconnected.</dd> 
+    <dd>Please include your device's model in your feedback.</dd> 
+</dl>
 
 
 <strong>Reconnect USB Mouse</strong>
-
 Case ID: hmu-004
 <dl>
     <dt>In the terminal, run lsusb. Verify that no USB mouse is listed.</dt>
@@ -72,10 +68,11 @@ Case ID: hmu-004
 </dl>
 
 Verification
-
-<dd>Verify that the mouse is detected by lsusb when reconnected.</dd> 
-<dd>Verify that the mouse controls the cursor onscreen.</dd>   
-<dd>Please include your device's model in your feedback.</dd> 
+<dl>
+    <dd>Verify that the mouse is detected by lsusb when reconnected.</dd> 
+    <dd>Verify that the mouse controls the cursor onscreen.</dd>   
+    <dd>Please include your device's model in your feedback.</dd> 
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

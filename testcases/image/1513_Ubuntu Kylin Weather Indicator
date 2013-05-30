@@ -1,6 +1,6 @@
 Test-case name: IndicatorChinaWeather
+This test will check the Indicator China Weather can display the right weather information and  you can configure the application rightly.
 <dl>
-    This test will check the Indicator China Weather can display the right weather information and  you can configure the application rightly.
     <dt>Find the indicator icon of Indicator China Weather</dt>
         <dd>Did the Indicator China Weather autostart?</dd>
     <dt>When you first startup the Indicator China Weather, you need to configure your location. Click "Configure..." menu,then click "Locale" and click "Add(A)" button,input the location in chinese or in pinyin,click "Search" button and choose a locale then click "Forward(F)" and "Apply(A)" button,then click the "OK(O)" button to finish the configuration. </dt>

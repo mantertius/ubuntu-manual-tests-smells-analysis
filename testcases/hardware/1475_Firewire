@@ -5,10 +5,12 @@
     <dt>Disconnect the Firewire external hard drive from the computer.</dt>
     <dt>Repeat for each Firewire port on the computer.</dt> 
 </dl>
-<strong>Verification</strong>
 
-<dd>Verify that the drive icon appears on the desktop.</dd>
-<dd>Verify that the drive icon disappears when unmounted. </dd>
+<strong>Verification</strong>
+<dl>
+    <dd>Verify that the drive icon appears on the desktop.</dd>
+    <dd>Verify that the drive icon disappears when unmounted. </dd>
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

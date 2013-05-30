@@ -14,9 +14,9 @@ Case ID: snr-001
 
 Case ID: snr-002
 <dl>
-    Run the suspend/resume test script included in Ubuntu: 
+    <dt>Run the suspend/resume test script included in Ubuntu:</dt>
+        <dd>sudo /usr/share/checkbox/scripts/sleep_test -d -i 5</dd>
 </dl>
-<dd>sudo /usr/share/checkbox/scripts/sleep_test -d -i 5</dd>
 
 This will perform 5 suspend/resume tests. If your system does not wake itself up after 60 seconds of suspension, please press the power button momentarily to wake the system manually. If your system fails to wake at all and must be rebooted, report a bug and mark the test as failed. 
 

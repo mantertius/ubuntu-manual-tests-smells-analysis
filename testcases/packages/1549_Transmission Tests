@@ -1,6 +1,6 @@
 Test-case name: transmission/tra-001
+This test will check that transmission manage torrents correctly
 <dl>
-    This test will check that transmission manage torrents correctly
     <dt> Open transmission</dt>
         <dd>Can you open transmission correctly?</dd>
     <dt> Click on "Open a Torrent" button</dt>
@@ -27,8 +27,8 @@ Test-case name: transmission/tra-001
 
 Test-case name: transmission/tra-002
 depends: transmission/tra-001
+This test will check that the Torrent menu Works
 <dl>
-    This test will check that the Torrent menu Works
     <dt>Open the transmission</dt>
         <dd>Can you open transmission correctly?</dd>
     <dt>Select a torrent and click on "Properties"</dt>
@@ -62,8 +62,8 @@ depends: transmission/tra-001
 
 Test-case name: transmission/tra-003
 depends: transmission/tra-001
+This test will check that the Help menu works
 <dl>
-    This test will check that the Help menu works
     <dt>Open the transmission </dt>
         <dd>Can you open transmission correctly?</dd>
     <dt>Go to the top bar and click the "Help" menu and later "Message Log"</dt>
@@ -101,5 +101,5 @@ depends: transmission/tra-001
         <dd>The interface shows a licence?</dd>
 </dl>
 
-strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

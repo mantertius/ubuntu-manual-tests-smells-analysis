@@ -1,10 +1,12 @@
 Test-case name:Mousepad
-
-<dl>This test will check that Mousepad opens
+This test will check that Mousepad opens
+<dl>
     <dt>Open Mousepad from menu</dt>
         <dd>Mousepad opens with an unnamed text document</dd>
 </dl>
-<dl>This test will check that Mousepad can save and open saved files
+
+This test will check that Mousepad can save and open saved files
+<dl>
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
         <dd>Text appears in window</dd>
     <dt>Click File - Save</dt>
@@ -19,7 +21,9 @@ Test-case name:Mousepad
     <dt>Open File Manager from Menu - Accessories, navigate to saved file and double click to open in Mousepad</dt>
         <dd>Mousepad opens with saved text</dd>
 </dl>
-<dl>This test will check that Mousepad can find and highlight searched text
+
+This test will check that Mousepad can find and highlight searched text
+<dl>
     <dt>Open Mousepad from menu</dt>
         <dd>Mousepad opens with an unnamed text document</dd>
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
@@ -37,7 +41,9 @@ Test-case name:Mousepad
     <dt>Press esc</dt>
         <dd>Search box closes, focus returns to text document with search term highlighted</dd>
 </dl>
-<dl>This test will check that Mousepad can find and replace text, including case sensitivity and saves on close
+
+This test will check that Mousepad can find and replace text, including case sensitivity and saves on close
+<dl>
     <dt>Open Mousepad from menu</dt>
         <dd>Mousepad opens with an unnamed text document</dd>
     <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>

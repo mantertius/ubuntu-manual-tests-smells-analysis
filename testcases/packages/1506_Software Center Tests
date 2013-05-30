@@ -1,6 +1,6 @@
 Test-case name: SoftwareCenter/sc-001
+This test will check that SoftwareCenter can be open correctly
 <dl>
-    This test will check that SoftwareCenter can be open correctly
     <dt>Open Ubuntu Software Center</dt>
         <dd>Did Ubuntu Software Center launch?</dd>
 </dl>
@@ -8,8 +8,8 @@ Test-case name: SoftwareCenter/sc-001
 
 Test-case name: SoftwareCenter/sc-002
 depends: SoftwareCenter/sc-001
+This tests will check that Software Center can installs applications by Categories
 <dl>
-    This tests will check that Software Center can installs applications by Categories
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Go to the Categories panel and click on "Sound & Video"</dt>
@@ -35,12 +35,11 @@ depends: SoftwareCenter/sc-001
 </dl>
 
 
-
 Test-case name: SoftwareCenter/sc-003
 depends: SoftwareCenter/sc-001
 depends: SoftwareCenter/sc-002
+This test will check that Software Center can remove applications correctly
 <dl>
-    This tests will check that Software Center can remove applications correctly
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Click on the "Installed" icon</dt>
@@ -62,8 +61,8 @@ depends: SoftwareCenter/sc-002
 
 
 Test-case name: SoftwareCenter/sc-004
+This test will check that the search feature works
 <dl>
-    This test will check that the search feature works
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
@@ -76,8 +75,8 @@ Test-case name: SoftwareCenter/sc-004
 Test-case name: SoftwareCenter/sc-005
 depends: SoftwareCenter/sc-001
 depends: SoftwareCenter/sc-004
+This tests will check that Software Center can installs applications by search feature
 <dl>
-    This tests will check that Software Center can installs applications by search feature
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
@@ -105,14 +104,13 @@ depends: SoftwareCenter/sc-004
 </dl>
 
 
-
 Test-case name: SoftwareCenter/sc-006
 depends: SoftwareCenter/sc-001
 depends: SoftwareCenter/sc-004
 depends: SoftwareCenter/sc-005
+This test will check that Software Center can remove applications correctly
+This test will check that Software Center can installs applications by search feature
 <dl>
-    This tests will check that Software Center can remove applications correctly
-    This tests will check that Software Center can installs applications by search feature
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Move the cursor to the Search box at the right top of the Software Center and click on it</dt>
@@ -133,11 +131,10 @@ depends: SoftwareCenter/sc-005
 </dl>
 
 
-
 Test-case name: SoftwareCenter/sc-007
 depends: SoftwareCenter/sc-001
+This tests will check that Recommendations can be turned on
 <dl>
-    This tests will check that Recommendations can be turned on
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Go to the top bar and click on "View" and later on "Turn On Recommendations"</dt>
@@ -151,11 +148,10 @@ depends: SoftwareCenter/sc-001
         <dd>Does it show recommendations?</dd>
 </dl>
 
-
 Test-case name: SoftwareCenter/sc-008
 depends: SoftwareCenter/sc-001
+This tests will check that Recommendations can be turned off
 <dl>
-    This tests will check that Recommendations can be turned off
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Go to the top bar and click on "View" and later on "Turn Off Recommendations"</dt>
@@ -166,8 +162,8 @@ depends: SoftwareCenter/sc-001
 
 Test-case name: SoftwareCenter/sc-009
 depends: SoftwareCenter/sc-001
+This test will check that Software Sources works
 <dl>
-    This test will check that Software Sources works
     <dt>Open the Ubuntu Software Center</dt>
         <dd>The Ubuntu Software Center is launched</dd>
     <dt>Go to the top bar and click on "Edit" and later on "software Sources.."</dt>
@@ -199,8 +195,8 @@ depends: SoftwareCenter/sc-001
 
 Test-case name: SoftwareCenter/sc-011
 depends: SoftwareCenter/sc-001
+This test will check that Menu Help Works
 <dl>
-    this test will check that Menu Help Works
     <dt>Press "F1" to get help directly</dt>
         <dd>A new window should appear</dd>
     <dt>Try to navigate for all information there</dt>

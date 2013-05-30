@@ -1,6 +1,6 @@
 Test-case name: rhythmbox/rhy-001
+This test will check that Rhythmbox can play internet radio
 <dl>
-    This test will check that Rhythmbox can play internet radio
     <dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
         <dd>rhythmbox should launch</dd>
     <dt> In the Library list, select Radio</dt>
@@ -10,9 +10,10 @@ Test-case name: rhythmbox/rhy-001
     <dt> Pick a station and press the play button.</dt>
         <dd>Does the radio start playing?</dd>
 </dl>
+
 Test-case name: rhythmbox/rhy-002
+This test will check that Rhythmbox can play play podcast episodes
 <dl>
-    This test will check that Rhythmbox can play play podcast episodes
     <dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
         <dd>rhythmbox should launch</dd>
     <dt> Right-click on Podcasts, select New Podcast Feed</dt>
@@ -29,9 +30,10 @@ Test-case name: rhythmbox/rhy-002
     <dt> Double click on downloaded episode</dt>
         <dd>Does episode playback start?</dd>
 </dl>
+
 Test-case name: rhythmbox/rhy-003
+This test will check that Rhythmbox can install codecs and play stream from MTP-compatible players
 <dl>
-    This test will check that Rhythmbox can install codecs and play stream from MTP-compatible players
     <dd>Have any MTP-compatible MP3 player</dd>
 <dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
     <dd>rhythmbox should launch</dd>
@@ -40,9 +42,10 @@ Test-case name: rhythmbox/rhy-003
 <dt> Test playing music from the device.</dt>
     <dd>Did the easy codec installer recognize any codecs that aren't installed and install them? Did playback start?</dd>
 </dl>
+
 Test-case name: rhythmbox/rhy-004
+This test will check that Rhythmbox can play Last.FM radio
 <dl>
-    This test will check that Rhythmbox can play Last.FM radio
     <dd>Have Last.fm Account must be pre-registered and used for a time in order to get a play list.</dd>
 <dt> Open the dash and launch rhythmbox by pressing the super key, and then entering ‘rhythmbox’</dt>
     <dd>rhythmbox should launch</dd>
@@ -66,5 +69,6 @@ Test-case name: rhythmbox/rhy-004
 <dt> Select any track, click 'Play'</dt>
     <dd>Did playback start?</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

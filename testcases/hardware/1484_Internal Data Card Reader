@@ -16,11 +16,13 @@ Case ID: him-001
     <dt>Return to the suggestion window and select eject.</dt>
     <dt>Repeat for every type of media supported (e.g. CF, SD, MMC, etc.).</dt> 
 </dl>
-Verification
 
-<dd>Card is detected.</dd>
-<dd>A file can be created and deleted on the card.</dd>
-<dd>The card can be unmounted and disappears from the desktop. </dd>
+Verification
+<dl>
+    <dd>Card is detected.</dd>
+    <dd>A file can be created and deleted on the card.</dd>
+    <dd>The card can be unmounted and disappears from the desktop. </dd>
+</dl>
 
 <strong>Reconnect Card Reader and Verify Remounting</strong>
 
@@ -31,10 +33,12 @@ Case ID: him-002
     <dt>Click eject.</dt>
     <dt>Verify that window disappears. </dt>
 </dl>
-Verification
 
-<dd>Card is detected.</dd>
-<dd>The card can be unmounted and disappears from the desktop. </dd>
+Verification
+<dl>
+    <dd>Card is detected.</dd>
+    <dd>The card can be unmounted and disappears from the desktop. </dd>
+</dl>
 
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

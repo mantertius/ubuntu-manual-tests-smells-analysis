@@ -5,13 +5,14 @@
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components
-        <ul>
-            <li>Your system have at least the amount a space indicated</li>
-            <li>(If on a 'laptop'). Is plugged to a power source</li>
-            <li>Is NOT connected to the Internet, check that you have the Network Manager icon in the Notification Area showing as disconnected</li>
-        </ul>
-    </dt>
+    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
+        <dd>
+            <ul>
+                <li>Your system have at least the amount a space indicated</li>
+                <li>(If on a 'laptop'). Is plugged to a power source</li>
+                <li>Is NOT connected to the Internet, check that you have the Network Manager icon in the Notification Area showing as disconnected</li>
+            </ul>
+        </dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Wireless' screen is displayed</dd>
     <dt>Select the 'Connect to this network' radio button and select a Wireless network to connect to from the list under it, and insert the Wireless network's password in the 'Password' field</dt>
