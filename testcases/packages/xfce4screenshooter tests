@@ -8,5 +8,14 @@ Test-case name: xfce4 screenshooter/xfce4-screenshooter-001
 	<dt>Select the Screenshot item</dt>
 		<dd>The Screenshoot window should open</dd>
 </dl>
+<dl>
+	This test will check that Xfce4 Screenshoot saves a screenshot of the whole screen as you see it
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window shoul be displayed</dd>
+	<dt>Select the Entire screen radio button option, under the "Region to capture" section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the Save radio button option, under the "Action" section and click the ok button</dt>
+		<dd>A save dialog shoud be displayed, allowing to set the save location and the name of the file</dd>
+</dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
