@@ -1,0 +1,12 @@
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-001
+<dl>
+	This test will check that Xfce4 Screenshoot opens from Accessories category of Xfce's main menu
+	<dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Accessories option</dt>
+		<dd>A drop down list should appear</dd>
+	<dt>Select the Screenshot item</dt>
+		<dd>The Screenshoot window should open</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
