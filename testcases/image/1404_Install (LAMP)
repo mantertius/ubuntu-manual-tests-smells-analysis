@@ -19,7 +19,7 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>At partitioning select "Guided - Use entire disk"</dt>
     <dt>Select disk to partition</dt>
     <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
-    <dt>At "http proxy" request, let it blank and press enter</dt>
+    <dt>At "http proxy" request, leave it blank and press enter</dt>
     <dt>At managing upgrades select "No automatic updates"</dt>
     <dt>At Software selection, choose "LAMP server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
     <dt>Select to install Grub in the master boot record</dt>
