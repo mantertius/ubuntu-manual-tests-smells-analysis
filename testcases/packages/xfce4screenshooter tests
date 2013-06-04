@@ -8,14 +8,171 @@ Test-case name: xfce4 screenshooter/xfce4-screenshooter-001
 	<dt>Select the Screenshot item</dt>
 		<dd>The Screenshoot window should open</dd>
 </dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-002
 <dl>
 	This test will check that Xfce4 Screenshoot saves a screenshot of the whole screen as you see it
 	<dt>Open Screenshoot</dt>
-		<dd>The take a screenshoot window shoul be displayed</dd>
-	<dt>Select the Entire screen radio button option, under the "Region to capture" section and click the OK button</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
 		<dd>The screenshoot action window should be displayed</dd>
-	<dt>Select the Save radio button option, under the "Action" section and click the ok button</dt>
+	<dt>Select the "Save" option, under the 'Action' section and click the ok button</dt>
 		<dd>A save dialog shoud be displayed, allowing to set the save location and the name of the file</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-003
+<dl>
+	This test will check that Xfce4 Screenshoot copies a screenshot of the whole screen as you see it to the clipboard
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Copy to the clipboard" option, under the 'Action' section and click the OK button</dt>
+		<dd>The screenshoot should be copied to the clipboard, allowing it to be pasted in another application</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-004
+<dl>
+	This test will check that Xfce4 Screenshoot opens a copie of a screenshot of the whole screen as you see it with another application
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Open with:" option, under the 'Action' section</dt>
+		<dd>The drop-down list box should now be enabled and clickable</dd>
+	<dt>Click on the drop-down list</dt>
+		<dd>A list of available applications should drop down</dd>
+	<dt>Select one of the available applications and click the OK button</dt>
+		<dd>The screenshot should be saved to the system's temporary directory and opened with the application chosen from the drop-down list</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-005
+<dl>
+	This test will check that Xfce4 Screenshoot allows to host a copie of a screenshot of the whole screen as you see it on a free online hosting service
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Host on ZimageZ" option, under the 'Action' section and click the OK button</dt>
+		<dd>ZimageZ dialog window should open</dd>
+	<dt>Fill all the fields of ZimageZ dialog window and click the OK button</dt>
+		<dd>The screenshoot should be hosted on this free online hosting service, and easily shareable with other people</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-006
+<dt>
+	This test will check that Xfce4 Screenshoot saves a screenshot of the active window
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Active window" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Save" option, under the 'Action' section and click the ok button</dt>
+		<dd>A save dialog shoud be displayed, allowing to set the save location and the name of the file</dd>
+</dt>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-007
+<dt>
+	This test will check that Xfce4 Screenshoot copies a screenshot of the active window to the clipboard
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Active window" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Copy to the clipboard" option, under the 'Action' section and click the OK button</dt>
+		<dd>The screenshoot should be copied to the clipboard, allowing it to be pasted in another application</dd>
+</dt>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-008
+<dl>
+	This test will check that Xfce4 Screenshoot opens a copie of a screenshot of the active window with another application
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Active window" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Open with:" option, under the 'Action' section</dt>
+		<dd>The drop-down list box should now be enabled and clickable</dd>
+	<dt>Click on the drop-down list</dt>
+		<dd>A list of available applications should drop down</dd>
+	<dt>Select one of the available applications and click the OK button</dt>
+		<dd>The screenshot should be saved to the system's temporary directory and opened with the application chosen from the drop-down list</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-009
+<dl>
+	This test will check that Xfce4 Screenshoot allows to host a copie of a screenshot of the active window on a free online hosting service
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Active window" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Host on ZimageZ" option, under the 'Action' section and click the OK button</dt>
+		<dd>ZimageZ dialog window should open</dd>
+	<dt>Fill all the fields of ZimageZ dialog window and click the OK button</dt>
+		<dd>The screenshoot should be hosted on this free online hosting service, and easily shareable with other people</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-010
+<dt>
+	This test will check that Xfce4 Screenshoot saves a screenshot by clicking and dragging a rectangle over a area of the screen, before releasing the mouse button
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Select a region" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screen should darken</dd>
+	<dt>Click the left mouse button and drag a rectangle over a area of the screen, before releasing the mouse button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Save" option, under the 'Action' section and click the ok button</dt>
+		<dd>A save dialog shoud be displayed, allowing to set the save location and the name of the file</dd>
+</dt>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-011
+<dt>
+	This test will check that Xfce4 Screenshoot copies a screenshot to the clipboard, by clicking and dragging a rectangle over a area of the screen, before releasing the mouse button
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Select a region" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screen should darken</dd>
+	<dt>Click the left mouse button and drag a rectangle over a area of the screen, before releasing the mouse button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Copy to the clipboard" option, under the 'Action' section and click the OK button</dt>
+		<dd>The screenshoot should be copied to the clipboard, allowing it to be pasted in another application</dd>
+</dt>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-012
+<dl>
+	This test will check that Xfce4 Screenshoot opens a copie of a screenshot with another application, by clicking and dragging a rectangle over a area of the screen, before releasing the mouse button
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Select a region" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screen should darken</dd>
+	<dt>Click the left mouse button and drag a rectangle over a area of the screen, before releasing the mouse button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Open with:" option, under the 'Action' section</dt>
+		<dd>The drop-down list box should now be enabled and clickable</dd>
+	<dt>Click on the drop-down list</dt>
+		<dd>A list of available applications should drop down</dd>
+	<dt>Select one of the available applications and click the OK button</dt>
+		<dd>The screenshot should be saved to the system's temporary directory and opened with the application chosen from the drop-down list</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-013
+<dl>
+	This test will check that Xfce4 Screenshoot allows to host a copie of a screenshot on a free online hosting service, by clicking and dragging a rectangle over a area of the screen, before releasing the mouse button
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select the "Select a region" option, under the 'Region to capture' section and click the OK button</dt>
+		<dd>The screen should darken</dd>
+	<dt>Click the left mouse button and drag a rectangle over a area of the screen, before releasing the mouse button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select the "Host on ZimageZ" option, under the 'Action' section and click the OK button</dt>
+		<dd>ZimageZ dialog window should open</dd>
+	<dt>Fill all the fields of ZimageZ dialog window and click the OK button</dt>
+		<dd>The screenshoot should be hosted on this free online hosting service, and easily shareable with other people</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-014
+<dl>
+	This test will check that Xfce4 Screenshoot allows to select whether or not the screenshot will include the mouse pointer
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Select one of the options, under the 'Region to capture', tick the "Capture the mouse pointer" option section and click the OK button</dt>
+		<dd>The screenshoot action window should be displayed</dd>
+	<dt>Select one of the options, under the 'Action' section and click the ok button</dt>
+		<dd>The saved screenshoot should include the mouse pointer</dd>
+</dl>
+Test-case name: xfce4 screenshooter/xfce4-screenshooter-015
+<dl>
+	This test will check that Xfce4 Screenshoot allows to set the delay that will elapse between pressing the "OK" button and screenshot being taken
+	<dt>Open Screenshoot</dt>
+		<dd>The take a screenshoot window should be displayed</dd>
+	<dt>Point the mouse pointer to the textbox's top arrow button, under the 'Delay before capturing'</dt>
+		<dd>The number of seconds should increase accordingly</dd>
+	<dt>Select one of the options, under the 'Region to capture' and click the OK button</dt>
+		<dd>The screenshot active window should only be displayed after the number of established seconds has elapsed</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
