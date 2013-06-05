@@ -1,0 +1,12 @@
+Test-case name: xfce4 panel/xfce4-panel-001
+<dl>
+	This test will check that Xfce4 Screenshoot allows to insert plugins into the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select teh 'Add New Items...' option</dt>
+		<dd>Add New Items dialog window should appear</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
