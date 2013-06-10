@@ -37,7 +37,7 @@ The goal of this test case is to check that localization support is functional d
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
-        <dd>The installer's slideshow slides are localized</dd>
+        <dd>The installer's slideshow slides are completely localized</dd>
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>
