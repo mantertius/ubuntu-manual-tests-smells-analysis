@@ -64,9 +64,9 @@
         <dd>Xchat should automatically change this to "the"</dd>
     <dt>Click settings -> preferences -> colors, change one that you know what does</dt>
         <dd>The color is changed as you set it</dd>
-    <dt>In the message box, type "/away test"</dt>
+    <dt>In the message box, type "/away"</dt>
         <dd>You will now appear in grey in the list of people online</dd>
-    <dt>In the message box, type "/quit test2"</dt>
+    <dt>In the message box, type "/quit"</dt>
         <dd>You should be disconnected from the current server</dd>
 </dl>
 
