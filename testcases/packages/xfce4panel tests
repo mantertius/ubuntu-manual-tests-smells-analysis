@@ -68,7 +68,7 @@ Test-case name: xfce4 panel/xfce4-panel-006
 </dl>
 Test-case name: xfce4 panel/xfce4-panel-007
 <dl>
-	This test will check that Xfce4 Panel allows to remove the currently selected panel by right clicking on it
+	This test will check that Xfce4 Panel allows to remove a panel panel through applications menu
 	<dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
 		<dd>A menu should drop down</dd>
 	<dt>Select the Settings Manager option</dt>
@@ -77,6 +77,118 @@ Test-case name: xfce4 panel/xfce4-panel-007
 		<dd>Panel dialog window should appear</dd>
 	<dt>Point your mouse cursor to the '-' button and click it</dt>
 		<dd>The currently selected panel should be removed</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-008
+<dl>
+	This test will check that Xfce4 Panel allows to remove the currently selected panel by right clicking on it
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point your mouse cursor to the '-' button and click it</dt>
+		<dd>The currently selected panel should be removed</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-009
+<dl>
+	This test will check that Xfce4 Panel allows to set the panel orientation
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Click on the 'Mode' drop-down list under the "General" section</dt>
+		<dd>A list of possible panel orientations should appear</dd>
+	<dt>Select one of the desired panel orientation</dt>
+		<dd>The panel orientation should be promptly set to the selected orientation</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-010
+<dl>
+	This test will check that Xfce4 Panel allows to lock or move the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Tick the 'Lock panel' option under the "General" section</dt>
+		<dd>The handles on the panel which allow to move it shouldn't be shown</dd>
+	<dt>Untick the 'Lock panel' option under the "General" section</dt>
+		<dd>The panel should be possible to drag and move anywhere on the screen. The panel shoul also snap to the edges of the screen</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-011
+<dl>
+	This test will check that Xfce4 Panel allows to automatically show and hide the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Tick the 'Automatically show and hide the panel' option under the "General" section</dt>
+		<dd>The panel should automatically hide if the mouse is not hovering over it</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-012
+<dl>
+	This test will check that Xfce4 Panel allows the windows to stretch to the screen edge
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Tick the 'Don't reserve space on borders' option under the "General" section</dt>
+		<dd>The windows should stretch to the screen edge overlaping the panel</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-013
+<dl>
+	This test will check that Xfce4 Panel allows to change the height (or width, if the panel is in the vertical or deskbar mode) of the single row of the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point the mouse pointer to the 'Row size (pixels):' slidebar under the "Measurements" section and move the slider to the right</dt>
+		<dd>The total panel height (or width) should increase</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-014
+<dl>
+	This test will check that Xfce4 Panel allows to change the number of rows (or columns, if the panel is in the vertical or deskbar mode) of the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point the mouse pointer to the 'Number of rows:' slidebar under the "Measurements" section and move the slider to the right</dt>
+		<dd>Small panel plugins, such as launchers, shoul be laid out in multiple rows (or columns), while larger ones, like window buttons should continue to occupy the whole panel height (or width)</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-015
+<dl>
+	This test will check that Xfce4 Panel allows to change the width (or height, if the panel is in the vertical or deskbar mode) of the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point the mouse pointer to the 'Length (%):' slidebar under the "Measurements" section and move the slider to the right</dt>
+		<dd>The total panel width (or height) should increase as a percentage of the width (or height) of the monitor screen</dd>
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-016
+<dl>
+	This test will check that Xfce4 Panel allows to automatically increase the length of the panel length to accommodate all the plugins
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Tick the 'Automatically increase length' option under the "Measurements" section</dt>
+		<dd>The panel should expand as the panel contents change</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
