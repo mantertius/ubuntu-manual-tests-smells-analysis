@@ -1,9 +1,10 @@
 The goal of this test case is to check that localization support is functional during the installation, that language packs are downloaded and installed correctly from the Internet and that the input methods for either Chinese, Japanese or Korean are working.
 <dl>
-    <dt>Power up your machine and insert the install media</dt>
-    <dt>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dt>
-    <dt>Select 中文(简体) (Simplified Chinese), 中文(繁體) (Traditional Chinese), 日本語 (Japanese) or 한국어 (Korean) as language</dt>
-        <dd>The installer should be localized from now on</dd>
+    <dt>Start your machine with the install media in place.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+        <dd>Language list will appear</dd>
+    <dt>Use arrow keys to select 中文(简体) (Simplified Chinese), 中文(繁體) (Traditional Chinese), 日本語 (Japanese) or 한국어 (Korean) as language and press Enter</dt>
+        <dd>Language list will close.</dd>
+        <dd>The installer is localized from this screen onwards</dd>
     <dt>Click on the Install FAMILY button</dt>
         <dd>
             <ul>

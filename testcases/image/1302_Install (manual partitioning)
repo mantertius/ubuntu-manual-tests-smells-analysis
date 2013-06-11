@@ -18,7 +18,7 @@
         <dd>A screen showing the current hard disks and partition layouts is displayed</dd>
     <dt>Select the drive you wish to partition and use the Add '+', Change 'Change...', and Delete '-' buttons to create your desired scheme</dt>
         <dd>The screen updates showing your desired partitions and mount points</dd>
-    <dt>Once you have you partitioning scheme laid out and are happy click on Install Now</dt>
+    <dt>Once you have your required partitioning scheme laid out, click on Install Now</dt>
         <dd>The partitions and disk layouts are created. Then, the 'Where are you?' screen is displayed</dd>
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and a city from your area</dd>
@@ -31,6 +31,7 @@
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow should be entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>

@@ -4,7 +4,7 @@ The goal of this test case is to check that the Easy Install option in VMWare Pl
     <dt>Create a new virtual machine in VMWare Player</dt>
         <dd>The "New Virtual Machine Wizard" screen appears</dd>
     <dt>Select the *.iso file</dt>
-        <dd>The screen should display that "This operating system will use Easy Install"</dd>
+        <dd>The screen displays that "This operating system will use Easy Install"</dd>
     <dt>Click Next</dt>
         <dd>The "Easy Install Information" screen appears</dd>
     <dt>Enter your Full Name, username, and password and click next</dt>

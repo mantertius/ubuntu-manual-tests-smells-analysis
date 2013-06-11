@@ -35,6 +35,7 @@
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow should be entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>

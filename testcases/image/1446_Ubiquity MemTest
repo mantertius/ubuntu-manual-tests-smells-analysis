@@ -1,5 +1,5 @@
 <dl>
-    <dt>While the amber screen is showing press any button to enter the main menu</dt>
+    <dt>Start your machine with the install media in place.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
     <dt>Select your language and press <strong>enter</strong></dt>
     <dt>From the main menu select <strong>Test Memory</strong> and press <strong>Enter</strong></dt>
     <dt>Wait until the test finishes</dt>
@@ -7,6 +7,4 @@
     <dt>Press <strong>ESC</strong></dt>
         <dd>Ensure that the system restarts</dd>
 </dl>
-    <strong>
-        If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

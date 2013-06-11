@@ -55,6 +55,21 @@
         <dd>Message appears in channel</dd>
 </dl>
 
+<dl>This test checks some of xchat's more advanced features
+    <dt>Click your nickname</dt>
+        <dd>A dialogue windows that allows you to change your nickname appears</dd>
+    <dt>Type a new nickname, the click OK</dt>
+        <dd>Your nickname is changed, in the nickname box, the list of people online and all servers and channels</dd>
+    <dt>In the message box, type "teh".</dt>
+        <dd>Xchat should automatically change this to "the"</dd>
+    <dt>Click settings -> preferences -> colors, change one that you know what does</dt>
+        <dd>The color is changed as you set it</dd>
+    <dt>In the message box, type "/away test"</dt>
+        <dd>You will now appear in grey in the list of people online</dd>
+    <dt>In the message box, type "/quit test2"</dt>
+        <dd>You should be disconnected from the current server</dd>
+</dl>
+
 <dl>This test checks that XChat closes properly, and will reopen with the settings previously applied
     <dt>Click X in top right (or left depending on Desktop Environment)</dt>
         <dd>Quit XChat window appears</dd>
