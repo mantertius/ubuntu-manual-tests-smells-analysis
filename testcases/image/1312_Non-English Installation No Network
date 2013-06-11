@@ -1,40 +1,57 @@
 The goal of this test case is to check that localization support is functional during the installation, that language packs are installed correctly for those languages in the ISO, and that an informational message is shown prompting users to connect to the Internet to fully install language support for those languages not included.
 <dl>
-    <dt>Power up your machine insert the install media</dt>
-    <dt>Select a non English language for the install and press Enter</dt>
-    <dt>Select the Install FAMILY option</dt>
-    <dt>Once Ubiquity starts click on Forward</dt>
-        <dd>The installer should be localized from the first screen</dd>
-    <dt>Check the language you selected is correct on the list and click Forward</dt>
-    <dt>Select your timezone and click Forward</dt>
-    <dt>Check your keyboard layout is correct or alter click Forward</dt>
-    <dt>Select Erase and use the entire disk and click Forward</dt>
-    <dt>Input your initial user details and password (Note admin can not be used it is a dedicated Linux User)</dt>
-    <dt>Tick Log in automatically and click on Forward</dt>
-    <dt>Check the details are correct on the final page and click Install</dt>
-    <dt>Check that the installer's slideshow slides are localized</dt>
-    <dt>Once the installer has finished choose to Restart the system now</dt>
-    <dt>Remove the disc and press Enter</dt>
-    <dt>Allow the machine to reboot and login</dt>
-    <dt>Verify that your system is localized:</dt>
+    <dt>Start your machine with the install media in place and no network connection present.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+        <dd>Language list will appear</dd>
+    <dt>Use arrow keys to select language and press Enter</dt>
+        <dd>Language list will close.</dd>
+        <dd>The installer is localized from this screen onwards</dd>
+    <dt>Boot up the iso using a CD/DVD or USB Key to a Live Session</dt>
+        <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
+    <dt>Click on the Install FAMILY icon</dt>
+        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
+    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
         <dd>
             <ul>
-                <li>Language packs included in the Live CD: Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt), Xhosa (xh)  (Note: this list might vary between milestones)</li>
-                <li>If your language is one in the list above:
-                    <ul>
-                        <li>Common translations are installed as part of language packs</li>
-                        <li>A pop up shows saying your language support is not complete</li>
-                    </ul>
-                </li>
-                <li>If your language is not in the list above:
-                    <ul>
-                        <li>Common translations in language packs will not be installed</li>
-                        <li>A pop up shows saying your language support is not complete</li>
-                    </ul>
-                </li>
+                <li>Your system have at least the amount a space indicated</li>
+                <li>(If on a 'laptop'). Is plugged to a power source</li>
+                <li>Is connected to the Internet</li>
             </ul>
         </dd>
-    <dt>Check that the calendar shows the regional settings correctly (Note: only in languages on the list above)</dt>
+        <dd>Check marks represent the state of your system accurately</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Installation type' screen is displayed</dd>
+    <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
+        <dd>The 'Erase disk and install FAMILY' radio button should be checked</dd>
+    <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
+        <dd>If there is only one hard disk, the installer should skip to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
+    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <dd>Selected drive is displayed on the chart</dd>
+    <dt>Verify that the full drive space is allocated</dt>
+        <dd>Full drive space is allocated for installation</dd>
+    <dt>Click on Install Now button</dt>
+        <dd>The 'Where are you?' screen is displayed</dd>
+    <dt>Select your timezone, and click on the continue button</dt>
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds to your keyboard</dd>
+    <dt>Select your keyboard layout and click on continue</dt>
+        <dd>The 'Who are you?' screen appears</dd>
+    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+    <dt>Click on the continue button</dt>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The installer's slideshow slides are completely localized</dd>
+    <dt>Wait for the installer to finish</dt>
+        <dd>An 'Installation Complete' dialog appears</dd>
+    <dt>Click the Restart now button</dt>
+        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+    <dt>Remove the disc and press enter</dt>
+        <dd>The machine has been rebooted</dd>
+    <dt>Allow the machine to reboot</dt>
+        <dd>The system boots properly and loads into FAMILY</dd>
+    <dt>Verify that your system is localized</dt>
+        <dd>If you aren't using Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt) or Xhosa (xh) a pop up appears showing saying your language support is not complete</dd>
+        <dd>For any language, the system has to be fully localized. Note: the translation coverage of some languages might not be complete</dd>
+        <dd>If you are using one of the above languages the calendar shows the regional settings correctly</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

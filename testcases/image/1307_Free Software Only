@@ -43,6 +43,7 @@
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The slideshow should be entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>
@@ -60,4 +61,4 @@
     <dt>Verify that the linux-restricted-modules package has not been installed by typing <pre>dpkg -l linux-restricted-* |  grep -vE "^[a-z]n"</pre></dt>
         <dd>No packages printed (some lines of text will appear, but after +=====etc sequence username command prompt line will appear)</dd>
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

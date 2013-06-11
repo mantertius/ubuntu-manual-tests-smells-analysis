@@ -2,8 +2,8 @@
 This test will check that Abiword can be started
 
 <dl>
-    <dt>Open Abiword.</dt>
-        <dd>Did Abiword launch?</dd>
+    <dt>Open Abiword</dt>
+        <dd>Abiword opens succesfully</dd>
 </dl>
 
 Test-case name:abiword/abi-002
@@ -11,32 +11,32 @@ This test will check that  Abiword can open and save .abw files
 
 <dl>
     <dt>Open a new text document.</dt>
-        <dd>Has a new unnamed text document appeared?</dd>
+        <dd>A new unnamed text document appears</dd>
     <dt>Add text and save it in .abw format.</dt>
-        <dd>After inserting some text, is the "Save" icon is enabled?</dd>
+        <dd>After inserting some text, the "Save" icon is enabled</dd>
     <dt>Save the file</dt>
-        <dd>Did the file save correctly?</dd>
-    <dt>Open the saved file again.</dt>
-        <dd>Did the file open correctly?</dd>
-    <dt>Close the file and open the saved file again.</dt>
-        <dd>Can the file be opened again after closing?</dd>
+        <dd>The file saves correctly</dd>
+    <dt>Open the saved file again</dt>
+        <dd>The file opens correctly</dd>
+    <dt>Close the file and open the saved file again</dt>
+        <dd>The file ca be opened again after closing</dd>
     <dt>Make some changes to the file then close the window by pressing the 'x' on the top of the window.</dt>
-        <dd>Did a dialog box ask you to save changes?</dd>
-        <dd>Did the Application correctly close without error?</dd>
+        <dd>A dialog box asks you to save changes</dd>
+        <dd>The Application correctly closes without error</dd>
 </dl>
 
 Test-case name:abiword/abi-003
 This test will check that Abiword can spell check
 
 <dl>
-     <dt>Enter a few spelling errors.</dt>
-        <dd>Are there red wave lines under misspelled words in the document?</dd>
-     <dt>Now Press F7.</dt>
-        <dd>A window titled with "Spelling” should appear, there now should be some suggestion words in the suggestions list?</dd>
-     <dt>Select a word from the suggestion list and press the "Change" button.</dt>
-        <dd>The word in the document should be replaced with the one you selected from the suggestion list, and it should be no longer marked with a red wave line in the document.</dd>
-     <dt>Press the “Change” button as many times as necessary till there are no more spelling mistakes in the document.</dt>
-        <dd>Did all the spelling mistakes get replaced, were the words correctly suggested?</dd>
+    <dt>Enter a few spelling errors.</dt>
+        <dd>There are red wave lines under misspelled words in the document</dd>
+    <dt>Now Press F7.</dt>
+        <dd>A window titled "Spelling” appears, there now are some suggested words in the suggestions list</dd>
+    <dt>Select a word from the suggestion list and press the "Change" button.</dt>
+        <dd>The word in the document is replaced with the one you selected from the suggestion list, and it is no longer marked with a red wave line in the document</dd>
+    <dt>Press the “Change” button as many times as necessary till there are no more spelling mistakes in the document.</dt>
+        <dd>All the spelling mistakes get replaced, the words are correctly suggested</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

@@ -1,14 +1,15 @@
 <dl>
     <dt>Login as the user you created, or ensure that you are auto-logged in as the user created during setup if you checked the auto-login option</dt>
         <dd>The new user's desktop is presented</dd>
-    <dt>Execute the following command on the command line: <pre>lsb_release -rd</pre></dt>
+    <dt>Execute the following commands on the command line:</dt>
+    <dt><pre>lsb_release -rd</pre></dt>
         <dd>Both the description and the release presented matches the version of FAMILY you installed</dd>
-    <dt>Execute the following command on the command line: <pre>arch</pre></dt>
-        <dd>Verify the result correctly lists the architecture of the installation you installed. For example, x86_64 for 64-bit x86 machine.</dd>
-    <dt>Execute the following command on the command line: <pre>sudo sfdisk -l</pre></dt>
-        <dd>Verify the partition scheme displayed matches the partition scheme you chose during installation</dd>
-    <dt>Execute the following command on the command line: <pre>sudo apt-get update</pre></dt>
-        <dd>Apt should hit each of the package mirrors and update all of them without error</dd>
+    <dt><pre>arch</pre></dt>
+        <dd>The result correctly lists the architecture of the installation you installed. For example, x86_64 for 64-bit x86 machine.</dd>
+    <dt><pre>sudo sfdisk -l</pre></dt>
+        <dd>The partition scheme displayed matches the partition scheme you chose during installation</dd>
+    <dt><pre>sudo apt-get update</pre></dt>
+        <dd>Apt hits each of the package mirrors and updates all of them without error</dd>
     <dt>Launch 'software-updater' (precise and earlier version are called update-manager) and install any updates presented</dt>
         <dd>The updates are downloaded and installed without error</dd>
     <dt>Launch 'firefox' and navigate to http://www.ubuntu.com</dt>
