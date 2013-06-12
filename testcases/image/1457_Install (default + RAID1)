@@ -26,15 +26,15 @@ Server basic RAID1 install
     <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
         <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
     <dt>Test booting from a cold-degraded array:</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array on a single disk (note that you may have to wait up to 5 minutes for mdadm to time out and boot into degraded mode):</dd>
         <dd>cat /proc/mdstat</dd>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>/!\ If you simply disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected - you risk disk corruption; see bug 557429)</dd>
         <dd>Reconnect the second disk (disk2) - both disks now connected.</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
         <dd>Check that the system boots correctly (there should be no error or delay)</dd>
         <dd>Check the status of the raid arrays:</dd>
         <dd>cat /proc/mdstat</dd>
@@ -50,9 +50,9 @@ Server basic RAID1 install
         <dd>Check that system boots correctly from the degraded RAID1 array on a single disk:</dd>
         <dd>cat /proc/mdstat</dd>
     <dt>Test automatic syncing of degraded array:</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Reconnect the first disk (so both are now connected)</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
     <dt>Wait for both drives to be back in sync:</dt>
         <dd>cat /proc/mdstat</dd>
     <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
@@ -60,24 +60,24 @@ Server basic RAID1 install
     <dt>Make sure that the BOOT_DEGRADED setting is "FALSE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
         <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
     <dt>Test booting from a cold-degraded array:</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
         <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
         <dd>Say yes</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
         <dd>cat /proc/mdstat</dd>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected.</dd>
-        <dd>Poweron the system.</dd>
+        <dd>Power on the system.</dd>
         <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
         <dd>Say yes</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
         <dd>cat /proc/mdstat</dd>
     <dt>Re-add/sync the arrays again</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Reconnect the first disk (so both are now connected)</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
         <dd>Add the missing drives back to the RAIDs:</dd>
         <dd>sudo mdadm -a /dev/mdX /dev/MISSING-DEVICE</dd>
     <dt>Test booting from a hot-degraded array:</dt>
@@ -117,20 +117,20 @@ Server with LUKS on RAID1 install
     <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
         <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
     <dt>Test booting from a cold-degraded array:</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array on a single disk (note that you may have to wait up to 5 minutes for mdadm to time out and boot into degraded mode):</dd>
         <dd>cat /proc/mdstat</dd>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected. This results in booting the other half of the array, to see if this array segmentation is detected correctly afterwards. (see Bug #557429)</dd>
-        <dd>Poweron the system.</dd>
+        <dd>Power on the system.</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array on a single disk:</dd>
         <dd>cat /proc/mdstat</dd>
     <dt>Test automatic re-syncing of degraded array:</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Reconnect the first disk (so both are now connected)</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
     <dt>Wait for both drives to be back in sync:</dt>
         <dd>cat /proc/mdstat</dd>
     <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
@@ -138,16 +138,16 @@ Server with LUKS on RAID1 install
     <dt>Make sure that the BOOT_DEGRADED setting is "FALSE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
         <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
     <dt>Test booting from a cold-degraded array:</dt>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
-        <dd>Poweron the system</dd>
+        <dd>Power on the system</dd>
         <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
         <dd>Say yes</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
         <dd>cat /proc/mdstat</dd>
-        <dd>Poweroff the system</dd>
+        <dd>Power off the system</dd>
         <dd>Disconnect the first disk (disk1) and reconnect the second disk (disk2) - disk 1 disconnected, disk 2 connected.</dd>
-        <dd>Poweron the system.</dd>
+        <dd>Power on the system.</dd>
         <dd>Check that on boot a question to enable and boot from a degraded array is asked.</dd>
         <dd>Say yes</dd>
         <dd>Check that system boots correctly from the degraded RAID1 array:</dd>
