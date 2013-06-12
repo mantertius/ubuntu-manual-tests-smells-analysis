@@ -1,40 +1,40 @@
-<dd>The following tests require a music playlist consisting of 2 or more pieces of music.</dd>
+<strong>The following tests require a music playlist consisting of 2 or more pieces of music.</strong>
 
 <strong>Multimedia keys (Totem)</strong>
 Case ID: khk-001
-
+This tests that totem can respond to Multimedia keys on a keyboard
 <dl>
-    <dt>Click on Ubuntu Logo, search Movie Player and open a playlist.</dt> 
-    <dt>Press on the Play key /!\ This can be combined with Pause key</dt> 
+    <dt>Click on Ubuntu Logo, search for any open Movie Player</dt> 
+        <dd>Movie player should open</dd>
+    <dt>Open a playlist</dt>
+    <dt>Press on the Play key (This can be combined with Pause key)</dt> 
+        <dd>This should start playing the playlist</dd> 
     <dt>Press on the Stop key. To stop the track playing</dt> 
+        <dd>The Pause (or Play key if there is no separate Pause key) should pauses playback</dd> 
     <dt>Press on the Play key. To start the track playing again</dt> wing only apply if you have the internet hot keys.
-    <dt>Press on the Volume Up key. To lower the volume</dt> 
-    <dt>Press on the Volume Down Key. To raise the volume</dt> 
-    <dt>Press on the Volume Mute key. To stop sound</dt> 
-    <dt>Press on the Volume Mute key. To restart sound</dt> 
-    <dt>Press on the Forward Track key. To skip forward a track</dt> 
-    <dt>Press on the Reverse Track key. To rewind a track</dt> 
+        <dd>Playing should resume</dd> 
+    <dt>Press on the Volume Up key</dt>
+        <dd>The volume should increase</dd>  
+    <dt>Press on the Volume Down Key</dt> 
+        <dd>The volume should decrease</dd> 
+    <dt>Press on the Volume Mute key</dt> 
+        <dd>The volume should mute</dd> 
+    <dt>Press on the Volume Mute key again</dt> 
+        <dd>This should unmute the audio</dd> 
+    <dt>Press on the Forward Track key</dt>
+        <dd>Totem skips forward a track</dd> 
+    <dt>Press on the Reverse Track key</dt> 
+        <dd>Totem skips backward a track</dd> 
 </dl>
-
-Verification
-<dl>
-    <dd>Verify that the Play key starts playing the playlist.</dd> 
-    <dd>Verify that the Pause (or Play key if there is no separate Pause key) pauses playback.</dd> 
-    <dd>Verify that the Play key resumes playing.</dd> 
-    <dd>Verify that the Volume Up key increases the volume.</dd> 
-    <dd>Verify that the Volume Down key decreases the volume.</dd> 
-    <dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd> 
-    <dd>Verify that the Forward Track key skips forward by a track.</dd> 
-    <dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
-</dl>
-
 
 <strong>Multimedia keys (Rhythmbox or Banshee)</strong>
 Case ID: khk-002
 
 <dl>
-    <dt>Click on Ubuntu Logo, search Rhythmbox Music Player or Banshee Music Player and open a playlist.</dt>
-    <dt>Press on the Play key /!\ This can be combined with Pause key.</dt>
+    <dt>Click on Ubuntu Logo, search for and open Music Player and open a playlist</dt>
+        <dd>Either Banshee or Rhythmbox should open</dd>
+    <Open a playlist</dt>
+    <dt>Press on the Play key (This can be combined with Pause key)</dt>
     <dt>Press on the Stop key. To stop the track playing</dt>
     <dt>Press on the Play key. To start the track playing again</dt>
     <dt>Press on the Volume Up key. To lower the volume</dt>

@@ -1,31 +1,15 @@
-<strong>Using Unity</strong>
+Tests Ubuntu's ability to use an internal microphone.
 <dl>
-    <dt>Verify that no external microphones are connected to the computer.</dt>
+    <dt>Check that no external microphones are connected to the computer.</dt>
     <dt>Right click on the Volume Control icon on the right side of the top panel</dt>
     <dt>Open Sound Preferences or Sound Setting.</dt>
     <dt>Go to the Input tab and ensure that the Input volume of the microphone is set to an appropriate level and is not muted.</dt>
-    <dt>Press the Super Windows Key or click on the Ubuntu logo on the unity panel, and search Sound Recorder.</dt>
+    <dt>Press the Super (Windows) Key or click on the Ubuntu logo on the unity panel, and search Sound Recorder.</dt>
     <dt>Click the Record button (the red circle).</dt>
     <dt>Talk briefly into the microphone.</dt>
     <dt>Click the Stop button (the gray square).</dt>
-    <dt>Click the Play button (the right-facing triangle). Verify that your voice is played back and that no words have been dropped.</dt> 
-</dl>
-
-<strong>Using GNOME Classic</strong>
-<dl>
-    <dt>Verify that no external microphones are connected to the computer.</dt>
-    <dt>Open Sound Preferences (System -> Preferences -> Sound).</dt>
-    <dt>Go to the Input tab and ensure that the Input volume of the microphone is set to an appropriate level and is not muted.</dt>
-    <dt>Now open Sound Recorder (Applications -> Sound & Video -> Sound Recorder).</dt>
-    <dt>Click the Record button (the red circle).</dt>
-    <dt>Talk briefly into the microphone.</dt>
-    <dt>Click the Stop button (the gray square).</dt>
-    <dt>Click the Play button (the right-facing triangle). Verify that your voice is played back and that no words have been dropped.</dt> 
-</dl>
-
-<strong>Verification</strong>
-<dl>
-    <dd>Verify that sound is recorded through the microphone.</dd>
+    <dt>Click the Play button (the right-facing triangle)</dt> 
+        <dd>Your voice should be played back and no words should be dropped</dd>
 </dl>
 
 <strong>

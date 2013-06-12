@@ -1,4 +1,4 @@
-<dl>
+﻿<dl>
     <dt>Boot up the iso using a CD/DVD or USB Key to a Live Session</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
@@ -22,30 +22,28 @@
         <dd> The drive corresponds to the drive on the chart (e.g /dev/sda) and the bar is divided in half (e.g. 50%).</dd>
     <dt>Move the slider bar that separates the grey sections to 50%</dt>
         <dd>The slider bar can be set to 50%</dd>
-    <dt>Click on Install now button</dt>
-        <dd>A confirmation dialog ‘Write previous changes to disk and continue’ is displayed</dd>
-    <dt>Click on continue button</dt>
-        <dd>The partition is resized and the 'Where are you?' screen is displayed</dd>
+    <dt>Click on the Install Now button</dt>
+        <dd>The 'Where are you?' screen should be displayed</dd>
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
-        <dd>The timezone and city displayed match your timezone and a city from your area</dd>
+        <dd>The timezone and city displayed should match your timezone and the main city from your area</dd>
     <dt>Select your timezone, and click on the continue button</dt>
-        <dd>The 'Keyboard Layout' screen appears</dd>
-        <dd>The proposed keyboard corresponds to your keyboard</dd>
+        <dd>The 'Keyboard Layout' screen should appear</dd>
+        <dd>The proposed keyboard should correspond to your keyboard</dd>
     <dt>Select your keyboard layout and click on continue</dt>
-        <dd>The 'Who are you?' screen appears</dd>
+        <dd>The 'Who are you?' screen should appear</dd>
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
-        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+        <dd>Name, username and password should be accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
-        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The 'Welcome to FAMILY ' slide should be displayed</dd>
         <dd>The slideshow should be entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
-        <dd>An 'Installation Complete' dialog appears</dd>
+        <dd>An 'Installation Complete' dialog should appear</dd>
     <dt>Click the Restart now button</dt>
-        <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
+        <dd>GUI should be shut down, a prompt to remove media and press Enter should appear</dd>
     <dt>Remove the disc and press enter</dt>
-        <dd>The machine has been rebooted</dd>
+        <dd>The machine should be rebooted</dd>
     <dt>Allow the machine to reboot</dt>
-        <dd>The system boots properly and loads into FAMILY</dd>
+        <dd>The system should boot properly and loads into FAMILY</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

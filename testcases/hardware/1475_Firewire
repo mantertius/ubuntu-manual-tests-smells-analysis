@@ -1,15 +1,11 @@
+Tests that Ubuntu correctly recognises firewire devices.
 <dl>
-    <dt>Connect a Firewire external hard drive to the first Firewire port on the computer.</dt>
-    <dt>Verify that the drive is automatically mounted and an icon appears on the desktop.</dt>
+    <dt>Connect a Firewire external hard drive to the first Firewire port on the computer</dt>
+        <dd>The drive should be automatically mounted and an icon should appear on the desktop</dd>
     <dt>Right-click the drive icon and select Unmount Volume.</dt>
-    <dt>Disconnect the Firewire external hard drive from the computer.</dt>
-    <dt>Repeat for each Firewire port on the computer.</dt> 
-</dl>
-
-<strong>Verification</strong>
-<dl>
-    <dd>Verify that the drive icon appears on the desktop.</dd>
-    <dd>Verify that the drive icon disappears when unmounted. </dd>
+        <dd>The drive icon should disappear</dd>
+    <dt>Disconnect the Firewire external hard drive from the computer</dt>
+    <dt>Repeat for each Firewire port on the computer</dt>
 </dl>
 
 <strong>

@@ -2,39 +2,23 @@
 
 Case ID: snr-001
 <dl>
-    <dt>Open a few applications in on the desktop, including Firefox.</dt>
-    <dt>Look at the top-right corner of your screen, you should find the session icon alongside of your user-name, click on it to get a drop-down menu.</dt>
-    <dt>Now from the drop-down menu select Suspend.</dt>
-    <dt>After about 10 seconds press the power button on your system to resume.</dt>
-    <dt>You should be presented with a password prompt; enter your password (not requested using a live environment).</dt>
-    <dt>Verify that the desktop loads as before, at the correct resolution, that your applications are still running and that you can connect to the net.</dt>
+    <dt>Open a few applications in on the desktop, including Firefox</dt>
+    <dt>Look at the top-right corner of your screen, you should find the session icon alongside of your user-name, click on it to get a drop-down menu</dt>
+    <dt>Now from the drop-down menu select Suspende</dt>
+    <dt>After about 10 seconds press the power button on your system to resume</dt>
+    <dt>You should be presented with a password prompt; enter your password (not requested using a live environment)</dt>
+        <dd>The desktop should load as before, at the correct resolution, your applications should still be running and you should be able to connect to the internet</dt>
 </dl>
 
 <strong>Extended Suspend/Resume test</strong>
 
 Case ID: snr-002
-<dl>
-    <dt>Run the suspend/resume test script included in Ubuntu:</dt>
-        <dd>sudo /usr/share/checkbox/scripts/sleep_test -d -i 5</dd>
-</dl>
-
 This will perform 5 suspend/resume tests. If your system does not wake itself up after 60 seconds of suspension, please press the power button momentarily to wake the system manually. If your system fails to wake at all and must be rebooted, report a bug and mark the test as failed. 
-
-<strong>Deprecated</strong>
-
-<dd>As of 10.04, hibernate is no longer installed by default, so this testcase is no longer relevant for the default installation
-    Hibernate/Resume smoke test (to be done on installed systems only, not live environments)</dd>
-
-Case ID: snr-003
 <dl>
-    <dt>Open a few applications in on the desktop, including Firefox.</dt> 
-    <dt>Look at the top-right corner of your screen, you should find the session icon alongside of your user-name, click on it to get a drop-down menu.</dt> 
-    <dt>Now from the drop-down menu select Hibernate.</dt> 
-    <dt>After about 30 seconds press the power button on your system to resume.</dt> 
-    <dt>The system will appear to boot as it reads the previous session from disk.</dt> 
-    <dt>You should be presented with a password prompt; enter your password.</dt> 
-    <dt>Verify that the desktop loads as before, at the correct resolution, that your applications are still running and that you can connect to the net.</dt> 
+    <dt>Run the suspend/resume test script included in Ubuntu with the command: sudo /usr/share/checkbox/scripts/sleep_test -d -i 5</dt>
+        <dd>The command should run flawlessly</dd>
 </dl>
-<strong>
-    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+
+
+<strong> If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.

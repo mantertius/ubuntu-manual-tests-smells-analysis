@@ -2,7 +2,7 @@
     <dt>Make a call using the phone app</dt>
         <dd>Audio in call should be bidirectional</dd>
     <dt>End the phone call</dt>
-        <dd>The call is successfully terminated</dd>
+        <dd>The call should be successfully terminated</dd>
     <dt>Launch a video from the video lens</dt>
         <dd>Audio from video should be playback on external speakers</dd>
 </dl>

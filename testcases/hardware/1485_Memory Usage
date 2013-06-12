@@ -4,17 +4,9 @@ Case ID: mem-001
 
 Using Unity
 <dl>
-    <dt>Press the Super Windows Key or click on the Ubuntu logo on the Unity panel and search System Monitor.</dt>
-    <dt>Ensure that the quantity of memory in the machine tallies with that on the System Tab. </dt>
-</dl>
-Using GNOME Classic
-<dl>
-    <dt>Open System Monitor (System->Administration->System Monitor).</dt>
-    <dt>Ensure that the quantity of memory in the machine tallies with that on the System Tab. </dt>
-</dl>
-Verification
-<dl>
-    <dd>Verify that the correct amount of memory is reported in the System Monitor.</dd>
+    <dt>Press the Super (Windows) Key or click on the Ubuntu logo on the Unity panel then search for and open System Monitor</dt>
+        <dd>System monitor should open</dd>
+        <dd>System monitor should detect the correct amount of memory</dd>
 </dl>
 
 <strong>Open Applications</strong>
@@ -25,19 +17,9 @@ Using Unity
 <dl>
     <dt>Once your desktop is installed, open around 10 applications.</dt> 
     <dt>Click on Ubuntu Logo and search Terminal.</dt> 
-    <dt>Type in the terminal top and press Enter.</dt> 
+    <dt>Type "top" and press Enter.</dt> 
     <dt>Leave this to run for a while to check for memory leaks.</dt> 
-</dl>
-Using GNOME Classic
-<dl>
-    <dt>Once your desktop is installed open around 10 applications.</dt>
-    <dt>Open a terminal (Applications->Accessories->Terminal).</dt>
-    <dt>Type in the terminal top and press Enter.</dt>
-    <dt>Leave this to run for a while to check for memory leaks. </dt>
-</dl>
-Verification
-<dl>
-    <dd>Verify that memory usage remains relatively stable when no additional applications are opened. </dd>
+        <dd>Memory usage should remain relatively stable when no additional applications are opened</dd>
 </dl>
 
 <strong>

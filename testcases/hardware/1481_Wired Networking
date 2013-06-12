@@ -11,18 +11,6 @@ Using Unity
     <dt>In the terminal, run route -n. Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
     <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above.</dt> 
         <dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd>
-</dl>
-
-Using GNOME Classic
-<dl>
-    <dt>Ensure that Network Manager is running and that no networks are currently connected. (Network Manager icon in the notification area should look like a blank slice of pizza)</dt>
-    <dt>Open the Terminal (Applications -> Accessories -> Terminal).</dt>
-    <dt>Connect the network adapter to a network with a DHCP server. (However you connect to your wired network)</dt>
-    <dt>After approximately 30 seconds, run ifconfig in the terminal. Verify that a cabled network device is present (e.g. eth0) and has received an IP address. Note the interface name (e.g. eth0). (The slice of pizza should change to 2 arrows, one up, one down)</dt>
-    <dt>In the terminal, run route -n. Note the IP address in the Gateway column. (not "0.0.0.0")</dt>
-    <dt>In the terminal, run ping -c 5 [gateway] where [gateway] is the IP address of the Gateway, above. </dt>
-        <dd>Verify that the command reports "5 packets transmitted, 5 packets received".</dd> 
-</dl>
 
 <strong>Verify Manual Connectivity</strong>
 

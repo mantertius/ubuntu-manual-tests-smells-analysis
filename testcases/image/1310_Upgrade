@@ -7,8 +7,8 @@
     <dt>Reboot into your new system:</dt>
         <dd>
             <ul>
-                <li>Any errors encountered during the upgrade?</li>
-                <li>Any errors encountered after rebooting to new desktop?</li>
+                <li>Were any errors encountered during the upgrade?</li>
+                <li>Were any errors encountered after rebooting to new desktop?</li>
                 <li>Does your hardware still work properly?</li>
                 <li>Are you experiencing any application or background service crashes?</li>
             </ul>
