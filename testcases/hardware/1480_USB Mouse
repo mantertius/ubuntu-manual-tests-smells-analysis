@@ -21,15 +21,16 @@ This tests that ubuntu can recognise your mouse.
 Case ID: hmu-002
 This tests that the mouse responds normally in Ubuntu.
 <dl>
-    <dt>Move the mouse. Verify that the mouse cursor moves on screen.</dt>
+    <dt>Move the mouse</dt>
         <dd>The cursor should move</dd>
-    <dt>Right-click on the desktop. Select Create Document → Create Empty File. Title it test.txt</dt>
-        <dd>Right- and left-clicking should work</dd>
-    <dt>Double-click the test.txt file you created</dt>
-        <dd>A text editor should open</dd>
-    <dt>Close the text editor</dt>
-    <dt>Drag test.txt to the trash can</dt> 
-        <dd>The files should drag</dd>
+    <dt>Left-click a file</dt>
+        <dd>The file should select</dd>
+    <dt>Right-click on the desktop</dt>
+        <dd>The right-click menu should open</dd>
+    <dt>Double-click a file</dt>
+        <dd>The file should open</dd>
+    <dt>Drag a file</dt> 
+        <dd>The file should drag</dd>
 </dl>
 
 <strong>

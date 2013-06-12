@@ -6,7 +6,7 @@ This test aims to test USB port connectivity by verifying the correct functionin
       <dd>The device should behave as expected</dd>
       <dd>The USB device should work in every port</dd>
       <dd>You should be able to disconnect and re-connect the USB device correctly without errors</dd>
-  <dt>If the device is a USB3.0 storage device and you have a USB3.09 port, transfer a large file between the two</dt>
+  <dt>If the device is a USB3.0 storage device and you have a USB3.0 port, transfer a large file between the two</dt>
       <dd>The transfer should be above USB2.0 speed</dd>
 <dl>
 
