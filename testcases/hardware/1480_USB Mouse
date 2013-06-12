@@ -1,50 +1,36 @@
 <strong>Connect USB Mouse</strong>
 Case ID: hmu-001
 
-Using Unity
+This tests that ubuntu can recognise your mouse.
 <dl>
-    <dt>Click on Ubuntu Logo and search Terminal.</dt> 
-    <dt>Run lsusb in the terminal. Verify that no USB mouse is listed.</dt> 
-    <dt>Connect the USB mouse to the computer.</dt> 
-    <dt>Run lsusb in the terminal. Verify that the USB mouse is now listed.</dt> 
-        <dd>Verify that the mouse is detected by lsusb when connected.</dd>
-        <dd> Please include your device's model in your feedback. </dd>
+    <dt>Remove all USB mice and trackballs connected to the computer 
+    <dt>Open Terminal</dt> 
+    <dt>Run lsusb in the terminal</dt> 
+        <dd>No USB mice should be detected</dd>
+    <dt>Connect the USB mouse to the computer</dt> 
+    <dt>Run lsusb in the terminal</dt> 
+        <dd>The mouse should be detected</dd>
+    <dt>Disconnect the mouse from the computer.</dt>
+    <dt>Run lsusb again</dt> 
+        <dd>The mouse should no longer be detected</dd>
+    <dt>Please include your device's model in your feedback</dd>
 </dl>
 
 
 <strong>Test USB Mouse</strong>
 Case ID: hmu-002
+This tests that the mouse responds normally in Ubuntu.
 <dl>
     <dt>Move the mouse. Verify that the mouse cursor moves on screen.</dt>
-    <dt>Right-click on the desktop. Select Create Document → Create Empty File. Title it test.txt.</dt>
-    <dt>Double-click the test.txt file you created. Verify that the double-click is responded to by a text editor opening.</dt>
-    <dt>Close the text editor.</dt>
-    <dt>Drag test.txt to the trash can. Verify that dragging works properly.</dt> 
+        <dd>The cursor should move</dd>
+    <dt>Right-click on the desktop. Select Create Document → Create Empty File. Title it test.txt</dt>
+        <dd>Right- and left-clicking should work</dd>
+    <dt>Double-click the test.txt file you created</dt>
+        <dd>A text editor should open</dd>
+    <dt>Close the text editor</dt>
+    <dt>Drag test.txt to the trash can</dt> 
+        <dd>The files should drag</dd>
 </dl>
-
-Verification
-<dl>
-    <dd>Verify that the mouse controls the cursor onscreen.</dd>
-    <dd>Verify that left- and right-clicking work.</dd>
-    <dd>Verify that dragging works.</dd> 
-    <dd>Please include your device's model in your feedback.</dd> 
-</dl>
-
-
-<strong>Disconnect USB Mouse</strong>
-Case ID: hmu-003
-<dl>
-    <dt>In the terminal, run lsusb. Verify that the USB mouse is listed.</dt>
-    <dt>Disconnect the mouse from the computer.</dt>
-    <dt>In the terminal, run lsusb. Verify that the USB mouse is no longer listed.</dt> 
-</dl>
-
-Verification
-<dl>
-    <dd>Verify that the mouse is no longer detected by lsusb when disconnected.</dd> 
-    <dd>Please include your device's model in your feedback.</dd> 
-</dl>
-
 
 <strong>Reconnect USB Mouse</strong>
 Case ID: hmu-004

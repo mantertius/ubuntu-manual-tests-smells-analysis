@@ -10,15 +10,5 @@ Case ID: snr-001
         <dd>The desktop should load as before, at the correct resolution, your applications should still be running and you should be able to connect to the internet</dt>
 </dl>
 
-<strong>Extended Suspend/Resume test</strong>
-
-Case ID: snr-002
-This will perform 5 suspend/resume tests. If your system does not wake itself up after 60 seconds of suspension, please press the power button momentarily to wake the system manually. If your system fails to wake at all and must be rebooted, report a bug and mark the test as failed. 
-<dl>
-    <dt>Run the suspend/resume test script included in Ubuntu with the command: sudo /usr/share/checkbox/scripts/sleep_test -d -i 5</dt>
-        <dd>The command should run flawlessly</dd>
-</dl>
-
-
 <strong> If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
