@@ -32,22 +32,6 @@ This tests that the mouse responds normally in Ubuntu.
         <dd>The files should drag</dd>
 </dl>
 
-<strong>Reconnect USB Mouse</strong>
-Case ID: hmu-004
-<dl>
-    <dt>In the terminal, run lsusb. Verify that no USB mouse is listed.</dt>
-    <dt>Connect the USB mouse to the computer.</dt>
-    <dt>In the terminal, run lsusb. Verify that the the USB mouse is now listed.</dt>
-    <dt>Move the mouse and verify that the cursor moves onscreen. </dt>
-</dl>
-
-Verification
-<dl>
-    <dd>Verify that the mouse is detected by lsusb when reconnected.</dd> 
-    <dd>Verify that the mouse controls the cursor onscreen.</dd>   
-    <dd>Please include your device's model in your feedback.</dd> 
-</dl>
-
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
