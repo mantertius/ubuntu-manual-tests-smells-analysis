@@ -2,8 +2,8 @@
 
 Case ID: him-001
 <dl>
-    <dt>Insert a media card into the reader.</dt>
-       <dd>A suggestion window should open for the card</dd>
+    <dt>Insert a media card into the reader</dt>
+        <dd>The card should be recognised</dd>
     <dt>Open the file manager</dt>
     <dt>Find the media card in the menu on the left. Right click on this and open it</dt>
        <dd>A window should open showing the contents of the card (if any)</dd>
@@ -23,7 +23,7 @@ Case ID: him-001
 Case ID: him-002
 <dl>
     <dt>Insert a media card into the reader</dt>
-        <dd>A suggestion box should appear for the card</dd>
+        <dd>The card should be recognised</dd>
     <dt>Click eject</dt>
         <dd>The window should disappear</dd>
         <dd>The icon should removed from the desktop</dd>
