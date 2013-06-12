@@ -190,5 +190,91 @@ Test-case name: xfce4 panel/xfce4-panel-016
 	<dt>Tick the 'Automatically increase length' option under the "Measurements" section</dt>
 		<dd>The panel should expand as the panel contents change</dd>
 </dl>
+Test-case name: xfce4 panel/xfce4-panel-017
+<dl>
+	This test will check that Xfce4 Panel allows to change the color of the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
+		<dd>'Panel Preferences...' selected/active tab should change to 'Appearance' tab</dd>
+	<dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
+		<dd>A list of available styles should drop down</dd>
+	<dt>Select 'Solid color' option</dt>
+		<dd>The 'Color:' button should appear</dd>
+	<dt>Click the color picker button</dt>
+		<dd>The 'Pick a Panel Color' should open</dd>
+	<dt>Select a color using the provided color picker and click the 'OK' button</dt>
+		<dd>The selected color should be applied to the panel</dd>	
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-018
+<dl>
+	This test will check that Xfce4 Panel allows to select a background image for the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
+		<dd>'Panel Preferences...' selected/active tab should change to 'Appearance' tab</dd>
+	<dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
+		<dd>A list of available styles should drop down</dd>
+	<dt>Select 'Background image' option</dt>
+		<dd>The 'File:' button should appear</dd>
+	<dt>Click the file browser button</dt>
+		<dd>The 'Select a Background Image' dialog window should open</dd>
+	<dt>Select a background image for the panel and click the 'Open' button</dt>
+		<dd>The selected image should be applied as a background image for the panel</dd>	
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-019
+<dl>
+	This test will check that Xfce4 Panel allows to change the alpha transparency of the panel
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
+		<dd>'Panel Preferences...' selected/active tab should change to 'Appearance' tab</dd>
+	<dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
+		<dd>A list of available styles should drop down</dd>
+	<dt>Select 'None (use system style)' option</dt>
+		<dd>The 'Alpha:' slidebar should appear</dd>
+	<dt>Point the mouse pointer to the 'Alpha:' slidebar and move the slider to the right</dt>
+		<dd>The panel should inherit the colors from the currently selected GTK+ theme and the percentage of transparency of the panel should decrease</dd>	
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-020
+<dl>
+	This test will check that Xfce4 Panel allows to change the transparency of the panel when a mouse pointer is not hovering over it
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
+		<dd>'Panel Preferences...' selected/active tab should change to 'Appearance' tab</dd>
+	<dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section, and move the slider to the right</dt>
+		<dd>When a mouse pointer is not hovering over it, the percentage transparency of the panel and of all panel plugins, should decrease</dd>	
+</dl>
+Test-case name: xfce4 panel/xfce4-panel-021
+<dl>
+	This test will check that Xfce4 Panel allows to change the transparency of the panel when a mouse pointer is not hovering over it
+	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+		<dd>A popup menu should appear</dd>
+	<dt>Point the mouse pointer to the 'Panel' option</dt>
+		<dd>A drop-down menu should appear</dd>
+	<dt>Select the 'Panel Preferences...' option</dt>
+		<dd>Panel dialog window should appear</dd>
+	<dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
+		<dd>'Panel Preferences...' selected/active tab should change to 'Appearance' tab</dd>
+	<dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the right</dt>
+		<dd>When a mouse pointer is not hovering over it, the percentage transparency of the panel and of all panel plugins, should decrease</dd>	
+</dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
