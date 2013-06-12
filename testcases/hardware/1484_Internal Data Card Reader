@@ -4,8 +4,8 @@ Case ID: him-001
 <dl>
     <dt>Insert a media card into the reader.</dt>
        <dd>A suggestion window should open for the card</dd>
-    <dt>Click on the Files icon on the Unity panel</dt>
-    <dt>In the home folder find the media card in the menu on the left. Right click on this and open it</dt>
+    <dt>Open the file manager</dt>
+    <dt>Find the media card in the menu on the left. Right click on this and open it</dt>
        <dd>A window should open showing the contents of the card (if any)</dd>
     <dt>Right-click within the window and select Create Document → Create Empty File. Call the file test.txt</dt>
         <dd>test.txt should be created</dd>
