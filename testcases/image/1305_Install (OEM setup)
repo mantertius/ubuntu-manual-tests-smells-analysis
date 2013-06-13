@@ -26,7 +26,7 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>
-        <dd>The 'Check Erase Disk and install FAMILY' radio button should be checked</dd>
+        <dd>The 'Check Erase Disk and install FAMILY' radio button is checked</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Erase Disk and install FAMILY' is displayed</dd>
     <dt>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dt>
@@ -46,7 +46,7 @@
         <dd>password is accepted, the series name you typed earlier is visible but cannot be edited. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
-        <dd>The slideshow should be entirely in your language</dd> 
+        <dd>The slideshow is entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>
@@ -82,14 +82,14 @@
     <dt>Execute the following command on the command line: <pre>sudo sfdisk -l</pre></dt>
         <dd>Verify the partition scheme displayed matches the partition scheme you chose during installation</dd>
     <dt>Execute the following command on the command line: <pre>sudo apt-get update</pre></dt>
-        <dd>Apt should hit each of the package mirrors and update all of them without error</dd>
+        <dd>Apt hits each of the package mirrors and update all of them without error</dd>
     <dt>Launch 'update-manager' (for quantal this is being renamed to software-updater) and install any updates presented</dt>
         <dd>The updates are downloaded and installed without error</dd>
     <dt>Launch 'firefox' and navigate to http://www.FAMILY.com</dt>
         <dd>The FAMILY homepage is loaded and displays properly</dd>
     <dt>Launch 'Time & Date' settings menu and note the timezone information and local time and date</dt>
-        <dd>The timezone, date and time should match the settings you selected during installation</dd>
+        <dd>The timezone, date and time match the settings you selected during installation</dd>
     <dt>If you installed a non-english version of FAMILY, note the language used on the desktop</dt>
-        <dd>The desktop should be localized into your language, or it should have prompted you upon initial login to install the missing components for your language</dd>
+        <dd>The desktop is localized into your language, or it has prompted you upon initial login to install the missing components for your language</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

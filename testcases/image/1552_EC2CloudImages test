@@ -22,19 +22,19 @@ For each of the running instances, verify it is functional:
     <dt>You can ssh to instance as 'ubuntu@${hostname}'</dt>
     <dt>Ubuntu user can 'sudo' without password prompt, and that 'sudo -l' contains '(ALL) NOPASSWD: ALL'.</dt>
     <dt>Attempt to ssh to each running instance as 'root@${hostname}'.</dt>
-        <dd>Access should be denied and provides a message suggesting use of 'ubuntu' user.</dd>
+        <dd>Access is denied and provides a message suggesting use of 'ubuntu' user.</dd>
     <dt>Run 'apt-get update' and verify that an ec2 mirror is used.</dt>
-        <dd>ec2 mirror should look like '(region).archive.ubuntu.com'.</dd>
+        <dd>ec2 mirror looks like '(region).archive.ubuntu.com'.</dd>
     <dt>Running 'ec2-get-console-output' returns console output with boot messages</dt>
 </dl>
 
 For each EBS instance, additionally verify:
 <dl>
     <dt>Running 'ec2-stop-instances' will stop the instances.</dt>
-        <dd>After a short delay, state should be 'stopped' in 'ec2-describe-instances' output.</dd>
+        <dd>After a short delay, state is 'stopped' in 'ec2-describe-instances' output.</dd>
     <dt>Running 'ec2-start-instances' will start the instances.</dt>
         <dd>The instance will have a different hostname in 'ec2-describe-instances'.</dd>
-    <dt>The remote ssh keys ('ssh-keyscan $hostname') should be the same as before the start/stop.</dt>
+    <dt>The remote ssh keys ('ssh-keyscan $hostname') is the same as before the start/stop.</dt>
     <dt>'ssh ubuntu@${hostname}' functions correctly</dt>
 </dl>
 
