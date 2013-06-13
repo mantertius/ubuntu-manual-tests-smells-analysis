@@ -61,3 +61,26 @@ This tests that the touchpad settings work
     <dt>Repeat for each touchpad device</dt>
 </dl>
 
+Test-case name: xfce4 mouse settings/xfce4-mouse-settings-004
+This tests that tab two of xfce4 mouse settings works
+<dl>
+	<dt>Click the "Behavior" tab</dt>
+	<dt>Adjust the "Threshold" bar, then drag and drop something</dt>
+	    <dd>The distance before something starts draging should increase and decrease</dd>
+	<dt>Adjust the "Time" bar, then double click something</dt>
+	    <dd>The maximum time between clicks should increase and decrease</dd>
+	<dt>Adjust the "Distance" bar, then double click something, moving the mouse slightly between clicks</dt>
+	    <dd>The distancethe mouse can move between clicks and it still be a double click should change</dd>
+</dl>
+
+Test-case name: xfce4 mouse settings/xfce4-mouse-settings-005
+This tests that tab three of xfce4 mouse settings works
+<dl>
+	<dt>Click the "Themes" tab</dt>
+	<dt>Click a Theme</dt>
+	    <dd>A preivew of each cursor should appear under the  heading "Preview"</dd>
+	<dt>Change the "Cursor size"</dt>
+	<dt>Move the cursor outside the current window</dt>
+	    <dd>The cursor should be in the new theme and size</dd>
+	<dt>Repeat for each cursor theme</dt>
+</dl>
