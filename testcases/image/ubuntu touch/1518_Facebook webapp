@@ -2,11 +2,11 @@ This tests the ubuntu touch facebook webapp
 <dl>
     <dt>Connect to a wifi network with Internet access</dt>
     <dt>Launch the facebook webapp</dt>
-        <dd>The login page should appear</dd>
+        <dd>The login page appears</dd>
     <dt>Login with proper credentials</dt>
-        <dd>The OSK should raise</dd>
-        <dd>Text input on focused input boxes should be seen</dd>
-        <dt>The Facebook homepage should be seen</dt>
+        <dd>The OSK raises</dd>
+        <dd>Text input on focused input boxes is seen</dd>
+        <dt>The Facebook homepage is seen</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
