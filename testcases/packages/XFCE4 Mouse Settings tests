@@ -1,0 +1,63 @@
+Test-case name: xfce4 mouse settings/xfce4-mouse-settings-001
+This tests that xfce4 mouse settings will open
+<dl>
+	<dt>Navigate to the settings menu</dt>
+	<dt>Open "Mouse and Touchpad"</dt>
+	    <dd>xfce4 mouse settings should open</dd>
+</dl>
+
+Test-case name: xfce4 mouse settings/xfce4-mouse-settings-002
+This tests that tab one of xfce4 mouse settings works
+<dl>
+	<dt>Click the "Devices" tab</dt>
+	<dt>Click the "Device:" menu</dt>
+	    <dd>A menu should roll down</dd>
+	<dt>Select one of the devices</dt>
+	<dt>Untick "Enable this device"</dt>
+	    <dd>The selected device should no longer respond</dd>
+	<dt>Press Enter to re-tick "Enable the device"</dt>
+	    <dd>The device responds again</dd>	
+	<dt>Click the "Left-handed" radio button</dt>
+	    <dd>The mouse buttons should be reversed</dd>
+	<dt>Click the "Right-handed" radio button</dt>
+	    <dd>The mouse buttons should return to normal</dd>
+	<dt>Tick "Reverse scroll direction"</dt>
+	    <dd>Both forward/back and side-to-side scrolling are reversed</dd>
+	<dt>Untick "Reverse scroll direction"</dt>
+	    <dd>Both forward/back and side-to-side scrolling are returned to normal</dd>
+    <dt>Adjust the "Acceleration" bar</dt>
+        <dd>The cursor should accelerate slower or faster depending on how you move the bar</dd>
+    <dt>Adjust the "Sensitivity" bar</dt>
+	    <dd>The cursor should become more or less sensitive depending on how you move the bar</dd>
+    <dt>Click "Reset to defaults"</dt>
+        <dd>All settings in the tab should reset to default</dd>
+    <dt>Repeat for each device</dt>
+</dl>
+
+
+Test-case name: xfce4 mouse settings/xfce4-mouse-settings-003
+This tests that the touchpad settings work
+<dl>
+	<dt>Click the "Devices" tab</dt>
+	<dt>Click the "Touchpad" tab</dt>
+    <dt>Tick "Disable touchpad while typing", type somewhere</dt>
+        <dd>The touchpad should be disabled while you type</dd>
+    <dt>Untick "Disable touchpad while typing", type somewhere</dt>
+        <dd>The touchpad should no longer be disabled while you type</dd>
+    <dt>Untick "Tap touchpad to click", tap on the touchpad</dt>
+        <dd>Tapping on the touchpad should do nothing</dd>
+    <dt>Tick "Tap touchpad to click", tap on the touchpad</dt>
+        <dd>Tapping on the touchpad should do the same as clicking</dd>
+    <dt>Click the radio button "Disabled", try scrolling on something</dt>
+        <dd>Nothing should happen</dd>
+    <dt>Click the radio button "Edge scrolling", try scrolling on something</dt>
+        <dd>Scrolling should only work when you scroll with the very edge of the touchpad</dd>
+    <dt>Click the radio button "Two-finger scrolling", try scrolling on something</dt>
+        <dd>Scrolling should only work when you scroll with two fingers pressed to the touchpad</dd>
+    <dt>Tick "Enable horizontal scrolling", horizonatally scroll something</dt>
+        <dd>The touchpad should scroll horizontally</dd>
+    <dt>Untick "Enable horizontal scrolling", horizonatally scroll something</dt>
+        <dd>The touchpad should no longer scroll horizontally</dd>
+    <dt>Repeat for each touchpad device</dt>
+</dl>
+
