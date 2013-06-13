@@ -1,0 +1,14 @@
+Test-case name: xfce4 panel/xfce4-settings_manager-001
+<dl>
+	This test will check that Xfce4 Settings Manager allows to enable Assistive Technologies
+	<dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
+		<dd>A menu should drop down</dd>
+	<dt>Select the Settings Manager option</dt>
+		<dd>Settings dialog window should open</dd>
+	<dt>Point your mouse cursor to the 'Accessibility' icon under the "System" section and click it</dt>
+		<dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
+	<dt>Tick the 'Enable Assistive Technologies' option</dt>
+		<dd>Xfce desktop should be enabled, xfce4-session should load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
