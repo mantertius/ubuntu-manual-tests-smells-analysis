@@ -1,4 +1,4 @@
-Tests Ubuntu's ability to use an internal microphone.
+Tests FAMILY's ability to use an internal microphone.
 <dl>
     <dt>Check that no external microphones are connected to the computer.</dt>
     <dt>Right click on the Volume Control icon on the right side of the top panel</dt>
@@ -9,7 +9,7 @@ Tests Ubuntu's ability to use an internal microphone.
     <dt>Talk briefly into the microphone.</dt>
     <dt>Click the Stop button (the gray square).</dt>
     <dt>Click the Play button (the right-facing triangle)</dt> 
-        <dd>Your voice should be played back and no words should be dropped</dd>
+        <dd>Your voice is played back and no words are dropped</dd>
 </dl>
 
 <strong>

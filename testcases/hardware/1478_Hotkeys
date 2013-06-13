@@ -1,30 +1,30 @@
 <strong>The following tests require a music playlist consisting of 2 or more pieces of music.</strong>
 
-<strong>Multimedia keys (Totem)</strong>
+<strong>Multimedia keys (Video Player)</strong>
 Case ID: khk-001
 This tests that the video player can respond to Multimedia keys on a keyboard
 <dl>
     <dt>Open Movie Player</dt> 
-        <dd>Movie player should open</dd>
+        <dd>Movie player opens</dd>
     <dt>Open a playlist</dt>
     <dt>Press on the Play key (This can be combined with Pause key)</dt> 
-        <dd>This should start playing the playlist</dd> 
+        <dd>This starts playing the playlist</dd> 
     <dt>Press on the Stop key</dt> 
-        <dd>The Pause (or Play key if there is no separate Pause key) should pauses playback</dd> 
+        <dd>The Pause (or Play key if there is no separate Pause key) pauses playback</dd> 
     <dt>Press on the Play key. To start the track playing again</dt> wing only apply if you have the internet hot keys.
-        <dd>Playing should resume</dd> 
+        <dd>Playing resumes</dd> 
     <dt>Press on the Volume Up key</dt>
-        <dd>The volume should increase</dd>  
+        <dd>The volume increases</dd>  
     <dt>Press on the Volume Down Key</dt> 
-        <dd>The volume should decrease</dd> 
+        <dd>The volume decreases</dd> 
     <dt>Press on the Volume Mute key</dt> 
-        <dd>The volume should mute</dd> 
+        <dd>The volume mutes</dd> 
     <dt>Press on the Volume Mute key again</dt> 
-        <dd>This should unmute the audio</dd> 
+        <dd>This unmutes the audio</dd> 
     <dt>Press on the Forward Track key</dt>
-        <dd>The next track should start playing</dd> 
+        <dd>The next track starts playing</dd> 
     <dt>Press on the Reverse Track key</dt> 
-        <dd>The previous track should start playing</dd> 
+        <dd>The previous track starts playing</dd> 
 </dl>
 
 <strong>Multimedia keys (Rhythmbox or Banshee)</strong>
@@ -32,55 +32,55 @@ Case ID: khk-002
 
 <dl>
     <dt>Open your Music Player</dt>
-        <dd>The music player should open</dd>
+        <dd>The music player opens</dd>
     <Open a playlist</dt>
     <dt>Press on the Play key (This can be combined with Pause key)</dt>
-        <dd>The playlist should start to play</dd>
+        <dd>The playlist starts to play</dd>
     <dt>Press on the Stop key</dt>
-        <dd>The track should stop playing</dd>
+        <dd>The track stops playing</dd>
     <dt>Press on the Play key</dt>
-        <dd>The track should start playing again</dd>
+        <dd>The track starts playing again</dd>
     <dt>Press on the Volume Up key</dt>
-        <dd>The volume should increase</dd>
+        <dd>The volume increases</dd>
     <dt>Press on the Volume Down Key</dt>
-        <dd>The volume should decrease</dd>
+        <dd>The volume decreases</dd>
     <dt>Press on the Volume Mute key</dt>
-        <dd>The volume should mute</dd>
+        <dd>The volume mutes</dd>
     <dt>Press on the Volume Mute key</dt>
-        <dd>The volume should unmute</dd>
+        <dd>The volume unmutes</dd>
     <dt>Press on the Forward Track key</dt>
-        <dd>The next track should start playing</dd>
+        <dd>The next track starts playing</dd>
     <dt>Press on the Reverse Track key</dt> 
-        <dd>The previous track should start playing</dd>
+        <dd>The previous track starts playing</dd>
 </dl>
 
-<strong>Email (Thunderbird or Evolution)</strong>
+<strong>Email</strong>
 Case ID: khk-003
 The following only apply if you have the internet hot keys.
 <dl>
     <dt>Press on the E-mail key</dt>
-        <dd>Your default email app should open</dd>
+        <dd>Your default email app opens</dd>
 </dl>
 
 
-<strong>Internet (firefox)</strong>
+<strong>Web browser</strong>
 Case ID: khk-004
 The following only apply if you have the internet hot keys.
 <dl>
     <dt>Press on the Home or WWW key</dt>
-        <dd>The default internet browser should open</dd>
+        <dd>The default internet browser opens</dd>
     <dt>Go to www.ubuntu.com</dt> 
     <dt>Go to planet.ubuntu.com</dt> 
     <dt>Press the Back key</dt>
-        <dd>The ubuntu home page should open</dd>
+        <dd>The ubuntu home page opens</dd>
     <dt>Press the Forward key</dt> 
-        <dd>The planet ubuntu page should open</dd>
+        <dd>The planet ubuntu page opens</dd>
     <dt>Open a webpage. Press the Stop key before the page has fully loaded</dt> 
-        <dd>The page should stop loading</dd>        
+        <dd>The page stops loading</dd>        
     <dt>Press the Home key</dt> 
-        <dd>Your homepage should open</dd>
+        <dd>Your homepage opens</dd>
     <dt>Press the Favorites key</dt> 
-        <dd>The bookmarks sidebar should open</dd>
+        <dd>The bookmarks sidebar opens</dd>
 </dl>
 
 
@@ -88,7 +88,7 @@ The following only apply if you have the internet hot keys.
 Case ID: khk-005
 <dl>
     <dt>Press the Search key</dt>
-        <dd>The desktop search tool should open</dd> 
+        <dd>The desktop search tool opens</dd> 
 </dl>
 
 <strong>
