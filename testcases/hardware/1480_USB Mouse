@@ -1,18 +1,18 @@
 <strong>Connect USB Mouse</strong>
 Case ID: hmu-001
 
-This tests that ubuntu can recognise your mouse.
+This tests that FAMILY can recognise your mouse.
 <dl>
     <dt>Remove all USB mice and trackballs connected to the computer 
     <dt>Open Terminal</dt> 
     <dt>Run lsusb in the terminal</dt> 
-        <dd>No USB mice should be detected</dd>
+        <dd>No USB mice are detected</dd>
     <dt>Connect the USB mouse to the computer</dt> 
     <dt>Run lsusb in the terminal</dt> 
-        <dd>The mouse should be detected</dd>
+        <dd>The mouse is detected</dd>
     <dt>Disconnect the mouse from the computer.</dt>
     <dt>Run lsusb again</dt> 
-        <dd>The mouse should no longer be detected</dd>
+        <dd>The mouse is no longer detected</dd>
     <dt>Please include your device's model in your feedback</dd>
 </dl>
 
@@ -22,15 +22,15 @@ Case ID: hmu-002
 This tests that the mouse responds normally in Ubuntu.
 <dl>
     <dt>Move the mouse</dt>
-        <dd>The cursor should move</dd>
+        <dd>The cursor moves</dd>
     <dt>Left-click a file</dt>
-        <dd>The file should select</dd>
+        <dd>The file selects</dd>
     <dt>Right-click on the desktop</dt>
-        <dd>The right-click menu should open</dd>
+        <dd>The right-click menu opens</dd>
     <dt>Double-click a file</dt>
-        <dd>The file should open</dd>
+        <dd>The file opens</dd>
     <dt>Drag a file</dt> 
-        <dd>The file should drag</dd>
+        <dd>The file drags</dd>
 </dl>
 
 <strong>

@@ -3,18 +3,18 @@
 Case ID: him-001
 <dl>
     <dt>Insert a media card into the reader</dt>
-        <dd>The card should be recognised</dd>
+        <dd>The card is recognised</dd>
     <dt>Open the file manager</dt>
     <dt>Find the media card in the menu on the left. Right click on this and open it</dt>
-       <dd>A window should open showing the contents of the card (if any)</dd>
+       <dd>A window opens showing the contents of the card (if any)</dd>
     <dt>Right-click within the window and select Create Document → Create Empty File. Call the file test.txt</dt>
-        <dd>test.txt should be created</dd>
+        <dd>test.txt is created</dd>
     <dt>Drag test.txt to the trash can in the left hand menu</dt>
-        <dd>test.txt should be removed from the card</dd>
-    <dt>Close the card window.</dt>
-    <dt>Return to the suggestion window and select eject</dt>
-        <dd>The icon should removed from the desktop</dd>
-    <dt>Repeat for every type of media supported (e.g. CF, SD, MMC, etc.).</dt> 
+        <dd>test.txt is removed from the card</dd>
+    <dt>Close the card window</dt>
+    <dt>Eject the card</dt>
+        <dd>The icon is removed from the desktop</dd>
+    <dt>Repeat for every type of media supported (e.g. CF, SD, MMC, etc.)</dt> 
 </dl>
 
 
@@ -23,10 +23,10 @@ Case ID: him-001
 Case ID: him-002
 <dl>
     <dt>Insert a media card into the reader</dt>
-        <dd>The card should be recognised</dd>
+        <dd>The card is recognised</dd>
     <dt>Click eject</dt>
-        <dd>The window should disappear</dd>
-        <dd>The icon should removed from the desktop</dd>
+        <dd>The window disappears</dd>
+        <dd>The icon is removed from the desktop</dd>
 </dl>
 
 <strong>

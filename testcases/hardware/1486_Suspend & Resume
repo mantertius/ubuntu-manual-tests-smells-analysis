@@ -7,7 +7,7 @@ Case ID: snr-001
     <dt>Now from the drop-down menu select Suspende</dt>
     <dt>After about 10 seconds press the power button on your system to resume</dt>
     <dt>You should be presented with a password prompt; enter your password (not requested using a live environment)</dt>
-        <dd>The desktop should load as before, at the correct resolution, your applications should still be running and you should be able to connect to the internet</dt>
+        <dd>The desktop loads as before, at the correct resolution, your applications are still running and are be able to connect to the internet</dt>
 </dl>
 
 <strong> If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
