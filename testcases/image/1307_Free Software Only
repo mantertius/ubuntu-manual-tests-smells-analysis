@@ -23,7 +23,7 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>
-        <dd>The 'Check Erase Disk and install FAMILY' radio button should be checked</dd>
+        <dd>The 'Check Erase Disk and install FAMILY' radio button is checked</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Erase Disk and install FAMILY' screen is displayed</dd>
     <dt>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dt>
@@ -43,7 +43,7 @@
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
-        <dd>The slideshow should be entirely in your language</dd> 
+        <dd>The slideshow is entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>

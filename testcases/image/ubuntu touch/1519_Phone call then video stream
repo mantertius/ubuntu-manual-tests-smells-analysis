@@ -1,10 +1,10 @@
 <dl>
     <dt>Make a call using the phone app</dt>
-        <dd>Audio in call should be bidirectional</dd>
+        <dd>Audio in call is bidirectional</dd>
     <dt>End the phone call</dt>
         <dd>The call is successfully terminated</dd>
     <dt>Launch a video from the video lens</dt>
-        <dd>Audio from video should be playback on external speakers</dd>
+        <dd>Audio from video is playback on external speakers</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

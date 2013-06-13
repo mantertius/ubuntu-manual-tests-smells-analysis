@@ -1,109 +1,94 @@
-<dd>The following tests require a music playlist consisting of 2 or more pieces of music.</dd>
+<strong>The following tests require a music playlist consisting of 2 or more pieces of music.</strong>
 
-<strong>Multimedia keys (Totem)</strong>
+<strong>Multimedia keys (Video Player)</strong>
 Case ID: khk-001
-
+This tests that the video player can respond to Multimedia keys on a keyboard
 <dl>
-    <dt>Click on Ubuntu Logo, search Movie Player and open a playlist.</dt> 
-    <dt>Press on the Play key /!\ This can be combined with Pause key</dt> 
-    <dt>Press on the Stop key. To stop the track playing</dt> 
+    <dt>Open Movie Player</dt> 
+        <dd>Movie player opens</dd>
+    <dt>Open a playlist</dt>
+    <dt>Press on the Play key (This can be combined with Pause key)</dt> 
+        <dd>This starts playing the playlist</dd> 
+    <dt>Press on the Stop key</dt> 
+        <dd>The Pause (or Play key if there is no separate Pause key) pauses playback</dd> 
     <dt>Press on the Play key. To start the track playing again</dt> wing only apply if you have the internet hot keys.
-    <dt>Press on the Volume Up key. To lower the volume</dt> 
-    <dt>Press on the Volume Down Key. To raise the volume</dt> 
-    <dt>Press on the Volume Mute key. To stop sound</dt> 
-    <dt>Press on the Volume Mute key. To restart sound</dt> 
-    <dt>Press on the Forward Track key. To skip forward a track</dt> 
-    <dt>Press on the Reverse Track key. To rewind a track</dt> 
+        <dd>Playing resumes</dd> 
+    <dt>Press on the Volume Up key</dt>
+        <dd>The volume increases</dd>  
+    <dt>Press on the Volume Down Key</dt> 
+        <dd>The volume decreases</dd> 
+    <dt>Press on the Volume Mute key</dt> 
+        <dd>The volume mutes</dd> 
+    <dt>Press on the Volume Mute key again</dt> 
+        <dd>This unmutes the audio</dd> 
+    <dt>Press on the Forward Track key</dt>
+        <dd>The next track starts playing</dd> 
+    <dt>Press on the Reverse Track key</dt> 
+        <dd>The previous track starts playing</dd> 
 </dl>
-
-Verification
-<dl>
-    <dd>Verify that the Play key starts playing the playlist.</dd> 
-    <dd>Verify that the Pause (or Play key if there is no separate Pause key) pauses playback.</dd> 
-    <dd>Verify that the Play key resumes playing.</dd> 
-    <dd>Verify that the Volume Up key increases the volume.</dd> 
-    <dd>Verify that the Volume Down key decreases the volume.</dd> 
-    <dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd> 
-    <dd>Verify that the Forward Track key skips forward by a track.</dd> 
-    <dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
-</dl>
-
 
 <strong>Multimedia keys (Rhythmbox or Banshee)</strong>
 Case ID: khk-002
 
 <dl>
-    <dt>Click on Ubuntu Logo, search Rhythmbox Music Player or Banshee Music Player and open a playlist.</dt>
-    <dt>Press on the Play key /!\ This can be combined with Pause key.</dt>
-    <dt>Press on the Stop key. To stop the track playing</dt>
-    <dt>Press on the Play key. To start the track playing again</dt>
-    <dt>Press on the Volume Up key. To lower the volume</dt>
-    <dt>Press on the Volume Down Key. To raise the volume</dt>
-    <dt>Press on the Volume Mute key. To stop sound</dt>
-    <dt>Press on the Volume Mute key. To restart sound</dt>
-    <dt>Press on the Forward Track key. To skip forward a track</dt>
-    <dt>Press on the Reverse Track key. To rewind a track</dt> 
+    <dt>Open your Music Player</dt>
+        <dd>The music player opens</dd>
+    <Open a playlist</dt>
+    <dt>Press on the Play key (This can be combined with Pause key)</dt>
+        <dd>The playlist starts to play</dd>
+    <dt>Press on the Stop key</dt>
+        <dd>The track stops playing</dd>
+    <dt>Press on the Play key</dt>
+        <dd>The track starts playing again</dd>
+    <dt>Press on the Volume Up key</dt>
+        <dd>The volume increases</dd>
+    <dt>Press on the Volume Down Key</dt>
+        <dd>The volume decreases</dd>
+    <dt>Press on the Volume Mute key</dt>
+        <dd>The volume mutes</dd>
+    <dt>Press on the Volume Mute key</dt>
+        <dd>The volume unmutes</dd>
+    <dt>Press on the Forward Track key</dt>
+        <dd>The next track starts playing</dd>
+    <dt>Press on the Reverse Track key</dt> 
+        <dd>The previous track starts playing</dd>
 </dl>
 
-Verification
-<dl>
-    <dd>Verify that the Play key begins playback.</dd>
-    <dd>Verify that the Stop key stops playback.</dd>
-    <dd>Verify that the Play key resumes or restarts playback.</dd>
-    <dd>Verify that the Volume Up key increases the volume.</dd>
-    <dd>Verify that the Volume Down key decreases the volume.</dd>
-    <dd>Verify that the Volume Mute key mutes and unmutes the audio.</dd>
-    <dd>Verify that the Forward Track key skips forward by a track.</dd>
-    <dd>Verify that the Reverse Track key skips backwards by a track.</dd> 
-</dl>
-
-
-<strong>Email (Thunderbird or Evolution)</strong>
+<strong>Email</strong>
 Case ID: khk-003
 The following only apply if you have the internet hot keys.
 <dl>
-    <dt>Press on the E-mail key.</dt>
-        <dd>Your default email should now open.</dd>
+    <dt>Press on the E-mail key</dt>
+        <dd>Your default email app opens</dd>
 </dl>
 
 
-<strong>Internet (firefox)</strong>
+<strong>Web browser</strong>
 Case ID: khk-004
 The following only apply if you have the internet hot keys.
 <dl>
-    <dt>Press on the Home or WWW key.</dt>
-    <dt>This will open your default internet client.</dt> 
-    <dt>Type into the address bar www.ubuntu.com and click on the green arrow in the address bar.</dt> 
-    <dt>Type into the address bar planet.ubuntu.com and click on the green arrow in the address bar.</dt> 
-    <dt>Press the Back key. This should go back to ubuntu home page.</dt> 
-    <dt>Press the Forward key. This should take you back to the planet ubuntu page.</dt> 
-    <dt>Press the Stop key which should stop this page loading.</dt> 
-    <dt>Press the Home key to return you to your home page.</dt> 
-    <dt>Press the Favorites key. This should open the bookmarks side bar.</dt> 
-</dl>
-
-Verification
-<dl>
-    <dd>Verify that a web browser is opened.</dd>
-    <dd>Verify that web pages are loaded correctly.</dd>
-    <dd>Verify that the Back key goes back one page.</dd>
-    <dd>Verify that the Forward key goes forward one page.</dd>
-    <dd>Verify that the Stop key stops a page loading.</dd>
-    <dd>Verify that the Home key returns the browser to the home page.</dd>
-    <dd>Verify that the Favorites key opens the bookmarks sidebar. </dd>
+    <dt>Press on the Home or WWW key</dt>
+        <dd>The default internet browser opens</dd>
+    <dt>Go to www.ubuntu.com</dt> 
+    <dt>Go to planet.ubuntu.com</dt> 
+    <dt>Press the Back key</dt>
+        <dd>The ubuntu home page opens</dd>
+    <dt>Press the Forward key</dt> 
+        <dd>The planet ubuntu page opens</dd>
+    <dt>Open a webpage. Press the Stop key before the page has fully loaded</dt> 
+        <dd>The page stops loading</dd>        
+    <dt>Press the Home key</dt> 
+        <dd>Your homepage opens</dd>
+    <dt>Press the Favorites key</dt> 
+        <dd>The bookmarks sidebar opens</dd>
 </dl>
 
 
 <strong>Search (tracker)</strong>
 Case ID: khk-005
 <dl>
-    <dt>Press the Search key.</dt>
-    <dt>This should open the tracker desktop search tool.</dt> 
-</dl>
-
-Verification
-<dl>
-    <dd>Verify that the desktop search tool is opened.</dd>
+    <dt>Press the Search key</dt>
+        <dd>The desktop search tool opens</dd> 
 </dl>
 
 <strong>
