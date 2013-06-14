@@ -1,0 +1,52 @@
+Test-case name: Gnome Mines/Gnome-Mines-001
+This tests that Gnome mines will open
+<dl>
+    <dt>Open Gnome mines</dt>
+        <dd>Gnome mines opens at the "New Game" screen</dd>
+</dl>
+
+Test-case name: Gnome Mines/Gnome-Mines-002
+This tests the main functionality of Gnome mines
+<dl>
+    <dt>Click "8x8 10 mines"</dt>
+        <dd>A new game starts in an 8x8 grid</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>10 mines appear, one of which has exploded</dd>
+    <dt>Click the smiley face</dt>
+        <dd>The new game screen appears</dd>
+    <dt>Click "16x16 40 mines"</dt>
+        <dd>A new game starts in a 16x16 grid</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>40 mines appear, one of which has exploded</dd>
+    <dt>Click the smiley face</dt>
+        <dd>The new game screen appears</dd>
+    <dt>Click "30x16 99 mines"</dt>
+        <dd>A new game starts in a 30x16 grid</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>99 mines appear, one of which has exploded</dd>
+    <dt>Click the smiley face</dt>
+        <dd>The new game screen appears</dd>
+    <dt>Click "Custom"</dt>
+        <dd>A screen appears allowing you to select Horizontal, Vertical and Number of mines</dd>
+    <dt>Modify the three values to your desired sizes</dt>
+        <dd>A new game starts in a grid that is the size you chose</dd>
+    <dt>Play the game till you hit a mine</dt>
+        <dd>Your chosen number of mines appears</dd>
+
+<dl>
+    <dt>Click "8x8 10 mines"</dt>
+        <dd>A new game starts in an 8x8 grid</dd>
+    <dt>Play the game and click on a mine</dt>
+        <dd>The timer starts when you click on the first block</dd>
+        <dd>The game ends and shows the locations of each mine. The mine you clicked should have an exploded image. The Smiley face should now have tears</dd>
+    <dt>Click the smiley face</dt>
+        <dd>The "New Game" screen appears</dd>
+    <dt>Click "8x8 10 mines"</dt>
+        <dd>A new game starts in an 8x8 grid</dd>
+    <dt>Click one block</dt>
+        <dd>The timer starts</dd>
+    <dt>
+    
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -84,3 +84,6 @@ This tests that tab three of xfce4 mouse settings works
         <dd>The cursor is in the new theme and size</dd>
     <dt>Repeat for each cursor theme</dt>
 </dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
