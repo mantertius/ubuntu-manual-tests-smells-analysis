@@ -2,7 +2,7 @@ Test-case name: xfce4 screenshooter/xfce4-screenshooter-001
 This test will check that Xfce4 Screenshot can open
 <dl>    
     <dt>Open xfce4 screenshot</dt>
-        <dd>The Screenshot window should open</dd>
+        <dd>The Screenshot window opens</dd>
 </dl>
 
 Test-case name: xfce4 screenshooter/xfce4-screenshooter-002
