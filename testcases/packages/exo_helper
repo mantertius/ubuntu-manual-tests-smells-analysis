@@ -1,0 +1,52 @@
+Test-case name:exo helper
+
+<dl>This test will check that exo helper opens applications correctly using
+    <dt>Press Super+3</dt>
+	<dd>Abiword opens</dd>
+    <dt>Press Super+f</dt>
+	<dd>File Manager opens</dd>
+    <dt>Press Super+m</dt>
+	<dd>Mail Reader opens</dd>
+    <dt>Press Mail shortcut button (if available)</dt>
+	<dd>Mail Reader opens</dd>
+    <dt>Press Super+t</dt>
+	<dd>Terminal opens</dd>
+    <dt>Press Super+w</dt>
+	<dd>Web Browser opens</dd>
+    <dt>Press Web Browser shortcut button (if available)</dt>
+	<dd>Web Browser opens</dd>
+    <dt>Press Super+1</dt>
+	<dd>gmusicbrowser opens</dd>
+    <dt>Press Super+1</dt>
+	<dd>gnumeric opens</dd>
+    <dt>Press Super+e</dt>
+	<dd>Mousepad opens</dd>
+    <dt>Press Super+2</dt>
+	<dd>pidgin opens</dd>
+    <dt>Press Super+r</dt>
+	<dd>xfce4-appfinder opens</dd>
+    <dt>Press Alt+F3</dt>
+	<dd>xfce4-appfinder opens</dd>
+    <dt>Press Super+p</dt>
+	<dd>xfce4-display-settings --minimal opens</dd>
+    <dt>Press XF86Display(if available)</dt>
+	<dd>xfce4-display-settings --minimal opens</dd>
+    <dt>Press Alt+F1</dt>
+	<dd>Application menu opens</dd>
+    <dt>Press Print</dt>
+	<dd>Screenshooter - whole screen </dd>
+    <dt>Press Alt+Print</dt>
+	<dd>Active Window screenshooter opens</dd>
+    <dt>Press Ctrl+Esc</dt>
+	<dd>desktop menu opens</dd>
+    <dt>Press Ctrl+Alt+Del</dt>
+	<dd>screen lock</dd>
+    <dt>Press Alt+F2</dt>
+	<dd>Run dialogue opens</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+
+
+
