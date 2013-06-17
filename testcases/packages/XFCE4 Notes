@@ -12,14 +12,14 @@ This tests that xfce4 notes works
     <dt>Press Ctrl+N</dt>
         <dd>A new note opens</dd>
     <dt>Use the arrow icons to change between notes</dt>
-        <dd>This works flawlessly</dd>
+        <dd>The current note changes in responce to clicking on the icons</dd>
     <dt>Press Ctrl+W, then agree to the popup</dd>
         <dd>The current note deletes</dd>
-    <dt>Click Menu --> Always on top</dt>
+    <dt>Click Notes icon(Menu) --> Always on top</dt>
         <dd>Notes is always the top window<dd>
-    <dt>Click Menu --> Always on top</dt>
+    <dt>Click Notes icon(Menu) --> Always on top</dt>
         <dd>Notes resumes being a normal window<dd>
-    <dt>Click Menu --> Properties</dt>
+    <dt>Click Notes icon(Menu) --> Properties</dt>
         <dd>The properties dialogue opens</dd>
     <dt>Change each setting visible</dt>
         <dd>Each change does as expected</dd>
