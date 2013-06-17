@@ -1,0 +1,46 @@
+Test-case name: xfce4 notes/xfce4-notes-001
+This tests that xfce4 notes works
+<dl>
+    <dt>Open "Notes"</dt>
+        <dd>Notes opens and an icon appears in the indicator bar</dd>
+    <dt>Type some text</dt>
+        <dd>Text appears</dd>
+    <dt>Press Ctrl+Z</dt> 
+        <dd>The text dissapears</dd>
+    <dt>Press F2, then type 'test1', press OK</dt>
+        <dd>The title is now "Notes - test1"</dd>
+    <dt>Press Ctrl+N</dt>
+        <dd>A new note opens</dd>
+    <dt>Use the arrow icons to change between notes</dt>
+        <dd>This works flawlessly</dd>
+    <dt>Press Ctrl+W, then agree to the popup</dd>
+        <dd>The current note deletes</dd>
+    <dt>Click Menu --> Always on top</dt>
+        <dd>Notes is always the top window<dd>
+    <dt>Click Menu --> Always on top</dt>
+        <dd>Notes resumes being a normal window<dd>
+    <dt>Click Menu --> Properties</dt>
+        <dd>The properties dialogue opens</dd>
+    <dt>Change each setting visible</dt>
+        <dd>Each change does as expected</dd>
+    <dt>Press Ctrl+Shift+N</dt>
+        <dd>A new Group (window) opens</dd>
+</dl>
+
+Test-case name: xfce4 notes/xfce4-notes-002
+This tests that xfce4 notes remembers notes
+<dl>
+    <dt>Open "Notes"</dt>
+        <dd>Notes opens and an icon appears in the indicator bar</dd>
+    <dt>Type some text</dt>
+        <dd>Text appears</dd>
+    <dt>Click "X"</dt>
+    <dt>Click the indicator icon for notes</dt>
+        <dd>All your text is still there</dd>
+    <dt>Restart your computer, Then open notes</dt>
+        <dd>Your text is still there</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+
