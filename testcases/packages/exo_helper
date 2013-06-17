@@ -1,6 +1,8 @@
 Test-case name:exo helper
 
 <dl>This test will check that exo helper opens applications correctly using
+    <dt>Open Settings Manager -> Keyboard -> Application Shortcuts</dt>
+	<dd>Application Shortcuts tab opens</dd>
     <dt>Press Super+3</dt>
 	<dd>Abiword opens</dd>
     <dt>Press Super+f</dt>
@@ -44,6 +46,27 @@ Test-case name:exo helper
     <dt>Press Alt+F2</dt>
 	<dd>Run dialogue opens</dd>
 </dl>
+<dl>This test will check that shortcuts and their targets can be changed
+    <dt>Double click on Command 'abiword'</dt>
+	<dd>Shortcut Command dialogue opens with abiword highlighted</dd>
+    <dt>Press backspace and type gnome-mines, press OK</dt>
+	<dd>Shortcut command dialogue closes</dd>
+	<dd>Command listed as Mines</dd>
+    <dt>Press Super+3</dt>
+	<dd>Mines opens</dd>
+    <dt>Double click on Shortcut (Super+3) for gnome-mines</dt>
+	<dd>Shortcut Command dialogue appears</dd>
+    <dt>Press Super+9</dt>
+	<dd>Shortcut changes to Super+9</dd>
+    <dt>Press Super+9</dt>
+	<dd>Mines opens</dd>
+    <dt>Press Reset to Defaults button</dt>
+	<dd>Confirmation dialogue appears</dd>
+    <dt>Press Yes</dd>
+	<dd>Changes are reverted, Command now reads abiword, Shortcut reads Super+3</dd>
+</dl>
+
+	
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
