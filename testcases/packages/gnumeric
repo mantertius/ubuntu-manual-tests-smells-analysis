@@ -74,6 +74,7 @@ This test will check that Gnumeric will create new files from templates
 	<dd>New window opens with calendar</dd>
     <dt>Focus on new window, press Ctrl+W</dt>
 	<dd>Calendar window closes</dd>
+</dl>
 
 This test will check that Gnumeric opens help
 <dl>
