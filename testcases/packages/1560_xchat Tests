@@ -1,11 +1,13 @@
 ﻿Test-case name:xchat
 
-<dl>This test will check that Xchat will open correctly
+This test will check that Xchat will open correctly
+<dl>
     <dt>Open Xchat</dt>
         <dd>Xchat should launch to Network List window</dd>
 </dl>
 
-<dl>This test will check that XChat let you specify Nicks, Names
+This test will check that XChat let you specify Nicks, Names
+<dl>
     <dt>Double click existing nick in Nick name and enter your nick</dt>
         <dd>Your choice is saved</dd>
     <dt>Repeat for Second and Third choice</dt>
@@ -16,7 +18,8 @@
         <dd>Your chosen name is saved</dd>
 </dl>
 
-<dl>This test will check that XChat will use specified Network, Network Settings and accept Favorite channels
+This test will check that XChat will use specified Network, Network Settings and accept Favorite channels
+<dl>
     <dt>Select Freenode from Network list </dt>
         <dd>Freenode is highlighted</dd>
     <dt>Click in Skip network list on startup</dt>
@@ -43,7 +46,8 @@
         <dd>Edit Freenode window closes</dd>
 </dl>
 
-<dl>This test will check that Xchat connects to your chosen network and channel(s) with your chosen nickname
+This test will check that Xchat connects to your chosen network and channel(s) with your chosen nickname
+<dl>
     <dt>Click Connect button</dt>
         <dd>Xchat opens a new window connected to your chosen channel(s)</dd>
         <dd>Xchat Connection Complete window opens</dd>
@@ -55,7 +59,8 @@
         <dd>Message appears in channel</dd>
 </dl>
 
-<dl>This test checks some of xchat's more advanced features
+This test checks some of xchat's more advanced features
+<dl>
     <dt>Click your nickname</dt>
         <dd>A dialogue windows that allows you to change your nickname appears</dd>
     <dt>Type a new nickname, the click OK</dt>
@@ -70,7 +75,8 @@
         <dd>You should be disconnected from the current server</dd>
 </dl>
 
-<dl>This test checks that XChat closes properly, and will reopen with the settings previously applied
+This test checks that XChat closes properly, and will reopen with the settings previously applied
+<dl>
     <dt>Click X in top right (or left depending on Desktop Environment)</dt>
         <dd>Quit XChat window appears</dd>
     <dt>Select Don't ask next time</dt>
