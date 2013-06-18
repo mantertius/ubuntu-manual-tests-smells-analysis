@@ -1,67 +1,31 @@
 Test-case name: evince/evn-001
 This test will check that Evince can display PDFs correctly
 <dl>
-    <dt> Open the dash and launch document viewer by pressing the super key, and then entering ‘document viewer’</dt>
-        <dd>document viewer should launch</dd>
-    <dt> Open a pdf by selecting file, open and choosing a pdf file</dt>
-        <dd>Is the selected PDF displayed correctly?</dd>
+    <dt>Open Document viewer</dt>
+        <dd>Document viewer launches</dd>
+    <dt>Open a pdf by selecting file, open and choosing a pdf file</dt>
+        <dd>The selected PDF is displayed correctly</dd>
 </dl>
 
 Test-case name: evince/evn-002
-This test will check that Evince can enter fullscreen mode via F11
+This test will check that Evince functions normally
 <dl>
-    <dt> Open the dash and launch document viewer by pressing the super key, and then entering ‘document viewer’</dt>
-        <dd>document viewer should launch</dd>
-    <dt> Open a pdf by selecting file, open and choosing a pdf file</dt>
-    <dt> Make sure that Evince is not in fullscreen mode</dt>
-    <dt> Press F11</dt>
-        <dd>Does Evince enter fullscreen mode?</dd>
-</dl>
-
-Test-case name: evince/evn-003
-This test will check that Evince can enter exit fullscreen mode via F11
-<dl>
-    <dt> Open the dash and launch document viewer by pressing the super key, and then entering ‘document viewer’</dt>
-        <dd>document viewer should launch</dd>
-    <dt> Open a pdf by selecting file, open and choosing a pdf file</dt>
-    <dt> Make sure that Evince is in fullscreen mode</dt>
-    <dt> Press F11</dt>
-        <dd>Does Evince exit fullscreen mode and restore the window size and position correctly?</dd>
-</dl>
-
-Test-case name: evince/evn-004
-This test will check that Evince can hide sidebar
-<dl>
-    <dt> Open the dash and launch document viewer by pressing the super key, and then entering ‘document viewer’</dt>
-        <dd>document viewer should launch</dd>
-    <dt> Open a pdf by selecting file, open and choosing a pdf file</dt>
-    <dt> Make sure sidebar is displayed</dt>
-    <dt> Press F9</dt>
-        <dd>Did Evince hide the sidebar?</dd>
-</dl>
-
-Test-case name: evince/evn-005
-This test will check that Evince can display sidebar
-<dl>
-    <dt> Open the dash and launch document viewer by pressing the super key, and then entering ‘document viewer’</dt>
-        <dd>Document viewer should launch</dd>
-    <dt> Open a pdf by selecting file, open and choosing a pdf file</dt>
-    <dt> Make sure sidebar is hides</dt>
-    <dt> Press F9</dt>
-        <dd>Does Evince display a sidebar with page thumbnails or the document index?</dd>
-</dl>
-
-Test-case name: evince/evn-005
-This test will check that Evince can rotate a document
-<dl>
-    <dt> Open the dash and launch document viewer by pressing the super key, and then entering ‘document viewer’</dt>
-        <dd>document viewer should launch</dd>
-    <dt> Open a pdf by selecting file, open and choosing a pdf file</dt>
-    <dt> Press ctrl+left</dt>
+    <dt>Open a pdf by selecting file --> open then choosing a pdf file</dt>
+    <dt>Make sure that Evince is not in fullscreen mode</dt>
+    <dt>Press F11</dt>
+        <dd>Evince enters fullscreen mode</dd>
+    <dt>Press F11 again</dt>
+        <dd>Evince exits fullscreen mode and restores the window size and position correctly</dd>
+    <dt>Make sure sidebar is displayed</dt>
+    <dt>Press F9</dt>
+        <dd>Evince hides the sidebar</dd>
+    <dt>Press F9</dt>
+        <dd>Evince displays a sidebar with page thumbnails or the document index</dd>
+    <dt>Press ctrl+left</dt>
         <dd>The pdf is rotated left</dd>
-    <dt> Press ctrl+right</dt>
+    <dt>Press ctrl+right</dt>
         <dd>The pdf is rotated right</dd>
-        <dd>Does Evince display the rotated document correctly?</dd>
+        <dd>Evince displays the rotated document correctly</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
