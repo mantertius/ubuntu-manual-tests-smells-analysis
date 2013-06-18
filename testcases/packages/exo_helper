@@ -1,6 +1,7 @@
 Test-case name:exo helper
 
-<dl>This test will check that exo helper opens applications correctly using
+This test will check that exo helper opens applications correctly 
+<dl>
     <dt>Open Settings Manager -> Keyboard -> Application Shortcuts</dt>
 	<dd>Application Shortcuts tab opens</dd>
     <dt>Press Super+3</dt>
@@ -46,7 +47,9 @@ Test-case name:exo helper
     <dt>Press Alt+F2</dt>
 	<dd>Run dialogue opens</dd>
 </dl>
-<dl>This test will check that shortcuts and their targets can be changed
+
+This test will check that shortcuts and their targets can be changed
+<dl>
     <dt>Double click on Command 'abiword'</dt>
 	<dd>Shortcut Command dialogue opens with abiword highlighted</dd>
     <dt>Press backspace and type gnome-mines, press OK</dt>
