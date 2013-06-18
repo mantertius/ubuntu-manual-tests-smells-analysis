@@ -68,7 +68,7 @@ These Tests will check items in the Edit menu
 	<dd>Thunar window changes to show Desktop contents</dd>
     <dt>Press Ctrl+V</dt>
 	<dd>File Operation Progress and Confirm to replace files dialogue boxes appear</dd>
-    <dt>Click Replace in Confirm dialogue</dt
+    <dt>Click Replace in Confirm dialogue</dt>
 	<dd>Dialogues disappear, existing symbolic link on Desktop replaced by file test</dd>
     <dt>Select test file on Desktop</dt>
     <dt>Press Ctrl+C</dt>
@@ -84,7 +84,7 @@ These Tests will check items in the Edit menu
 	<dd> Permanent Deletion warning appears</dd>
     <dt>Select Delete button</dt>
 	<dd>Warning dialogue disappears and file test is deleted from Desktop</dd>
-    <dt>Select Wastebasket/Rubbish Bin from Places sidebar</dt
+    <dt>Select Wastebasket/Rubbish Bin from Places sidebar</dt>
 	<dd>Contents displayed - only one test is visible</dd>
     <dt>Right Click on file test, select Restore</dt>
 	<dd>File test no longer shows in Rubbish Bin</dt>
@@ -92,7 +92,7 @@ These Tests will check items in the Edit menu
 	<dd>Contents of /home/USER displayed including file test</dd>
     <dt>Select Edit -> Select All files</dt>
 	<dd>All files in window are highlighted</dd>
-    <dt>Select Edit -> Select by pattern</dt
+    <dt>Select Edit -> Select by pattern</dt>
 	<dd>Select dialogue appears</dd>
     <dt>Type test in box and press Select</dt>
 	<dd>Only file test is highlighted</dd>
@@ -105,7 +105,7 @@ These Tests will check items in the Edit menu
 	<dd>File copy of test is renamed tested</dd>
     <dt>SelectEdit -> Preferences and select</dt>
 	<dd>File Manager Preferences dialogue appears</dd>
-    <dt> Click Close</dt
+    <dt> Click Close</dt>
 	<dd>File Manager Preferences dialogue closes</dd>
 </dl>
 
