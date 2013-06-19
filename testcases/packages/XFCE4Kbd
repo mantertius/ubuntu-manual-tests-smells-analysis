@@ -1,7 +1,6 @@
 Test-case name:XFCE4Keyboard_Settings
 
 This test will check that keyboard behaviour is correctly applied. The test will require the machine to restart twice.
-
 <dl>
     <dt>Open Keyboard from Settings Manager</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
@@ -55,15 +54,74 @@ This test will check that keyboard behaviour is correctly applied. The test will
         <dd>Restore num lock state is ticked</dd>
         <dd>Num lock is on</dd>
 </dl>
-
 This test will check that application shortcuts are applied correctly
-
 <dl>
-    <dt>Run Manual testcase 1568_exohelper</dt>
+    <dt>Open Settings Manager -> Keyboard -> Application Shortcuts</dt>
+        <dd>Application Shortcuts tab opens</dd>
+    <dt>Press Super+3</dt>
+        <dd>Abiword opens</dd>
+    <dt>Press Super+f</dt>
+        <dd>File Manager opens</dd>
+    <dt>Press Super+m</dt>
+        <dd>Mail Reader opens</dd>
+    <dt>Press Mail shortcut button (if available)</dt>
+        <dd>Mail Reader opens</dd>
+    <dt>Press Super+t</dt>
+        <dd>Terminal opens</dd>
+    <dt>Press Super+w</dt>
+        <dd>Web Browser opens</dd>
+    <dt>Press Web Browser shortcut button (if available)</dt>
+        <dd>Web Browser opens</dd>
+    <dt>Press Super+1</dt>
+        <dd>gmusicbrowser opens</dd>
+    <dt>Press Super+1</dt>
+        <dd>gnumeric opens</dd>
+    <dt>Press Super+e</dt>
+        <dd>Mousepad opens</dd>
+    <dt>Press Super+2</dt>
+        <dd>pidgin opens</dd>
+    <dt>Press Super+r</dt>
+        <dd>xfce4-appfinder opens</dd>
+    <dt>Press Alt+F3</dt>
+        <dd>xfce4-appfinder opens</dd>
+    <dt>Press Super+p</dt>
+        <dd>xfce4-display-settings --minimal opens</dd>
+    <dt>Press XF86Display(if available)</dt>
+        <dd>xfce4-display-settings --minimal opens</dd>
+    <dt>Press Alt+F1</dt>
+        <dd>Application menu opens</dd>
+    <dt>Press Print</dt>
+        <dd>Screenshooter - whole screen </dd>
+    <dt>Press Alt+Print</dt>
+        <dd>Active Window screenshooter opens</dd>
+    <dt>Press Ctrl+Esc</dt>
+        <dd>desktop menu opens</dd>
+    <dt>Press Ctrl+Alt+Del</dt>
+        <dd>screen lock</dd>
+    <dt>Press Alt+F2</dt>
+        <dd>Run dialogue opens</dd>
 </dl>
-
+This test will check that shortcuts and their targets can be changed
+<dl>
+    <dt>Double click on Command 'abiword'</dt>
+        <dd>Shortcut Command dialogue opens with abiword highlighted</dd>
+    <dt>Press backspace and type gnome-mines, press OK</dt>
+        <dd>Shortcut command dialogue closes</dd>
+        <dd>Command listed as Mines</dd>
+    <dt>Press Super+3</dt>
+        <dd>Mines opens</dd>
+    <dt>Double click on Shortcut (Super+3) for gnome-mines</dt>
+        <dd>Shortcut Command dialogue appears</dd>
+    <dt>Press Super+9</dt>
+        <dd>Shortcut changes to Super+9</dd>
+    <dt>Press Super+9</dt>
+        <dd>Mines opens</dd>
+    <dt>Press Reset to Defaults button</dt>
+        <dd>Confirmation dialogue appears</dd>
+    <dt>Press Yes</dt>
+        <dd>Changes are reverted, Command now reads abiword, Shortcut reads Super+3</dd>
+</dl>
 This test will check that Layout options apply correctly
-
 <dl>
     <dt>Open Keyboard from Settings Manager</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
@@ -108,10 +166,6 @@ This test will check that Layout options apply correctly
     <dt>Press OK</dt>
         <dd>Use default button ticked, model and layout options unavailable and greyed out</dd>
 </dl>
-
-
-
-
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
