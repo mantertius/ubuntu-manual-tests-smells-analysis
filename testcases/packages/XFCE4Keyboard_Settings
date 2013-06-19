@@ -1,0 +1,117 @@
+Test-case name:XFCE4Keyboard_Settings
+
+This test will check that keyboard behaviour is correctly applied. The test will require the machine to restart twice.
+
+<dl>
+    <dt>Open Keyboard from Settings Manager</dt>
+ 	<dd>Keyboard Setting dialogue opens at Behaviour</dd>
+    <dt>Toggle 'Restore num lock state' button</dt>
+	<dd>Tick disappears from box</dt>
+    <dt>In Test Area, press a letter and hold down</dt>
+	<dd>Letter pressed is repeated.</dd>
+    <dt>Toggle Enable key repeat</dt>	
+    <dt>In Test Area, press a letter and hold down</dt>
+	<dd>Letter pressed is not repeated</dd>
+    <dt>Toggle Enable key repeat</dt>
+    <dt>Change Repeat delay to 1000</dt>
+    <dt>In Test Area, press a letter and hold down</dt>
+	<dd>Time to start repeating letter increases to 1000ms</dt>
+    <dt>Change Repeat delay to 50</dt>
+    <dt>In Test Area, press a letter and hold down</dt>
+	<dd>Time to start repeating letter increases to 50ms</dd>
+    <dt>Reset repeat delay to default 500</dt>
+    <dt>Change Repeat Speed to 250</dt>
+    <dt>In Test Area, press a letter and hold down</dt>
+	<dd>Speed of key repeat increases</dd>
+    <dt>Change Repeat Speed to 1</dt>
+    <dt>In Test Area, press a letter and hold down</dt>
+	<dd>Speed of key repeat decreases</dd>
+    <dt>Reset repeat delay to default 20</dt>
+    <dt>Toggle Cursor show blinking</dd>
+	<dd>Tick disappears from box</dt>
+    <dt>Select Test Area</dt>
+	<dd>Cursor appears but does not blink</dd>
+    <dt>Toggle Cursor show blinking</dd>
+	<dd>Tick appears in box</dt>
+    <dt>Select Test Area</dt>
+	<dd>Cursor appears and blinks</dd>
+    <dt>Change Blink delay to 100</dt>
+	<dd>Cursor blink speed increases</dd>
+    <dt>Change Blink delay to 2000</dt>
+	<dd>Cursor blink speed decreases</dd>
+    <dt>Reset Blink delay to default 1200</dt>
+	<dd>Cursor blink returns to normal speed</dd>
+    <dt>Restart machine</dt>
+    <dt>Open Keyboard from Settings Manager</dt>
+ 	<dd>Keyboard Setting dialogue opens at Behaviour</dd>
+	<dd>Restore num lock state is unticked</dd>
+	<dd>Num lock is off</dd>
+    <dt>Turn num lock on</dt>
+    <dt>Toggle 'Restore num lock state' button</dt>
+	<dd>Tick appears in box</dt>
+    <dt>Restart machine</dt>
+    <dt>Open Keyboard from Settings Manager</dt>
+ 	<dd>Keyboard Setting dialogue opens at Behaviour</dd>
+	<dd>Restore num lock state is ticked</dd>
+	<dd>Num lock is on</dd>
+</dl>
+
+This test will check that application shortcuts are applied correctly
+
+<dl>
+    <dt>Run Manual testcase 1568_exohelper</dt>
+</dl>
+
+This test will check that Layout options apply correctly
+
+<dl>
+    <dt>Open Keyboard from Settings Manager</dt>
+ 	<dd>Keyboard Setting dialogue opens at Behaviour</dd>
+    <dt>Select Layout tab</dt>
+	<dd>Dialogue changes to layout with Use System Defaults ticked</dd>
+	<dd>All other options greyed out</dd>
+    <dt>Toggle Use System Defaults button</dt>
+	<dd>Tick disappears from box</dd>
+	<dd>All options now available for modification</dd>
+    <dt>Select Keyboard model</dt>
+	<dd>Keyboard selection list appears</dd>
+    <dt>Click outside of selection list</dt>
+	<dd>Layout dialogue appears</dd>
+    <dt>Press Add button</dt>
+	<dd>Keyboard layout selection dialogue appears</dd>
+    <dt>Select a new layout and press OK</dt>
+	<dd>New layout added to Keyboard Layout list</dd>
+    <dt>Open a text editor</dt>
+    <dt>Type some symbols</dt>
+    <dt>In Keyboard layout list - select new layout</dt>
+	<dd>New layout highlighted</dd>
+    <dt>Type some text or symbols</dt>
+	<dd>Some or all characters typed are different</dd>
+    <dt>Select new layout in layout list</dt>
+    <dt>Press Delete button</dt>
+	<dd>New layout is removed from list</dd>
+    <dt>Select existing layout in layout list</dt>
+    <dt>Press Edit button</dt>
+	<dd>Keyboard Layout selection dialogue appears with current choice highlighted</dd>
+    <dt>Change layout, press OK</dt>
+	<dd>Layout in list changes</dd>
+    <dt>Type some characters in text document</dt>
+	<dd>Symbols do not match keyboard</dd>
+    <dt>Press Edit button</dt>
+	<dd>Keyboard Layout selection dialogue appears with current choice highlighted</dd>
+    <dt>Set layout to match keyboard, press OK</dt>
+	<dd>Layout in list changes</dd>
+    <dt>Type some characters in text document</dt>
+	<dd>Symbols match keyboard</dd>
+    <dt>Toggle Use System Defaults</dt>
+	<dd>Warning dialogue appears</dd>
+    <dt>Press OK</dt>
+	<dd>Use default button ticked, model and layout options unavailable and greyed out</dd>
+</dl>
+
+
+
+
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
