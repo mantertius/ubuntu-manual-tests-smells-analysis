@@ -31,7 +31,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
 	<dd>Tick disappears from box</dd>
     <dt>Select Test Area</dt>
 	<dd>Cursor appears but does not blink</dd>
-    <dt>Toggle Cursor show blinking</dd>
+    <dt>Toggle Cursor show blinking</dt>
 	<dd>Tick appears in box</dd>
     <dt>Select Test Area</dt>
 	<dd>Cursor appears and blinks</dd>
@@ -48,7 +48,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
 	<dd>Num lock is off</dd>
     <dt>Turn num lock on</dt>
     <dt>Toggle 'Restore num lock state' button</dt>
-	<dd>Tick appears in box</dt>
+	<dd>Tick appears in box</dd>
     <dt>Restart machine</dt>
     <dt>Open Keyboard from Settings Manager</dt>
  	<dd>Keyboard Setting dialogue opens at Behaviour</dd>
