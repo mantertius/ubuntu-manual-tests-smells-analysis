@@ -6,7 +6,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
     <dt>Open Keyboard from Settings Manager</dt>
  	<dd>Keyboard Setting dialogue opens at Behaviour</dd>
     <dt>Toggle 'Restore num lock state' button</dt>
-	<dd>Tick disappears from box</dt>
+	<dd>Tick disappears from box</dd>
     <dt>In Test Area, press a letter and hold down</dt>
 	<dd>Letter pressed is repeated.</dd>
     <dt>Toggle Enable key repeat</dt>	
@@ -15,7 +15,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
     <dt>Toggle Enable key repeat</dt>
     <dt>Change Repeat delay to 1000</dt>
     <dt>In Test Area, press a letter and hold down</dt>
-	<dd>Time to start repeating letter increases to 1000ms</dt>
+	<dd>Time to start repeating letter increases to 1000ms</dd>
     <dt>Change Repeat delay to 50</dt>
     <dt>In Test Area, press a letter and hold down</dt>
 	<dd>Time to start repeating letter increases to 50ms</dd>
@@ -27,12 +27,12 @@ This test will check that keyboard behaviour is correctly applied. The test will
     <dt>In Test Area, press a letter and hold down</dt>
 	<dd>Speed of key repeat decreases</dd>
     <dt>Reset repeat delay to default 20</dt>
-    <dt>Toggle Cursor show blinking</dd>
-	<dd>Tick disappears from box</dt>
+    <dt>Toggle Cursor show blinking</dt>
+	<dd>Tick disappears from box</dd>
     <dt>Select Test Area</dt>
 	<dd>Cursor appears but does not blink</dd>
     <dt>Toggle Cursor show blinking</dd>
-	<dd>Tick appears in box</dt>
+	<dd>Tick appears in box</dd>
     <dt>Select Test Area</dt>
 	<dd>Cursor appears and blinks</dd>
     <dt>Change Blink delay to 100</dt>
