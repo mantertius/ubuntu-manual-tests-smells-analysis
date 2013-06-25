@@ -2,7 +2,7 @@
     <dt>Start your machine with the install media in place.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
         <dd>Language list will appear</dd>
     <dt>Use arrow keys to select language and press Enter</dt>
-        <dd>Language list will close.</dd>
+        <dd>Language list will close</dd>
     <dt>Press F6 and use the down arrow to get to Free software only and press Enter</dt>
         <dd>An X will appear by Free software only</dd>
     <dt>Press ESC to dismiss the menu</dt>
@@ -19,7 +19,7 @@
                 <li>Is connected to the Internet</li>
             </ul>
         </dd>
-        <dd>Check marks represent the state of your system accurately</dd>
+        <dd>The check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>

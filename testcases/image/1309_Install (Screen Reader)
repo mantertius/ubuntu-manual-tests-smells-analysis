@@ -1,7 +1,7 @@
 This is an installation using the Screen-Reader as done by a visually blind individual. Please cover your monitor, lay it face down or turn it off during this installation. You will require speakers or headphones to hear the screen-reader. As you press Enter to continue on each page, it can take several minutes to advance to the next installer page.
 <dl>
     <dt>Start your machine with the install media in place </dt>
-        <dd>Wait to hear the drums</dd>
+    <dt>Wait to hear the drums</dt>
     <dt>Press Ctrl+s to start the screen-reader</dt>
     <dt>Press Alt+Tab to change to the installer</dt>
     <dt>Press Up or Down arrow to select your language(default is English)</dt>
@@ -31,7 +31,7 @@ This is an installation using the Screen-Reader as done by a visually blind indi
     <dt>Press Enter to begin the installation</dt>
     <dt>Once the installer tells you it is finished, Restart the system now by pressing Enter</dt>
     <dt>Wait a few seconds for the cd drive to quit spinning, remove the disc and press Enter</dt>
-    <dt>After restarting, at the desktop, you must restart again. This will start the screen-reader. It will then start at login. </dt>
+    <dt>After restarting, at the desktop, you must restart again. This will start the screen-reader. It will then start at login</dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
