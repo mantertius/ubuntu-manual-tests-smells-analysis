@@ -10,8 +10,6 @@ This tests that parole can open many different files.
     <dt>Insert then Play some CDs and DVDs</dt>
         <dd>CDs and DVDs play (note: to play encrypted DVDs, you will need to have libdvdcss2 installed)</dd>
         <dd>Chapters and tracks for CDs/DVDs are shown in the playlist</dd>
-    <dt>Localization strings for embedded subtitles</dt>
-        <dd>Embedded subtitles display proper localization name for audio tracks and subtitles</dd>
     <dt>Use (external) subtitles for a video file</dt>
         <dd>Subtitles work and show up correctly</dd>
 </dl>
