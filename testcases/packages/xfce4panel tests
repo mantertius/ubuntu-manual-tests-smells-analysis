@@ -1,4 +1,4 @@
-Test-case name: xfce4 panel/xfce4-panel-001
+Test-case name: xfce4 panel/xfce4-panel-01
 <dl>
 	This test will check that Xfce4 Panel allows to insert plugins into the panel
 	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
@@ -14,7 +14,7 @@ Test-case name: xfce4 panel/xfce4-panel-001
 	<dt>Select an item from the dialog, drag it and drop it in the panel</dt>
 		<dd>The selected panel plugin should appear at the end of the selected panel</dd>
 </dl>
-Test-case name: xfce4 panel/xfce4-panel-002
+Test-case name: xfce4 panel/xfce4-panel-02
 <dl>
 	This test will check that Xfce4 Panel allows to configure panel preferences
 	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
@@ -42,7 +42,7 @@ Test-case name: xfce4 panel/xfce4-panel-002
 	<dt>Tick the 'Don't reserve space on borders' option under the "General" section</dt>
 		<dd>The windows should stretch to the screen edge overlaping the panel</dd>
 </dl>
-Test-case name: xfce4 panel/xfce4-panel-003
+Test-case name: xfce4 panel/xfce4-panel-03
 <dl>
 	This test will check that Xfce4 Panel allows to add and remove panels
 	<dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
@@ -70,7 +70,7 @@ Test-case name: xfce4 panel/xfce4-panel-003
 	<dt>Point your mouse cursor to the '-' button and click it</dt>
 		<dd>The currently selected panel should be removed</dd>
 </dl>
-Test-case name: xfce4 panel/xfce4-panel-004
+Test-case name: xfce4 panel/xfce4-panel-04
 <dl>
 	This test will check that Xfce4 Panel allows to change the panel's height, width, length and the number of rows
 	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
@@ -94,7 +94,7 @@ Test-case name: xfce4 panel/xfce4-panel-004
 	<dt>Point the mouse pointer to the 'Number of rows:' slidebar under the "Measurements" section and move the slider to the right</dt>
 		<dd>Small panel plugins, such as launchers, shoul be laid out in multiple rows (or columns), while larger ones, like window buttons should continue to occupy the whole panel height (or width)</dd>
 </dl>
-Test-case name: xfce4 panel/xfce4-panel-005
+Test-case name: xfce4 panel/xfce4-panel-05
 <dl>
 	This test will check that Xfce4 Panel allows to change the color, background image and transparency of the panel
 	<dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
