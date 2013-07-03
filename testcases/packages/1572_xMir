@@ -1,0 +1,18 @@
+Smoke Tests for xMir
+<dl>
+    <dt>Does your system continue to boot properly?</dt>
+    <dt>Can you login and logout of a desktop session?</dt>
+    <dt>Does unity function correctly? Can you open and close the dash, use the launcher, and keyboard shortcuts?</dt>
+    <dt>Do your input devices all work? Mouse, keyboard, etc?</dt>
+    <dt>Do your output devices all work? Monitors, tv, etc?</dt>
+    <dt>Are you able to run an opengl accelerated application (try running glxgears)?</dt>
+    <dt>Do applications load (try running simple apps like gedit, as well as complex ones like libreoffice)?</dt>
+    <dt>Are you able to change your video resolution (xrandr, using display tool, etc)?</dt>
+    <dt>Can you connect an external monitor?</dt>
+    <dt>Does hotplugging work?</dt>
+    <dt>Does user switching work?</dt>
+    <dt>Overall, does everything function the same as when running under xserver?</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, and you can answer yes to the above questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, or you answer no to any of the above questions, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
