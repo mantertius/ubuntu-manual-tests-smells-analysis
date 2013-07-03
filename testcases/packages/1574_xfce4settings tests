@@ -1,40 +1,80 @@
-Test-case name: xfce4 panel/xfce4-settings_manager-001
+Test-case name:XFCE_Settings_Manager
+
+This test will check that the Settings Manager opens and closes without error
 <dl>
-	This test will check that Xfce4 Settings Manager allows to enable Assistive Technologies
-	<dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
-		<dd>A menu should drop down</dd>
-	<dt>Select the Settings Manager option</dt>
-		<dd>Settings dialog window should open</dd>
-	<dt>Point your mouse cursor to the 'Accessibility' icon under the "System" section and click it</dt>
-		<dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
-	<dt>Tick the 'Enable Assistive Technologies' option</dt>
-		<dd>Xfce desktop should be enabled, xfce4-session should load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
-	<dt>Point your mouse cursor to the 'Keyboard' tab and click it</dt>
-		<dd>Selected/active tab should change to 'Keyboard' tab</dd>
-	<dt>Tick the 'Sticky Keys' option</dt>
-		<dd>Pressing key combinations in sequence instead of at the same time should be enabled. For instance, Ctrl followed by C (instead of Ctrl-C) will copy selected text</dd>
-	<dt>Tick the 'Slow Keys' option</dt>
-		<dd>The keyboard shouldn't register a keystroke until the key is hold down for a certain length of time. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
-	<dt>Tick the 'Bounce Keys' option</dt>
-		<dd>The keyboard shouldn't accept a keystroke until there has been a certain interval of time since the previous keystroke. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
-	<dt>Point your mouse cursor to the 'Mouse' tab and click it</dt>
-		<dd>Selected/active tab should change to 'Mouse' tab</dd>
-	<dt>Tick the 'Mouse Emulation' option</dt>
-		<dd>Acceleration delay (in milliseconds), Repeat interval (in milliseconds), Acceleration time (in milliseconds), Maximum speed (in pixels per second) and Acceleration profile options should enabled and configurable</dd>
+    <dt>Open Settings Manager from the menu</dt>
+        <dd>Settings Manager opens</dd>
+    <dt>Click Close Button</dt>
+        <dd>Settings Manager closes</dd>
 </dl>
-Test-case name: xfce4 panel/xfce4-settings_manager-002
+This test will check that new system settings tools are populated into Settings Manager, installing software is a requirement for this test.
 <dl>
-	This test will check that Xfce4 Settings Manager allows to configure various aspects of how the desktop looks
-	<dt>Reproduce the steps used before to open Settings Manager dialog window</dt>
-		<dd>Settings dialog window should open</dd>
-	<dt>Point your mouse cursor to the 'Appearance' icon under the "Personal" section and click it</dt>
-		<dd>Appearance dialog window should open with the 'Style' tab selected</dd>
-	<dt>Select a theme in the list</dt>
-		<dd>The visual appearance of the toolkit (Gtk+) controls, such as buttons and menus should change accordingly</dd>
-	<dt>Point your mouse cursor to the 'Icons' tab and click it</dt>
-		<dd>Selected/active tab should change to 'Icons' tab</dd>
-	<dt>Choose a new icon theme by selecting a theme in the list</dt>
-		<dd>The visual appearance of icons visible on the desktop, the file manager and menus should change accordingly</dd>
+    <dt>Open a terminal and type sudo apt-get install arandr press enter, supply password as required and enter</dt>
+        <dd>Arandr is installed without error</dd>
+    <dt>Open Settings Manager from the menu</dt>
+        <dd>Settings Manager opens</dd>
+        <dd>Arandr is shown in Hardware section</dd>
+    <dt>In the terminal type sudo apt-get purge arandr, enter and supply password as required, enter again</dt>
+        <dd>Arandr is uninstalled without error</dd>
+        <dd>Arandr is removed from Hardware section of Settings Manager</dd>
+    <dt>Close terminal with X in top right</dt>
+        <dd>Terminal closes</dd>
+    <dt>Click Close button</dt>
+        <dd>Settings Manager closes</dd>
 </dl>
+This test will check that Settings Manager will open a sub menu and return to main menu
+<dl>
+    <dt>Open Settings Manager from the menu</dt>
+        <dd>Settings Manager opens</dd>
+    <dt>Click Appearance</dt>
+        <dd>Appearance menu opens</dd>
+    <dt>Click All Settings button</dt>
+        <dd>Main Settings menu appears</dd>
+</dl>
+This test will check that Settings will open Help in a web browser
+    <dt>Click Help</dt>
+    	<dd>Online Documentation dialogue appears</dd>
+    <dt>Click Read Online</dt>
+    	<dd>Dialogue closes and browser opens at XFCE Settings Manager Docs</dd>
+    <dt>Close browser</dt>
+    	<dd>Browser closes</dd>
+</dl>
+This test will check that Xfce4 Settings Manager allows to enable Assistive Technologies
+<dl>
+    <dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
+	<dd>A menu should drop down</dd>
+    <dt>Select the Settings Manager option</dt>
+	<dd>Settings dialog window should open</dd>
+    <dt>Point your mouse cursor to the 'Accessibility' icon under the "System" section and click it</dt>
+	<dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
+    <dt>Tick the 'Enable Assistive Technologies' option</dt>
+	<dd>Xfce desktop should be enabled, xfce4-session should load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
+    <dt>Point your mouse cursor to the 'Keyboard' tab and click it</dt>
+	<dd>Selected/active tab should change to 'Keyboard' tab</dd>
+    <dt>Tick the 'Sticky Keys' option</dt>
+	<dd>Pressing key combinations in sequence instead of at the same time should be enabled. For instance, Ctrl followed by C (instead of Ctrl-C) will copy selected text</dd>
+    <dt>Tick the 'Slow Keys' option</dt>
+	<dd>The keyboard shouldn't register a keystroke until the key is hold down for a certain length of time. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
+    <dt>Tick the 'Bounce Keys' option</dt>
+	<dd>The keyboard shouldn't accept a keystroke until there has been a certain interval of time since the previous keystroke. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
+    <dt>Point your mouse cursor to the 'Mouse' tab and click it</dt>
+	<dd>Selected/active tab should change to 'Mouse' tab</dd>
+    <dt>Tick the 'Mouse Emulation' option</dt>
+	<dd>Acceleration delay (in milliseconds), Repeat interval (in milliseconds), Acceleration time (in milliseconds), Maximum speed (in pixels per second) and Acceleration profile options should enabled and configurable</dd>
+</dl>
+This test will check that Xfce4 Settings Manager allows to configure various aspects of how the desktop looks
+<dl>
+    <dt>Reproduce the steps used before to open Settings Manager dialog window</dt>
+	<dd>Settings dialog window should open</dd>
+    <dt>Point your mouse cursor to the 'Appearance' icon under the "Personal" section and click it</dt>
+	<dd>Appearance dialog window should open with the 'Style' tab selected</dd>
+    <dt>Select a theme in the list</dt>
+	<dd>The visual appearance of the toolkit (Gtk+) controls, such as buttons and menus should change accordingly</dd>
+    <dt>Point your mouse cursor to the 'Icons' tab and click it</dt>
+	<dd>Selected/active tab should change to 'Icons' tab</dd>
+    <dt>Choose a new icon theme by selecting a theme in the list</dt>
+	<dd>The visual appearance of icons visible on the desktop, the file manager and menus should change accordingly</dd>
+</dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
