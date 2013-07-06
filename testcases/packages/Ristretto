@@ -1,4 +1,5 @@
-Test-case name: ristretto/rt-001
+Test-case name: ristretto
+
 This test will check that Ristretto can start and shutdown.
 <dl>
     <dt>Select "Ristretto Image Viewer" from the Main Menu -> Graphics submenu.</dt>
@@ -13,7 +14,6 @@ This test will check that Ristretto can start and shutdown.
         <dd>Ristretto starts and opens the image that you right-clicked on.</dd>
 </dl>
 
-Test-case name: ristretto/rt-002
 This test will verify that the File menu options work properly.
 <dl>
     <dt>Ensure that ristretto is loaded. Select File->Open, select and image, and select "Open".</dt>
@@ -28,7 +28,6 @@ This test will verify that the File menu options work properly.
         <dd>The file unloads and Ristretto is left with a blank main window and no thumbnail bar.</dd>
 </dl>
 
-Test-case name: ristretto/rt-003
 This test will verify that the Edit menu options work properly.
 <dl>
     <dt>Ensure that Ristretto is loaded and that it is displaying an image from a directory where multiple images exist. Select Open->With and choose an application to open the image with (e.g. gimp).</dt>
@@ -45,7 +44,6 @@ This test will verify that the Edit menu options work properly.
         <dd>Ensure that the Preferences dialog box pop ups and is editable.</dd>
 </dl>
 
-Test-case name: ristretto/rt-004
 This test will verify that the View menu options work properly.
 <dl>
     <dt>Ensure that Ristretto is loaded and an image is displayed in the main window. Toggle View->Show Toolbar.</dt>
@@ -68,7 +66,6 @@ This test will verify that the View menu options work properly.
         <dd>The image is properly displayed as the background.</dd>
 </dl>
 
-Test-case name: ristretto/rt-005
 This test will verify that the Go menu options work properly.
 <dl>
     <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Select Go-> Forward</dt>
@@ -85,7 +82,6 @@ This test will verify that the Go menu options work properly.
         <dd>The slideshow pauses.</dd>
 </dl>
 
-Test-case name: ristretto/rt-006
 This test case will verify that the Help menu options work properly.
 <dl>
     <dt>Ensure that Ristretto is loaded and that you have an active internet connection. Select Help->Contents then "Read Online".</dt>
@@ -94,7 +90,6 @@ This test case will verify that the Help menu options work properly.
         <dd>The About ristretto dialog opens and the "Credits" and "License" buttons correctly display the associated information.</dd>
 </dl>
 
-Test-case name: ristretto/rt-007
 This test case will verify that the toolbar buttons work properly.
 <dl>
     <dt>Ensure that Ristretto is properly loaded. Click on the "Open an image" toolbar item and open an image.</dt>
@@ -125,7 +120,6 @@ This test case will verify that the toolbar buttons work properly.
         <dd>The image is properly displayed fullscreen and returns to normal window mode when the Escape key or F11 is pressed.</dd>
 </dl>
 
-Test-case name: ristretto/rt-008
 This test case will verify that the thumbnail bar works properly.
 <dl>
     <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Click on an image in the thumbnail bar.</dt>
@@ -134,7 +128,6 @@ This test case will verify that the thumbnail bar works properly.
         <dd>The contents of the thumbnail bar move up and down to show the available images.</dd>
 </dl>
 
-Test-case name: ristretto/rt-009
 This test case will verify that the adjustable settings in the Preferences dialog box work properly.
 <dl>
     <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images. Go to Edit->Preferences->Display tab, select the "Override background color" checkbox and select a background color.</dt>
@@ -156,7 +149,6 @@ This test case will verify that the adjustable settings in the Preferences dialo
     <dt></dt>
 </dl>
 
-Test-case name: ristretto/rt-010
 This test case will verify that the status bar is displaying image information.
 <dl>
     <dt>Ensure that Ristretto is loaded and displaying images from a directory containing multiple images.</dt>
