@@ -1,0 +1,51 @@
+Test-case name: xfdesktop-settings/xfdesktop-settings-001
+Testing settings window launch correctly.
+<dl>
+    <dt>Right-click on desktop and click 'Desktop Settings...</dt>
+    <dt>Observe that the Desktop Settings window opens.</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-002
+Testing wallpaper changes correctly.
+<dl>
+    <dt>Under 'Background', Ensure 'Image' is set to 'Single image'.</dt>
+    <dt>Click on a wallpaper other than the one currently selected.</dt>
+    <dt>Observe that the wallpaper has changed accordingly.</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-003
+Testing custom wallpaper.
+<dl>
+    <dt>Click on the green plus (+) button. A dialog should open.</dt>
+    <dt>Choose a background image in an appropiate format (png or jpeg recommended).</dt>
+    <dt>Observe that the added background is set correctly.</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-004
+Testing image list functionality.
+<dl>
+    <dt>Under 'Background', Ensure 'Image' is set to 'Image list'.</dt>
+    <dt>Add images to the list by clicing the plus button as before.</dt>
+    <dt>Observe that added images change correctly.</dt>
+    <dt>Select an image and click the red minus (-) button.</dt>
+    <dt>Observe that the image is removed from the list.</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-005
+Testing colours and gradients.
+<dl>
+    <dt>Under 'Background', ensure 'Image' is set to 'None'.</dt>
+    <dt>Under the 'Colours' drop down menu, select and observe the effect of 'Solid colour',
+        'Horizontal gradient', 'Vertical gradient', and 'Transparent' each in turn, ensuring each are applied correctly.</dt>
+    <dt>Change the colour(s) for each, and observe that they are set correctly</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-006
+Testing colour adjustments.
+<dl>
+    <dt>Increase and decrease the value of the 'Brightness' slider and observe that the brightness changes accordingly.</dt>
+    <dt>Increase and decrease the value of the 'Saturation' slider and observe that the saturation changes accordingly.</dt>
+</dl>
+
+<strong>If all actions produce the expected results listed, and you can answer yes to the above questions, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, or you answer no to any of the above questions, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
