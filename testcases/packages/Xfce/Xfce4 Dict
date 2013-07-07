@@ -109,3 +109,4 @@ This test will check the functionality of the Xfce4-Dict plugin
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+    
