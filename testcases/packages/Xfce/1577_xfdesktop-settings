@@ -35,8 +35,7 @@ Test-case name: xfdesktop-settings/xfdesktop-settings-005
 Testing colours and gradients.
 <dl>
     <dt>Under 'Background', ensure 'Image' is set to 'None'.</dt>
-    <dt>Under the 'Colours' drop down menu, select and observe the effect of 'Solid colour',
-        'Horizontal gradient', 'Vertical gradient', and 'Transparent' each in turn, ensuring each are applied correctly.</dt>
+    <dt>Under the 'Colours' drop down menu, select and observe the effect of 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent' each in turn, ensuring each are applied correctly.</dt>
     <dt>Change the colour(s) for each, and observe that they are set correctly</dt>
 </dl>
 
@@ -45,6 +44,28 @@ Testing colour adjustments.
 <dl>
     <dt>Increase and decrease the value of the 'Brightness' slider and observe that the brightness changes accordingly.</dt>
     <dt>Increase and decrease the value of the 'Saturation' slider and observe that the saturation changes accordingly.</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-007
+Testing desktop menu.
+<dl>
+    <dt>Right click on the desktop, and observe that the 'Applications' menu loads up a list of applications correctly.</dt>
+    <dt>In the desktop settings, under 'Menus', untick and retick the 'Show applications menu on desktop right click' box and observing in turn that it shows and hides the applications menu correctly.</dt>
+    <dt>Untick and retick the 'Show application icons in menu' box, observing that it shows and hides the application icons in the desktop menu.</dt>
+    <dt>Middle (scroll) click on the desktop and observe that a window list appears.</dt>
+    <dt>Untick and recheck each of the boxes under 'Window List Menu' in the desktop settings dialog, ensuring that they each enable and disable their labelled functions.</dt>
+</dl>
+
+Test-case name: xfdesktop-settings/xfdesktop-settings-008
+Testing desktop icons.
+<dl>
+   <dt>Under the 'Icons' tab of the desktop settings manager, under 'Appearance', change icon type to 'Minimised application icons' and ensure the desktop icons now represent the currently running applications.</dt>
+   <dt>Now change icon type to none and observe that all desktop icons disappear. They should reappear upon reselecting 'File/launcher icons'.</dt>
+   <dt>Change the icon size with the up and down buttons and observe that the icons change size correctly. Check that manually entering a value also has the required effect.</dt>
+   <dt>Click the check box 'Use custom font size' and ensure that using the up or down arrows, or entering a value, changes the icon font size correctly. Unchecking the box should restore the font size to default.</dt>
+   <dt>Untick and retick 'Show thumbnails' and observe that desktop thumbnails are shown and hidden correctly (may need some video or image files on the desktop to check this).</dt>
+   <dt>Tick 'Single click to activate icons' and ensure that the icon applications now launch upon being clicked. Untick the box and ensure it now functions as before (double click).</dt>
+   <dt>Tick and untick each of the checkboxes under 'Default Icons', ensuring each in turn is hidden and shown.</dt>
 </dl>
 
 <strong>If all actions produce the expected results listed, and you can answer yes to the above questions, please <a href="results#add_result">submit</a> a 'passed' result.
