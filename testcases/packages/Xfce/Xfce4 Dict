@@ -1,13 +1,13 @@
 This test will check that Xfce4 Dictionary can open
 <dl>
     <dt>Locate "Dictionary" under "Office" on the Main Menu and click on it</dt>
-        <dd>The Dictionary dialog should open</dd>
+        <dd>The Dictionary dialog opens</dd>
 </dl>
 
 This test will check word lookups from a Dictionary Server
 <dl>
     <dt>Confirm that the "Search with:" option is set to 'Dictionary Server', type a word in the Search term field and press Enter</dt>
-        <dd>Definitions for that word should appear in the window</dd>
+        <dd>Definitions for that word appear in the window</dd>
         <dd>You will probably see returns from more than one dictionary. The number of definitions found will be shown on the status bar at the bottom of the window</dd>
 </dl>
 
@@ -15,9 +15,9 @@ This test will check that the Spell Checker works
 <dl>
     <dt>Select the 'Spell Checker' option on the "Search with:" line</dt>
         <dd>The 'Find' icon to the right of the search term field changes from a magnifying glass to "ABC"</dd>
-        <dt>Type a word in the search term field and press Enter</dt>
+    <dt>Type a word in the search term field and press Enter</dt>
         <dd>The window displays "Spell Checker Results:" for that word</dd>
-        <dd>The suggestions should indicate the correct language locale for this installation (e.g., "en_US")</dd>
+        <dd>The suggestions indicate the correct language locale for this installation (e.g., "en_US")</dd>
 </dl>
 
 This test will check the Speed Reader option
@@ -33,7 +33,7 @@ This test will check the Speed Reader option
     <dt>Change the "Font Size:" to 26</dt>
     <dt>Check the "Mark Paragraphs" option</dt>
     <dt>Click the 'Start' button</dt>
-        <dd>The sample text should play at the new speed, five words at a time, with a 26 pt font, and with a paragraph break after the first sentence</dd>
+        <dd>The sample text plays at the new speed, five words at a time, with a 26 pt font, and with a paragraph break after the first sentence</dd>
     <dt>Close the Speed Reader-Running window</dt>
     <dt>Locate the three icons to the right of the text box and click the one with the X</dt>
         <dd>The sample text is cleared</dd>
@@ -67,22 +67,22 @@ These tests will check the customization of Preferences
     <dt>Verify that the "Search with:" option is still set to the default of 'Dictionary Server'</dt>
     <dt>Click the 'Quit' button</dt>
     <dt>Re-launch the Dictionary application</dt>
-        <dd>The default "Search with:" option should now be 'Spell Checker'</dd>
+        <dd>The default "Search with:" option now shows 'Spell Checker'</dd>
     <dt>Click File->Preferences</dt>
     <dt>Select the 'Dictionary Server' tab</dt>
     <dt>From the "Dictionary:" drop-down, select "!(use all, stop after first match)"</dt>
     <dt>Click the 'Close' button</dt>
     <dt>Make sure 'Dictionary Server' is the selected "Search with:" mode and then enter a search term</dt>
-        <dd>The returned definitions should only come from a single dictionary</dd>
+        <dd>The returned definitions only come from a single dictionary</dd>
     <dt>Click File->Preferences again</dt>
     <dt>Select the 'Web Service' tab</dt>
-        <dd>Several choices for a Web search URL should be shown</dd>
+        <dd>Several choices for a Web search URL are shown</dd>
     <dt>Click the 'Dictionary.com' button and click 'Close'</dt>
-        <dd>The "Web Service" option on the "Search with:" bar should no longer be grayed out</dd>
+        <dd>The "Web Service" option on the "Search with:" bar is no longer grayed out</dd>
     <dt>Check the "Web Service" option</dt>
-        <dd>The 'Find' icon to the right of the search term field should now show a globe</dd>
+        <dd>The 'Find' icon to the right of the search term field now shows a globe</dd>
     <dt>Enter the same search term you used in the previous step</dt>
-        <dd>The default web browser should open to Dictionary.com showing the definition of the word you entered in the search field</dd>
+        <dd>The default web browser opens to Dictionary.com showing the definition of the word you entered in the search field</dd>
 </dl>
 
 This test will check the functionality of the Xfce4-Dict plugin
@@ -99,11 +99,11 @@ This test will check the functionality of the Xfce4-Dict plugin
     <dt>Right-click on the Dictionary panel icon</dt>
         <dd>A drop-down menu appears</dd>
     <dt>Click "Properties"</dt>
-        <dd>The Dictionary Preferences dialog should open</dd>
+        <dd>The Dictionary Preferences dialog opens</dd>
     <dt>Close it</dt>
     <dt>Open a web page in your browser and select a word on that page</dt>
     <dt>Drag that selected word and drop it on the Dictionary panel icon</dt>
-        <dd>The Dictionary application should open and return that word from whichever "Search with:" mode you had selected as the default (i.e., Dictionary Server, Web Server or Spell Checker)</dd>
+        <dd>The Dictionary application opens and returns that word from whichever "Search with:" mode you had selected as the default (i.e., Dictionary Server, Web Server or Spell Checker)</dd>
     <dt>Close Dictionary</dt>
 </dl>
 
