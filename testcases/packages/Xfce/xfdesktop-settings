@@ -58,7 +58,7 @@ Testing desktop menu.
     <dt>Middle (scroll) click on the desktop</dt>
         <dd>A window list appears</dd>
     <dt>Untick and retick each of the boxes under 'Window List Menu' in the desktop settings dialog</dt>
-        <dd>ensuring that they each enable and disable their labelled functions</dd>
+        <dd>Ensure that they each enable and disable their labelled functions</dd>
 </dl>
 Test-case name: xfdesktop-settings/xfdesktop-settings-008
 Testing desktop icons.
