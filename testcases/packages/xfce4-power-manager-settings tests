@@ -1,0 +1,23 @@
+Test-case name: Xfce4-Power-Manager-Settings
+
+This test will check that Xfce4 Power Manager Preferences can be configured by right clicking on its Notification Area Icon
+<dl>
+    <dt>Move your mouse pointer to the battery or adapter icon placed in your desktop notification area</dt>
+        <dd>A context menu pops up</dd>
+    <dt>Select the 'Preferences' option</dt>
+        <dd>Xfce Power Manager settings dialog window opens on the General Options tab</dd>
+    <dt>Click on the 'System tray icon:' drop-down list</dt>
+        <dd>A list of possible ways to set the visibility of the power manager icon in the system tray is displayed</dd>
+    <dt>Click on the 'When power button is pressed:' drop-down list</dt>
+        <dd>A list of possible actions to perform when the computer's power button is pressed, is displayed</dd>
+    <dt>Click on the 'When hibernate button is pressed:' drop-down list</dt>
+        <dd>A list of possible actions to perform when the computer's hibernate button is pressed, is displayed</dd>
+    <dt>Click on the 'When sleep button is pressed:' drop-down list</dt>
+        <dd>A list of possible actions to perform when the computer's sleep button is pressed, is displayed</dd>
+    <dt>Untick the 'Monitor power management control' option</dt>
+        <dd>The Display Power Management Signaling (DPMS) disables</dd>
+    <dt>Untick the 'Show notifications to notify about the battery state' option</dt>
+        <dd>Notifications of changing in a battery status disables</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
