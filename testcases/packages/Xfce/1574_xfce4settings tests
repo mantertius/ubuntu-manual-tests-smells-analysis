@@ -32,48 +32,48 @@ This test will check that Settings Manager will open a sub menu and return to ma
         <dd>Main Settings menu appears</dd>
 </dl>
 This test will check that Settings will open Help in a web browser
-    <dt>Click Help</dt>
-        <dd>Online Documentation dialogue appears</dd>
-    <dt>Click Read Online</dt>
-        <dd>Dialogue closes and browser opens at XFCE Settings Manager Docs</dd>
-    <dt>Close browser</dt>
-        <dd>Browser closes</dd>
+<dt>Click Help</dt>
+    <dd>Online Documentation dialogue appears</dd>
+<dt>Click Read Online</dt>
+    <dd>Dialogue closes and browser opens at XFCE Settings Manager Docs</dd>
+<dt>Close browser</dt>
+    <dd>Browser closes</dd>
 </dl>
 This test will check that Xfce4 Settings Manager allows to enable Assistive Technologies
 <dl>
     <dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
-    <dd>A menu should drop down</dd>
+        <dd>A menu should drop down</dd>
     <dt>Select the Settings Manager option</dt>
-    <dd>Settings dialog window should open</dd>
+        <dd>Settings dialog window should open</dd>
     <dt>Point your mouse cursor to the 'Accessibility' icon under the "System" section and click it</dt>
-    <dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
+        <dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
     <dt>Tick the 'Enable Assistive Technologies' option</dt>
-    <dd>Xfce desktop should be enabled, xfce4-session should load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
+        <dd>Xfce desktop should be enabled, xfce4-session should load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
     <dt>Point your mouse cursor to the 'Keyboard' tab and click it</dt>
-    <dd>Selected/active tab should change to 'Keyboard' tab</dd>
+        <dd>Selected/active tab should change to 'Keyboard' tab</dd>
     <dt>Tick the 'Sticky Keys' option</dt>
-    <dd>Pressing key combinations in sequence instead of at the same time should be enabled. For instance, Ctrl followed by C (instead of Ctrl-C) will copy selected text</dd>
+        <dd>Pressing key combinations in sequence instead of at the same time should be enabled. For instance, Ctrl followed by C (instead of Ctrl-C) will copy selected text</dd>
     <dt>Tick the 'Slow Keys' option</dt>
-    <dd>The keyboard shouldn't register a keystroke until the key is hold down for a certain length of time. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
+        <dd>The keyboard shouldn't register a keystroke until the key is hold down for a certain length of time. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
     <dt>Tick the 'Bounce Keys' option</dt>
-    <dd>The keyboard shouldn't accept a keystroke until there has been a certain interval of time since the previous keystroke. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
+        <dd>The keyboard shouldn't accept a keystroke until there has been a certain interval of time since the previous keystroke. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
     <dt>Point your mouse cursor to the 'Mouse' tab and click it</dt>
-    <dd>Selected/active tab should change to 'Mouse' tab</dd>
+        <dd>Selected/active tab should change to 'Mouse' tab</dd>
     <dt>Tick the 'Mouse Emulation' option</dt>
-    <dd>Acceleration delay (in milliseconds), Repeat interval (in milliseconds), Acceleration time (in milliseconds), Maximum speed (in pixels per second) and Acceleration profile options should enabled and configurable</dd>
+        <dd>Acceleration delay (in milliseconds), Repeat interval (in milliseconds), Acceleration time (in milliseconds), Maximum speed (in pixels per second) and Acceleration profile options should enabled and configurable</dd>
 </dl>
 This test will check that Xfce4 Settings Manager allows to configure various aspects of how the desktop looks
 <dl>
     <dt>Reproduce the steps used before to open Settings Manager dialog window</dt>
-    <dd>Settings dialog window should open</dd>
+        <dd>Settings dialog window should open</dd>
     <dt>Point your mouse cursor to the 'Appearance' icon under the "Personal" section and click it</dt>
-    <dd>Appearance dialog window should open with the 'Style' tab selected</dd>
+        <dd>Appearance dialog window should open with the 'Style' tab selected</dd>
     <dt>Select a theme in the list</dt>
-    <dd>The visual appearance of the toolkit (Gtk+) controls, such as buttons and menus should change accordingly</dd>
+        <dd>The visual appearance of the toolkit (Gtk+) controls, such as buttons and menus should change accordingly</dd>
     <dt>Point your mouse cursor to the 'Icons' tab and click it</dt>
-    <dd>Selected/active tab should change to 'Icons' tab</dd>
+        <dd>Selected/active tab should change to 'Icons' tab</dd>
     <dt>Choose a new icon theme by selecting a theme in the list</dt>
-    <dd>The visual appearance of icons visible on the desktop, the file manager and menus should change accordingly</dd>
+        <dd>The visual appearance of icons visible on the desktop, the file manager and menus should change accordingly</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
