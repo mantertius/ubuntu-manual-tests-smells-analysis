@@ -1,0 +1,17 @@
+Test-case name: parole/parole-001
+This tests that parole can open many different files.
+<dl>
+    <dt>Launch Parole</dt>
+        <dd>Parole opens</dd>
+    <dt>Download some different video and audio formats from https://samples.mplayerhq.hu/</dt>
+    <dt>Open then Play each file with parole</dt>
+        <dd>All files play (including those that needed new codecs)</dd>
+        <dd>If a required codec is missing, an installation prompt appears and installs the missing codec.  Afterwards, media playback begins</dd>
+    <dt>Insert then Play some CDs and DVDs</dt>
+        <dd>CDs and DVDs play (note: to play encrypted DVDs, you will need to have libdvdcss2 installed)</dd>
+        <dd>Chapters and tracks for CDs/DVDs are shown in the playlist</dd>
+    <dt>Use (external) subtitles for a video file</dt>
+        <dd>Subtitles work and show up correctly</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result. If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
