@@ -1,0 +1,63 @@
+Test-case name: Xfce4-Power-Manager-Settings
+
+This test will check that Xfce4 Power Manager can be used to display information of the battery device, change monitor working mode and to suspend the system
+<dl>
+    <dt>Right click on the battery or adapter icon placed in your desktop notification area</dt>
+        <dd>A context menu pops up</dd>
+    <dt>Select the 'Suspend' option</dt>
+        <dd>Laptop's monitor and other parts switch off to save power, but applications and documents still remain open</dd>
+    <dt>Repeat the previous steps to get Xfce4 Power Manager context menu and select the 'Power Information' option</dt>
+        <dd>Power Information dialog window opens, displaying the Line Power information in its main area</dd>
+    <dt>Point your mouse pointer to the 'Battery' icon and click it</dt>
+        <dd>Information of the battery device is displayed in the window main area</dd>
+    <dt>Point your mouse pointer to the 'Processor' icon and click it</dt>
+        <dd>Information about the Laptop's CPU and running system processes is displayed in the window main area</dd>
+    <dt>Repeat the previous steps to get Xfce4 Power Manager context menu and select the 'Mode' option</dt>
+        <dd>A submenu pops up</dd>
+    <dt>Select the 'Presentation' option</dt>
+        <dd>The monitor brightness dims out</dd>
+</dl>
+
+This test will check that Xfce4 Power Manager can be configured by right clicking on its Notification Area Icon
+<dl>
+    <dt>Right click on the battery or adapter icon placed in your desktop notification area</dt>
+        <dd>A context menu pops up</dd>
+    <dt>Select the 'Preferences' option</dt>
+        <dd>Xfce Power Manager settings dialog window opens on the General Options tab</dd>
+    <dt>Click on the 'System tray icon:' drop-down list</dt>
+        <dd>A list of possible ways to set the visibility of the power manager icon in the system tray is displayed</dd>
+    <dt>Click on the 'When power button is pressed:' drop-down list</dt>
+        <dd>A list of possible actions to be performed when the laptop power button is pressed is displayed</dd>
+    <dt>Click on the 'When hibernate button is pressed:' drop-down list</dt>
+        <dd>A list of possible actions to be performed when the laptop hibernate button is pressed is displayed</dd>
+    <dt>Click on the 'When sleep button is pressed:' drop-down list</dt>
+        <dd>A list of possible actions to be performed when the laptop sleep button is pressed is displayed</dd>
+    <dt>Untick the 'Monitor power management control' option</dt>
+        <dd>The Display Power Management Signaling (DPMS) is disabled</dd>
+    <dt>Untick the 'Show notifications to notify about the battery state' option</dt>
+        <dd>Disables the notifications of changes in a battery status</dd>
+    <dt>Click on the 'On AC' icon</dt>
+        <dd>'Actions' tab is displayed</dd>
+    <dt>Click on the 'When laptop lid is closed:' drop-down list</dt>
+        <dd>A list of possible actions to be performed when the laptop power button is pressed is displayed</dd>
+    <dt>Point your mouse pointer to the 'Put the computer to sleep when inactive for:' slider and move it to the right of its current position</dt>
+        <dd>The defined time before the system idles increases</dd>
+    <dt>Click on the 'Monitor' tab and with the mouse pointer move right the slider of each of the monitor options</dt>
+        <dd>Increases the time of laptop inactivity before putting the monitor to sleep and before switching the monitor off</dd>
+    <dt>Point your mouse pointer to the 'Brightness' slider and move it to the right of its current position</dt>
+        <dd>Increases the time of laptop inactivity before reducing the screen brightness</dd>
+    <dt>Click on the 'On Battery' icon</dt>
+        <dd>'Actions' tab is displayed</dd>
+    <dt>Click on the 'When battery power is critical:' drop-down list</dt>
+        <dd>A list of possible actions to be performed when the battery power reaches a critical level is displayed</dd>
+    <dt>Untick the 'Prefer power savings over performance' option</dt>
+        <dd>The power profile when running on battery is enabled and battery will last more when running on battery power</dd>
+    <dt>Click on the 'Extended' icon</dt>
+        <dd>'Extended' tab is displayed</dd>
+    <dt>Change the default 'Monitor sleep mode' option by clicking either in the Standby or Suspend radio-button</dt>
+        <dd>DPMS sleep modes before switching off the monitor change accordingly to the selected option</dd>
+    <dt>Untick the 'Lock screen when going for suspend/hibernate' option</dt>
+        <dd>The power manager locks the screen before suspending or hibernating the computer</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
