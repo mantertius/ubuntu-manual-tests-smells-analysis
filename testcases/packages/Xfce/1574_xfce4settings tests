@@ -74,7 +74,15 @@ This test will check that Xfce4 Settings Manager allows to configure various asp
         <dd>Selected/active tab should change to 'Icons' tab</dd>
     <dt>Choose a new icon theme by selecting a theme in the list</dt>
         <dd>The visual appearance of icons visible on the desktop, the file manager and menus should change accordingly</dd>
+    <dt>Point your mouse cursor to the 'Fonts' tab and click it</dt>
+        <dd>Selected/active tab should change to 'Fonts' tab</dd>
+    <dt>Click on the font selector button</dt>
+        <dd>The font picker dialog window should open, with a preview area showing the current choice</dd>
+    <dt>Select a different font family, style, point size from the lists and click the 'OK' button</dt>
+        <dd>The default font used by the file manager, icons on the desktop and menus should update and change accordingly</dd>
+    <dt>Tick the 'Enable anti-aliasing' option</dt>
+        <dd>Anti-alias fonts should be enabled, making characters with smooth edges</dd>
+    <dt></dt>
 </dl>
-
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
