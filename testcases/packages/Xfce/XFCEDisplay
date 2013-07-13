@@ -1,0 +1,36 @@
+Test-case name:XFCE4 Display
+
+This test will check that Display Manager opens and closes correctly
+<dl>
+    <dt>Open Settings Manager from menu, then select Display</dt>
+        <dd>Display opens</dd>
+    <dt>Press X in top right corner</dt>
+        <dd>Display closes</dd>
+</dl>
+This test will check that Display Manager shows available monitors
+<dl>
+    <dt>Open Settings Manager from menu, then select Display</dt>
+        <dd>Display opens, available monitors shown in left pane</dd>
+</dl>
+This test will check that Display settings are applied correctly
+<dl>
+    <dt>From Resolution drop down, choose a different monitor resolution</dt>
+        <dd>Monitor refreshes with new resolution</dd>
+        <dd>Keep resolution dialogue appears</dd>
+    <dt>Select Keep this resolution</dt>
+        <dd>Dialogue disappears</dd>
+        <dd>Resolution remains as set</dd>
+    <dt>Reset resolution to default as required, press Keep this configuration when prompted</dt>
+        <dd>Monitor refreshes with new resolution</dd>
+    <dt>Repeat tests for (where appropriate) Refresh rate, Rotation and Reflection</dt>
+        <dd>Settings applied as set</dd>
+    <dt>Press Close button</dt>
+        <dd>Display closes</dd>
+    <dt>Repeat tests for Refresh rate, Rotation and Reflection</dt>
+        <dd>Settings are applied correctly as appropriate</dd>
+    <dt>Press Close</dt>
+        <dd>Display manager closes</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
