@@ -18,8 +18,6 @@ This test will check that Display settings are applied correctly
     <dt>Reset resolution to default as required, press Keep this configuration when prompted</dt>
         <dd>Monitor refreshes with new resolution</dd>
     <dt>Repeat tests for (where appropriate) Refresh rate, Rotation and Reflection</dt>
-        <dd>Settings applied as set</dd>
-    <dt>Repeat tests for Refresh rate, Rotation and Reflection</dt>
         <dd>Settings are applied correctly as appropriate</dd>
     <dt>Press Close</dt>
         <dd>Display manager closes</dd>
