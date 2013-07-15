@@ -41,10 +41,8 @@ This test will check that Settings will open Help in a web browser
 </dl>
 This test will check that Xfce4 Settings Manager allows to enable Assistive Technologies
 <dl>
-    <dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
-        <dd>A menu should drop down</dd>
-    <dt>Select the Settings Manager option</dt>
-        <dd>Settings dialog window should open</dd>
+    <dt>Open Settings Manager from the menu</dt>
+        <dd>Settings Manager opens</dd>
     <dt>Point your mouse cursor to the 'Accessibility' icon under the "System" section and click it</dt>
         <dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
     <dt>Tick the 'Enable Assistive Technologies' option</dt>
