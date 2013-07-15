@@ -1,0 +1,23 @@
+Test-case name: Gigolo
+
+This test will check that Gigolo can be opened either from a terminal window or from the applications menu
+<dl>
+    <dt>Open a terminal window, type "gigolo" at the prompt and hit the 'Enter' key</dt>
+        <dd>Gigolo window opens</dd>
+    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to System -> Gigolo</dt>
+        <dd>Gigolo window opens</dd>
+</dl>
+
+This test will check that Gigolo allows to configure a connection and connect to remote filesystems
+<dl>
+    <dt>Open Gigolo either from a terminal window or from applications menu</dt>
+        <dd>Gigolo window opens</dd>
+    <dt>Navigate to Actions -> Connect or point your mouse pointer to the 'Connect' icon and click it</dt>
+        <dd>The 'Connect to Server' dialog window opens</dd>
+    <dt>Click on the 'Service type' drop-list and choose a communication protocol from the list, define 'Server' and 'Share' address or names, when applicable, and click the 'Connect' button</dt>
+        <dd>The connection with the remote filesystem is established</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
