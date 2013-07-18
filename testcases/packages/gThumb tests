@@ -1,0 +1,13 @@
+Test-case name:gThumb
+
+This test will check that gThumb can be opened either from a terminal window or from the applications menu
+<dl>
+    <dt>Open a terminal window, type "gthumb" at the prompt and hit the 'Enter' key</dt>
+        <dd>gThumb opens</dd>
+    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to Graphics -> gThumb and click it</dt>
+        <dd>gThumb opens</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
