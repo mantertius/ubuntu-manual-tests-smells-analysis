@@ -9,12 +9,12 @@ This test will check that the Settings Manager opens and closes without error
 </dl>
 This test will check that new system settings tools are populated into Settings Manager, installing software is a requirement for this test.
 <dl>
-    <dt>Open a terminal and type sudo apt-get install arandr press enter, supply password as required and enter</dt>
+    <dt>Open a terminal and type <code>sudo apt-get install arandr</code> press enter, supply password as required and enter</dt>
         <dd>Arandr is installed without error</dd>
     <dt>Open Settings Manager from the menu</dt>
         <dd>Settings Manager opens</dd>
         <dd>Arandr is shown in Hardware section</dd>
-    <dt>In the terminal type sudo apt-get purge arandr, enter and supply password as required, enter again</dt>
+    <dt>In the terminal type <code>sudo apt-get purge arandr</code>, enter and supply password as required, enter again</dt>
         <dd>Arandr is uninstalled without error</dd>
         <dd>Arandr is removed from Hardware section of Settings Manager</dd>
     <dt>Close terminal with X in top right</dt>
