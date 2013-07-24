@@ -18,7 +18,7 @@ This test will check that gThumb can be opened either from a terminal window, fr
 
 This test will check that gThumb's File menu options work as expected
 <dl>
-    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+    <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
         <dd>gThumb opens</dd>
     <dt>Navigate to File -> New Window or alternatively hit Ctrl+N keys</dt>
         <dd>A new gThumb window opens on top of the previous one</dd>
@@ -37,7 +37,7 @@ This test will check that gThumb's File menu options work as expected
     <dt>Navigate to File -> Import From</dt>
         <dd>A drop-down menu appears to the right</dd>
     <dt>Select one of the options to import the image(s) from</dt>
-        <dd>The import dialog shows thumbnails of the photos available on the selected device/folder</dd>
+        <dd>The import dialogue shows thumbnails of the photos available on the selected device/folder</dd>
     <dt>Select the file(s)/folder(s) to import and click the 'Import' button</dt>
         <dd>Selected file(s)/folder(s) are imported and displayed in the browser view in gThumb window main area</dd>
     <dt>Select an image file from the browser view in gThumb window main area and and navigate to File -> Export To</dt>
@@ -53,7 +53,7 @@ This test will check that gThumb's File menu options work as expected
 
 This test will check that gThumb's Edit menu options work as expected
 <dl>
-    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+    <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
         <dd>gThumb opens</dd>
     <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Cut or alternatively hit Ctrl+X keys</dt>
         <dd>Selected image is copied to the system clipboard</dd>
@@ -77,8 +77,8 @@ This test will check that gThumb's Edit menu options work as expected
         <dd>Selected image is permanently deleted from the computer</dd>
     <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Comment or alternatively hit Ctrl+M keys</dt>
         <dd>Dialogue window opens</dd>
-    <dt>Fill the text-boxes wuth the required metadata and click the 'Save and Close' button</dt>
-        <dd>Dialogue window closes and the inserted metadata is incorporated in the file in the form of tags</dd>
+    <dt>Fill the text-boxes with the required metadata and click the 'Save and Close' button</dt>
+        <dd>Dialogue window closes and the inserted metadata is incorporated in the file</dd>
     <dt>Navigate to Edit -> Find or alternatively hit Ctrl+F keys</dt>
         <dd>Find dialogue window opens</dd>
     <dt>Define the start point of the search, the filter rules and click the 'Find' button</dt>
@@ -91,6 +91,46 @@ This test will check that gThumb's Edit menu options work as expected
         <dd>gThumb Preferences dialogue window opens</dd>
     <dt>Change any of the values/definitions on either of the presented tabs</dt>
         <dd>gThumb definitions change accordingly</dd>
+</dl>
+
+This test will check that gThumb's View menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to View -> Refresh or alternatively hit Ctrl+R keys</dt>
+        <dd>The list of files in the browser view in gThumb window main area is rebuilded and updated</dd>
+    <dt>Navigate to View -> Toolbar and tick/untick its checkbox</dt>
+        <dd>gThumb's toolbar shows or hides accordingly to the choice made</dd>
+    <dt>Navigate to View -> Statusbar and tick/untick its checkbox</dt>
+        <dd>gThumb's statusbar shows or hides accordingly to the choice made</dd>
+    <dt>Navigate to View -> Sidebar and tick/untick its checkbox or alternatively hit F9 key</dt>
+        <dd>gThumb's sidebar shows or hides accordingly to the choice made</dd>
+    <dt>Navigate to View -> Filterbar and tick/untick its checkbox</dt>
+        <dd>gThumb's filterbar shows or hides accordingly to the choice made</dd>
+    <dt>Select an image file from the browser view in gThumb window main area and navigate to View -> Fullscreen or alternatively hit F11 key</dt>
+        <dd>gThumb menu, toolbar, statusbar, sidebar and filterbar are removed and the selected image goes full screen</dd>
+    <dt>Navigate to View -> Slideshow or alternatively hit F5 key</dt>
+        <dd>A slideshow presentation of the images files in the currente directory starts</dd>
+    <dt>Navigate to View -> Hidden Files and tick/untick its checkbox or alternatively hit Ctrl+H keys</dt>
+        <dd>Hidden files are shown or hidden accordingly to the choice made</dd>
+    <dt>Navigate to View -> Sort by...</dt>
+        <dd>Sort By dialogue window opens</dd>
+    <dt>Click the 'Sort by:' button and choose a sort criteria from the drop down list presented</dt>
+        <dd>The images files in the current directory are promptly sorted accordingly to the selected criteria</dd>
+    <dt>Navigate to View -> Filter</dt>
+        <dd>Filter dialogue window opens</dd>
+    <dt>Tick/untick the checkbox options to select what types of files to show in the browser view</dt>
+        <dd>The type of files shown in the browser view in gThumb window main area becomes more or less restrictive accordingly to the selected criteria</dd>
+    <dt>Navigate to View -> Thumbnails and tick/untick its checkbox or alternatively hit Ctrl+T keys</dt>
+        <dd>Files in the browser view in gThumb window main area are shown either as thumbnails or as generic icons accordingly to the choice made</dd>
+</dl>
+
+This test will check that gThumb's Go menu options work as expected
+<dl>
+    <dt>Open gThumb either from a terminal window or from the applications menu</dt>
+        <dd>gThumb opens</dd>
+    <dt>Navigate to Go -> Back or alternatively hit Alt+Left keys</dt>
+        <dd></dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
