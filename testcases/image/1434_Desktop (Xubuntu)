@@ -73,13 +73,6 @@
 
 <p>Apart from the first point, the rest of this section is optional according to the devices in your possession. Please verify before testing any of the devices, that they are commonly known to have working drivers for Linux. While it's great for the community to get information about devices that don't, the purpose for ISO testing is to make sure the contents of the image are working as they're supposed to, and that no regressions have emerged since the previous milestones.</p>
 
-<strong>Removable drives and media</strong>
-<dl>
-    <dt>If you have an audio CD at hand, insert it</dt>
-        <dd>Does a player open and start to play it?</dd>
-    <dt>If you have a DVD data disc, insert it</dt>
-        <dd>Are you able to read the data?</dd>
-</dl>
 <strong>Printer</strong>
 <dl>
     <dt>Plug in your printer and run <b>Applications -> System -> Printing</b></dt>
