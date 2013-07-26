@@ -1,3 +1,5 @@
+Test-case name:XFCE_Settings_Manager
+
 This test will check that the Settings Manager opens and closes without error
 <dl>
     <dt>Open Settings Manager from the menu</dt>
