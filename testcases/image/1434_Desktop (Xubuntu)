@@ -62,15 +62,6 @@
     <dt>Set up your machine to go to sleep after a short period of time</dt>
         <dd>Does it fall asleep after that time and does it wake up again successfully?</dd>
 </dl>
-<strong>Pidgin</strong>
-<dl>
-    <dt>Go to <b>Applications -> Internet ->Pidgin</b></dt>
-    <dt>Click <b>Add...</b> button for adding a new account. Select <b>IRC</b> from the <b>Protocol</b> drop-down list and add your details</dt>
-    <dt>Click on <b>Buddies > Add Chat...</b>. Add #xubuntu to the <b>Channel</b> box</dt>
-    <dt>Finally click <b>Add</b> to connect</dt>
-    <dt>Type a greeting such as "I am testing xubuntu" in the text entry box and hit return</dt>
-        <dd>Does the message appear with no error messages alongside?</dd>
-</dl>
 <strong>Panel</strong>
 <dl>
     <dt>Try to add new plugins to the panel to test (right-click the panel, go to <b>Panel -> Add new items</b></dt>
