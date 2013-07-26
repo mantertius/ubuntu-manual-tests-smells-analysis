@@ -99,11 +99,6 @@
 </dl>
 <p>You can repeat the tests with all printers you have access to, including network printers.</p>
 
-<strong>Digital camera</strong>
-<dl>
-    <dt>Take a photo and plug the camera in</dt>
-        <dd>Go to <b>Applications -> Graphics -> gThumb</b>. Can you import a photo from the camera?</dd>
-</dl>
 <strong>Bluetooth</strong>
 <dl>
     <dt>Try to pair a Bluetooth device using the Bluetooth symbol in the panel.</dt>
