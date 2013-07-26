@@ -106,10 +106,5 @@
     <dt>Try to send a file from your device to your computer and the other way round</dt>
         <dd>Can you send and receive files with your computer?</dd>
 </dl>
-<strong>Scanner</strong>
-<dl>
-    <dt>Plug in your scanner and scan a page with <b>Graphics -> Simple Scan</b></dt>
-        <dd>Confirm the page is scanned properly</dd>
-</dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
