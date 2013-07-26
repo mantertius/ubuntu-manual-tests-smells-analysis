@@ -1,5 +1,3 @@
-Test-case name:XFCE_App_Finder
-
 This test will check that Application Finder opens and closes without error
 <dl>
     <dt>Press Alt+F2</dt>
@@ -7,6 +5,7 @@ This test will check that Application Finder opens and closes without error
     <dt>Press Close</dt>
         <dd>Application Finder closes</dd>
 </dl>
+
 This test will check that Application Finder runs and stores custom commands
 <dl>
     <dt>Press Alt+F2</dt>
@@ -20,6 +19,7 @@ This test will check that Application Finder runs and stores custom commands
     <dt>In dialogue type gk</dt>
         <dd>Dialogue autocompletes remainder of gksudo mousepad command</dd>
 </dl>
+
 This test will check that Application Finder will clear stored commands
 <dl>
     <dt>Press Alt+F2</dt>
@@ -37,6 +37,7 @@ This test will check that Application Finder will clear stored commands
     <dt>Press Close button</dt>
         <dd>Preferences closes and commands history is cleared</dd>
 </dl>
+
 This test will check that Application Finder opens applications correctly and closes itself
 <dl>
     <dt>Select an application from All Applications and press Launch button</dt>

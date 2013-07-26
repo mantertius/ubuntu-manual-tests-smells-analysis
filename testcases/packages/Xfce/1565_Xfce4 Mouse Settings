@@ -1,4 +1,3 @@
-Test-case name: xfce4 mouse settings/xfce4-mouse-settings-001
 This tests that xfce4 mouse settings will open
 <dl>
     <dt>Navigate to the settings menu</dt>
@@ -6,7 +5,6 @@ This tests that xfce4 mouse settings will open
         <dd>xfce4 mouse settings opens</dd>
 </dl>
 
-Test-case name: xfce4 mouse settings/xfce4-mouse-settings-002
 This tests that tab one of xfce4 mouse settings works
 <dl>
     <dt>Click the "Devices" tab</dt>
@@ -35,7 +33,6 @@ This tests that tab one of xfce4 mouse settings works
 </dl>
 
 
-Test-case name: xfce4 mouse settings/xfce4-mouse-settings-003
 This tests that the touchpad settings work
 <dl>
     <dt>Click the "Devices" tab</dt>
@@ -61,7 +58,6 @@ This tests that the touchpad settings work
     <dt>Repeat for each touchpad device</dt>
 </dl>
 
-Test-case name: xfce4 mouse settings/xfce4-mouse-settings-004
 This tests that tab two of xfce4 mouse settings works
 <dl>
     <dt>Click the "Behavior" tab</dt>
@@ -73,7 +69,6 @@ This tests that tab two of xfce4 mouse settings works
         <dd>The distance the mouse can move between clicks and it still be a double click changes</dd>
 </dl>
 
-Test-case name: xfce4 mouse settings/xfce4-mouse-settings-005
 This tests that tab three of xfce4 mouse settings works
 <dl>
     <dt>Click the "Themes" tab</dt>

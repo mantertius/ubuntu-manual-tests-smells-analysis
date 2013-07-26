@@ -1,6 +1,5 @@
-Testcase-name: Xfce4_Appearance_Settings
-
-<dl>This test will check that the Appearance Setting Dialog is visible in the Settings Manager and starts.
+This test will check that the Appearance Setting Dialog is visible in the Settings Manager and starts.
+<dl>
     <dt>From the main menu, select "Settings Manager".</dt>
         <dd>"Settings Manager" opens and the "Appearance" module appears in the Personal section.</dd>
     <dt>From the launcher panel, click on the "Settings Manager" icon.</dt>
@@ -11,7 +10,8 @@ Testcase-name: Xfce4_Appearance_Settings
         <dd>The "Appearance" module closes and the "Settings Manager" re-appears.</dd>
 </dl>
 
-<dl>This test will verify that the Style tab works properly.
+This test will verify that the Style tab works properly.
+<dl>
     <dt>With the "Apperance" module open to the "Style" tab, select another style.</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
     <dt>Click on the "All Settings" button to return to the "Settings Manager". Install the clearlooks-phenix-theme package. Click on the "Appearance" module.</dt>
@@ -24,7 +24,8 @@ Testcase-name: Xfce4_Appearance_Settings
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
 </dl>
 
-<dl>This test will verify that the Icons tab works properly.
+This test will verify that the Icons tab works properly.
+<dl>
     <dt>With the "Appearance" module loaded and the "Icons" tab visible, select another icon theme.</dt>
         <dd>The icons on the screen change to the newly-selected icon theme.</dd>
     <dt>Click on the "All Settings" button to return to the "Settings Manager". Install the tango-icon-theme package. Click on "Appearance" module and go to the "Icons" tab.</dt>
@@ -37,7 +38,8 @@ Testcase-name: Xfce4_Appearance_Settings
         <dd>The icons on the screen change to the newly-selected icon theme.</dd>
 </dl>
 
-<dl>This test will verify that the Fonts tab works properly.
+This test will verify that the Fonts tab works properly.
+<dl>
     <dt>With the "Appearance" module loaded and the "Fonts" tab visible, change the "Default Font".</dt>
         <dd>The on-screen fonts change accordingly.</dd>
     <dt>Uncheck the "Enable anit-aliasing" checkbox.</dt>
@@ -68,7 +70,8 @@ Testcase-name: Xfce4_Appearance_Settings
         <dd>The fonts should return to their default size.</dd>
 </dl>
 
-<dl>This test will verify that the Settings tab works properly.
+This test will verify that the Settings tab works properly.
+<dl>
     <dt>With the "Appearance" module loaded and the "Settings" tab visible, load a GTK-compliant application (e.g. Archive Manager).</dt>
         <dd>Archive Manager loads.</dd>
     <dt>Change the "Toolbar Style" to Text.</dt>
@@ -97,12 +100,14 @@ Testcase-name: Xfce4_Appearance_Settings
         <dd>A sound should play.</dd>
 </dl>
 
-<dl>This test will verify that the Help works properly.
+This test will verify that the Help works properly.
+<dl>
     <dt>With an active internet connection and the "Appearance" module loaded, click the Help button and then on "Read Online".</dt>
         <dd>The appropriate online help file loads in the default browser.</dd>
 </dl>
 
-<dl>This test will verify that command line invocation works.
+This test will verify that command line invocation works.
+<dl>
     <dt>From a terminal window, run "xfce4-appearance-settings" (without the quotes).</dt>
         <dd>The Appearance settings open standalone (not as part of the Settings Manager.</dd>
 </dl>
