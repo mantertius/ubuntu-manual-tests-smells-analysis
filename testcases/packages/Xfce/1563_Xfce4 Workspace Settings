@@ -1,4 +1,3 @@
-Test-case name: xfwm4 workspace settings/xfwm4-workspace-settings-001
 This will test the xfwm4 workspace settings
 <dl>
     <dt>Open Settings manager, then "Workspaces"</dt>
@@ -17,5 +16,6 @@ This will test the xfwm4 workspace settings
     <dt>Change the size of each margin, then open a program in each workspace</dt>
         <dd>The programs don't open in the areas specified as margins</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

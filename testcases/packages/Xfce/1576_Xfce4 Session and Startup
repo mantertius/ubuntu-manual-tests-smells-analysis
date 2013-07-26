@@ -1,5 +1,3 @@
-Test-case name:XFCE_Session
-
 This test will check that Session and Startup opens and closes correctly
 <dl>
     <dt>Open Settings Manager from the menu</dt>
@@ -9,6 +7,7 @@ This test will check that Session and Startup opens and closes correctly
     <dt>Press All Settings</dt>
         <dd>Session closes leaving main Settings window</dd>
 </dl>
+
 This test will check that Session chooser appears at login. Logging out will be required.
 <dl>
     <dt>Open Settings Manager from the menu</dt>
@@ -29,6 +28,7 @@ This test will check that Session chooser appears at login. Logging out will be 
     <dt>Double click Default</dt>
         <dd>User logged in to Desktop</dd>
 </dl>
+
 This test will check that applications are restored with sessions. Logging out will be required.
 <dl>
     <dt>Open Settings Manager from the menu</dt>
@@ -58,6 +58,7 @@ This test will check that applications are restored with sessions. Logging out w
     <dt>Close Abiword</dt>
         <dd>Abiword closes</dd>
 </dl>
+
 This test will check that Session saves are cleared correctly. Logging out will be required.
 <dl>
     <dt>Open Settings Manager from the menu</dt>
@@ -78,6 +79,7 @@ This test will check that Session saves are cleared correctly. Logging out will 
         <dd>Lightdm login dialogue closes</dd>
         <dd>User logged in to Desktop with no saved applications appearing</dd>
 </dl>
+
 This test will check that Applications added the Autostart list start correctly. Logging out will be required.
 <dl>
     <dt>Open Settings Manager from the menu</dt>

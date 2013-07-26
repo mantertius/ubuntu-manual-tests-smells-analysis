@@ -1,5 +1,3 @@
-Test-case name:XFCE4Keyboard_Settings
-
 This test will check that keyboard behaviour is correctly applied. The test will require the machine to restart twice.
 <dl>
     <dt>Open Keyboard from Settings Manager</dt>
@@ -123,6 +121,7 @@ This test will check that shortcuts and their targets can be changed
     <dt>Press Yes</dt>
         <dd>Changes are reverted, Command now reads abiword, Shortcut reads Super+3</dd>
 </dl>
+
 This test will check that Layout options apply correctly
 <dl>
     <dt>Open Keyboard from Settings Manager</dt>

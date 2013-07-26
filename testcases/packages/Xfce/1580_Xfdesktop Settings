@@ -1,11 +1,9 @@
-Test-case name: xfdesktop-settings/xfdesktop-settings-001
 Testing settings window launch correctly.
 <dl>
     <dt>Right-click on desktop and click 'Desktop Settings...'</dt>
         <dd>Desktop Settings window opens</dd>
 </dl>
 
-Test-case name: xfdesktop-settings/xfdesktop-settings-002
 Testing wallpaper changes correctly.
 <dl>
     <dt>Under 'Background', Ensure 'Image' is set to 'Single image'. Click on a wallpaper other than the one currently selected</dt>
@@ -14,7 +12,6 @@ Testing wallpaper changes correctly.
         <dd>Added background is set correctly</dd>
 </dl>
 
-Test-case name: xfdesktop-settings/xfdesktop-settings-003
 Testing image list functionality.
 <dl>
     <dt>Under 'Background', Ensure 'Image' is set to 'Image list'. Add images to the list by clicking the plus button as before</dt>
@@ -23,7 +20,6 @@ Testing image list functionality.
         <dd>The image is removed from the list</dd>
 </dl>
 
-Test-case name: xfdesktop-settings/xfdesktop-settings-004
 Testing colours and gradients.
 <dl>
     <dt>Under 'Background', ensure 'Image' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'</dt>
@@ -36,7 +32,6 @@ Testing colours and gradients.
         <dd>Brightness changes accordingly</dd>
 </dl>
 
-Test-case name: xfdesktop-settings/xfdesktop-settings-005
 Testing desktop menu.
 <dl>
     <dt>Right click on the desktop.</dt>
@@ -50,7 +45,7 @@ Testing desktop menu.
     <dt>Untick and retick each of the boxes under 'Window List Menu' in the desktop settings dialog</dt>
         <dd>Ensure that they each enable and disable their labelled functions</dd>
 </dl>
-Test-case name: xfdesktop-settings/xfdesktop-settings-006
+
 Testing desktop icons.
 <dl>
    <dt>Under the 'Icons' tab of the desktop settings manager, under 'Appearance', change icon type to 'Minimised application icons'</dt>
