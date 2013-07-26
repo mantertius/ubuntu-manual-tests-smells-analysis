@@ -62,12 +62,6 @@
     <dt>Set up your machine to go to sleep after a short period of time</dt>
         <dd>Does it fall asleep after that time and does it wake up again successfully?</dd>
 </dl>
-<strong>Panel</strong>
-<dl>
-    <dt>Try to add new plugins to the panel to test (right-click the panel, go to <b>Panel -> Add new items</b></dt>
-        <dd>Are the panel plugins added to the panel?</dd>
-        <dd>Does the panel and its plugins look readable with Greybird, Blackbird, Bluebird and Albatross?</dd>
-</dl>
 <strong>OTHER PARTITIONS</strong>
 
 <p>If you have a Windows partition...</p>
