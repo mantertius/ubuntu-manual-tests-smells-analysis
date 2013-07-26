@@ -1,5 +1,3 @@
-Test-case name: Bulk_Renamer
-
 This test will check that Bulk Renamer can be run separately from Thunar, by running a command at a terminal window
 <dl>
     <dt>Open a terminal window, type "Thunar -B" at the prompt and hit the 'Enter' key</dt>

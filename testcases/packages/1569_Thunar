@@ -1,5 +1,3 @@
-Test-case name:Thunar
-
 This test will check that Thunar opens and closes as expected
 <dl>
     <dt>Open Thunar from the menu</dt>

@@ -1,5 +1,3 @@
-Test-case name: Gigolo
-
 This test will check that Gigolo can be opened either from a terminal window or from the applications menu
 <dl>
     <dt>Open a terminal window, type "gigolo" at the prompt and hit the 'Enter' key</dt>
@@ -65,5 +63,6 @@ This test will check that Gigolo allows to add, delete and edit bookmarks
     <dt>Click the 'Delete' button</dt>
         <dd>The selected bookmark is deleted</dd>
 </dl>
+
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
