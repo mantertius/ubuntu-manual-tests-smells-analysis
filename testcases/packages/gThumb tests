@@ -25,10 +25,10 @@ This test will check that gThumb's File menu options work as expected
     <dt>Select an image file from the browser view in gThumb window main area and navigate to File -> Save As</dt>
         <dd>Save Image dialogue window opens</dd>
     <dt>Select a directory and click the "Save" button</dt>
-       <dd>Dialogue window closes and the image is saved in the selected directory</dd>
+        <dd>Dialogue window closes and the image is saved in the selected directory</dd>
     <dt>Select an image file from the browser view in gThumb window main area and navigate to File -> Print or alternatively hit Ctrl+P keys</dt>
         <dd>Print dialogue window opens</dd>
-    <dt>Select the output print destination and format and click the "Print" button<dt>
+    <dt>Select the output print destination and format and click the "Print" button</dt>
         <dd>Dialogue window closes and image is printed as requested</dd>
     <dt>Navigate to File -> Create Folder or alternatively hit Shift+Ctrl+N keys</dt>
         <dd>Create Folder dialogue window opens</dd>
@@ -199,7 +199,7 @@ This test will check that gThumb's toolbar buttons work as expected
         <dd>gThumb stops loading the current location contents</dd>
     <dt>Select an image file from the browser view in gThumb window main area and click the "Printer" toolbar icon</dt>
         <dd>Print dialogue window opens</dd>
-    <dt>Select the output print destination and format and click the "Print" icon<dt>
+    <dt>Select the output print destination and format and click the "Print" icon</dt>
         <dd>Dialogue window closes and image is printed as requested</dd>
     <dt>Click the "Magnifier" toolbar icon</dt>
         <dd>Find dialogue window opens</dd>
@@ -210,7 +210,7 @@ This test will check that gThumb's toolbar buttons work as expected
     <dt>Click the "Slideshow" toolbar icon</dt>
         <dd>A slideshow presentation of the image files in the current directory starts</dd>
     <dt>Click the "Comment" toolbar icon</dt>
-        dd>Metada dialogue window opens</dd>
+        <dd>Metada dialogue window opens</dd>
     <dt>Fill the text-boxes with the required metadata and click the "Save and Close" button</dt>
         <dd>Dialogue window closes and the inserted metadata is incorporated in the file</dd>
     <dt>Click the "Tools" toolbar icon</dt>
