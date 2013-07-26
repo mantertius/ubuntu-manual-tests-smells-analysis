@@ -62,14 +62,6 @@
     <dt>Set up your machine to go to sleep after a short period of time</dt>
         <dd>Does it fall asleep after that time and does it wake up again successfully?</dd>
 </dl>
-<strong>Email</strong>
-<dl>
-    <dt>Setup an account in the applications preferences</dt>
-    <dt>Retrieve your mail</dt>
-    <dt>Send an email to your own account</dt>
-    <dt>Retrieve your mail again</dt>
-        <dd>Do all of these actions complete with no errors? <em>Note that Internet connectivity errors might be caused by issues with your ISP or mail provider</em></dd>
-</dl>
 <strong>Pidgin</strong>
 <dl>
     <dt>Go to <b>Applications -> Internet ->Pidgin</b></dt>
