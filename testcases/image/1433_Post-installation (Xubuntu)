@@ -9,6 +9,10 @@
         <dd>The disk is mounted and you can open and/or play files/tracks from it</dd>
     <dt>Log out, shutdown or restart</dt>
         <dd>The session is terminated properly</dd>
+    <dt>Open a text editor and write some text</dt>
+        <dd>The keyboard layout is as expected</dd>
+    <dt>If you set up networking and are physically connected to the Internet, open Firefox and load xubuntu.org</dt>
+        <dd>Confirm that the page loads</dd>
 </dl>
 <strong>Panel icons</strong>
 <dl>
@@ -16,25 +20,6 @@
         <dd>The launcher panel pops up</dd>
     <dt>Click the Application Finder icon and run any application from it</dt>
         <dd>Application Finder opens and the application opens as expected</dd>
-</dl>
-<strong>Settings Manager</strong>
-<dl>
-    <dt>Open the applications menu from the top left corner and run Settings Manager</dt>
-    <dt>Click on Window Manager Tweaks and open the Compositor tab</dt>
-    <dt>Click on Enable display compositing, if it is not checked</dt>
-    <dt>Make some adjustments</dt>
-        <dd>The adjustments are applied as expected</dd>
-    <dt>Uncheck Enable display compositing</dt>
-        <dd>The effects are tuned off</dd>
-</dl>
-<strong>Applications</strong>
-<dl>
-    <dt>Open Abiword and write some text</dt>
-        <dd>The keyboard layout is as expected</dd>
-    <dt>Save the Abiword document</dt>
-        <dd>The document is saved</dd>
-    <dt>If you are connected to the Internet, Open Firefox and load xubuntu.org</dt>
-        <dd>Confirm that the page loads</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

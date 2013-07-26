@@ -41,12 +41,6 @@
     <dt>Logout, then log back in as the initial user</dt>
     <dt>Remove the new user</dt>
 </dl>
-<strong>File type associations</strong>
-<dl>
-    <dt>Open <b>Thunar</b> (<b>Applications -> Accessories -> File Manager</b>)</dt>
-    <dt>Click on as many file types as you can and see if they open in applications</dt>
-        <dd>When they open, are they displayed/played correctly?</dd>
-</dl>
 <strong>Screensaver</strong>
 <dl>
     <dt>Go to <b>Applications -> Settings Manager -> Screensaver</b></dt>
@@ -62,29 +56,6 @@
     <dt>Set up your machine to go to sleep after a short period of time</dt>
         <dd>Does it fall asleep after that time and does it wake up again successfully?</dd>
 </dl>
-<strong>Email</strong>
-<dl>
-    <dt>Setup an account in the applications preferences</dt>
-    <dt>Retrieve your mail</dt>
-    <dt>Send an email to your own account</dt>
-    <dt>Retrieve your mail again</dt>
-        <dd>Do all of these actions complete with no errors? <em>Note that Internet connectivity errors might be caused by issues with your ISP or mail provider</em></dd>
-</dl>
-<strong>Pidgin</strong>
-<dl>
-    <dt>Go to <b>Applications -> Internet ->Pidgin</b></dt>
-    <dt>Click <b>Add...</b> button for adding a new account. Select <b>IRC</b> from the <b>Protocol</b> drop-down list and add your details</dt>
-    <dt>Click on <b>Buddies > Add Chat...</b>. Add #xubuntu to the <b>Channel</b> box</dt>
-    <dt>Finally click <b>Add</b> to connect</dt>
-    <dt>Type a greeting such as "I am testing xubuntu" in the text entry box and hit return</dt>
-        <dd>Does the message appear with no error messages alongside?</dd>
-</dl>
-<strong>Panel</strong>
-<dl>
-    <dt>Try to add new plugins to the panel to test (right-click the panel, go to <b>Panel -> Add new items</b></dt>
-        <dd>Are the panel plugins added to the panel?</dd>
-        <dd>Does the panel and its plugins look readable with Greybird, Blackbird, Bluebird and Albatross?</dd>
-</dl>
 <strong>OTHER PARTITIONS</strong>
 
 <p>If you have a Windows partition...</p>
@@ -96,17 +67,6 @@
 
 <p>Apart from the first point, the rest of this section is optional according to the devices in your possession. Please verify before testing any of the devices, that they are commonly known to have working drivers for Linux. While it's great for the community to get information about devices that don't, the purpose for ISO testing is to make sure the contents of the image are working as they're supposed to, and that no regressions have emerged since the previous milestones.</p>
 
-<strong>Removable drives and media</strong>
-<dl>
-    <dt>Put a CD, DVD or a USB stick in your computer</dt>
-        <dd>Does the disc or device automount and show up in <b>Thunar</b>?</dd>
-    <dt>If you have an audio CD at hand, insert it</dt>
-        <dd>Does a player open and start to play it?</dd>
-    <dt>If you have a DVD data disc, insert it</dt>
-        <dd>Are you able to read the data?</dd>
-    <dt>Download the Xubuntu desktop ISO and burn it to a CD or use <b>Startup Disk Creator</b> for USB sticks</dt>
-        <dd>Does the new media boot?</dd>
-</dl>
 <strong>Printer</strong>
 <dl>
     <dt>Plug in your printer and run <b>Applications -> System -> Printing</b></dt>
@@ -116,22 +76,12 @@
 </dl>
 <p>You can repeat the tests with all printers you have access to, including network printers.</p>
 
-<strong>Digital camera</strong>
-<dl>
-    <dt>Take a photo and plug the camera in</dt>
-        <dd>Go to <b>Applications -> Graphics -> gThumb</b>. Can you import a photo from the camera?</dd>
-</dl>
 <strong>Bluetooth</strong>
 <dl>
     <dt>Try to pair a Bluetooth device using the Bluetooth symbol in the panel.</dt>
         <dd>Can you pair your computer and the other device?</dd>
     <dt>Try to send a file from your device to your computer and the other way round</dt>
         <dd>Can you send and receive files with your computer?</dd>
-</dl>
-<strong>Scanner</strong>
-<dl>
-    <dt>Plug in your scanner and scan a page with <b>Graphics -> Simple Scan</b></dt>
-        <dd>Confirm the page is scanned properly</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

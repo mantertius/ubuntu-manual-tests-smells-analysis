@@ -1,4 +1,3 @@
-Test-case name: xfce4 terminal/xfce4-terminal-001
 This test will check that Xfce4 Terminal opens from desktop
 <dl>
     <dt>Point your mouse cursor to the desktop and press the right mouse button</dt>
@@ -7,8 +6,6 @@ This test will check that Xfce4 Terminal opens from desktop
         <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-002
 This test will check that Xfce4 Terminal opens from Application Finder
 <dl>
     <dt>Hit Alt-F2 keys</dt>
@@ -19,16 +16,12 @@ This test will check that Xfce4 Terminal opens from Application Finder
         <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-003
 This test will check that Xfce4 Terminal opens with Super+T keys
 <dl>    
     <dt>Press Super+T</dt>
         <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-004
 This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window by right clicking on it
 <dl>    
     <dt>Open a terminal window, point your mouse cursor to it then press the right mouse button</dt>
@@ -37,8 +30,6 @@ This test will check that Xfce4 Terminal opens a new terminal window from a alre
         <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-005
 This test will check that Xfce4 Terminal opens a new terminal window from the menubar of a already open terminal window
 <dl>    
     <dt>Open a terminal window and click File on the menubar</dt>
@@ -47,16 +38,12 @@ This test will check that Xfce4 Terminal opens a new terminal window from the me
         <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-006
 This test will check that Xfce4 Terminal opens a new terminal window with Ctrl+Shift+N keys
 <dl>    
     <dt>Open a terminal window and hit Ctrl+Shift+N keys</dt>
         <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-007
 This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window by right clicking on it
 <dl>
     <dt>Open a terminal window and after pointing your mouse cursor to it, press the right mouse button</dt>
@@ -65,10 +52,8 @@ This test will check that Xfce4 Terminal adds a new tabbed terminal to a termina
         <dd>A new terminal tab opens, inheriting the working directory from the previously active terminal.</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-008
+This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window from the menubar
 <dl>
-    This test will check that Xfce4 Terminal adds a new tabbed terminal to a terminal window from the menubar
     <dt>Open a terminal window and click on File on the menubar</dt>
         <dd>A menu drops down</dd>
     <dt>Select the Open Tab option</dt>
@@ -76,7 +61,6 @@ Test-case name: xfce4 terminal/xfce4-terminal-008
 </dl>
 
 
-Test-case name: xfce4 terminal/xfce4-terminal-009
 This test will check that Xfce4 Terminal closes the terminal and terminates any subprocesses that you opened from the terminal
 <dl>
     <dt>Open a terminal window and click on File on the menubar</dt>
@@ -85,8 +69,6 @@ This test will check that Xfce4 Terminal closes the terminal and terminates any 
         <dd>The terminal window closes and any subprocesses that you opened from the terminal terminate</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-010
 This test will check that Xfce4 Terminal performs searches in the Terminal Contents from the menubar
 <dl>    
     <dt>Open a terminal window and click on Terminal on the menubar</dt>
@@ -97,8 +79,6 @@ This test will check that Xfce4 Terminal performs searches in the Terminal Conte
         <dd>The Previous and Next buttons are now enabled and click-able to perform the search for the given pattern</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-011
 This test will check that Xfce4 Terminal performs searches in the Terminal Contents with Shift+Ctrl+F keys
 <dl>    
     <dt>Open a terminal window and Shift+Ctrl+F keys</dt>
@@ -107,8 +87,6 @@ This test will check that Xfce4 Terminal performs searches in the Terminal Conte
         <dd>The Previous and Next buttons are now enabled and click-able to perform the search for the given pattern</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-012
 This test will check that Xfce4 Terminal changes the title of the currently displayed terminal from the menubar
 <dl>    
     <dt>Open a terminal window and click on Terminal on the menubar</dt>
@@ -119,8 +97,6 @@ This test will check that Xfce4 Terminal changes the title of the currently disp
         <dd>Terminal applys the change immediately</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-013
 This test will check that Xfce4 Terminal hides the menubar
 <dl>    
     <dt>Open a terminal window and click on View on the menubar</dt>
@@ -129,8 +105,6 @@ This test will check that Xfce4 Terminal hides the menubar
         <dd>The Terminal menubar hides</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-014
 This test will check that Xfce4 Terminal show a hidden menubar
 <dl>
     <dt>Open a terminal window and click on View on the menubar</dt>
@@ -143,8 +117,6 @@ This test will check that Xfce4 Terminal show a hidden menubar
         <dd>The Terminal menubar unhides</dd>
 </dl>
 
-
-Test-case name: xfce4 terminal/xfce4-terminal-015
 This test will check that Xfce4 Terminal maximizes into fullscreen
 <dt>
     <dt>Open a terminal window then click on View on the menubar</dt>
