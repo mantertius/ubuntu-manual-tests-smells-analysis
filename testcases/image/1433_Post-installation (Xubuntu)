@@ -17,16 +17,6 @@
     <dt>Click the Application Finder icon and run any application from it</dt>
         <dd>Application Finder opens and the application opens as expected</dd>
 </dl>
-<strong>Settings Manager</strong>
-<dl>
-    <dt>Open the applications menu from the top left corner and run Settings Manager</dt>
-    <dt>Click on Window Manager Tweaks and open the Compositor tab</dt>
-    <dt>Click on Enable display compositing, if it is not checked</dt>
-    <dt>Make some adjustments</dt>
-        <dd>The adjustments are applied as expected</dd>
-    <dt>Uncheck Enable display compositing</dt>
-        <dd>The effects are tuned off</dd>
-</dl>
 <strong>Applications</strong>
 <dl>
     <dt>Open Abiword and write some text</dt>
