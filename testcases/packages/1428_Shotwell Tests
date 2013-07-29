@@ -1,4 +1,3 @@
-Test-case name: shotwell/swp-001
 This test will check that Shotwell can import images from camera
 <dl>
     <dt>Plug in your camera using a USB cable. Your camera may need to be switched on, check the camera manual</dt>
@@ -12,8 +11,6 @@ This test will check that Shotwell can import images from camera
     <dt>Select “last import” in the left hand pane</dt>
         <dd>Shotwell displays the picture you imported</dd>
 </dl>
-
-Test-case name: shotwell/swp-002
 This test will check that Shotwell can edit images
 <dl>
     <dt>Ensure shotwell is still loaded and displaying your import picture. Double click the picture thumbnail</dt>
@@ -45,8 +42,6 @@ This test will check that Shotwell can edit images
     <dt>Press ctrl+z</dt>
         <dd>The photo responds properly to the editing, and is now restored to it’s original condition</dd>
 </dl>
-
-Test-case name: shotwell/swp-003
 This test will check that Shotwell can publish images online
 <dl>
     <dt>Select an image you want to publish in thumbnail view, and then select File, Publish.</dt>
@@ -58,8 +53,6 @@ This test will check that Shotwell can publish images online
     <dt>Name the new album and hit publish</dt>
         <dd>The images are published to the online provider</dd>
 </dl>
-
-Test-case name: shotwell/swp-004
 This test will check that Shotwell can export pictures to folder
 <dl>
     <dt>Select an image you want to export in thumbnail view, and then select File, Export</dt>
@@ -69,8 +62,6 @@ This test will check that Shotwell can export pictures to folder
     <dt>Select folder and hit save</dt>
         <dd>The Picture gets exported to a new location</dd>
 </dl>
-
-Test-case name: shotwell/swp-005
 This test will check that Shotwell can set images as the desktop background
 <dl>
     <dt>Select an image you want to set as your desktop background in thumbnail view, and then select File, Set As Desktop Background</dt>
