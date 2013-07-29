@@ -1,4 +1,3 @@
-Test-case name: sudoku/swp-001
 This test will check that Sudoku can start a game in all levels.
 <dl>
     <dt>Click on "very hard" to start a new game.</dt>
@@ -11,7 +10,6 @@ This test will check that Sudoku can start a game in all levels.
 	<dd>A window appears showing a new Sudoku.</dd>
 </dl>
 
-Test-case name: sudoku/swp-002
 This test will check that Sudoku can finish a game.
 <dl>
     <dt> Now click on "Game" >> "New". Select a new game with level "easy"</dt>
@@ -20,22 +18,20 @@ This test will check that Sudoku can finish a game.
 	<dd>A window appears showing that you won the game. </dd>
 </dl>
 
-Test-case name: sudoku/swp-003
 This test will check that Sudoku can print a game.
 <dl>
     <dt> Now click on "Game" >> "New". Select a new game with level "medium"</dt>
 	<dd>A window appears showing a new Sudoku.</dd>
     <dt> Select "Game" >> "Print..."</dt>
 	<dd>A window appears showing the printing dialogue. </dd>
-    <dt> Select the printer "Print to file" and select an output filename and directory (e.g. "sudoku_test.pdf" in your home directory). Klick on "Print preview".</dt>
-	<dd>A window appers showing the preview of the Sudoku to be printed.</dd>
+    <dt> Select the printer "Print to file" and select an output filename and directory (e.g. "sudoku_test.pdf" in your home directory). Click on "Print preview".</dt>
+	<dd>A window appears showing the preview of the Sudoku to be printed.</dd>
     <dt> Click on the printer symbol. </dt>
 	<dd>The print preview window closes.</dd>
     <dt> Open the printed file you just created.</dt>
 	<dd>The Sudoku appears in the file you just opened.</dd>
 </dl>
 
-Test-case name: sudoku/swp-004
 This test will check that Sudoku can run in fullscreen mode.
 <dl>
     <dt> Now click on "Game" >> "New". Select a new game with level "hard"</dt>
