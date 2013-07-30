@@ -1,4 +1,4 @@
-This test shows the ability of blueman to (de-)activate bluetooth.
+This test shows the ability of blueman to (de-)activate the bluetooth adapter.
 <dl>
     <dt>Click on the bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
         <dd>The context menu opens.</dd>
@@ -13,7 +13,7 @@ This test shows the ability of blueman to rename the bluetooth adapter.
     <dt>Click on the bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Adapters...".</dt>
-        <dd>A window opens, showing the bluetooth adapter.</dd>
+        <dd>A window opens, showing the properties of the bluetooth adapter.</dd>
     <dt>Change the name to "blueman_test". Click on close.</dt>
         <dd>The window closes. You changed the name of the computer's bluetooth adapter.</dd>
 </dl>
@@ -40,7 +40,7 @@ This test shows the ability of blueman to connect to an input device. The test r
     <dt>Click on "forward".</dt>
         <dd>The assistant searches for bluetooth devices.</dd>
     <dt>Search for your input device and select it. Click on "Forward". </dt>
-        <dd>A pairing menu appears.</dd>
+        <dd>A window with pairing options appears.</dd>
     <dt>Select "Proceed without pairing" and click on "Forward".</dt>
         <dd>The device is added to your computer. The "Connect" window appears.</dd>
     <dt>Select "input device" and click on "Forward".</dt>
@@ -59,7 +59,7 @@ This test shows the ability of blueman to connect to a storage device. The test 
     <dt>Click on "forward".</dt>
         <dd>The assistant searches for bluetooth devices.</dd>
     <dt>Search for your input device and select it. Click on "Forward". </dt>
-        <dd>A pairing menu appears.</dd>
+        <dd>A window with pairing options appears.</dd>
     <dt>Select "Use random Passkey" and click on "Forward".</dt>
         <dd>A random passkey is generated and shown in the assistant.</dd>
     <dt>Accept the connection in your storage device and enter the passkey.</dt>
