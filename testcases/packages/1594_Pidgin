@@ -1,5 +1,3 @@
-Test Case Name:Pidgin
-
 This test will check that Pidgin opens and closes correctly (test assumes Pidgin is being opened in a new install)
 <dl>
     <dt>Open Pidgin from the menu</dt>

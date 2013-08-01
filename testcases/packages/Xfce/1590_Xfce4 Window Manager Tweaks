@@ -1,4 +1,3 @@
-Test-case name:XFCE4 Window Manager Tweaks
 This test will check that Window Manager Tweaks opens and close correctly
 <dl>
     <dt>Open Window Manager Tweaks from Settings menu</dt>
@@ -6,6 +5,7 @@ This test will check that Window Manager Tweaks opens and close correctly
     <dt>Press Close</dt>
         <dd>Dialogue closes</dd>
 </dl>
+
 This test will check options in Cycling tab
 <dl>
     <dt>Open Window Manager Tweaks from Settings menu</dt>
@@ -27,6 +27,7 @@ This test will check options in Cycling tab
     <dt>Press Alt+Tab repeatedly</dt>
         <dd>Applications on all workspaces are cycled through without frame around selected window</dd>
 </dl>
+
 This test will check some options in Compositor tab
 <dl>
     <dt>Open Window Manager Tweaks from Settings menu, select Compositor tab</dt>

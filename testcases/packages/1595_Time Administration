@@ -1,5 +1,3 @@
-Test-case name: Time Administration
-
 This test will check that Time Administration opens and closes without error
 <dl>
     <dt>From the main menu, select Settings Manager->Time and Date, or</dt>

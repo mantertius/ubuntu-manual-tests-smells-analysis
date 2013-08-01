@@ -1,5 +1,3 @@
-Test case name:Users Settings
-
 This test will check that Users Settings will open and close correctly
 <dl>
     <dt>Select Users and Groups from Settings</dt>

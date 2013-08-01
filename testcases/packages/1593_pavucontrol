@@ -1,13 +1,12 @@
-Test Case Name:pavucontrol
-
 This test will check that pavucontrol opens and closes without error
 <dl>
     <dt>Open pavucontrol with your FAMILY option</dt>
         <dd>pavucontrol opens to Playback tab</dd>
     <dt>Press X in top corner</dt>
         <dd>pavucontrol closes</dd>
-</dl>s
-Audio playback is a prerequisite of the following 3 tests
+</dl>
+
+<strong>Audio playback is a prerequisite of the following 3 tests</strong>
 
 This test will check that Playback options work correctly
 <dl>
