@@ -75,7 +75,7 @@ This test will check that Orage's Help menu options work as expected
         <dd>About Orage dialogue window opens and not only the "Credits" button correctly display the associated information but also the "Close" button properly closes the dialogue window</dd>
 </dl>
 
-This test will check that Orage allows to add, edit and delete appointments
+This test will check that Orage allows you to add, edit and delete appointments
 <dl>
     <dt>Open Orage either from a terminal window or from the applications menu and Navigate to File -> New or alternatively hit Ctrl+N keys</dt>
         <dd>New appointment dialogue window opens with the "General" tab selected</dd>
