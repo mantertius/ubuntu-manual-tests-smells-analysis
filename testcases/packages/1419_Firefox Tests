@@ -1,6 +1,6 @@
 This test will enable the menu bar
 <dl>
-    <dt>Do you use an Ubuntu flavour (Kubuntu, Xubuntu, Lubuntu)? If no, skip this test</dt>
+    <dt>Do you use an Ubuntu flavour (Kubuntu, Xubuntu, Lubuntu)? If no, skip this test. The unity desktop provides the menu in its top panel by hovering over it</dt>
     <dt>Right click next to your opened tabs</dt>
         <dd>A context menu appears</dd>
     <dt>If there is no check mark next to "menu bar", click on "menu bar"</dt>
@@ -10,11 +10,11 @@ This test will enable the menu bar
 This test will check that Firefox can display websites and save them as bookmarks.
 <dl>
     <dt>Click on the address field and fill in "ubuntu.com". Press enter</dt>
-        <dd>The website "ubuntu.com" opens</dd>
+        <dd>The website "wikipedia.org" opens</dd>
     <dt>In the menu bar, click on "Bookmarks", then "Bookmark this page"</dt>
         <dd>A small window opens, with details for the bookmark</dd>
     <dt>Click on "Done"</dt>
-        <dd>The window closes. The website "ubuntu.com" is added to your bookmarks</dd>
+        <dd>The window closes. The website "wikipedia" is added to your bookmarks</dd>
     <dt>Now Click on "Bookmarks" in menu bar</dt>
         <dd>In the context menu you see the new entry of your bookmark</dd>
 </dl>
