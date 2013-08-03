@@ -15,7 +15,7 @@ This test will check that Firefox can display websites and save them as bookmark
         <dd>A small window opens, with details for the bookmark</dd>
     <dt>Click on "Done"</dt>
         <dd>The window closes. The website "wikipedia" is added to your bookmarks</dd>
-    <dt>Now Click on "Bookmarks" in menu bar</dt>
+    <dt>Now Click on "Bookmarks" in menu bar, then on "Recently Bookmarked"</dt>
         <dd>In the context menu you see the new entry of your bookmark</dd>
 </dl>
 
