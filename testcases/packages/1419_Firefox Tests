@@ -9,7 +9,7 @@ This test will enable the menu bar
 
 This test will check that Firefox can display websites and save them as bookmarks.
 <dl>
-    <dt>Click on the address field and fill in "ubuntu.com". Press enter</dt>
+    <dt>Click on the address field and fill in "wikipedia.org". Press enter</dt>
         <dd>The website "wikipedia.org" opens</dd>
     <dt>In the menu bar, click on "Bookmarks", then "Bookmark this page"</dt>
         <dd>A small window opens, with details for the bookmark</dd>
