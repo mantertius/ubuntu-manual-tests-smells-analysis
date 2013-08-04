@@ -1,0 +1,94 @@
+This test will check that synaptic can find a package
+<dl>
+    <dt>In synaptic package manager, click on "Search" button</dt>
+        <dd>A search window appears</dd>
+    <dt>enter "2ping" and click on "Search"</dt>
+        <dd>The window closes. Synaptic shows the search results</dd>
+</dl>
+
+This test will check that synaptic can install a new package and show its properties
+<dl>
+    <dt>In the search result, look for package "2ping". Click on the checkbox left of the name</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Mark for Installation"</dt>
+        <dd>A window appears</dd>
+    <dt>Click on "Mark"</dt>
+        <dd>The window closes, the additional packages now marked in green</dd>
+    <dt>Click on "Apply" button</dt>
+        <dd>A window appears, showing the summary</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>A window appears, showing the progress of installation</dd>
+    <dt> After successful installation, click on "OK"</dt>
+        <dd>The window closes</dd>
+    <dt>In menu bar, click on "Package" and then on "Properties"</dt>
+        <dd>A window opens, showing the details of the package</dd>
+    <dt>Check the different properties. Then click on "Close"</dt>
+        <dd>The window closes</dd>
+</dl>
+
+This test will check that synaptic can re-install a new package
+<dl>
+    <dt>In the search result, look for package "2ping". Click on the checkbox left of the name</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Mark for Reinstallation"</dt>
+        <dd>The context menu closes</dd>
+    <dt>Click on "Apply" button</dt>
+        <dd>A window appears, showing the summary</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>A window appears, showing the progress of installation</dd>
+    <dt>After successful installation, click on "OK"</dt>
+        <dd>The window closes</dd>
+</dl>
+
+This test will check that synaptic can remove an installed package
+<dl>
+    <dt>In the search result, look for package "2ping". Click on the checkbox left of the name</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Mark for Removal"</dt>
+        <dd>The context menu closes. The package is now check with an orange cross</dd>
+    <dt>Click on "Apply" button</dt>
+        <dd>A window appears, showing the summary</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>A window appears, showing the progress of removal.</dd>
+    <dt>After successful removal, click on "OK"</dt>
+        <dd>The window closes</dd>
+</dl>
+
+This test will check that synaptic can completely remove an installed package
+<dl>
+    <dt>In the search result, look for package "2ping". Click on the checkbox left of the name</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Mark for Installation"</dt>
+        <dd>A window appears</dd>
+    <dt>Click on "Mark"</dt>
+        <dd>The window closes, the additional packages now marked in green</dd>
+    <dt>Click on "Apply" button</dt>
+        <dd>A window appears, showing the summary</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>A window appears, showing the progress of installation</dd>
+    <dt>After successful installation, click on "OK"</dt>
+        <dd>The window closes</dd>
+    <dt>In the search result, look for package "2ping". Click on the checkbox left of the name</dt>
+        <dd>A context menu appears</dd>
+    <dt>Click on "Mark for Complete Removal"</dt>
+        <dd>The context menu closes. The package is now check with an orange cross</dd>
+    <dt>Click on "Apply" button</dt>
+        <dd>A window appears, showing the summary</dd>
+    <dt>Click on "Apply"</dt>
+        <dd>A window appears, showing the progress of removal</dd>
+    <dt>After successful removal, click on "OK"</dt>
+        <dd>The window closes</dd>
+</dl>
+
+This test will check that synaptic can activate and deactivate a repository
+<dl>
+    <dt>In menu bar click on "Settings", then on "Repositories"</dt>
+        <dd>A window opens, showing "Software & Updates"</dd>
+    <dt>Select tab "Other Software" and check the box "Canonical Partners". Then click "Close"</dt>
+        <dd>The window closes</dd>
+    <dt>Now click on button "Reload"</dt>
+        <dd>The software list are updated</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
