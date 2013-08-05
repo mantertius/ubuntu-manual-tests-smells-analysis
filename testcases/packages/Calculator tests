@@ -1,0 +1,18 @@
+This test will check that Gnome Calculator can be opened either from a terminal window or from the applications menu, and shutdown
+<dl>
+    <dt>Open a terminal window, type <code>gnome-calculator</code> at the prompt and hit the "Enter" key</dt>
+        <dd>Calculator opens</dd>
+    <dt>Click the top right "X" of the window's title bar to close the application</dt>
+        <dd>Calculator closes</dd>
+    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to Accessories -> Calculator</dt>
+        <dd>Calculator opens</dd>
+</dl>
+
+This test will check that Gnome Calculator's Application menu options work as expected
+<dl>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
