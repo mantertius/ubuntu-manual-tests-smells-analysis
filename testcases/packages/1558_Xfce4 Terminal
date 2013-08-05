@@ -10,8 +10,8 @@ This test will check that Xfce4 Terminal opens from Application Finder
 <dl>
     <dt>Hit Alt-F2 keys</dt>
         <dd>An Application Finder window opens</dd>
-    <dt>Type "exo-open" in the window text box and select 'exo-open --launch TerminalEmulator' from the match list</dt>
-        <dd>The magnifying glass icon changes to a terminal icon and the Launch button is now enabled and click-able</dd>
+    <dt>Type "xfce4-terminal" in the window text box</dt>
+        <dd>The Launch button is now enabled and click-able</dd>
     <dt>Click the Launch button</dt>
         <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
