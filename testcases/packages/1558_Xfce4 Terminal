@@ -10,7 +10,7 @@ This test will check that Xfce4 Terminal opens from Application Finder
 <dl>
     <dt>Hit Alt-F2 keys</dt>
         <dd>An Application Finder window opens</dd>
-    <dt>Type Xfce Terminal in the window text box</dt>
+    <dt>Type "xfce4-terminal" in the window text box</dt>
         <dd>The Launch button is now enabled and click-able</dd>
     <dt>Click the Launch button</dt>
         <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
@@ -22,15 +22,15 @@ This test will check that Xfce4 Terminal opens with Super+T keys
         <dd>A terminal window opens with default settings displaying a command prompt, and the cursor is positioned at the command prompt</dd>
 </dl>
 
-This test will check that Xfce4 Terminal opens a new terminal window from a already open terminal window by right clicking on it
+This test will check that Xfce4 Terminal opens a new terminal window from an already open terminal window by right clicking on it
 <dl>    
-    <dt>Open a terminal window, point your mouse cursor to it then press the right mouse button</dt>
+    <dt>Open a terminal window, point your mouse cursor to it, then press the right mouse button</dt>
         <dd>A popup menu appears</dd>
     <dt>Select the Open Terminal option</dt>
         <dd>A new terminal window opens, inheriting the working directory from its parent terminal</dd>
 </dl>
 
-This test will check that Xfce4 Terminal opens a new terminal window from the menubar of a already open terminal window
+This test will check that Xfce4 Terminal opens a new terminal window from the menubar of an already open terminal window
 <dl>    
     <dt>Open a terminal window and click File on the menubar</dt>
         <dd>A menu drops down</dd>
@@ -94,7 +94,7 @@ This test will check that Xfce4 Terminal changes the title of the currently disp
     <dt>Select the Set Title... option</dt>
         <dd>Set Title dialog opens</dd>
     <dt>Type the new title in the Title text box</dt>
-        <dd>Terminal applys the change immediately</dd>
+        <dd>Terminal applies the change immediately</dd>
 </dl>
 
 This test will check that Xfce4 Terminal hides the menubar
@@ -105,7 +105,7 @@ This test will check that Xfce4 Terminal hides the menubar
         <dd>The Terminal menubar hides</dd>
 </dl>
 
-This test will check that Xfce4 Terminal show a hidden menubar
+This test will check that Xfce4 Terminal shows a hidden menubar
 <dl>
     <dt>Open a terminal window and click on View on the menubar</dt>
         <dd>A menu drops down</dd>
@@ -118,12 +118,12 @@ This test will check that Xfce4 Terminal show a hidden menubar
 </dl>
 
 This test will check that Xfce4 Terminal maximizes into fullscreen
-<dt>
+<dl>
     <dt>Open a terminal window then click on View on the menubar</dt>
         <dd>A menu drops down</dd>
     <dt>Select the Fullscreen option</dt>
         <dd>The Terminal window maximizes into fullscreen</dd>
-</dt>
+</dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
