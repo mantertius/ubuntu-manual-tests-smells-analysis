@@ -31,7 +31,7 @@ This test will check that Xfce4 Panel allows to configure panel preferences
     <dt>Tick the 'Lock panel' option under the "General" section</dt>
         <dd>The handles on the panel which allow to move it shouldn't be shown</dd>
     <dt>Untick the 'Lock panel' option under the "General" section</dt>
-        <dd>The panel should be possible to drag and move anywhere on the screen. The panel shoul also snap to the edges of the screen</dd>
+        <dd>The panel should be possible to drag and move anywhere on the screen. The panel should also snap to the edges of the screen</dd>
     <dt>Reproduce the steps to open Panel dialog window</dt>
         <dd>Panel dialog window should appear</dd>
     <dt>Tick the 'Automatically show and hide the panel' option under the "General" section</dt>
@@ -39,7 +39,7 @@ This test will check that Xfce4 Panel allows to configure panel preferences
     <dt>Reproduce the steps to open Panel dialog window</dt>
         <dd>Panel dialog window should appear</dd>
     <dt>Tick the 'Don't reserve space on borders' option under the "General" section</dt>
-        <dd>The windows should stretch to the screen edge overlaping the panel</dd>
+        <dd>The windows should stretch to the screen edge overlapping the panel</dd>
 </dl>
 
 This test will check that Xfce4 Panel allows to add and remove panels
@@ -55,6 +55,8 @@ This test will check that Xfce4 Panel allows to add and remove panels
     <dt>Reproduce the steps to open Panel dialog window through Applications Menu</dt>
         <dd>Panel dialog window should appear</dd>
     <dt>Point your mouse cursor to the '-' button and click it</dt>
+        <dd>A Question dialog appears asking to confirm the removal</dd>
+    <dt>Click the Remove button</dt>
         <dd>The currently selected panel should be removed</dd>
     <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
         <dd>A popup menu should appear</dd>
@@ -67,6 +69,8 @@ This test will check that Xfce4 Panel allows to add and remove panels
     <dt>Reproduce the steps to open Panel dialog window by right clicking on the empty space of a panel</dt>
         <dd>Panel dialog window should appear</dd>
     <dt>Point your mouse cursor to the '-' button and click it</dt>
+        <dd>A Question dialog appears asking to confirm the removal</dd>
+    <dt>Click the Remove button</dt>
         <dd>The currently selected panel should be removed</dd>
 </dl>
 
@@ -91,7 +95,7 @@ This test will check that Xfce4 Panel allows to change the panel's height, width
     <dt>Reproduce the steps to open Panel dialog window</dt>
         <dd>Panel dialog window should appear</dd>
     <dt>Point the mouse pointer to the 'Number of rows:' slidebar under the "Measurements" section and move the slider to the right</dt>
-        <dd>Small panel plugins, such as launchers, shoul be laid out in multiple rows (or columns), while larger ones, like window buttons should continue to occupy the whole panel height (or width)</dd>
+        <dd>Small panel plugins, such as launchers, should be laid out in multiple rows (or columns), while larger ones, like window buttons, should continue to occupy the whole panel height (or width)</dd>
 </dl>
 
 This test will check that Xfce4 Panel allows to change the color, background image and transparency of the panel
@@ -128,16 +132,16 @@ This test will check that Xfce4 Panel allows to change the color, background ima
         <dd>A list of available styles should drop down</dd>
     <dt>Select 'None (use system style)' option</dt>
         <dd>The 'Alpha:' slidebar should appear</dd>
-    <dt>Point the mouse pointer to the 'Alpha:' slidebar and move the slider to the right</dt>
+    <dt>Point the mouse pointer to the 'Alpha:' slidebar and move the slider to the left</dt>
         <dd>The panel should inherit the colors from the currently selected GTK+ theme and the percentage of transparency of the panel should decrease</dd>
     <dt>Reproduce the steps to navigate to the 'Appearance' tab of Panel dialog window</dt>
         <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
-    <dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section, and move the slider to the right</dt>
-        <dd>When a mouse pointer is not hovering over it, the percentage transparency of the panel and of all panel plugins, should decrease</dd>
+    <dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section, and move the slider to the left</dt>
+        <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is hovering over the panel</dd>
     <dt>Reproduce the steps to navigate to the 'Appearance' tab of Panel dialog window</dt>
         <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
-    <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the right</dt>
-        <dd>When a mouse pointer is not hovering over it, the percentage transparency of the panel and of all panel plugins, should decrease</dd>
+    <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the left</dt>
+        <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is not hovering over the panel</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
