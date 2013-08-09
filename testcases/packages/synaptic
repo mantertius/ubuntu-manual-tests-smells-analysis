@@ -1,8 +1,8 @@
 This test will check that synaptic can be started via terminal
 <dl>
-    <dt>Click on the Lubuntu icon in your panel. Click on "Accessoires" and on "LXTerminal"</dt>
-        <dd> LXTerminal Launches. <strong> If LXTerminal does NOT start, see the test for LXTerminal to file a bug against it</strong>.</dd>
-    <dt>Write "synaptic" in LXTerminal and hit enter.</dt>
+    <dt>Open a terminal</dt>
+        <dd>The terminal launches. <strong> If the terminal does NOT start, see the test for your terminal to file a bug against it</strong>.</dd>
+    <dt>Write "synaptic" in terminal and hit enter.</dt>
         <dd>A window opens, showing that you open synaptic without administrator privileges</dd>
     <dt>Click on "Close"</dt>
         <dd>A window opens, showing a "Quick Introduction"</dd>
@@ -10,7 +10,7 @@ This test will check that synaptic can be started via terminal
         <dd>The window closes. The synaptic package manager is already open</dd>
     <dt>Click on the "X" of the window to close Synaptic.</dt>
         <dd>The window closes</dd>
-    <dt>Back in LXTerminal, write "sudo synaptic" and hit enter</dt>
+    <dt>Back in terminal, write "sudo synaptic" and hit enter</dt>
         <dd>The terminal shows "[sudo] password for USER:", where USER is your username</dd>
     <dt>Enter your password and hit enter</dt>
         <dd>A window opens, showing a "Quick Introduction"</dd>
@@ -22,7 +22,7 @@ This test will check that synaptic can be started via terminal
 
 This test will check that synaptic can be started via menu
 <dl>
-    <dt>Click on the Lubuntu icon in your panel. Click on "System tools" and on "Synaptic Package manager"</dt>
+    <dt>Click on the FAMILY icon in your panel. Click on "System tools"(Lubuntu) or "System"(Xubuntu), then on "Synaptic Package manager"</dt>
         <dd>A window opens, asking for authentication for privileges.</dd>
     <dt>Enter your password and click on "Authenticate"</dt>
         <dd>The synaptic package manager opens in a new window</dd>
