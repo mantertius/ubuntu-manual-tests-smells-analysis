@@ -1,7 +1,7 @@
 This test will test if you are able to launch Xfburn
 <dl>
     <dt>Open "Xfburn"</dt>
-        <dd>Can you open Xfburn correctly?</dd>
+        <dd>Xfburn launches</dd>
 </dl>
 
 This test will check that "New Audio Composition" Works
