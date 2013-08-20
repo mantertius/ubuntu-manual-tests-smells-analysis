@@ -1,0 +1,33 @@
+This test will check that xfce4-mixer can be opened either from a terminal window or from the applications menu, and shutdown
+<dl>
+    <dt>Open a terminal window, type <code>xfce4-mixer</code> at the prompt and hit the "Enter" key</dt>
+        <dd>Audio mixer opens</dd>
+    <dt>Click the top right "X" of the window's title bar to close the application</dt>
+        <dd>Audio mixer closes</dd>
+    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to Multimedia -> Audio Mixer</dt>
+        <dd>Audio mixer opens</dd>
+    <dt>Click the "Quit" button</dt>
+        <dd>Audio mixer closes</dd>
+</dl>
+
+This test will check that xfce4-mixer allows you to select which controls are visible in its GUI
+<dl>
+    <dt>Open Audio mixer either from a terminal window or from the applications menu</dt>
+        <dd>Audio mixer opens</dd>
+    <dt>Click the "Select Controls..." button</dt>
+        <dd>Select Controls dialogue window opens</dd>
+    <dt>Tick/Untick the options given and click the "Close"</dt>
+        <dd>The visibility of the controls in Audio Mixer's Playback tab change accordingly to the preferences set</dd>
+</dl>
+
+This test will check that xfce4-mixer allows you to switch between soundcards and configure them accordingly
+<dl>
+    <dt>Open Audio mixer either from a terminal window or from the applications menu</dt>
+        <dd>Audio mixer opens</dd>
+    <dt>Click on the 'Sound card' drop-list and choose a sound device from the list</dt>
+        <dd>Audio Mixer GUI change available configuration tabs accordingly to the selection made</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
