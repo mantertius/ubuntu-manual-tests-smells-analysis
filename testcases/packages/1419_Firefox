@@ -69,13 +69,13 @@ This test will check that Firefox can install addons and themes.
 
 This test will check that Firefox can search in browsing history.
 <dl>
-    <dt>Into the address field, type "ubun"</dt>
+    <dt>Into the address field, type "wiki"</dt>
         <dd>A list opens below the address field, showing the bookmark you have set and other fitting entries</dd>
-    <dt>Click on the bookmark of "ubuntu.com"</dt>
-        <dd>The page "ubuntu.com" opens</dd>
+    <dt>Click on the bookmark of "wikipedia.org"</dt>
+        <dd>The page "wikipedia.org" opens</dd>
 </dl>
 
-This test will check that Firefox can print and email websites.
+This test will check that Firefox can print websites.
 <dl>
     <dt>Open the website "wiki.ubuntu.com"</dt>
         <dd>The website opens, showing the wiki</dd>
