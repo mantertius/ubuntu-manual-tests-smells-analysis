@@ -90,26 +90,12 @@ This test will check the clean Recent functionality works
 </dl>
 
 Test-case name: nautilus/TC-NFM-009
-This test will check the clean Recent functionality works
-<dl>
-    <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
-    <dt> Click the Recent Icon in the sidebar</dt>
-        <dd>The 'moveme.txt' file is shown</dd>
-    <dt> Select the file</dt>
-    <dt> Right click and select 'Delete'</dt>
-        <dd>Recent place should be empty</dd>
-    <dt> Click the Home Icon in the sidebar</dt>
-    <dt> Click the Recent Icon in the sidebar</dt>
-        <dd>Is the 'moveme.txt' file gone?</dd>
-</dl>
-
-Test-case name: nautilus/TC-NFM-010
 depends: nautilus/TC-NFM-001
 This test will check that new files can be added to the "New Document" submenu
 <dl>
     <dt> Look for the Terminal application and launch it</dt>
         <dd>The Terminal applications is open and a prompt displayed</dd>
-    <dt> Type FIELD=`cat ~/.config/user-dirs.dirs | grep XDG_TEMPLATES_DIR |sed 's/XDG_TEMPLATES_DIR=\"\(.*\)\"/\1/'` && eval "touch $FIELD/Another Empty Document"</dt>
+    <dt> Type FIELD=`cat ~/.config/user-dirs.dirs | grep XDG_TEMPLATES_DIR | sed 's/XDG_TEMPLATES_DIR=\"\(.*\)\"/\1/'` && eval "touch $FIELD/Another\ Empty\ Document"</dt>
         <dd>The Terminal returns the prompt and a new file called "Another Empty Document" is created in the templates directory</dd>
     <dt> Look for Nautilus and launch it</dt>
         <dd>Nautilus is opened, Home is selected</dd>
@@ -118,7 +104,7 @@ This test will check that new files can be added to the "New Document" submenu
         <dd>Was the empty document another.txt created?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-011
+Test-case name: nautilus/TC-NFM-010
 This test will check that user can connect to Samba shares and copy files from the share
 <dl>
     <dt> Please ensure you have access to a samba share containing a file</dt>
@@ -133,7 +119,7 @@ This test will check that user can connect to Samba shares and copy files from t
         <dd>Did the copied file is open correctly, with it's contents the same as in the file on the share?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-012
+Test-case name: nautilus/TC-NFM-011
 This test will check that user can connect to the Samba share and copy files to the share
 <dl>
     <dt> Please ensure you have access to a samba writable system</dt>
@@ -150,7 +136,7 @@ This test will check that user can connect to the Samba share and copy files to 
         <dd>Did the copied file is open correctly, with it's contents the same as in the file on the share?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-013
+Test-case name: nautilus/TC-NFM-012
 depends: nautilus/TC-NFM-005
 This test will check that user can share documents to another system using Samba
 <dl>
@@ -179,7 +165,7 @@ This test will check that user can share documents to another system using Samba
         <dd>have the same content?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-014
+Test-case name: nautilus/TC-NFM-013
 This test will check that a mounted USB drive appears in Nautilus
 <dl>
     <dt> Please ensure you have a USB drive available and the system under test has available USB ports.</dt>
@@ -190,7 +176,7 @@ This test will check that a mounted USB drive appears in Nautilus
         <dd>Are the USB drive contents displayed?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-015
+Test-case name: nautilus/TC-NFM-014
 This test will check that 'Open' dialog appears when plugging in a music device
 <dl>
     <dt> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
@@ -201,7 +187,7 @@ This test will check that 'Open' dialog appears when plugging in a music device
         <dd>Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-016
+Test-case name: nautilus/TC-NFM-015
 This test will check that 'Open' dialog appears when inserting a DVD
 <dl>
     <dt> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
@@ -212,7 +198,7 @@ This test will check that 'Open' dialog appears when inserting a DVD
         <dd>Did DVD playback start in Totem?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-017
+Test-case name: nautilus/TC-NFM-016
 This test will check that 'Open' dialog appears on inserting an Audio CD
 <dl>
     <dt> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
@@ -223,7 +209,7 @@ This test will check that 'Open' dialog appears on inserting an Audio CD
         <dd>Did Rhythmbox open with the Audio CD displayed in left panel tree?</dd>
 </dl>
 
-Test-case name: nautilus/TC-NFM-018
+Test-case name: nautilus/TC-NFM-017
 This test will check that 'Open' dialog appears on inserting a camera
 <dl>
     <dt> Please ensure you have a camera available. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
