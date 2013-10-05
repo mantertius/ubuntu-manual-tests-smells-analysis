@@ -1,6 +1,6 @@
 The goal of this test case is to check that localization support is functional during the installation from a live cd session and that language packs are downloaded and installed correctly from the Internet.
 <dl>
-    <dt>Power up your machine and insert the install media</dt>
+    <dt>Boot up the image</dt>
     <dt>Select English as language and press Enter</dt>
     <dt>Select Try FAMILY without any change to your computer and press Enter</dt>
         <dd>

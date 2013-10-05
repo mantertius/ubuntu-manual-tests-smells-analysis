@@ -6,7 +6,7 @@ On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdri
 </strong>
 
 <dl>
-    <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+    <dt>Boot up the image</dt>
     <dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:
         Boot Options file=/cdrom/preseed/ubuntu-server.seed vga=788 initrd=/install/initrd.gz quiet --</dt>
     <dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto

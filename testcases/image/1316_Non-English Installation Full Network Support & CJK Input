@@ -1,6 +1,6 @@
 The goal of this test case is to check that localization support is functional during the installation, that language packs are downloaded and installed correctly from the Internet and that the input methods for either Chinese, Japanese or Korean are working.
 <dl>
-    <dt>Start your machine with the install media in place.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+    <dt>Boot up the image.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
         <dd>Language list will appear</dd>
     <dt>Use arrow keys to select 中文(简体) (Simplified Chinese), 中文(繁體) (Traditional Chinese), 日本語 (Japanese) or 한국어 (Korean) as language and press Enter</dt>
         <dd>Language list will close.</dd>

@@ -1,7 +1,7 @@
 <strong>To perform this test you need a an active internet connection, and a wireless card, wireless USB dongle, or mobile network card</strong>
 
 <dl>
-    <dt>Boot up the iso using a CD/DVD or USB Key to a Live Session</dt>
+    <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>

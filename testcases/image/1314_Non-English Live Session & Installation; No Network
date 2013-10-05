@@ -1,6 +1,6 @@
 The goal of this test case is to check that localization support is functional during the installation from a live cd session, that language packs are installed correctly for those languages in the ISO, and that an informational message is shown prompting users to connect to the Internet to fully install language support for those languages not included.
 <dl>
-    <dt>Power up your machine insert the install media</dt>
+    <dt>Boot up the image</dt>
     <dt>Select English as language and press Enter</dt>
     <dt>Select Try without any change to your computer and press Enter</dt>
         <dd>Once the live session has started, verify that the system is in English</dd>

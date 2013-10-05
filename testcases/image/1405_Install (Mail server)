@@ -1,6 +1,6 @@
 Scope of this test is to verify that the system is installed, you can login into it and the mail server is up and running.
 <dl>
-    <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+    <dt>Boot up the image</dt>
     <dt>Choose the desired language</dt>
     <dt>Select "Install Ubuntu Server"</dt>
     <dt>Choose the language</dt>
