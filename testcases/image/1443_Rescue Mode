@@ -1,6 +1,6 @@
 Scope of this test is to start a recovery session.
 <dl>
-    <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+    <dt>Boot up the image</dt>
     <dt>At the main screen press ESC</dt>
     <dt>Select "Rescue a broken system"</dt>
     <dt>Choose the desired language</dt>

@@ -1,12 +1,12 @@
 Scope of this test is to verify that the system is installed in itself starting from the setting hostname step.
 
 <strong> WARNING This test uses pre-selected answers to installation questions (the preseed file). The preseed in use will unilaterally allocate the whole hard drive for the install.
-This will cause the complete loss of any data then in the hard drive. We strongly recommend you to use a 'trash and burn' system -- i.e., a system you do not mind losing the contents of the hard drive(s). Virtual machines are also a good option (and a nice helper to boot an Ubuntu ISO is testdrive). It is also a good idea to disconnect any external hard drive(s) you do not want to participate in the reformatting.
-On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).
+    This will cause the complete loss of any data then in the hard drive. We strongly recommend you to use a 'trash and burn' system -- i.e., a system you do not mind losing the contents of the hard drive(s). Virtual machines are also a good option (and a nice helper to boot an Ubuntu ISO is testdrive). It is also a good idea to disconnect any external hard drive(s) you do not want to participate in the reformatting.
+    On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).
 </strong>
 
 <dl>
-    <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+    <dt>Boot up the image</dt>
     <dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:
         Boot Options file=/cdrom/preseed/ubuntu-server.seed vga=788 initrd=/install/initrd.gz quiet --</dt>
     <dt>Replace 'file=/cdrom/preseed/ubuntu-server.seed' by 'auto
@@ -31,7 +31,7 @@ On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdri
                 status 0x1 (PLL),
                 time constant 7, precision 1.000 us, tolerance 500 ppm,
             </pre>
-        <dd>
+        </dd>
 </dl>
 
 

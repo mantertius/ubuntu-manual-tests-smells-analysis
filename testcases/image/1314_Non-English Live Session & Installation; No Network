@@ -1,6 +1,6 @@
 The goal of this test case is to check that localization support is functional during the installation from a live cd session, that language packs are installed correctly for those languages in the ISO, and that an informational message is shown prompting users to connect to the Internet to fully install language support for those languages not included.
 <dl>
-    <dt>Power up your machine insert the install media</dt>
+    <dt>Boot up the image</dt>
     <dt>Select English as language and press Enter</dt>
     <dt>Select Try without any change to your computer and press Enter</dt>
         <dd>Once the live session has started, verify that the system is in English</dd>
@@ -21,16 +21,16 @@ The goal of this test case is to check that localization support is functional d
             <ul>
                 <li>Language packs included in the Live CD: Bengali (bn), German (de), English (en), Spanish (es), French(fr), Portuguese (pt), Xhosa (xh)  (Note: this list might vary between milestones)</li>
                 <li>If your language is one in the list above:
-                    <ul>
-                        <li>Common translations are installed as part of language packs</li>
-                        <li>A pop up shows saying your language support is not complete</li>
-                    </ul>
+                <ul>
+                    <li>Common translations are installed as part of language packs</li>
+                    <li>A pop up shows saying your language support is not complete</li>
+                </ul>
                 </li>
                 <li>If your language is not in the list above:
-                    <ul>
-                        <li>Common translations in language packs will not be installed</li>
-                        <li>A pop up shows saying your language support is not complete</li>
-                    </ul>
+                <ul>
+                    <li>Common translations in language packs will not be installed</li>
+                    <li>A pop up shows saying your language support is not complete</li>
+                </ul>
                 </li>
             </ul>
         </dd>

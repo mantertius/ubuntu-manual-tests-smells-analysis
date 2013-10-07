@@ -1,5 +1,5 @@
 <dl>
-    <dt>Boot up the iso using a CD/DVD or USB Key</dt>
+    <dt>Boot up the image</dt>
         <dd>System boots to 'Select Language'</dd>
     <dt>Select Install Ubuntu and press Enter</dt>
         <dd>System displays 'Select Location'</dd>

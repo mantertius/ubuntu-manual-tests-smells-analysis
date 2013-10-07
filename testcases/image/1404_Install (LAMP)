@@ -1,6 +1,6 @@
 Scope of this test is to verify that the system is installed, you can login into it, Apache and MySQL are working.
 <dl>
-    <dt>Boot from CD or USB in real hardware or run the image in Testdrive</dt>
+    <dt>Boot up the image</dt>
     <dt>Choose the desired language</dt>
     <dt>Select "Install Ubuntu Server"</dt>
     <dt>Choose the language</dt>
@@ -26,7 +26,7 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>Remove the installation media (CDROM or USB key)</dt>
     <dt>Wait that the system reboot and login</dt>
     <dt>Test Apache:</dt>
-        <dd>w3m http://127.0.0.1/<dd>
+        <dd>w3m http://127.0.0.1/</dd>
         <dd>Press q and confirm to exit</dd>
     <dt>Test MySQL:</dt>
         <dd>mysql -u root -p</dd>
@@ -77,6 +77,7 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>run it on w3m</dt>
         <dd>w3m localhost/phptest.php</dd>
         <dd>Verify it outputs the text from phpinfo()</dd>
-</dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+
+    </dl>
+    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
