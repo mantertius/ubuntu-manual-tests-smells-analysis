@@ -19,6 +19,7 @@
     <dt>Click on Forward</dt>
         <dd>The Screen Install FAMILY XX.XX alongsite SYSTEM YY appears</dd>
     <dt>Note the drive selected on the Select drive list and the bar state</dt>
+	<strong>If the target drive has a free partition with sufficient freespace, install will proceed without further partitioning intervention</strong>
         <dd> The drive corresponds to the drive on the chart (e.g /dev/sda) and the bar is divided</dd>
     <dt>Move the slider bar that separates the grey sections as appropriate</dt>
         <dd>The slider bar can be set as appropriate</dd>
