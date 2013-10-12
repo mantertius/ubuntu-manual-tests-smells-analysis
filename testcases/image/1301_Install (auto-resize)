@@ -33,8 +33,8 @@
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
-    <strong>If Ubuntu One setup is available in your FAMILY,complete the next step, otherwise proceed to the following test step</strong>
-    <dt>Enter e-mail address you use to login to your Ubuntu One account; select either New and press Login Later or Existing Ubuntu One, enter your password and then press Login Later</dt>
+    <strong>An Ubuntu One setup page appears for ubuntu and certain flavours. If it appears complete the next step, otherwise skip it</strong>
+    <dt>Enter details for an existing Ubuntu One account OR for creating New Account. Press Login Later.</dt>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The slideshow is entirely in your language</dd> 
