@@ -35,7 +35,7 @@
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <strong>An Ubuntu One setup page appears for Ubuntu and certain flavours. If it appears complete the next step, otherwise skip it</strong>
     <dt>Enter details for an existing Ubuntu One account OR for creating New Account. Press Login Later.</dt>
-	<dd>The 'Welcome to FAMILY ' slide is displayed</dd>
+        <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The slideshow is entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
