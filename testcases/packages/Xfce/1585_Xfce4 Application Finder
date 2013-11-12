@@ -10,14 +10,14 @@ This test will check that Application Finder runs and stores custom commands
 <dl>
     <dt>Press Alt+F2</dt>
         <dd>Application Finder opens</dd>
-    <dt>In dialogue type gksudo mousepad, press Launch</dt>
+    <dt>In dialogue type sudo -i mousepad, press Launch</dt>
         <dd>Application Finder closes, authorisation dialogue opens</dd>
     <dt>Enter your password and press OK</dt>
         <dd>Mousepad opens with root account warning</dd>
     <dt>Close Mousepad and Press Alt+F2</dt>
         <dd>Mousepad closes, Application Finder opens</dd>
     <dt>In dialogue type gk</dt>
-        <dd>Dialogue autocompletes remainder of gksudo mousepad command</dd>
+        <dd>Dialogue autocompletes remainder of sudo -i mousepad command</dd>
 </dl>
 
 This test will check that Application Finder will clear stored commands
@@ -27,7 +27,7 @@ This test will check that Application Finder will clear stored commands
     <dt>Press down arrow</dt>
         <dd>Application Finder opens to command listings</dd>
     <dt>Select Commands History</dt>
-        <dd>Right Pane is populated with gksudo mousepad command</dd>
+        <dd>Right Pane is populated with sudo -i mousepad command</dd>
     <dt>Select Preferences</dt>
         <dd>Preferences dialogue opens</dd>
     <dt>Press Clear Custom Command History button</dt>
