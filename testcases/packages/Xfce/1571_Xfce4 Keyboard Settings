@@ -73,7 +73,7 @@ This test will check that application shortcuts are applied correctly
         <dd>Web Browser opens</dd>
     <dt>Press Super+1</dt>
         <dd>gmusicbrowser opens</dd>
-    <dt>Press Super+1</dt>
+    <dt>Press Super+4</dt>
         <dd>gnumeric opens</dd>
     <dt>Press Super+e</dt>
         <dd>Mousepad opens</dd>
