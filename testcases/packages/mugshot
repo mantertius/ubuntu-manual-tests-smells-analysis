@@ -1,0 +1,72 @@
+This tests will require to log out and the existence of a installed camera
+
+This test will check that Mugshot can be opened either from a terminal window or from the applications menu, and closes propley
+<dl>
+     <dt>Open a terminal window, type <code>mugshot</code> at the prompt and hit the 'Enter' key</dt>
+        <dd>Mugshot opens</dd>
+    <dt>Click the top right 'X' of the window's title bar to close the application</dt>
+        <dd>Mugshot closes</dd>
+    <dt>Click the Applications Menu icon</dt>
+        <dd>A menu drops down</dd>
+    <dt>Navigate to Settings Manager and click it</dt>
+        <dd>Settings dialog window opens</dd>
+    <dt>Under the "Personal" section, click the "About me" icon</dt>
+        <dd>Mugshot opens</dd>
+    <dt>Click the 'Cancel' button</dt>
+        <dd>Mugshot closes</dd>
+</dl>
+
+This test will check that Mugshot will set your profile image and user details for your user profile
+<dl>
+	<dt>Open Mugshot either from a terminal window or from the applications menu</dt>
+        <dd>Mugshot opens</dd>
+    <dt>Click the image button on the top left of Mughshot GUI</dt>
+        <dd>A context menu will open bellow the image button</dd>
+    <dt>Choose the "Select from stock..." option</dt>
+        <dd>Select a photo... dialog opens</dd>
+    <dt>Select one of the available photos and click the 'OK' button</dt>
+        <dd>Select a photo... dialog closes and the selected photo shows as label in the image button</dd>
+    <dt>Fill the text-boxes with the required personal data and click the 'Apply' button</dt>
+        <dd>>If Pidgin and/or LibreOffice are installed and regularly used, a prompt will be displayed asking if it's intended to update those settings</dd>
+        <dd>Mugshot closes</dd>
+    <dt>Click the Applications Menu icon and select the "Log Out" option</dt>
+        <dd>The system logs out of the existing session</dd>
+        <dd>Greeter screen appears and the selected image and username defined in Mugshot are present</dd>
+</dl>
+
+This test will check that Mugshot profile image can also be chosen from a camera
+<dl>
+	<dt>Open Mugshot either from a terminal window or from the applications menu</dt>
+        <dd>Mugshot opens</dd>
+    <dt>Click the image button on the top left of Mughshot GUI</dt>
+        <dd>A context menu will open bellow the image button</dd>
+    <dt>Choose the "Capture from camera..." option</dt>
+        <dd>Capture from camera... dialog opens</dd>
+        <dd>The camera is initialized and the 'Record' button will become available once the camera is ready</dd>
+    <dt>Click the 'Record' button</dt>
+        <dd>The photo is taken</dd>
+    <dt>Click the 'Apply' button</dt>
+        <dd>Capture from camera... dialog closes and the taken photo shows as label in the image button</dd>
+</dl>
+
+This test will check that Mugshot profile image can also be chosen from picture library
+<dl>
+	<dt>Open Mugshot either from a terminal window or from the applications menu</dt>
+        <dd>Mugshot opens</dd>
+    <dt>Click the image button on the top left of Mughshot GUI</dt>
+        <dd>A context menu will open bellow the image button</dd>
+    <dt>Choose the "Browse..." option</dt>
+        <dd>Select a photo... dialog opens</dd>
+    <dt>Navigate to the directory containing the wanted picture, select it and click the 'Apply' button</dt>
+        <dd>Select a photo... dialog closes and the selected photo shows as label in the image button</dd>
+</dl>
+
+This test will check that Mugshot Help button work as expected
+<dl>
+    <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
+        <dd>Mugshot opens</dd>
+    <dt>Click the 'Help' button</dt>
+        <dd>Yelp opens ghelp:mugshot page</dd>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
