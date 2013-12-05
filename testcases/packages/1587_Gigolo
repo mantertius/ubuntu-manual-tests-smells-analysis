@@ -35,7 +35,7 @@ This test will check that Gigolo's GUI and behaviour can be configured
     <dt>Point your mouse pointer to the 'Toolbar' tab and click it</dt>
         <dd>Toolbar tab displays</dd>
     <dt>Untick the 'Show toolbar' option</dt>
-        <dd>Gigolo's GUI toolbal isn't visible</dd>
+        <dd>Gigolo's GUI toolbar isn't visible</dd>
     <dt>Click on the 'Style' and on the 'Orientation' buttons</dt>
         <dd>A list of possible toolbar styles and orientation is displayed</dd>
     <dt>Select one of the desired styles and orientation</dt>
