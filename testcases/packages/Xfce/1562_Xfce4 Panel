@@ -34,10 +34,6 @@ This test will check that Xfce4 Panel allows to configure panel preferences
         <dd>The panel should be possible to drag and move anywhere on the screen. The panel should also snap to the edges of the screen</dd>
     <dt>Reproduce the steps to open Panel dialog window</dt>
         <dd>Panel dialog window should appear</dd>
-    <dt>Tick the 'Automatically show and hide the panel' option under the "General" section</dt>
-        <dd>The panel should automatically hide if the mouse is not hovering over it</dd>
-    <dt>Reproduce the steps to open Panel dialog window</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Tick the 'Don't reserve space on borders' option under the "General" section</dt>
         <dd>The windows should stretch to the screen edge overlapping the panel</dd>
 </dl>
@@ -142,6 +138,22 @@ This test will check that Xfce4 Panel allows to change the color, background ima
         <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
     <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the left</dt>
         <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is not hovering over the panel</dd>
+</dl>
+
+This test will check that Xfce4 Panel allows to automatically hide and show panels when the mouse hovers over it
+<dl>
+    <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
+        <dd>A popup menu should appear</dd>
+    <dt>Point the mouse pointer to the 'Panel' option</dt>
+        <dd>A drop-down menu should appear</dd>
+    <dt>Select the 'Panel Preferences...' option</dt>
+        <dd>Panel dialog window should appear</dd>
+    <dt>If not selected, tick the 'Automatically show and hide the panel' option under the "General" section and click the 'Close' button</dt>
+        <dd>Selected panel should automatically hide</dd>
+    <dt>Hover your mouse over the location of the hidden panel</dt>
+        <dd>The panel should pop up and remain visible while the mouse is over it</dd>
+    <dt>Move your mouse away from the panel</dt>
+        <dd>The panel should automatically hide</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
