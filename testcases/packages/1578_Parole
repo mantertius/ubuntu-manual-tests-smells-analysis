@@ -3,7 +3,7 @@ This tests that parole can open many different files.
 <dl>
     <dt>Launch Parole</dt>
         <dd>Parole opens</dd>
-    <dt>Download some different video and audio formats from https://samples.mplayerhq.hu/</dt>
+    <dt>Download some different video and audio formats from http://samples.mplayerhq.hu/</dt>
     <dt>Open then Play each file with parole</dt>
         <dd>All files play (including those that needed new codecs)</dd>
         <dd>If a required codec is missing, an installation prompt appears and installs the missing codec.  Afterwards, media playback begins</dd>
