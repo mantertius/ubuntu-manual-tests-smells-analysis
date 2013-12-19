@@ -41,8 +41,8 @@ This test will check that Orage's Edit menu options work as expected and Orage's
         <dd>"Select a file..." window dialogue opens</dd>
     <dt>Navigate to /usr/share/orage/sounds choose a sound file and click the "Open" button</dt>
         <dd>The selected file will define which sound Orage uses when playing sound files</dd>
-    <dt>Point your mouse cursor to the "Display settings" tab and click it</dt>
-        <dd>Selected/active tab changes to "Display settings" tab</dd>
+    <dt>Point your mouse cursor to the "Calendar window" tab and click it</dt>
+        <dd>Selected/active tab changes to "Calendar window" tab</dd>
     <dt>Tick/Untick the options given</dt>
         <dd>Orage's GUI definitions and visibility options for the main window change accordingly to the preferences set</dd>
     <dt>Point your mouse cursor to the "Extra settings" tab and click it</dt>
