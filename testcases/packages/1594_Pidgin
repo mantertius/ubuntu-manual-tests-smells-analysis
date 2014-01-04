@@ -1,7 +1,7 @@
 This test will check that Pidgin opens and closes correctly (test assumes Pidgin is being opened in a new install)
 <dl>
     <dt>Open Pidgin from the menu</dt>
-        <dd>Accounts dialogue and Buddy List opens</dd>
+        <dd>Accounts dialogue and Buddy List opens minimised</dd>
     <dt>Focus on Buddy List, press Ctrl+Q</dt>
         <dd>Both dialogues close</dd>
 </dl>
