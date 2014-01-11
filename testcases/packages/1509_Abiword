@@ -1,31 +1,26 @@
-﻿Test-case name:abiword/abi-001
-This test will check that Abiword can be started
+﻿This test will check that Abiword can be started
 
 <dl>
     <dt>Open Abiword</dt>
         <dd>Abiword opens succesfully</dd>
 </dl>
 
-Test-case name:abiword/abi-002
 This test will check that  Abiword can open and save .abw files
 
 <dl>
-    <dt>Open a new text document.</dt>
+    <dt>Open a new text document</dt>
         <dd>A new unnamed text document appears</dd>
     <dt>Add text and save it in .abw format.</dt>
         <dd>After inserting some text, the "Save" icon is enabled</dd>
-    <dt>Save the file</dt>
+    <dt>Press the save icon, enter save location and then save the file</dt>
         <dd>The file saves correctly</dd>
-    <dt>Open the saved file again</dt>
-        <dd>The file opens correctly</dd>
     <dt>Close the file and open the saved file again</dt>
-        <dd>The file ca be opened again after closing</dd>
+        <dd>The file can be opened again after closing</dd>
     <dt>Make some changes to the file then close the window by pressing the 'x' on the top of the window.</dt>
         <dd>A dialog box asks you to save changes</dd>
         <dd>The Application correctly closes without error</dd>
 </dl>
 
-Test-case name:abiword/abi-003
 This test will check that Abiword can spell check
 
 <dl>
@@ -37,6 +32,9 @@ This test will check that Abiword can spell check
         <dd>The word in the document is replaced with the one you selected from the suggestion list, and it is no longer marked with a red wave line in the document</dd>
     <dt>Press the “Change” button as many times as necessary till there are no more spelling mistakes in the document.</dt>
         <dd>All the spelling mistakes get replaced, the words are correctly suggested</dd>
+	<dd>Spelling check complete dialogue opens</dd>
+    <dt>Press OK in dialogue</dt>
+	<dd>Dialogue closes</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

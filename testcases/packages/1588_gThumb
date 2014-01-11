@@ -3,13 +3,13 @@ This test will check that gThumb can be opened either from a terminal window, fr
     <dt>Open a terminal window, type <code>gthumb</code> at the prompt and hit the "Enter" key</dt>
         <dd>gThumb opens</dd>
     <dt>Click the top right "X" of the window's title bar to close the application</dt>
-        <dd>gThumg closes</dd>
+        <dd>gThumb closes</dd>
     <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
         <dd>A menu drops down</dd>
     <dt>Navigate to Graphics -> gThumb</dt>
         <dd>gThumb opens</dd>
     <dt>Navigate to File -> Quit</dt>
-        <dd>gThumb opens</dd>
+        <dd>gThumb closes</dd>
     <dt>Open the File Manager, right-click on an image file and select the "Open with gThumb" option</dt>
         <dd>gThumb opens the right-clicked image</dd>
 </dl>

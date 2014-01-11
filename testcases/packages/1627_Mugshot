@@ -35,7 +35,7 @@ This test will check that Mugshot will set your profile image and user details f
         <dd>Greeter screen appears and the selected image and username defined in Mugshot are present</dd>
 </dl>
 
-This test will check that Mugshot profile image can also be chosen from a camera
+This test will check that Mugshot profile image can also be chosen from a camera, assumes you are logged in to a working desktop
 <dl>
     <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
         <dd>Mugshot opens</dd>
