@@ -10,9 +10,9 @@ This test will check that Update Search Index works
 <dl>
     <dt>Open a terminal from the menu</dt>
         <dd>Terminal opens</dd>
-    <dt>Type cd Desktop and <code>enter</code></dt>
+    <dt>Type <code>cd Desktop</code> and enter</dt>
         <dd>Terminal prompt changes to ~/Desktop$</dd>
-    <dt>Type touch test Test and <code>enter</code></dt>
+    <dt>Type <code>touch test Test</code> and enter</dt>
         <dd>New files named test and Test appear on Desktop</dd>
     <dt>Open Catfish from menu</dt>
         <dd>Catfish opens with empty search box</dd>
@@ -45,9 +45,9 @@ This test will check that Catfish will use case sensitivity when searching and w
 <dl>
     <dt>Open a terminal from the menu</dt>
 	<dd>Terminal opens</dd>
-    <dt>Type cd Desktop and <code>enter</code></dt>
+    <dt>Type <code>touch test Test</code> and enter</dt>
 	<dd>Terminal prompt changes to ~/Desktop$</dd>
-    <dt>Type touch .test and <code>enter</code></dt>
+    <dt>Type <code>touch .test</code> and enter</dt>
     <dt>Open Catfish from menu</dt>
         <dd>Catfish opens with empty search box</dd>
     <dt>Click icon to right of search box</dt>
