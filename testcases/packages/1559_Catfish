@@ -10,9 +10,9 @@ This test will check that Update Search Index works
 <dl>
     <dt>Open a terminal from the menu</dt>
         <dd>Terminal opens</dd>
-    <dt>Type cd Desktop and enter</dt>
+    <dt>Type cd Desktop and <code>enter</code></dt>
         <dd>Terminal prompt changes to ~/Desktop$</dd>
-    <dt>Type touch test Test and enter</dt>
+    <dt>Type touch test Test and <code>enter</code></dt>
         <dd>New files named test and Test appear on Desktop</dd>
     <dt>Open Catfish from menu</dt>
         <dd>Catfish opens with empty search box</dd>
@@ -43,11 +43,11 @@ This test will check that Catfish will search for files
 
 This test will check that Catfish will use case sensitivity when searching and will search for hidden files
 <dl>
-    <dt>Open a terminal from the menu</dt
+    <dt>Open a terminal from the menu</dt>
 	<dd>Terminal opens</dd>
-    <dt>Type cd Desktop and enter</dt>
+    <dt>Type cd Desktop and <code>enter</code></dt>
 	<dd>Terminal prompt changes to ~/Desktop$</dd>
-    <dt>Type touch .test and enter</dt>
+    <dt>Type touch .test and <code>enter</code></dt>
     <dt>Open Catfish from menu</dt>
         <dd>Catfish opens with empty search box</dd>
     <dt>Click icon to right of search box</dt>
@@ -61,7 +61,7 @@ This test will check that Catfish will use case sensitivity when searching and w
         <dd>Update Search Index box shows index being updated</dd>
     <dt>When Search Index reports Locate database updated successfully, click Close</dt>
         <dd>Search Index box closes</dd>
-    <dt>Click on Folder icon to right of search term box</dt>
+    <dt>Click on Folder icon to left of search term box</dt>
         <dd>Folder list appears</dd>
     <dt>Click on Desktop</dt>
         <dd>Folder name changes to Desktop</dd>

@@ -2,7 +2,7 @@
 
 <dl>
     <dt>Open Abiword</dt>
-        <dd>Abiword opens succesfully</dd>
+        <dd>Abiword opens successfully</dd>
 </dl>
 
 This test will check that  Abiword can open and save .abw files

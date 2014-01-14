@@ -110,7 +110,7 @@ This test will check that gThumb's View menu options work as expected
     <dt>Select an image file from the browser view in gThumb window main area and navigate to View -> Fullscreen or alternatively hit F11 key</dt>
         <dd>gThumb menu, toolbar, statusbar, sidebar and filterbar are removed and the selected image goes full screen</dd>
     <dt>Navigate to View -> Slideshow or alternatively hit F5 key</dt>
-        <dd>A slideshow presentation of the image files in the currente directory starts</dd>
+        <dd>A slideshow presentation of the image files in the current directory starts</dd>
     <dt>Navigate to View -> Hidden Files and tick/untick its checkbox or alternatively hit Ctrl+H keys</dt>
         <dd>Hidden files are shown or hidden accordingly to the choice made</dd>
     <dt>Navigate to View -> Sort by...</dt>
@@ -168,7 +168,7 @@ This test will check that gThumb's Bookmarks menu options work as expected
     <dt>Navigate to Bookmarks -> Edit Bookmarks... or alternatively hit Ctrl+B keys</dt>
         <dd>Bookmarks dialogue window opens</dd>
     <dt>Edit bookmarks names and/or locations, remove a bookmark or select a specific bookmark to jump directly into and click on the corresponding action button</dt>
-        <dd>Depending on the action choosed, the bookmark is renamed and/or relocated, deleted or gThumb positions itself on the selected bookmark</dd>
+        <dd>Depending on the action chosen, the bookmark is renamed and/or relocated, deleted or gThumb positions itself on the selected bookmark</dd>
 </dl>
 
 This test will check that gThumb's Help menu options work as expected
