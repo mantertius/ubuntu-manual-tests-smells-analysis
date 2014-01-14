@@ -32,9 +32,9 @@ This test will check that Abiword can spell check
         <dd>The word in the document is replaced with the one you selected from the suggestion list, and it is no longer marked with a red wave line in the document</dd>
     <dt>Press the “Change” button as many times as necessary till there are no more spelling mistakes in the document.</dt>
         <dd>All the spelling mistakes get replaced, the words are correctly suggested</dd>
-	<dd>Spelling check complete dialogue opens</dd>
+        <dd>Spelling check complete dialogue opens</dd>
     <dt>Press OK in dialogue</dt>
-	<dd>Dialogue closes</dd>
+        <dd>Dialogue closes</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
