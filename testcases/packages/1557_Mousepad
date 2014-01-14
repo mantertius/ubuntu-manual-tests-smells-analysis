@@ -34,9 +34,9 @@ This test will check that Mousepad can find and highlight searched text
     <dt>Press F3</dt>
         <dd>Next "t" is found in the text document</dd>
     <dt>Type "he" in the search box</dt>
-        <dd>"The" is found in the document with the search term highlighted</dd>
+        <dd>Second "the" is found in the document with the search term highlighted</dd>
     <dt>Press F3</dt>
-        <dd>Next "the" is found in the document</dd>
+        <dd>First "the" is found in the document</dd>
     <dt>Press esc</dt>
         <dd>Search box closes, focus returns to text document with search term highlighted</dd>
 </dl>
@@ -50,7 +50,7 @@ This test will check that Mousepad can find and replace text, including case sen
     <dt>Press Ctrl+R</dt>
         <dd>Replace dialogue opens</dd>
     <dt>Type "fox" in the Search for: box</dt>
-    <dt>Type "cat" in the Replace with: box
+    <dt>Type "cat" in the Replace with: box</dt>
     <dt>Check the Replace all in: option</dt>
         <dd>1 occurence is found and the Replace button changes to say Replace All</dd>
     <dt>Click Replace All</dt>
@@ -66,6 +66,11 @@ This test will check that Mousepad can find and replace text, including case sen
     <dt>Close Mousepad with File -> Close Window</dt>
         <dd>Save before closing dialogue appears</dd>
     <dt>Click Save</dt>
+        <dd>Save As window opens</dd>
+    <dt>Type another_test.txt in Name: box</dt>
+    <dt>Select any folder to save file to</dt>
+        <dd>Chosen file name and target folder remain as selected</dd>
+    <dt>Click Save button</dt>
         <dd>Mousepad closes</dd>
     <dt>Open File Manager, navigate to saved file and double click to open in Mousepad</dt>
         <dd>Mousepad opens with saved text</dd>
