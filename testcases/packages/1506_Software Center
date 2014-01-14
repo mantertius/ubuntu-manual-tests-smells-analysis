@@ -34,8 +34,8 @@ This test will check that Software Center can install applications by Categories
 
 This test will check that installing applications from Software Center creates a menu item where applicable
 <dl>
-    <dt>Following VLC installation - go to Multimedia menu in your <FAMILY></dt>
-	<dd>VLC has a menu entry</dd>
+    <dt>Following VLC installation - go to Multimedia menu in your FAMILY</dt>
+        <dd>VLC has a menu entry</dd>
 </dl>
 
 This test will check that Software Center removes applications correctly
@@ -183,7 +183,7 @@ This test will check that Menu Help Works
     <dt>Go to the top bar and click on "Help" and later on "About"</dt>
         <dd>A new window appears</dd>
         <dd>Selecting "launchpad.net/software-center" opens browser and redirects to <a href="https://launchpad.net/software-center">https://launchpad.net/software-center</a></dd>
-    <dt>Click Credits</dt
+    <dt>Click Credits</dt>
         <dd>Credits shows in About window</dd>
 </dl>
 
