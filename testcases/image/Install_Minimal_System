@@ -1,0 +1,41 @@
+</dt><dt>The scope of this test is to verify FAMILY minimal system installation and upgrade capability.
+<dl>
+    <dt>Boot up the server image</dt>
+    <dt>Select language</dt>
+    <dt>Press F4, arrow down, select "Install a minimal system", press Enter</dt>
+    <dt>Press Enter a 2nd time to "Install FAMILY Server"
+        <dt>Choose the language</dt>
+        <dt>Select your location</dt>
+        <dt>Configure the keyboard</dt>
+        <ul>
+            <li>Select layout, "No"</li>
+            <li>Select country</li>
+            <li>Select layout</li>
+        </ul>
+    </dt>
+    <dt>Use default hostname, "ubuntu"</dt>
+    <dt>Full name for new user, use, "testuser"</dt>
+    <dt>Username for your account, "testuser"</dt>
+    <dt>Choose a password for the new user, "123testuser456</dt>
+    <dt>Re-enter password to verify, "123testuser456"</dt>
+    <dt>Encrypt your home directory, "No"</dt>
+    <dt>Is this time zone correct? "Yes" if correct, "No" to setup</dt>
+    <dt>Partitioning method, "Guided - Use entire disk"</dt>
+    <dt>Select disk to partition, use the listed device</dt>
+    <dt>Write changes to disks, verify targets, if correct, "Yes" to start</dt>
+    <dt>http proxy request, leave blank, "continue"</dt>
+    <dt>How do you want to manage upgrades on this system? "No automatic updates"</dt>
+    <dt>Choose software to install, Tab to "continue", no additional selections</dt>
+    <dt>Install the GRUB boot loader to the master boot record, "Yes"</dt>
+    <dt>Remove the installation media (CDROM or USB key), then "continue"</dt>
+    <dt>Wait for the system reboot and login</dt>
+    <dt>Verify internet access with: sudo apt-get update</dt>
+        <dd>You should be asked for sudo password, "123testuser456"</dd>
+        <dd>Then, apt-get should perform a normal update without errors</dd>
+    <dt>Verify access to tasksel: sudo tasksel
+        <dd>You should be presented with an ncruses GUI, listing options for upgrading the current install</dd>
+    <dt>Hit Tab, then "Ok" to exit.</dt>
+    <dt>Logout by typing: "logout"
+
+        <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
