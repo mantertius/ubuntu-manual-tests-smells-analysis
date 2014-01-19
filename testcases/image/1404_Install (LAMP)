@@ -72,7 +72,7 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>Create a file called /var/www/phptest.php:</dt>
         <dd>sudo nano /var/www/phptest.php</dd>
         <dd>add the following text to the file:
-            <pre>&lt;? phpinfo(); ?&gt;</pre>
+            <pre>&lt;?php phpinfo(); ?&gt;</pre>
         </dd>
     <dt>run it on w3m</dt>
         <dd>w3m localhost/phptest.php</dd>
