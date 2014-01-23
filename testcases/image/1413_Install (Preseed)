@@ -5,6 +5,8 @@ Scope of this test is to verify that the system is installed in itself starting 
     On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).
 </strong>
 
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
     <dt>Choose the desired language,  press F6, Esc, and F8. This will show you the Boot Options line:

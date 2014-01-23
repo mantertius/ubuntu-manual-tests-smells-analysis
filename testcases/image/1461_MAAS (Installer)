@@ -1,5 +1,7 @@
 These testcases test install MAAS from an image or previously installed system. You can also <a href="http://maas.ubuntu.com/docs/install.html">follow the documentation for help</a>. NOTE, if a Virtualbox is used, in network settings bridged adapter must be enabled, promiscuous mode must be enabled, and you must use the PCnet-FAST III adapater.
 
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 Test-case name: maas/maas-001
 This test will check that the MAAS server can be installed from packages.
 <dl>

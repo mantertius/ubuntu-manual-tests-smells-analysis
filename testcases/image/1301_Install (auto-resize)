@@ -1,4 +1,7 @@
 ﻿<strong> Check that an existing system is installed and that sufficient disk space is available for an additional system to be installed during the test</strong>
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
