@@ -2,7 +2,7 @@ This will test the xfwm4 workspace settings
 <dl>
     <dt>Open Settings manager, then "Workspaces"</dt>
         <dd>Xfwm4 workspace settings opens</dd>
-    <dt>Type numbers or use the arrows to change the number of workspaces</dt>
+    <dt>Use the arrows to change the number of workspaces</dt>
         <dd>The number of workspaces increases, both in the list below and in the indicator bar</dd>
     <dt>Double click one of the workspace names</dt>
         <dd>You are now able to type a name for the workspace</dd>

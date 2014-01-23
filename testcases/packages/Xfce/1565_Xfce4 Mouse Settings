@@ -32,8 +32,10 @@ This tests that tab one of xfce4 mouse settings works
     <dt>Repeat for each device</dt>
 </dl>
 
+<em>The following test is optional, depending on hardware</em>
 
 This tests that the touchpad settings work
+
 <dl>
     <dt>Click the "Devices" tab</dt>
     <dt>Click the "Touchpad" tab</dt>

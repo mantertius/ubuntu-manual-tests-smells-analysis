@@ -14,11 +14,15 @@ This test will verify that the Style tab works properly.
 <dl>
     <dt>With the "Apperance" module open to the "Style" tab, select another style.</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
-    <dt>Click on the "All Settings" button to return to the "Settings Manager". Install the clearlooks-phenix-theme package. Click on the "Appearance" module.</dt>
+    <dt>Click on the "All Settings" button to return to the "Settings Manager"</dt>
+    <dt>Open a terminal and install the clearlooks-phenix-theme package <code>sudo apt-get install clearlooks-phenix-theme</code> </dt>
+    <dt>Click on the "Appearance" module.</dt>
         <dd>Clearlooks-Phenix appears as a style in the "Style" tab.</dd>
     <dt>Click on "Clearlooks-Phenix" to select the style.</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
-    <dt>Click on the "All Settings" button to return to the "Settings Manager". Remove the clearlooks-phenix-theme package. Click on the "Appearance" module.</dt>
+    <dt>Click on the "All Settings" button to return to the "Settings Manager"</dt>
+    <dt>Open a terminal and purge the clearlooks-phenix-theme package <code>sudo apt-get purge clearlooks-phenix-theme</code> </dt>
+    <dt>Click on the "Appearance" module.</dt>
         <dd>The "Appearance" (Style tab) module re-appears with no themes selected.</dd>
     <dt>Click on any style to select it.</dt>
         <dd>The GTK appearance of the on screen widgets changes to the new style.</dd>
@@ -45,7 +49,7 @@ This test will verify that the Fonts tab works properly.
     <dt>Uncheck the "Enable anit-aliasing" checkbox.</dt>
         <dd>The on-screen fonts change (they appear blockier).</dd>
     <dt>Re-check the "Enable anti-aliasing" checkbox.</dt>
-        <dd>The fonts change again (apear smoother).</dd>
+        <dd>The fonts change again (appear smoother).</dd>
     <dt>Change the "Hinting" to none.</dt>
         <dd>There should be a slight change to the appearance of the fonts.</dd>
     <dt>Change the "Hinting" to Medium.</dt>
