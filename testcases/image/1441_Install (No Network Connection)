@@ -1,4 +1,7 @@
 Scope of this test is to verify that the system is installed and you can login into it.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>On a physical server, disconnect the network cable(s); if running KVM, make sure to pass '-net nic,model=virtio -net user,restrict=y' on the Testdrive setting window</dt>
     <dt>Boot up the image</dt>

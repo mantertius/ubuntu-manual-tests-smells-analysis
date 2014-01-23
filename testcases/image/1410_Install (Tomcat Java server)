@@ -1,4 +1,7 @@
 This test will check that the Ubuntu Server system is installed and you can login into it
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying a screen with language selection</dd>
