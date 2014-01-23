@@ -1,4 +1,7 @@
 To execute this test, a pre-existing ubuntu (or derivative) installation is needed
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
