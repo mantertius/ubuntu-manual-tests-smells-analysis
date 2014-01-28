@@ -1,0 +1,26 @@
+This test will check that light-locker locks the screen
+<dl>
+    <dt>From Action Plugin on top panel, press Lock Screen</dt>
+        <dd>Machine locks and unlock dialogue appears</dd>
+        <dd>Session and language options in bar are unavailable</dd>
+</dl>
+
+This test will check that light-locker will inhibit access to session
+<dl>
+    <dt>While in locked screen, press Ctrl+Alt+F7</dt>
+        <dd>Screen lock warning shows and returns to unlock dialogue</dd>
+</dl>
+
+This test will check that suspend while locked will inhibit access to session
+<dl>
+    <dt>From session menu at top right, select suspend</dt>
+        <dd>Machine suspends</dd>
+    <dt>Bring machine out of suspension</dt>
+        <dd>Machine returns to unlock dialogue</dd>
+</dl>
+
+This test will check that light-locker unlocks the screen
+<dl>
+    <dt>Enter password and press Unlock</dt>
+        <dd>Desktop appears with any applications previously open visible</dd>
+</dl>
