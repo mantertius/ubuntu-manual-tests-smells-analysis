@@ -41,7 +41,10 @@ To execute this test, a pre-existing ubuntu (or derivative) installation is need
         <dd>The system boots properly and loads into the new ubuntu (or derivative name)</dd>
     <dt>Open a Terminal and enter the command <code>lsb_release -a</code></dt>
         <dd>New version will be shown on the Description line</dd>
-    <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
-</dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    <dt>Open a terminal and enter the command <code>grep Prompt=
+            /etc/update-manager/release-upgrades</code></dt>
+                <dd>Echoes Prompt=normal for non-LTS and Prompt=lts for LTS upgrades</dd>
+            <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
+        </dl>
+        <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
