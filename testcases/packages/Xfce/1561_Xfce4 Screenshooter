@@ -72,12 +72,12 @@ This test will check that Xfce4 Screenshot saves a screenshot by clicking and dr
         <dd>A save dialog should be displayed, allowing to set the save location and the name of the file</dd>
 </dl>
 
-This test will check that Xfce4 Screenshot allows to select whether or not the screenshot will include the mouse pointer
+This test will check that Xfce4 Screenshot allows to select whether or not the screenshot will include the mouse pointer and time delay works
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
     <dt>Select one of the options, under the 'Region to capture', tick the "Capture the mouse pointer" option section</dt>
-    <dt>Point the mouse pointer to the textbox's top arrow button, under the 'Delay before capturing'</dt>
+    <dt>Point the mouse pointer to the textbox's top arrow button, under the 'Delay before capturing' and change the delay time</dt>
         <dd>The number of seconds should increase accordingly</dd>
     <dt>Select one of the options, under the 'Region to capture' and click the OK button</dt>
         <dd>The screenshot active window should only be displayed after the number of established seconds has elapsed</dd>

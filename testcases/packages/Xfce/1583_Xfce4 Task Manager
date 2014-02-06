@@ -22,7 +22,7 @@ This test will check that the Task Manager is updating tracked statistics in rea
 
 This test will check the "Execute" menu option
 <dl>
-    <dt>Click "Execute" on the menu bar</dt>
+    <dt>Click "Gear Icon" on the menu bar</dt>
         <dd>A drop-down menu opens</dd>
     <dt>Click "Run Program"</dt>
         <dd>The Application Finder dialog opens displaying just a search term field</dd>
@@ -69,13 +69,10 @@ This test will check that actions can be performed on running tasks
 
 This test will check the setting of Preferences
 <dl>
-    <dt>Click "Preferences" on the menu bar</dt>
+    <dt>Click "Switch Icon" on the menu bar</dt>
         <dd>A drop-down menu appears</dd>
     <dt>Click each of the options and observe the following results</dt>
         <dd>"Show all processes" shows even more running processes but may not increment the number of processes displayed on the status bar</dd>
-        <dd>"More precision" - CPU, Memory and Swap utilization percentages are displayed to two decimal places (although not when hovering over the panel icon)</dd>
-        <dd>"Full command line" displays the full file path of many tasks in the list</dd>
-        <dd>"Show status icon" determines whether an icon is shown on the panel when Task Manager is running</dd>
         <dd>"Refresh rate" increases or decreases the frequency of statistics updates</dd>
         <dd>The rest of the options display additional columns of information in the task list window</dd>
 </dl>

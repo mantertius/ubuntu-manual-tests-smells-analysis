@@ -1,3 +1,5 @@
+<em>While packages are unseeded this test requires light-locker to be installed and xscreensaver to be purged</em>
+
 This test will check that light-locker locks the screen
 <dl>
     <dt>From Action Plugin on top panel, press Lock Screen</dt>
