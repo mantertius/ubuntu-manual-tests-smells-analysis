@@ -12,7 +12,7 @@ This tests that xfce4 notes works
         <dd>A new note opens</dd>
     <dt>Use the arrow icons to change between notes</dt>
         <dd>The current note changes in responce to clicking on the icons</dd>
-    <dt>Press Ctrl+W</dt>
+    <dt>Press Ctrl+W, then agree to the popup</dt>
         <dd>The current note deletes</dd>
     <dt>Click Notes icon(Menu) --> Always on top</dt>
         <dd>Notes is always the top window</dd>
@@ -26,7 +26,7 @@ This tests that xfce4 notes works
         <dd>A new Group (window) opens</dd>
 </dl>
 
-This tests that xfce4 notes remembers notes, test includes logging out
+This tests that xfce4 notes remembers notes
 <dl>
     <dt>Open "Notes"</dt>
         <dd>Notes opens and an icon appears in the indicator bar</dd>
@@ -35,7 +35,7 @@ This tests that xfce4 notes remembers notes, test includes logging out
     <dt>Click "X"</dt>
     <dt>Click the indicator icon for notes</dt>
         <dd>All your text is still there</dd>
-    <dt>Logout, login and then open notes</dt>
+    <dt>Restart your computer, Then open notes</dt>
         <dd>Your text is still there</dd>
 </dl>
 
