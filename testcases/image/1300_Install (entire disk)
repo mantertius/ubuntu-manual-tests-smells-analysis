@@ -16,7 +16,7 @@
         <dd>The check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
-    <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
+    <dt>Select Erase disk and install FAMILY</dt>
         <dd>The 'Erase disk and install FAMILY' radio button should be checked by default</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
