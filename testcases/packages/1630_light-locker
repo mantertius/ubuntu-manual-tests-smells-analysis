@@ -1,3 +1,5 @@
+<strong>light-locker is disabled from autostart in a live session, this test will need to run in an installed system</strong>
+
 This test will check that light-locker locks the screen
 <dl>
     <dt>From Action Plugin on top panel, press Lock Screen</dt>
