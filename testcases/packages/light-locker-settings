@@ -1,0 +1,33 @@
+This test will check that light-locker-settings can set the time after the screensaver is started the screen is locked
+<dl>    
+    <dt>Enable "light-locker" switch</dt>
+    <dt>Enable "Lock automatically after screensaver" switch</dt>
+    <dt>Change the "Delay locking after screensaver for" slider to any thing but "Never"</dt>
+    <dt>Change the "Blank screen after" slider to 1 minute</dt>
+    <dt>Click "Apply"</dt>
+    <dt>Restart your session by logging out and back in again</dt>
+        <dd>After 1 minute your screen will blank out, after the time you have set for the delay the light-locker will be shown when you move your mouse / press a key to go out of the screensaver</dd>
+</dl>
+
+This test will check that light-locker-settings can change the time for the X11 session screen blanking
+<dl>
+    <dt>Change the slider for "Blank screen after" to 1 minute</dt>
+    <dt>Click "Apply"</dt>
+        <dd>After 1 minute of no activity your screen will go blank</dd>
+    <dt>Restart your session by logging out and back in again</dt>
+        <dd>After 1 minute of no activity your screen will go blank</dd>
+</dl>
+        
+
+This test will check that light-locker-settings can change set the time for turning off the screen (if supported by hardware)
+<dl>
+    <dt>Change the slider for "Switch off display after" to 1 minute</dt>
+    <dt>Click "Apply"</dt>
+        <dd>After 1 minute of no activity your screen will be turned off</dd>
+    <dt>Restart your session by logging out and back in again</dt>
+        <dd>After 1 minute of no activity your screen will be turned off</dd>        
+</dl>
+    
+    
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
