@@ -4,7 +4,6 @@
         <dd>Xchat should launch to Network List window</dd>
 </dl>
 
-Test-case name:xchat/xchat-002
 This test will check that XChat let you specify Nicks, Names
 <dl>
     <dt>Double click existing nick in Nick name and enter your nick</dt>
