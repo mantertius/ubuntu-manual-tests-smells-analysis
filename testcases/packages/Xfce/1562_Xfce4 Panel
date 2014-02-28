@@ -34,9 +34,7 @@ This test will check that Xfce4 Panel allows to configure panel preferences
 
 This test will check that Xfce4 Panel allows to add and remove panels
 <dl>
-    <dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
-        <dd>A menu should drop down</dd>
-    <dt>Select the Settings Manager option</dt>
+    <dt>Find Settings Manager in menu and click with mouse</dt>
         <dd>The Settings window should appear</dd>
     <dt>Point the mouse pointer to the 'Panel' icon and click it</dt>
         <dd>Panel dialog window should appear</dd>

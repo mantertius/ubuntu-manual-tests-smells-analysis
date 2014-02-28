@@ -1,4 +1,3 @@
-Test-case name: transmission/tra-001
 This test will check that transmission manage torrents correctly
 <dl>
     <dt> Open transmission</dt>
@@ -25,9 +24,7 @@ This test will check that transmission manage torrents correctly
         <dd>No issues are encounted</dd>
 </dl>
 
-
-Test-case name: transmission/tra-002
-depends: transmission/tra-001
+<em>Depends on previous test</em>
 This test will check that the Torrent menu Works
 <dl>
     <dt>Open the transmission</dt>
@@ -60,9 +57,7 @@ This test will check that the Torrent menu Works
         <dd>The torrent and its files remove correctly</dd>
 </dl>
 
-
-Test-case name: transmission/tra-003
-depends: transmission/tra-001
+<em>Depends on first test</em>
 This test will check that the Help menu works
 <dl>
     <dt>Open the transmission </dt>

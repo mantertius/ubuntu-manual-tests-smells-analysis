@@ -2,7 +2,7 @@ This test will check that Gigolo can be opened either from a terminal window or 
 <dl>
     <dt>Open a terminal window, type "gigolo" at the prompt and hit the 'Enter' key</dt>
         <dd>Gigolo window opens</dd>
-    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+    <dt>Point your mouse pointer to the menu icon and click it</dt>
         <dd>A menu drops down</dd>
     <dt>Navigate to System -> Gigolo</dt>
         <dd>Gigolo window opens</dd>

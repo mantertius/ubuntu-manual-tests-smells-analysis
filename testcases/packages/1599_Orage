@@ -4,7 +4,7 @@ This test will check that Orage can be opened either from a terminal window or f
         <dd>Orage opens</dd>
     <dt>Click the top right "X" of the window's title bar to close the application</dt>
         <dd>Orage closes</dd>
-    <dt>Point your mouse pointer to the Applications Menu icon and click it</dt>
+    <dt>Point your mouse pointer to the menu icon and click it</dt>
         <dd>A menu drops down</dd>
     <dt>Navigate to Office -> Orage Calendar</dt>
         <dd>Orage opens</dd>
