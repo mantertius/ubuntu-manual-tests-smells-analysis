@@ -1,6 +1,6 @@
 This test will check that Xfce4 Dictionary can open and use a Dictionary Server
 <dl>
-    <dt>Locate "Dictionary" under "Office" on the Main Menu and click on it</dt>
+    <dt>Locate "Dictionary" under "Office" on the menu and click on it</dt>
         <dd>The Dictionary dialog opens</dd>
     <dt>Confirm that the "Search with:" option is set to 'Dictionary Server', type a word in the Search term field and press Enter</dt>
         <dd>Definitions for that word appear in the window</dd>

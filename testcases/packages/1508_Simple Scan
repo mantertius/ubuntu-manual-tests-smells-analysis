@@ -1,4 +1,3 @@
-Test-case name:simple-scan/simp-001
 This test will check that simple-scan can be started.
 
 <dl>
@@ -8,7 +7,6 @@ This test will check that simple-scan can be started.
         <dd>If simple-scan did not detect your scanner did you get an error message displaying "No scanners detected"?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-002
 This test will check that simple-scan can scan and then save files.
 
 <dl>
@@ -22,7 +20,6 @@ This test will check that simple-scan can scan and then save files.
         <dd>Did the file open correctly as a jpg?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-003
 This test will check that simple-scan can scan and then save pdf files.
 
 <dl>
@@ -36,7 +33,6 @@ This test will check that simple-scan can scan and then save pdf files.
         <dd>Did the file open correctly as a pdf?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-004
 This test will check that simple-scan can scan change image rotation.
 
 <dl>
@@ -54,7 +50,6 @@ This test will check that simple-scan can scan change image rotation.
         <dd>Did the image rotate 90 degrees to the left (counter-clockwise)?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-005
 This test will check that simple-scan can Stop a scan.
 
 <dl>
@@ -62,7 +57,6 @@ This test will check that simple-scan can Stop a scan.
         <dd>Did simple-scan stop the current scan?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-006
 This test will check that simple-scan can Crop a scan.
 
 <dl>
@@ -76,7 +70,6 @@ This test will check that simple-scan can Crop a scan.
         <dd>Did the image save as a cropped image?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-007
 This test will check that simple-scan can Save multiple images.
 
 <dl>
@@ -86,7 +79,6 @@ This test will check that simple-scan can Save multiple images.
         <dd>Did both images save as separate images named "Scanned Document(multi) 1.jpg" and "Scanned Document(multi) 2.jpg"?</dd>
 </dl>
 
-Test-case name:simple-scan/simp-008
 This test will check that simple-scan can delete a scan.
 
 <dl>

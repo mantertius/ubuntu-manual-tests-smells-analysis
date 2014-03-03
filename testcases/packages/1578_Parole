@@ -1,4 +1,3 @@
-Test-case name: parole/parole-001
 This tests that parole can open many different files.
 <dl>
     <dt>Launch Parole</dt>
