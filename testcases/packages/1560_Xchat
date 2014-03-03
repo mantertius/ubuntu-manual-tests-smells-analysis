@@ -1,11 +1,9 @@
-﻿Test-case name:xchat/xchat-001
-This test will check that Xchat will open correctly
+﻿This test will check that Xchat will open correctly
 <dl>
     <dt>Open Xchat</dt>
         <dd>Xchat should launch to Network List window</dd>
 </dl>
 
-Test-case name:xchat/xchat-002
 This test will check that XChat let you specify Nicks, Names
 <dl>
     <dt>Double click existing nick in Nick name and enter your nick</dt>
@@ -18,7 +16,6 @@ This test will check that XChat let you specify Nicks, Names
         <dd>Your chosen name is saved</dd>
 </dl>
 
-Test-case name:xchat/xchat-003
 This test will check that XChat will use specified Network, Network Settings and accept Favorite channels
 <dl>
     <dt>Select Freenode from Network list </dt>
@@ -47,7 +44,6 @@ This test will check that XChat will use specified Network, Network Settings and
         <dd>Edit Freenode window closes</dd>
 </dl>
 
-Test-case name:xchat/xchat-004
 This test will check that Xchat connects to your chosen network and channel(s) with your chosen nickname
 <dl>
     <dt>Click Connect button</dt>
@@ -61,7 +57,6 @@ This test will check that Xchat connects to your chosen network and channel(s) w
         <dd>Message appears in channel</dd>
 </dl>
 
-Test-case name:xchat/xchat-005
 This test checks some of xchat's more advanced features
 <dl>
     <dt>Click your nickname</dt>
@@ -78,7 +73,6 @@ This test checks some of xchat's more advanced features
         <dd>You should be disconnected from the current server</dd>
 </dl>
 
-Test-case name:xchat/xchat-006
 This test checks that XChat closes properly, and will reopen with the settings previously applied
 <dl>
     <dt>Click X in top right (or left depending on Desktop Environment)</dt>

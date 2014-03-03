@@ -2,7 +2,7 @@
 
 This test will check that light-locker locks the screen
 <dl>
-    <dt>From Action Plugin on top panel, press Lock Screen</dt>
+    <dt>From menu, press Lock Screen button</dt>
         <dd>Machine locks and unlock dialogue appears</dd>
         <dd>Session and language options in bar are unavailable</dd>
 </dl>
