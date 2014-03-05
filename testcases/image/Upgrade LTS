@@ -20,7 +20,6 @@ To execute this test, a pre-existing ubuntu (or derivative) installation is need
 
         <dt>Open a terminal and enter the command <code>grep Prompt=
                 /etc/update-manager/release-upgrades</code></dt>
-                    <dd>If you have upgraded from a normal release to normal release, terminal will show Prompt=normal</dd>
                     <dd>If you have upgraded from a lts release to lts release, terminal will show Prompt=lts</dd>
 </dl>
 
