@@ -140,7 +140,7 @@ This test case will verify that the adjustable settings in the Preferences dialo
         <dd>The fullscreen image also displays an analog clock with the current time.</dd>
     <dt>Go to Edit->Preferences->Slideshow tab, and change the "Timeout" value. View a slideshow.</dt>
         <dd>The images in the slideshow cycle based on the "Timeout" value that you just set.</dd>
-    <dt>Go to Edit->Preferences->Control tab, and check the "Invert zoom direction" checkbox. Zoom in and out of the image using the mouse scroll button.</dt>
+    <dt>Go to Edit->Preferences->Control tab, and check the "Invert zoom direction" checkbox. While pressing the Ctrl key, zoom in turning the mouse scroll-wheel backward and zoom out turning the mouse scroll-wheel forward.</dt>
         <dd>The zoom direction is reversed.</dd>
     <dt>Go to Edit->Preferences->Behaviour tab, and uncheck the "Maximize window on startup when opening an image" checkbox. Shutdown ristretto. Right-click on an image in the File Manager and open with Ristretto.</dt>
         <dd>Ristretto opens and the window is not maximized.</dd>
