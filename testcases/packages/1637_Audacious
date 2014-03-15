@@ -1,6 +1,6 @@
 This test will check that Audacious can play ogg files.
 <strong>For this test, an audio file in ogg format is required, which can be found in the internet, e.g. <a href="www.kahvi.org">www.kahvi.org</a>.
-If you do not have such a file, skip the test.
+    If you do not have such a file, skip the test.
 </strong>
 <dl>
     <dt>Open Audacious from the start menu at "Sound & Video"</dt>
