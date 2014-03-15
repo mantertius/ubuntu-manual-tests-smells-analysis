@@ -1,0 +1,44 @@
+This test will check that Audacious can play ogg files.
+<strong>For this test, an audio file in ogg format is required, which can be found in the internet, e.g. <a href="www.kahvi.org">www.kahvi.org</a>.
+If you do not have such a file, skip the test.
+</strong>
+<dl>
+    <dt>Open Audacious from the start menu at "Sound & Video"</dt>
+        <dd>Audacious starts without an issue</dd>
+    <dt>Click on "File" and "Open Files"</dt>
+        <dd>A window opens, asking for a file to select</dd>
+    <dt>Select an ogg audio file and click on "Open"</dt>
+        <dd>Audacious playbacks the file correctly</dd>
+    <dt>Click on the "stop playback" button</dt>
+        <dd>Audacious stops the playback</dd>
+</dl>
+
+This test will check that the library is working.
+<dl>
+    <dt>Copy the audio file(s) to the Music folder in your home directory, e.g. /home/USER/Music</dt>
+    <dt>In the menu bar, click on "File", then on "Search Library"</dt>
+        <dd>The "Search Tool" opens within Audacious</dd>
+    <dt>In the "Search Tool", click on the refresh button in the lower right corner</dt>
+        <dd>The library is updated with the file(s) in your Music folder and appear(s) in the library</dd>
+    <dt>In the "Search Tool", enter the name of the file you loaded into Audacious</dt>
+        <dd>The file shows up in the search results</dd>
+</dl>
+
+This test will check that the equalizer and effects are working properly.
+<dl>
+    <dt>Click on the playback button</dt>
+        <dd>Audacious playbacks the file again</dd>
+    <dt>In the menu bar, click on "Output" and then on "Equalizer"</dt>
+        <dd>The equalizer window opens</dd>
+    <dt>Tick "Enable". Try to change some of the sound levels</dt>
+        <dd>The sound alters while playing around with the sound levels</dd>
+    <dt>Untick "Enable" and close the equalizer window</dt>
+        <dd>The playback is equal to the begin of the test</dd>
+    <dt>In the menu bar, click on "Output", then on "Effects". Select an effect, e.g. "Echo", and click on it</dt>
+        <dd>The sound alters according to the chosen effect</dd>
+    <dt>Go back to the menu and deactivate the chosen effect</dt>
+        <dd>The playback is equal to the begin of the test</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
