@@ -1,3 +1,5 @@
+<strong>It is possible that for a launcher to hide when being tested in a live session that you will need to logout/in to see changes</strong>
+
 This test will check that a new launcher can be added and moved to an existing menu
 <dl>
     <dt>Right click on menu</dt>
