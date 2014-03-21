@@ -1,3 +1,5 @@
+<em>If running this test in a virtual machine, open a terminal and run <code>parole --xv false</code></em>
+
 This tests that parole can open many different files.
 <dl>
     <dt>Launch Parole</dt>
