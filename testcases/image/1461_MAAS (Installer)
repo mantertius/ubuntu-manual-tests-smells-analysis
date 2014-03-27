@@ -13,7 +13,7 @@ This test will check that the MAAS server can be installed from packages.
     <dt> Press enter and let it finish the installation</dt>
     <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
         <dd>MAAS interface display a warning telling no admin user has been created</dd>
-    <dt> Run "sudo maas createsuperuser" in your MAAS computer and fill the input fields</dt>
+    <dt> Run "sudo maas-region-admin createsuperuser" in your MAAS computer and fill the input fields</dt>
         <dd>MAAS interface ask your credentials</dd>
     <dt> Fill the input fields and press "Login"</dt>
         <dd>Could you login into the MAAS server using the admin account created previously?</dd>
@@ -81,11 +81,11 @@ This test will check that the MAAS server can be installed from the Ubuntu Serve
     <dt> Type "ifconfig" and look for the ip assigned to the machine</dt>
     <dt> Visit the MAAS interface in your browser http://IP/MAAS</dt>
         <dd>MAAS interface display a warning telling no admin user has been created</dd>
-    <dt> Run "sudo maas createsuperuser" in your MAAS computer and fill the input fields</dt>
+    <dt> Run "sudo maas-region-admin createsuperuser" in your MAAS computer and fill the input fields</dt>
         <dd>MAAS interface ask your credentials</dd>
     <dt> Fill the input fields and press "Login"</dt>
         <dd>Could you login into the MAAS server using the admin account created during previously?</dd>
-    <dt> Run "sudo maas createsuperuser" in your MAAS computer and fill the input fields</dt>
+    <dt> Run "sudo maas-region-admin createsuperuser" in your MAAS computer and fill the input fields</dt>
         <dd>MAAS interface ask your credentials</dd>
     <dt> Fill the input fields and press "Login"</dt>
         <dd>Could you login into the MAAS server using the admin account created previously?</dd>
