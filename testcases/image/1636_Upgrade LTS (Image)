@@ -43,8 +43,7 @@ To execute this test, a pre-existing ubuntu (or derivative) installation is need
         <dd>The system boots properly and loads into the new ubuntu (or derivative name)</dd>
     <dt>Open a Terminal and enter the command <code>lsb_release -a</code></dt>
         <dd>New version will be shown on the Description line</dd>
-    <dt>Open a terminal and enter the command <code>grep Prompt=
-            /etc/update-manager/release-upgrades</code></dt>
+    <dt>Open a terminal and enter the command <code>grep Prompt= /etc/update-manager/release-upgrades</code></dt>
                 <dd>Terminal will show Prompt=lts</dd>
             <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
         </dl>
