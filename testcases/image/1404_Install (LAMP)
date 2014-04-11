@@ -72,8 +72,8 @@ Scope of this test is to verify that the system is installed, you can login into
         <dd>php -r 'phpinfo();'</dd>
         <dd>That will produce about 600 lines.</dd>
     <dt>Test PHP (Apache mod_php)</dt>
-    <dt>Create a file called /var/www/phptest.php:</dt>
-        <dd>sudo nano /var/www/phptest.php</dd>
+    <dt>Create a file called /var/www/html/phptest.php:</dt>
+        <dd>sudo nano /var/www/html/phptest.php</dd>
         <dd>add the following text to the file:
             <pre>&lt;?php phpinfo(); ?&gt;</pre>
         </dd>
