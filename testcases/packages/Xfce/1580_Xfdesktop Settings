@@ -6,30 +6,32 @@ Testing settings window launch correctly.
 
 Testing wallpaper changes correctly.
 <dl>
-    <dt>Under 'Background', Ensure 'Image' is set to 'Single image'. Click on a wallpaper other than the one currently selected</dt>
-        <dd>Wallpaper has changed accordingly</dd>
-    <dt>Click on the green plus (+) button. A dialog should open. Choose a background image in an appropriate format (png or jpeg recommended)</dt>
+    <dt>Under 'Background' click on a wallpaper other than the one currently selected</dt>
+        <dd>Wallpaper changes accordingly</dd>
+    <dt>If other image folders are available, navigate in Folder dropdown and select a new wallpaper</dt>
+	<dd>New wallpaper available in list</dd>
+    <dt>Select new wallpaper</dt>
         <dd>Added background is set correctly</dd>
-</dl>
-
-Testing image list functionality.
-<dl>
-    <dt>Under 'Background', Ensure 'Image' is set to 'Image list'. Add images to the list by clicking the plus button as before</dt>
-        <dd>Added images change correctly</dd>
-    <dt>Select an image and click the red minus (-) button.</dt>
-        <dd>The image is removed from the list</dd>
+    <dt>Select Style options, zoomed etc and apply</dt
+	<dd>Wallpaper changes in response to Style setting</dd>
+    <dt>Deslect apply to all workspaces</dt>
+	<dd>Yellow notice appears</dd>
+    <dt>Move Desktop settings dialogue to a new workspace</dt>
+    <dt>Select a different wallpaper</dt>
+	<dd>Wallpapers set on workspaces are different</dd>
+    <dt>Select Change the background time setting</dt>
+    <dt>Set time to in seconds, 10, select random order</dt>
+	<dd>After 10 seconds wallpaper changes</dd>
+    <dt>Deselect Change the background time setting</dt>
+        <dd>Wallpaper remains unchanged after 10 seconds</dd>
 </dl>
 
 Testing colours and gradients.
 <dl>
-    <dt>Under 'Background', ensure 'Image' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'</dt>
+    <dt>Under 'Background', ensure 'Style' is set to 'None'. Select, in turn, 'Solid colour', 'Horizontal gradient', 'Vertical gradient', and 'Transparent'</dt>
         <dd>Ensure that each are applied correctly.</dd>
     <dt>Change the colour(s) for each</dt>
         <dd>They are set correctly</dd>
-    <dt>Increase and decrease the value of the 'Brightness' slider</dt>
-        <dd>Brightness changes accordingly</dd>
-    <dt>Increase and decrease the value of the 'Saturation' slider</dt>
-        <dd>Brightness changes accordingly</dd>
 </dl>
 
 Testing desktop menu.
@@ -60,7 +62,7 @@ Testing desktop icons.
        <dd>Desktop thumbnails are shown and hidden correctly (may need some video or image files on the desktop to check this).</dd>
    <dt>Tick 'Single click to activate icons'</dt>
        <dd>Ensure that the icon applications now launch upon being clicked</dd>
-   <dt>Untick the box>/dt>
+   <dt>Untick the box</dt>
        <dd>It now functions as before (double click)</dd>
    <dt>Tick and untick each of the checkboxes under 'Default Icons'</dt>
        <dd>Each in turn is hidden and shown</dd>

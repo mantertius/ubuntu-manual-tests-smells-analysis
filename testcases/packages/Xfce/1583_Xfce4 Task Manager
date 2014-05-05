@@ -37,11 +37,10 @@ This test will check the "Execute" menu option
         <dd>The Terminal Emulator window opens, the number of Processes shown on the status bar increments and "Xfce Terminal" appears in the Task list</dd>
     <dt>Close the Terminal Emulator</dt>
         <dd>The number of Processes shown on the status bar decrements and "Xfce Terminal" disappears from the Task list</dd>
-    <dt>Click "Execute" on the menu bar</dt>
+    <dt>Click arrow to the right of the Gear Icon and select Application Finder</dt>
         <dd>The Application Finder dialog opens in expanded mode</dd>
     <dt>Close the Application Finder dialog</dt>
-    <dt>Click "Execute" once again</dt>
-    <dt>Click "Terminal Emulator"</dt>
+    <dt>Click arrow to the right of the Gear Icon and select Terminal Emulator</dt>
         <dd>The Terminal Emulator opens</dd>
 </dl>
 

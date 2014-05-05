@@ -1,6 +1,6 @@
 This test will check that the Appearance Setting Dialog is visible in the Settings Manager and starts.
 <dl>
-    <dt>From the main menu, select "Settings Manager".</dt>
+    <dt>From the whiskermenu open "Settings Manager".</dt>
         <dd>"Settings Manager" opens and the "Appearance" module appears in the Personal section.</dd>
     <dt>From the launcher panel, click on the "Settings Manager" icon.</dt>
         <dd>A second instance of "Settings Manager" opens and the "Appearance" module appears in the Personal section.</dd>
@@ -32,11 +32,15 @@ This test will verify that the Icons tab works properly.
 <dl>
     <dt>With the "Appearance" module loaded and the "Icons" tab visible, select another icon theme.</dt>
         <dd>The icons on the screen change to the newly-selected icon theme.</dd>
-    <dt>Click on the "All Settings" button to return to the "Settings Manager". Install the tango-icon-theme package. Click on "Appearance" module and go to the "Icons" tab.</dt>
+    <dt>Click on the "All Settings" button to return to the "Settings Manager"</dt>
+    <dt>Open a terminal and install the tango-icon-theme package <code>sudo apt-get install tango-icon-theme</code></dt>
+    <dt>Click on "Appearance" module and go to the "Icons" tab.</dt>
         <dd>Tango appears as an icon theme.</dd>
     <dt>Click on Tango to select the theme.</dt>
         <dd>The icons on the screen change to the new icon style.</dd>
-    <dt>Click the "All Settings" button to return to the "Settings Manager". Remove the tango-icon-theme package. Click on the "Appearance" module and go to the "Icons" tab.</dt>
+    <dt>Click the "All Settings" button to return to the "Settings Manager".</dt>
+    <dt>Open a terminal and remove the tango-icon-theme package <code>sudo apt-get purge tango-icon-theme</code></dt>
+    <dt>Click on the "Appearance" module and go to the "Icons" tab.</dt>
         <dd>The "Appearance" module (Icons tab) re-appears with no icon themes selected.</dd>
     <dt>Click on any icon theme to select it.</dt>
         <dd>The icons on the screen change to the newly-selected icon theme.</dd>
@@ -80,9 +84,9 @@ This test will verify that the Settings tab works properly.
         <dd>Archive Manager loads.</dd>
     <dt>Change the "Toolbar Style" to Text.</dt>
         <dd>The Archive Manager toolbar changes to text.</dd>
-    <dt>Change the "Toolbar Style" to Both.</dt>
+    <dt>Change the "Toolbar Style" to Text under icons.</dt>
         <dd>The Archive Manager toolbar changes to both icons and text with the text below the icon.</dd>
-    <dt>Change the "Toolbar Style" to Both Horizontal.</dt>
+    <dt>Change the "Toolbar Style" to Text next to icons.</dt>
         <dd>The Archive Manager toolbar changes to both icons and text with the text beside the icon.</dd>
     <dt>Change the "Toolbar Style" back to Icons.</dt>
         <dd>The Archive Manager toolbar changes the default icons look.</dd>
@@ -112,7 +116,7 @@ This test will verify that the Help works properly.
 
 This test will verify that command line invocation works.
 <dl>
-    <dt>From a terminal window, run "xfce4-appearance-settings" (without the quotes).</dt>
+    <dt>From a terminal window, run <code>xfce4-appearance-settings</code></dt>
         <dd>The Appearance settings open standalone (not as part of the Settings Manager.</dd>
 </dl>
 
