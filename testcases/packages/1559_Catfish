@@ -1,12 +1,12 @@
 This test will check that Catfish opens
 <dl>
-    <dt>Open Catfish from menu</dt>
+    <dt>Open Catfish from Whiskermenu</dt>
         <dd>Catfish opens with empty search box</dd>
 </dl>
 
 This test will check that Update Search Index works
 <dl>
-    <dt>Open a terminal from the menu</dt>
+    <dt>Open a terminal</dt>
         <dd>Terminal opens</dd>
     <dt>Type <code>cd Desktop</code> and enter</dt>
         <dd>Terminal prompt changes to ~/Desktop$</dd>
