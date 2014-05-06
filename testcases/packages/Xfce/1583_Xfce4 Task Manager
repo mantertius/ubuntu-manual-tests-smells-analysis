@@ -1,6 +1,6 @@
 This test will check that the Task Manager can open
 <dl>
-    <dt>Locate "Task Manager" under "System" on the menu and click on it</dt>
+    <dt>Locate "Task Manager" under "System" on the Whiskermenu and click on it</dt>
         <dd>The Task Manager application opens and displays a list of all tasks that are currently running</dd>
 </dl>
 

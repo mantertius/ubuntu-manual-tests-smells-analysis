@@ -8,7 +8,7 @@ This tests that xfce4 mouse settings will open
 This tests that Devices of xfce4 mouse settings works
 <dl>
     <dt>Click the "Devices" tab</dt>
-    <dt>Click the "Device:" menu</dt>
+    <dt>Click the "Device:" drop down list</dt>
         <dd>A menu rolls down</dd>
     <dt>Select one of the devices</dt>
     <dt>Untick "Enable this device"</dt>

@@ -14,7 +14,7 @@ Testing wallpaper changes correctly.
         <dd>Added background is set correctly</dd>
     <dt>Select Style options, zoomed etc and apply</dt
 	<dd>Wallpaper changes in response to Style setting</dd>
-    <dt>Deslect apply to all workspaces</dt>
+    <dt>Deselect apply to all workspaces</dt>
 	<dd>Yellow notice appears</dd>
     <dt>Move Desktop settings dialogue to a new workspace</dt>
     <dt>Select a different wallpaper</dt>

@@ -2,8 +2,6 @@ This test will check that the Appearance Setting Dialog is visible in the Settin
 <dl>
     <dt>From the whiskermenu open "Settings Manager".</dt>
         <dd>"Settings Manager" opens and the "Appearance" module appears in the Personal section.</dd>
-    <dt>From the launcher panel, click on the "Settings Manager" icon.</dt>
-        <dd>A second instance of "Settings Manager" opens and the "Appearance" module appears in the Personal section.</dd>
     <dt>Click on the "Appearance" module in "Settings Manager".</dt>
         <dd>The "Appearance" module is loaded into the "Settings Manager" window replacing the "Settings Manager".</dd>
     <dt>Click on the "All Settings" button.</dt>
