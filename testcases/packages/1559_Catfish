@@ -1,5 +1,3 @@
-Test-case name:Catfish
-
 This test will check that Catfish opens
 <dl>
     <dt>Open Catfish from menu</dt>
@@ -16,7 +14,7 @@ This test will check that Update Search Index works
         <dd>New files named test and Test appear on Desktop</dd>
     <dt>Open Catfish from menu</dt>
         <dd>Catfish opens with empty search box</dd>
-    <dt>Click icon to right of search box</dt>
+    <dt>Click the gear icon to the far right of the search box</dt>
         <dd>Menu appears</dd>
     <dt>Click Update Search Index</dt>
         <dd>Update Search Index opens</dd>
@@ -50,7 +48,7 @@ This test will check that Catfish will use case sensitivity when searching and w
     <dt>Type <code>touch .test</code> and enter</dt>
     <dt>Open Catfish from menu</dt>
         <dd>Catfish opens with empty search box</dd>
-    <dt>Click icon to right of search box</dt>
+    <dt>Click the gear icon to the far right of the search box</dt>
         <dd>Menu appears</dd>
     <dt>Click Update Search Index</dt>
         <dd>Update Search Index opens</dd>
@@ -65,7 +63,7 @@ This test will check that Catfish will use case sensitivity when searching and w
         <dd>Folder list appears</dd>
     <dt>Click on Desktop</dt>
         <dd>Folder name changes to Desktop</dd>
-    <dt>Click icon to right of search box</dt>
+    <dt>Click the gear icon to the far right of the search box</dt>
         <dd>Menu appears</dd>
     <dt>Click Exact Match in menu</dt>
         <dd>Menu closes</dd>
@@ -82,5 +80,31 @@ This test will check that Catfish will use case sensitivity when searching and w
         <dd>Catfish closes</dd>
 </dl>
 
+This test will check the thumbnail capability of Catfish
+<dl>
+    <dt>Go to the menu search and launch the xfce screenshooter</dt>
+	<dd>Screenshot dialogue opens</dd>
+    <dt>Capture a screenshot and save it to the Desktop</dt>
+	<dd>A thumbnail of the image should now appear in the Desktop</dd>
+    <dt>Go to the menu and launch catfish</dt>
+	<dd>Catfish opens with empty search box</dd>
+    <dt>Click the gear icon to the far right of the search box</dt>
+	<dd>Menu appears</dd>
+    <dt>Click Update Search Index</dt>
+	<dd>Update Search Index opens</dd>
+    <dt>Click Unlock</dt>
+	<dd>Password Entry box opens</dd>
+    <dt>Enter your password and Enter</dt>
+	<dd>Password box closes</dd>
+    	<dd>Update Search Index box shows index being updated</dd>
+    <dt>When Search Index reports Locate database updated successfully, click Close</dt>
+	<dd>Search Index box closes</dd>
+    <dt>Search for "screenshot"</dt>
+	<dd>List showing your recent screenshot appears</dd>
+    <dt>Click the second icon next to the right of the search box area</dt>
+	<dd>List should now show the thumbnail of your screenshot</dd>
+    <dt>Close Catfish with X in the top left corner</dt>
+	<dd>Catfish closes</dd>
+</dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
