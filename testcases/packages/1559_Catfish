@@ -41,10 +41,8 @@ This test will check that Catfish will search for files
 
 This test will check that Catfish will use case sensitivity when searching and will search for hidden files
 <dl>
-    <dt>Open a terminal from the Whiskermenu</dt>
-        <dd>Terminal opens</dd>
-    <dt>Type <code>touch test Test</code> and enter</dt>
-        <dd>Terminal prompt changes to ~/Desktop$</dd>
+    <dt>Open a terminal from the Whiskermenu, run <code>cd Desktop</code></dt>
+        <dd>Terminal opens, prompt changes to ~/Desktop$</dd>
     <dt>Type <code>touch .test</code> and enter</dt>
     <dt>Open Catfish from Whiskermenu</dt>
         <dd>Catfish opens with empty search box</dd>
