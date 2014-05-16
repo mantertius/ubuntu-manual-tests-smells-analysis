@@ -41,27 +41,5 @@ This test will check that Settings will open Help in a web browser
     <dd>Browser closes</dd>
 </dl>
 
-This test will check that Xfce4 Settings Manager allows to enable Assistive Technologies
-<dl>
-    <dt>Open Settings Manager from the menu</dt>
-        <dd>Settings Manager opens</dd>
-    <dt>Point your mouse cursor to the 'Accessibility' icon under the "System" section and click it</dt>
-        <dd>Accessibility dialog window should open with the 'Assistive Technologies' tab selected</dd>
-    <dt>Tick the 'Enable Assistive Technologies' checkbox</dt>
-        <dd>Xfce desktop should be enabled, xfce4-session should load the required modules so the toolkit (Gtk) can communicate with Orca, the suite of utilities for the visually impaired</dd>
-    <dt>Point your mouse cursor to the 'Keyboard' tab and click it</dt>
-        <dd>Selected/active tab should change to 'Keyboard' tab</dd>
-    <dt>Tick the 'Sticky Keys' checkbox</dt>
-        <dd>Pressing key combinations in sequence instead of at the same time should be enabled. For instance, Ctrl followed by C (instead of Ctrl-C) will copy selected text</dd>
-    <dt>Tick the 'Slow Keys' checkbox</dt>
-        <dd>The keyboard shouldn't register a keystroke until the key is hold down for a certain length of time. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
-    <dt>Tick the 'Bounce Keys' checkbox</dt>
-        <dd>The keyboard shouldn't accept a keystroke until there has been a certain interval of time since the previous keystroke. The default time is 500 milliseconds and the length of time is adjustable by moving the slider with the mouse</dd>
-    <dt>Point your mouse cursor to the 'Mouse' tab and click it</dt>
-        <dd>Selected/active tab should change to 'Mouse' tab</dd>
-    <dt>Tick the 'Mouse Emulation' checkbox</dt>
-        <dd>Acceleration delay (in milliseconds), Repeat interval (in milliseconds), Acceleration time (in milliseconds), Maximum speed (in pixels per second) and Acceleration profile options should enabled and configurable</dd>
-</dl>
-
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
