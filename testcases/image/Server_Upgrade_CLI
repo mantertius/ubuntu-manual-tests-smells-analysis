@@ -1,10 +1,10 @@
 ﻿Test-case name:server_upgrade_cli_NEVER
 This will test protection from do-release-upgrade
 <dl>
-    <dt>Login into the system locally, or via SSH if openssh-server is installed</dt>
-    <dt>In the terminal or console: sudo apt-get update && sudo apt-get upgrade</dt>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
         <dd>APT should update</dd>
-        <dd>If asked to install files, type "Y"</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
         <dd>New version files should install</dd>
     <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Should return: Prompt=normal</dd>
@@ -15,15 +15,15 @@ This will test protection from do-release-upgrade
         <dd> If sed command fails, edit manually, changing to: Prompt=never</dd>
     <dt>Start the upgrade: sudo do-release-upgrade</dt>
         <dd>Checking for new Ubuntu release</dd>
-        <dd>No new release found</dd>
-        <dd>You should be returned to the command prompt</dd>
+        <dd>No new release be found</dd>
+        <dd>Should be returned to the command prompt</dd>
 </dl>
 
 ﻿Test-case name:server_upgrade_cli_NORMAL
-This will test upgrading to the next sequential release
+This will test the next sequential release
 <dl>
-    <dt>Login into the system locally, or via SSH if openssh-server is installed</dt>
-    <dt>In the terminal or console: sudo apt-get update && sudo apt-get upgrade</dt>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
         <dd>APT should update</dd>
         <dd>If asked to install files, type "Y"</dd>
         <dd>New version files should install</dd>
@@ -31,54 +31,48 @@ This will test upgrading to the next sequential release
         <dd>Should return: Prompt=normal</dd>
         <dd>If Prompt=never then: sudo sed -i 's/Prompt=never/Prompt=normal/'</dd>
         <dd>If Prompt=lts then: sudo sed -i 's/Prompt=lts/Prompt=normal/'</dd>
-    <dt>Check release-setting again: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+    <dt>Re-Check release-setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Should return: Prompt=normal</dd>
         <dd> If sed command fails, edit manually, changing to: Prompt=normal</dd>
     <dt>Check current release: lsb_release -r</dt>
         <dd>Note the release version</dd>
     <dt>Start the upgrade: sudo do-release-upgrade</dt>
-        <dd>APT will check for available release data</dd>
-        <dd>APT will update the current package list</dd>
-        <dd>If a new release if found, APT will add new repositories and start the upgrade</dd>
-    <dt>When asked to start the upgrade, type "y"</dt>
-        <dd>The installation should continue</dd>
-    <dt>When asked, Restart services during package upgrades without asking, select "Yes"</dt>
-    <dt>When asked, Remove obsolete packages, type "y"</dt>
-        <dd>Old packages should be removed</dd>
-    <dt>Login into the system locally, or remote via SSH.</dt>
-    <dt>Check the release version: lsb_release -r</dt>
+        <dd>APT will check release data and update package list</dd>
+        <dd>If a new release is found, APT will add repositories and upgrade</dd>
+    <dt>When asked to start the upgrade, type <em>Y</em></dt>
+    <dt>When asked, restart services during package upgrades without asking, select <em>Yes</em></dt>
+    <dt>When asked, remove obsolete packages, type <em>Y</em></dt>
+    <dt>Login into the system</dt>
+    <dt>Check release version: lsb_release -r</dt>
         <dd>Compare results to step(5), it should be the next sequential release.</dd>
 </dl>
 
 Test-case name:server_upgrade_cli_LTS
 This will test upgrading LTS to LTS
 <dl>
-    <dt>Login into the system locally, or via SSH if openssh-server is installed</dt>
-    <dt>In the terminal or console: sudo apt-get update && sudo apt-get upgrade</dt>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
         <dd>APT should update</dd>
-        <dd>If asked to install files, type "Y"</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
         <dd>New version files should install</dd>
     <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Should return: Prompt=normal</dd>
         <dd>If Prompt=normal then: sudo sed -i 's/Prompt=normal/Prompt=lts/'</dd>
         <dd>If Prompt=never then: sudo sed -i 's/Prompt=never/Prompt=lts/'</dd>
-    <dt>Check release-setting again: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+    <dt>Re-Check release-setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Should return: Prompt=normal</dd>
         <dd> If sed command fails, edit manually, changing to: Prompt=LTS</dd>
     <dt>Check current release: lsb_release -r</dt>
         <dd>Note the release version</dd>
-    <dt>Start the upgrade: sudo do-release-upgrad</dt>
-        <dd>APT will check for available release data</dd>
-        <dd>APT will update the current package list</dd>
-        <dd>If a new release if found, APT will add new repositories and start the upgrade</dd>
-    <dt>When asked to start the upgrade, type "y"</dt>
-        <dd>The installation should continue</dd>
-    <dt>When asked, Restart services during package upgrades without asking, select "Yes"</dt>
-    <dt>When asked, Remove obsolete packages, type "y"</dt>
-        <dd>Old packages should be removed</dd>
-    <dt>At, To finished the upgrade, restart required, type "y"</dt>
-        <dd>The system should reboot. If logged in via SSH, you will be logged out</dd>
-    <dt>Login into the system locally, or remote via SSH if openssh-server is installed</dt>
+    <dt>Start the upgrade: sudo do-release-upgrade</dt>
+        <dd>APT will check release data and update package list</dd>
+        <dd>If a new release is found, APT will add repositories and upgrade</dd>
+    <dt>When asked to start the upgrade, type <em>Y</em></dt>
+    <dt>When asked, restart services during package upgrades without asking, select <em>Yes</em></dt>
+    <dt>When asked, Remove obsolete packages, type <em>Y</em></dt>
+    <dt>To finished the upgrade, restart required, type <em>Y</em></dt>
+        <dd>The system should reboot.</dd>
+    <dt>Login into the system</dt>
     <dt>Check the release version: lsb_release -r</dt>
         <dd>Compare results to step(5), it should be the next sequential LTS release.</dd>
 </dl>
@@ -86,32 +80,30 @@ This will test upgrading LTS to LTS
 Test-case name:server_upgrade_cli_DEV
 This will test upgrading to a development release
 <dl>
-    <dt>Login into the system locally, or via SSH if openssh-server is installed</dt>
-    <dt>In the terminal or console: sudo apt-get update && sudo apt-get upgrade</dt>
+    <dt>Login into the system locally, or via SSH</dt>
+    <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
         <dd>APT should update</dd>
-        <dd>If asked to install files, type "Y"</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
         <dd>New version files should install</dd>
     <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Should return: Prompt=normal</dd>
         <dd>If Prompt=never then: sudo sed -i 's/Prompt=never/Prompt=normal/'</dd>
         <dd>If Prompt=LTS then: sudo sed -i 's/Prompt=lts/Prompt=normal/'</dd>
-    <dt>Check release-setting again: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
+    <dt>Re-Check release-setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Should return: Prompt=normal</dd>
-        <dd> If sed command fails, edit manually, chainging to: Prompt=LTS</dd>
+        <dd> If sed command fails, edit manually, changing to: Prompt=LTS</dd>
     <dt>Check current release: lsb_release -r></dt>
         <dd>Note the release version</dd>
     <dt>Start the upgrade: sudo do-release-upgrade -d</dt>
-        <dd>APT will check for available release data</dd>
-        <dd>APT will update the current package list</dd>
-        <dd>If a new release if found, APT will add new repositories and start the upgrade</dd>
-    <dt>When asked to start the upgrade, type "y"</dt>
+        <dd>APT will check release data and update package list</dd>
+        <dd>If a new release is found, APT will add new repositories and start the upgrade</dd>
+    <dt>When asked to start the upgrade, type <em>Y</em></dt>
         <dd>The installation should continue</dd>
-    <dt>When asked, Restart services during package upgrades without asking, select "Yes"</dt>
-    <dt>When asked, Remove obsolete packages, type "y"</dt>
-        <dd>Old packages should be removed</dd>
-    <dt>At, To finished the upgrade, restart required, type "y"</dt>
-        <dd>The system should reboot. If logged in via SSH, you will be logged out</dd>
-    <dt>Login into the system locally, or remote via SSH if openssh-server is installed</dt>
+    <dt>When asked, restart services during package upgrades without asking, select <em>Yes</em></dt>
+    <dt>When asked, remove obsolete packages, type <em>Y</em></dt>
+    <dt>To finished the upgrade, restart required, type <em>Y</em></dt>
+        <dd>The system should reboot.</dd>
+    <dt>Login into the system</dt>
     <dt>Check the release version: lsb_release -r</dt>
         <dd>Compare results to step(5), it should be the next development release.</dd>
 </dl>
