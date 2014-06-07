@@ -1,8 +1,10 @@
+<em>This testcase requires logging out/in</em>
+
 This test will check that light-locker-settings can set the time after the screensaver is started the screen is locked
 <dl>    
     <dt>Enable "light-locker" switch</dt>
-    <dt>Enable "Lock automatically after screensaver" switch</dt>
-    <dt>Change the "Delay locking after screensaver for" slider to any thing but "Never"</dt>
+    <dt>Enable "Automatically lock the session" switch</dt>
+    <dt>Change the "Delay locking after screensaver for" slider to a suitable time</dt>
     <dt>Change the "Blank screen after" slider to 1 minute</dt>
     <dt>Click "Apply"</dt>
     <dt>Restart your session by logging out and back in again</dt>
@@ -11,6 +13,7 @@ This test will check that light-locker-settings can set the time after the scree
 
 This test will check that light-locker-settings can change the time for the X11 session screen blanking
 <dl>
+    <dt>Set Automatically lock session to "Never"</dt>
     <dt>Change the slider for "Blank screen after" to 1 minute</dt>
     <dt>Click "Apply"</dt>
         <dd>After 1 minute of no activity your screen will go blank</dd>
