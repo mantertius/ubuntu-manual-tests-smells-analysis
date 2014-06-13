@@ -28,6 +28,7 @@ This test will check that sound indicator works correctly
 This test will check that messages indicator works correctly
 
 <em>If server connection is <strong>not</strong> available prior to the following test, this not cause to fail the test</em>
+<em>indicator-messages is not available until an application that appears in the indicator has been run and the install rebooted - if this is not available please do not test</em>
 
 <dl>
     <dt>Click messages indicator in panel</dt>
