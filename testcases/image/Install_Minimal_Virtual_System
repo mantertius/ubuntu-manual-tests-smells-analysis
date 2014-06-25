@@ -10,7 +10,7 @@
         <li>Select layout, <em>No</em></li>
         <li>Select country</li>
     </ul>
-    <dt>Choose a hostname.</dt>
+    <dt>Choose a hostname</dt>
     <dt>Choose a username</dt>
     <dt>Choose a password</dt>
     <dt>Re-enter password</dt>
@@ -31,7 +31,7 @@
     <dt>Verify access to tasksel: sudo tasksel</dt>
         <dd>ncurses GUI will render, listing upgrade options</dd>
     <dt>Hit Tab, then <em>Ok</em> to exit.</dt>
-    <dt>Logout by typing: <em>logout<em></dt>
+    <dt>Logout by typing: <em>logout</em></dt>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

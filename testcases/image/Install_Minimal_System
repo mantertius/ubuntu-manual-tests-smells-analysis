@@ -10,7 +10,7 @@
         <li>Select layout, <em>No</em></li>
         <li>Select country</li>
     </ul>
-    <dt>Choose a hostname.</dt>
+    <dt>Choose a hostname</dt>
     <dt>Choose a username</dt>
     <dt>Choose a password</dt>
     <dt>Re-enter password</dt>
@@ -28,7 +28,7 @@
     <dt>Verify Internet access: sudo apt-get update</dt>
         <dd>Provide sudo password</dd>
         <dd>apt-get will perform a normal update</dd>
-    <dt>Verify access to tasksel: sudo tasksel
+    <dt>Verify access to tasksel: sudo tasksel</dt>
         <dd>ncurses GUI will render, listing upgrade options</dd>
     <dt>Select Tab, then <em>Ok</em> to exit</dt>
     <dt>Logout</dt>
