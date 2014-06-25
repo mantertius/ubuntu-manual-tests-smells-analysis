@@ -10,11 +10,10 @@
         <li>Select layout, "No"</li>
         <li>Select country</li>
     </ul>
-    <dt>Use default hostname, "ubuntu"</dt>
-    <dt>Full name for new user, use, "testuser"</dt>
-    <dt>Username for your account, "testuser"</dt>
-    <dt>Choose a password for the new user, "123testuser456</dt>
-    <dt>Re-enter password to verify, "123testuser456"</dt>
+    <dt>Choose a hostname.</dt>
+    <dt>Choose a username</dt>
+    <dt>Choose a password</dt>
+    <dt>Re-enter password</dt>
     <dt>Encrypt your home directory, "No"</dt>
     <dt>Is this time zone correct? "Yes" if correct, "No" to setup</dt>
     <dt>Partitioning method, "Guided - Use entire disk"</dt>
