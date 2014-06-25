@@ -1,13 +1,13 @@
 This test will require you to log out
 Optionally, to run the full test, you will need to have a camera installed
 
-This test will check that Mugshot can be opened either from a terminal window or from the applications menu, and closes propley
+This test will check that Mugshot can be opened either from a terminal window or from the applications menu, and closes properly
 <dl>
     <dt>Open a terminal window, type <code>mugshot</code> at the prompt and hit the 'Enter' key</dt>
         <dd>Mugshot opens</dd>
     <dt>Click the top right 'X' of the window's title bar to close the application</dt>
         <dd>Mugshot closes</dd>
-    <dt>Click the Applications Menu icon</dt>
+    <dt>Click the menu icon</dt>
         <dd>A menu drops down</dd>
     <dt>Navigate to Settings Manager and click it</dt>
         <dd>Settings dialog window opens</dd>

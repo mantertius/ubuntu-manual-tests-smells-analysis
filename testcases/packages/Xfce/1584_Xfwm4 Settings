@@ -72,6 +72,8 @@ This test will check that Focus changes are applied correctly
 </dl>
 
 This test will check that Advanced options are applied correctly
+
+<em>Note that Wrap work spaces does not function in a virtualbox vm - this is not cause to fail the test</em>
 <dl>
     <dt>Select Advanced tab</dt>
         <dd>Window changes to advanced tab, Snap windows to screen border and Wrap workspaces when dragging selected by default</dd>

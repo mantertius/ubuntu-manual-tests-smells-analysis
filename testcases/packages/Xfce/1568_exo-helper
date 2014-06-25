@@ -1,7 +1,7 @@
 This test will check that exo helper opens applications correctly 
 <dl>
     <dt>Open Settings Manager -> Preferred Applications</dt>
-        <dd>Preffered Applications opens at Internet</dd>
+        <dd>Preferred Applications opens at Internet</dd>
     <dt>Select Web default web browser</dt>
 	<dd>Drop down appears</dd>
     <dt>If you have more than one browser installed, select a different one</dt>

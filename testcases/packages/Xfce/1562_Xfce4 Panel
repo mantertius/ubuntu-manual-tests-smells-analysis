@@ -8,8 +8,6 @@ This test will check that Xfce4 Panel allows to insert plugins into the panel
         <dd>Add New Items window should appear</dd>
     <dt>Select a plugin in the list and click the Add button</dt>
         <dd>The selected panel plugin should appear at the end of the selected panel</dd>
-    <dt>Reproduce the first three steps mentioned above to open Add New Items dialog window</dt>
-        <dd>Add New Items dialog window should appear</dd>
     <dt>Select an item from the dialog, drag it and drop it in the panel</dt>
         <dd>The selected panel plugin should appear at the end of the selected panel</dd>
 </dl>
@@ -26,30 +24,22 @@ This test will check that Xfce4 Panel allows to configure panel preferences
         <dd>A list of possible panel orientations should appear</dd>
     <dt>Select one of the desired panel orientation</dt>
         <dd>The panel orientation should be promptly set to the selected orientation</dd>
-    <dt>Reproduce the steps to open Panel dialog window</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Tick the 'Lock panel' option under the "General" section</dt>
         <dd>The handles on the panel which allow to move it shouldn't be shown</dd>
     <dt>Untick the 'Lock panel' option under the "General" section</dt>
         <dd>The panel should be possible to drag and move anywhere on the screen. The panel should also snap to the edges of the screen</dd>
-    <dt>Reproduce the steps to open Panel dialog window</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Tick the 'Don't reserve space on borders' option under the "General" section</dt>
         <dd>The windows should stretch to the screen edge overlapping the panel</dd>
 </dl>
 
 This test will check that Xfce4 Panel allows to add and remove panels
 <dl>
-    <dt>Point your mouse cursor to the Applications Menu icon and click it</dt>
-        <dd>A menu should drop down</dd>
-    <dt>Select the Settings Manager option</dt>
+    <dt>Find Settings Manager in menu and click with mouse</dt>
         <dd>The Settings window should appear</dd>
     <dt>Point the mouse pointer to the 'Panel' icon and click it</dt>
         <dd>Panel dialog window should appear</dd>
     <dt>Point your mouse cursor to the '+' button and click it</dt>
         <dd>A new empty panel should appear showing a selection around it and the new panel should be listed in the drop down list at the top of Panel dialog window</dd>
-    <dt>Reproduce the steps to open Panel dialog window through Applications Menu</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Point your mouse cursor to the '-' button and click it</dt>
         <dd>A Question dialog appears asking to confirm the removal</dd>
     <dt>Click the Remove button</dt>
@@ -62,8 +52,6 @@ This test will check that Xfce4 Panel allows to add and remove panels
         <dd>Panel dialog window should appear</dd>
     <dt>Point your mouse cursor to the '+' button and click it</dt>
         <dd>A new empty panel should appear showing a selection around it and the new panel should be listed in the drop down list at the top of Panel dialog window</dd>
-    <dt>Reproduce the steps to open Panel dialog window by right clicking on the empty space of a panel</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Point your mouse cursor to the '-' button and click it</dt>
         <dd>A Question dialog appears asking to confirm the removal</dd>
     <dt>Click the Remove button</dt>
@@ -80,16 +68,10 @@ This test will check that Xfce4 Panel allows to change the panel's height, width
         <dd>Panel dialog window should appear</dd>
     <dt>Point the mouse pointer to the 'Row size (pixels):' slidebar under the "Measurements" section and move the slider to the right</dt>
         <dd>The total panel height (or width) should increase</dd>
-    <dt>Reproduce the steps to open Panel dialog window</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Point the mouse pointer to the 'Length (%):' slidebar under the "Measurements" section and move the slider to the right</dt>
         <dd>The total panel width (or height) should increase as a percentage of the width (or height) of the monitor screen</dd>
-    <dt>Reproduce the steps to open Panel dialog window</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Tick the 'Automatically increase length' option under the "Measurements" section</dt>
         <dd>The panel should expand as the panel contents change</dd>
-    <dt>Reproduce the steps to open Panel dialog window</dt>
-        <dd>Panel dialog window should appear</dd>
     <dt>Point the mouse pointer to the 'Number of rows:' slidebar under the "Measurements" section and move the slider to the right</dt>
         <dd>Small panel plugins, such as launchers, should be laid out in multiple rows (or columns), while larger ones, like window buttons, should continue to occupy the whole panel height (or width)</dd>
 </dl>
@@ -112,8 +94,6 @@ This test will check that Xfce4 Panel allows to change the color, background ima
         <dd>The 'Pick a Panel Color' should open</dd>
     <dt>Select a color using the provided color picker and click the 'OK' button</dt>
         <dd>The selected color should be applied to the panel</dd>
-    <dt>Reproduce the steps to navigate to the 'Appearance' tab of Panel dialog window</dt>
-        <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
     <dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
         <dd>A list of available styles should drop down</dd>
     <dt>Select 'Background image' option</dt>
@@ -122,20 +102,14 @@ This test will check that Xfce4 Panel allows to change the color, background ima
         <dd>The 'Select a Background Image' dialog window should open</dd>
     <dt>Select a background image for the panel and click the 'Open' button</dt>
         <dd>The selected image should be applied as a background image for the panel</dd>
-    <dt>Reproduce the steps to navigate to the 'Appearance' tab of Panel dialog window</dt>
-        <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
     <dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
         <dd>A list of available styles should drop down</dd>
     <dt>Select 'None (use system style)' option</dt>
         <dd>The 'Alpha:' slidebar should appear</dd>
     <dt>Point the mouse pointer to the 'Alpha:' slidebar and move the slider to the left</dt>
         <dd>The panel should inherit the colors from the currently selected GTK+ theme and the percentage of transparency of the panel should decrease</dd>
-    <dt>Reproduce the steps to navigate to the 'Appearance' tab of Panel dialog window</dt>
-        <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
     <dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section, and move the slider to the left</dt>
         <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is hovering over the panel</dd>
-    <dt>Reproduce the steps to navigate to the 'Appearance' tab of Panel dialog window</dt>
-        <dd>'Appearance' tab of 'Panel Preferences...' should be displayed</dd>
     <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the left</dt>
         <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is not hovering over the panel</dd>
 </dl>

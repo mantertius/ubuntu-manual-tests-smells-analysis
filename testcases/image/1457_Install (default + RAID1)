@@ -1,4 +1,7 @@
 Server basic RAID1 install
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>NB: A more exhaustive set of test instructions to be used in KVM environments can be found on the <a href="https://wiki.ubuntu.com/BootDegradedRaid#Implementation">BootDegradedRaid wiki page</a></dt>
     <dt>Boot CD and run the CD self-check (then reboot)</dt>

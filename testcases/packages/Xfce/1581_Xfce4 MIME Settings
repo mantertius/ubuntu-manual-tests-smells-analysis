@@ -1,13 +1,13 @@
 This test will check that the MIME Type Editor can open
 <dl>
-    <dt>Locate "MIME Type Editor" under "Settings Manager" on the Main Menu and click on it</dt>
+    <dt>Locate "MIME Type Editor" under "Settings Manager" on the menu and click on it</dt>
         <dd>The MIME Type Editor dialog opens</dd>
 </dl>
 
 This test will check that the MIME Type list can be filtered and sorted
 <dl>
     <dt>Enter some text in the "Filter:" field (e.g., "image")</dt>
-        <dd>The MIMI Type list is filtered incrementally with partial matches as you type more characters</dd>
+        <dd>The MIME Type list is filtered incrementally with partial matches as you type more characters</dd>
     <dt>Click the X icon at the right side of the "Filter:" field</dt>
         <dd>The filter criterion is cleared and the application again displays all available MIME types</dd>
     <dt>Click on the "Default Application" column heading</dt>
@@ -43,7 +43,7 @@ This test will check that application associations can be set and changed
 
 This test will check that MIME Type Editor will correctly display a file association changed with another application
 <dl>
-    <dt>Right-click on the same .log file in File Manager and select "Open with AbiWord" from the drop-down</dt>
+    <dt>Right-click on the same .log file in File Manager and select "Open with AbiWord" from the Properties drop-down</dt>
         <dd>The file opens in AbiWord</dd>
     <dt>Open MIME Type Editor and locate the "text/x-log" MIME Type entry</dt>
         <dd>The "Status" shows "User Set" and the "Default Application" shows "AbiWord"</dd>

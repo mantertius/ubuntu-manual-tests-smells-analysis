@@ -1,4 +1,7 @@
 The goal of this test case is to check that localization support is functional during the installation, that language packs are installed correctly for those languages in the ISO. During the lang-packs installation, Internet breaks, and the installer handles it gracefully. After the installation is complete and the new system rebooted an informational message is shown prompting users to connect to the Internet to fully install language support.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
         <dd>Language list will appear</dd>
@@ -38,8 +41,6 @@ The goal of this test case is to check that localization support is functional d
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
     <dt>Click on the continue button</dt>
-    <strong>An Ubuntu One setup page appears for Ubuntu and certain flavours. If it appears complete the next step, otherwise skip it</strong>
-    <dt>Enter details for an existing Ubuntu One account OR for creating New Account. Press Login Later.</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The installer's slideshow slides are localized</dd>
     <dt>When the installer is installing the language packs, disconnect the Internet</dt>
