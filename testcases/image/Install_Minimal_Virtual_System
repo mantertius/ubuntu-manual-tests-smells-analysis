@@ -1,18 +1,15 @@
-The scope of this test is to verify FAMILY virtual minimal system installation and upgrade capability.
 <dl>
     <dt>Boot up the server image</dt>
     <dt>Select language</dt>
     <dt>Press F4, arrow down, select "Install a virtual minimal system", press Enter</dt>
-    <dt>Press Enter a 2nd time to "Install FAMILY Server"
-        <dt>Choose the language</dt>
-        <dt>Select your location</dt>
-        <dt>Configure the keyboard</dt>
-        <ul>
-            <li>Select layout, "No"</li>
-            <li>Select country</li>
-            <li>Select layout</li>
-        </ul>
-    </dt>
+    <dt>Press Enter a 2nd time to "Install FAMILY Server"</dt>
+    <dt>Choose the language</dt>
+    <dt>Select your location</dt>
+    <dt>Configure the keyboard</dt>
+    <ul>
+        <li>Select layout, "No"</li>
+        <li>Select country</li>
+    </ul>
     <dt>Use default hostname, "ubuntu"</dt>
     <dt>Full name for new user, use, "testuser"</dt>
     <dt>Username for your account, "testuser"</dt>
@@ -30,12 +27,12 @@ The scope of this test is to verify FAMILY virtual minimal system installation a
     <dt>Remove the installation media (CDROM or USB key), then "continue"</dt>
     <dt>Wait for the system reboot and login</dt>
     <dt>Verify internet access with: sudo apt-get update</dt>
-        <dd>You should be asked for sudo password, "123testuser456"</dd>
-        <dd>Then, apt-get should perform a normal update without errors</dd>
-    <dt>Verify access to tasksel: sudo tasksel
-        <dd>You should be presented with an ncruses GUI, listing options for upgrading the current install</dd>
+        <dd>When asked, add sudo password</dd>
+        <dd>apt-get will perform a normal update</dd>
+    <dt>Verify access to tasksel: sudo tasksel</dt>
+        <dd>ncurses GUI will render, listing upgrade options</dd>
     <dt>Hit Tab, then "Ok" to exit.</dt>
     <dt>Logout by typing: "logout"</dt>
-
-    <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-        If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+</dl>
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
