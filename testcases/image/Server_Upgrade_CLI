@@ -1,4 +1,6 @@
-﻿<dl>
+Test-case name: server_upgrade_cli_NEVER
+This will test protection from do-release-upgrade
+<dl>
     <dt>Login into the system locally, or via SSH</dt>
     <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
         <dd>APT will update</dd>
@@ -16,11 +18,14 @@
         <dd>No new release be found</dd>
         <dd>Return to the command prompt</dd>
 </dl>
+
+Test-case name: server_upgrade_cli_NORMAL
+This will test the next sequential release
 <dl>
     <dt>Login into the system locally, or via SSH</dt>
     <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
         <dd>APT will update</dd>
-        <dd>If asked to install files, type "Y"</dd>
+        <dd>If asked to install files, type <em>Y</em></dd>
         <dd>New version files install</dd>
     <dt>Check release-upgrade setting: grep '^Prompt=' /etc/update-manager/release-upgrades</dt>
         <dd>Return: Prompt=normal</dd>
@@ -41,6 +46,9 @@
     <dt>Check release version: lsb_release -r</dt>
         <dd>Compare results to step(5), will be the next sequential release.</dd>
 </dl>
+
+Test-case name: server_upgrade_cli_LTS
+This will test upgrading LTS to LTS
 <dl>
     <dt>Login into the system locally, or via SSH</dt>
     <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
@@ -68,6 +76,9 @@
     <dt>Check the release version: lsb_release -r</dt>
         <dd>Compare results to step(5), will be the next sequential LTS release.</dd>
 </dl>
+
+Test-case name: server_upgrade_cli_DEV
+This will test upgrading to a development release
 <dl>
     <dt>Login into the system locally, or via SSH</dt>
     <dt>In the terminal: sudo apt-get update && sudo apt-get upgrade</dt>
