@@ -1,6 +1,6 @@
 This test will check that Xfce4 Dictionary can open and use a Dictionary Server
 <dl>
-    <dt>Locate "Dictionary" under "Office" on the Main Menu and click on it</dt>
+    <dt>Locate "Dictionary" under "Office" on the menu and click on it</dt>
         <dd>The Dictionary dialog opens</dd>
     <dt>Confirm that the "Search with:" option is set to 'Dictionary Server', type a word in the Search term field and press Enter</dt>
         <dd>Definitions for that word appear in the window</dd>
@@ -26,11 +26,12 @@ This test will check the Speed Reader option
     <dt>Click the 'Speed Reader' icon again</dt>
     <dt>Change the "Words per Minute:" to 100</dt>
     <dt>Change the "Word Grouping:" to 5</dt>
-    <dt>Change the "Font Size:" to 26</dt>
+    <dt>Change the "Font Size:" to 26 and press OK</dt>
     <dt>Check the "Mark Paragraphs" option</dt>
     <dt>Click the 'Start' button</dt>
         <dd>The sample text plays at the new speed, five words at a time, with a 26 pt font, and with a paragraph break after the first sentence</dd>
     <dt>Close the Speed Reader-Running window</dt>
+    <dt>Click the 'Speed Reader' icon again</dt>
     <dt>Locate the three icons to the right of the text box and click the one with the X</dt>
         <dd>The sample text is cleared</dd>
     <dt>Click the icon that looks like a folder</dt>

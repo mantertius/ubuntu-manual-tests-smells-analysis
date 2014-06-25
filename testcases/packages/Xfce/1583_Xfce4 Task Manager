@@ -1,6 +1,6 @@
 This test will check that the Task Manager can open
 <dl>
-    <dt>Locate "Task Manager" under "System" on the Main Menu and click on it</dt>
+    <dt>Locate "Task Manager" under "System" on the Whiskermenu and click on it</dt>
         <dd>The Task Manager application opens and displays a list of all tasks that are currently running</dd>
 </dl>
 
@@ -22,7 +22,7 @@ This test will check that the Task Manager is updating tracked statistics in rea
 
 This test will check the "Execute" menu option
 <dl>
-    <dt>Click "Execute" on the menu bar</dt>
+    <dt>Click arrow to the right of the Gear icon on the menu bar</dt>
         <dd>A drop-down menu opens</dd>
     <dt>Click "Run Program"</dt>
         <dd>The Application Finder dialog opens displaying just a search term field</dd>
@@ -37,11 +37,10 @@ This test will check the "Execute" menu option
         <dd>The Terminal Emulator window opens, the number of Processes shown on the status bar increments and "Xfce Terminal" appears in the Task list</dd>
     <dt>Close the Terminal Emulator</dt>
         <dd>The number of Processes shown on the status bar decrements and "Xfce Terminal" disappears from the Task list</dd>
-    <dt>Click "Execute" on the menu bar</dt>
+    <dt>Click arrow to the right of the Gear Icon and select Application Finder</dt>
         <dd>The Application Finder dialog opens in expanded mode</dd>
     <dt>Close the Application Finder dialog</dt>
-    <dt>Click "Execute" once again</dt>
-    <dt>Click "Terminal Emulator"</dt>
+    <dt>Click arrow to the right of the Gear Icon and select Terminal Emulator</dt>
         <dd>The Terminal Emulator opens</dd>
 </dl>
 
@@ -69,7 +68,7 @@ This test will check that actions can be performed on running tasks
 
 This test will check the setting of Preferences
 <dl>
-    <dt>Click "Preferences" on the menu bar</dt>
+    <dt>Click arrow to the right of the Task Manager Settings icon on the menu bar</dt>
         <dd>A drop-down menu appears</dd>
     <dt>Click each of the options and observe the following results</dt>
         <dd>"Show all processes" shows even more running processes but may not increment the number of processes displayed on the status bar</dd>

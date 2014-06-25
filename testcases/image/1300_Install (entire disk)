@@ -1,3 +1,5 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
@@ -14,8 +16,7 @@
         <dd>The check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
-    <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
-        <dd>The 'Erase disk and install FAMILY' radio button should be checked by default</dd>
+    <dt>Select Erase disk and install FAMILY</dt>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
     <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
@@ -33,8 +34,6 @@
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
-    <strong>An Ubuntu One setup page appears for Ubuntu and certain flavours. If it appears complete the next step, otherwise skip it</strong>
-    <dt>Enter details for an existing Ubuntu One account OR for creating New Account. Press Login Later.</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The slideshow is entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>

@@ -1,4 +1,9 @@
 To execute this test, a pre-existing ubuntu (or derivative) installation is needed
+
+<strong>Upgrade will only be offered as an alternative when there is 1 installed FAMILY system</strong>
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
@@ -38,7 +43,13 @@ To execute this test, a pre-existing ubuntu (or derivative) installation is need
         <dd>The system boots properly and loads into the new ubuntu (or derivative name)</dd>
     <dt>Open a Terminal and enter the command <code>lsb_release -a</code></dt>
         <dd>New version will be shown on the Description line</dd>
-    <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
-</dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
+    <dt>Open a terminal and enter the command <code>grep Prompt= /etc/update-manager/release-upgrades</code></dt>
+                <dd>For a <em>normal to normal</em>upgrade, terminal will show Prompt=normal</dd>
+                <dd>For a <em>normal to LTS</em>upgrade, terminal will show Prompt=lts</dd>
+                <dd>For a <em>lts to normal</em>upgrade, terminal will show Prompt=normal</dd>
+                <dd>For a <em>lts to lts</em>upgrade, terminal will show Prompt=normal</dd>
+            <dt>Verify that your pre-upgrade files and installed applications are still present</dt>
+        </dl>
+
+        <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

@@ -15,7 +15,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
         <dd>Time to start repeating letter increases to 1000ms</dd>
     <dt>Change Repeat delay to 50</dt>
     <dt>In Test Area, press a letter and hold down</dt>
-        <dd>Time to start repeating letter increases to 50ms</dd>
+        <dd>Time to start repeating letter decreases to 50ms</dd>
     <dt>Reset repeat delay to default 500</dt>
     <dt>Change Repeat Speed to 250</dt>
     <dt>In Test Area, press a letter and hold down</dt>

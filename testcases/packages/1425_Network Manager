@@ -1,4 +1,3 @@
-Test-case name: networkmanager/TC-NMA-001
 This test will check that Network Manager can establish an ethernet connection
 <dl>
     <dt> Plug in the cable in ethernet port</dt>
@@ -10,7 +9,6 @@ This test will check that Network Manager can establish an ethernet connection
         <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 
-Test-case name: networkmanager/TC-NMA-002
 This test will check that Network Manager can establish a WPA/WPA2 encrypted Wi-Fi connection
 <dl>
     <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WPA/WPA2 encrypted Wi-Fi AP available</dt>
@@ -25,7 +23,6 @@ This test will check that Network Manager can establish a WPA/WPA2 encrypted Wi-
         <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 
-Test-case name: networkmanager/TC-NMA-003
 This test will check that Network Manager can establish a WEP encrypted Wi-Fi connection
 <dl>
     <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and a WEP encrypted Wi-Fi AP available</dt>
@@ -40,7 +37,6 @@ This test will check that Network Manager can establish a WEP encrypted Wi-Fi co
         <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 
-Test-case name: networkmanager/TC-NMA-004
 This test will check that Network Manager can establish an unencrypted Wi-Fi connection
 <dl>
     <dt> Please ensure you have a Wi-Fi card with installed drivers, switched on and an unencrypted Wi-Fi AP available</dt>
@@ -53,7 +49,6 @@ This test will check that Network Manager can establish an unencrypted Wi-Fi con
         <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 
-Test-case name: networkmanager/TC-NMA-005
 This test will check that Network Manager can establish a 3G connection
 <dl>
     <dt> Please ensure you have a 3G card/dongle with installed drivers, switched on and a good 3G signal from your service provider</dt>
@@ -66,7 +61,6 @@ This test will check that Network Manager can establish a 3G connection
         <dd>Does the information presented in the dialog make sense in your environment?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-vpnc-001
 This test will check that Network Manager can establish a connection to Cisco VPN
 <dl>
     <dt> Please ensure you have a Cisco VPN to connect to.</dt>
@@ -84,7 +78,6 @@ This test will check that Network Manager can establish a connection to Cisco VP
         <dd>Are you now able to access resources restricted to your VPN?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-vpnc-001
 This test will check that Network Manager can export and import Cisco VPN connections
 <dl>
     <dt> Please ensure you have a Cisco VPN to connect to.</dt>
@@ -97,7 +90,6 @@ This test will check that Network Manager can export and import Cisco VPN connec
         <dd>Does the profile import properly?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-openvpn-001
 This test will check that Network Manager can establish a connection to OpenVPN
 <dl>
     <dt> Please ensure you have an OpenVPN server to connect to.</dt>
@@ -115,7 +107,6 @@ This test will check that Network Manager can establish a connection to OpenVPN
         <dd>Are you able to access the resources provided by your VPN?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-openvpn-002
 This test will check that Network Manager can export and import OpenVPN connections
 <dl>
     <dt> Please ensure you have an OpenVPN server to connect to.</dt>
@@ -128,7 +119,6 @@ This test will check that Network Manager can export and import OpenVPN connecti
         <dd>Does the profile import properly?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-pptp-001
 This test will check that Network Manager can establish a connection to PPTP VPN
 <dl>
     <dt> Please ensure you have a PPTP VPN gateway to connect to.</dt>
@@ -146,7 +136,6 @@ This test will check that Network Manager can establish a connection to PPTP VPN
         <dd>Are you able to access the resources provided by your VPN?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-pptp-002
 This test will check that Network Manager can export and import PPTP connections
 <dl>
     <dt> Please ensure you have a PPTP VPN gateway to connect to.</dt>
@@ -159,7 +148,6 @@ This test will check that Network Manager can export and import PPTP connections
         <dd>Does the profile import properly?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-oc-001
 This test will check that Network Manager can establish a connection to OpenConnect VPN
 <dl>
     <dt> Please ensure you have a Cisco AnyConnect VPN gateway to connect to.</dt>
@@ -177,7 +165,6 @@ This test will check that Network Manager can establish a connection to OpenConn
         <dd>Are you able to access the resources provided by your VPN?</dd>
 </dl>
 
-Test-case name: networkmanager/nm-oc-002
 This test will check that Network Manager can export and import OpenConnect VPN connections
 <dl>
     <dt> Please ensure you have a Cisco AnyConnect VPN gateway to connect to.</dt>

@@ -1,4 +1,7 @@
 Scope of this test is to verify that the system is installed, you can login into it, Apache and MySQL are working.
+
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
     <dt>Choose the desired language</dt>
@@ -69,10 +72,10 @@ Scope of this test is to verify that the system is installed, you can login into
         <dd>php -r 'phpinfo();'</dd>
         <dd>That will produce about 600 lines.</dd>
     <dt>Test PHP (Apache mod_php)</dt>
-    <dt>Create a file called /var/www/phptest.php:</dt>
-        <dd>sudo nano /var/www/phptest.php</dd>
+    <dt>Create a file called /var/www/html/phptest.php:</dt>
+        <dd>sudo nano /var/www/html/phptest.php</dd>
         <dd>add the following text to the file:
-            <pre>&lt;? phpinfo(); ?&gt;</pre>
+            <pre>&lt;?php phpinfo(); ?&gt;</pre>
         </dd>
     <dt>run it on w3m</dt>
         <dd>w3m localhost/phptest.php</dd>

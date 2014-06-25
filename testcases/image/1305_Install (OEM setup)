@@ -1,3 +1,5 @@
+<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly</dd>
@@ -73,8 +75,6 @@
         <dd>User details screen is displayed</dd>
     <dt>Add end user details and click Continue</dt>
         <dd>After a wait, the login screen appears</dd>
-    <strong>An Ubuntu One setup page appears for Ubuntu and certain flavours. If it appears complete the next step, otherwise skip it</strong>
-    <dt>Enter details for an existing Ubuntu One account OR for creating New Account. Press Login Later.</dt>
     <dt>Type in the ‘end users’ username and password and hit enter</dt>
         <dd>The machine logins successfully</dd>
     <dt>Execute the following command on the command line: <pre>lsb_release -rd</pre></dt>

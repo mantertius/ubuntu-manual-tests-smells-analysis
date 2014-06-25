@@ -39,6 +39,7 @@ This test will check that Xfce4 Screenshot opens a copy of a screenshot with ano
 </dl>
 
 This test will check that Xfce4 Screenshot allows to host a copy of a screenshot on a free online hosting service
+<strong>An account at Zimage is required to complete this section, optional test</strong>
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
@@ -47,7 +48,9 @@ This test will check that Xfce4 Screenshot allows to host a copy of a screenshot
     <dt>Select the "Host on ZimageZ" option, under the 'Action' section and click the OK button</dt>
         <dd>ZimageZ dialog window should open</dd>
     <dt>Fill all the fields of ZimageZ dialog window and click the OK button</dt>
-        <dd>The screenshot should be hosted on this free online hosting service, and easily shareable with other people</dd>
+    	<dd>Dialogue opens with links to screenshot</dd>
+    <dt>Click Full Size Image</dt>
+	<dd>Browser opens with the screenshot be hosted on this service</dd>
 </dl>
 
 This test will check that Xfce4 Screenshot saves a screenshot of the active window
@@ -72,15 +75,15 @@ This test will check that Xfce4 Screenshot saves a screenshot by clicking and dr
         <dd>A save dialog should be displayed, allowing to set the save location and the name of the file</dd>
 </dl>
 
-This test will check that Xfce4 Screenshot allows to select whether or not the screenshot will include the mouse pointer
+This test will check that Xfce4 Screenshot allows to select whether or not the screenshot will include the mouse pointer and time delay works
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
     <dt>Select one of the options, under the 'Region to capture', tick the "Capture the mouse pointer" option section</dt>
-    <dt>Point the mouse pointer to the textbox's top arrow button, under the 'Delay before capturing'</dt>
+    <dt>Point the mouse pointer to the textbox's top arrow button, under the 'Delay before capturing' and change the delay time</dt>
         <dd>The number of seconds should increase accordingly</dd>
     <dt>Select one of the options, under the 'Region to capture' and click the OK button</dt>
-        <dd>The screenshot active window should only be displayed after the number of established seconds has elapsed</dd>
+        <dd>The screenshot active window should only be displayed after the delay time has elapsed</dd>
         <dd>The saved screenshot should include the mouse pointer</dd>
 </dl>
 

@@ -1,6 +1,6 @@
 This test will check that Session and Startup opens and closes correctly
 <dl>
-    <dt>Open Settings Manager from the menu</dt>
+    <dt>Open Settings Manager from the Whiskermenu</dt>
         <dd>Settings Manager opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
@@ -10,7 +10,7 @@ This test will check that Session and Startup opens and closes correctly
 
 This test will check that Session chooser appears at login. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the menu</dt>
+    <dt>Open Settings Manager from the Whiskermenu</dt>
         <dd>Settings Manager opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
@@ -18,7 +18,7 @@ This test will check that Session chooser appears at login. Logging out will be 
         <dd>Tick appears in box</dd>
     <dt>Press Close</dt>
         <dd>Session and Startup closes</dd>
-    <dt>From Action buttons choose logout, select Save session for future logins</dt>
+    <dt>From whiskermenu power button choose logout, select Save session for future logins</dt>
         <dd>Tick appears in box</dd>
     <dt>Press logout</dt>
         <dd>User is logged out</dd>
@@ -31,7 +31,7 @@ This test will check that Session chooser appears at login. Logging out will be 
 
 This test will check that applications are restored with sessions. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the menu</dt>
+    <dt>Open Settings Manager from the Whiskermenu</dt>
         <dd>Settings Manager opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
@@ -45,7 +45,7 @@ This test will check that applications are restored with sessions. Logging out w
         <dd>Session dialogue closes</dd>
     <dt>Focus on Abiword and press Ctrl+Q</dt>
         <dd>Abiword closes</dd>
-    <dt>From Action buttons choose logout</dt>
+    <dt>From whiskermenu power button choose logout</dt>
         <dd>Logout dialogue appears with Save session ticked</dd>
     <dt>Untick Save session and press logout</dt>
         <dd>User is logged out</dd>
@@ -61,7 +61,7 @@ This test will check that applications are restored with sessions. Logging out w
 
 This test will check that Session saves are cleared correctly. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the menu</dt>
+    <dt>Open Settings Manager from the Whiskermenu</dt>
         <dd>Settings Manager opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
@@ -73,7 +73,7 @@ This test will check that Session saves are cleared correctly. Logging out will 
         <dd>Dialogue closes</dd>
     <dt>Close Session and Startup with close button</dt>
         <dd>Session dialogue closes</dd>
-    <dt>From Action buttons choose logout</dt>
+    <dt>From whiskermenu power button choose logout</dt>
         <dd>User is logged out</dd>
     <dt>Login as user, entering password if required</dt>
         <dd>Lightdm login dialogue closes</dd>
@@ -82,7 +82,7 @@ This test will check that Session saves are cleared correctly. Logging out will 
 
 This test will check that Applications added the Autostart list start correctly. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the menu</dt>
+    <dt>Open Settings Manager from the Whsikermenu</dt>
         <dd>Settings Manager opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
