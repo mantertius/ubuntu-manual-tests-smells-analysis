@@ -23,7 +23,7 @@ This test will check that Xfce4 Panel allows to configure panel preferences
     <dt>Click on the 'Mode' drop-down list under the "General" section</dt>
         <dd>A list of possible panel orientations appears</dd>
     <dt>Select one of the desired panel orientation</dt>
-        <dd>The panel orientation is promptly set to the selected orientation</dd>
+        <dd>The panel orientation is set to the selected orientation</dd>
     <dt>Tick the 'Lock panel' option under the "General" section</dt>
         <dd>The handles on the panel which allow to move are removed</dd>
     <dt>Untick the 'Lock panel' option under the "General" section</dt>
@@ -97,7 +97,7 @@ This test will check that Xfce4 Panel allows to change the color, background ima
     <dt>Select 'None (use system style)' option</dt>
         <dd>The 'Alpha:' slidebar appears</dd>
     <dt>Point the mouse pointer to the 'Alpha:' slidebar and move the slider to the left</dt>
-        <dd>The panel inherits the colors from the currently selected GTK+ theme and the percentage of transparency of the panel should decrease</dd>
+        <dd>The panel inherits the colors from the currently selected GTK+ theme and the percentage of transparency of the panel decreases</dd>
     <dt>Point the mouse pointer to the 'Enter:' slidebar under the "Opacity" section, and move the slider to the left</dt>
         <dd>The percentage opacity of the panel and of all panel plugins decreases when the mouse pointer is hovering over the panel</dd>
     <dt>Point the mouse pointer to the 'Leave:' slidebar under the "Opacity" section, and move the slider to the left</dt>
@@ -113,7 +113,7 @@ This test will check that Xfce4 Panel allows to automatically hide and show pane
     <dt>Select the 'Panel Preferences...' option</dt>
         <dd>Panel dialog window appears</dd>
     <dt>If not selected, tick the 'Automatically show and hide the panel' option under the "General" section and click the 'Close' button</dt>
-        <dd>Selected panel is automatically hide</dd>
+        <dd>Selected panel is automatically hidden</dd>
     <dt>Hover your mouse over the location of the hidden panel</dt>
         <dd>The panel pops up and remains visible while the mouse is over it</dd>
     <dt>Move your mouse away from the panel</dt>
