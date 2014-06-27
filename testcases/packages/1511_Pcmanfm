@@ -1,5 +1,4 @@
-Test-case name: pcmanfm/pcm-001
-This tests the applications list
+This test will check the applications list
 <dl>
     <dt>Click on <em>Applications</em> in left hand panel.</dt>
         <dd>PCManFM shows category listing of applications.</dd>
@@ -7,8 +6,7 @@ This tests the applications list
         <dd>PCManFM window shows identical listing to that provided by clicking on <em>Menu</em>  -->; <em>Internet</em>.</dd>
 </dl>
 
-Test-case name: pcmanfm/pcm-002
-This tests basic file management
+This test will check basic file management
 <dl>
     <dt> Click on the PCManFM icon in the task bar.</dt>
         <dd>PCManFM Window appears.</dd>
@@ -54,8 +52,7 @@ This tests basic file management
         <dd>PCManFM closes.</dd>
 </dl>
 
-Test-case name: pcmanfm/pcm-003
-This tests boomark management
+This test will check boomark management
 <dl>
     <dt>Click on <em>Bookmarks</em> select <em>+ Add to Bookmarks</em></dt>
         <dd>Window appears asking you to <strong>Enter a name for the new bookmark item</strong>.</dd>
@@ -69,24 +66,7 @@ This tests boomark management
         <dd>The entry <strong>Del</strong> no longer appears in the sidebar.</dd>
 </dl>
 
-
-Test-case name: pcmanfm/pcm-004
-This tests the 'open as root' functionality
-<dl>
-    <dt>Click on <em>PCManFM</em> icon in task bar.</dt>
-        <dd>PCManFM window opens and shows your user name in left panel to the right of the <strong>I^l</strong> icon.</dd>
-    <dt>Click on <em>Tools</em> then <em>Open Current Folder as Root</em>.</dt>
-        <dd>Window appears prompting for your administrative password..</dd>
-    <dt>Enter your administrative password and click <em>OK</em>.</dt>
-        <dd>A new window opens which shows <strong>root</strong> in left panel to the right of the <strong>I^l</strong> icon.</dd>
-    <dt>Click <em>root</em> in the left hand panel.</dt>
-        <dd>Address bar shows <strong>/root</strong>.</dd>
-    <dt>Click <em>X</em> at top right of the window.</dt>
-        <dd>Window closes.</dd>
-</dl>
-
-Test-case name: pcmanfm/pcm-005
-This tests the 'open in terminal' functionality
+This test will check the 'open in terminal' functionality
 <dl>
     <dt>Click on <em>Desktop</em> in left hand panel.</dt>
         <dd>PCManFM shows contents of Desktop directory.</dd>
@@ -94,8 +74,7 @@ This tests the 'open in terminal' functionality
         <dd>Terminal launches showing the Desktop directory.</dd>
 </dl>
 
-Test-case name: pcmanfm/pcm-006
-This tests the 'right click' functionality
+This test will check the 'right click' functionality
 <dl>
     <dt>Click on <em>Home</em> icon in left hand panel.</dt>
         <dd>PCManFM shows  listing of folders and files.</dd>
@@ -103,8 +82,7 @@ This tests the 'right click' functionality
         <dd>A second menu appears, offering such things as options to open, copy folder etc.</dd>
 </dl>
 
-Test-case name: pcmanfm/pcm-007
-Thise tests tab management
+This test will check tab management
 <dl>
     <dt>Click on <em>File</em> select <em>New Tab</em></dt>
         <dd>Two tabs appear of the current directory.</dd>
@@ -114,8 +92,7 @@ Thise tests tab management
         <dd>Tab closes.</dd>
 </dl>
 
-Test-case name: pcmanfm/pcm-008
-This tests usb device management
+This test will check USB device management
 <dl>
     <dt> Plug in USB device</dt>
         <dd>Window appears saying Removable medium is inserted and asking if you want to Open in File Manager.</dd>
@@ -147,8 +124,7 @@ This tests usb device management
         <dd>The USB device is no longer listed in the PCManFM panel.</dd>
 </dl>
 
-Test-case name: pcmanfm/pcm-009
-This tests views
+This test will check view management
 <dl>
     <dt>Click on <em>Home Folder</em> in left hand panel.</dt>
         <dd>PCManFM shows contents of home directory.</dd>
