@@ -52,7 +52,7 @@ This test will check basic file management
         <dd>PCManFM closes.</dd>
 </dl>
 
-This test will check boomark management
+This test will check bookmark management
 <dl>
     <dt>Click on <em>Bookmarks</em> select <em>+ Add to Bookmarks</em></dt>
         <dd>Window appears asking you to <strong>Enter a name for the new bookmark item</strong>.</dd>
