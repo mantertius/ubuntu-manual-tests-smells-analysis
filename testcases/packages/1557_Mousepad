@@ -23,10 +23,8 @@ This test will check that Mousepad can save and open saved files
 
 This test will check that Mousepad can find and highlight searched text
 <dl>
-    <dt>Open Mousepad</dt>
-        <dd>Mousepad opens with an unnamed text document</dd>
-    <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
-        <dd>Text appears in window</dd>
+    <dt>Open previously saved file</dt>
+        <dd>Mousepad opens previous file</dd>
     <dt>Press Ctrl+F</dt>
         <dd>Search box appears</dd>
     <dt>Type "t" in the box</dt>
@@ -43,10 +41,8 @@ This test will check that Mousepad can find and highlight searched text
 
 This test will check that Mousepad can find and replace text, including case sensitivity and saves on close
 <dl>
-    <dt>Open Mousepad</dt>
-        <dd>Mousepad opens with an unnamed text document</dd>
-    <dt>Type in "The quick brown fox jumps over the lazy dog"</dt>
-        <dd>Text appears in window</dd>
+    <dt>Open previously saved file</dt>
+        <dd>Mousepad opens previous file</dd>
     <dt>Press Ctrl+R</dt>
         <dd>Replace dialogue opens</dd>
     <dt>Type "fox" in the Search for: box</dt>
