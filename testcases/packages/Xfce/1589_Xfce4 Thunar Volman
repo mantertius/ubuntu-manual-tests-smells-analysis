@@ -55,19 +55,7 @@ This test will check that the Multimedia options work as expected
         <dd>The discs will not play automatically but will behave according to the current settings under the Storage tab for removable media</dd>
 </dl>
 
-This test will check that the Digital Cameras option works as expected
-<dl>
-    <dt>Click the 'Cameras' tab</dt>
-        <dd>A single option to 'Import digital photographs when connected' is displayed</dd>
-    <dt>Check that option and enter "gthumb -i" in the 'Command:' field</dt>
-    <dt>Insert a digital camera memory card into a card reader slot</dt>
-        <dd>A Photo Import dialog opens</dd>
-        <dd>If the import dialog does not appear, make sure that 'Mount removable drives when hot-plugged' under the 'Storage' tab is checked</dd>
-    <dt>Click the 'Import Photos' button</dt>
-        <dd>gThumb opens and displays a list of picture files to import</dd>
-</dl>
-
-The last three tabs, 'PDAs', 'Printers' and 'Input Devices' do not require testing
+The last four tabs, 'Cameras', 'PDAs', 'Printers' and 'Input Devices' do not require testing
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
