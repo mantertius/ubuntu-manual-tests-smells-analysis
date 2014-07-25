@@ -15,6 +15,7 @@ The testcase tests the installation and basic functionality of a Primary Backend
     <dt>Once the installed system boots, it will boot into the MythTV frontend. Exit the frontend by hitting escape and selecting "yes, exit now"</dt>
     <dt>Download a demo file. I recommend a MP4 trailer (for example, the 480p MP4 trailer at http://www.sintel.org/download ).</dt>
     <dt>Once downloaded, move this file to the /srv/ directory (it must be outside your home directory)</dt>
+    <dt>Change ownership on the test file to mythtv:mythtv</dt>
     <dt>Open the Applications menu and choose system and then "Mythtv backend setup".</dt>
     <dt>Say yes to stop the running mythtv-backend service</dt>
     <dt>Once in mythtv-setup, go to "1. General"</dt>
