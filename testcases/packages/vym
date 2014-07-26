@@ -1,4 +1,4 @@
-This test will check that vym can create a new mind map file
+This test will check that vym can create a new mind map file, add new branch and delete the branch
 <dl>
     <dt>Launch vym</dt>
         <dd>vym opens, showing one window by default</dd>
