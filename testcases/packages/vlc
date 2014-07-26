@@ -1,0 +1,20 @@
+This test will check that VLC can open an audio file
+<dl>
+    <dt>Launch VLC</dt>
+        <dd>VLC media player opens, showing one window by default</dd>
+    <dt>Go to Media > Click on 'Open File'..., select an audio file and press Open</dt>
+        <dd>The selected audio is played</dd>
+    <dt>Click on 'stop playback' button at the bottom</dt>
+        <dd>The audio is stopped</dd>
+</dl>
+
+This test will check that VLC can open an video file
+<dl>
+    <dt>Go to Media > Click on 'Open File'..., select a video file and press Open</dt>
+        <dd>The selected video is played</dd>
+    <dt>Click on 'stop playback' button at the bottom</dt>
+        <dd>The video is stopped</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
