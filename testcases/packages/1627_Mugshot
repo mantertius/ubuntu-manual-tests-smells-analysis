@@ -17,28 +17,12 @@ This test will check that Mugshot can be opened either from a terminal window or
         <dd>Mugshot closes</dd>
 </dl>
 
-This test will check that Mugshot will set your profile image and user details for your user profile
+This test will check that Mugshot will set your profile image with camera and user details for your user profile can be set
 <dl>
     <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
         <dd>Mugshot opens</dd>
-    <dt>Click the image button on the top left of Mughshot GUI</dt>
-        <dd>A context menu will open bellow the image button</dd>
-    <dt>Choose the "Select from stock..." option</dt>
-        <dd>Select a photo... dialog opens</dd>
-    <dt>Select one of the available photos and click the 'OK' button</dt>
-        <dd>Select a photo... dialog closes and the selected photo shows as label in the image button</dd>
     <dt>Fill the text-boxes with the required personal data and click the 'Apply' button</dt>
         <dd>>If Pidgin and/or LibreOffice are installed and regularly used, a prompt will be displayed asking if it's intended to update those settings</dd>
-        <dd>Mugshot closes</dd>
-    <dt>Click the Applications Menu icon and select the "Log Out" option</dt>
-        <dd>The system logs out of the existing session</dd>
-        <dd>Greeter screen appears and the selected image and username defined in Mugshot are present</dd>
-</dl>
-
-This test will check that Mugshot profile image can also be chosen from a camera, assumes you are logged in to a working desktop
-<dl>
-    <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
-        <dd>Mugshot opens</dd>
     <dt>Click the image button on the top left of Mughshot GUI</dt>
         <dd>A context menu will open bellow the image button</dd>
     <dt>Choose the "Capture from camera..." option</dt>
