@@ -2,11 +2,11 @@ The goal of this test case is to check that localization support is functional d
 <dl>
     <dt>Boot up the image</dt>
     <dt>Select a non-English language and press Enter</dt>
-	<dd>The boot screen language changes with the selection</dd>
+	<dd>The boot screen is displayed in the selected language</dd>
     <dt>Select Try FAMILY without any change to your computer and press Enter</dt>
         <dd>
             <ul>
-                <li>Once the live session has started, verify that the system is localized to the selected language</li>
+                <li>Once the live session has started, verify that the system is localized to the previously selected language</li>
             </ul>
         </dd>
     <dt>Double click on the Install icon</dt>
