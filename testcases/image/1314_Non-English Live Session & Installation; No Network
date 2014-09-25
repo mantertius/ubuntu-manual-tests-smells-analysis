@@ -1,9 +1,8 @@
 The goal of this test case is to check that localization support is functional during the installation from a live cd session, that language packs are installed correctly for those languages in the ISO, and that an informational message is shown prompting users to connect to the Internet to fully install language support for those languages not included.
 <dl>
     <dt>Boot up the image</dt>
-    <dt>Select English as language and press Enter</dt>
-    <dt>Select Try without any change to your computer and press Enter</dt>
-        <dd>Once the live session has started, verify that the system is in English</dd>
+    <dt>Select a non-English language and press Enter</dt>
+	<dd>The boot screen language changes with the selection</dd>
     <dt>Select the Install FAMILY option</dt>
     <dt>Once Ubiquity starts click on Forward</dt>
     <dt>Select the same non English language from the list and click Forward</dt>
