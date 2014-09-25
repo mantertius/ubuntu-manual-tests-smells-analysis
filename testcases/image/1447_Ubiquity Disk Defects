@@ -1,13 +1,13 @@
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 
 <dl>
-    <dt>While the amber screen is showing press any button to enter the main menu</dt>
-    <dt>Select your language and press <strong>enter</strong></dt>
+    <dt>Boot up the image</dt>
+    <dt>Select English as language and press Enter</dt>
     <dt>From the main menu select <strong>Check disk for defects</strong> and press <strong>Enter</strong></dt>
-    <dt>Wait until the test finishes</dt>
-        <dd>The test should finish and show any errors</dd>
-    <dt>Press <strong>ESC twice</strong></dt>
-        <dd>Ensure that the system restarts</dd>
+    <dt>Wait for the test to finish</dt>
+        <dd>The test displays <em>check finished: no errors found</dd>
+    <dt>Press any key to reboot your system</dt>
+        <dd>System reboots</dd>
 </dl>
 
 <strong>
