@@ -142,7 +142,7 @@ This test will check that Layout options apply correctly
         <dd>New layout added to Keyboard Layout list</dd>
     <dt>Open a text editor</dt>
     <dt>Type some symbols</dt>
-    <dt>In Keyboard layout list - select new layout</dt>
+    <dt>In Keyboard layout list - select new layout and move to top of the list</dt>
         <dd>New layout highlighted</dd>
     <dt>Type some text or symbols</dt>
         <dd>Some or all characters typed are different</dd>
