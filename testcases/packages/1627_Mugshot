@@ -9,7 +9,7 @@ This test will check that Mugshot can be opened either from a terminal window or
         <dd>Mugshot closes</dd>
     <dt>Click the menu icon</dt>
         <dd>A menu drops down</dd>
-    <dt>Navigate to Settings Manager and click it</dt>
+    <dt>Navigate to Settings and click it</dt>
         <dd>Settings dialog window opens</dd>
     <dt>Under the "Personal" section, click the "About me" icon</dt>
         <dd>Mugshot opens</dd>

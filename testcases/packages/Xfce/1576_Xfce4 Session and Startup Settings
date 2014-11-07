@@ -1,7 +1,7 @@
 This test will check that Session and Startup opens and closes correctly
 <dl>
-    <dt>Open Settings Manager from the Whiskermenu</dt>
-        <dd>Settings Manager opens</dd>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>Press All Settings</dt>
@@ -10,8 +10,8 @@ This test will check that Session and Startup opens and closes correctly
 
 This test will check that Session chooser appears at login. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the Whiskermenu</dt>
-        <dd>Settings Manager opens</dd>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>In General tab, select Display chooser on login</dt>
@@ -31,8 +31,8 @@ This test will check that Session chooser appears at login. Logging out will be 
 
 This test will check that applications are restored with sessions. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the Whiskermenu</dt>
-        <dd>Settings Manager opens</dd>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>Press Super+3</dt>
@@ -61,8 +61,8 @@ This test will check that applications are restored with sessions. Logging out w
 
 This test will check that Session saves are cleared correctly. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the Whiskermenu</dt>
-        <dd>Settings Manager opens</dd>
+    <dt>Open Settings from the Whiskermenu</dt>
+        <dd>Settings dialog opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>Go to Session tab of Session and Startup</dt>
@@ -82,8 +82,8 @@ This test will check that Session saves are cleared correctly. Logging out will 
 
 This test will check that Applications added the Autostart list start correctly. Logging out will be required.
 <dl>
-    <dt>Open Settings Manager from the Whsikermenu</dt>
-        <dd>Settings Manager opens</dd>
+    <dt>Open Settings from the Whsikermenu</dt>
+        <dd>Settings dialog opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>In General Tab - select Display Chooser on login</dt>
