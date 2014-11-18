@@ -1,6 +1,6 @@
 This test will check that keyboard behaviour is correctly applied. The test will require the machine to restart twice.
 <dl>
-    <dt>Open Keyboard from Settings Manager</dt>
+    <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
     <dt>Toggle 'Restore num lock state' button</dt>
         <dd>Tick disappears from box</dd>
@@ -39,7 +39,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
     <dt>Reset Blink delay to default 1200</dt>
         <dd>Cursor blink returns to normal speed</dd>
     <dt>Restart machine</dt>
-    <dt>Open Keyboard from Settings Manager</dt>
+    <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
         <dd>Restore num lock state is unticked</dd>
         <dd>Num lock is off</dd>
@@ -47,7 +47,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
     <dt>Toggle 'Restore num lock state' button</dt>
         <dd>Tick appears in box</dd>
     <dt>Restart machine</dt>
-    <dt>Open Keyboard from Settings Manager</dt>
+    <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
         <dd>Restore num lock state is ticked</dd>
         <dd>Num lock is on</dd>
@@ -55,7 +55,7 @@ This test will check that keyboard behaviour is correctly applied. The test will
 
 This test will check that application shortcuts are applied correctly
 <dl>
-    <dt>Open Settings Manager -> Keyboard -> Application Shortcuts</dt>
+    <dt>Open Settings -> Keyboard -> Application Shortcuts</dt>
         <dd>Application Shortcuts tab opens</dd>
     <dt>Press Super+3</dt>
         <dd>Abiword opens</dd>
@@ -124,7 +124,7 @@ This test will check that shortcuts and their targets can be changed
 
 This test will check that Layout options apply correctly
 <dl>
-    <dt>Open Keyboard from Settings Manager</dt>
+    <dt>Open Keyboard from Settings</dt>
         <dd>Keyboard Setting dialogue opens at Behaviour</dd>
     <dt>Select Layout tab</dt>
         <dd>Dialogue changes to layout with Use System Defaults ticked</dd>

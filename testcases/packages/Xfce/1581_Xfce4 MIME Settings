@@ -1,6 +1,6 @@
 This test will check that the MIME Type Editor can open
 <dl>
-    <dt>Locate "MIME Type Editor" under "Settings Manager" on the menu and click on it</dt>
+    <dt>Locate "MIME Type Editor" under "System" in the Settings dialog and click on it</dt>
         <dd>The MIME Type Editor dialog opens</dd>
 </dl>
 

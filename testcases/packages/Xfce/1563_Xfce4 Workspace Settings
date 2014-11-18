@@ -1,6 +1,6 @@
 This will test the xfwm4 workspace settings
 <dl>
-    <dt>Open Settings manager, then "Workspaces"</dt>
+    <dt>Open Settings, then "Workspaces"</dt>
         <dd>Xfwm4 workspace settings opens</dd>
     <dt>Use the arrows to change the number of workspaces</dt>
         <dd>The number of workspaces increases, both in the list below and in the indicator bar</dd>
