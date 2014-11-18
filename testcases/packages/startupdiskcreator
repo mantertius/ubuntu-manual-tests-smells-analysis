@@ -1,5 +1,5 @@
 This test will check that Startup Disk Creator will create a bootable USB
-<em>Test will require a USB that can be erased, used for test then booted with</em>
+<em>Test will require a USB that can be erased,and a machine able to boot from USB</em>
 
 <dl>
     <dt>Insert USB</dt>
@@ -23,14 +23,9 @@ This test will check that Startup Disk Creator will create a bootable USB
     <dt>Press <em>Quit</em> in dialogue</dt>
     <dt>Reboot system to USB</dt>
         <dd>Live Session boots</dd>
-    <dt>Create and save a file</dt>
-    <dt>Reboot system to USB</dt>
-        <dd>Live Session boots</dd>
-    <dt>Previously saved file is available</dt>
-    <dt>Shutdown and remove USB</dt>
 
     This test will check that Startup Disk Creator will create a bootable USB with Persistence
-    <em>Test will require a USB that can be erased and rebooting system</em>
+    <em>Test will require a USB that can be erased, a machine able to boot from USB and rebooting it</em>
 
     <dl>
         <dt>Insert USB</dt>
@@ -54,10 +49,11 @@ This test will check that Startup Disk Creator will create a bootable USB
         <dt>Press <em>Quit</em> in dialogue</dt>
         <dt>Reboot system to USB</dt>
             <dd>Live Session boots</dd>
-        <dt>Create and save a file</dt>
-        <dt>Reboot system to USB</dt>
-            <dd>Live Session boots</dd>
-        <dt>Previously saved file is available</dt>
+        <dt>Create and save a text file using your FAMILY text editor</dt>
+        <dt>Reboot with the same USB to a live session</dt>
+	    	<dd>Live session loads in machine</dd>
+		<dt>Check for existence of previously created file</dt>
+			<dd>Previously saved file is available</dd>	
         <dt>Shutdown and remove USB</dt>
 
         <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
