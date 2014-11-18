@@ -1,6 +1,9 @@
+<em>This testcase requires suspending/resuming</em>
 
 This test will check that light-locker-settings can set the amount of delay after the screensaver is activated for the screen to lock
 <dl>    
+    <dt>Open Light Locker Settings from the Settings dialog</dt>
+        <dd>The Light Locker Settings dialog opens</dd>
     <dt>Click the Open button on the "Your screensaver settings are managed by Xfce Power Manager" infobar</dt>
         <dd>The Xfce Power Manager dialog opens</dd>
     <dt>Click the "Display" tab</dt>
@@ -34,7 +37,6 @@ This test will check that light-locker-settings will lock the screen when resumi
     <dt>Resume from suspend</dt>
         <dd>The Unlock dialog appears</dd>
 </dl>
-
 
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
