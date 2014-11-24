@@ -22,7 +22,8 @@ This test will check that Mugshot will set your profile image with camera and us
     <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
         <dd>Mugshot opens</dd>
     <dt>Fill the text-boxes with the required personal data and click the 'Apply' button</dt>
-        <dd>>If Pidgin and/or LibreOffice are installed and regularly used, a prompt will be displayed asking if it's intended to update those settings</dd>
+        <dd>A password prompt dialog is displayed, as a security measure to prevent unwanted updates to the user's personal information</dd>
+        <dd>If Pidgin and/or LibreOffice are installed and regularly used, a prompt will be displayed asking if it's intended to update those settings</dd>
     <dt>Click the image button on the top left of Mughshot GUI</dt>
         <dd>A context menu will open bellow the image button</dd>
     <dt>Choose the "Capture from camera..." option</dt>

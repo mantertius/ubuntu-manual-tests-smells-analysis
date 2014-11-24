@@ -62,12 +62,7 @@ This test will check that Mousepad can find and replace text, including case sen
     <dt>Close Mousepad with File -> Close Window</dt>
         <dd>Save before closing dialogue appears</dd>
     <dt>Click Save</dt>
-        <dd>Save As window opens</dd>
-    <dt>Type another_test.txt in Name: box</dt>
-    <dt>Select any folder to save file to</dt>
-        <dd>Chosen file name and target folder remain as selected</dd>
-    <dt>Click Save button</dt>
-        <dd>Mousepad closes</dd>
+        <dd>Mousepad saves the changes made to the file and closes</dd>
     <dt>Open File Manager, navigate to saved file and double click to open in Mousepad</dt>
         <dd>Mousepad opens with saved text</dd>
 </dl>
