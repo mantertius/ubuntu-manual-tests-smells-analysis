@@ -38,7 +38,7 @@ This test will check that Xfce4 Screenshot opens a copy of a screenshot with ano
         <dd>The screenshot should be saved to the system's temporary directory and opened with the application chosen from the drop-down list</dd>
 </dl>
 
-This test will check that Xfce4 Screenshot allows to host a copy of a screenshot on a free online hosting service
+This test will check that Xfce4 Screenshot allows to host a copy of a screenshot on Zimage
 <strong>An account at Zimage is required to complete this section, optional test</strong>
 <dl>
     <dt>Open Screenshot</dt>
@@ -50,7 +50,19 @@ This test will check that Xfce4 Screenshot allows to host a copy of a screenshot
     <dt>Fill all the fields of ZimageZ dialog window and click the OK button</dt>
     	<dd>Dialogue opens with links to screenshot</dd>
     <dt>Click Full Size Image</dt>
-	<dd>Browser opens with the screenshot be hosted on this service</dd>
+	    <dd>Browser opens with the screenshot be hosted on this service</dd>
+</dl>
+
+This test will check that Xfce4 Screenshot allows to host a copy of a screenshot on imgur
+<dl>
+    <dt>Open Screenshot</dt>
+        <dd>The take a screenshot window should be displayed</dd>
+    <dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+        <dd>The screenshot action window should be displayed</dd>
+    <dt>Select the "Host on Imgur" option, under the 'Action' section and click the OK button</dt>
+        <dd>Imgur dialog window should open</dd>
+    <dt>Click Full Size Image</dt>
+	    <dd>Browser opens with the screenshot be hosted on this service</dd>
 </dl>
 
 This test will check that Xfce4 Screenshot saves a screenshot of the active window
