@@ -28,7 +28,7 @@ This test will check the "Execute" menu option
         <dd>The Application Finder dialog opens displaying just a search term field</dd>
     <dt>Enter "ter" in the search term field and click the 'Launch' button
         <dd>A red icon appears next to the search term indicating no matching application could be found</dd>
-    <dt>Click the green arrow at the right side of the field or press the down arrow on the keyboard</dt>
+    <dt>Click the arrow at the right side of the field or press the down arrow on the keyboard</dt>
         <dd>The Application Finder dialog expands to show a list of applications containing the string "ter"</dd>
         <dd>Note: the match might be found in the application's description instead of its name</dd>
     <dt>Type an "m" at the end of the search term making it "term"</dt>
