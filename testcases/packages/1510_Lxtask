@@ -23,7 +23,7 @@
         <dd>A menu offering options should appear.</dd>
     <dt>Select <em> Kill</em></dt>
         <dd>A window will appear asking to confirm.</dd>
-    <dt> Click on <em>OK</em>.</dt>
+    <dt> Click on <em>Yes</em>.</dt>
         <dd>Process <strong>top</strong> no longer appears as a running task. (It will also not be seen running in the LxTerminal window).</dd>
 </dl>
 <strong>
