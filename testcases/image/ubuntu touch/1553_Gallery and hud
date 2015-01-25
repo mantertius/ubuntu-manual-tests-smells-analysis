@@ -1,9 +1,0 @@
-<dl>
-    <dt>Open the Gallery application</dt>
-    <dt>Explore the HUD actions for when in the Events tab</dt>
-        <dd>This is exploratory since the HUD actions are in state of flux</dd>
-    <dt>Explore when a photo is selected</dt>
-        <dd>This is exploratory since the HUD actions are in state of flux</dd>
-</dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
