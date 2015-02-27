@@ -6,7 +6,7 @@ This test will check that the Task Manager can open
 
 This test will check that the Task Manager is updating tracked statistics in real time
 <dl>
-    <dt>Locate the two rectangular grids on the menu bar</dt>
+    <dt>Locate the two rectangular grids</dt>
         <dd>Two graphs are displayed moving across the grids</dd>
     <dt>Hover over each graph with your mouse</dt>
         <dd>Current CPU and memory utilization are displayed in a popup</dd>
@@ -22,7 +22,7 @@ This test will check that the Task Manager is updating tracked statistics in rea
 
 This test will check the "Execute" menu option
 <dl>
-    <dt>Click arrow to the right of the Gear icon on the menu bar</dt>
+    <dt>Click arrow to the right of the Gear icon</dt>
         <dd>A drop-down menu opens</dd>
     <dt>Click "Run Program"</dt>
         <dd>The Application Finder dialog opens displaying just a search term field</dd>
@@ -68,7 +68,7 @@ This test will check that actions can be performed on running tasks
 
 This test will check the setting of Preferences
 <dl>
-    <dt>Click arrow to the right of the Task Manager Settings icon on the menu bar</dt>
+    <dt>Click arrow to the right of the Task Manager Settings icon</dt>
         <dd>A drop-down menu appears</dd>
     <dt>Click each of the options and observe the following results</dt>
         <dd>"Show all processes" shows even more running processes but may not increment the number of processes displayed on the status bar</dd>
