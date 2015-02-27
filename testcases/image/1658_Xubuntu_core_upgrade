@@ -1,0 +1,18 @@
+This test will make sure the Xubuntu core upgrade will not pull in the xubuntu-desktop meta.
+<dl>
+    <dt>Install utopic from core.<dt>
+    <dt>Make sure xubuntu-desktop isn't installed and uninstall it if it is.<dt>
+    <dt>Upgrade to vivid.<dt>
+        <dd>Should upgrade without installing a meta.<dd>
+</dl>
+
+This test will make sure the a Xubuntu upgrade with no xubuntu-core or xubuntu-desktop will install xubuntu-desktop.
+<dl>
+    <dt>Install utopic from core.</dt>
+    <dt>Make sure both xubuntu-core and xubuntu-desktop aren't installed.</dt>
+    <dt>Upgrade to vivid.</dt>
+        <dd>This should install xubuntu-core during upgrade.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong  >
