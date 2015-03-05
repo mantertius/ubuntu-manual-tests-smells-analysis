@@ -43,7 +43,7 @@
         <dd>You should see a request for http proxy information</dd>
     <dt>Input http proxy info or press Enter</dt>
         <dd>Wait for a while -  The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).</dd>
-    <dt>Select No to install grub boot loader to master boot record and select it manually.</dt>
+    <dt>Select No to install grub boot loader to master boot record and select it manually, for example /dev/sda or /dev/vdb.</dt>
         <dd>You should see a request to confirm date and time</dd>
     <dt>Select Yes to setting your clock to utc and press Enter</dt>
         <dd>You should be requested to remove the CD / USB key</dd>
