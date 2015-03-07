@@ -2,11 +2,7 @@
 
 <dl>
     <dt>Boot up the image</dt>
-        <dd>System boots to Installer language 'Select Language'</dd>
-    <dt>Select Install FAMILY and press Enter</dt>
-       <dd>Language selection windows opens</dd>
-    <dt>Select language for installed system</dt>
-       <dd>System displays 'Select Location'</dd>
+        <dd>System boots to 'Select Language'</dd>
     <dt>Select Install Ubuntu and press Enter</dt>
         <dd>System displays 'Select Location'</dd>
     <dt>Select location and press Enter</dt>
@@ -23,13 +19,9 @@
         <dd>You should be prompted to confirm ( If you entered a weak password, confirm that you want to keep it or select no and enter a stronger one).</dd>
     <dt>Confirm password and press Enter</dt>
         <dd>You should be asked if you wish to encrypt your home directory</dd>
-    <dt>Select No for encrypted home directory and press Enter</dt>
+    <dt>Select Yes for encrypted home directory and press Enter</dt>
         <dd>You should see confirmation of your time zone</dd>
     <dt>Verify that the pre-selected time zone is correct or select your time zone and press Enter</dt>
-       <dd>You may be informed that 'the following disks have mounted partitions'. If the intended target drive is affected, you must</dd>
-    <dt>Select 'Yes' to unmount partitions that are in use</dt> 
-       <dd>You are informed that your installation medium is ... and what you can and cannot do with that drive.</dd>
-    <dt>'Continue' </dt>
         <dd>You will be presented with formatting options</dd>
     <dt>Select Guided - use entire disk and set up encrypted LVM and press Enter</dt>
         <dd>You should see an option to select a disk to install on</dd>
@@ -47,7 +39,7 @@
         <dd>You should see a request for http proxy information</dd>
     <dt>Input http proxy info or press Enter</dt>
         <dd>Wait for a while -  The install may seem like it has locked at a percentage but is actually working in the background. You can check and see if it is working by switching to tty4 (alt + f4).</dd>
-    <dt>Select No to install grub boot loader to master boot record and a dialog box for your partition information will come up and you can choose target drive from there manually, for example /dev/sda or /dev/sdb.</dt>
+    <dt>Select Yes to install grub boot loader to master boot record and press Enter</dt>
         <dd>You should see a request to confirm date and time</dd>
     <dt>Select Yes to setting your clock to utc and press Enter</dt>
         <dd>You should be requested to remove the CD / USB key</dd>
