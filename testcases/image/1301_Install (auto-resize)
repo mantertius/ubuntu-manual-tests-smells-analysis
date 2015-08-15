@@ -20,14 +20,15 @@
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select Install FAMILY XX.XX alongside SYSTEM YY </dt>
         <dd>(SYSTEM YY is the name of the system already installed on disk (FAMILY 12.04, Windows 7, ...)</dd>
-    <dt>Click on Forward</dt>
+    <dt>Click on Continue</dt>
         <dd>The Screen Install FAMILY XX.XX alongsite SYSTEM YY appears</dd>
     <dt>Note the drive selected on the Select drive list and the bar state</dt>
     <strong>If the target drive has a free partition with sufficient freespace, install will proceed without further partitioning intervention</strong>
         <dd> The drive corresponds to the drive on the chart (e.g /dev/sda) and the bar is divided</dd>
-    <dt>Move the slider bar that separates the grey sections as appropriate</dt>
+    <dt>Move the greyslider bar that separates the blue sections as appropriate</dt>
         <dd>The slider bar can be set as appropriate</dd>
     <dt>Click on the Install Now button</dt>
+    <dt> A dialog will appear  asking if you want to write the changes to disk Select Continue. . </dt>
         <dd>The 'Where are you?' screen is displayed</dd>
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and the main city from your area</dd>
@@ -37,7 +38,7 @@
     <dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
-        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+        <dd>Name, username and password are accepted. Additionally, the continue button is enabled and a radio button saying require my password to login is selected, a radio button to log in automatically is not selected and a checkbox for encrypt my home folder is not selected.</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The slideshow is entirely in your language</dd> 
@@ -47,8 +48,8 @@
         <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
     <dt>Remove the disc and press enter</dt>
         <dd>The machine is rebooted</dd>
-    <dt>Allow the machine to reboot</dt>
-        <dd>The system boots properly and loads into FAMILY</dd>
+    <dt>Allow the machine to reboot and as it reboots after the post screen grub with a menu to select the installs appear</dt>
+        <dd>Select the first option ubuntu to boot into your new install.</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
