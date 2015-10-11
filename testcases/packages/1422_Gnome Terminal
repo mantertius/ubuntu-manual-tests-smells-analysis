@@ -39,11 +39,11 @@ This test will check that the terminal tab launches successfully
         <dd>Is an instance of gnome-terminal with the title 'user@hostname: ~' opened, with the current directory set to the users home directory?</dd>
 </dl>
 
-This test will check that the terminal can work in full screen
+This test will check that the terminal can work in full screen mode
 <dl>
     <dt> Open the Terminal application</dt>
     <dt> From the main menu select 'View > Full Screen...'</dt>
-        <dd>Terminal starts working in full screen more</dd>
+        <dd>Terminal starts working in full screen mode</dd>
     <dt>Press right click in terminal, from drop-down menu press "Leave Full Screen" option</dt>
         <dd>Terminal now works in previous windowed mode?</dd>
 </dl>
