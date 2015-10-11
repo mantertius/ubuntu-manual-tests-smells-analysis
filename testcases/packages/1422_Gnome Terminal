@@ -1,4 +1,3 @@
-Test-case name: gnometerminal/ter-001
 This test will check that basic terminal commands work in Gnome Terminal
 <dl>
     <dt> Open the Terminal application</dt>
@@ -12,33 +11,27 @@ This test will check that basic terminal commands work in Gnome Terminal
         <dd>Does the ls -al command you just entered appear?</dd>
 </dl>
 
-Test-case name: gnometerminal/ter-002
 This test will check that terminal colors and zoom level can be changed
 <dl>
-    <dt> Open the Terminal application</dt>
-    <dt>Click on Edit, select Profiles, select Edit and select "Colors"</dt>
-    <dt>Using the options contained in the "Colors" tab modify the color palette, choosing some non-default colors or a different color scheme</dt>
+    <dt>Open the Terminal application</dt>
+    <dt>Click on "Edit", select "Profile Preferences", select "Colors" tab and uncheck "Use colors from system theme" checkbox</dt>
+    <dt>Using the options contained in the "Colors" tab modify the "Text and Background Color" section, choosing some non-default colors or a different color scheme</dt>
         <dd>The colors in your terminal match your modifications</dd>
-    <dt>Click on Edit, select Profiles, select Edit and select "Background"</dt>
-    <dt> Set the terminal choosing the option "Background Image"</dt>
-        <dd>Terminal background changes to the current wallpaper</dd>
-    <dt> Change the Zoom Level using the key combination "Ctrl++" and "Ctrl--"</dt>
+    <dt> Change the Zoom Level using the key combination "Ctrl++" and "Ctrl+-"</dt>
         <dd>Did the zoom level change in terminal?</dd>
 </dl>
 
-Test-case name: gnometerminal/ter-003
 This test will check that terminal coloring is active
 <dl>
     <dt> Open the Terminal application</dt>
     <dt> Type "touch text1.txt"</dt>
     <dt> type "ls"</dt>
-    <dt>txt is in black</dt>
+    <dt>remember "text1.txt" color</dt>
     <dt> Type  "chmod 777 text1.txt"</dt>
     <dt> Type "ls"</dt>
-        <dd>text1.txt is enlighten in green?</dd>
+        <dd>"text1.txt" changed in other color?</dd>
 </dl>
 
-Test-case name: gnometerminal/ter-004
 This test will check that the terminal tab launches successfully
 <dl>
     <dt> Open the Terminal application</dt>
@@ -46,14 +39,13 @@ This test will check that the terminal tab launches successfully
         <dd>Is an instance of gnome-terminal with the title 'user@hostname: ~' opened, with the current directory set to the users home directory?</dd>
 </dl>
 
-Test-case name: gnometerminal/ter-005
-This test will check that the terminal can be given a new title
+This test will check that the terminal can work in full screen
 <dl>
     <dt> Open the Terminal application</dt>
-    <dt> From the main menu select 'Terminal > Set Title...'</dt>
-        <dd>The Set Title dialog appears</dd>
-    <dt> Enter 'Test Title' and click OK</dt>
-        <dd>Is the title of the window now 'Test Title'?</dd>
+    <dt> From the main menu select 'View > Full Screen...'</dt>
+        <dd>Terminal starts working in full screen more</dd>
+    <dt>Press right click in terminal, from drop-down menu press "Leave Full Screen" option</dt>
+        <dd>Terminal now works in previous windowed mode?</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
