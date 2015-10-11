@@ -13,7 +13,7 @@ This test will check that Sudoku can finish a game
 <dl>
     <dt>Now click on "New Puzzle". Select a new game with level "easy"</dt>
         <dd>A window appears showing a new Sudoku</dd>
-    <dt>Finish the game by solving the Sudoku. You can choose "Sudoku" >> "Show Warnings" to sovle game faster</dt>
+    <dt>Finish the game by solving the Sudoku. You can choose "Sudoku" >> "Show Warnings" to finish faster</dt>
         <dd>A window appears showing that you won the game</dd>
 </dl>
 This test will check that Sudoku can print a game
