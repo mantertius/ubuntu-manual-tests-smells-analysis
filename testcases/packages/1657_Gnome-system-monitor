@@ -26,8 +26,10 @@ Closing a process
         <dd>The name of the newly open application appeares in the processes tab</dd>
     <dt>Right click the name of the newly opened application</dt>
         <dd>A drop-down action menu should appear</dd>
-    <dt>Select "end process"</dt>
-        <dd>The application closes</dd>
+    <dt>Select "End"</dt>
+        <dd>Confirmation dialog appears</dd>
+    <dt>Click "End Procees"</dt>
+	<dd>The application closes</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
