@@ -26,10 +26,10 @@ This test will check that terminal coloring is active
     <dt> Open the Terminal application</dt>
     <dt> Type "touch text1.txt"</dt>
     <dt> type "ls"</dt>
-    <dt>remember "text1.txt" color</dt>
+    <dt>Remember the color of "text1.txt"</dt>
     <dt> Type  "chmod 777 text1.txt"</dt>
     <dt> Type "ls"</dt>
-        <dd>"text1.txt" changed in other color?</dd>
+        <dd>Has the color of "text1.txt" changed?</dd>
 </dl>
 
 This test will check that the terminal tab launches successfully
@@ -39,13 +39,13 @@ This test will check that the terminal tab launches successfully
         <dd>Is an instance of gnome-terminal with the title 'user@hostname: ~' opened, with the current directory set to the users home directory?</dd>
 </dl>
 
-This test will check that the terminal can work in full screen mode
+This test will check that the terminal full screen mode works
 <dl>
     <dt> Open the Terminal application</dt>
     <dt> From the main menu select 'View > Full Screen...'</dt>
-        <dd>Terminal starts working in full screen mode</dd>
+        <dd>Terminal goes into full screen mode</dd>
     <dt>Press right click in terminal, from drop-down menu press "Leave Full Screen" option</dt>
-        <dd>Terminal now works in previous windowed mode?</dd>
+        <dd>Terminal returns to the previous windowed state</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
