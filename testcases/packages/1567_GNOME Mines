@@ -48,6 +48,10 @@ This tests the menu functionality of GNOME Mines
         <dd>A new game starts in an 8x8 grid</dd>
     <dt>Open random grid, not a mine</dt>
         <dd>Pause button appears on the right</dd>
+    <dt>Click Mines --> Appearance</dt>
+        <dd>Select Theme window appears</dd>
+    <dt>Change default theme and close window</dt>
+        <dd>Your chosen theme now applied in game<dd>
     <dt>Click the Pause button</dt>
         <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
         <dd>The Pause button changes to a Resume</dd>
