@@ -25,7 +25,7 @@ This tests the main functionality of GNOME Mines
     <dt>Click "Change Difficulty"</dt>
         <dd>The new game screen appears</dd>
     <dt>Click "Custom"</dt>
-        <dd>A screen appears allowing you to select Horizontal, Vertical number of fileds and percent of mines</dd>
+        <dd>A screen appears allowing you to select Horizontal, Vertical number of fields and percent of mines</dd>
     <dt>Modify the three values to your desired sizes</dt>
         <dd>A new game starts in a grid that is the size you chose</dd>
     <dt>Play the game till you hit a mine</dt>
@@ -43,7 +43,7 @@ This tests the menu functionality of GNOME Mines
     	<dd>Game starts</dd>
     <dt>Click on random grid, open not a mine</dt>
     <dt>Click Mines --> New Game</dt>
-        <dd>A warning popup appears</dd>
+        <dd>A warning pop-up appears</dd>
     <dt>Press "Start New Game", then select "8x8 10 mines"</dt>
         <dd>A new game starts in an 8x8 grid</dd>
     <dt>Open random grid, not a mine</dt>
@@ -59,18 +59,18 @@ This tests the menu functionality of GNOME Mines
     <dt>Close the manual</dt>
     <dt>Click Help --> About</dt>
         <dd>The game pauses</dd>
-        <dd>An about popup appears with no spelling mistakes</dd>
+        <dd>An about pop-up appears with no spelling mistakes</dd>
     <dt>Click "GNOME Games web site"</dt>
         <dd>The GNOME Games wiki opens in your default web browser</dd>
     <dt>Close the web page</dt>
     <dt>Click "Credits"</dt>
-        <dd>The popup now shows the game's credits</dd>
+        <dd>The pop-up now shows the game's credits</dd>
     <dt>Click "Close"</dt>
-        <dd>The popup disappears</dd>
+        <dd>The pop-up disappears</dd>
         <dd>The game auto-resumes</dd>
     <dt>Play at least 3 games in each grid size</dt>
     <dt>Click Mines --> Scores</dt>
-        <dd>A popup appears showing all you previous times</dd>
+        <dd>A pop-up appears showing all you previous times</dd>
     <dt>Select each size of grid</dt>
         <dd>In each size the scores are ordered by time (lowest to highest), and show what date they where achieved on</dd>
     <dt>Click "Quit"</dt>
