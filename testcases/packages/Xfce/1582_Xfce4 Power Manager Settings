@@ -46,7 +46,7 @@ These tests will check the Xfce4 Power Manager settings under the General tab
     <dt>Enter password and press Unlock</dt>
         <dd>Desktop appears with Xfce Power Manager dialog still open</dd>
     <dt>Plug the laptop back in</dt>
- </dl>
+</dl>
 
 These tests will check the Xfce4 Power Manager settings under the System tab    
 <em>Note: the suspend tests require a minimum of 15 minutes of inactivity, so only perform them if time allows</em>
@@ -85,6 +85,37 @@ These tests will check the Xfce4 Power Manager settings under the Display tab
         <dd>The "Put to sleep after" and Blank after" sliders move to -1 minute and -2 minutes respectively compared to the "Switch off after" slider</dd>
     <dt>Time permitting, experiment with as many of the settings on this page as you can. They are pretty much self-explanatory</dt>
         <dd>The display power and brightness respond as expected according to the settings</dd>
+</dl>
+
+<em>This testcase requires suspending/resuming</em>
+
+This test will check that sessions are locked when appropriate.
+<dl>    
+    <dt>On Display tab, set Switch off to 3 minutes, Put to sleep to 2 minutes and Blank Screen to 1 minute</dt>
+    <dt>Click the Security tab</dt>
+        <dd>The settings page opens with current settings displayed</dd>
+    <dt>Change "Automatically lock the session" to "When the screensaver is activated"</dt>
+    <dt>Change the "Delay locking after screensaver" slider to 10 seconds</dt>
+    <dt>Click "Apply"</dt>
+        <dd>After 1 minute of no activity, your screen will go blank</dd>
+    <dt>Move your mouse as soon as the screen blanks</dt>
+        <dd>Your screen is restored</dd>
+    <dt>Wait another minute</dt>
+        <dd>Your screen will go blank</dd>
+    <dt>Wait 10 more seconds and then move your mouse</dt>
+        <dd>The Unlock dialag appears</dd>
+    <dt>Enter your password to unlock the session</dt>
+        <dd>Session unlocked</dd> 
+    <dt>Verify that the "Lock screen when system is going for sleep" switch is disabled</dt>
+    <dt>Click "Apply" (if necessary)</dt>
+    <dt>Suspend your session from the menu</dt>
+    <dt>Resume from suspend</dt>
+        <dd>The screen is restored immediately</dd>
+    <dt>Set the "Lock on suspend" switch to ON</dt>
+    <dt>Click "Apply"</dt>
+    <dt>Suspend your session from the menu</dt>
+    <dt>Resume from suspend</dt>
+        <dd>The Unlock dialog appears</dd>
 </dl>
 
 These tests will check the Xfce4 Power Manager settings under the Devices tab    
