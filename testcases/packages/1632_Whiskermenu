@@ -3,7 +3,7 @@ This test will check that applications launch correctly from the menu
 <dl>
     <dt>Select Archive Manager from Accessories menu and click</dt>
         <dd>Archive Manager opens</dd>
-    <dt>In search box type <em>ter</em></dt>
+    <dt>In whiskermenu search box type <em>ter</em></dt>
         <dd>Terminal Emulator appears in dialogue</dd>
     <dt>Click Terminal Emulator</dt>
         <dd>Terminal Emulator opens</dd>
@@ -12,7 +12,7 @@ This test will check that applications launch correctly from the menu
 This test will check that Favourites can be added/removed and that Recently Used is populated
 
 <dl>
-    <dt>Hightlight any application from the menu, right click and <em>Add to Favourites</em></dt>
+    <dt>Highlight any application from the menu, right click and <em>Add to Favourites</em></dt>
     <dt>Select Favourites in menu</dt>
         <dd>Chosen application appears in Favourites</dd>
     <dt>In Favourites, right click and <em>Remove From Favourites</em></dt>

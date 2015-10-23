@@ -1,3 +1,5 @@
+<em>Testcase assumes that the test is run completely</em>
+
 This test will check that Xfce4 Panel allows to insert plugins into the panel
 <dl>
     <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
@@ -35,11 +37,6 @@ This test will check that Xfce4 Panel allows to configure panel preferences
 This test will check that Xfce4 Panel allows to add and remove panels
 <dl>
     <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
-        <dd>A popup menu appears</dd>
-    <dt>Point the mouse pointer to the 'Panel' option</dt>
-        <dd>A drop-down menu appears</dd>
-    <dt>Select the 'Panel Preferences...' option</dt>
-        <dd>Panel dialog window appears</dd>
     <dt>Point your mouse cursor to the '+' button and click it</dt>
         <dd>A new empty panel appears showing a selection around it and the new panel is listed in the drop down list at the top of Panel dialog window</dd>
     <dt>Point your mouse cursor to the '-' button and click it</dt>
@@ -50,12 +47,6 @@ This test will check that Xfce4 Panel allows to add and remove panels
 
 This test will check that Xfce4 Panel allows to change the panel's height, width, length and the number of rows
 <dl>
-    <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
-        <dd>A popup menu appears</dd>
-    <dt>Point the mouse pointer to the 'Panel' option</dt>
-        <dd>A drop-down menu appears</dd>
-    <dt>Select the 'Panel Preferences...' option</dt>
-        <dd>Panel dialog window appears</dd>
     <dt>Point the mouse pointer to the 'Row size (pixels):' slidebar under the "Measurements" section and move the slider to the right</dt>
         <dd>The total panel height (or width) increases</dd>
     <dt>Point the mouse pointer to the 'Length (%):' slidebar under the "Measurements" section and move the slider to the right</dt>
@@ -68,12 +59,6 @@ This test will check that Xfce4 Panel allows to change the panel's height, width
 
 This test will check that Xfce4 Panel allows to change the color, background image and transparency of the panel
 <dl>
-    <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
-        <dd>A popup menu appears</dd>
-    <dt>Point the mouse pointer to the 'Panel' option</dt>
-        <dd>A drop-down menu appears</dd>
-    <dt>Select the 'Panel Preferences...' option</dt>
-        <dd>Panel dialog window appears</dd>
     <dt>Point your mouse cursor to the 'Appearance' tab and click it</dt>
         <dd>'Panel Preferences...' selected/active tab changes to 'Appearance' tab</dd>
     <dt>Point the mouse pointer to the 'Style:' option button and click it</dt>
@@ -106,19 +91,52 @@ This test will check that Xfce4 Panel allows to change the color, background ima
 
 This test will check that Xfce4 Panel allows to automatically hide and show panels when the mouse hovers over it
 <dl>
-    <dt>Point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
-        <dd>A popup menu appears</dd>
-    <dt>Point the mouse pointer to the 'Panel' option</dt>
-        <dd>A drop-down menu appears</dd>
-    <dt>Select the 'Panel Preferences...' option</dt>
-        <dd>Panel dialog window appears</dd>
+    <dt>In the Display tab, point your mouse cursor to an empty space on a panel and press the right mouse button</dt>
     <dt>If not selected, tick the 'Automatically show and hide the panel' option under the "General" section and click the 'Close' button</dt>
         <dd>Selected panel is automatically hidden</dd>
     <dt>Hover your mouse over the location of the hidden panel</dt>
         <dd>The panel pops up and remains visible while the mouse is over it</dd>
     <dt>Move your mouse away from the panel</dt>
         <dd>The panel automatically hides</dd>
+    <dt>Reset panel hide option to never</dt>
 </dl>
+This test will check the panel backup/restore tool
+<dl>
+    <dt>On the display tab, click Backup and restore</dt>
+        <dd>Panel Preferences closes</dd>
+        <dd>Xfce Panel Switch dialogue opens</dd>
+    <dt>Select a new panel layout from the listed options</dt>
+    <dt>Click the 'gear' icon to apply the new configuration</dt>
+        <dd>Panel layout changes</dd>
+    <dt>Select Xubuntu Modern and apply configuration</dt>
+        <dd>Panel returns to original layout</dd>
+    <dt>Use your preferred method to add a few plugins to the existing panel</dt>
+    <dt>Click the second from left button on Xfce Panel Switch</dt>
+        <dd>Save dialogue appears with default name set, type test</dd>
+    <dt>Click Save configuration</dt>
+        <dd>Dialogue closes, new test backup appears in list</dd>
+    <dt>Select a new panel layout from the listed options</dt>
+    <dt>Click the 'gear' icon to apply the new configuration</dt>
+        <dd>Panel layout changes</dd>
+    <dt>Select backed up configuration and apply</dt>
+        <dd>Panel changes to backed up configuration</dd>
+    <dt>Click fourth button from left</dt>
+        <dd>Export save dialogue opens</dd>
+    <dt>Navigate to Desktop, type panel as name and click Save</dt>
+        <dd>tarball appears on Desktop</dd>
+    <dt>Select the saved test listed in dialogue</dt>
+        <dd>Click middle button</dd>
+        <dd>test layout disappears</dd>
+    <dt>Select Xubuntu Modern and apply configuration</dt>
+        <dd>Panel returns to original layout</dd>
+    <dt>Click first button from right</dt>
+        <dd>Import dialogue appears</dd>
+    <dt>Navigate to Desktop and panel tarball, click Open</dt>
+        <dd>New panel configuration opens</dd>
+    <dt>type panel in name box and save configuration</dt>
+        <dd>Configuration appears in list</dd>
+    <dt>Select panel in list and apply</dt>
+        <dd>Panel changes to saved layout</dd>
 
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
-    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
+        <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+            If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
