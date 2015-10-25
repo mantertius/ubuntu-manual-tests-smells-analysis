@@ -58,7 +58,7 @@ This test will check that application shortcuts are applied correctly
     <dt>Open Settings -> Keyboard -> Application Shortcuts</dt>
         <dd>Application Shortcuts tab opens</dd>
     <dt>Press Super+3</dt>
-        <dd>Abiword opens</dd>
+        <dd>LibreOffice Writer opens</dd>
     <dt>Press Super+f</dt>
         <dd>File Manager opens</dd>
     <dt>Press Super+m</dt>
@@ -74,7 +74,7 @@ This test will check that application shortcuts are applied correctly
     <dt>Press Super+1</dt>
         <dd>gmusicbrowser opens</dd>
     <dt>Press Super+4</dt>
-        <dd>gnumeric opens</dd>
+        <dd>LibreOffice Calc opens</dd>
     <dt>Press Super+e</dt>
         <dd>Mousepad opens</dd>
     <dt>Press Super+2</dt>
@@ -103,8 +103,8 @@ This test will check that application shortcuts are applied correctly
 
 This test will check that shortcuts and their targets can be changed
 <dl>
-    <dt>Double click on Command 'abiword'</dt>
-        <dd>Shortcut Command dialogue opens with abiword highlighted</dd>
+    <dt>Double click on Command 'LibreOffice Writer'</dt>
+        <dd>Shortcut Command dialogue opens with LibreOffice Writer highlighted</dd>
     <dt>Press backspace and type gnome-mines, press OK</dt>
         <dd>Shortcut command dialogue closes</dd>
         <dd>Command listed as Mines</dd>
@@ -119,7 +119,7 @@ This test will check that shortcuts and their targets can be changed
     <dt>Press Reset to Defaults button</dt>
         <dd>Confirmation dialogue appears</dd>
     <dt>Press Yes</dt>
-        <dd>Changes are reverted, Command now reads abiword, Shortcut reads Super+3</dd>
+        <dd>Changes are reverted, Command now reads LibreOffice Writer, Shortcut reads Super+3</dd>
 </dl>
 
 This test will check that Layout options apply correctly

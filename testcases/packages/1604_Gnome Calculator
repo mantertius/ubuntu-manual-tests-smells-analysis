@@ -6,14 +6,10 @@ This test will check that Gnome Calculator can be opened either from a terminal 
         <dd>Calculator closes</dd>
     <dt>Open Gnome Calculator from your FAMILY menu</dt>
         <dd>Calculator opens</dd>
-    <dt>Navigate to Edit -> Quit</dt>
-        <dd>Calculator closes</dd>
 </dl>
 
 This test will check that Gnome Calculator's Application menu options work as expected
 <dl>
-    <dt>Open Calculator either from a terminal window or from the applications menu</dt>
-        <dd>Calculator opens</dd>
     <dt>Navigate to Mode -> Basic</dt>
         <dd>Calculator's GUI changes to provide buttons suitable for basic equations</dd>
         <dd>Equations are entered in standard mathematical form. For example to add 7 and 2 enter the following: 7+2</dd>

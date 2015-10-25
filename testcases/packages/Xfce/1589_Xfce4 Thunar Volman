@@ -1,5 +1,4 @@
-Test-case name:Thunar Volume Management
-Note: the following tests require that you have several types of removable media on hand
+<strong>The following tests require that you have several types of removable media on hand</strong>
 
 <em>Not having all media mentioned in test is <strong>not</strong> a case for failure. Please specify if media type is unavailable during test in the Comments section</em>
 

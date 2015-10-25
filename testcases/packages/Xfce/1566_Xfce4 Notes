@@ -11,8 +11,8 @@ This tests that xfce4 notes works
     <dt>Press Ctrl+N</dt>
         <dd>A new note opens</dd>
     <dt>Use the arrow icons to change between notes</dt>
-        <dd>The current note changes in responce to clicking on the icons</dd>
-    <dt>Press Ctrl+W, then agree to the popup</dt>
+        <dd>The current note changes in response to clicking on the icons</dd>
+    <dt>Press Ctrl+W</dt>
         <dd>The current note deletes</dd>
     <dt>Click Notes icon(Menu) --> Always on top</dt>
         <dd>Notes is always the top window</dd>
