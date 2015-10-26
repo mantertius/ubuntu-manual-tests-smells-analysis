@@ -1,3 +1,5 @@
+<em>Testcase requires use of video and/or audio files</em>
+
 This test will check that VLC can open an audio file
 <dl>
     <dt>Launch VLC</dt>
@@ -36,14 +38,14 @@ This test will check VLC volume control
 
 This test will check VLC control panel
 <dl>
-    <dt>Go to Media > Click on 'Open File'..., select three different video/audio files and press Open</dt>
+    <dt>Go to Media > Click on 'Open File'..., select two different video/audio files and press Open</dt>
 	<dd>The selected video/audio is played</dd>
     <dt>Click on "Pause the playback" button at the bottom</dt>
 	<dd>The selected video/audio is paused</dt>
     <dt>Click on "Play" button at the bottom</dt>
-	<dd>Video/audio is resumed from time it were paused</dt>
+	<dd>Video/audio is resumed from where it was paused</dt>
     <dt>Click on "Next media" button at the bottom</dt>
-	<dd>Your next file you have selected start playing</dd>
+	<dd>The next file in the list starts playing</dd>
     <dt>Click on 'Stop playback' button at the bottom</dt>
         <dd>The video is stopped</dd>
 </dl>
