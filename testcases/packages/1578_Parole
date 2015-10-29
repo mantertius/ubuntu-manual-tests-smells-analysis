@@ -9,7 +9,7 @@ This tests that parole can open many different files.
     <dt>Open then Play this file with parole</dt>
         <dd>File plays</dd>
         <dd>If a required codec is missing, an installation prompt appears and installs the missing codec.  Afterwards, media playback begins</dd>
-	<dt>Press Ctrl +L to play file from a location</dt>
+	<dt>Press Ctrl+L to play file from a location</dt>
 	<dt>Copy <em>https://download.blender.org/durian/trailer/sintel_trailer-480p.ogv</em> into dialogue, press Open</dt>
 		<dd>File plays</dd>
     <dt>Insert then Play some CDs and DVDs</dt>
