@@ -10,8 +10,6 @@ This test will check that Session and Startup opens and closes correctly
 
 This test will check that Session chooser appears at login. Logging out will be required.
 <dl>
-    <dt>Open Settings from the Whiskermenu</dt>
-        <dd>Settings dialog opens</dd>
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>In General tab, select Display chooser on login</dt>
@@ -36,15 +34,15 @@ This test will check that applications are restored with sessions. Logging out w
     <dt>Open Session and Startup from System group</dt>
         <dd>Session and Startup opens</dd>
     <dt>Press Super+3</dt>
-        <dd>Abiword opens</dd>
+        <dd>LibreOffice Writer opens</dd>
     <dt>Go to Session tab of Session and Startup</dt>
         <dd>Dialogue changes to session</dd>
     <dt>Press Save Session</dt>
         <dd>Session save dialogue momentarily appears and closes</dd>
     <dt>Close Session and Startup with close button</dt>
         <dd>Session dialogue closes</dd>
-    <dt>Focus on Abiword and press Ctrl+Q</dt>
-        <dd>Abiword closes</dd>
+    <dt>Focus on LibreOffice Writer and press Ctrl+Q</dt>
+        <dd>LibreOffice Writer closes</dd>
     <dt>From whiskermenu power button choose logout</dt>
         <dd>Logout dialogue appears with Save session ticked</dd>
     <dt>Untick Save session and press logout</dt>
@@ -54,9 +52,9 @@ This test will check that applications are restored with sessions. Logging out w
         <dd>Session dialogue appears</dd>
     <dt>Double click Default</dt>
         <dd>User logged in to Desktop</dd>
-        <dd>Abiword opens</dd>
-    <dt>Close Abiword</dt>
-        <dd>Abiword closes</dd>
+        <dd>LibreOffice Writer opens</dd>
+    <dt>Close LibreOffice Writer</dt>
+        <dd>LibreOffice Writer closes</dd>
 </dl>
 
 This test will check that Session saves are cleared correctly. Logging out will be required.
@@ -94,18 +92,18 @@ This test will check that Applications added the Autostart list start correctly.
         <dd>Add application dialogue appears</dd>
     <dt>In Name box type Test, select Description box</dt>
         <dd>Test shows in Name box</dd>
-    <dt>In description box type Abiword test, select Command box</dt>
-        <dd>Abiword test shows in Description box</dd>
+    <dt>In description box type LibreOffice Writer test, select Command box</dt>
+        <dd>LibreOffice Writer test shows in Description box</dd>
     <dt>Click button to right of Command box</dt>
         <dd>Select command dialogue appears</dd>
-    <dt>Navigate to /usr/bin/abiword, select and click OK</dt>
+    <dt>Navigate to /usr/bin/LibreOffice Writer, select and click OK</dt>
         <dd>Command selection dialogue closes, command box populated with command</dd>
     <dt>Click OK</dt>
         <dd>Add application dialogue closes</dd>
     <dt>Move to the bottom of the application list</dt>
-        <dd>New item shown as Test(Abiword Test) with box populated with a tick</dd>
+        <dd>New item shown as Test(LibreOffice Writer Test) with box populated with a tick</dd>
     <dt>Close Session and startup, logout and then login once more</dt>
-        <dd>User logs back into Desktop, Abiword starts</dd>
+        <dd>User logs back into Desktop, LibreOffice Writer starts</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

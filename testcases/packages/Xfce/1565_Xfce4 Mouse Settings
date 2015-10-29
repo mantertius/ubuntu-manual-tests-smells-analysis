@@ -32,6 +32,29 @@ This tests that Devices of xfce4 mouse settings works
     <dt>Repeat for each device</dt>
 </dl>
 
+
+This tests that Behaviour of xfce4 mouse settings works
+<dl>
+    <dt>Click the "Behavior" tab</dt>
+    <dt>Adjust the "Threshold" bar, then drag and drop something</dt>
+        <dd>The distance before something starts draging increases and decreases</dd>
+    <dt>Adjust the "Time" bar, then double click something</dt>
+        <dd>The maximum time between clicks increases and decreases</dd>
+    <dt>Adjust the "Distance" bar, then double click something, moving the mouse slightly between clicks</dt>
+        <dd>The distance the mouse can move between clicks and it still be a double click changes</dd>
+</dl>
+
+This tests that Themes of xfce4 mouse settings works
+<dl>
+    <dt>Click the "Themes" tab</dt>
+    <dt>Click a Theme</dt>
+        <dd>A preview of each cursor appears under the  heading "Preview"</dd>
+    <dt>Change the "Cursor size"</dt>
+    <dt>Move the cursor outside the current window</dt>
+        <dd>The cursor is in the new theme and size</dd>
+    <dt>Repeat for each cursor theme</dt>
+</dl>
+
 <em>The following test is optional, depending on hardware</em>
 
 This tests that the touchpad settings work
@@ -58,28 +81,6 @@ This tests that the touchpad settings work
     <dt>Untick "Enable horizontal scrolling", horizonatally scroll something</dt>
         <dd>The touchpad doesn't scroll horizontally</dd>
     <dt>Repeat for each touchpad device</dt>
-</dl>
-
-This tests that Behaviour of xfce4 mouse settings works
-<dl>
-    <dt>Click the "Behavior" tab</dt>
-    <dt>Adjust the "Threshold" bar, then drag and drop something</dt>
-        <dd>The distance before something starts draging increases and decreases</dd>
-    <dt>Adjust the "Time" bar, then double click something</dt>
-        <dd>The maximum time between clicks increases and decreases</dd>
-    <dt>Adjust the "Distance" bar, then double click something, moving the mouse slightly between clicks</dt>
-        <dd>The distance the mouse can move between clicks and it still be a double click changes</dd>
-</dl>
-
-This tests that Themes of xfce4 mouse settings works
-<dl>
-    <dt>Click the "Themes" tab</dt>
-    <dt>Click a Theme</dt>
-        <dd>A preview of each cursor appears under the  heading "Preview"</dd>
-    <dt>Change the "Cursor size"</dt>
-    <dt>Move the cursor outside the current window</dt>
-        <dd>The cursor is in the new theme and size</dd>
-    <dt>Repeat for each cursor theme</dt>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

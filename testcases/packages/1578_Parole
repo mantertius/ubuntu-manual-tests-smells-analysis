@@ -1,13 +1,17 @@
 <em>If running this test in a virtual machine, open a terminal and run <code>parole --xv false</code></em>
+<em>If no CD/DVD drive is available, this is not cause to fail the test</em>
 
 This tests that parole can open many different files.
 <dl>
     <dt>Launch Parole</dt>
         <dd>Parole opens</dd>
-    <dt>Download some different video and audio formats from http://samples.mplayerhq.hu/</dt>
-    <dt>Open then Play each file with parole</dt>
-        <dd>All files play (including those that needed new codecs)</dd>
+    <dt>Download an audio file <em>samples.mplayerhq.hu/flac/When%20I%20Grow%20Up.flac</em></dt>
+    <dt>Open then Play this file with parole</dt>
+        <dd>File plays</dd>
         <dd>If a required codec is missing, an installation prompt appears and installs the missing codec.  Afterwards, media playback begins</dd>
+	<dt>Press Ctrl+L to play file from a location</dt>
+	<dt>Copy <em>https://download.blender.org/durian/trailer/sintel_trailer-480p.ogv</em> into dialogue, press Open</dt>
+		<dd>File plays</dd>
     <dt>Insert then Play some CDs and DVDs</dt>
         <dd>CDs and DVDs play (note: to play encrypted DVDs, you will need to have libdvdcss2 installed)</dd>
         <dd>Chapters and tracks for CDs/DVDs are shown in the playlist</dd>

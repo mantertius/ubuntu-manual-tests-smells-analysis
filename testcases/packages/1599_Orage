@@ -12,8 +12,6 @@ This test will check that Orage can be opened either from a terminal window or f
 
 This test will check that Orage's File menu options work as expected
 <dl>
-    <dt>Open Orage either from a terminal window or from the applications menu</dt>
-        <dd>Orage opens</dd>
     <dt>Navigate to File -> New or alternatively hit Ctrl+N keys</dt>
         <dd>New appointment dialogue window opens</dd>
     <dt>Navigate to File -> Exchange data</dt>
@@ -53,8 +51,6 @@ This test will check that Orage's Edit menu options work as expected and Orage's
 
 This test will check that Orage's View menu options work as expected
 <dl>
-    <dt>Open Orage either from a terminal window or from the applications menu</dt>
-        <dd>Orage opens</dd>
     <dt>Navigate to View -> View selected date</dt>
         <dd>A dialogue window opens showing the events list for the currently selected date</dd>
     <dt>Navigate to View -> View selected week</dt>
@@ -67,8 +63,6 @@ This test will check that Orage's View menu options work as expected
 
 This test will check that Orage's Help menu options work as expected
 <dl>
-    <dt>Open Orage either from a terminal window or from the applications menu</dt>
-        <dd>Orage opens</dd>
     <dt>Navigate to Help -> Help or alternatively hit Ctrl+H keys</dt>
         <dd>Orage offline documentation opens in a web browser</dd>
     <dt>Navigate to Help -> About</dt>
@@ -77,7 +71,7 @@ This test will check that Orage's Help menu options work as expected
 
 This test will check that Orage allows you to add, edit and delete appointments
 <dl>
-    <dt>Open Orage either from a terminal window or from the applications menu and Navigate to File -> New or alternatively hit Ctrl+N keys</dt>
+    <dt>Navigate to File -> New or alternatively hit Ctrl+N keys</dt>
         <dd>New appointment dialogue window opens with the "General" tab selected</dd>
     <dt>Define the contents of the appointment, detailing its Type, Title, Location, whether it's a all day event or not, its start time, duration, availability, categories, priority and notes. When finished either navigate to File -> Save and close or alternatively hit Alt+W keys</dt>
         <dd>The dialogue window closes and the appointment is saved</dd>
@@ -102,7 +96,7 @@ This test will check that Orage allows you to add, edit and delete appointments
 
 This test will check that Orage allows to import and export calendar data
 <dl>
-    <dt>Open Orage either from a terminal window or from the applications menu and Navigate to File -> Exchange data</dt>
+    <dt>Navigate to File -> Exchange data</dt>
         <dd>Exchange dialogue window opens with the "Import/export" tab selected</dd>
     <dt>In the Import text box enter the name of the file or several files in a row by separating names with comma to copy into Orage and click the "Save" button</dt>
         <dd>The file(s) are imported making the appointments part of Orage and can't be differentiated or put back into the file</dd>

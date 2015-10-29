@@ -61,7 +61,7 @@ This tests the menu functionality of GNOME Mines
     <dt>Close the manual</dt>
     <dt>Click Help --> About</dt>
         <dd>The game pauses</dd>
-        <dd>An about pop-up appears with no spelling mistakes</dd>
+        <dd>An about pop-up appears</dd>
     <dt>Click "Close"</dt>
         <dd>The pop-up disappears</dd>
         <dd>The game auto-resumes</dd>
