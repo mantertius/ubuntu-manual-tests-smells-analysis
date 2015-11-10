@@ -1,4 +1,4 @@
-<em>If necessary when running this test in a virtual machine,set Display to No Xv in Tools, PReferences Display tab</em>
+<em>If necessary when running this test in a virtual machine, set Display to No Xv in Tools, Preferences Display tab</em>
 <em>If no CD/DVD drive is available, this is not cause to fail the test</em>
 
 This tests that parole can open many different files.
