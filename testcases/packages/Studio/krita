@@ -1,0 +1,12 @@
+
+<dl>
+    <dt>This test will check if krita opens properly from the menu</dt>
+        <dd>Open the krita applciation from GRAPHIC DESIGN subsection in Main Menu.</dd>
+        <dd>Krita opens properly.</dd>
+
+    <dt>This test will check if krita opens blank files correctly</dt>
+        <dd>Open the FILE menu then Custom Document with size Width: 1600px and Height: 1200px</dd>
+        <dd>Blank file with set dimensions opens properly</dd>
+</dl>
+
+
