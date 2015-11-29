@@ -1,9 +1,9 @@
 This test will check if inkscape opens properly from FAMILY menu
 <dl>  
-    <dt>Open inkscape from hraphics design sub menu</dt>
+    <dt>Open inkscape from graphics design sub menu</dt>
         <dd>Inkscape opens properly form FAMILY menu</dd>
 </dl>
-This test will check if creation of blank files is posible
+This test will check if creation of blank files is possible
 <dl>   
     <dt>Open a new file from the file sub menu</dt>
         <dd>Blank file opens OK.</dd>
