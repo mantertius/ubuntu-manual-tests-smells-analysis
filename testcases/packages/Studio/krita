@@ -6,8 +6,9 @@ This test will check if krita opens properly from the menu
 </dl>
 
 This test will check if krita opens blank files correctly
-<dt>Open the FILE menu then Custom Document with size Width: 1600px and Height: 1200px</dt>        
-    <dd>Blank file with set dimensions opens properly</dd>
+<dl>
+    <dt>Open the FILE menu then Custom Document with size Width: 1600px and Height: 1200px</dt>        
+        <dd>Blank file with set dimensions opens properly</dd>
 </dl>
 
 Testing brush selection and drawing with said brushes
