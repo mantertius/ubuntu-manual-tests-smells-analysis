@@ -1,7 +1,6 @@
 This test will check if scribus opens properly from the STUDIO menu.
 <dl>
-    <dt>Open Scribus from the STUDIO menu.</dt>
-        <dd>Open the Scribus application from GRAPHIC DESIGN subsection in Main Menu.</dd>
+    <dt>Open the Scribus application from GRAPHIC DESIGN subsection in Main Menu.</dt>
         <dd>Scribus opens properly.</dd>
 </dl>
 This test will check if scribus properly creates documents from the startup prompt.
