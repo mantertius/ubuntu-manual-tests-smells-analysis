@@ -5,10 +5,10 @@ This test will check that a new launcher can be added and moved to an existing m
     <dt>Right click on menu</dt>
     <dt>Select Edit Applications</dt>
 		<dd>MenuLibre opens</dd>
-    <dt>Select Settings Manager</dt>
+    <dt>Select Settings</dt>
     <dt>Click + in the toolbar</dt>
     <dt>Select Add Launcher</dt>
-		<dd>New Launcher appears highlighted below Settings Manager</dd>
+		<dd>New Launcher appears highlighted below Settings</dd>
     <dt>At bottom of Menu Browser click arrows to move new launcher</dt>
 		<dd>New Launcher moves up and down in menu hierarchy in response</dd>
     <dt>Move New Launcher to below Accessories</dt>

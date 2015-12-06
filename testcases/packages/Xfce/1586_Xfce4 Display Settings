@@ -1,6 +1,6 @@
 This test will check that Display Settings open and close correctly
 <dl>
-    <dt>Open Settings Manager from the menu, then select Display</dt>
+    <dt>Open Settings from the menu, then select Display</dt>
         <dd>Display Settings open, available monitors shown in left pane</dd>
     <dt>Press X in top right corner</dt>
         <dd>Display closes</dd>
@@ -25,7 +25,7 @@ This test will check that Display settings are applied correctly
 <strong>Optional:This test will check that Multiple Monitor setup works correctly</strong>
 
 <dl>
-    <dt>Open Settings Manager from menu, then select Display</dt>
+    <dt>Open Settings from menu, then select Display</dt>
         <dd>Display Settings open, available monitors shown in left pane</dd>
         <dd>Monitor notification is correct for available monitors</dd>
     <dt>From Resolution drop down, choose a different monitor resolution</dt>

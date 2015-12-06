@@ -19,8 +19,8 @@ my $baseURL = '.qa.ubuntu.com';
 #my $baseURL = '.qa.dev.stgraber.org';
 my $adminURL = '/qatracker/admin';
 my $testcaseURL = '/admin/config/services/qatracker/testcases/';
-my $email = '';
-my $password = '';
+my $email = 'nicholas.skaggs@canonical.com';
+my $password = 'I<3mywifestacy';
 
 #web stuff
 my $output;

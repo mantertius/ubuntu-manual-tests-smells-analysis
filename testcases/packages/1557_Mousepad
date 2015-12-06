@@ -1,3 +1,5 @@
+<em>Testcase assumes that the test is run completely</em>
+
 This test will check that Mousepad opens
 <dl>
     <dt>Open Mousepad</dt>
@@ -10,7 +12,7 @@ This test will check that Mousepad can save and open saved files
         <dd>Text appears in window</dd>
     <dt>Click File -> Save</dt>
         <dd>Save As window opens</dd>
-    <dt>Type test.txt in Name: box</dt>
+    <dt>Type test in Name: box</dt>
     <dt>Select any folder to save file to</dt>
         <dd>Chosen file name and target folder remain as selected</dd>
     <dt>Click Save button</dt>
@@ -23,17 +25,15 @@ This test will check that Mousepad can save and open saved files
 
 This test will check that Mousepad can find and highlight searched text
 <dl>
-    <dt>Open previously saved file</dt>
-        <dd>Mousepad opens previous file</dd>
     <dt>Press Ctrl+F</dt>
         <dd>Search box appears</dd>
     <dt>Type "t" in the box</dt>
         <dd>First "t" is found in the text document</dd>
-    <dt>Press F3</dt>
+    <dt>Press Ctrl+G</dt>
         <dd>Next "t" is found in the text document</dd>
     <dt>Type "he" in the search box</dt>
         <dd>Second "the" is found in the document with the search term highlighted</dd>
-    <dt>Press F3</dt>
+    <dt>Press Ctrl+G</dt>
         <dd>First "the" is found in the document</dd>
     <dt>Press esc</dt>
         <dd>Search box closes, focus returns to text document with search term highlighted</dd>
@@ -41,8 +41,6 @@ This test will check that Mousepad can find and highlight searched text
 
 This test will check that Mousepad can find and replace text, including case sensitivity and saves on close
 <dl>
-    <dt>Open previously saved file</dt>
-        <dd>Mousepad opens previous file</dd>
     <dt>Press Ctrl+R</dt>
         <dd>Replace dialogue opens</dd>
     <dt>Type "fox" in the Search for: box</dt>
@@ -62,13 +60,8 @@ This test will check that Mousepad can find and replace text, including case sen
     <dt>Close Mousepad with File -> Close Window</dt>
         <dd>Save before closing dialogue appears</dd>
     <dt>Click Save</dt>
-        <dd>Save As window opens</dd>
-    <dt>Type another_test.txt in Name: box</dt>
-    <dt>Select any folder to save file to</dt>
-        <dd>Chosen file name and target folder remain as selected</dd>
-    <dt>Click Save button</dt>
-        <dd>Mousepad closes</dd>
-    <dt>Open File Manager, navigate to saved file and double click to open in Mousepad</dt>
+        <dd>Mousepad saves the changes made to the file and closes</dd>
+    <dt>Find the saved file and double click to open in Mousepad</dt>
         <dd>Mousepad opens with saved text</dd>
 </dl>
 

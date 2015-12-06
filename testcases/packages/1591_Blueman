@@ -1,6 +1,6 @@
 This test shows the ability of blueman to (de-)activate the Bluetooth adapter
 <dl>
-    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Turn Bluetooth off".</dt>
         <dd>Bluetooth is now disabled. The Bluetooth symbol has faded out.</dd>
@@ -10,7 +10,7 @@ This test shows the ability of blueman to (de-)activate the Bluetooth adapter
 
 This test shows the ability of blueman to rename the Bluetooth adapter
 <dl>
-    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Adapters...".</dt>
         <dd>A window opens, showing the properties of the Bluetooth adapter.</dd>
@@ -22,7 +22,7 @@ This test shows the ability of blueman to (un-)hide the Bluetooth adapter. The t
 <dl>
     <dt>The test requires a Bluetooth device with search functionality for other Bluetooth devices, e.g. a mobile phone. If you do not have one, skip the test.</dt>
     <dt>Go to the search screen of your Bluetooth device and have it ready to search for the computer's Bluetooth adapter.</dt>
-    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Make discoverable".</dt>
         <dd>The context menu closes. Your computer is now discoverable for other Bluetooth devices within 60 seconds.</dd>
@@ -33,7 +33,7 @@ This test shows the ability of blueman to (un-)hide the Bluetooth adapter. The t
 This test shows the ability of blueman to connect to an input device. The test requires such a device, e.g. a Bluetooth mouse or keyboard
 <dl>
     <dt>The test requires an input device, e.g. a Bluetooth mouse or keyboard. If you do not have one, skip the test.</dt>
-    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Set up new device...".</dt>
         <dd>A window opens with the Bluetooth assistant.</dd>
@@ -52,7 +52,7 @@ This test shows the ability of blueman to connect to an input device. The test r
 This test shows the ability of blueman to connect to a storage device. The test requires such a device, e.g. a mobile phone
 <dl>
     <dt>The test requires a storage device, e.g. a mobile phone. If you do not have one, skip the test.</dt>
-    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu. (Xubuntu: Left-Click; Lubuntu Right-Click)</dt>
+    <dt>Click on the Bluetooth symbol in your system panel to activate the context menu.</dt>
         <dd>The context menu opens.</dd>
     <dt>Click on "Set up new device...".</dt>
         <dd>A window opens with the Bluetooth assistant.</dd>

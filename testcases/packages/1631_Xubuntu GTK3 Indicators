@@ -27,14 +27,12 @@ This test will check that sound indicator works correctly
 
 This test will check that messages indicator works correctly
 
-<em>If server connection is <strong>not</strong> available prior to the following test, this not cause to fail the test</em>
+<em>If server connection is <strong>not</strong> available prior to the following test, this is not cause to fail the test</em>
 <em>indicator-messages is not available until an application that appears in the indicator has been run and the install rebooted - if this is not available please do not test</em>
 
 <dl>
     <dt>Click messages indicator in panel</dt>
         <dd>Message menu appears</dd>
-    <dt>Select XChat from the menu</dt>
-        <dd>XChat starts and connects to server <em>if suitable settings are available</em></dd>
     <dt>Select Pidgin from the menu</dt>
         <dd>Pidgin starts and connects to server <em>if suitable settings are available</em></dd>
 <em>If connected to server, complete the following test</em>
@@ -67,17 +65,24 @@ This test will check that Network indicator works correctly
 
 This test will check that power indicator works correctly
 
-<em>For this test, you must have a laptop, i.e. a computer <strong>with a battery</strong>, otherwise the power indicator does not show up.</em>
+<em>The power indicator menu will look different depending on whether you're testing a laptop or a desktop.</em>
 
 <dl>
     <dt>Click power indicator (battery icon) in panel</dt>
         <dd>Power menu appears</dd>
-    <dt>Select "Show Time in Menu Bar" from the menu</dt>
-        <dd>The remaining dis/charging time appears in brackets next to the battery icon</dd>
-    <dt>Select "Show Percentage in Menu Bar" from the menu</dt>
-        <dd>The remaining dis/charging percentage appears in brackets next to the battery icon</dd>
-    <dt>Select "Power Settings..." from the menu</dt>
-        <dd>The settings dialog of Xfce4-Powermanager opens</dd>
+    <dt>Select "Power manager settings..."</dt>
+        <dd>The Xfce Power Manager dialogue opens at the General tab</dd>
+    <dt>Close the Xfce Power Manager dialogue</dt>
+<em>If testing a laptop, complete the following tests.</em>    
+    <dt>Click the power indicator in the panel</dt>
+        <dd>Power menu appears</dd>
+    <dt>Click on the battery status indication</dt>
+        <dd>The Xfce Power Manager dialogue opens at the Devices tab</dd>
+    <dt>Close the Xfce Power Manager dialogue</dt>
+    <dt>Click the power indicator in the panel</dt>
+        <dd>Power menu appears</dd>
+    <dt>Move the Display Brightness slider</dt>
+        <dd>The laptop display dims/brighens</dd>
 </dl>
 
 

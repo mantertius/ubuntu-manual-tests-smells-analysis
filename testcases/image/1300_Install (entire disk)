@@ -17,10 +17,13 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Select Erase disk and install FAMILY</dt>
+        <dd>Installation screen expands to include encryption and LVM options</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
+        <dd>Write changes dialogue appears</dd>
+    <dt>Click continue</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
     <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
-        <dd>Selected drive i displayed on the chart</dd>
+        <dd>Selected drive is displayed on the chart</dd>
     <dt>Verify that the full drive space is allocated</dt>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
@@ -32,8 +35,10 @@
         <dd>The proposed keyboard corresponds with your keyboard</dd>
     <dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
-    <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
-        <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
+    <dt>Input your initial user details and password <em>admin can not be used - it is a dedicated Linux User</em></dt>
+        <dd>Name, username and password are accepted.Login options and home folder encryption choices shown</dd>
+        <dd>Continue button becomes available</dd>
+    <dt>Press continue</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The slideshow is entirely in your language</dd> 
     <dt>Wait for the installer to finish</dt>
@@ -43,7 +48,7 @@
     <dt>Remove the disc and press enter</dt>
         <dd>The machine is rebooted</dd>
     <dt>Allow the machine to reboot</dt>
-        <dd>The system boots properly and loads into FAMILY</dd>
+        <dd>The system boots properly and loads into FAMILY showing username selected at step 13</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

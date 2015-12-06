@@ -25,10 +25,6 @@ This test will check that Shotwell can edit images
         <dd>The photo is now cropped and contains only the area selected</dd>
     <dt>Press ctrl+z</dt>
         <dd>The photo is now restored to it’s original condition</dd>
-    <dt>Click Red-eye</dt>
-        <dd>A small circle appears near a region of the photo that looks red</dd>
-    <dt>Click close</dt>
-        <dd>The red eye dialog is closed</dd>
     <dt>Click Adjust</dt>
         <dd>A histogram of the image and five adjustment sliders appears</dd>
     <dt>Move the left slider to the right</dt>
