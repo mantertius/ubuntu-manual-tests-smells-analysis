@@ -1,0 +1,36 @@
+This test will check if Blender2.75a opens properly from the STUDIO menu.
+<dl>
+    <dt>Open Blender2.75ar from the STUDIO menu.</dt>
+        <dd>Open the Blender2.75a application from GRAPHIC DESIGN subsection in Main Menu.</dd>
+        <dd>Blender2.75a opens properly.</dd>
+</dl>
+This test will check if Blender2.75a properly saves and re-opens documents.
+<dl>
+    <dt>Start up Blender2.75a</dt> 
+        <dd>Add a few mesh-objects to the scene.</dd>
+        <dd>Objects are placed on the cursor in the 3d view</dd>
+    <dt>Open File-menu, and select "save as..."</dt>
+        <dd>Name the file, pick a location and press "Save As Blender File"</dd>
+        <dd>File is saved.</dd>
+    <dt>Open File-menu and select "Open..."</dt>
+        <dd>Pick the previously saved file and press "Open Blender File</dd>
+        <dd>File is opened</dd>
+</dl>
+This test will check if Blender2.75a properly synchronizes with JACK.
+<dl>
+    <dt>Start Blender2.75a, open user preferences, set audio to JACK, save user preferences, quit Blender. Start QJACKCtl, Start Blender</dt> 
+        <dd>Set Blender sync-mode to AV-sync, and press play in Blender</dd>
+        <dd>Jack starts running</dd>
+    <dt>Focus QjackCtl window</dt>
+        <dd>Stop JACK</dd>
+        <dd>Blender2.75a stops</dd>
+</dl>
+This test will check if Blender2.75a properly executes a simple render.
+<dl>
+    <dt>Start Blender2.75a</dt> 
+        <dd>Press F12</dd>
+        <dd>Blender2.75a Renders the start-up scene.</dd>
+</dl>
+
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
