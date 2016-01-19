@@ -84,8 +84,6 @@ This test will verify that the Settings tab works properly.
         <dd>The Globaltime Preferences toolbar changes to text.</dd>
     <dt>Change the "Toolbar Style" to Text under icons.</dt>
         <dd>The Globaltime Preferences toolbar changes to both icons and text with the text below the icon.</dd>
-    <dt>Change the "Toolbar Style" to Text next to icons.</dt>
-        <dd>The Globaltime Preferences toolbar changes to both icons and text with the text beside the icon.</dd>
     <dt>Change the "Toolbar Style" back to Icons.</dt>
         <dd>The Globaltime Preferences toolbar changes the default icons look.</dd>
     <dt>Uncheck the "Show images on buttons" checkbox.</dt>
