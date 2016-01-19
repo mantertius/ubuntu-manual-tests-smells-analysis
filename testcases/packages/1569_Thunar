@@ -1,3 +1,5 @@
+<em>Testcase assumes that the test is run completely</em>
+
 This test will check that Thunar opens and closes as expected
 <dl>
     <dt>Open Thunar from the menu</dt>
@@ -40,17 +42,15 @@ These tests will check items in the File menu
         <dd>Text Editor opens file named test</dd>
     <dt>Close text editor with X in corner of window</dt>
         <dd>Text editor closes</dd>
-    <dt>SelectFile -> Open With, select Abiword</dt>
-        <dd>Abiword opens with file named test</dd>
-    <dt>Close Abiword with X in corner of window</dt>
-        <dd>Abiword closes</dd>
+    <dt>SelectFile -> Open With, select LibreOffice Writer</dt>
+        <dd>LibreOffice Writer opens with file named test</dd>
+    <dt>Close LibreOffice Writer with X in corner of window</dt>
+        <dd>LibreOffice Writer closes</dd>
     <dt>SelectFile -> Send to Desktop (create link)</dt>
     <dt>Select Desktop in Places pane in Thunar</dt>
         <dd>Link to file test shows</dd>
     <dt>Select USER in Places pane</dt>
         <dd>Window shows contents of /home/USER</dd>
-    <dt>SelectFile -> Detach Tab</dt>
-        <dd>New instance of Thunar opens at /home/USER</dd>
     <dt>Press Ctrl+W</dt>
         <dd>Thunar closes, leaving original window open</dd>
     <dt>Press Ctrl+Q</dt>
@@ -101,16 +101,12 @@ These Tests will check items in the Edit menu
         <dd>Rename dialogue box appears</dd>
     <dt>Type tested in box and click Rename</dt>
         <dd>File copy of test is renamed tested</dd>
-    <dt>SelectEdit -> Preferences and select</dt>
-        <dd>File Manager Preferences dialogue appears</dd>
-    <dt>Click Close</dt>
-        <dd>File Manager Preferences dialogue closes</dd>
 </dl>
 
 These tests will check items in the View Menu
 <dl>
-    <dt>Select View -> Location Selector, pick Toolbar Style</dt>
-        <dd>Location changes to show /path/to/home</dd>
+    <dt>Select View -> Location Selector, pick Pathbar Style</dt>
+        <dd>Location changes to show path icons</dd>
     <dt>Select View -> Sidepane - Tree</dt>
         <dd>Sidepane changes to show Tree view</dd>
     <dt>Select View -> Statusbar</dt>
@@ -150,7 +146,6 @@ These tests will check items in the Go and Help menus
     <dt>Select Read online</dt>
         <dd>Dialogue closes, web browser opens at http://docs.xfce.org/xfce/thunar/start</dd>
 </dl>
-
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

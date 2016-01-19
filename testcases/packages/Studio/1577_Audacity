@@ -1,4 +1,3 @@
-Test-case name: audacity/ady-001
 This test will check that Audacity Transport Toolbar Works
 <dl>
     <dt>Go to File menu and then Click on "Open..."</dt>
@@ -17,7 +16,6 @@ This test will check that Audacity Transport Toolbar Works
         <dd>Record your voice, stopped and play it. Can you hear yourself?</dd>
 </dl>
 
-Test-case name: audacity/ady-002
 This test will check that Audacity Device Toolbar Works
 <dl>
     <dt>All options are in default mode</dt>
@@ -32,8 +30,6 @@ This test will check that Audacity Device Toolbar Works
         <dd>Could you select a different channel?</dd>
 </dl>
 
-Test-case name: audacity/ady-003
-depends: ady-001
 This test will check that Audacity Tools Toolbar Works
 <dl>
     <dt>Click on "Selection Tool"</dt>
@@ -50,9 +46,6 @@ This test will check that Audacity Tools Toolbar Works
         <dd>Can you use all tools at the same time? zoom, selection, time.</dd>
 </dl>
 
-Test-case name: audacity/ady-004
-depends: ady-001
-depends: ady-003
 This test will check that Audacity Edit Toolbar Works
 <dl>
     <dt>Use the "Selection Tool" to select a segment and then click on "Cut"</dt>
@@ -73,9 +66,6 @@ This test will check that Audacity Edit Toolbar Works
         <dd>Is the Zoom working?</dd>
 </dl>
 
-Test-case name: audacity/ady-005
-depends: ady-001
-depends: ady-003
 This test will check that Transcription Toolbar works
 <dl>
     <dt>Use the "Selection Tool" in the "Toolbar" to select a segment and then click on "Play-at-speed"</dt>
@@ -84,8 +74,6 @@ This test will check that Transcription Toolbar works
     <dt>Can you feel the difference in the speed?</dt>
 </dl>
 
-Test-case name: audacity/ady-006
-depends: ady-001
 This test will check that Mixer Toolbar works
 <dl>
     <dt>Open an audio file, play it and move the "Output Volume"</dt>
@@ -94,8 +82,6 @@ This test will check that Mixer Toolbar works
         <dd>Can you feel the change</dd>
 </dl>
 
-Test-case name: audacity/ady-007
-depends: ady-001
 This test will check that Meter Toolbar works
 <dl>
     <dt>Open an audio file and play it</dt>
@@ -120,7 +106,6 @@ This test will check that Meter Toolbar works
         <dd>A new window appears where you can change the refresh rather, Can you do it? (30 by default)</dd>
 </dl>
 
-Test-case name: audacity/ady-008
 This test will check that File Menu Works
 <dl>
     <dt>Click on "New"</dt>
@@ -162,8 +147,6 @@ This test will check that File Menu Works
         <dd>Could you print the file?</dd>
 </dl>
 
-Test-case name: audacity/ady-009
-depends: ady-008
 This test will check that View Menu Works
 <dl>
     <dt>Open Audacity and import/open a new file.</dt>
@@ -190,9 +173,7 @@ This test will check that View Menu Works
         <dd>Click on "Reset Toolbars" and everything come back to default mode.</dd>
 </dl>
 
-Test-case name: audacity/ady-010
 This test will check that Menu Transport Works
-depends: ady-008
 <dl>
     <dt>Open Audacity and an Audio file.</dt>
     <dt>Go to Transport and click on "Play", "Pause" and "Stop"</dt>
@@ -212,9 +193,7 @@ depends: ady-008
         <dd>A new interface appears, called "Sounds Activated Record", Can you change the Activation Level?</dd>
 </dl>
 
-Test-case name: audacity/ady-011
 This test will check that Menu Tracks Works
-depends: ady-008
 <dl>
     <dt>Open Audacity and an Audio file.</dt>
     <dt>Click on "Add New" and later on "Audio Track"</dt>
@@ -240,9 +219,7 @@ depends: ady-008
         <dd>Click on "OK", a new entry should appear in the desk.</dd>
 </dl>
 
-Test-case name: audacity/ady-012
 This test will check that Menu Generate Works
-depends: ady-008
 <dl>
     <dt>Open Audacity and an Audio file.</dt>
     <dt>Click on "Chirp..."</dt>
@@ -271,9 +248,7 @@ depends: ady-008
         <dd>A new entry should appear in the desk, Can you see it?</dd>
 </dl>
 
-Test-case name: audacity/ady-013
 This test will check that Menu Analyse Works
-depends: ady-008
 <dl>
     <dt>Open Audacity and an Audio file.</dt>
     <dt>Click on "Contrast..."</dt>
@@ -304,7 +279,6 @@ depends: ady-008
         <dd>Click on OK and a new entry in the desk appears, Can you see the points with a number Label?, Can you move them?, Can you change their labels?</dd>
 </dl>
 
-Test-case name: audacity/ady-014
 This test will check that Menu Help Works
 <dl>
     <dt>Click on "About Audacity"</dt>

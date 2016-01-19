@@ -13,13 +13,13 @@
     <dt>Log in</dt>
     <dt>Check that the uname -r returns a -virtual kernel:</dt>
         <dd>uname -r</dd>
-    <dt>Check that the linux-virtual package is installed:</dt>
-        <dd>dpkg -l linux-virtual</dd>
+    <dt>Check that the linux-virtual package is installed for the release or the correct hardware enablement stack:</dt>
+        <dd>dpkg -l | grep linux-virtual</dd>
     <dt>Ping outside network</dt>
-    <dt>Check with the mount command that virtual disk are mount read-write</dt>
+    <dt>Check with the mount command that virtual disk are mounted read-write</dt>
     <dt>Check that the ubuntu-standard package is not installed:</dt>
         <dd>dpkg -l ubuntu-standard</dd>
-    <dt>Check that the size of the kernel modules is below 40M:</dt>
+    <dt>Check that the size of the kernel modules are below 40M:</dt>
         <dd>du -sh /lib/modules/</dd>
     <dt>Check that the size of the installed system is below 800M:</dt>
         <dd>df -h</dd>

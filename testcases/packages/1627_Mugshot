@@ -37,8 +37,6 @@ This test will check that Mugshot will set your profile image with camera and us
 
 This test will check that Mugshot profile image can also be chosen from picture library
 <dl>
-    <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
-        <dd>Mugshot opens</dd>
     <dt>Click the image button on the top left of Mughshot GUI</dt>
         <dd>A context menu will open bellow the image button</dd>
     <dt>Choose the "Browse..." option</dt>
@@ -49,8 +47,6 @@ This test will check that Mugshot profile image can also be chosen from picture 
 
 This test will check that Mugshot Help button work as expected
 <dl>
-    <dt>Open Mugshot either from a terminal window or from the applications menu</dt>
-        <dd>Mugshot opens</dd>
     <dt>Click the 'Help' button</dt>
         <dd>Yelp opens ghelp:mugshot page</dd>
 </dl>

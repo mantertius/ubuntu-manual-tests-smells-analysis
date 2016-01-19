@@ -14,7 +14,7 @@ Application shows CPU consumption in %, amount of RAM and swap memory used, and 
         <dd>The application now shows, in graphical view,</dd>
         <dd>% of cpu being used(in realtime),</dd>
         <dd>system memory used</dd>
-        <dd>and network activity(packets transmitted and recieved</dd>
+        <dd>and network activity(packets transmitted and received</dd>
 Check disk space usage
     <dt>Click the filesystem tab</dt>
         <dd>The application now shows the amount of disk space used,</dd>
@@ -23,11 +23,13 @@ Check disk space usage
         <dd>and filesystem type</dd>
 Closing a process
     <dt>Open any application of choice (web browser or PDF viewer)</dt>
-        <dd>The name of the newly open application appeares in the processes tab</dd>
+        <dd>The name of the newly open application appears in the processes tab</dd>
     <dt>Right click the name of the newly opened application</dt>
         <dd>A drop-down action menu should appear</dd>
-    <dt>Select "end process"</dt>
-        <dd>The application closes</dd>
+    <dt>Select "End"</dt>
+        <dd>Confirmation dialog appears</dd>
+    <dt>Click "End Process"</dt>
+	<dd>The application closes</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.

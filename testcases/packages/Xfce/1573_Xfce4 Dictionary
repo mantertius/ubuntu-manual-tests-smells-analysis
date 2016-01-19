@@ -49,12 +49,10 @@ This test will check the Speed Reader option
         <dd>The pasted text from the clipboard plays at the correct settings</dd>
     <dt>Close the Speed Reader-Running dialog</dt>
     <dt>Close the Speed Reader dialog</dt>
-    <dt>Click 'Quit' to close the Dictionary application</dt>
 </dl>
 
 These tests will check the customization of Preferences
 <dl>
-    <dt>Open Dictionary</dt>
     <dt>From the main Dictionary dialog, click "File" on the menu</dt>
         <dd>The File menu drop-down opens</dd>
     <dt>Click "Preferences"</dt>

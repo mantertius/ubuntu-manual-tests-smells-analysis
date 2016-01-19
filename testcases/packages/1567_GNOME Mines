@@ -1,103 +1,74 @@
-Test-case name: GNOME Mines/GNOME-Mines-001
 This tests that GNOME Mines will open
 <dl>
     <dt>Open GNOME mines</dt>
         <dd>GNOME Mines opens at the "New Game" screen</dd>
 </dl>
 
-Test-case name: GNOME Mines/GNOME-Mines-002
 This tests the main functionality of GNOME Mines
 <dl>
     <dt>Click "8x8 10 mines"</dt>
         <dd>A new game starts in an 8x8 grid</dd>
     <dt>Play the game till you hit a mine</dt>
         <dd>10 mines appear, one of which has exploded</dd>
-    <dt>Click the smiley face</dt>
+    <dt>Click "Change Difficulty"</dt>
         <dd>The new game screen appears</dd>
     <dt>Click "16x16 40 mines"</dt>
         <dd>A new game starts in a 16x16 grid</dd>
     <dt>Play the game till you hit a mine</dt>
         <dd>40 mines appear, one of which has exploded</dd>
-    <dt>Click the smiley face</dt>
+    <dt>Click "Change Difficulty"</dt>
         <dd>The new game screen appears</dd>
     <dt>Click "30x16 99 mines"</dt>
         <dd>A new game starts in a 30x16 grid</dd>
     <dt>Play the game till you hit a mine</dt>
         <dd>99 mines appear, one of which has exploded</dd>
-    <dt>Click the smiley face</dt>
+    <dt>Click "Change Difficulty"</dt>
         <dd>The new game screen appears</dd>
     <dt>Click "Custom"</dt>
-        <dd>A screen appears allowing you to select Horizontal, Vertical and Number of mines</dd>
+        <dd>A screen appears allowing you to select Horizontal, Vertical number of fields and percent of mines</dd>
     <dt>Modify the three values to your desired sizes</dt>
         <dd>A new game starts in a grid that is the size you chose</dd>
-    <dt>Play the game till you hit a mine</dt>
-        <dd>Your chosen number of mines appears</dd>
+    <dt>Click "Play Again"</dt>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>       
     <dt>Click to another window</dt>
         <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
-        <dd>The Pause button changes to a Play button</dd>
+        <dd>The Pause button changes to a Resume</dd>
 </dl>
 
-Test-case name: GNOME Mines/GNOME-Mines-003
 This tests the menu functionality of GNOME Mines
 <dl>
-    <dt>Click Mines --> New Game, then select "8x8 10 mines"</dt>
+    <dt>In default window select "8x8 10 mines"</dt>
+    	<dd>Game starts</dd>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>
+    <dt>Click Mines --> New Game</dt>
+        <dd>A warning pop-up appears</dd>
+    <dt>Press "Start New Game", then select "8x8 10 mines"</dt>
         <dd>A new game starts in an 8x8 grid</dd>
-    <dt>Click on a tile to start the timer</dt>
-    <dt>Click Mines --> Replay Size, then agree to the popup</dt>
-        <dd>The game re-starts</dd>
+    <dt>Click a tile, if no mine appears then continue test, if mine appears, restart and attempt again</dt>
+        <dd>Pause button appears on the right</dd>
+    <dt>Click Mines --> Appearance</dt>
+        <dd>Select Theme window appears</dd>
+    <dt>Change default theme and close window</dt>
+        <dd>Your chosen theme now applied in game<dd>
     <dt>Click the Pause button</dt>
         <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
-        <dd>The Pause button changes to a Play button</dd>
-    <dt>Click the Play button</dt>
+        <dd>The Pause button changes to a Resume</dd>
+    <dt>Click the Resume</dt>
         <dd>The timer resumes and the tiles are fully visible again</dd>
         <dd>The Play button changes to a Pause button</dd>
-    <dt>Click Menu --> Pause</dt>
-        <dd>The timer stops and the tiles are hidden by the word "Paused"</dd>
-        <dd>The Pause button changes to a Play button</dd>
-    <dt>Click Menu --> Pause</dt>
-        <dd>The timer resumes and the tiles are fully visible again</dd>
-        <dd>The Play button changes to a Pause button</dd>
-    <dt>Click the Fullscreen button (two outward pointing arrows)</dt>
-        <dd>Gnome mine now takes up the entire screen</dd>
-        <dd>The Arrows flip</dd>
-    <dt>Click the button again</dt>
-        <dd>Gnome mines is windowed again</dd>
-        <dd>The arrows take their original orientation</dd>
-    <dt>Click Menu --> Fullscreen</dt>
-        <dd>Gnome mine now takes up the entire screen</dd>
-        <dd>The Fullscreen Arrows flip</dd>
-    <dt>Click Menu --> Fullscreen</dt>
-        <dd>Gnome mines is windowed again</dd>
-        <dd>The arrows take their original orientation</dd>
-    <dt>Click the help "i" button</dt>
-        <dd>A non-mine tile is automatically clicked and a 10 second penalty added to the timer</dd>
-    <dt>Click Menu --> Hint</dt>
-        <dd>A non-mine tile is automatically clicked and a 10 second penalty added to the timer</dd>
-    <dt>Click Menu --> Help</dt>
+    <dt>Click Help --> Contents</dt>
         <dd>A manual opens</dd>
     <dt>Close the manual</dt>
-    <dt>Click Mines --> About</dt>
+    <dt>Click Help --> About</dt>
         <dd>The game pauses</dd>
-        <dd>An about popup appears with no spelling mistakes</dd>
-    <dt>Click "GNOME Games web site"</dt>
-        <dd>The GNOME Games wiki opens in your default web browser</dd>
-    <dt>Close the web page</dt>
-    <dt>Click "Credits"</dt>
-        <dd>The popup now shows the game's credits</dd>
-    <dt>Click "Licence"</dt>
-        <dd>The popup now shows the game's licence</dd>
+        <dd>An about pop-up appears</dd>
     <dt>Click "Close"</dt>
-        <dd>The popup dissapears</dd>
+        <dd>The pop-up disappears</dd>
         <dd>The game auto-resumes</dd>
-    <dt>Click Mines --> Preferences</dt>
-        <dd>The preferences popup appears</dd>
-    <dt>Toggle each setting</dt>
-        <dd>Each setting change produces the expected result</dd>
-    <dt>Play at least 3 games in each grid size</dt>
-    <dt>Click Menu --> Scores</dt>
-        <dd>A popup appears showing all you previous times</dd>
-    <dt>Select each size of grid</dt>
-        <dd>In each size the scores are ordered by time (lowest to highest), and show what date they where acheived on</dd>
+    <dt>Click Mines --> Scores</dt>
+        <dd>A pop-up appears showing all you previous times</dd>
+    <dt>Select another size of grid in drop down menu</dt>
+        <dd>In "size" the scores are ordered by time (lowest to highest), and show what date they where achieved on</dd>
     <dt>Click "Quit"</dt>
         <dd>GNOME Mines closes</dd>
 </dl>        

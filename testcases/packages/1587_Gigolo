@@ -10,8 +10,6 @@ This test will check that Gigolo can be opened either from a terminal window or 
 
 This test will check that Gigolo allows to configure a connection and connects to local or remote filesystems
 <dl>
-    <dt>Open Gigolo either from a terminal window or from applications menu</dt>
-        <dd>Gigolo window opens</dd>
     <dt>Navigate to Actions -> Connect or point your mouse pointer to the 'Connect' icon and click it</dt>
         <dd>The 'Connect to Server' dialog window opens</dd>
     <dt>Click on the 'Service type' drop-list and choose a communication protocol from the list, define 'Server' and 'Share' address or names, when applicable, and click the 'Connect' button</dt>
@@ -20,8 +18,6 @@ This test will check that Gigolo allows to configure a connection and connects t
 
 This test will check that Gigolo's GUI and behaviour can be configured
 <dl>
-    <dt>Open Gigolo either from a terminal window or from applications menu</dt>
-        <dd>Gigolo window opens</dd>
     <dt>Navigate to Edit -> Preferences or hit Ctrl+P keys</dt>
         <dd>The 'Preferences' dialog window opens on the 'General' tab</dd>
     <dt>Change the default file manager to launch, in the 'File Manager' text box</dt>
@@ -44,8 +40,6 @@ This test will check that Gigolo's GUI and behaviour can be configured
 
 This test will check that Gigolo allows to add, delete and edit bookmarks
 <dl>
-    <dt>Open Gigolo either from a terminal window or from applications menu</dt>
-        <dd>Gigolo window opens</dd>
     <dt>Navigate to Edit -> Edit Bookmarks or hit Ctrl+B keys</dt>
         <dd>The 'Edit Bookmarks' dialog window opens</dd>
     <dt>Click the 'Add' button</dt>
