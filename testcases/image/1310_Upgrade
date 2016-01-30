@@ -1,6 +1,6 @@
-To execute this test, a pre-existing ubuntu (or derivative) installation is needed
+To execute this test, a pre-existing Ubuntu (or derivative) installation is needed
 
-<em>Proceed in your native language if you wish. Instructions will remain in English</em>
+<em>Proceed in your native language if you wish. Instructions will remain in English.</em>
 
 <dl>
     <dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is available, and click Install to install them</dt>
