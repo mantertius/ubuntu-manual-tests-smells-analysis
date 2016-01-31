@@ -7,7 +7,7 @@ This test will check that LXInput can change the mouse behavior
     <dt>Try to use your mouse. The behavior should have changed significantly.</dt>
     <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
         <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
-    <dt>Set both "Acceleration" and "Sensitivity" to 100. Click on "OK"</dt>
+    <dt>Set "Acceleration" to 0 and "Sensitivity" to 100. Click on "OK"</dt>
         <dd>The window closes</dd>
     <dt>Try to use your mouse. The behavior should have changed significantly.</dt>
     <dt>Click on the Lubuntu icon in your panel, then on "Preferences" and "Keyboard and Mouse"</dt>
@@ -32,7 +32,7 @@ This test will check that LXInput can change the keyboard behavior
         <dd>LXInput opens in a new window. You see the tab "Mouse"</dd>
     <dt>Click on the tab "Keyboard"</dt>
         <dd>You see the tab "Keyboard"</dd>
-    <dt>Make some tests in the testbox offered</dt>
+    <dt>Make some tests in the box offered</dt>
         <dd>The behavior of the keyboard has changed</dd>
     <dt>Now change "Repeat Delay" to 100 and "Repeat Interval" to 10. Click on "OK"</dt>
         <dd>LXInput closes</dd>
