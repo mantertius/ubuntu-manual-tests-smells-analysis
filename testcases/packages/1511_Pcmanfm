@@ -1,68 +1,68 @@
 This test will check the applications list
 <dl>
-    <dt>Click on <em>Applications</em> in left hand panel.</dt>
-        <dd>PCManFM shows category listing of applications.</dd>
+    <dt>Click on <em>Applications</em> in the navigation menu.</dt>
+        <dd>PCManFM shows categories of applications.</dd>
     <dt>Double Click on <em>Internet</em>.</dt>
-        <dd>PCManFM window shows identical listing to that provided by clicking on <em>Menu</em>  -->; <em>Internet</em>.</dd>
+        <dd>PCManFM window shows identical listing to the Internet applications in the panel menu.</dd>
 </dl>
 
 This test will check basic file management
 <dl>
-    <dt> Click on the PCManFM icon in the task bar.</dt>
-        <dd>PCManFM Window appears.</dd>
-    <dt>Click on Desktop in PCManFM sidebar menu.</dt>
-        <dd>Contents of desktop appears in PCManFM window.</dd>
+    <dt>Click on the PCManFM icon in the task bar.</dt>
+        <dd>The PCManFM Window appears.</dd>
+    <dt>Click on Desktop in the PCManFM navigation menu.</dt>
+        <dd>Contents of your desktop appear.</dd>
     <dt>In the PCManFM Window, right click on a blank section and click on <em>Create New</em> and select <em>Folder</em>.</dt>
         <dd>Window appears, prompting for folder name.</dd>
     <dt>Enter <em>test</em> and click on <em>OK</em>.</dt>
-        <dd>New folder called <strong>test</strong> appears in PCManFM window.</dd>
+        <dd>New folder called <strong>test</strong> appears.</dd>
     <dt>In the PCManFM Window, right click on a blank section and click on <em>Create New</em> and select <em>File</em>.</dt>
         <dd>Window appears, prompting for file name.</dd>
     <dt>Enter <em>moveme.txt</em> and click on <em>OK</em>.</dt>
-        <dd>New file called <strong>moveme.txt</strong> appears in PCManFM window.</dd>
-    <dt>Click on the file <em>moveme.txt</em> then drag and drop into the folder <em>test</em>.</dt>
-        <dd>File <strong>moveme.txt</strong> moves to folder <strong>test</strong>. Double click folder <strong>test</strong> to confirm the file <strong>moveme.txt</strong> is there.</dd>
-    <dt>Click on  the  &lt;  icon  in the navigation section</dt>
-        <dd>PCManFM window now displays desktop.</dd>
-    <dt>Right click on the folder <em>test</em>, select <em>Delete</em>.</dt>
-        <dd>Window pops up requesting confirmation.</dd>
-    <dt>Click on <em>OK</em>.</dt>
-        <dd>Folder <strong>test</strong> no longer appears in PCManFM window.</dd>
-    <dt>Click on <em>Rubbish</em> in side bar menu.</dt>
+        <dd>A new file called <strong>moveme.txt</strong> appears.</dd>
+    <dt>Click on the file <em>moveme.txt</em>, then drag and drop into the folder <em>test</em>.</dt>
+        <dd>File <strong>moveme.txt</strong> moves to the folder <strong>test</strong>. Double click folder <strong>test</strong> to confirm the file <strong>moveme.txt</strong> is there.</dd>
+    <dt>Click on the  &lt;  icon  in the navigation section</dt>
+        <dd>The PCManFM window now displays your desktop.</dd>
+    <dt>Right click on the folder <em>test</em>, select <em>Move to Trash</em>.</dt>
+        <dd>A window pops up requesting confirmation.</dd>
+    <dt>Click <em>OK</em>.</dt>
+        <dd>Folder <strong>test</strong> no longer appears in the PCManFM window.</dd>
+    <dt>Click on <em>Trash(or Rubbish) Can</em> in the navigation menu.</dt>
         <dd>Folder <strong>test</strong> is displayed.</dd>
-    <dt>Right click on folder <em>test</em>, select <em>Restore</em>.</dt>
+    <dt>Right click on folder <em>test</em> and select <em>Restore</em>.</dt>
         <dd>Folder <strong>test</strong> no longer appears.</dd>
     <dt>Click on  the  &lt;  icon  in the navigation section</dt>
         <dd>PCManFM window now displays desktop and folder <strong>test</strong> is now visible.</dd>
-    <dt>Right click on the folder <em>test</em>, select <em>Delete</em>.</dt>
+    <dt>Right click on the folder <em>test</em>, select <em>Move to Trash</em>.</dt>
         <dd>Window pops up requesting confirmation.</dd>
     <dt>Click on <em>OK</em>.</dt>
         <dd>Folder <strong>test</strong> no longer appears in PCManFM window.</dd>
-    <dt>Click on <em>Rubbish</em> in side bar menu.</dt>
+    <dt>Click on <em>Trash(or Rubbish) Can</em> in side bar menu.</dt>
         <dd>Folder <strong>test</strong> is displayed.</dd>
-    <dt>Right click on the folder <em>test</em>, select <em>Delete</em>.</dt>
+    <dt>Right click on the folder <em>test</em> and select <em>Delete</em>.</dt>
         <dd>Window pops up requesting confirmation.</dd>
-    <dt>Click on <em>OK</em>.</dt>
-        <dd>Folder <strong>test</strong> no longer appears in PCManFM window.</dd>
-    <dt>Click on File in menu and select Close Window</dt>
-        <dd>PCManFM closes</dd>
-    <dt> Click on the PCManFM icon in the task bar.</dt>
+    <dt>Click <em>OK</em>.</dt>
+        <dd>Folder <strong>test</strong> no longer appears in the PCManFM window.</dd>
+    <dt>Click on File in the navigation menu and select Close Window.</dt>
+        <dd>PCManFM closes.</dd>
+    <dt>Click on the PCManFM icon in the task bar.</dt>
         <dd>PCManFM Window appears.</dd>
-    <dt> Click on 'X' at top of PCManFM window.</dt>
+    <dt>Click on 'X' at top of PCManFM window.</dt>
         <dd>PCManFM closes.</dd>
 </dl>
 
 This test will check bookmark management
 <dl>
-    <dt>Click on <em>Bookmarks</em> select <em>+ Add to Bookmarks</em></dt>
-        <dd>Window appears asking you to <strong>Enter a name for the new bookmark item</strong>.</dd>
+    <dt>Click on the <em>Bookmarks</em> menu and select <em>+ Add to Bookmarks</em></dt>
+        <dd>A window appears asking you to <strong>Enter a name for the new bookmark item</strong>.</dd>
     <dt>Type in <em>Home</em> and click on <em>OK</em>.</dt>
         <dd><strong>Home</strong> appears in the sidebar.</dd>
     <dt>Right click on  <em>Home</em> and select <em>Rename Bookmark Item</em>.</dt>
         <dd>Window appears asking you to <strong>Enter a new name</strong>.</dd>
     <dt>Type in <em>Del</em> and click on <em>OK</em>.</dt>
         <dd>Entry on sidebar changes from <strong>Home</strong> to <strong>Del</strong>.</dd>
-    <dt>Right click on  <em>Del</em> and select <em>Remove  from Bookmark</em>.</dt>
+    <dt>Right click on <em>Del</em> and select <em>Remove  from Bookmark</em>.</dt>
         <dd>The entry <strong>Del</strong> no longer appears in the sidebar.</dd>
 </dl>
 
