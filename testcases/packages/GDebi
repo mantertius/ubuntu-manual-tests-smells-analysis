@@ -1,5 +1,10 @@
 <dl>
-    
+    <strong>This will get the required files for running the rest of the test case.</strong>
+    <dt>Open a terminal and change directories into /tmp.</dt>
+    <dt>Go to <a href="http://packages.ubuntu.com/xenial/all/vrms/download">http://packages.ubuntu.com/xenial/all/vrms/download</a> and select a mirror. Download the .deb file into /tmp.</dt>
+    <dt>Ensure that GDebi is installed.</dt>
+    <strong>This will make sure that the graphical GDebi interface works properly.</strong>
+    <dt></dt>
 </dl>
 
 <strong>
