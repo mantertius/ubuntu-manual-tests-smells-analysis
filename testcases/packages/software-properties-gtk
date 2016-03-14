@@ -34,8 +34,8 @@
         <dd>A dialog box should pop up titled <code>The information about available software is out-of-date</code></dd>
     <dt>Click the <code>Reload</code> button</dt>
         <dd>A dialog box should pop up titled <code>Updating cache</code> and it should close successfully</dd>
-    <dt>Open a terminal and type: <code>sudo apt update && echo "It worked"</code>, enter your password, and press the Return key</dt>
-        <dd>This should update the repositories with no error and print "It worked" at the end</dd>
+    <dt>Open a terminal and type: <code>sudo apt update</code>, enter your password, and press the Return key</dt>
+        <dd>This should update the repositories with no error and print "Reading package lists... Done" at the end</dd>
 </dl>
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
