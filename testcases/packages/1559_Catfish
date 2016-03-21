@@ -45,7 +45,7 @@ This test will check that Catfish will search for files, hidden files and use ca
         <dd>Results appear for Test and .Test files on Desktop</dd>
     <dt>Click the gear icon</dt>
 	<dd>Menu closes</dd>
-    <dt>Close Catfish with X in the top left corner</dt>
+    <dt>Close Catfish with X in the top right corner</dt>
         <dd>Catfish closes</dd>
 </dl>
 
@@ -74,7 +74,7 @@ This test will check the thumbnail capability of Catfish
         <dd>List should now show the thumbnail of your screenshot</dd>
     <dt>Click the gear icon</dt>
 	<dd>Menu closes</dd>
-    <dt>Close Catfish with X in the top left corner</dt>
+    <dt>Close Catfish with X in the top right corner</dt>
         <dd>Catfish closes</dd>
 </dl>
 
