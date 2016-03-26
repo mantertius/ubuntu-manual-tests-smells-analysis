@@ -82,7 +82,7 @@ This test will check the clean Recent functionality works
     <dt> Click the Recent Icon in the sidebar</dt>
         <dd>The 'moveme.txt' file is shown</dd>
     <dt> Select the file</dt>
-    <dt> Right click and select 'Delete'</dt>
+    <dt> Right click and select 'Remove from Recent'</dt>
         <dd>Recent place should be empty</dd>
     <dt> Click the Home Icon in the sidebar</dt>
     <dt> Click the Recent Icon in the sidebar</dt>
