@@ -1,5 +1,6 @@
-Test-case name: nautilus/TC-NFM-001
-This test will check that user can create files in Nautilus
+<b>This test case will ensure Nautilus works properly. To execute this testcase, ensure Nautilus is installed on your system.</b>
+
+This test will check that user can create files in Nautilus:
 <dl>
     <dt> Look for Nautilus and launch it</dt>
         <dd>Nautilus is opened, Home is selected</dd>
@@ -7,29 +8,20 @@ This test will check that user can create files in Nautilus
         <dd>Empty document moveme.txt is created</dd>
         <dd>Was the empty document moveme.txt created?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-002
-depends: nautilus/TC-NFM-001
-This test will check that user can create folders in Nautilus
+This test will check that user can create folders in Nautilus:
 <dl>
     <dt> In Home Folder right click on a blank section and select 'New Folder'.</dt>
         <dd>A folder named 'Untitled Folder' appears in the directory</dd>
     <dt> Rename the folder to 'test'</dt>
         <dd>Was the folders name changed to 'test'?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-003
-depends: nautilus/TC-NFM-002
-This test will check that user can move files to folders.
+This test will check that user can move files to folders:
 <dl>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Drag moveme.txt and drop into the folder test.</dt>
         <dd>Is the file moveme.txt now located in 'test' folder?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-004
-depends: nautilus/TC-NFM-003
-This test will check that user can delete files and folders to Trash
+This test will check that user can delete files and folders to Trash:
 <dl>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Right click on 'test' folder and select Move to Trash</dt>
@@ -37,10 +29,7 @@ This test will check that user can delete files and folders to Trash
     <dt> Click the Trash Icon in the sidebar</dt>
         <dd>Does the Trash show the 'test' folder inside of it?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-005
-depends: nautilus/TC-NFM-004
-This test will check that user can recover delete files and folders from Trash
+This test will check that user can recover delete files and folders from Trash:
 <dl>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Trash Icon in the sidebar</dt>
@@ -49,20 +38,14 @@ This test will check that user can recover delete files and folders from Trash
     <dt> Click the Home Icon in the sidebar</dt>
         <dd>The 'test' folder was recovered successfully?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-006
-depends: nautilus/TC-NFM-005
-This test will check that the search functionality works
+This test will check that the search functionality works:
 <dl>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Search Icon in the top</dt>
     <dt> Input 'test'</dt>
         <dd>the 'test' folder was shown?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-007
-depends: nautilus/TC-NFM-005
-This test will check the Recent functionality works
+This test will check the Recent functionality works:
 <dl>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Double click in the 'test' folder</dt>
@@ -73,25 +56,19 @@ This test will check the Recent functionality works
     <dt> Click the Recent Icon in the sidebar</dt>
         <dd>The 'moveme.txt' file is shown?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-008
-depends: nautilus/TC-NFM-007
-This test will check the clean Recent functionality works
+This test will check the clean Recent functionality works:
 <dl>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
     <dt> Click the Recent Icon in the sidebar</dt>
         <dd>The 'moveme.txt' file is shown</dd>
     <dt> Select the file</dt>
-    <dt> Right click and select 'Delete'</dt>
+    <dt> Right click and select 'Remove from Recent'</dt>
         <dd>Recent place should be empty</dd>
     <dt> Click the Home Icon in the sidebar</dt>
     <dt> Click the Recent Icon in the sidebar</dt>
         <dd>Is the 'moveme.txt' file gone?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-009
-depends: nautilus/TC-NFM-001
-This test will check that new files can be added to the "New Document" submenu
+This test will check that new files can be added to the "New Document" submenu:
 <dl>
     <dt> Look for the Terminal application and launch it</dt>
         <dd>The Terminal applications is open and a prompt displayed</dd>
@@ -103,9 +80,7 @@ This test will check that new files can be added to the "New Document" submenu
         <dd>Empty document another.txt is created</dd>
         <dd>Was the empty document another.txt created?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-010
-This test will check that user can connect to Samba shares and copy files from the share
+This test will check that user can connect to Samba shares and copy files from the share:
 <dl>
     <dt> Please ensure you have access to a samba share containing a file</dt>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
@@ -118,9 +93,7 @@ This test will check that user can connect to Samba shares and copy files from t
     <dt> Open the copied document</dt>
         <dd>Did the copied file is open correctly, with it's contents the same as in the file on the share?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-011
-This test will check that user can connect to the Samba share and copy files to the share
+This test will check that user can connect to the Samba share and copy files to the share:
 <dl>
     <dt> Please ensure you have access to a samba writable system</dt>
     <dt> Please ensure the Nautilus window is running and the Nautilus window is focused</dt>
@@ -135,10 +108,7 @@ This test will check that user can connect to the Samba share and copy files to 
     <dt> Open the copied document on the share</dt>
         <dd>Did the copied file is open correctly, with it's contents the same as in the file on the share?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-012
-depends: nautilus/TC-NFM-005
-This test will check that user can share documents to another system using Samba
+This test will check that user can share documents to another system using Samba:
 <dl>
     <dt> Please ensure you have access to an Internet connection</dt>
     <dt> Please ensure you have access to an extern samba system</dt>
@@ -164,9 +134,7 @@ This test will check that user can share documents to another system using Samba
         <dd>is 'moveme.txt' pasted?</dd>
         <dd>have the same content?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-013
-This test will check that a mounted USB drive appears in Nautilus
+This test will check that a mounted USB drive appears in Nautilus:
 <dl>
     <dt> Please ensure you have a USB drive available and the system under test has available USB ports.</dt>
     <dt> Insert the USB drive into the USB port of the system under test</dt>
@@ -175,9 +143,7 @@ This test will check that a mounted USB drive appears in Nautilus
     <dt> Click on 'Documents' and then right back to the USB drive entry in 'Devices' section</dt>
         <dd>Are the USB drive contents displayed?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-014
-This test will check that 'Open' dialog appears when plugging in a music device
+This test will check that 'Open' dialog appears when plugging in a music device:
 <dl>
     <dt> Please ensure you have a USB drive available that contains music files and system under test has available USB ports. In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the player into the USB port of the system under tests and wait for new dialog to appear</dt>
@@ -186,9 +152,7 @@ This test will check that 'Open' dialog appears when plugging in a music device
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Rhythmbox open with the Music Device displayed as a separate entry in the left panel tree?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-015
-This test will check that 'Open' dialog appears when inserting a DVD
+This test will check that 'Open' dialog appears when inserting a DVD:
 <dl>
     <dt> Please ensure you have a Video DVD available and system under test has DVD drive. Also ensure you have installed dvd playback support in ubuntu (if needed for DRM DVD). In addition it is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the DVD into the DVD drive of the system under tests and wait for new dialog to appear</dt>
@@ -197,9 +161,7 @@ This test will check that 'Open' dialog appears when inserting a DVD
     <dt> Click OK button in the dialog box</dt>
         <dd>Did DVD playback start in Totem?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-016
-This test will check that 'Open' dialog appears on inserting an Audio CD
+This test will check that 'Open' dialog appears on inserting an Audio CD:
 <dl>
     <dt> Please ensure you have an Audio CD available and system under test has CD drive. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Insert the Audio CD into the CD drive of the system under tests and wait for new dialog to appear</dt>
@@ -208,9 +170,7 @@ This test will check that 'Open' dialog appears on inserting an Audio CD
     <dt> Click OK button in the dialog box</dt>
         <dd>Did Rhythmbox open with the Audio CD displayed in left panel tree?</dd>
 </dl>
-
-Test-case name: nautilus/TC-NFM-017
-This test will check that 'Open' dialog appears on inserting a camera
+This test will check that 'Open' dialog appears on inserting a camera:
 <dl>
     <dt> Please ensure you have a camera available. It is assumed the Removable Media settings are unchanged from default, and will 'Ask what to do' for all media types when inserted.</dt>
     <dt> Plug in the camera to the system under test and wait for new dialog to appear.</dt>
