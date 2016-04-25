@@ -15,7 +15,7 @@ Scope of this test is to verify that the system is installed and you can login i
     <dt>Select the keyboard layout</dt>
     <dt>The installer will fail to acquire a DHCP address. Accept Continue, and then select Do not configure network at this time</dt>
     <dt>Select hostname ubuntu as default</dt>
-    <dt>Inser the name for the new user</dt>
+    <dt>Insert the name for the new user</dt>
     <dt>Insert the name for the account</dt>
     <dt>Choose a password</dt>
     <dt>Reinsert the password</dt>
