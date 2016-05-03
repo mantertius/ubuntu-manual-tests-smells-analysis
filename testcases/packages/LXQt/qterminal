@@ -35,11 +35,11 @@ This test will test that the drop down mode of qterminal will open and be able t
 </dl> 
 This test will show that qterminal will open a new window. 
 <dl>
-    <dt> In your previous non drop down qterminal window press the file menu and new window <dt>
+    <dt> In your previous non drop down qterminal window press the file menu and new window </dt>
          <dd> A new window of qterminal opens. </dd>
     <dt> In this new window towards the top of the title bar press the x button to close the newly opened window </dt>
         <dd> The new window closes</dd> 
-    <dt> In the qterminal window you first opened press the keyboard shortcut control shift n <dt> 
+    <dt> In the qterminal window you first opened press the keyboard shortcut control shift n </dt> 
         <dd> A new qterminal window opens </dd> 
 </dl>
 This test will make sure qterminal can split terminals 
@@ -51,6 +51,6 @@ This test will make sure qterminal can split terminals
     <dt> In the left hand of the split teriminal type man cp and hit enter</dt>
        <dd> The left half of the screen shows the man page for cp with the right hand side showing the default bash prompt.</dd> 
 </dl>
-<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.^M
+<strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
 If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>
 
