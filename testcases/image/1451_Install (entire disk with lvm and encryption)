@@ -6,14 +6,14 @@
     <dt>Click on the Install FAMILY icon</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
     <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
+         <dd>The check marks should represent the state of your system accurately</dd>
         <dd>
             <ul>
-                <li>Your system have at least the amount a space indicated</li>
-                <li>(If on a 'laptop'). Is plugged to a power source</li>
-                <li>Is connected to the Internet</li>
+                <li>(If network is available) Download updates while installing FAMILY</li>
+                <li>(If on a 'laptop') Is plugged to a power source</li>
+                <li>Install thirdy-party software ... option available</li>
             </ul>
         </dd>
-        <dd>Check marks represent the state of your system accurately</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
