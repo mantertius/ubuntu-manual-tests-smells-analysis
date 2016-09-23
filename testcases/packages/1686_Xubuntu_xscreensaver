@@ -1,4 +1,4 @@
-This testcase is intended to test gnome-screensaver on Xubuntu.
+This testcase is intended to test xscreensaver on Xubuntu.
 
 <strong>Rather than have many duplicate bugs show up for similar issues here, for the purpose of this test, do not fail the testcase but use the Comment area on your tracker result to report issues to us.</strong>
 
