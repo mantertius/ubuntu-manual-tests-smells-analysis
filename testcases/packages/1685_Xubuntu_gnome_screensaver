@@ -29,4 +29,5 @@ This testcase is intended to test gnome-screensaver on Xubuntu.
         <dd>desktop should show application on desktop</dd>
     <dt>logout</dt>
     <dt>login as second user</dt>
+	<dd>Application from new user's session shows on desktop</dd>
 </dl>
