@@ -20,10 +20,14 @@ This testcase is intended to test xscreensaver on Xubuntu.
         <dd>check application appears on desktop</dd>
     <dt>suspend or lock</dt>
     <dt>Click "New Login..."</dt>
-    <dt>login as Guest User</dt>
+    <dt>login as your <strong>new</strong> User</dt>
         <dd>Desktop should be clear</dd>
-    <dt>logout</dt>
-    <dt>login as your user</dt>
+    <dt>Open any application - <em>suggest a different one from previous login</em></dt>
+    <dt>lock</dt>
+    <dt>switch to your first user</dt>
     <dt>enter password again to unlock your session</dt>
         <dd>desktop should show application on desktop</dd>
+    <dt>logout</dt>
+    <dt>login as second user</dt>
+	<dd>Application from new user's session shows on desktop</dd>
 </dl>
