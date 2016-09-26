@@ -6,6 +6,8 @@ This testcase is intended to test xscreensaver on Xubuntu.
 
 <strong>Make sure that you have xfce4-session 4.12.1-3ubuntu3. If not, enable proposed and install it before continuing with the xscreensaver test.</strong>
 
+<strong>Using Users and Groups in Settings - add a new user to the install for use during the test</strong>
+
 <dl>
     <dt> Run <code>sudo apt-get purge gnome-screensaver && sudo apt-get install xscreensaver && sudo apt-get autoremove</code> in a terminal</dt>
     <dt>reboot</dt>
