@@ -48,8 +48,8 @@
         <dd>GUI is shut down, a prompt to remove media and press Enter appears</dd>
     <dt>Remove the disc and press enter</dt>
         <dd>The machine is rebooted</dd>
-    <dt>Allow the machine to reboot and as it reboots after the post screen grub with a menu to select the installs appear</dt>
-        <dd>Select the first option ubuntu to boot into your new install.</dd>
+    <dt>Allow the machine to reboot, select the first option at the grub menu</dt>
+        <dd>Your new installation boots</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
