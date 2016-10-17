@@ -27,6 +27,8 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>At Software selection, choose "Mail server" with arrows, select it with "space bar" and confirm with "Enter"</dt>
     <dt>At Postfix Configuration select "Internet Site"</dt>
     <dt>At System mail name, let ubuntu</dt>
+    <dt>At Configuring dovecot-core select "Yes"</dt>
+    <dt>At Configuring dovecot-core verify the hostname is "localhost" and select "Continue"</dt>
     <dt>Select to install Grub in the master boot record</dt>
     <dt>Remove the installation media (CDROM or USB key)</dt>
     <dt>Wait that the system reboot then login</dt>
