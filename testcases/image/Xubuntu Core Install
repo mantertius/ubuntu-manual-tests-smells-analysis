@@ -13,7 +13,7 @@
             <ul>
                 <li>(If network is available) Download updates while installing FAMILY</li>
                 <li>(If on a 'laptop') Is plugged to a power source</li>
-                <li>Install thirdy-party software ... option available</li>
+                <li>Install third-party software ... option available</li>
             </ul>
         </dd>
     <dt>Click on the continue button</dt>
@@ -38,7 +38,7 @@
     <dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password <em>admin can not be used - it is a dedicated Linux User</em></dt>
-        <dd>Name, username and password are accepted.Login options and home folder encryption choices shown</dd>
+        <dd>Name, username and password are accepted. Login options and home folder encryption choices shown</dd>
         <dd>Continue button becomes available</dd>
     <dt>Press continue</dt>
         <dd>The installation proceeds</dd>
