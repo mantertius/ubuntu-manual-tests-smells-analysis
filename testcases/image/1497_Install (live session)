@@ -9,8 +9,8 @@
         <dd>The default desktop is displayed</dd>
     <dt>Use the desktop and open some applications to try FAMILY before installing</dt>
         <dd>Go to the Install FAMILY icon (usually on the desktop) and install from the Live session </dd>
-    <dt>On the screen Preparing to install FAMILY, note the state of each check mark for the following components</dt>
-        <dd>The check marks should represent the state of your system accurately</dd>
+    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>Available options should represent the state of your system accurately</dd>
         <dd>
             <ul>
                 <li>(If network is available) Download updates while installing FAMILY</li>
