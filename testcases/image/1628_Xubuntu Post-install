@@ -19,6 +19,24 @@ If you have USB drive available
         <dd>The USB drive is mounted, Thunar opens and you can open files from USB</dd>
 </dl>
 
+<em> Lock and suspend testing</em>
+<strong>When testing on hardware</strong>
+<dl>
+	<dt>Open any application and suspend machine</dt>
+		<dd>Machine suspends</dd>
+	<dt>Restart suspended machine and unlock</dt>
+		<dd>Desktop shows previously started application</dd>
+</dl>
+
+<strong>When testing on either hardware or virtual machine</strong>
+<dl>
+	<dt>Open any application and lock machine</dt>
+		<dd>Lock screen shows and screen then blanks</dd>
+	<dt>Press any key and unlock</dt>
+		<dd>Desktop shows previously started application</dd>
+</dl>
+
+
 <strong>
     If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
