@@ -18,8 +18,8 @@
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
         <dd>The 'Erase disk and install FAMILY' radio button is checked</dd>
-    <dt>Check 'Encrypt the new Ubuntu Installation for security' and 'Use LVM with the new Ubuntu Installation'</dt>
-        <dd>'Encrypt the new Ubuntu Installation for security' and 'Use LVM with the new Ubuntu Installation' is checked</dd>
+    <dt>Check 'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation'</dt>
+        <dd>'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation' is checked</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Choose a security key' screen is displayed with the 'Install now' button greyed out</dd>
     <dt>Enter a security key and type a different key into the 'confirm a security key' input box</dt>
