@@ -34,10 +34,12 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>Verify the default workgroup name is displayed:</dt>
         <dd>sudo net getlocalsid</dd>
         <dd>should return a line similar to sid for domain UBUNTU is S-1-5....</dd>
-    <dt>Verify your userId is defined:</dt>
-        <dd>net usersidlist</dd>
-        <dd>has to return a line similar to UBUNTU\'your userId'. Other lines will also be shown.</dd>
-    <dt>NB: The user needs to be added to the samba database by providing the user password at least once to the pam stack. This is automatically done when logging into the system by typing the password.</dt>
+    <dt>Verify winbind is responding to requests:</dt>
+        <dd>wbinfo -p</dd>
+        <dd>has to return a line similar to "Ping to winbindd succeeded".</dd>
+    <dt>Verify winbind basic functionality:</dt>
+        <dd>wbinfo --all-domains</dd>
+        <dd>has to return two lines: one with "BUILTIN", the other with the unqualified hostname in uppercase. For example, a hostname like "ubuntu" would be in the wbinfo output text as "UBUNTU".</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
