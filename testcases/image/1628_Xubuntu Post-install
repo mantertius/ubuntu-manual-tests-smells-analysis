@@ -22,6 +22,8 @@ If you have a USB drive available
 <em> Lock and suspend testing</em>
 <em> If unlocking requires more than one password entry - fail the testcase</em>
 
+<strong>To test desktop locking, a new user should be created with the User and Groups option from Settings menu</strong>
+
 <strong>Testing on Hardware</strong>
 
 Test Suspend
@@ -32,6 +34,7 @@ Test Suspend
         <dd>Desktop shows previously started application</dd>
 </dl>
 
+
 Test Desktop Locking
 <dl>
     <dt>Open any application and lock desktop</dt>
@@ -40,12 +43,12 @@ Test Desktop Locking
         <dd>Desktop shows previously started application</dd>
 </dl>
 
-Test Lock/Guest Session use/Unlock
+Test Lock/new User use/Unlock
 <dl>
     <dt>Open any application then lock desktop</dt>
         <dd>Desktop locks</dd>
-    <dt>Login as Guest</dt>
-    <dt>Logout from Guest</dt>
+    <dt>Login as new user</dt>
+    <dt>Logout from new user</dt>
     <dt>Login to normal user, unlocking</dt>
         <dd>Desktop shows previously started application</dd>
 </dl>
@@ -59,12 +62,12 @@ Test Desktop Locking
         <dd>Desktop shows previously started application</dd>
 </dl>
 
-Test Lock/Guest Session use/Unlock
+Test Lock/new user Session use/Unlock
 <dl>
     <dt>Open any application then lock desktop</dt>
         <dd>Desktop locks</dd>
-    <dt>Login as Guest</dt>
-    <dt>Logout from Guest</dt>
+    <dt>Login as new user</dt>
+    <dt>Logout from new user</dt>
     <dt>Login to normal user, unlocking</dt>
         <dd>Desktop shows previously started application</dd>
 </dl>
