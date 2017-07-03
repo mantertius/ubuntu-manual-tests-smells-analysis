@@ -3,7 +3,7 @@
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly</dd>
-    <dt>When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
+    <dt>When you see the screen with a solid color with an icon at the bottom, press any key to get the menu</dt>
         <dd>Language list will appear</dd>
     <dt>Select your language and then press Enter</dt>
         <dd>The installer menu is displayed</dd>
