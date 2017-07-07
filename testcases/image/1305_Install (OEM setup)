@@ -87,8 +87,8 @@
         <dd>Apt hits each of the package mirrors and update all of them without error</dd>
     <dt>Launch 'update-manager' (for quantal this is being renamed to software-updater) and install any updates presented</dt>
         <dd>The updates are downloaded and installed without error</dd>
-    <dt>Launch 'firefox' and navigate to http://www.FAMILY.com</dt>
-        <dd>The FAMILY homepage is loaded and displays properly</dd>
+    <dt>Launch 'firefox' and navigate to http://ubuntu.com</dt>
+        <dd>The Ubuntu homepage is loaded and displays properly</dd>
     <dt>Launch 'Time & Date' settings menu and note the timezone information and local time and date</dt>
         <dd>The timezone, date and time match the settings you selected during installation</dd>
     <dt>If you installed a non-english version of FAMILY, note the language used on the desktop</dt>
