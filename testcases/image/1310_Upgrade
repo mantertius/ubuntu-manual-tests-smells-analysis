@@ -3,8 +3,8 @@ To execute this test, a pre-existing Ubuntu (or derivative) installation is need
 <em>Proceed in your native language if you wish. Instructions will remain in English.</em>
 
 <dl>
-    <dt>Install all updates available for the release you want to upgrade by running update-manager. Click Check if any update is available, and click Install to install them</dt>
-    <dt>Ensure FAMILY is looking from all new versions by running 'Software & Updates'. Select the updates tab, and make sure the 'Notify me of a new FAMILY version' option has the 'For any new version' selection</dt>
+    <dt>Install all updates available for the release you want to upgrade by running update-manager, then click "Install now" to install the updates.</dt>
+    <dt>Ensure the upgrade process is looking for any new version by running 'Software & Updates' or clicking "Settings ..." in update-manager. Select the updates tab, and make sure the 'Notify me of a new Ubuntu version' option has the 'For any new version' selection</dt>
     <dt>Run update-manager -d -c from a terminal</dt>
     <dt>Click the upgrade version button</dt>
     <dt>Watch it upgrade, noting any errors</dt>
