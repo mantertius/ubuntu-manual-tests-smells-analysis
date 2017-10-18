@@ -17,7 +17,7 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
-        <dd>The 'Erase disk and install FAMILY' radio button is checked</dd>
+        <dd>The 'Erase disk and install FAMILY' radio button is selected</dd>
     <dt>Check 'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation'</dt>
         <dd>'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation' is checked</dd>
     <dt>Click on the continue button</dt>

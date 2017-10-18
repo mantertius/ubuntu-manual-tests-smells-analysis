@@ -25,7 +25,7 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Check Erase Disk and install FAMILY' radio button</dt>
-        <dd>The 'Check Erase Disk and install FAMILY' radio button is checked</dd>
+        <dd>The 'Check Erase Disk and install FAMILY' radio button is selected</dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Erase Disk and install FAMILY' screen is displayed</dd>
     <dt>Verify that the drive selected on the Select drive list correspond to the drive on the chart (e.g /dev/sda)</dt>
