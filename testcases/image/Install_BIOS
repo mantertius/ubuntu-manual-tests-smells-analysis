@@ -20,7 +20,7 @@ The scope of this test is to ensure that the image boots in BIOS and that the re
         </dd>
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
-    <dt>Select Erase disk and install FAMILY</dt>
+    <dt>Select any installation type</dt>
         <dd>Installation screen expands to include encryption and LVM options</dd>
     <dt>Click on the continue button (if there is only one hard disk in the system, the button should read 'Install now')</dt>
         <dd>Write changes dialogue appears</dd>
