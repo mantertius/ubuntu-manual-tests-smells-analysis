@@ -4,7 +4,7 @@ The scope of this test is to ensure that the image boots in BIOS and that the re
 
 <dl>
     <dt>Unplug network cable</dt>
-        <dd>No netowrking should be available to the system</dd>
+        <dd>No networking should be available to the system</dd>
     <dt>Boot up the image in BIOS mode</dt>
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the Install FAMILY icon</dt>
