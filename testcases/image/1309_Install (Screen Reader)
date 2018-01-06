@@ -5,7 +5,7 @@ This is an installation using the Screen-Reader as done by a visually blind indi
 <dl>
     <dt>Boot up the image</dt>
     <dt>Wait to hear the drums</dt>
-    <dt>Press Ctrl+s to start the screen-reader</dt>
+    <dt>Press Alt+Super+S to start the screen-reader</dt>
     <dt>Press Alt+Tab to change to the installer</dt>
     <dt>Press Up or Down arrow to select your language(default is English)</dt>
     <dt>Press Tab once to "Try FAMILY"</dt>
