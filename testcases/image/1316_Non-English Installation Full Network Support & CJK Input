@@ -14,6 +14,15 @@ The goal of this test case is to check that localization support is functional d
                 <li>In Korean "Ubuntu 설치"</li>
             </ul>
         </dd>
+	<dt>Check if your keyboard layout is correct or alter and click Continue.</dt>
+        <dd>
+            <ul>
+                <li>In Simplified Chinese "继续"</li>
+                <li>In Traditional Chinese "繼續"</li>
+                <li>In Japanese "続ける"</li>
+                <li>In Korean "계속"</li>
+            </ul>
+        </dd>	
     <dt>The 'Preparing to install FAMILY' screen is displayed, click on the Continue button</dt>
         <dd>
             <ul>
@@ -34,15 +43,6 @@ The goal of this test case is to check that localization support is functional d
             </ul>
         </dd>
     <dt>Select your timezone and click Continue.</dt>
-        <dd>
-            <ul>
-                <li>In Simplified Chinese "继续"</li>
-                <li>In Traditional Chinese "繼續"</li>
-                <li>In Japanese "続ける"</li>
-                <li>In Korean "계속"</li>
-            </ul>
-        </dd>
-    <dt>Check if your keyboard layout is correct or alter and click Continue.</dt>
         <dd>
             <ul>
                 <li>In Simplified Chinese "继续"</li>

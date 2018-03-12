@@ -4,8 +4,9 @@
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads to the live session desktop</dd>
     <dt>Click on the Install FAMILY Core icon</dt>
-        <dd>The Install dialogue screen is displayed</dd>
-    <dt>Click on Continue</dt>
+		<dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
 	<dd>The Preparing to install FAMILY dialogue shows</dd>
     <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
         <dd>Available options should represent the state of your system accurately</dd>
@@ -33,9 +34,6 @@
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and the main city from your area</dd>
     <dt>Select your timezone, and click on the continue button</dt>
-        <dd>The 'Keyboard Layout' screen appears</dd>
-        <dd>The proposed keyboard corresponds with your keyboard</dd>
-    <dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password <em>admin can not be used - it is a dedicated Linux User</em></dt>
         <dd>Name, username and password are accepted. Login options and home folder encryption choices shown</dd>
