@@ -7,7 +7,10 @@ The scope of this test is to ensure that the image boots in UEFI and that the re
         <dd>No networking should be available to the system</dd>
     <dt>Boot up the image in UEFI mode</dt>
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
-    <dt>Click on the Install FAMILY icon</dt>
+    <dt>Click on the Install FAMILY icon</dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
     <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
         <dd>Available options should represent the state of your system accurately</dd>
@@ -31,9 +34,6 @@ The scope of this test is to ensure that the image boots in UEFI and that the re
     <dt>Click on the Install Now button</dt>
         <dd>The 'Where are you?' screen is displayed, which should not necessarily match your timezone.</dd>
     <dt>Select your timezone, and click on the continue button</dt>
-        <dd>The 'Keyboard Layout' screen appears</dd>
-        <dd>The proposed keyboard corresponds with your keyboard</dd>
-    <dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password <em>admin can not be used - it is a dedicated Linux User</em></dt>
         <dd>Name, username and password are accepted. Login options and home folder encryption choices shown</dd>

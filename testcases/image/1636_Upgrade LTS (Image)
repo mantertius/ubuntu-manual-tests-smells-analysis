@@ -7,7 +7,10 @@ To execute this test, a pre-existing Ubuntu (or derivative) installation is need
 <dl>
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
-    <dt>Click on the Install FAMILY button </dt>
+    <dt>Click on the Install FAMILY button </dt>	
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
     <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
         <dd>Available options should represent the state of your system accurately</dd>
@@ -25,9 +28,6 @@ To execute this test, a pre-existing Ubuntu (or derivative) installation is need
     <dt>Click 'Install Now' button </dt>
         <dd>'Where are you?' screen is displayed</dd>
     <dt>If connected, verify that your timezone is proposed correctly </dt>
-    <dt>Click on the Continue button</dt>
-        <dd>'Keyboard layout' screen is displayed</dd>
-    <dt>Verify that your keyboard layout is set rightly</dt>
     <dt>Click on the Continue button</dt>
         <dd>'Who are you?' screen is displayed</dd>
     <dt>Insert all the requested fields and choose if you want autologin or encrypted home</dt>

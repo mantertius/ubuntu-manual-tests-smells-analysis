@@ -8,7 +8,10 @@
     <dt>Press "Try FAMILY" and wait for the Live session to start</dt>
         <dd>The default desktop is displayed</dd>
     <dt>Use the desktop and open some applications to try FAMILY before installing</dt>
-        <dd>Go to the Install FAMILY icon (usually on the desktop) and install from the Live session </dd>
+    <dt>Go to the Install FAMILY icon (usually on the desktop) and install from the Live session</dt>		
+        <dd>The 'Keyboard Layout' screen appears</dd>
+        <dd>The proposed keyboard corresponds with your keyboard</dd>
+	<dt>Select your keyboard layout and click on continue</dt>
     <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
         <dd>Available options should represent the state of your system accurately</dd>
         <dd>
@@ -33,9 +36,6 @@
     <dt>If your system is connected to the network, note the preselected timezone correspond with your timezone and the city indicated in the text box </dt>
         <dd>The timezone and city displayed match your timezone and a city from your area</dd>
     <dt>Select your timezone, and click on the continue button</dt>
-        <dd>The 'Keyboard Layout' screen appears</dd>
-        <dd>The proposed keyboard corresponds to your keyboard</dd>
-    <dt>Select your keyboard layout and click on continue</dt>
         <dd>The 'Who are you?' screen appears</dd>
     <dt>Input your initial user details and password (Note admin can not be used - it is a dedicated Linux User)</dt>
         <dd>Name, username and password are accepted. Additionally, the continue button is enabled</dd>
