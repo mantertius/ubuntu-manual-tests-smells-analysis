@@ -27,7 +27,7 @@ This test will check that Gigolo's GUI and behaviour can be configured
     <dt>Point your mouse pointer to the 'Interface' tab and click it</dt>
         <dd>Interface tab displays</dd>
     <dt>Tick/Untick the options given</dt>
-        <dd>Gigolo's GUI definitions and display the of auto-connect error messages change accordingly to the preferences set</dd>
+        <dd>Gigolo's GUI definitions and display of the auto-connect error messages change accordingly to the preferences set</dd>
     <dt>Point your mouse pointer to the 'Toolbar' tab and click it</dt>
         <dd>Toolbar tab displays</dd>
     <dt>Untick the 'Show toolbar' option</dt>
