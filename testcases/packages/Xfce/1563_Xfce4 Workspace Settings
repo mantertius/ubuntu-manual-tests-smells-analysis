@@ -8,7 +8,7 @@ This will test the xfwm4 workspace settings
         <dd>You are now able to type a name for the workspace</dd>
     <dt>Type a name for the workspace, then press Enter</dt>
         <dd>The workspace name changes in the list</dd>
-    <dt>Hover the cursor over the indictor icon of the workspace you just named</dt>
+    <dt>Hover the cursor over the indicator icon of the workspace you just named</dt>
         <dd>The test "Click to switch to [Workspace Name]" appears</dd>
     <dt>Press "Help"</dt>
         <dd>This takes you to an online manual</dd>
