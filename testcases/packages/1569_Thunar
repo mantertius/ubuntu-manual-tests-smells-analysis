@@ -1,6 +1,6 @@
 <em>Testcase assumes that the test is run completely</em>
 
-This test will check that Thunar opens and closes as expected
+This test will check that the file manager Thunar opens and closes as expected
 <dl>
     <dt>Open Thunar from the menu</dt>
         <dd>Thunar opens at /home/USER</dd>

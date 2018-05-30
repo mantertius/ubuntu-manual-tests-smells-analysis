@@ -10,10 +10,10 @@ This test will check that Application Finder runs and stores custom commands
 <dl>
     <dt>Press Alt+F2</dt>
         <dd>Application Finder opens</dd>
-    <dt>In dialogue type 'thunar /home' and press Launch</dt>
-        <dd>Thunar window opens showing /home/</dd>
-    <dt>Close Thunar and Press Alt+F2</dt>
-        <dd>Thunar closes, Application Finder opens</dd>
+    <dt>In dialogue type 'thunar /home' to open the file manager and press Launch</dt>
+        <dd>The file manager window opens showing /home/</dd>
+    <dt>Close the file manager and Press Alt+F2</dt>
+        <dd>The file manager closes, Application Finder opens</dd>
     <dt>In dialogue type 'th'</dt>
         <dd>Dialogue autocompletes remainder of 'thunar /home' command</dd>
 </dl>
