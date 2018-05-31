@@ -8,15 +8,15 @@ Network connections
 
 If you have other partitions...
 <dl>
-    <dt>Open Thunar</dt>
-        <dd>Confirm they are listed in <b>Thunar</b></dd>
+    <dt>Open the file manager</dt>
+        <dd>Confirm they are listed in the file manager</dd>
         <dd>Confirm you are able to read files from it</dd>
 </dl>
 
 If you have a USB drive available
 <dl>
     <dt>If you have a USB drive, plug it in</dt>
-        <dd>The USB drive is mounted, Thunar opens and you can open files from USB</dd>
+        <dd>The USB drive is mounted, the file manager opens and you can open files from USB</dd>
 </dl>
 
 <em> Lock and suspend testing</em>

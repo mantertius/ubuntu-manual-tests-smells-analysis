@@ -50,23 +50,23 @@ This test will check that Focus changes are applied correctly
         <dd>Speed at which focus is applied changes</dd>
     <dt>Deselect all focus options, leaving focus model at Click to focus</dt>
         <dd>All ticks removed from boxes</dd>
-    <dt>Open a File Manager with Super +f</dt>
-        <dd>Thunar opens, focus stays with Window Manager</dd>
-        <dd>Window Manager is not raised above Thunar</dd>
+    <dt>Open the file manager with Super +f</dt>
+        <dd>The file manager opens, focus stays with Window Manager</dd>
+        <dd>Window Manager is not raised above the file manager</dd>
     <dt>Click Window Manager title bar</dt>
         <dd>Window Manager is raised</dd>
     <dt>Select Raise on click</dt>
         <dd>Tick appears in box</dd>
-    <dt>Click inside Thunar</dt>
-        <dd>Thunar gains focus and is raised above other windows</dd>
+    <dt>Click inside the file manager</dt>
+        <dd>The file manager gains focus and is raised above other windows</dd>
     <dt>Deselect Raise on click, select Raise on focus</dt>
         <dd>Tick appears in Raise on focus, removed from Raise on click</dd>
-    <dt>Click in Thunar</dt>
-        <dd>Thuanr gains focus</dd>
+    <dt>Click in the file manager</dt>
+        <dd>The file manager gains focus</dd>
     <dt>Deselect Raise on focus, select New Window focus</dt>
         <dd>Tick appears in New window focus, tick removed from Raise on focus</dd>
-    <dt>Open Thunar</dt>
-        <dd>Thunar opens raised and with focus</dd>
+    <dt>Open the file manager</dt>
+        <dd>The file manager opens raised and with focus</dd>
     <dt>Reset settings to default</dt>
         <dd>Ticks appear in New window focus and Raise on Click</dd>
 </dl>

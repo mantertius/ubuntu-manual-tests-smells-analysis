@@ -60,7 +60,7 @@
 
 <p>If you have a Windows partition...</p>
 <dl>
-    <dd>Confirm it is listed in <b>Thunar</b></dd>
+    <dd>Confirm it is listed in the file manager</dd>
     <dd>Confirm you are able to read files from it</dd>
 </dl>
 <strong>PERIPHERALS</strong>
