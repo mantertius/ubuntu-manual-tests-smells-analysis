@@ -3,7 +3,9 @@
 This test will check that light-locker locks the screen
 <dl>
     <dt>From menu, press Lock Screen button</dt>
-        <dd>Machine locks and unlock dialogue appears</dd>
+        <dd>Machine locks</dd>
+    <dt>Move mouse or press a key</dt>
+        <dd>Unlock dialogue appears</dd>
         <dd>Session and language options in bar are unavailable</dd>
 </dl>
 
@@ -15,9 +17,9 @@ This test will check that light-locker will inhibit access to session
 
 This test will check that suspend while locked will inhibit access to session
 <dl>
-    <dt>From session menu at top right, select suspend</dt>
+    <dt>Click Power Button icon at top right of the panel, select suspend</dt>
         <dd>Machine suspends</dd>
-    <dt>Bring machine out of suspension</dt>
+    <dt>Bring machine out of suspension, then move mouse or press a key</dt>
         <dd>Machine returns to unlock dialogue</dd>
 </dl>
 

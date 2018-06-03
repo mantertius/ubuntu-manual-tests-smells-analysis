@@ -9,7 +9,7 @@ This test will check that Mugshot can be opened either from a terminal window or
         <dd>Mugshot closes</dd>
     <dt>Click the menu icon</dt>
         <dd>A menu drops down</dd>
-    <dt>Navigate to Settings and click it</dt>
+    <dt>At the bottom of the menu click the All Settings icon</dt>
         <dd>Settings dialog window opens</dd>
     <dt>Under the "Personal" section, click the "About me" icon</dt>
         <dd>Mugshot opens</dd>
@@ -24,8 +24,8 @@ This test will check that Mugshot will set your profile image with camera and us
     <dt>Fill the text-boxes with the required personal data and click the 'Apply' button</dt>
         <dd>A password prompt dialog is displayed, as a security measure to prevent unwanted updates to the user's personal information</dd>
         <dd>If Pidgin and/or LibreOffice are installed and regularly used, a prompt will be displayed asking if it's intended to update those settings</dd>
-    <dt>Click the image button on the top left of Mughshot GUI</dt>
-        <dd>A context menu will open bellow the image button</dd>
+    <dt>Open Mugshot and click the image button on the top left of Mughshot GUI</dt>
+        <dd>A context menu will open below the image button</dd>
     <dt>Choose the "Capture from camera..." option</dt>
         <dd>Capture from camera... dialog opens</dd>
         <dd>The camera is initialized and the 'Record' button will become available once the camera is ready</dd>
@@ -45,10 +45,22 @@ This test will check that Mugshot profile image can also be chosen from picture 
         <dd>Select a photo... dialog closes and the selected photo shows as label in the image button</dd>
 </dl>
 
+This test will check that Mugshot profile image is shown in the login dialogue. To do this you are asked to log out.
+<dl>
+    <dt>Click the menu</dt>
+        <dd>The menu opens</dd>
+    <dt>At the bottom right of the menu click the Log Out icon</dt>
+        <dd>The dialogue appears with the options to Log Out, Restart, Shut down and Suspend</dd>
+    <dt>Choose log out</dt>
+        <dd>You're logged out, and presented with the log in screen</dd>
+        <dd>The image in the log in screen is changed according to the image you chose in Mugshot</dd>
+    <dt>Log in again</dt>
+</dl>
+
 This test will check that Mugshot Help button work as expected
 <dl>
     <dt>Click the 'Help' button</dt>
-        <dd>Yelp opens ghelp:mugshot page</dd>
+        <dd>Help opens ghelp:mugshot page</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> 'failed' and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>

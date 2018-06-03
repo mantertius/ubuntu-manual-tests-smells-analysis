@@ -12,7 +12,7 @@ This test will check that Mousepad can save and open saved files
         <dd>Text appears in window</dd>
     <dt>Click File -> Save</dt>
         <dd>Save As window opens</dd>
-    <dt>Type test in Name: box</dt>
+    <dt>Type "test" in Name: box</dt>
     <dt>Select any folder to save file to</dt>
         <dd>Chosen file name and target folder remain as selected</dd>
     <dt>Click Save button</dt>
