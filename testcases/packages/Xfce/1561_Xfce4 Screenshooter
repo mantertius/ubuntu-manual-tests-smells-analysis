@@ -6,9 +6,9 @@ This test will check that Xfce4 Screenshot can open
 
 This test will check that Xfce4 Screenshot saves a screenshot of the whole screen as you see it
 <dl>
-    <dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+    <dt>Under the 'Region to capture' section, select the "Entire screen" option, and click the OK button</dt>
         <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Save" option, under the 'Action' section and click the ok button</dt>
+    <dt>Under the 'Action' section, select the "Save" option, and click the ok button</dt>
         <dd>A save dialog should be displayed, allowing to set the save location and the name of the file</dd>
 </dl>
 
@@ -16,45 +16,47 @@ This test will check that Xfce4 Screenshot copies a screenshot to the clipboard
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+    <dt>Under the 'Region to capture' section, select the "Entire screen" option, and click the OK button</dt>
         <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Copy to the clipboard" option, under the 'Action' section and click the OK button</dt>
-        <dd>The screenshot should be copied to the clipboard, allowing it to be pasted in another application</dd>
+    <dt>Under the 'Action' section, select the "Copy to the clipboard" option, and click the OK button</dt>
+        <dd>Open LibreOffice Writer. In LibreOffice Writer, in the main menu, select Edit-->paste.</dd>
+        <dd>The screenshot is copied into the document in LibreOffice Writer</dd>
+    <dt>Close LibreOffice Writer</dt>
 </dl>
 
 This test will check that Xfce4 Screenshot opens a copy of a screenshot with another application
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+    <dt>Under the 'Region to capture' section, select the "Entire screen" option, and click the OK button</dt>
         <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Open with:" option, under the 'Action' section</dt>
+    <dt>Under the 'Action' section, select the "Open with:" option</dt>
         <dd>The drop-down list box should now be enabled and clickable</dd>
     <dt>Click on the drop-down list</dt>
         <dd>A list of available applications should drop down</dd>
     <dt>Select one of the available applications and click the OK button</dt>
-        <dd>The screenshot should be saved to the system's temporary directory and opened with the application chosen from the drop-down list</dd>
+        <dd>The screenshot should be opened with the application chosen from the drop-down list</dd>
 </dl>
 
 This test will check that Xfce4 Screenshot allows to host a copy of a screenshot on imgur
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
+    <dt>Under the 'Region to capture' section, select the "Entire screen" option, and click the OK button</dt>
         <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Host on Imgur" option, under the 'Action' section and click the OK button</dt>
+    <dt>Under the 'Action' section, select the "Host on Imgur" option, and click the OK button</dt>
         <dd>Imgur dialog window should open</dd>
     <dt>Click Full Size Image</dt>
-	    <dd>Browser opens with the screenshot be hosted on this service</dd>
+	<dd>Browser opens with the screenshot to be hosted on this service</dd>
 </dl>
 
 This test will check that Xfce4 Screenshot saves a screenshot of the active window
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select the "Active window" option, under the 'Region to capture' section and click the OK button</dt>
+    <dt>Under the 'Region to capture' section, select the "Active window" option, and click the OK button</dt>
         <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Save" option, under the 'Action' section and click the ok button</dt>
+    <dt>under the 'Action' section, select the "Save" option, and click the ok button</dt>
         <dd>A save dialog should be displayed, allowing to set the save location and the name of the file</dd>
 </dl>
 
@@ -62,11 +64,11 @@ This test will check that Xfce4 Screenshot saves a screenshot by clicking and dr
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select the "Select a region" option, under the 'Region to capture' section and click the OK button</dt>
+    <dt>Under the 'Region to capture' section, select the "Select a region" option, and click the OK button</dt>
         <dd>The screen should darken</dd>
     <dt>Click the left mouse button and drag a rectangle over a area of the screen, before releasing the mouse button</dt>
         <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Save" option, under the 'Action' section and click the ok button</dt>
+    <dt>Under the 'Action' section, select the "Save" option, and click the ok button</dt>
         <dd>A save dialog should be displayed, allowing to set the save location and the name of the file</dd>
 </dl>
 
@@ -74,29 +76,12 @@ This test will check that Xfce4 Screenshot allows to select whether or not the s
 <dl>
     <dt>Open Screenshot</dt>
         <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select one of the options, under the 'Region to capture', tick the "Capture the mouse pointer" option section</dt>
-    <dt>Point the mouse pointer to the textbox's top arrow button, under the 'Delay before capturing' and change the delay time</dt>
+    <dt>Under the 'Region to capture', select one of the options, and tick the "Capture the mouse pointer" option section</dt>
+    <dt>Under 'Delay before capturing', click on the +-sign next to the textbox, and increase the delay time</dt>
         <dd>The number of seconds should increase accordingly</dd>
-    <dt>Select one of the options, under the 'Region to capture' and click the OK button</dt>
+    <dt>Under the 'Region to capture', select one of the options, and click the OK button</dt>
         <dd>The screenshot active window should only be displayed after the delay time has elapsed</dd>
         <dd>The saved screenshot should include the mouse pointer</dd>
-</dl>
-
-<em>Optional test</em
-
-This test will check that Xfce4 Screenshot allows to host a copy of a screenshot on Zimage
-<strong>An account at Zimage is required to complete this section, optional test</strong>
-<dl>
-    <dt>Open Screenshot</dt>
-        <dd>The take a screenshot window should be displayed</dd>
-    <dt>Select the "Entire screen" option, under the 'Region to capture' section and click the OK button</dt>
-        <dd>The screenshot action window should be displayed</dd>
-    <dt>Select the "Host on ZimageZ" option, under the 'Action' section and click the OK button</dt>
-        <dd>ZimageZ dialog window should open</dd>
-    <dt>Fill all the fields of ZimageZ dialog window and click the OK button</dt>
-    	<dd>Dialogue opens with links to screenshot</dd>
-    <dt>Click Full Size Image</dt>
-	    <dd>Browser opens with the screenshot be hosted on this service</dd>
 </dl>
 
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
