@@ -72,7 +72,7 @@ This test will check that application shortcuts are applied correctly
     <dt>Press Web Browser shortcut button (if available)</dt>
         <dd>Web Browser opens</dd>
     <dt>Press Super+1</dt>
-        <dd>gmusicbrowser opens</dd>
+        <dd>Parole media player opens</dd>
     <dt>Press Super+4</dt>
         <dd>LibreOffice Calc opens</dd>
     <dt>Press Super+e</dt>
