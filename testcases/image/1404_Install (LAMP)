@@ -42,29 +42,26 @@ Scope of this test is to verify that the system is installed, you can login into
                 +--------------------+
                 | information_schema |
                 | mysql              |
-                | performace_schema  |
-                | test               |
+                | performance_schema |
+                | sys                |
                 +--------------------+
                 4 rows in set (0.00 sec)
 
-                Reading table information for completion of table and column  names
-                You can turn off this feature to get a quicker start up with -A
+                Reading table information for completion of table and column names
+                You can turn off this feature to get a quicker startup with -A
 
-                Connection id:    41
+                Connection id:    7
                 Current database: mysql
 
-                +-----------+--------------------------+
-                | host      | user                     |
-                +-----------+--------------------------+
-                | 127.0.0.1 | root                     |
-                | ::1       | root                     |
-                | localhost |                          |
-                | localhost | debian-sys-maint         |
-                | localhost | root                     |
-                | ubuntu    |                          |
-                | ubuntu    | root                     |
-                +-----------+--------------------------+
-                7 rows in set (0.00 sec)
+                +-----------+------------------+
+                | host      | user             |
+                +-----------+------------------+
+                | localhost | debian-sys-maint |
+                | localhost | mysql.session    |
+                | localhost | mysql.sys        |
+                | localhost | root             |
+                +-----------+------------------+
+                4 rows in set (0.00 sec)
             </pre>
         </dd>
     <dt>Type exit to exit mysql</dt>
