@@ -38,7 +38,7 @@ Once logged in, verify that:
             </ul>
         </dt>
         <dt><code>sudo flash-kernel</code> produces no error messages</dt>
-        <dt><code>sudo shutdown reboot</code> reboots the device</dt>
+        <dt><code>sudo reboot</code> reboots the device</dt>
         <dt><code>sudo shutdown -h now</code> powers off the device</dt>
         <dt>Performing a large (300-600mb) file copy to USB storage works
             <ul>
