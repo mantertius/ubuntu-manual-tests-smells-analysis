@@ -37,7 +37,7 @@ Scope of this test is to verify that a system installed on a degraded raid still
     <dt>Remove one of the disks that are part of the RAID</dt>
     <dt>Boot the system</dt>
     <dt>Ensure that you can log into the system</dt>
-    <dt>Run 'sudo mdadm -D /dev/md0' and verify the presence of a line stating that the "State" line reports the RAID is degraded</dt>
+    <dt>Run <code>sudo mdadm -D /dev/md0</code> and verify the presence of a line stating that the "State" line reports the RAID is degraded</dt>
 
 
 </dl>
