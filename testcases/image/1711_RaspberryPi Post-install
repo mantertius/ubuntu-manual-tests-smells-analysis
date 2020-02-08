@@ -21,13 +21,13 @@ Once logged in, verify that:
         <dt>Configure wifi via netplan. Preferably, on a different subnet than ethernet. If that isn't possible disconnect ethernet.
             <ul>
                 <li><code>network:</code></li>
-                <li><code>  version: 2</code></li>
-                <li><code>  wifis:</code></li>
-                <li><code>    wlan0:</code></li>
-                <li><code>      access-points:</code></li>
-                <li><code>        wap_ssid_here:</code></li>
-                <li><code>          password: wap_password_here</code></li>
-                <li><code>      dhcp4: yes</code></li>
+                <li><code>&nbsp;&nbsp;version: 2</code></li>
+                <li><code>&nbsp;&nbsp;wifis:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;wlan0:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;access-points:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wap_ssid_here:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: wap_password_here</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dhcp4: yes</code></li>
             </ul>
         </dt>
         <dt>You hear audio output from:
