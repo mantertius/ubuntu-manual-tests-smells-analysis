@@ -25,8 +25,8 @@ Once logged in, verify that:
                 <li><code>&nbsp;&nbsp;wifis:</code></li>
                 <li><code>&nbsp;&nbsp;&nbsp;&nbsp;wlan0:</code></li>
                 <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;access-points:</code></li>
-                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wap_ssid_here:</code></li>
-                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: wap_password_here</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"wap_ssid_here":</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: "wap_password_here"</code></li>
                 <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dhcp4: yes</code></li>
             </ul>
         </dt>
