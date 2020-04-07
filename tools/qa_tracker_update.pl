@@ -223,6 +223,24 @@ sub login {
         }
     }
 
+    print "Enter your 2FA OTP: ";
+    my $otp = <STDIN>;
+    chomp $otp;
+
+    $mech->submit_form(
+        form_id => 'login-form',
+        fields      => {
+            oath_token => $otp,
+        }
+    );
+
+    if ($mech->success()) {
+        #$output = $mech->content();
+        #print "2FA Login submit:\n" . $output . "\n";
+    } else {
+        die localtime(time) . ' Error meching 2FA Login' . "\n";
+    }
+
     #sso decide form
     $mech->submit_form(
 		form_name => 'decideform',
