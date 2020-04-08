@@ -4,12 +4,12 @@
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying the Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the release notes hyperlink to confirm that a browser launches and you are taken to the release notes wiki page.</dt>
-    <dt>Click on the Install FAMILY icon</dt>
+    <dt>Click on the Install FAMILY button</dt>
         <dd>The 'Keyboard Layout' screen appears</dd>
         <dd>The proposed keyboard corresponds with your keyboard</dd>
 	<dt>Select your keyboard layout and click on continue</dt>
-        <dd>The 'Preparing to install FAMILY' screen is displayed</dd>
-    <dt>On the screen Preparing to install FAMILY, note the availability of the following components</dt>
+        <dd>The 'Updates and other software' screen is displayed</dd>
+    <dt>On the screen 'Updates and other software', note the availability of the following components</dt>
         <dd>Available options should represent the state of your system accurately</dd>
         <dd>
             <ul>
