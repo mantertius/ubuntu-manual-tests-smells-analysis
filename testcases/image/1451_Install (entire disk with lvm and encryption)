@@ -21,9 +21,13 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Installation type' screen is displayed</dd>
     <dt>Note the state of the 'Erase disk and install FAMILY' radio button</dt>
-        <dd>The 'Erase disk and install FAMILY' radio button is selected</dd>
-    <dt>Check 'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation'</dt>
+        <dd>The 'Erase disk and install FAMILY' radio button is selected and the 'Advanced features' button is active</dd>
+        <dt>Click on the 'Advanced features...' button</dt>
+        <dd>The 'Advanced features' dialog is displayed</dd>
+    <dt>Check 'Use LVM with the new FAMILY Installation' and 'Encrypt the new FAMILY Installation for security'</dt>
         <dd>'Encrypt the new FAMILY Installation for security' and 'Use LVM with the new FAMILY Installation' is checked</dd>
+    <dt>Click on the 'OK' button</dt>
+        <dd>The dialog closes and 'LVM and encryption selected' is displayed next to the 'Advanced features...' button </dd>
     <dt>Click on the 'Install Now' button</dt>
         <dd>The 'Choose a security key' screen is displayed with the 'Install now' button greyed out</dd>
     <dt>Enter a security key and type a different key into the 'confirm the security key' input box</dt>
@@ -54,7 +58,9 @@
     <dt>Remove the disc and press enter</dt>
         <dd>The machine is rebooted</dd>
     <dt>Allow the machine to reboot</dt>
-        <dd>The system boots properly and loads into FAMILY</dd>
+        <dd>The system boots properly</dd>
+        <dd>A field is displayed to enter your password to decrypt the disk</dd>
+        <dd>The system loads into FAMILY upon entering the right password</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
