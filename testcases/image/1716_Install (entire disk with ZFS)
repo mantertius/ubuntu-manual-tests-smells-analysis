@@ -74,7 +74,7 @@
             rpool/ROOT/ubuntu_UUID/var/log  /var/log
             rpool/ROOT/ubuntu_UUID/var/www  /var/www
             rpool/ROOT/ubuntu_UUID/var/spool  /var/spool
-            rpool/ROOT/ubuntu_UUID/var/lib/AccountServices  /var/lib/AccountServices
+            rpool/ROOT/ubuntu_UUID/var/lib/AccountsService  /var/lib/AccountsService
             rpool/ROOT/ubuntu_UUID/var/lib/NetworkManager  /var/lib/NetworkManager
             rpool/ROOT/ubuntu_UUID/var/lib/apt  /var/lib/apt
             rpool/ROOT/ubuntu_UUID/var/lib/dpkg  /var/lib/dpkg
