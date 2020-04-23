@@ -57,7 +57,7 @@
         <dd>The new user's desktop is presented</dd>
     <dt>Open dash and type Terminal into search box.  Click on Terminal icon.</dt>
         <dd>TheTerminal window will appear</dd>
-    <dt>Verify that neither the restricted nor multiverse archivese have been enabled by typing <pre>grep "restricted\|multiverse" /etc/apt/sources.list | grep -v "^#"</pre></dt>
+    <dt>Verify that neither the restricted nor multiverse archives have been enabled by typing <pre>grep "restricted\|multiverse" /etc/apt/sources.list | grep -v "^#"</pre></dt>
         <dd>No result returned (username command prompt line will appear again)</dd>
     <dt>Verify that the linux-restricted-modules package has not been installed by typing <pre>dpkg -l linux-restricted-* |  grep -vE "^[a-z]n"</pre></dt>
         <dd>No packages printed (some lines of text will appear, but after +=====etc sequence username command prompt line will appear)</dd>
