@@ -22,7 +22,7 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>At partitioning select "Guided - Use entire disk and set up encrypted LVM"</dt>
     <dt>Select disk to partition</dt>
     <dt>At "Write changes to disks", verify that everythings is right and select YES</dt>
-    <dt>Enter the ecryption passphrase</dt>
+    <dt>Enter the encryption passphrase</dt>
     <dt>Re-enter passphrase</dt>
     <dt>Change the amount of the volume or let it as default</dt>
     <dt>At "http proxy" request, leave it blank and press enter</dt>
