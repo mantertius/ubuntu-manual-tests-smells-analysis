@@ -29,12 +29,6 @@
     <dt>Click on the 'OK' button</dt>
         <dd>The dialog closes and 'Erase disk and use ZFS'</dd>
     <dt>Click on the 'Install Now' button</dt>
-        <dd>The 'Choose a security key' screen is displayed with the 'Install now' button greyed out</dd>
-    <dt>Enter a security key and type a different key into the 'confirm the security key' input box</dt>
-        <dd>The installer displays 'Passwords do not match'</dd>
-    <dt>Enter a security key and type the same key into the 'confirm the security key' input box</dt>
-        <dd>The passwords are accepted and the 'Install Now' button can be clicked</dd>
-    <dt>Check 'Overwrite empty disk space' and click the 'Install Now' button</dt>
         <dd>The screen advances</dd>
     <dt>If there is only one hard disk, skip to step 14 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
         <dd>Selected drive is displayed on the chart</dd>
