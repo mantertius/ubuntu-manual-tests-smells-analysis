@@ -26,8 +26,8 @@
         <dd>Write changes dialogue appears</dd>
     <dt>Click continue</dt>
         <dd>If there is only one hard disk, the installer skips to the "Where are you?' screen. Otherwise, the 'Installation type' screen is displayed</dd>
-    <dt>If there is only one hard disk, skip to step 10 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
-        <dd>Selected drive is displayed on the chart</dd>
+    <dt>If there is only one hard disk, skip to step 12 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' page, select a drive in the 'Select drive' list.</dt>
+        <dd>Verify that the selected drive corresponds to the drive on the chart</dd>
     <dt>Verify that the full drive space is allocated</dt>
         <dd>Full drive space is allocated for installation</dd>
     <dt>Click on the Install Now button</dt>
@@ -49,7 +49,7 @@
     <dt>Remove the disc and press enter</dt>
         <dd>The machine is rebooted</dd>
     <dt>Allow the machine to reboot</dt>
-        <dd>The system boots properly and loads into FAMILY showing username selected at step 13</dd>
+        <dd>The system boots properly and loads into FAMILY showing username selected at step 15</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>
