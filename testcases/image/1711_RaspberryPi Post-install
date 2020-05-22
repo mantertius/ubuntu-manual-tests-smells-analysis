@@ -18,7 +18,7 @@ Once logged in, verify that:
                 <li>It is possible to ssh to the device.</li>
             </ul>
         </dt>
-        <dt>Configure wifi via netplan. Preferably, on a different subnet than ethernet. If that isn't possible disconnect ethernet.
+        <dt>Configure wifi via netplan by creating an /etc/netplan/config.yaml file (example contents below) and running 'sudo netplan apply'. Preferably, wifi will be on a different subnet than ethernet. If that isn't possible disconnect ethernet.
             <ul>
                 <li><code>network:</code></li>
                 <li><code>&nbsp;&nbsp;version: 2</code></li>
