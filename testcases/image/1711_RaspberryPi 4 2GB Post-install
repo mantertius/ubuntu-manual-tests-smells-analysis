@@ -1,3 +1,4 @@
+This test case is to be carried out on a Raspberry Pi 4 with 2GB of RAM.
 Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">IoT installation media</a>
 <dl>
 During boot, verify that:
