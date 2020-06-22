@@ -1,0 +1,56 @@
+This test case is to be carried out on a Raspberry Pi Compute Module 3+ Lite.
+Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">IoT installation media</a>
+<dl>
+During boot, verify that:
+        <dt>You see u-boot output during boot</dt>
+        <dt>You see something on the connnected monitor after boot</dt>
+
+Once logged in, verify that:
+        <dt>A connected USB keyboard works:
+            <ul>
+                <li>when connected to a USB2 (black) port</li>
+                <li>when connected to a USB3 (blue) port</li>
+            </ul>
+        </dt>
+        <dt><code>free</code> reports RAM consistent with the specifc device.</dt>
+        <dt>The ethernet adapter received an IP address.
+            <ul>
+                <li>The device responds to a ping request.</li>
+                <li>It is possible to ssh to the device.</li>
+            </ul>
+        </dt>
+        <dt>Configure wifi via netplan by creating an /etc/netplan/config.yaml file (example contents below) and running 'sudo netplan apply'. Preferably, wifi will be on a different subnet than ethernet. If that isn't possible disconnect ethernet.
+            <ul>
+                <li><code>network:</code></li>
+                <li><code>&nbsp;&nbsp;version: 2</code></li>
+                <li><code>&nbsp;&nbsp;wifis:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;wlan0:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;access-points:</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"wap_ssid_here":</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password: "wap_password_here"</code></li>
+                <li><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dhcp4: yes</code></li>
+            </ul>
+        </dt>
+        <dt>You hear audio output from:
+            <ul>
+                <li>the 3.5mm jack</li>
+                <li>HDMI 0</li>
+                <li>HDMI 1</li>
+            </ul>
+        </dt>
+        <dt><code>sudo flash-kernel</code> produces no error messages</dt>
+        <dt><code>sudo reboot</code> reboots the device</dt>
+        <dt><code>sudo shutdown -h now</code> powers off the device</dt>
+        <dt>Performing a large (300-600mb) file copy to USB storage works
+            <ul>
+                <li>Copy the large file to USB storage</li>
+                <li><code>sync</code></li>
+                <li>Check <code>dmesg</code> for errors</li>
+                <li>Unmount and remount the USB storage</li>
+                <li>Verify the md5sum of the file</li>
+            </ul>
+        </dt>
+Boot with the 2nd HDMI port connected. Verify that you see output on the 2nd monitor instead of the 1st.
+<strong>
+    If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
+    If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result</strong>.
