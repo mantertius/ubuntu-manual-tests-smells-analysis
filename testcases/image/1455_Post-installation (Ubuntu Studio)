@@ -1,7 +1,7 @@
 <strong>Audio Check </strong>
 Before you begin, make sure you are booted into a fresh session, and that you haven't opened any audio applications - including any browser pages with audio content.
 <dl>
-    <dt>Open Ubuntu Studio Controls from the menu</dt>
+    <dt>Open Studio Controls from the menu</dt>
         <dd>Start Jack and confirm it runs properly (DSP shows a percentage). Then stop jack to confirm it closes properly (DSP shows 0%). Finish by starting Jack and keeping it on for the duration of this test.</dd>
         <dd>Start Carla and keep it around for your Patchbay.
     <dt>Open Hydrogen from the menu</dt>
