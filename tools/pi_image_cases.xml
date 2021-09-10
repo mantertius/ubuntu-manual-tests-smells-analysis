@@ -71,6 +71,7 @@ definition overrides the outer.
       href="https://ubuntu.com/download/iot/installation-media">
       IoT installation media</a>
     </p>
+    <ut:var name="post-install" />
     <dl>
       <ut:tests />
     </dl>
@@ -82,6 +83,8 @@ definition overrides the outer.
       the bug number when you <a href="results#add_result">submit</a> your
       result.</p>
   </ut:template>
+
+  <ut:define name="post-install"></ut:define>
 
   <ut:test id="uboot-video">
     <ut:action>
@@ -495,6 +498,90 @@ definition overrides the outer.
     <ut:include ref="reboot" />
     <ut:include ref="shutdown" />
     <ut:include ref="ram-free"><ut:define name="mem">3.6-3.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1741_RaspberryPi CM4 2GB Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 4 2GB</ut:define>
+    <ut:define name="post-install">
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
+    </ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">1.6-1.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1742_RaspberryPi CM4 4GB Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 4 4GB</ut:define>
+    <ut:define name="post-install">
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
+    </ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">3.6-3.8GB</ut:define></ut:include>
+    <ut:include ref="usb-file-transfer" />
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI0 output</ut:define>
+      <ut:define name="output">HDMI0 port</ut:define>
+    </ut:include>
+    <ut:include ref="audio">
+      <ut:define name="device">an HDMI monitor that supports audio plugged into
+      the HDMI1 output</ut:define>
+      <ut:define name="output">HDMI1 port</ut:define>
+    </ut:include>
+    <ut:include ref="ethernet"><ut:define name="intf">eth0</ut:define></ut:include>
+    <ut:include ref="wifi"><ut:define name="intf">wlan0</ut:define></ut:include>
+  </ut:case>
+
+  <ut:case id="1743_RaspberryPi CM4 8GB Post-install">
+    <ut:define name="model">Raspberry Pi Compute Module 4 8GB</ut:define>
+    <ut:define name="post-install">
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
+    </ut:define>
+    <ut:include ref="uboot-video" />
+    <ut:include ref="uboot-serial" />
+    <ut:include ref="flash-kernel" />
+    <ut:include ref="reboot" />
+    <ut:include ref="shutdown" />
+    <ut:include ref="ram-free"><ut:define name="mem">7.6-7.8GB</ut:define></ut:include>
     <ut:include ref="usb-file-transfer" />
     <ut:include ref="audio">
       <ut:define name="device">an HDMI monitor that supports audio plugged into
