@@ -3,10 +3,14 @@
      tools/pi_image_cases.xml
 -->
 
-    <p>This test case is to be carried out on a Raspberry Pi 4 2GB</p>
+    <p>This test case is to be carried out on a Raspberry Pi Compute Module 4 4GB</p>
     <p>Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">
       IoT installation media</a>
     </p>
+    
+      <p>Before booting your CM4 with the new image, edit config.txt on the boot
+      (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
+      line to ensure the USB ports on the IO board operate correctly</p>
     <dl>
       
     
@@ -57,7 +61,7 @@
     </dt>
     <dd>
       Reported "Mem" under "total" is consistent with a
-      Raspberry Pi 4 2GB1.6-1.8GB</dd>
+      Raspberry Pi Compute Module 4 4GB3.6-3.8GB</dd>
   
     <dt>
       Perform a large (300-600MB) file copy to USB storage
@@ -82,18 +86,6 @@
     <dd>
       <code>cmp</code> returns 0 and outputs nothing indicating the files are
       identical
-    </dd>
-  
-    <dt>
-      Connect a USB keyboard to one of the USB2 (black)</dt>
-    <dd>
-      Verify that keys typed on the keyboard appear on the console
-    </dd>
-  
-    <dt>
-      Connect a USB keyboard to one of the USB3 (blue)</dt>
-    <dd>
-      Verify that keys typed on the keyboard appear on the console
     </dd>
   
     <dt>
@@ -125,27 +117,6 @@
           alsa-utils</code></li>
         <li>Find the correct hardware output for the HDMI1 port<code>cat /proc/asound/cards</code> and note the number at the start
           of the line for the HDMI1 port</li>
-        <li>Attempt to play your MP3 file with: <code>mpg321 -o alsa -a
-          hw:<em>num</em>,0 <em>music.mp3</em></code> substituting
-          <em>num</em> for the number found during the previous step, and
-          <em>music.mp3</em> for your choice of MP3 file, e.g. <code>mpg321 -o
-          alsa -a hw:0,0 "Jeff Wayne - War of the
-          Worlds.mp3"</code></li>
-        <li>Use <tt>Ctrl+C</tt> to end playback early, if you wish</li>
-        <li>If you cannot hear anything, first check that the mixer's volume is
-          not set too low; run <code>alsamixer</code>, and adjust the volume
-          (<tt>J</tt> for down, <tt>K</tt> for up) before exiting
-          (<tt>Esc</tt>) and retrying playback</li>
-      </ul>
-    </dt>
-    <dd>Audio can be heard through the device</dd>
-  
-    <dt>
-      With a pair of headphones with a 3.5mm jack<ul>
-        <li>Install mpg321 and amixer with <code>sudo apt install mpg321
-          alsa-utils</code></li>
-        <li>Find the correct hardware output for the headphone jack<code>cat /proc/asound/cards</code> and note the number at the start
-          of the line for the headphone jack</li>
         <li>Attempt to play your MP3 file with: <code>mpg321 -o alsa -a
           hw:<em>num</em>,0 <em>music.mp3</em></code> substituting
           <em>num</em> for the number found during the previous step, and
