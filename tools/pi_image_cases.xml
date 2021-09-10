@@ -11,56 +11,57 @@ with a "ut:" prefix, it's part of the configuration. All unprefixed tags
 are HTML to include in the output.
 
 + The outermost element must be "ut:configuration"
-
-  + Directly under "ut:configuration" there must be one, and only one,
-    "ut:template" element. This contains the HTML used for all generated
-    test cases. Within the HTML you must include a *single* "ut:tests"
-    element which indicates the place within the template to include
-    the various tests for a given case.
-
-  + Directly under "ut:configuration", there must be one or more
-    "ut:test" elements. These define the individual tests to be carried
-    out by testers. Each "ut:test" element must have an "id" attribute
-    which uniquely identifies it; the identifier is any arbitrary string
-    and is not directly used in the output.
-
-    + Each "ut:test" element must contain a single "ut:action" element,
-      which contains the HTML describing the test to carry out
-      (e.g. "click this button and fill out a form")
-
-    + Each "ut:test" element must also contain a single "ut:expected"
-      element, which contains the HTML describing the expected outcome
-      of the test (e.g. "a sheet of paper is printed").
-
-  + Directly under "ut:configuration", there must be one or more "ut:case"
-    elements. Each of these defines a single test-case file to be written
-    to the output directory. Each "ut:case" element must have an "id"
-    attribute which uniquely identifies it; the identifier will be used
-    as the output filename for that case.
-
-    + Each "ut:case" element must contain one or more "ut:include"
-      elements. Each "ut:include" element must have a "ref" attribute
-      naming the "id" attribute of the "ut:test" element to include
-      in that case. Each test will be included in the output in the
-      order specified.
-
-    + Each "ut:case" element may contain zero or more "ut:define"
+|
+|-+ Directly under "ut:configuration" there must be one, and only one,
+|   "ut:template" element. This contains the HTML used for all generated
+|   test cases. Within the HTML you must include a *single* "ut:tests"
+|   element which indicates the place within the template to include
+|   the various tests for a given case.
+|
+|-+ Directly under "ut:configuration", there must be one or more
+| | "ut:test" elements. These define the individual tests to be carried
+| | out by testers. Each "ut:test" element must have an "id" attribute
+| | which uniquely identifies it; the identifier is any arbitrary string
+| | and is not directly used in the output.
+| |
+| |-+ Each "ut:test" element must contain a single "ut:action" element,
+| |   which contains the HTML describing the test to carry out
+| |   (e.g. "click this button and fill out a form")
+| |
+| \-+ Each "ut:test" element must also contain a single "ut:expected"
+|     element, which contains the HTML describing the expected outcome
+|     of the test (e.g. "a sheet of paper is printed").
+|
+\-+ Directly under "ut:configuration", there must be one or more "ut:case"
+  | elements. Each of these defines a single test-case file to be written
+  | to the output directory. Each "ut:case" element must have an "id"
+  | attribute which uniquely identifies it; the identifier will be used
+  | as the output filename for that case.
+  |
+  |-+ Each "ut:case" element must contain one or more "ut:include"
+  |   elements. Each "ut:include" element must have a "ref" attribute
+  |   naming the "id" attribute of the "ut:test" element to include
+  |   in that case. Each test will be included in the output in the
+  |   order specified.
+  |
+  \-+ Each "ut:case" element may contain zero or more "ut:define"
       elements. Each "ut:define" element must have a "name" attribute. The
       content of the "ut:define" element is HTML that will be substituted
       wherever a "ut:var" element (see below) exists with a matching
       "name" attribute. The name is an arbitrary string and is not otherwise
       used in the output.
 
-As the last item above hints, within any section of HTML you may
-include a "ut:var" element. The (mandatory) "name" attribute names
-the variable to substitute in that position. Variables are created
-with "ut:define" elements which may exist directly within a "ut:case"
-element (in which case they apply to all tests included in that case),
-or within a "ut:include" element (in which case they apply to just that
-included test).
+As the last item above hints, within any section of HTML you may include
+a "ut:var" element. The (mandatory) "name" attribute names the variable
+to substitute in that position. Variables are created with "ut:define"
+elements which may exist directly under "ut:configuration" (in which
+case they apply universally), within a "ut:case" element (in which case
+they apply to all tests included in that case), or within a "ut:include"
+element (in which case they apply to just that included test).
 
-If a variable with the same name is defined under both "ut:case" and a
-"ut:include" within that case, the "inner" definition overrides the outer.
+If a variable with the same name is defined in multiple contexts,
+e.g. within a "ut:case" and a "ut:include" within that case, the "inner"
+definition overrides the outer.
 -->
 
 <ut:configuration xmlns:ut="com.ubuntu.tests">

@@ -128,17 +128,18 @@ def substitute(doc, path, content):
         content = content_fun(doc, placeholder)
         parent = parent_map[placeholder]
         parent_index = list(parent).index(placeholder)
-        if parent_index == 0:
-            if parent.text is None:
-                parent.text = content.text
+        if content.text is not None:
+            if parent_index == 0:
+                if parent.text is None:
+                    parent.text = content.text
+                else:
+                    parent.text += content.text
             else:
-                parent.text += content.text
-        else:
-            prior = parent[parent_index - 1]
-            if prior.tail is None:
-                prior.tail = content.text
-            else:
-                prior.tail += content.text
+                prior = parent[parent_index - 1]
+                if prior.tail is None:
+                    prior.tail = content.text
+                else:
+                    prior.tail += content.text
         for elem in content:
             parent.insert(parent_index, elem)
             parent_index += 1
@@ -194,6 +195,16 @@ class TestConfiguration:
                     '<ut:config> element')
         self._action_tag = str(action_tag)
         self._expected_tag = str(expected_tag)
+        self._env = self._build_env(root=xml_config)
+
+    def _build_env(self, *, root):
+        try:
+            return {
+                elem.attrib['name']: elem
+                for elem in root.findall(f'./{ut.define}')
+            }
+        except KeyError:
+            raise ValueError('Missing "name" attribute in <ut:define>')
 
     def __iter__(self):
         for case_id, case in self._cases.items():
@@ -203,13 +214,8 @@ class TestConfiguration:
                 raise ValueError(f'In <ut:case id={case_id!r}>: {exc}')
 
     def _render_case(self, case):
-        try:
-            env = {
-                define.attrib['name']: define
-                for define in case.findall(f'./{ut.define}')
-            }
-        except KeyError:
-            raise ValueError('Missing "name" attribute in <ut:define>')
+        env = self._env.copy()
+        env.update(self._build_env(root=case))
         render = lambda doc, elem: self._render_var(doc, elem, env)
         return substitute(
             substitute(self._template, f'.//{ut.var}', render),
@@ -232,13 +238,7 @@ class TestConfiguration:
         except KeyError:
             raise ValueError(f'<ut:test id={test_ref!r}> not found')
         env = env.copy()
-        try:
-            env.update({
-                define.attrib['name']: define
-                for define in include.findall(f'./{ut.define}')
-            })
-        except KeyError:
-            raise ValueError('Missing "name" attribute in <ut:define>')
+        env.update(self._build_env(root=include))
         result = deepcopy(test)
         result.find(f'./{ut.action}').tag = self._action_tag
         result.find(f'./{ut.expected}').tag = self._expected_tag
