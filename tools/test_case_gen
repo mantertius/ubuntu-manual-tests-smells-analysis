@@ -134,15 +134,28 @@ def substitute(doc, path, content):
                     parent.text = content.text
                 else:
                     parent.text += content.text
+                last = parent
             else:
                 prior = parent[parent_index - 1]
                 if prior.tail is None:
                     prior.tail = content.text
                 else:
                     prior.tail += content.text
+                last = prior
         for elem in content:
-            parent.insert(parent_index, elem)
+            last = deepcopy(elem)
+            parent.insert(parent_index, last)
             parent_index += 1
+        if last is parent:
+            if last.text is None:
+                last.text = placeholder.tail
+            else:
+                last.text += placeholder.tail
+        else:
+            if last.tail is None:
+                last.tail = placeholder.tail
+            else:
+                last.tail += placeholder.tail
         parent.remove(placeholder)
     return doc
 
