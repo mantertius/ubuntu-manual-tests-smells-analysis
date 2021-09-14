@@ -3,7 +3,7 @@
      tools/pi_image_cases.xml
 -->
 
-    <p>This test case is to be carried out on a Raspberry Pi Compute Module 4 2GB</p>
+    <p>This test case is to be carried out on a Raspberry Pi Compute Module 4 2GB.</p>
     <p>Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">
       IoT installation media</a>
     </p>
@@ -11,6 +11,7 @@
       <p>Before booting your CM4 with the new image, edit config.txt on the boot
       (1st) partition and uncomment the <code>#dtoverlay=dwc2,dr_mode=host</code>
       line to ensure the USB ports on the IO board operate correctly</p>
+    
     <dl>
       
     
@@ -24,6 +25,7 @@
       the sequence, and that boot successfully concludes after resumption.
     </dd>
   
+    
     <dt>
       During the boot sequence, U-Boot starts interacting via serial (GPIO14
       and GPIO15, pins 8 and 10 respectively, on the 40-pin GPIO header). Press
@@ -35,6 +37,7 @@
       the sequence, and that boot successfully concludes after resumption.
     </dd>
   
+    
     <dt>
       Run <code>sudo flash-kernel</code>
     </dt>
@@ -42,6 +45,7 @@
       Exit code is clean (0) and no error messages are reported
     </dd>
   
+    
     <dt>
       Run <code>sudo reboot</code>
     </dt>
@@ -49,6 +53,7 @@
       System reboots successfully to a login prompt
     </dd>
   
+    
     <dt>
       Run <code>sudo shutdown -h now</code>
     </dt>
@@ -56,13 +61,16 @@
       System shuts down in a reasonable time (less than a minute)
     </dd>
   
+    
     <dt>
       Check output of <code>free -h</code>
     </dt>
     <dd>
       Reported "Mem" under "total" is consistent with a
-      Raspberry Pi Compute Module 4 2GB1.6-1.8GB</dd>
+      Raspberry Pi Compute Module 4 2GB. It should be in the region of 1.6-1.8GB.
+    </dd>
   
+    
     <dt>
       Perform a large (300-600MB) file copy to USB storage
       <ul>
@@ -88,13 +96,18 @@
       identical
     </dd>
   
+    
     <dt>
       With an HDMI monitor that supports audio plugged into
-      the HDMI0 output<ul>
+      the HDMI0 output, and an available MP3 file:
+      <ul>
         <li>Install mpg321 and amixer with <code>sudo apt install mpg321
           alsa-utils</code></li>
-        <li>Find the correct hardware output for the HDMI0 port<code>cat /proc/asound/cards</code> and note the number at the start
-          of the line for the HDMI0 port</li>
+        <li>Find the correct hardware output for the HDMI0 port:
+          <code>cat /proc/asound/cards</code> and note the number at the start
+          of the line for the HDMI0 port (usually 0 and possibly
+          1 for any connected monitor(s), and 1 or possibly 2 for the headphone
+          jack)</li>
         <li>Attempt to play your MP3 file with: <code>mpg321 -o alsa -a
           hw:<em>num</em>,0 <em>music.mp3</em></code> substituting
           <em>num</em> for the number found during the previous step, and
@@ -110,13 +123,18 @@
     </dt>
     <dd>Audio can be heard through the device</dd>
   
+    
     <dt>
       With an HDMI monitor that supports audio plugged into
-      the HDMI1 output<ul>
+      the HDMI1 output, and an available MP3 file:
+      <ul>
         <li>Install mpg321 and amixer with <code>sudo apt install mpg321
           alsa-utils</code></li>
-        <li>Find the correct hardware output for the HDMI1 port<code>cat /proc/asound/cards</code> and note the number at the start
-          of the line for the HDMI1 port</li>
+        <li>Find the correct hardware output for the HDMI1 port:
+          <code>cat /proc/asound/cards</code> and note the number at the start
+          of the line for the HDMI1 port (usually 0 and possibly
+          1 for any connected monitor(s), and 1 or possibly 2 for the headphone
+          jack)</li>
         <li>Attempt to play your MP3 file with: <code>mpg321 -o alsa -a
           hw:<em>num</em>,0 <em>music.mp3</em></code> substituting
           <em>num</em> for the number found during the previous step, and
@@ -132,18 +150,22 @@
     </dt>
     <dd>Audio can be heard through the device</dd>
   
+    
     <dt>
       Check auto-configuration of ethernet
       <ul>
         <li>Run <code>ip addr</code></li>
-        <li>Check that a valid IP address is recorded on the eth0</li>
+        <li>Check that a valid IP address is recorded on the eth0 interface</li>
         <li>Check <code>ping google.com</code> successfully pings a few times
           (<tt>Ctrl+C</tt> to cancel)</li>
       </ul>
     </dt>
     <dd>
-      The "eth0</dd>
+      The "eth0" interface should have a DHCP
+      assigned IP address and you should be able to ping google.com
+    </dd>
   
+    
     <dt>
       Configure wifi via netplan
       <ul>
@@ -153,19 +175,27 @@
       network:
         version: 2
           wifis:
-            wlan0</pre>
+            wlan0:
+              dhcp4: true
+              access-points:
+                my-ssid-here:
+                  password: my-password-here</pre>
         </li>
         <li>Run <code>sudo netplan apply</code></li>
         <li>Wait a few seconds (to allow DHCP to complete), then run <code>ip
           addr</code></li>
-        <li>Check that a valid IP address is recorded on the wlan0</li>
+        <li>Check that a valid IP address is recorded on the wlan0 interface</li>
         <li>Check <code>ping google.com</code> successfully pings a few times
           (<tt>Ctrl+C</tt> to cancel)</li>
       </ul>
     </dt>
     <dd>
-      The "wlan0</dd>
-  </dl>
+      The "wlan0" interface should have a DHCP
+      assigned IP address and you should be able to ping google.com
+    </dd>
+  
+  
+    </dl>
     <p>If <strong>all</strong> actions produce the expected results listed,
       please <a href="results#add_result">submit</a> a 'passed' result.</p>
     <p>If <strong>any</strong> action fails, or produces an unexpected result,
