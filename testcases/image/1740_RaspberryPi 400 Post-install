@@ -3,7 +3,7 @@
      tools/pi_image_cases.xml
 -->
 
-    <p>This test case is to be carried out on a Raspberry Pi 4 4GB.</p>
+    <p>This test case is to be carried out on a Raspberry Pi 400.</p>
     
     <p>Follow the installation steps at <a href="https://ubuntu.com/download/iot/installation-media">
       IoT installation media</a>
@@ -63,7 +63,7 @@
     </dt>
     <dd>
       Reported "Mem" under "total" is consistent with a
-      Raspberry Pi 4 4GB. It should be in the region of 3.6-3.8GB.
+      Raspberry Pi 400. It should be in the region of 3.6-3.8GB.
     </dd>
   
     
