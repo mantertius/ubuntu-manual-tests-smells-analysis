@@ -491,7 +491,7 @@ definition overrides the outer.
   </ut:case>
 
   <ut:case id="1740_RaspberryPi 400 Post-install">
-    <ut:define name="model">Raspberry Pi 4 4GB</ut:define>
+    <ut:define name="model">Raspberry Pi 400</ut:define>
     <ut:include ref="uboot-video" />
     <ut:include ref="uboot-serial" />
     <ut:include ref="flash-kernel" />
