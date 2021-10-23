@@ -1,4 +1,5 @@
 This test will check that the Printers configuration tool opens correctly
+<!-- Smells: UNVERIFIED STEPS -->
 <dl>
     <dt>Disconnect any locally connected printers from your computer</dt>
     <dt>Open 'Printers' from your FAMILY menu or enter system-config-printer from a terminal</dt>
@@ -21,6 +22,7 @@ This test will check that the printer prints
         <dd>The test page prints</dd>
 </dl>
 
+<!-- Smells: UNVERIFIED STEPS -->
 This test will check that a new printer can be added
 <dl>
     <dt>From the menu, select Server->New->Printer</dt>
@@ -40,6 +42,7 @@ This test will check that a new printer can be added
         <dd>The test page prints</dd>
 </dl>
 
+<!-- Smells: UNVERIFIED STEPS -->
 This test will check that the default printer can be changed
 <dl>
     <dt>Right-click on the printer icon that does not show a green check mark</dt>
@@ -56,6 +59,7 @@ This test will check that the default printer can be changed
         <dd>The yellow star is replaced by a green check mark on the printer icon indicating that this is now the system-wide default printer</dd>
 </dl>
 
+<!-- Smells: UNVERIFIED STEPS -->
 This test will check that printers can be deleted
 <dl>
     <dt>Right-click on one of the printer icons and select 'Delete' from the menu</dt>
@@ -66,11 +70,13 @@ This test will check that printers can be deleted
         <dd>The printer icon disappears and the dialog now indicates 'There are no printers configured yet.'</dd>
 </dl>
 
+<!-- Smells: UNVERIFIED STEPS, PRE-STEP AS STEP -->
 This test will check that a printer can be shared from another computer
 Note: this test is optional and requires a second computer running a *buntu flavor
 <dl>
     <dt>Connect the printer to the other computer which will act as the "server"</dt>
     <dt>Open 'Printers' from the FAMILY menu on that computer</dt>
+        <!-- <dd> Printers app is supposed to open</dd>     -->
     <dt>From the menu, select Server->Settings</dt>
         <dd>The 'Server Settings' dialog opens</dd>
     <dt>Confirm that 'Publish shared printers connected to this system' is checked</dt>

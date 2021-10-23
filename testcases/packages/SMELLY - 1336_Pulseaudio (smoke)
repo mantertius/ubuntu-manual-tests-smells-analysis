@@ -9,6 +9,7 @@ Tests should be performed to make sure PulseAudio is properly recognising your a
         <dd>The output and input pages should list all detected hardware, both internal and USB, and allow for volume adjustment</dd>
 </dl>
 
+<!-- Smells: UNVERIFIED STEPS, QUESTIONING STEPS??-->
 Test-case name: pulseaudio/pulseaudio-002
 General PulseAudio tests.
 <dl>
