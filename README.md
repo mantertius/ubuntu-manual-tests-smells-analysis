@@ -16,7 +16,7 @@ These are the ones that we have found so far:
 9. EAGER TEST: a test where the a part of the ER session could be tested by another step, i.e. there's two ERs to only one step
 10. CONDITIONAL TEST LOGIC: a step that changes the flow of testing based on some conditional. If there is more than one way to execute the test, the different ways should be different tests. Generally stars with "If";
 11. UNSPECIFIED PARAMETER: occurs when a test or a step comes without a specified parameter, i.e. the tester doesnt knows what to test. May contain "all".
-
+12. QUESTIONING EXPECTED RESULT: a expected result that makes a question instead of being assertive. 
 
 
 
