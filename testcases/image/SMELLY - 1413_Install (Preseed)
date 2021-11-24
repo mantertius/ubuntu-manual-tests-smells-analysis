@@ -4,7 +4,7 @@ Scope of this test is to verify that the system is installed in itself starting 
     This will cause the complete loss of any data then in the hard drive. We strongly recommend you to use a 'trash and burn' system -- i.e., a system you do not mind losing the contents of the hard drive(s). Virtual machines are also a good option (and a nice helper to boot an Ubuntu ISO is testdrive). It is also a good idea to disconnect any external hard drive(s) you do not want to participate in the reformatting.
     On a trash and burn server, boot the Ubuntu Server ISO (or, for VMs, run testdrive, and select either an i386 or an amd64 server image -- should be options 2 or 7).
 </strong>
-
+<!--Smells: UNVERIFIED STEPS -->
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 
 <dl>
