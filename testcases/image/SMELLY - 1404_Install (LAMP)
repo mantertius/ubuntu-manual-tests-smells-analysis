@@ -31,8 +31,10 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>Test Apache:</dt>
         <dd>w3m http://127.0.0.1/</dd>
         <dd>Press q and confirm to exit</dd>
+    <!-- SMELL: NESTED TEST -->
     <dt>Test MySQL:</dt>
         <dd>sudo mysql</dd>
+        <!-- SMELL: NON-DETERMINISTIC STEP -->
         <dd>You should then be presented with a mysql prompt mysql> where you can enter some mysql commands:</dd>
         <pre>show databases; connect mysql; select host,user from user;</pre>
         <dd>that will produce an output like:
