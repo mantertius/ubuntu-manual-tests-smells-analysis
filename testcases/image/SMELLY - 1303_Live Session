@@ -13,7 +13,7 @@ Test-case Live Session Start
 
 Test-case Live Session Usage
 <dl>
-    <!-- What are the default applications? -->
+    <!-- What are the default applications? SMELL: UNSPECIFIED PARAMETER -->
     <dt>Use and execute the default applications found for the desktop enviroment being run</dt>
         <dd>All applications should function without error</dd>
 </dl>

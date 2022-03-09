@@ -1,7 +1,7 @@
 This testcase is intended to test for issues surrounding one specific bug.
 
 For this test - Thunar window fails to refresh correctly when renaming files. 
-
+<!-- smells: unverified steps -->
 <dl>
     <dt>Open Thunar, create a folder in a location of your choosing</dt>
     <dt>Open a terminal at this location and run the following 2 commands in sequence</dt>
