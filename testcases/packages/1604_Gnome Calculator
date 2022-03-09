@@ -1,5 +1,6 @@
 This test will check that Gnome Calculator can be opened either from a terminal window or from the applications menu, and shutdown
 <dl>
+    <!--  -->
     <dt>Open a terminal window, type <code>gnome-calculator</code> at the prompt and hit the "Enter" key</dt>
         <dd>Calculator opens</dd>
     <dt>Click the top right "X" of the window's title bar to close the application</dt>
@@ -15,6 +16,7 @@ This test will check that Gnome Calculator's Application menu options work as ex
         <dd>Equations are entered in standard mathematical form. For example to add 7 and 2 enter the following: 7+2</dd>
     <dt>Navigate to Mode -> Advanced</dt>
         <dd>Calculator's GUI changes to provide buttons suitable for advanced mathematics such as Trigonometry</dd>
+        <!-- OMISSION OF STEPS -->
         <dd>Trigonometry calculations can be performed using the sin, cos, and tan functions. For example sin 45</dd>
     <dt>Navigate to Mode -> Financial</dt>
         <dd>Calculator's GUI changes to provide buttons suitable for financial equations</dd>
