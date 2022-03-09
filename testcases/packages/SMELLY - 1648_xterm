@@ -3,6 +3,7 @@ This test will check that Xterm can execute commands
     <dt>Launch Xterm</dt>
         <dd>Xterm opens, showing a command prompt screen by default</dd>
     <dt>Enter 'ls' command in the prompt</dt>
+    <!-- NON-DETERMINISTIC EXPECTED RESULT -->
         <dd>The result for 'ls' command is displayed</dd>
     <dt>Enter 'exit' command in the prompt</dt>
         <dd>The Xterm window is closed</dd>

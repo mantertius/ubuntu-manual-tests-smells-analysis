@@ -4,6 +4,7 @@ This test will check that VLC can open an audio file
 <dl>
     <dt>Launch VLC</dt>
         <dd>VLC media player opens, showing one window by default</dd>
+    <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select an audio file and press Open</dt>
         <dd>The selected audio is played</dd>
     <dt>Click on 'stop playback' button at the bottom</dt>
@@ -12,6 +13,7 @@ This test will check that VLC can open an audio file
 
 This test will check that VLC can open an video file
 <dl>
+    <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select a video file and press Open</dt>
         <dd>The selected video is played</dd>
     <dt>Click on 'stop playback' button at the bottom</dt>
@@ -20,32 +22,35 @@ This test will check that VLC can open an video file
 
 This test will check VLC track slider
 <dl>
+    <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select a video/audio file and press Open</dt>
-	<dd>The selected video/audio is played</dd>
+	    <dd>The selected video/audio is played</dd>
     <dt>In the bottom of window change current playing time by clicking at the random place of the VLC track slider<dt>
-	<dd>Played audio/video timing changed, audio/video still playing</dd> 
+	    <dd>Played audio/video timing changed, audio/video still playing</dd> 
 </dl>
 
 This test will check VLC volume control
 <dl>
+    <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select a video/audio file and press Open</dt>
-	<dd>The selected video/audio is played</dd>
+	    <dd>The selected video/audio is played</dd>
     <dt>In the bottom right corner of the window change volume by moving green slider in triangle</dt>
-	<dd>Playback volume changed</dd>
+        <dd>Playback volume changed</dd>
     <dt>In the bottom right corner of the window press "mute" icon (small speaker icon)</dt>
-	<dd>Playback volume muted</dd>
+    	<dd>Playback volume muted</dd>
 </dl>
 
 This test will check VLC control panel
 <dl>
+    <!-- EAGER STEP -->
     <dt>Go to Media > Click on 'Open File'..., select two different video/audio files and press Open</dt>
-	<dd>The selected video/audio is played</dd>
+	    <dd>The selected video/audio is played</dd>
     <dt>Click on "Pause the playback" button at the bottom</dt>
-	<dd>The selected video/audio is paused</dt>
+	    <dd>The selected video/audio is paused</dt>
     <dt>Click on "Play" button at the bottom</dt>
-	<dd>Video/audio is resumed from where it was paused</dt>
+	    <dd>Video/audio is resumed from where it was paused</dt>
     <dt>Click on "Next media" button at the bottom</dt>
-	<dd>The next file in the list starts playing</dd>
+	    <dd>The next file in the list starts playing</dd>
     <dt>Click on 'Stop playback' button at the bottom</dt>
         <dd>The video is stopped</dd>
 </dl>

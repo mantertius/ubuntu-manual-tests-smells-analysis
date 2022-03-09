@@ -12,6 +12,7 @@ This test will check that applications launch correctly from the menu
 This test will check that Favourites can be added/removed and that Recently Used is populated
 
 <dl>
+    <!-- NON DETERMINISTIC STEP -->
     <dt>Highlight any application from the menu, right click and <em>Add to Favourites</em></dt>
     <dt>Select Favourites in menu</dt>
         <dd>Chosen application appears in Favourites</dd>
@@ -33,6 +34,7 @@ This test will check that applications can be pinned to Desktop and Panel from w
 This test will check that Favourites menu can be sorted alphabetically
 
 <dl>
+    <!-- NON DETERMINISTIC STEP -->
     <dt>Select and add a number of applications from the menu to Favourites</dt>
         <dd>New applications appear in Favourites menu</dd>
     <dt>Right click on any application and <em>Sort Alphabetically A-Z</em></dt>

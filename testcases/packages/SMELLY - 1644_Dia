@@ -2,12 +2,14 @@ This test will check that Dia can open an image file
 <dl>
     <dt>Launch Dia</dt>
         <dd>Dia opens, showing one window by default</dd>
+    <!-- EAGER STEP -->
     <dt>Go to File > Open..., select an image and press Open</dt>
         <dd>The picture is displayed in Dia main window</dd>
 </dl>
 
 This tests that Dia can be used to create a Flow Chart
 <dl>
+    <!-- EAGER STEP -->
     <dt>Goto File > New...,</dt>
         <dd>Dia creates an empty .dia file to work on</dd>
     <dt>Click the "Box" button in the toolbox </dt>

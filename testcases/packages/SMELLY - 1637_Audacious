@@ -37,6 +37,7 @@ This test will check that Audacious can play midi files.
         <dd>Audacious starts without an issue</dd>
     <dt>Click on "File" and "Preferences"</dt>
         <dd>A window opens, showing various settings</dd>
+    <!-- EAGER STEP -->
     <dt>Click on "Plugins" and then the "Input" tab</dt>
         <dd>This lists all the input plugins</dd>
     <dt>Click on AMIDI-Plug (MIDI Player) and then the "Preferences" button</dt>
@@ -44,6 +45,7 @@ This test will check that Audacious can play midi files.
     <dt>On the AMIDI Plug tab, select the FluidSynth Backend</dt>
     <dt>Click the "FluidSynth backend" tab, and then click the "+" button on the top right</dt>
         <dd>A window opens, asking for a file to be selected</dd>
+    <!-- UNVERIFIED STEPS  -->
     <dt>Select a soundfont file and click on "Open"</dt>
     <dt>Click on "OK" to close the AMIDI-Plug Settings, and then "Close" the Preferences window</dt>
     <dt>Click on "File" and "Open Files"</dt>
@@ -71,6 +73,7 @@ This test will check that the equalizer and effects are working properly.
         <dd>Audacious playbacks the file again</dd>
     <dt>In the menu bar, click on "Output" and then on "Equalizer"</dt>
         <dd>The equalizer window opens</dd>
+    <!-- NON-DETERMINISTIC STEP -->
     <dt>Tick "Enable". Try to change some of the sound levels</dt>
         <dd>The sound alters while playing around with the sound levels</dd>
     <dt>Untick "Enable" and close the equalizer window</dt>
