@@ -14,6 +14,7 @@ This test will check that Xfce4 Accessibility Settings opens either from a termi
 
 This test will check that Xfce4 Accessibility Settings allows to enable and configure Assistive Technologies
 <dl>
+    <!-- OMISSION OF STEPS -->
     <dt>Open Accessibility either from a terminal window or from the applications menu</dt>
         <dd>Accessibility dialogue window opens with the 'Assistive Technologies' tab selected</dd>
     <dt>Tick the 'Enable Assistive Technologies' checkbox</dt>

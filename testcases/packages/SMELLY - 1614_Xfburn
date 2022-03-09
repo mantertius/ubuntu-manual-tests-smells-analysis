@@ -9,9 +9,12 @@ This test will check that "New Audio Composition" Works
     <dt>Click "New Audio Composition"</dt>
         <dd>You should see a new tab called "Audio composition 1"</dd>
     <dt>Press the "Add" button (+)</dt>
+        <!-- CONDITIONAL TEST LOGIC -->
         <dd>If this is your first time a message appears about adding your home directory</dd>
         <dd>A new window asking for files appears</dd>
     <dt>Select several music files</dt>
+        <!-- THE FILES ARE ADDED WITHOUT CONFIRMATION????? AMBIGUOUS TEST -->
+        <!-- EAGER TEST -->
         <dd>The files are added to the project</dd>
         <dd>All information about the files is displayed: Pos, Length, Filename</dd>
         <dd>The size bar will contains information now</dd>
@@ -21,6 +24,7 @@ This test will check that "New Audio Composition" Works
     <dt>Click on "Clear" button</dt>
         <dd>All files are remove</dd>
     <dt>Add again new files, press the "Add" button (+)</dt>
+    <!-- UNVERIFIED STEPS -->
     <dt>Click on "Proceed to Burn"</dt>
 </dl>
 
