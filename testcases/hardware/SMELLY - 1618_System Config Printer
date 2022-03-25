@@ -70,7 +70,7 @@ This test will check that printers can be deleted
         <dd>The printer icon disappears and the dialog now indicates 'There are no printers configured yet.'</dd>
 </dl>
 
-<!-- Smells: UNVERIFIED STEPS, PRE-STEP AS STEP -->
+<!-- Smells: UNVERIFIED STEPS, PRE CONDITION AS STEP -->
 This test will check that a printer can be shared from another computer
 Note: this test is optional and requires a second computer running a *buntu flavor
 <dl>

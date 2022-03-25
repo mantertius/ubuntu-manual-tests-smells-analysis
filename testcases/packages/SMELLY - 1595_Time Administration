@@ -24,12 +24,15 @@ This test will check that the time zone can be changed
         <dd>That region/city is displayed in the 'Time zone:' field under 'Selection'</dd>
     <dt>Click the 'Close' button</dt>
         <dd>You are returned to the 'Time and Date Settings' dialog, the new time zone is displayed and the time is updated correctly for that zone</dd>
+        <!-- EAGER TEST -->
         <dd>The time displayed on the panel clock is also updated but this could take up to a minute</dd>
+
     <dt>Click on 'Time zone:' again and change it back to the correct zone.</dt>
 </dl>
 
 This test will check that the time can be set manually
 <dl>
+    <!-- PRE CONDITION AS STEP -->
     <dt>In the 'Time and Date Settings' dialog confirm that 'Configuration:' is set to 'Manual'</dt>
     <dt>Move the clock ahead by 10 minutes by clicking the '+' button or directly entering a number in the minutes field</dt>
         <dd>After some delay, the clock on the panel displays the new, incorrect time</dd>
@@ -54,6 +57,7 @@ This test will check that time can be synchronized with Internet servers
 
 This test will check that the Help file opens and is current
 <dl>
+    <!-- UNVERIFIED STEPS -->
     <dt>Click the 'Help' button</dt>
         <dd>The Time Administration help file opens</dd>
     <dt>Scroll through the file to make sure the screens and settings match the installed version</dt>
