@@ -6,6 +6,7 @@ Manual testcase for Gmusicbrowser
 The following tests expect you to be on the Songtree view (launched by default on first launch) unless otherwise specified.
 This test ensures you are able to set up a collection
 <dl>
+    <!-- unverified step -->
     <dt>Click on the Settings icon (top-right corner) and select Library -> Add music</dt>
     <dt>Select a directory with media files inside and click "OK"</dt>
         <dd>Songs are added to the library and become visible in the Songtree view, grouped according to the tags in the media files</dd>
@@ -53,6 +54,7 @@ This test ensures you are able to sort your collection
 This test ensures the installed plugins are working as expected
 Please note that in order for these plugins to work correctly, you need to be connected to the internet.
 <dl>
+    <!-- conditonal test -->
     <dt>Click on the "Lyrics" tab on the left sidebar</dt>
         <dd>If the tracks have lyrics and they are found from the various lyrics online sites that gmusicbrowser queries subsequently, the lyrics are shown</dd>
     <dt>Click on the "Album" tab on the left sidebar</dt>

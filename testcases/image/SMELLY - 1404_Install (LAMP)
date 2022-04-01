@@ -1,7 +1,7 @@
 Scope of this test is to verify that the system is installed, you can login into it, Apache and MySQL are working.
 
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
-<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP, TEST INSIDE A TEST -->
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP, NESTED TEST, NON-DETERMINISTIC STEP -->
 <dl>
     <dt>Boot up the image</dt>
     <dt>Choose the desired language</dt>

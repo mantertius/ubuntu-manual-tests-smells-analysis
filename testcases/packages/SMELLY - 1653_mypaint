@@ -2,6 +2,7 @@ This test will check that mypaint can save a drawing
 <dl>
     <dt>Launch mypaint</dt>
         <dd>Mypaint opens, showing a small dot on the window to draw</dd>
+        <!-- UNSPECIFIED PARAMETER -->
     <dt>Draw anything with the cursor and Select "File" > "Save" from the "MyPaint" dropdown box</dt>
         <dd>The drawing will be saved</dd>
 </dl>
@@ -10,6 +11,7 @@ This test will check that mypaint can open an image file
 <dl>
     <dt>Select "File" > "Open" from the "MyPaint" dropdown box</dt>
         <dd>A window will be opened with the list of images from our system</dd>
+    <!-- UNSPECIFIED PARAMETER -->
     <dt>Select an image and click on "Open" button</dt>
         <dd>The image is displayed in the mypaint window</dd>
 </dl>

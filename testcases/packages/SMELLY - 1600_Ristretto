@@ -6,16 +6,19 @@ This test will check that Ristretto can start and shutdown.
         <dd>Ristretto starts up and the main window is visible on the screen.</dd>
     <dt>Select File->Quit to exit the application</dt>
         <dd>The application quits without any errors</dd>
+    <!-- OMISSION OF STEP -->
     <dt>From an open terminal window, start Ristretto by typing "ristretto" (no quotes) and press the Enter key.</dt>
         <dd>Ristretto starts up and the main window is visible on the screen.</dd>
     <dt>Click the X on the window title bar to close the application</dt>
         <dd>The application quits without any errors</dd>
+    <!-- CONDITIONAL TEST -->
     <dt>From within the File Manager, right-click on an image file and Select "Open with Ristretto". If that option does not exist, select "Open With..." and either Select Ristretto from the list or choose the "Open With Other Application" and select Ristretto from the list.</dt>
         <dd>Ristretto starts and opens the image that you right-clicked on.</dd>
 </dl>
 
 This test will verify that the File menu options work properly.
 <dl>
+    <!-- PRE CONDITION AS STEP -->
     <dt>Ensure that ristretto is loaded. Select File->Open, select and image, and select "Open".</dt>
         <dd>The image opens and is displayed in ristretto's main window. In addition, if other images exist in the folder that the opened image was in, their thumbnails show up in the thumbnail bar to the left of the image.</dd>
     <dt>Select File->Save Copy and save a copy of the file in another directory.</dt>

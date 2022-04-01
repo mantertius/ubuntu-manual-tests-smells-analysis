@@ -1,5 +1,5 @@
 Tests FAMILY's ability to use an internal microphone.
-<!-- Smells: UNVERIFIED STEPS -->
+<!-- Smells: UNVERIFIED STEPS, PCAT -->
 <dl>
     <dt>Check that no external microphones are connected to the computer.</dt>
     <dt>Right click on the Volume Control icon on the right side of the top panel</dt>

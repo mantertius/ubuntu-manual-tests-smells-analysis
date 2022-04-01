@@ -1,7 +1,7 @@
 <strong>Suspend/Resume smoke test</strong>
 
 Case ID: snr-001
-<!-- Smells: UNVERIFIED STEPS, MAGIC VALUES (10s) -->
+<!-- Smells: UNVERIFIED STEPS, UNSPECIFIED PARAMETER -->
 <dl>
     <dt>Open a few applications in on the desktop</dt>
     <dt>Look at the top-right corner of your screen, you should find the session icon alongside of your user-name, click on it to get a drop-down menu</dt>
