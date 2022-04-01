@@ -66,6 +66,7 @@ This test will check the thumbnail capability of Catfish
     <dt>Enter your password and Enter</dt>
         <dd>Password box closes</dd>
         <dd>Update Search Index box shows index being updated</dd>
+        <!-- HOW TO KNOW HOW MUCH TIME WE SHOULD WAIT? UNSPECIFIED WAIT TIME -->
     <dt>When Search Index reports Locate database updated successfully, click Close</dt>
         <dd>Search Index box closes</dd>
     <dt>Search for "screenshot"</dt>

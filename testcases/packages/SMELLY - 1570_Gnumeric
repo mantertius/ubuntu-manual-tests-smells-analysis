@@ -19,6 +19,7 @@ This test will check that Gnumeric will open a Gnumeric file
 
 This test will check that Gnumeric accepts input and Save As
 <dl>
+    <!-- unspecified parameter -->
     <dt>Enter some data in cells</dt>
         <dd>Data entered appears in cells as typed</dd>
     <dt>Press Shift+Ctrl+S</dt>

@@ -10,6 +10,7 @@ This test will check that simple-scan can be started.
 This test will check that simple-scan can scan and then save files.
 
 <dl>
+    <!-- UNSPECIFIED PARAMETER -->
     <dt>Put a document into the scanner and Click "Scan".</dt>
         <dd>Has the document Scanned?</dd>
         <dd>Has the Scanned Document been displayed on screen?</dd>
@@ -53,6 +54,7 @@ This test will check that simple-scan can scan change image rotation.
 This test will check that simple-scan can Stop a scan.
 
 <dl>
+    <!-- EXCEPTION HANDLING -->
     <dt>Put a document into the scanner and Click "Scan". After the scan begins, click "Stop the current scan"</dt>
         <dd>Did simple-scan stop the current scan?</dd>
 </dl>

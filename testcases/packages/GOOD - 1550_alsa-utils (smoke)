@@ -1,6 +1,7 @@
 Test-case name: alsa-utils/alsa-utils-001
 Tests should be performed to make sure ALSA is properly recognising your audio hardware.
 <dl>
+    <!-- EVEN THOUGH IT SAYS ALL CARDS, IT IS -->
     <dt>Check the output of aplay -l</dt>
         <dd>Aplay should list all cards that have an output</dd>
     <dt>Check arecord -l</dt>

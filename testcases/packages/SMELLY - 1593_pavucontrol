@@ -10,8 +10,10 @@ This test will check that pavucontrol opens and closes without error
 
 This test will check that Playback options work correctly
 <dl>
+    
     <dt>Open pavucontrol, hover mouse over playback stream volume levels, using mouse wheel change volume</dt>
         <dd>Volume of audio decreases and increases in response to volume change</dd>
+    <!-- press what?? unspecified parameter -->
     <dt>Select the padlock icon next to sound output and press</dt>
         <dd>Padlock raises</dd>
     <dt>Select one audio channel and using mouse wheel change volume</dt>
@@ -31,6 +33,7 @@ This test will check that pavucontrol applies Output Devices options correctly
         <dd>Dialogue changes to show available hardware</dd>
     <dt>Select stream and change output level with mouse</dt>
         <dd>Audio volume changes in response</dd>
+        <!-- CONDITIONAL TEST -->
     <dt><b>If more than one hardware device is available</b>, set output in Playback tab</dt>
     <dt>Select stream and change output level for new hardware device with mouse</dt>
         <dd>Audio volume changes in response</dd>

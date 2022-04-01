@@ -4,6 +4,7 @@ This test will check that transmission manage torrents correctly
         <dd>Transmission opens correctly</dd>
     <dt> Click on "Open a Torrent" button</dt>
         <dd>A new window appears</dd>
+    <!-- unspecified parameter... there is not a prerequisit of having a torrent file. -->
     <dt>Select a torrent file</dt>
         <dd>The torrent starts to be downloaded</dd>
     <dt>Click on "Pause Torrent" button</dt>
@@ -44,6 +45,7 @@ This test will check that the Torrent menu Works
         <dd>The torrent starts correctly</dd>
     <dt>Try to get the same result using the key-combinations: Start(Ctrl+S), Pause(Ctrl+P) and Start Now(Shift+Ctrl+S)</dt>
         <dd>No issues are encounted</dd>
+    <!-- UNVERIFIED STEP -->
     <dt>Add at least three torrents</dt>
     <dt>Click on "Queue" and try the options (Move to Top, Move Up, Move Down and Move to Bottom)</dt>
         <dd>No issues are encounted</dd>

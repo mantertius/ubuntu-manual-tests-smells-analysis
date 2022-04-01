@@ -12,6 +12,7 @@ This test will check that Gigolo allows to configure a connection and connects t
 <dl>
     <dt>Navigate to Actions -> Connect or point your mouse pointer to the 'Connect' icon and click it</dt>
         <dd>The 'Connect to Server' dialog window opens</dd>
+    <!-- UNSPECIFIED PARAMETER -->
     <dt>Click on the 'Service type' drop-list and choose a communication protocol from the list, define 'Server' and 'Share' address or names, when applicable, and click the 'Connect' button</dt>
         <dd>The connection with the remote filesystem is established</dd>
 </dl>

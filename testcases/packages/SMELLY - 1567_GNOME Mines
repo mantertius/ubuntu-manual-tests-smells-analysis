@@ -6,6 +6,7 @@ This tests that GNOME Mines will open
 
 This tests the main functionality of GNOME Mines
 <dl>
+    <!-- UNVERIFIED STEPS   -->
     <dt>Click "8x8 10 mines"</dt>
         <dd>A new game starts in an 8x8 grid</dd>
     <dt>Play the game till you hit a mine</dt>

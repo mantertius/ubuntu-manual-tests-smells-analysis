@@ -1,5 +1,6 @@
 This test will check that gThumb can be opened either from a terminal window, from the applications menu or by right-clicking on an image file, and shutdown
 <dl>
+    <!-- EAGER STEP? -->
     <dt>Open a terminal window, type <code>gthumb</code> at the prompt and hit the "Enter" key</dt>
         <dd>gThumb opens</dd>
     <dt>Click the top right "X" of the window's title bar to close the application</dt>
@@ -10,6 +11,7 @@ This test will check that gThumb can be opened either from a terminal window, fr
         <dd>gThumb opens</dd>
     <dt>Navigate to File -> Quit</dt>
         <dd>gThumb closes</dd>
+    <!-- EAGER STEP, UNSPECIFIED PARAMETER -->
     <dt>Open the File Manager, right-click on an image file and select the "Open with gThumb" option</dt>
         <dd>gThumb opens the right-clicked image</dd>
 </dl>
@@ -40,6 +42,7 @@ This test will check that gThumb's File menu options work as expected
         <dd>Selected file(s)/folder(s) are imported and displayed in the browser view in gThumb window main area</dd>
     <dt>Select an image file from the browser view in gThumb window main area and and navigate to File -> Export To</dt>
         <dd>A drop-down menu appears to the right</dd>
+    <!-- CONDITIONAL TEST -->
     <dt>Select one of the options to export the image to</dt>
         <dd>A dialogue window opens</dd>
         <dd>Depending on the selected service an authorization prompt might be displayed prior to the opening of the dialogue window</dd>
@@ -53,6 +56,7 @@ This test will check that gThumb's Edit menu options work as expected
 <dl>
     <dt>Open gThumb either from a terminal window or from the applications menu ensuring that it's displaying images from a directory containing multiple images</dt>
         <dd>gThumb opens</dd>
+    <!-- UNSPECIFIED PARAMETER -->
     <dt>Select an image file from the browser view in gThumb window main area and navigate to Edit -> Cut or alternatively hit Ctrl+X keys</dt>
         <dd>Selected image is copied to the system clipboard</dd>
     <dt>Navigate to the destination folder using the folder tree and use Edit -> Paste, or press Ctrl+V, to complete the file transfer</dt>
@@ -127,6 +131,7 @@ This test will check that gThumb's View menu options work as expected
 
 This test will check that gThumb's Go menu options work as expected
 <dl>
+    <!-- UNSPECIFIED PARAMETER -->
     <dt>Open gThumb either from a terminal window or from the applications menu</dt>
         <dd>gThumb opens</dd>
     <dt>Change the current directory to another one in the folder tree and then navigate to Go -> Back or alternatively hit Alt+Left keys</dt>
@@ -215,6 +220,7 @@ This test will check that gThumb's toolbar buttons work as expected
         <dd>A menu drops down providing options to manipulate the orientation, format conversion, resizing, changing date, deleting and importing metada of images</dd>
     <dt>Click the "Share" toolbar icon</dt>
         <dd>A menu drops down providing options to export the image to Photo-Sharing Web Sites, local Web albums and Contact sheets</dd>
+        <!-- CONDITIONAL TEST -->
         <dd>Depending on the selected service an authorization prompt might be displayed</dd>
     <dt>Select an image file from the browser view in gThumb window main area and click the "Edit file" toolbar icon</dt>
         <dd>A toolbar at the right of gThumb's window is displayed, providing several tools to manipulate images</dd>

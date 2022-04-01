@@ -13,6 +13,7 @@ This test will check that a device, when plugged in, triggers a Device entry, mo
     <dt>Plug in a USB</dt>
         <dd>A new Thunar window opens, Device appears in left pane within Devices section and selected</dd>
         <dd>Main Thunar window shows expected contents and location selector shows path</dd>
+    <!-- UNVERIFIED STEP -->
     <dt>Right click device in Device Pane</dt>
     <dt>Select unmount from menu</dt>
         <dd>Main Thunar window reverts to /home/USER</dd>
@@ -24,6 +25,7 @@ This test will check that a device, when plugged in, triggers a Device entry, mo
 
 These tests will check items in the File menu
 <dl>
+    <!-- PRE CONDITION AS STEP -->
     <dt>This test requires the previous test to have run</dt>
     <dt>Press Ctrl+T</dt>
         <dd>A new tab showing /home/USER opens</dd>

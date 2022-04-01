@@ -2,11 +2,13 @@ This test will check that Pidgin opens and closes correctly <em>test assumes Pid
 <dl>
     <dt>Open Pidgin from the menu</dt>
         <dd>Accounts dialogue and Buddy List opens, Buddly List minimised to panel</dd>
+        <!-- EAGER STEP -->
     <dt>Focus on Buddy List, press Ctrl+Q</dt>
         <dd>Both dialogues close</dd>
 </dl>
 This test will check that Pidgin will correctly set up an IRC account
 <dl>
+    <!-- EAGER STEP -->
     <dt>Open Pidgin from the menu, press Add in Accounts dialogue</dt>
         <dd>Add Account dialogue opens</dd>
     <dt>Select Protocol from Login Options</dt>
@@ -23,6 +25,7 @@ This test will check that Pidgin will correctly set up an IRC account
 </dl>
 This test will check that Pidgin will join a channel correctly
 <dl>
+    <!-- EAGER STEP -->
     <dt>Focus on Conversation window, select Conversation from menu</dt>
         <dd>Menu options show</dd>
     <dt>Press Join a chat</dt>
