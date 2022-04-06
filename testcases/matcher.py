@@ -2,7 +2,10 @@ import pandas as pd
 from pathlib import Path
 from collections import abc
 import re
-from rich import print
+try:
+    from rich import print
+except ModuleNotFoundError:
+    pass
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
@@ -33,7 +36,6 @@ def split_tests(text:str) -> abc.Container[abc.Sequence]:
     text = re.sub(re.compile(breaks),' ',text)
     text = re.sub(re.compile(trailing_whitespace),'>',text)
     tags = r'(?<=<dl>)(.+?)(?=</dl>)'
-    rr = re.compile(tags)
     tests = list(re.findall(tags,text))
     tests = [erase_split(r,'</dt>','<dt>') for r in tests]
     tests = split_tests_steps(tests)
