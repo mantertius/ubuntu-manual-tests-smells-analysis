@@ -36,6 +36,7 @@ def split_tests(text:str) -> abc.Container[abc.Sequence]:
     rr = re.compile(tags)
     tests = list(re.findall(tags,text))
     tests = [erase_split(r,'</dt>','<dt>') for r in tests]
+    tests = split_tests_steps(tests)
     return tests
 
 
@@ -53,5 +54,4 @@ if __name__ == '__main__':
 
     text = df[FILE_COL].iloc[0].read_text()
     r = split_tests(text)
-    rr = split_tests_steps(r)
-    print(rr)
+    print(r)
