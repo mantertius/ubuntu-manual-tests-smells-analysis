@@ -4,6 +4,9 @@ from collections import abc
 import re
 from collections import namedtuple
 from functools import singledispatch
+import spacy
+
+nlp = spacy.load('en_core_web_sm')
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
@@ -47,12 +50,18 @@ def split_tests(text:str) -> abc.Container[abc.Sequence]:
     tests = split_tests_steps(tests)
     return tests
 
+def pipeline(text:str) -> str:
+    remove_html = re.compile('<.*?>')
+    result = re.sub(remove_html, '', text)
+    return nlp(result)
 
 def split_tests_steps(tests:abc.Container[abc.Sequence]) -> abc.Container[abc.Sequence]:
     result = []
     for test in tests:
         test = [erase_split(t, '</dd>', '<dd>') for t in test]
-        test = [Step(head, tail) for head, *tail in test]
+        test = [Step(pipeline(action), [pipeline(reaction) for reaction in reactions])
+                    for action, *reactions in test
+                ]
         result.append(test)
     return result
 
@@ -66,8 +75,9 @@ def get_tests(arg) -> abc.Container[abc.Container]:
 
 @get_tests.register(str)
 def _(smell_acronym:str) -> abc.Container[abc.Container]:
-    #  return [split_tests(path.read_text()) for path in smells_loader(smell_acronym)[FILE_COL]]
-    return [test for path in smells_loader(smell_acronym)[FILE_COL] for test in split_tests(path.read_text())]
+    return [test for path in smells_loader(smell_acronym)[FILE_COL]
+                    for test in split_tests(path.read_text())
+            ]
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath) -> abc.Container[abc.Container]:
