@@ -1,79 +1,18 @@
-import pandas as pd
-from pathlib import Path, PosixPath
 from collections import abc
-import re
-from functools import singledispatch
-
 try:
     from rich import print
 except ModuleNotFoundError:
     pass
 
-DIR_COL = 'DIRETÓRIO'
-FILE_COL = 'NUMERO E NOME DO ARQUIVO'
-SMELL_COL = 'QUAL SMELL?'
+from data import get_tests, smells_loader
 
-def smells_loader_closure():
-    df = pd.read_csv('files.csv')
-    df[SMELL_COL] = df[SMELL_COL].fillna('')
-    df[SMELL_COL] = df[SMELL_COL].apply(lambda x: x.replace(' ', '').split(','))
-    df[FILE_COL] = df[DIR_COL]+df[FILE_COL]
-    df = df[[FILE_COL, SMELL_COL]]
-    df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
-    df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
+import spacy
 
-    def smells_loader(smell_acronym:str) -> pd.DataFrame:
-        return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True)
-
-    return smells_loader
-
-smells_loader = smells_loader_closure()
-
-def erase_split(text:str, erase:str, split:str):
-    return [chunk for chunk in text.replace(erase,'').split(split) if chunk]
-
-@singledispatch
-def split_tests(text) -> abc.Container[abc.Sequence]:
-    pass
-
-def split_tests(text:str) -> abc.Container[abc.Sequence]:
-    spaces = r'\s{2,}'
-    breaks = r'\n'
-    trailing_whitespace = r'> '
-    text = re.sub(re.compile(spaces),' ',text)
-    text = re.sub(re.compile(breaks),' ',text)
-    text = re.sub(re.compile(trailing_whitespace),'>',text)
-    tags = r'(?<=<dl>)(.+?)(?=</dl>)'
-    tests = list(re.findall(tags,text))
-    tests = [erase_split(r,'</dt>','<dt>') for r in tests]
-    tests = split_tests_steps(tests)
-    return tests
-
-
-def split_tests_steps(tests:abc.Container[abc.Sequence]) -> abc.Container[abc.Sequence]:
-    result = []
-    for test in tests:
-        test = [erase_split(t, '</dd>', '<dd>') for t in test]
-        test = [(head, tail) for head, *tail in test]
-        result.append(test)
-    return result
-
-@singledispatch
-def get_tests(arg) -> abc.Container[abc.Container]:
-    """
-    Pass a str with the smell acronym to read all smells with that acronym;
-    Pass a pathlib.PosixPath pointing to a smell file to read all smells within that file;
-    """
-    pass
-
-@get_tests.register(str)
-def _(smell_acronym:str) -> abc.Container[abc.Container]:
-     return [split_tests(path.read_text()) for path in smells_loader(smell_acronym)[FILE_COL]]
-
-@get_tests.register(PosixPath)
-def _(filepath:PosixPath) -> abc.Container[abc.Container]:
-    return split_tests(filepath.read_text())
+def is_unverified_step(test:abc.Container) -> bool:
+    return len([i for i in test if len(i.reactions) == 0]) > 0
 
 
 if __name__ == '__main__':
-    print(get_tests('ET'))
+    #nlp = spacy.load('en_core_web_sm')
+    tests = get_tests('ET')
+    print(is_unverified_step(tests[0]))
