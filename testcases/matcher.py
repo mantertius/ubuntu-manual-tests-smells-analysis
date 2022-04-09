@@ -1,7 +1,9 @@
 import pandas as pd
-from pathlib import Path
+from pathlib import Path, PosixPath
 from collections import abc
 import re
+from functools import singledispatch
+
 try:
     from rich import print
 except ModuleNotFoundError:
@@ -20,13 +22,19 @@ def smells_loader_closure():
     df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
     df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
 
-    def smells_loader(smell:str) -> pd.DataFrame:
-        return df.loc[df[SMELL_COL].apply(lambda x: smell in x)].reset_index(drop=True)
+    def smells_loader(smell_acronym:str) -> pd.DataFrame:
+        return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True)
 
     return smells_loader
 
+smells_loader = smells_loader_closure()
+
 def erase_split(text:str, erase:str, split:str):
     return [chunk for chunk in text.replace(erase,'').split(split) if chunk]
+
+@singledispatch
+def split_tests(text) -> abc.Container[abc.Sequence]:
+    pass
 
 def split_tests(text:str) -> abc.Container[abc.Sequence]:
     spaces = r'\s{2,}'
@@ -50,10 +58,22 @@ def split_tests_steps(tests:abc.Container[abc.Sequence]) -> abc.Container[abc.Se
         result.append(test)
     return result
 
-if __name__ == '__main__':
-    smells_loader = smells_loader_closure()
-    df = smells_loader('EH')
+@singledispatch
+def get_tests(arg) -> abc.Container[abc.Container]:
+    """
+    Pass a str with the smell acronym to read all smells with that acronym;
+    Pass a pathlib.PosixPath pointing to a smell file to read all smells within that file;
+    """
+    pass
 
-    text = df[FILE_COL].iloc[0].read_text()
-    r = split_tests(text)
-    print(r)
+@get_tests.register(str)
+def _(smell_acronym:str) -> abc.Container[abc.Container]:
+     return [split_tests(path.read_text()) for path in smells_loader(smell_acronym)[FILE_COL]]
+
+@get_tests.register(PosixPath)
+def _(filepath:PosixPath) -> abc.Container[abc.Container]:
+    return split_tests(filepath.read_text())
+
+
+if __name__ == '__main__':
+    print(get_tests('ET'))
