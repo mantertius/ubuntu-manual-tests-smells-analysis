@@ -28,6 +28,7 @@ def is_expected_results_as_step(test:abc.Container) -> bool:
     return len(marked_steps) > 0
 
 if __name__ == '__main__':
-    tests = get_tests('ET')
+    _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
+    tests = get_tests(_in)
     for test in tests:
         print(is_expected_results_as_step(test))

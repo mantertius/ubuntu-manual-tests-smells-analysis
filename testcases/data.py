@@ -34,10 +34,10 @@ def erase_split(text:str, erase:str, split:str):
     return [chunk for chunk in text.replace(erase,'').split(split) if chunk]
 
 @singledispatch
-def split_tests(text) -> abc.Container[abc.Sequence]:
+def split_tests(text):
     pass
 
-def split_tests(text:str) -> abc.Container[abc.Sequence]:
+def split_tests(text:str):
     spaces = r'\s{2,}'
     breaks = r'\n'
     trailing_whitespace = r'> '
@@ -55,7 +55,7 @@ def pipeline(text:str) -> str:
     result = re.sub(remove_html, '', text)
     return nlp(result)
 
-def split_tests_steps(tests:abc.Container[abc.Sequence]) -> abc.Container[abc.Sequence]:
+def split_tests_steps(tests):
     result = []
     for test in tests:
         test = [erase_split(t, '</dd>', '<dd>') for t in test]
@@ -66,7 +66,7 @@ def split_tests_steps(tests:abc.Container[abc.Sequence]) -> abc.Container[abc.Se
     return result
 
 @singledispatch
-def get_tests(arg) -> abc.Container[abc.Container]:
+def get_tests(arg):
     """
     Pass a str with the smell acronym to read all smells with that acronym;
     Pass a pathlib.PosixPath pointing to a smell file to read all smells within that file;
@@ -74,11 +74,11 @@ def get_tests(arg) -> abc.Container[abc.Container]:
     pass
 
 @get_tests.register(str)
-def _(smell_acronym:str) -> abc.Container[abc.Container]:
+def _(smell_acronym:str):
     return [test for path in smells_loader(smell_acronym)[FILE_COL]
                     for test in split_tests(path.read_text())
             ]
 
 @get_tests.register(PosixPath)
-def _(filepath:PosixPath) -> abc.Container[abc.Container]:
+def _(filepath:PosixPath):
     return split_tests(filepath.read_text())
