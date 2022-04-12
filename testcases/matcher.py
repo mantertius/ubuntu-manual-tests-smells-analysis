@@ -31,4 +31,4 @@ if __name__ == '__main__':
     _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     tests = get_tests(_in)
     for test in tests:
-        print(is_expected_results_as_step(test))
+        print(f'{is_expected_results_as_step(test)}')

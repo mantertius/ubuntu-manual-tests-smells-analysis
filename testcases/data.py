@@ -1,3 +1,4 @@
+from http.cookiejar import FileCookieJar
 import pandas as pd
 from pathlib import Path, PosixPath
 from collections import abc
@@ -13,11 +14,14 @@ FILE_COL = 'NUMERO E NOME DO ARQUIVO'
 SMELL_COL = 'QUAL SMELL?'
 
 Step = namedtuple('Step', ['action', 'reactions'])
+#TODO #13 set the dataframe to not ignore headers
 
 def smells_loader_closure():
     df = pd.read_csv('files.csv')
     df[SMELL_COL] = df[SMELL_COL].fillna('')
     df[SMELL_COL] = df[SMELL_COL].apply(lambda x: x.replace(' ', '').split(','))
+    #df2 = pd.DataFrame(df[FILE_COL])
+    #print(df2[FILE_COL])
     df[FILE_COL] = df[DIR_COL]+df[FILE_COL]
     df = df[[FILE_COL, SMELL_COL]]
     df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
@@ -26,6 +30,7 @@ def smells_loader_closure():
     def smells_loader(smell_acronym:str) -> pd.DataFrame:
         return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True)
 
+    #TODO #14 find a way to display the name of the file that has the smell
     return smells_loader
 
 smells_loader = smells_loader_closure()
