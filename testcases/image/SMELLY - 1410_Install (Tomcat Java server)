@@ -1,5 +1,5 @@
 This test will check that the Ubuntu Server system is installed and you can login into it
-<!-- Smells: MISSING STEP-->
+<!-- Smells: OMISSION OF STEP-->
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 
 <dl>
@@ -28,7 +28,7 @@ This test will check that the Ubuntu Server system is installed and you can logi
         <dd>The 'Set up users and passwords' screen is displayed requesting to define a password for the new user</dd>
     <dt>Enter your desired password</dt>
         <dd>The 'Set up users and passwords' screen is displayed requesting to re-enter the password for verification</dd>
-        <!-- SMELL: MISSING STEP - -->
+        <!-- SMELL: OMISSION OF STEP -->
         <dd>User account, username and password are accepted</dd>
         <dd>The 'Set up users and passwords' screen is displayed requesting to encrypt user's home directory</dd>
     <dt>Select "No"</dt>
