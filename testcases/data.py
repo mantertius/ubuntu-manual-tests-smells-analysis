@@ -1,4 +1,6 @@
+from cgi import test
 from http.cookiejar import FileCookieJar
+from importlib.resources import path
 import pandas as pd
 from pathlib import Path, PosixPath
 from collections import abc
@@ -80,9 +82,11 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
-    return [test for path in smells_loader(smell_acronym)[FILE_COL]
-                    for test in split_tests(path.read_text())
-            ]
+    test_list = [test for path in smells_loader(smell_acronym)[FILE_COL] for test in split_tests(path.read_text())]
+    path_list = [path for path in smells_loader(smell_acronym)[FILE_COL]]
+    
+    #print(path_list[0])
+    return test_list, path_list
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):
