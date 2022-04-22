@@ -15,6 +15,7 @@ DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
 SMELL_COL = 'QUAL SMELL?'
 
+Test = namedtuple('Test',['file','header','step'])
 Step = namedtuple('Step', ['action', 'reactions'])
 #TODO #13 set the dataframe to not ignore headers
 

@@ -31,8 +31,9 @@ def is_expected_results_as_step(test:abc.Container) -> bool:
 if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     tests,_path = get_tests("US") #get_tests está retornando uma tupla-> tests = test_list,path_list
-    print(len(tests),len(_path))
     cnt = 0
     for test in tests:
-        print(f'[{cnt}]{str(_path[cnt])}: {is_unverified_step(test)}')
+        print(f'[{cnt}] {str(_path[cnt])}: {is_unverified_step(test)}')
         cnt+=1
+        if cnt==41:
+            break;
