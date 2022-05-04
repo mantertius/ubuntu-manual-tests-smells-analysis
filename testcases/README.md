@@ -3,7 +3,7 @@ To run the program, you must install some packages. They are listed on requireme
 
 Because of this, go to your venv (you should have one) and download these:
 
-`pip install spacy && pip install pandas`
+`pip install spacy && pip install pandas && pip install rich`
 
 Then, install the requirements.
 
