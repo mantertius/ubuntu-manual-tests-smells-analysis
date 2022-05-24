@@ -1,4 +1,4 @@
-﻿<!-- Smells: EAGER TEST, UNVERIFIED STEPS, CONDITIONAL TEST LOGIC -->
+<!-- Smells: EAGER TEST, UNVERIFIED STEPS, CONDITIONAL TEST LOGIC -->
 
 <strong> Check that an existing system is installed and that sufficient disk space is available for an additional system to be installed during the test</strong>
 

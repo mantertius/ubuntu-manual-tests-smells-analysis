@@ -30,10 +30,9 @@ def is_expected_results_as_step(test:abc.Container) -> bool:
 
 if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
-    tests,_path = get_tests("US") #get_tests está retornando uma tupla-> tests = test_list,path_list
+    tests = get_tests("US") #get_tests está retornando uma tupla-> tests = test_list,path_list
     cnt = 0
-    for test in tests:
-        print(f'[{cnt}] {str(_path[cnt])}: {is_unverified_step(test)}')
-        cnt+=1
-        if cnt==41:
-            break;
+    for file in tests:
+        for test in file:
+            print(f'[{cnt}] {test.file}: {is_unverified_step(test)}')
+            cnt+=1
