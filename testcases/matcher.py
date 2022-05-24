@@ -8,7 +8,9 @@ except ModuleNotFoundError:
 from data import get_tests, smells_loader
 
 def is_unverified_step(test:abc.Container) -> bool:
-    return len([step for step in test if len(step.reactions) == 0]) > 0
+    #breakpoint()
+    steps = test.steps
+    return len([step for step in steps if len(step.reactions) == 0]) > 0
 
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
 def is_exception_handling(test:abc.Container) -> bool:
@@ -32,7 +34,9 @@ if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     tests = get_tests("US") #get_tests está retornando uma tupla-> tests = test_list,path_list
     cnt = 0
-    for file in tests:
-        for test in file:
+    for Test in tests:
+        cnt2 = 0
+        for test in Test:
             print(f'[{cnt}] {test.file}: {is_unverified_step(test)}')
             cnt+=1
+            
