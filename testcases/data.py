@@ -67,12 +67,14 @@ def split_tests(text:str, filepath:str) -> Test:
 
     headers1 = list(re.findall(init_header,text))
     headers2 = list(re.findall(mid_header,text))
+    #talvez seja necessário usar erase_split() em headers2 para que a gente consiga pegar o caso de >=3 testes no arquivo
     headers = headers1+headers2
+    #TODO #15
     #headers = [header for header in headers if header != '' for header_inside in header if header_inside != '']
     headers = [remove_html(header) for header in headers]
 
     tests = list(re.findall(tags,text)) #textão único, juntando tudo que tá dentro de <dl>
-    tests = [erase_split(text=r,erase='</dt>',split='<dt>') for r in tests] #separa cada grupo de passo(steps) dos outros
+    tests = [erase_split(text=r,erase='</dt>',split='<dt>') for r in tests] #separa cada grupo formado por [passo e steps] dos outros [passo e steps]
     tests = split_tests_steps(tests)
     
     result = []
