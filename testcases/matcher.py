@@ -28,7 +28,12 @@ def is_expected_results_as_step(test:abc.Container) -> bool:
     This function checks if one of the steps of a test is an imperative sentence.
     """
     marked_steps = [step for step in test for reaction in step.reactions  if reaction[0].tag_ in ['VB', 'VBP']]
+    #breakpoint()
     return len(marked_steps) > 0
+
+def is_undefined_wait(test:abc.Container) -> bool:
+    
+    return len() > 0
 
 if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
