@@ -19,7 +19,7 @@ Step = namedtuple('Step', ['action', 'reactions']) #Step([action],[reactions])
 #TODO #13 set the dataframe to not ignore headers
 
 def smells_loader_closure():
-    df = pd.read_csv('files.csv')
+    df = pd.read_csv('files.csv')           #lê o caminho dos dados
     df[SMELL_COL] = df[SMELL_COL].fillna('')
     df[SMELL_COL] = df[SMELL_COL].apply(lambda x: x.replace(' ', '').split(','))
     #df2 = pd.DataFrame(df[FILE_COL])
@@ -69,7 +69,6 @@ def split_tests(text:str, filepath:str) -> Test:
     headers2 = list(re.findall(mid_header,text))
     #talvez seja necessário usar erase_split() em headers2 para que a gente consiga pegar o caso de >=3 testes no arquivo
     headers = headers1+headers2
-    #TODO #15
     #headers = [header for header in headers if header != '' for header_inside in header if header_inside != '']
     headers = [remove_html(header) for header in headers]
 
@@ -114,6 +113,7 @@ def get_tests(arg):
 def _(smell_acronym:str):
     test_list = [test for path in smells_loader(smell_acronym)[FILE_COL] 
                         for test in split_tests(path.read_text(encoding='utf-8'),path)]
+    #breakpoint()
     #path = PosixPath('packages/SMELLY - 1677_GDebi')
     #testing = split_tests(path.read_text(), path)
     #breakpoint()
