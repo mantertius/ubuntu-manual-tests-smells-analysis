@@ -38,14 +38,15 @@ def on_match(matcher, doc, id, matches):
         string_id = nlp.vocab.strings[match_id]
         print(f'[{string_id}]:{span.text}')
 
-matcher.add("FOUND_WAIT",[pattern],on_match=on_match)
+#matcher.add("FOUND_WAIT",[pattern],on_match=on_match)
 #matcher.add("TEST_PATTERNS", patterns, on_match=on_match)
-matches = matcher(doc)
-num_of_waits_found = len(matches)
+#matches = matcher(doc)
+#num_of_waits_found = len(matches)
 matcher.add("NOT_NUM",[pattern2],on_match=on_match)
 matches = matcher(doc)
-num_of_not_num = len(matches) - num_of_waits_found
-result = num_of_not_num - num_of_waits_found
+result = len(matches)
+#num_of_not_num = len(matches) - num_of_waits_found
+#result = num_of_not_num - num_of_waits_found
 
 #print(matches)
 breakpoint()

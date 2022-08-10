@@ -126,3 +126,16 @@ def _(smell_acronym:str):
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):
     return split_tests(filepath.read_text(encoding='utf-8'), filepath)
+
+def matcher_wait(test):
+    WAIT_LIKE_VERBS = ["wait",
+                       "halt",
+                       "rest",
+                       "holdup",
+                       "stay on hold"]
+    matcher = spacy.matcher.Matcher(nlp.vocab)
+    pattern2 = [{'ORTH': {"IN" : WAIT_LIKE_VERBS}},{'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
+    matcher.add("NOT_NUM",[pattern2])
+    matches = matcher(test)
+    result = len(matches)
+    return result
