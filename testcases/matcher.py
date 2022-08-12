@@ -1,12 +1,11 @@
 from collections import abc
-from importlib.resources import path
 
 try:
     from rich import print
 except ModuleNotFoundError:
     pass
 
-from data import get_tests, smells_loader, matcher_wait
+from data import get_tests, matcher_wait, matcher_if, matcher_optional
 
 
 def is_unverified_step(test: abc.Container) -> bool:
@@ -55,6 +54,30 @@ def is_misplaced_result(test: abc.Container) -> bool:
     """
     pass
 
+def is_conditional_test(test: abc.Container) -> bool:
+    # I don't know if this works!
+    """
+    Uses the spacy matcher to look for "if"s.
+    """
+    smelly_step = [step for step in test if matcher_if(step.action) > 0]
+    smelly_result = [step for step in test if matcher_if(step.reaction) > 0]
+    return smelly_result + smelly_step > 0
+
+def is_optional_test(test: abc.Container) -> bool:
+    """
+    Uses the spacy matcher to look for "if"s.
+    """
+    smelly_header = [header for header in test if matcher_optional(header) > 0 ]
+    smelly_step = [step for step in test if matcher_optional(step.action) > 0]
+    smelly_result = [step for step in test if matcher_optional(step.reaction) > 0]
+    return smelly_header + smelly_result + smelly_step > 0
+
+def is_misplaced_pre_condition(test:abc.Container) -> bool:
+    #As this one is kinda hard to detect using nlp, we should just send a warning, not an definitive "this is wrong"
+    """
+    Searches for "make sure", "ensure" and synomyms using spacy's matcher.
+    """
+    
 if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # get_tests está retornando uma tupla-> tests = test_list,path_list

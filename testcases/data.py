@@ -1,4 +1,5 @@
 from importlib.resources import path
+import math
 import pandas as pd
 from pathlib import Path, PosixPath
 from collections import abc
@@ -16,7 +17,7 @@ SMELL_COL = 'QUAL SMELL?'
 
 Test = namedtuple('Test',['file','header','steps'])
 Step = namedtuple('Step', ['action', 'reactions']) #Step([action],[reactions])
-#TODO #13 set the dataframe to not ignore headers
+
 
 def smells_loader_closure():
     df = pd.read_csv('files.csv')           #lê o caminho dos dados
@@ -67,8 +68,8 @@ def split_tests(text:str, filepath:str) -> Test:
 
     headers1 = list(re.findall(init_header,text))
     headers2 = list(re.findall(mid_header,text))
-    #talvez seja necessário usar erase_split() em headers2 para que a gente consiga pegar o caso de >=3 testes no arquivo
-    headers = headers1+headers2
+
+    headers = headers1+headers2#TODO  #17   #talvez seja necessário usar erase_split() em headers2 para que a gente consiga pegar o caso de >=3 testes no arquivo
     #headers = [header for header in headers if header != '' for header_inside in header if header_inside != '']
     headers = [remove_html(header) for header in headers]
 
@@ -127,15 +128,44 @@ def _(smell_acronym:str):
 def _(filepath:PosixPath):
     return split_tests(filepath.read_text(encoding='utf-8'), filepath)
 
-def matcher_wait(test):
-    WAIT_LIKE_VERBS = ["wait",
-                       "halt",
-                       "rest",
-                       "holdup",
-                       "stay on hold"]
+
+
+#Percebi que o objeto nlp.vocab não vai conseguir ser visualizado pelas funçoes matcher_ (será? nlp é variável global). Não sei como resolver de um jeito bonito. Talvez o singleton?
+
+def on_match(matcher, doc, id, matches):
+    for match_id, start, end in matches:
+        span = doc[start:end]
+        string_id = nlp.vocab.strings[match_id]
+        print(f'[{string_id}]:{span.text}')
+
+def matcher_maker(test, pattern_name, pattern):
+    """
+    Recieves the subject, the pattern_name and the pattern. Returns the number of matches.
+    """
     matcher = spacy.matcher.Matcher(nlp.vocab)
-    pattern2 = [{'ORTH': {"IN" : WAIT_LIKE_VERBS}},{'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
-    matcher.add("NOT_NUM",[pattern2])
+    matcher.add(pattern_name, [pattern], on_match=on_match)
     matches = matcher(test)
-    result = len(matches)
-    return result
+    return matches
+
+def matcher_wait(test):
+    pattern = [{'ORTH': {"IN" : ["wait","halt","rest","holdup","stay on hold"]}},{'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
+    number_of_waits_without_num = len(matcher_maker(test,"NOT_NUM",pattern))
+    return number_of_waits_without_num
+
+def matcher_if(test):
+    pattern = [{'LOWER': "if"}]
+    number_of_ifs = len(matcher_maker(test,"HAS_IF",pattern))
+    return number_of_ifs
+
+def matcher_optional(test):
+    pattern = [{'LOWER':"optional"}]
+    matches = matcher_maker(test,"HAS_OPTIONAL", pattern)
+    number_of_optionals = len(matches)
+    return number_of_optionals
+
+def matcher_pre_condition(test):
+    # i thinks this pattern is too embracing, it may get false positives.
+    pattern = [{'LOWER':{"IN" : ["make sure", "make certain","see to it","secure","guarantee","warrant",'certify','set the seal on', 'clinch', 'confirm', 'check','verify', 'corroborate', 'establish', 'sew up']}}]
+    matches = matcher_maker(test,"HAS_MISPLACED_PRE_CONDITION",pattern)
+    number_of_misplaced_pre_conditions = len(matches)
+    return number_of_misplaced_pre_conditions
