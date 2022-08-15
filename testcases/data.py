@@ -148,12 +148,12 @@ def matcher_maker(test, pattern_name, pattern):
     return matches
 
 def matcher_wait(test):
-    pattern = [{'ORTH': {"IN" : ["wait","halt","rest","holdup","stay on hold"]}},{'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
+    pattern = [{'LOWER': {"IN" : ["wait","halt","rest","holdup","stay on hold"]}},{'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
     number_of_waits_without_num = len(matcher_maker(test,"NOT_NUM",pattern))
     return number_of_waits_without_num
 
 def matcher_if(test):
-    pattern = [{'LOWER': "if"}]
+    pattern = [{'LOWER': {"IN":['if','whether','depending','when','in case']}}]
     number_of_ifs = len(matcher_maker(test,"HAS_IF",pattern))
     return number_of_ifs
 

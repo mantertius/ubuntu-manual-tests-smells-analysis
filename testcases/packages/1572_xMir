@@ -15,6 +15,7 @@ Smoke Tests for xMir
 
 Multimonitor tests for xMir
 Scenario 1 : clean boot at “built-in display”, post boot connect/disconnect of 2nd display
+<!-- NESTED TEST -->
 <dl>
     <dt>Preparations</dt>
         <dd>Ensure preconditions</dd>
