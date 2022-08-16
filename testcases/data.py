@@ -148,7 +148,7 @@ def matcher_maker(test, pattern_name, pattern):
     return matches
 
 def matcher_wait(test):
-    pattern = [{'LOWER': {"IN" : ["wait","halt","rest","holdup","stay on hold"]}},{'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
+    pattern = [{'LOWER': {"IN" : ["wait","halt","rest","holdup","stay on hold"]}}, {'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
     number_of_waits_without_num = len(matcher_maker(test,"NOT_NUM",pattern))
     return number_of_waits_without_num
 
@@ -165,7 +165,7 @@ def matcher_optional(test):
 
 def matcher_pre_condition(test):
     # i thinks this pattern is too embracing, it may get false positives.
-    pattern = [{'LOWER':{"IN" : ["make sure", "make certain","see to it","secure","guarantee","warrant",'certify','set the seal on', 'clinch', 'confirm', 'check','verify', 'corroborate', 'establish', 'sew up']}}]
+    pattern = [{'LOWER':{"IN" : ["make sure", "make certain","see to it","secure","guarantee","warrant",'certify','set the seal on', 'clinch', 'confirm', 'check','verify', 'corroborate', 'establish', 'sew up', 'ensure']}}]
     matches = matcher_maker(test,"HAS_MISPLACED_PRE_CONDITION",pattern)
     number_of_misplaced_pre_conditions = len(matches)
     return number_of_misplaced_pre_conditions

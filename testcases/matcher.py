@@ -77,7 +77,9 @@ def is_misplaced_pre_condition(test:abc.Container) -> bool:
     """
     Searches for "make sure", "ensure" and synomyms using spacy's matcher.
     """
-    
+    pass
+
+
 if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # get_tests está retornando uma tupla-> tests = test_list,path_list
