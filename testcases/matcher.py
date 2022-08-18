@@ -1,4 +1,5 @@
 from collections import abc
+from typing import Container
 
 try:
     from rich import print
@@ -22,9 +23,12 @@ def is_exception_handling(test: abc.Container) -> bool:
 
 
 def is_eager_test(test: abc.Container) -> bool:
-    eager_steps = [step for step in test if len(step.reactions) > 1]
-    return len(eager_steps) > 0
+    eager_test = [step for step in test if len(step.reactions) > 1]
+    return len(eager_test) > 0
 
+def is_eager_step(test: abc.Container) -> bool:
+    eager_step = [step for step in test for action in step.actions if action[0].tag_ in ['VB', 'VBP']]
+    return len(eager_step) > 0
 
 def is_expected_results_as_step(test: abc.Container) -> bool:
     """
