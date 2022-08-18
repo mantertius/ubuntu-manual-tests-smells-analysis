@@ -81,4 +81,4 @@ differentiation phrased in natural language (we used the words: if, whether, dep
 -- on hold 18) Optional Test: We count the word "optional" on every test. If there's any, than it's a smell. [word similarity]
 
 -- hard to implement 19) Tacit Knowledge: When a step assumes something, but it has not commanded this early. (is this Omission of Step?)
--- 7) Omission of Steps: When a step asks the tester for something he has not done.
+-- SAME AS 19 7) Omission of Steps: When a step asks the tester for something he has not done.
