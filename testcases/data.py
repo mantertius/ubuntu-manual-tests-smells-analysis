@@ -1,13 +1,17 @@
-from http.cookiejar import FileCookieJar
-import pandas as pd
-from pathlib import Path, PosixPath
-from collections import abc
 import re
-from collections import namedtuple
+from collections import abc, namedtuple
 from functools import singledispatch
+from http.cookiejar import FileCookieJar
+from pathlib import Path, PosixPath
+
+import numpy as np
+import pandas as pd
 import spacy
+from scipy.spatial import distance
 
 nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('pt_core_news_lg')
+
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
@@ -44,6 +48,13 @@ def k_closest_words_closure():
         closest_indexes = distance.cdist(input_word_vector, vocab_vectors).argsort()[0][:k]
         return [nlp.vocab[vocab_ids[idx]].text for idx in closest_indexes]
     return k_closest_words
+
+def expand_unispecific_words(unspecific_words = None, k=5) -> bool:
+    if not unspecific_words:
+        unspecific_words = ('all', 'default', 'any', 'some')
+    unspecific_words = [k_closest_words(w, k) for w in unspecific_words]
+    unspecific_words = tuple(set([word.lower() for word_list in unspecific_words for word in word_list]))
+    return unspecific_words
 
 k_closest_words = k_closest_words_closure()
 
