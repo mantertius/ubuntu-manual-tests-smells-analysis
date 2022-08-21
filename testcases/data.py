@@ -7,7 +7,7 @@ from collections import namedtuple
 from functools import singledispatch
 import spacy
 
-nlp = spacy.load('en_core_web_sm')
+nlp = spacy.load('en_core_web_lg')
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
@@ -34,6 +34,18 @@ def smells_loader_closure():
     return smells_loader
 
 smells_loader = smells_loader_closure()
+
+def k_closest_words_closure():
+    vocab_ids = [x for x in nlp.vocab.vectors.keys()]
+    vocab_vectors = np.array([nlp.vocab.vectors[x] for x in vocab_ids])
+    def k_closest_words(input_word:str, k:int):
+        input_word_vector = np.array([nlp.vocab[input_word].vector])
+        # closest_indexes = distance.cdist(input_word_vector, vocab_vectors, metric='cosine').argsort()[0][:k]
+        closest_indexes = distance.cdist(input_word_vector, vocab_vectors).argsort()[0][:k]
+        return [nlp.vocab[vocab_ids[idx]].text for idx in closest_indexes]
+    return k_closest_words
+
+k_closest_words = k_closest_words_closure()
 
 def erase_split(text:str, erase:str, split:str):
     return [chunk for chunk in text.replace(erase,'').split(split) if chunk]

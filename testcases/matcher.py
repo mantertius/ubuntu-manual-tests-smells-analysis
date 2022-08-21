@@ -5,6 +5,10 @@ except ModuleNotFoundError:
     pass
 
 from data import get_tests, smells_loader
+import numpy as np
+from data import nlp
+from scipy.spatial import distance
+
 
 def is_unverified_step(test:abc.Container) -> bool:
     return len([step for step in test if len(step.reactions) == 0]) > 0
@@ -27,8 +31,9 @@ def is_expected_results_as_step(test:abc.Container) -> bool:
     marked_steps = [step for step in test for reaction in step.reactions  if reaction[0].tag_ in ['VB', 'VBP']]
     return len(marked_steps) > 0
 
+
 if __name__ == '__main__':
-    _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
-    tests = get_tests(_in)
-    for test in tests:
-        print(f'{is_expected_results_as_step(test)}')
+    # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
+    # tests = get_tests(_in)
+    # for test in tests:
+    #     print(f'{is_expected_results_as_step(test)}')
