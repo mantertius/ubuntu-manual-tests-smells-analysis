@@ -1,13 +1,17 @@
-from http.cookiejar import FileCookieJar
-import pandas as pd
-from pathlib import Path, PosixPath
-from collections import abc
 import re
-from collections import namedtuple
+from collections import abc, namedtuple
 from functools import singledispatch
-import spacy
+from http.cookiejar import FileCookieJar
+from pathlib import Path, PosixPath
 
-nlp = spacy.load('en_core_web_sm')
+import numpy as np
+import pandas as pd
+import spacy
+from scipy.spatial import distance
+
+nlp = spacy.load('en_core_web_lg')
+nlp = spacy.load('pt_core_news_lg')
+
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
@@ -34,6 +38,25 @@ def smells_loader_closure():
     return smells_loader
 
 smells_loader = smells_loader_closure()
+
+def k_closest_words_closure():
+    vocab_ids = [x for x in nlp.vocab.vectors.keys()]
+    vocab_vectors = np.array([nlp.vocab.vectors[x] for x in vocab_ids])
+    def k_closest_words(input_word:str, k:int):
+        input_word_vector = np.array([nlp.vocab[input_word].vector])
+        # closest_indexes = distance.cdist(input_word_vector, vocab_vectors, metric='cosine').argsort()[0][:k]
+        closest_indexes = distance.cdist(input_word_vector, vocab_vectors).argsort()[0][:k]
+        return [nlp.vocab[vocab_ids[idx]].text for idx in closest_indexes]
+    return k_closest_words
+
+def expand_unispecific_words(unspecific_words = None, k=5) -> bool:
+    if not unspecific_words:
+        unspecific_words = ('all', 'default', 'any', 'some')
+    unspecific_words = [k_closest_words(w, k) for w in unspecific_words]
+    unspecific_words = tuple(set([word.lower() for word_list in unspecific_words for word in word_list]))
+    return unspecific_words
+
+k_closest_words = k_closest_words_closure()
 
 def erase_split(text:str, erase:str, split:str):
     return [chunk for chunk in text.replace(erase,'').split(split) if chunk]
