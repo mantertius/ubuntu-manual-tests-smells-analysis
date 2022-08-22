@@ -15,8 +15,6 @@ def is_unverified_step(test: abc.Container) -> bool:
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
-
-
 def is_exception_handling(test: abc.Container) -> bool:
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
     exceptional_steps = [step for step in test if '?' in step.action]
@@ -41,7 +39,7 @@ def is_expected_results_as_step(test: abc.Container) -> bool:
         step for step in test for reaction in step.reactions if reaction[0].tag_ in ['VB', 'VBP']]
     # breakpoint()
     return len(marked_steps) > 0
-
+    
 def is_unspecified_parameter(test:abc.Container) -> bool:
     from dependency_matchers import unspecified_parameter_matcher
     matcher = unspecified_parameter_matcher()
@@ -57,7 +55,6 @@ def is_unspecified_parameter(test:abc.Container) -> bool:
                 if reaction_matches:
                     return True
     return False
-
 
 def is_undefined_wait(test: abc.Container) -> bool:
     # I don't know if this works!

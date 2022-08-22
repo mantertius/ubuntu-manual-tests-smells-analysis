@@ -41,7 +41,6 @@ def smells_loader_closure():
 
 smells_loader = smells_loader_closure()
 
-
 def k_closest_words_closure():
     vocab_ids = [x for x in nlp.vocab.vectors.keys()]
     vocab_vectors = np.array([nlp.vocab.vectors[x] for x in vocab_ids])
@@ -190,5 +189,3 @@ def matcher_pre_condition(test):
     matches = matcher_maker(test,"HAS_MISPLACED_PRE_CONDITION",pattern)
     number_of_misplaced_pre_conditions = len(matches)
     return number_of_misplaced_pre_conditions
-
-
