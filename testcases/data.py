@@ -49,12 +49,9 @@ def k_closest_words_closure():
         return [nlp.vocab[vocab_ids[idx]].text for idx in closest_indexes]
     return k_closest_words
 
-def expand_unispecific_words(unspecific_words = None, k=5) -> bool:
-    if not unspecific_words:
-        unspecific_words = ('all', 'default', 'any', 'some')
-    unspecific_words = [k_closest_words(w, k) for w in unspecific_words]
-    unspecific_words = tuple(set([word.lower() for word_list in unspecific_words for word in word_list]))
-    return unspecific_words
+def expand_words(words, k=5) -> tuple:
+    expanded_words = [k_closest_words(w, k) for w in words]
+    return tuple(set([word.lower() for word_list in expanded_words for word in word_list]))
 
 k_closest_words = k_closest_words_closure()
 
