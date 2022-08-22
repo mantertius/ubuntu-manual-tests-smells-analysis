@@ -3,12 +3,12 @@ import spacy
 from data import nlp
 from dependency_rules import unspecified_parameter, conditional_test
 
-class Matchers:
+class MatchersFactory:
     def unspecified_parameter_matcher():
-        return Matchers._build_matcher(unspecified_parameter.patterns)
+        return MatchersFactory._build_matcher(unspecified_parameter.patterns)
 
     def conditional_test_matcher():
-        return Matchers._build_matcher(conditional_test.patterns)
+        return MatchersFactory._build_matcher(conditional_test.patterns)
 
     def _build_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)

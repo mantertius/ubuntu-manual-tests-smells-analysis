@@ -8,7 +8,7 @@ except ModuleNotFoundError:
 import numpy as np
 
 from data import get_tests, k_closest_words, nlp, smells_loader
-from dependency_matchers import Matchers
+from dependency_matchers import MatchersFactory
 
 
 def is_unverified_step(test:abc.Container) -> bool:
@@ -39,7 +39,7 @@ def is_expected_results_as_step(test:abc.Container) -> bool:
     return len(marked_steps) > 0
 
 def is_unspecified_parameter(test:abc.Container) -> bool:
-    matcher = Matchers.unspecified_parameter_matcher()
+    matcher = MatchersFactory.unspecified_parameter_matcher()
     for step in test:
         matches = []
         action_matches = matcher(step.action)
@@ -53,7 +53,7 @@ def is_unspecified_parameter(test:abc.Container) -> bool:
     return False
 
 def is_conditional_test(test:abc.Container) -> bool:
-    matcher = Matchers.conditional_test_matcher()
+    matcher = MatchersFactory.conditional_test_matcher()
     for step in test:
         matches = []
         action_matches = matcher(step.action)
