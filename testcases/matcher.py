@@ -1,12 +1,13 @@
 from collections import abc
-from typing import Container
 
 try:
     from rich import print
 except ModuleNotFoundError:
     pass
 
-from data import get_tests, matcher_wait, matcher_if, matcher_optional
+import numpy as np
+
+from data import get_tests, matcher_wait, matcher_if, matcher_optional, k_closest_words, nlp, smells_loader
 
 
 def is_unverified_step(test: abc.Container) -> bool:
@@ -40,6 +41,22 @@ def is_expected_results_as_step(test: abc.Container) -> bool:
         step for step in test for reaction in step.reactions if reaction[0].tag_ in ['VB', 'VBP']]
     # breakpoint()
     return len(marked_steps) > 0
+
+def is_unspecified_parameter(test:abc.Container) -> bool:
+    from dependency_matchers import unspecified_parameter_matcher
+    matcher = unspecified_parameter_matcher()
+    for step in test:
+        matches = []
+        action_matches = matcher(step.action)
+        if action_matches:
+            if action_matches:
+                return True
+        for reaction in step.reactions:
+            reaction_matches = matcher(reaction)
+            if reaction_matches:
+                if reaction_matches:
+                    return True
+    return False
 
 
 def is_undefined_wait(test: abc.Container) -> bool:
