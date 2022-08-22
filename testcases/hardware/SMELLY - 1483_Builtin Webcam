@@ -2,7 +2,7 @@
 
 Case ID: hiw-001
 This tests that ubuntu can recognise your webcam.
-<!-- Smells: UNVERIFIED STEPS, PRE-STEP AS STEP (line 7) -->
+<!-- Smells: UNVERIFIED STEPS, PRE CONDITION AS STEP (line 7) -->
 <dl>
     <dt>Ensure the universe and multiverse repositories are enabled</dt>
     <dt>Open Terminal</dd>
