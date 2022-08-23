@@ -7,6 +7,8 @@ except ModuleNotFoundError:
 
 import numpy as np
 
+
+from dependency_matchers import MatchersFactory
 from data import get_tests, matcher_wait, matcher_if, matcher_optional, k_closest_words, nlp, smells_loader
 
 
@@ -41,8 +43,7 @@ def is_expected_results_as_step(test: abc.Container) -> bool:
     return len(marked_steps) > 0
     
 def is_unspecified_parameter(test:abc.Container) -> bool:
-    from dependency_matchers import unspecified_parameter_matcher
-    matcher = unspecified_parameter_matcher()
+    matcher = MatchersFactory.unspecified_parameter_matcher()
     for step in test:
         matches = []
         action_matches = matcher(step.action)
@@ -52,8 +53,17 @@ def is_unspecified_parameter(test:abc.Container) -> bool:
         for reaction in step.reactions:
             reaction_matches = matcher(reaction)
             if reaction_matches:
-                if reaction_matches:
-                    return True
+                return True
+    return False
+
+def is_conditional_test(test:abc.Container) -> bool:
+    matcher = MatchersFactory.conditional_test_matcher()
+    for step in test:
+        matches = []
+        action_matches = matcher(step.action)
+        if action_matches:
+            if action_matches:
+                return True
     return False
 
 def is_undefined_wait(test: abc.Container) -> bool:
@@ -98,13 +108,30 @@ def is_misplaced_pre_condition(test:abc.Container) -> bool:
     pass
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #_in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # get_tests está retornando uma tupla-> tests = test_list,path_list
-    tests = get_tests("US")
-    cnt = 0
-    for Test in tests:
-        cnt2 = 0
-        for test in Test:
-            print(f'[{cnt}] {test.file}: {is_unverified_step(test)}')
-            cnt += 1
+#    tests = get_tests("US")
+#    cnt = 0
+#    for Test in tests:
+#        cnt2 = 0
+#       for test in Test:
+#            print(f'[{cnt}] {test.file}: {is_unverified_step(test)}')
+#            cnt += 1
+
+if __name__ == '__main__':
+    from pprint import pprint
+    from spacy import displacy
+    # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
+    # tests = get_tests(_in)
+    tests = get_tests('CT')
+    for test in tests:
+        result = is_conditional_test(test)
+        if not result:
+            actions = [t.action for t in test]
+            _actions = list(enumerate(actions))
+            pprint(_actions)
+            node = input('Which node to serve? ')
+            displacy.serve(nlp(actions[int(node)]))
+        # print(result)
+        # print()
