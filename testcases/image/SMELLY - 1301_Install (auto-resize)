@@ -1,4 +1,4 @@
-﻿<!-- Smells: EAGER TEST, UNVERIFIED STEPS, CONDITIONAL TEST LOGIC -->
+<!-- Smells: EAGER TEST, UNVERIFIED STEPS, CONDITIONAL TEST LOGIC -->
 
 <strong> Check that an existing system is installed and that sufficient disk space is available for an additional system to be installed during the test</strong>
 
@@ -53,7 +53,7 @@
     <dt>Allow the machine to reboot, select the first option at the grub menu</dt>
         <dd>Your new installation boots</dd>
     <dt>Reboot machine, select the previous installed system</dt>
-	<dd>Previously installed system boots and operates as expected</dd>
+	    <dd>Previously installed system boots and operates as expected</dd>
 </dl>
 <strong>If all actions produce the expected results listed, please <a href="results#add_result">submit</a> a 'passed' result.
     If an action fails, or produces an unexpected result, please <a href="results#add_result">submit</a> a 'failed' result and <a href="../../buginstructions">file a bug</a>. Please be sure to include the bug number when you <a href="results#add_result">submit</a> your result.</strong>

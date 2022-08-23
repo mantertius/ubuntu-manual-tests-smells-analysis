@@ -19,7 +19,7 @@ Using Unity
 <strong>Verify Manual Connectivity</strong>
 
 Case ID: hwn-002
-<!-- Smells: UNVERIFIED STEPS, RESULTS AS STEPS -->
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEPS(misplaced result) -->
 <dl>
     <dt>Run <code>sudo ifconfig [interface] [staticIP] </code> where [interface] is the interface name (e.g. wlan) and [staticIP] is a valid unused IP address on the current network. (If you are on a home network try using the previously used IP address, (still listed on the terminal) (Consult your network administrator if you do not know such an address.)</dt>
     <dt>Run <code>ifconfig</code>. Verify that the network device is again listed (e.g. wlan) and has the IP ([staticIP]) address listed as given above.</dt>
