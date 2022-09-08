@@ -1,4 +1,3 @@
-import abc
 from data import expand_words
 
 unspecific_words = expand_words(('all', 'default', 'any', 'some'), k=5)
