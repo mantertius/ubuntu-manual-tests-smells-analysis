@@ -22,10 +22,11 @@ differentiation phrased in natural language (we used the words: if, whether, dep
 
 
 11) Exception Handling: We count the number of question marks on every test.
+
 12) Misplaced Result: We count the number of commands on the step section of the test. If there's more than one, it's already an ES and we must check if the extra command may be a verification, i.e. it can fit on the verification section.
 13) Nested Test: We count the number of "Test" words on the step section. If there is more than zero, than there is a smell.
 14) Test Clone: We look for similarities on the tests.
-15) Magic Value: We check for a specific numerical value, that has no apparent meaning. 
+15) Magic Value: We check for a specific numerical value, that has no apparent meaning.
 16) Random Data: We search for "random"-like words on the test. We used the words: "random", "any", "arbitrarily", "whatever", "whatsoever"
 17) Calculating Expected Results On The Fly: ?
 18) Optional Test: We count the word "optional" on every test. If there's any, than it's a smell.

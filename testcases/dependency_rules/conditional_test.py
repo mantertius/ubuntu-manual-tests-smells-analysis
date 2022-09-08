@@ -1,4 +1,3 @@
-import abc
 from data import expand_words
 
 conditional_words = expand_words(('if', 'whether', 'depending', 'when', 'case', 'otherwise'))
