@@ -1,11 +1,8 @@
 from collections import abc
-
-try:
-    from rich import print
-except ModuleNotFoundError:
-    pass
+from pprint import pprint as print
 
 import numpy as np
+from spacy import displacy
 
 
 from dependency_matchers import MatchersFactory
@@ -13,9 +10,18 @@ from data import get_tests, matcher_wait, matcher_if, matcher_optional, k_closes
 
 
 def is_unverified_step(test: abc.Container) -> bool:
-    # breakpoint()
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
+
+def is_precondition_as_step(tests: abc.Container) -> bool:
+    matcher = MatchersFactory.pre_condition_as_step()
+    for test in tests:
+        for step in test.steps:
+            doc = nlp(step.action)
+            for sentence in doc.sents:
+                if matcher(sentence):
+                    return True
+    return False
 
 def is_exception_handling(test: abc.Container) -> bool:
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
@@ -41,7 +47,7 @@ def is_expected_results_as_step(test: abc.Container) -> bool:
         step for step in test for reaction in step.reactions if reaction[0].tag_ in ['VB', 'VBP']]
     # breakpoint()
     return len(marked_steps) > 0
-    
+
 def is_unspecified_parameter(test:abc.Container) -> bool:
     matcher = MatchersFactory.unspecified_parameter_matcher()
     for step in test:
@@ -120,18 +126,16 @@ def is_misplaced_pre_condition(test:abc.Container) -> bool:
 #            cnt += 1
 
 if __name__ == '__main__':
-    from pprint import pprint
-    from spacy import displacy
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('CT')
+    tests = get_tests('PCAS')
     for test in tests:
-        result = is_conditional_test(test)
-        if not result:
-            actions = [t.action for t in test]
-            _actions = list(enumerate(actions))
-            pprint(_actions)
-            node = input('Which node to serve? ')
-            displacy.serve(nlp(actions[int(node)]))
+        result = is_precondition_as_step(test)
+        # if not result:
+        #     actions = [t.action for t in test]
+        #     _actions = list(enumerate(actions))
+        #     pprint(_actions)
+        #     node = input('Which node to serve? ')
+        #     displacy.serve(nlp(actions[int(node)]))
         # print(result)
         # print()

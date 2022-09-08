@@ -1,7 +1,7 @@
 from spacy.matcher import DependencyMatcher
 import spacy
 from data import nlp
-from dependency_rules import unspecified_parameter, conditional_test
+from dependency_rules import unspecified_parameter, conditional_test, pre_condition_as_step_test
 
 class MatchersFactory:
     def unspecified_parameter_matcher():
@@ -9,6 +9,9 @@ class MatchersFactory:
 
     def conditional_test_matcher():
         return MatchersFactory._build_matcher(conditional_test.patterns)
+
+    def pre_condition_as_step():
+        return MatchersFactory._build_matcher(pre_condition_as_step_test.patterns)
 
     def _build_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)

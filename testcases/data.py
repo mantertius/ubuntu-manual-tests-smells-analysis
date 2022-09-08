@@ -10,7 +10,6 @@ import spacy
 from scipy.spatial import distance
 
 nlp = spacy.load('en_core_web_lg')
-nlp = spacy.load('pt_core_news_lg')
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
@@ -30,13 +29,12 @@ def smells_loader_closure():
     df = df[[FILE_COL, SMELL_COL]]
     df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
     df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
-    
+
     def smells_loader(smell_acronym:str) -> pd.DataFrame:
         """
         Will return every filepath that has the smell_acronym.
         """
-        return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True) #this is a df of paths 
-    
+        return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True) #this is a df of paths
     return smells_loader
 
 smells_loader = smells_loader_closure()
@@ -138,7 +136,6 @@ def _(smell_acronym:str):
     ##test for path in smells_loader(smell_acronym)[FILE_COL] → test  #me dá a lista de todos os paths que tem o smell que eu pedi na variavel test
 
     #path_list = [path for path in smells_loader(smell_acronym)[FILE_COL]]
-    
     return test_list
 
 @get_tests.register(PosixPath)
