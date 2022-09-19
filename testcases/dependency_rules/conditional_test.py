@@ -1,6 +1,6 @@
 from data import expand_words
 
-conditional_words = expand_words(('if', 'whether', 'depending', 'when', 'case', 'otherwise'))
+conditional_words = expand_words(('if', 'whether', 'depending', 'when', 'case', 'otherwise'), k=3)
 
 patterns = [
             [

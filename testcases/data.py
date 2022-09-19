@@ -32,9 +32,12 @@ def smells_loader_closure():
 
     def smells_loader(smell_acronym:str) -> pd.DataFrame:
         """
-        Will return every filepath that has the smell_acronym.
+        Will return every filepath that has the smell_acronym. If no acronym is passed, returns all.
         """
-        return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True) #this is a df of paths
+        if smell_acronym != '':
+            return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True) #this is a df of paths
+        return df.reset_index(drop=True)
+
     return smells_loader
 
 smells_loader = smells_loader_closure()
@@ -154,6 +157,7 @@ def on_match(matcher, doc, id, matches):
 
 def matcher_maker(test, pattern_name, pattern):
     """
+    DEPRECATED
     Recieves the subject, the pattern_name and the pattern. Returns the number of matches.
     """
     matcher = spacy.matcher.Matcher(nlp.vocab)
@@ -162,22 +166,27 @@ def matcher_maker(test, pattern_name, pattern):
     return matches
 
 def matcher_wait(test):
+    """DEPRECATED"""
     pattern = [{'LOWER': {"IN" : ["wait","halt","rest","holdup","stay on hold"]}}, {'POS' : 'ADP', 'OP' : '+'} , {'LIKE_NUM' : False}]
     number_of_waits_without_num = len(matcher_maker(test,"NOT_NUM",pattern))
     return number_of_waits_without_num
 
 def matcher_if(test):
+    """DEPRECATED"""
+
     pattern = [{'LOWER': {"IN":['if','whether','depending','when','in case']}}]
     number_of_ifs = len(matcher_maker(test,"HAS_IF",pattern))
     return number_of_ifs
 
 def matcher_optional(test):
+    """DEPRECATED"""
     pattern = [{'LOWER':"optional"}]
     matches = matcher_maker(test,"HAS_OPTIONAL", pattern)
     number_of_optionals = len(matches)
     return number_of_optionals
 
 def matcher_pre_condition(test):
+    """DEPRECATED"""
     # i thinks this pattern is too embracing, it may get false positives.
     pattern = [{'LOWER':{"IN" : ["make sure", "make certain","see to it","secure","guarantee","warrant",'certify','set the seal on', 'clinch', 'confirm', 'check','verify', 'corroborate', 'establish', 'sew up', 'ensure']}}]
     matches = matcher_maker(test,"HAS_MISPLACED_PRE_CONDITION",pattern)

@@ -1,6 +1,6 @@
 from collections import abc
-from pprint import pprint as print
-
+#from pprint import pprint as print
+from rich import print
 import numpy as np
 from spacy import displacy
 
@@ -14,7 +14,7 @@ def is_unverified_step(test: abc.Container) -> bool:
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
 def is_precondition_as_step(tests: abc.Container) -> bool:
-    matcher = MatchersFactory.pre_condition_as_step()
+    matcher = MatchersFactory.pre_condition_as_step_matcher()
     for test in tests:
         for step in test.steps:
             doc = nlp(step.action)
@@ -27,7 +27,6 @@ def is_exception_handling(test: abc.Container) -> bool:
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
     exceptional_steps = [step for step in test if '?' in step.action]
     return len(exceptional_steps) > 0
-
 
 def is_eager_test(test: abc.Container) -> bool:
     eager_test = [step for step in test if len(step.reactions) > 1]
@@ -64,23 +63,52 @@ def is_unspecified_parameter(test:abc.Container) -> bool:
 
 def is_conditional_test(test:abc.Container) -> bool:
     matcher = MatchersFactory.conditional_test_matcher()
-    for step in test:
-        matches = []
-        action_matches = matcher(step.action)
-        if action_matches:
+    for step in test.steps: 
+            #breakpoint()
+            matches = []
+            action_matches = matcher(step.action)
             if action_matches:
                 return True
     return False
 
 def is_undefined_wait(test: abc.Container) -> bool:
-    # I don't know if this works!
-    """
-    Using a powerful regex matcher, we are able to locate expressions that have the "wait" but do not specify the wait time.
-    https://spacy.io/api/matcher
-    """
-    smelly_step = [step for step in test if matcher_wait(step.action) > 0]
-    smelly_result = [step for step in test if matcher_wait(step.reaction) > 0]
-    return smelly_result+smelly_step > 0
+    matcher = MatchersFactory.undefined_wait_matcher()
+    for step in test.steps: 
+            #breakpoint()
+            matches = []
+            action_matches = matcher(step.action)
+            if action_matches:
+                return True
+    return False
+
+def is_optional_test(test: abc.Container) -> bool:
+    matcher = MatchersFactory.optional_test_matcher()
+    for step in test.steps: 
+            #breakpoint()
+            matches = []
+            action_matches = matcher(step.action)
+            header_matches = matcher(test.header)
+            any_match = action_matches+header_matches
+            if action_matches:
+                return True
+    return False
+
+
+
+
+
+
+
+
+# def is_undefined_wait(test: abc.Container) -> bool:
+#     # I don't know if this works!
+#     """
+#     Using a powerful regex matcher, we are able to locate expressions that have the "wait" but do not specify the wait time.
+#     https://spacy.io/api/matcher
+#     """
+#     smelly_step = [step for step in test if matcher_wait(step.action) > 0]
+#     smelly_result = [step for step in test if matcher_wait(step.reaction) > 0]
+#     return smelly_result+smelly_step > 0
 
 def is_misplaced_result(test: abc.Container) -> bool:
     """
@@ -88,30 +116,6 @@ def is_misplaced_result(test: abc.Container) -> bool:
     """
     pass
 
-def is_conditional_test(test: abc.Container) -> bool:
-    # I don't know if this works!
-    """
-    Uses the spacy matcher to look for "if"s.
-    """
-    smelly_step = [step for step in test if matcher_if(step.action) > 0]
-    smelly_result = [step for step in test if matcher_if(step.reaction) > 0]
-    return smelly_result + smelly_step > 0
-
-def is_optional_test(test: abc.Container) -> bool:
-    """
-    Uses the spacy matcher to look for "if"s.
-    """
-    smelly_header = [header for header in test if matcher_optional(header) > 0 ]
-    smelly_step = [step for step in test if matcher_optional(step.action) > 0]
-    smelly_result = [step for step in test if matcher_optional(step.reaction) > 0]
-    return smelly_header + smelly_result + smelly_step > 0
-
-def is_misplaced_pre_condition(test:abc.Container) -> bool:
-    #As this one is kinda hard to detect using nlp, we should just send a warning, not an definitive "this is wrong"
-    """
-    Searches for "make sure", "ensure" and synomyms using spacy's matcher.
-    """
-    pass
 
 
 #if __name__ == '__main__':
@@ -128,9 +132,17 @@ def is_misplaced_pre_condition(test:abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('PCAS')
-    for test in tests:
-        result = is_precondition_as_step(test)
+    tests = get_tests("image/1552_EC2CloudImages test")
+    print(tests)
+    cnt = 0
+    for Test in tests:
+        cnt2 = 0
+        for test in Test:
+            result = is_optional_test(test)
+            print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
+            cnt += 1
+            cnt2 += 1
+            #displacy.serve()
         # if not result:
         #     actions = [t.action for t in test]
         #     _actions = list(enumerate(actions))
