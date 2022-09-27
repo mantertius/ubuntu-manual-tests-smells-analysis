@@ -65,22 +65,26 @@ def erase_split(text:str, erase:str, split:str):
 def split_tests(text, filepath:str):
     pass
 
-def split_tests(text:str, filepath:str) -> Test:
+def extract_texts(text:str, filepath:str) -> abc.Container:
+    """
+    Gets the raw text from the filepath as well the filepath as a string and returns a list containing the parsed raw texts from the tests.
+    """
     spaces = r'\s{2,}'
     breaks = r'\n'
     trailing_whitespace = r'> '
-    
+
     test_title = r'(?<=<strong>)(.+?)(?=</strong>)'
     test_header = r'(?<=^)(.+?)(?=<dl>)|(?<=</dl>)(.+?)(?=<dl>)' #it's the title and the preconditions
     comments = r'(?<=<!--)(.+?)(?=-->)'
     tags = r'(?<=<dl>)(.+?)(?=</dl>)'
     language_disclaimer = r'(?<=<em>)(.+?)(?=</em>)'
-    
+
     text = re.sub(re.compile(language_disclaimer),'',text)
     text = re.sub(re.compile(comments),' ',text)
     text = re.sub(re.compile(spaces),' ',text)
     text = re.sub(re.compile(breaks),' ',text)
     text = re.sub(re.compile(trailing_whitespace),'>',text)
+
     mid_header = r'(?<=<\/dl>)(.+?)(?=<dl>)'
     init_header = r'(?<=^)(.+?)(?=<dl>)'
 
@@ -88,13 +92,16 @@ def split_tests(text:str, filepath:str) -> Test:
     headers2 = list(re.findall(mid_header,text))
 
     headers = headers1+headers2#TODO  #17   #talvez seja necessário usar erase_split() em headers2 para que a gente consiga pegar o caso de >=3 testes no arquivo
-    #headers = [header for header in headers if header != '' for header_inside in header if header_inside != '']
     headers = [remove_html(header) for header in headers]
 
     tests = list(re.findall(tags,text)) #textão único, juntando tudo que tá dentro de <dl>
     tests = [erase_split(text=r,erase='</dt>',split='<dt>') for r in tests] #separa cada grupo formado por [passo e steps] dos outros [passo e steps]
+    return tests, headers
+
+def split_tests(text:str, filepath:str) -> Test:
+    tests, headers = extract_texts(text, filepath)
     tests = split_tests_steps(tests)
-    
+
     result = []
     for test in tests:
         temp = [Test(file=filepath,header=[header for header in headers],steps=[steps for steps in test])]
@@ -130,15 +137,8 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
-    test_list = [test for path in smells_loader(smell_acronym)[FILE_COL] 
+    test_list = [test for path in smells_loader(smell_acronym)[FILE_COL]
                         for test in split_tests(path.read_text(encoding='utf-8'),path)]
-    #breakpoint()
-    #path = PosixPath('packages/SMELLY - 1677_GDebi')
-    #testing = split_tests(path.read_text(), path)
-    #breakpoint()
-    ##test for path in smells_loader(smell_acronym)[FILE_COL] → test  #me dá a lista de todos os paths que tem o smell que eu pedi na variavel test
-
-    #path_list = [path for path in smells_loader(smell_acronym)[FILE_COL]]
     return test_list
 
 @get_tests.register(PosixPath)

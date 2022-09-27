@@ -1,12 +1,14 @@
 from collections import abc
+
+import numpy as np
+import spacy
 #from pprint import pprint as print
 from rich import print
-import numpy as np
 from spacy import displacy
 
-
+from data import (Test, get_tests, k_closest_words, matcher_if, matcher_optional,
+                  matcher_wait, nlp, smells_loader)
 from dependency_matchers import MatchersFactory
-from data import get_tests, matcher_wait, matcher_if, matcher_optional, k_closest_words, nlp, smells_loader
 
 
 def is_unverified_step(test: abc.Container) -> bool:
@@ -36,14 +38,21 @@ def is_eager_step(test: abc.Container) -> bool:
     eager_step = [step for step in test for action in step.actions if action[0].tag_ in ['VB', 'VBP']]
     return len(eager_step) > 0
 
-def is_expected_results_as_step(test: abc.Container) -> bool:
+def is_misplaced_step(test: abc.Container) -> bool:
     """
     Steps usually come on the imperative format. Imperative sentences usually start with a verb in second person.
     https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     This function checks if one of the steps of a test is an imperative sentence.
     """
+    def has_imperative_sentence(doc: spacy.tokens.Doc) -> bool:
+        for sentence in doc.sents:
+            if sentence[0].tag_ in ['VB', 'VBP']:
+                return True
+        return False
+
+    steps = test.steps
     marked_steps = [
-        step for step in test for reaction in step.reactions if reaction[0].tag_ in ['VB', 'VBP']]
+        step for step in steps for reaction in step.reactions if has_imperative_sentence(reaction)]
     # breakpoint()
     return len(marked_steps) > 0
 
@@ -63,7 +72,7 @@ def is_unspecified_parameter(test:abc.Container) -> bool:
 
 def is_conditional_test(test:abc.Container) -> bool:
     matcher = MatchersFactory.conditional_test_matcher()
-    for step in test.steps: 
+    for step in test.steps:
             #breakpoint()
             matches = []
             action_matches = matcher(step.action)
@@ -73,7 +82,7 @@ def is_conditional_test(test:abc.Container) -> bool:
 
 def is_undefined_wait(test: abc.Container) -> bool:
     matcher = MatchersFactory.undefined_wait_matcher()
-    for step in test.steps: 
+    for step in test.steps:
             #breakpoint()
             matches = []
             action_matches = matcher(step.action)
@@ -83,8 +92,7 @@ def is_undefined_wait(test: abc.Container) -> bool:
 
 def is_optional_test(test: abc.Container) -> bool:
     matcher = MatchersFactory.optional_test_matcher()
-    for step in test.steps: 
-            #breakpoint()
+    for step in test.steps:
             matches = []
             action_matches = matcher(step.action)
             header_matches = matcher(test.header)
@@ -92,6 +100,15 @@ def is_optional_test(test: abc.Container) -> bool:
             if action_matches:
                 return True
     return False
+
+def is_test_clone(test: Test, other_tests:abc.Container = None) -> bool:
+    other_tests = get_tests('')
+    (header, steps) = (test.header, test.steps)
+    for file_test in other_tests:
+        for other_test in file_test:
+            (other_header, other_steps) = (other_test.header, other_test.steps)
+    return None
+
 
 
 
@@ -132,13 +149,13 @@ def is_misplaced_result(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests("image/1552_EC2CloudImages test")
+    tests = get_tests('ERAS')
     print(tests)
     cnt = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_optional_test(test)
+            result = is_test_clone(test)
             print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
             cnt += 1
             cnt2 += 1

@@ -15,10 +15,10 @@ class MatchersFactory:
 
     def optional_test_matcher():
         return MatchersFactory._build_matcher(optional_test.patterns)
-    
+
     def undefined_wait_matcher():
         return MatchersFactory._build_matcher(undefined_wait.patterns)
-    
+
     def _build_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)
         patterns = enumerate(patterns)
