@@ -1,6 +1,7 @@
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 
 <dl>
+    <!-- Conditional Test Logic, Unspecific Parameter, Undefined Wait, Aimless Test, Unverified Steps -->
     <dt>Boot up the image</dt>
         <dd>The system boots properly and loads the installer displaying Welcome dialog with language selection and 'Try FAMILY' and 'Install FAMILY' buttons</dd>
     <dt>Click on the release notes hyperlink to confirm that a browser launches and you are taken to the release notes web page.</dt>
@@ -37,6 +38,7 @@
     <dt>Check 'Overwrite empty disk space' and click the 'Install Now' button</dt>
         <dd>The screen advances</dd>
     <dt>If there is only one hard disk, skip to step 14 (On the 'Where are you?' screen...). Otherwise, on the 'Installation type' screen verify that the drive selected on the Select drive list corresponds to the drive on the chart (e.g /dev/sda)</dt>
+        <!-- Which drive? - Unspecified Parameter -->
         <dd>Selected drive is displayed on the chart</dd>
     <dt>Verify that the full drive space is allocated</dt>
         <dd>Full drive space is allocated for installation</dd>
@@ -51,6 +53,7 @@
     <dt>Click on the continue button</dt>
         <dd>The 'Welcome to FAMILY ' slide is displayed</dd>
         <dd>The slideshow is entirely in your language</dd> 
+        <!-- undefined wait -->
     <dt>Wait for the installer to finish</dt>
         <dd>An 'Installation Complete' dialog appears</dd>
     <dt>Click the Restart now button</dt>

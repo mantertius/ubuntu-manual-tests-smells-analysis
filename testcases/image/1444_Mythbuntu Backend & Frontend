@@ -1,6 +1,7 @@
 The testcase tests the installation and basic functionality of a Primary Backend with Frontend.
 
 <dl>
+    <!-- UNVERIFIED STEPS, MISPLACED PRE-CONDITION -->
     <dt>Go though the Ubiquity install as you would any other install. Most options won't matter for this testcase, but be sure to choose the following options</dt>
         <dd>
             <ul>

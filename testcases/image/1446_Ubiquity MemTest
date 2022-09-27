@@ -1,8 +1,10 @@
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 
 <dl>
+    <!-- Unverified Steps, Aimless Test, Automatic Intervention -->
     <dt>Boot up the image.  When you see the aubergine screen with an icon at the bottom, press any key to get the menu</dt>
     <dt>Select your language and press <strong>enter</strong></dt>
+    <!-- line 8 runs a automatic test? -->
     <dt>From the main menu select <strong>Test Memory</strong> and press <strong>Enter</strong></dt>
     <dt>Wait until the test finishes</dt>
         <dd>The test should finish and show any errors</dd>
