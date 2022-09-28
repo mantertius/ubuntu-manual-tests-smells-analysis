@@ -104,9 +104,7 @@ def is_optional_test(test: abc.Container) -> bool:
 def is_test_clone(test: Test, other_tests:abc.Container = None) -> bool:
     other_tests = get_tests('')
     (header, steps) = (test.header, test.steps)
-    for file_test in other_tests:
-        for other_test in file_test:
-            (other_header, other_steps) = (other_test.header, other_test.steps)
+    
     return None
 
 
