@@ -1,5 +1,6 @@
 This test will check that Window Manager opens and closes correctly
 <dl>
+<!-- good -->
     <dt>Open Window Manager from Settings dialogue</dt>
         <dd>Window Manager opens to Style tab</dd>
     <dt>Press X in top right corner of window manager</dt>
@@ -50,6 +51,7 @@ This test will check that Focus changes are applied correctly
         <dd>Speed at which focus is applied changes</dd>
     <dt>Deselect all focus options, leaving focus model at Click to focus</dt>
         <dd>All ticks removed from boxes</dd>
+        <!-- is this eager test? -->
     <dt>Open the file manager with Super +f</dt>
         <dd>The file manager opens, focus stays with Window Manager</dd>
         <dd>Window Manager is not raised above the file manager</dd>
@@ -75,6 +77,7 @@ This test will check that Advanced options are applied correctly
 
 <em>Note that Wrap work spaces does not function in a virtualbox vm - this is not cause to fail the test</em>
 <dl>
+<!-- unverified steps -->
     <dt>Select Advanced tab</dt>
         <dd>Window changes to advanced tab, Snap windows to screen border and Wrap workspaces when dragging selected by default</dd>
     <dt>Left click on window title bar</dt>
