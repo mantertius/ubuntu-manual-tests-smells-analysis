@@ -9,6 +9,7 @@ Test-case dash/show
 </dl>
 Test-case dash/show-hide
 <dl>
+    <!-- Unverified Steps -->
     <dt>Click the first item of the launcher</dt>
         <dd>The dash should appear</dd>
     <dt>Ensure that the content of the search is empty</dt>
@@ -20,6 +21,7 @@ Test-case dash/show-hide
 </dl>
 Test-case dash/launcher-interaction
 <dl>
+    <!-- Misplaced Pre-Condition -->
     <dt>Make sure Launcher auto-hide is enabled.</dt>
     <dt>Have a maximized application and launcher hidden</dt>
     <dt>Press super to get the dash opened</dt>
@@ -70,6 +72,7 @@ Test-case dash/global-search-backspace
 <dl>
     <dt>Press super to get the dash opened</dt>
     <dt>Make a search</dt>
+    <!-- Unspecified Parameter -->
         <dd>Some results should appear</dd>
     <dt>Click on backspace until the search is empty</dt>
         <dd>The search should be canceled, bringing you back to the generic "Search" entry with the default elements</dd>
@@ -99,6 +102,7 @@ Test-case dash/go-to-lens
 </dl>
 Test-case dash/home
 <dl>
+    <!-- Conditional Test -->
     <dt>Press super to show the home dash</dt>
         <dd>You should see:
             <ul>

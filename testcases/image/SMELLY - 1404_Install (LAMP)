@@ -1,7 +1,7 @@
 Scope of this test is to verify that the system is installed, you can login into it, Apache and MySQL are working.
 
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
-<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP, NESTED TEST, NON-DETERMINISTIC STEP -->
+<!-- Smells: UNVERIFIED STEPS, EXPECTED RESULTS AS STEP, EAGER TEST, NON-DETERMINISTIC STEP -->
 <dl>
     <dt>Boot up the image</dt>
     <dt>Choose the desired language</dt>
@@ -31,7 +31,7 @@ Scope of this test is to verify that the system is installed, you can login into
     <dt>Test Apache:</dt>
         <dd>w3m http://127.0.0.1/</dd>
         <dd>Press q and confirm to exit</dd>
-    <!-- SMELL: NESTED TEST -->
+    <!-- SMELL: EAGER TEST -->
     <dt>Test MySQL:</dt>
         <dd>sudo mysql</dd>
         <!-- SMELL: NON-DETERMINISTIC STEP -->
