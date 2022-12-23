@@ -4,6 +4,7 @@ This test will test if you are able to launch Xfburn
         <dd>Xfburn launches</dd>
 </dl>
 
+        <!-- THE FILES ARE ADDED WITHOUT CONFIRMATION????? AMBIGUOUS TEST -->
 This test will check that "New Audio Composition" Works
 <dl>
     <dt>Click "New Audio Composition"</dt>
@@ -13,7 +14,6 @@ This test will check that "New Audio Composition" Works
         <dd>If this is your first time a message appears about adding your home directory</dd>
         <dd>A new window asking for files appears</dd>
     <dt>Select several music files</dt>
-        <!-- THE FILES ARE ADDED WITHOUT CONFIRMATION????? AMBIGUOUS TEST -->
         <!-- EAGER TEST -->
         <dd>The files are added to the project</dd>
         <dd>All information about the files is displayed: Pos, Length, Filename</dd>

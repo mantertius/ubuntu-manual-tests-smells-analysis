@@ -25,18 +25,25 @@ def is_precondition_as_step(tests: abc.Container) -> bool:
                     return True
     return False
 
-def is_exception_handling(test: abc.Container) -> bool:
+def is_exception_handling(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
     exceptional_steps = [step for step in test if '?' in step.action]
     return len(exceptional_steps) > 0
 
-def is_eager_test(test: abc.Container) -> bool:
-    eager_test = [step for step in test if len(step.reactions) > 1]
-    return len(eager_test) > 0
+# def is_eager_test(test: abc.Container) -> bool:
+#     eager_test = [step for step in test if len(step.reactions) > 1]
+#     return len(eager_test) > 0
 
 def is_eager_step(test: abc.Container) -> bool:
-    eager_step = [step for step in test for action in step.actions if action[0].tag_ in ['VB', 'VBP']]
-    return len(eager_step) > 0
+    #breakpoint()
+    eager_step = 0 #[step for step in test.steps for action in step.action if action[0].tag_ in ['VB', 'VBP']]
+    steps = test.steps
+    for step in steps:
+        #breakpoint()
+        for i in range(len(step.action)):
+            if step.action[i].tag_ in ['VB','VBP']:
+                eager_step +=1
+    return eager_step > 0
 
 def is_misplaced_step(test: abc.Container) -> bool:
     """
@@ -56,19 +63,19 @@ def is_misplaced_step(test: abc.Container) -> bool:
     # breakpoint()
     return len(marked_steps) > 0
 
-def is_unspecified_parameter(test:abc.Container) -> bool:
-    matcher = MatchersFactory.unspecified_parameter_matcher()
-    for step in test:
-        matches = []
-        action_matches = matcher(step.action)
-        if action_matches:
-            if action_matches:
-                return True
-        for reaction in step.reactions:
-            reaction_matches = matcher(reaction)
-            if reaction_matches:
-                return True
-    return False
+# def is_unspecified_parameter(test:abc.Container) -> bool:
+#     matcher = MatchersFactory.unspecified_parameter_matcher()
+#     for step in test:
+#         matches = []
+#         action_matches = matcher(step.action)
+#         if action_matches:
+#             if action_matches:
+#                 return True
+#         for reaction in step.reactions:
+#             reaction_matches = matcher(reaction)
+#             if reaction_matches:
+#                 return True
+#     return False
 
 def is_conditional_test(test:abc.Container) -> bool:
     matcher = MatchersFactory.conditional_test_matcher()
@@ -90,22 +97,22 @@ def is_undefined_wait(test: abc.Container) -> bool:
                 return True
     return False
 
-def is_optional_test(test: abc.Container) -> bool:
-    matcher = MatchersFactory.optional_test_matcher()
-    for step in test.steps:
-            matches = []
-            action_matches = matcher(step.action)
-            header_matches = matcher(test.header)
-            any_match = action_matches+header_matches
-            if action_matches:
-                return True
-    return False
+# def is_optional_test(test: abc.Container) -> bool:
+#     matcher = MatchersFactory.optional_test_matcher()
+#     for step in test.steps:
+#             matches = []
+#             action_matches = matcher(step.action)
+#             header_matches = matcher(test.header)
+#             any_match = action_matches+header_matches
+#             if action_matches:
+#                 return True
+#     return False
 
-def is_test_clone(test: Test, other_tests:abc.Container = None) -> bool:
-    other_tests = get_tests('')
-    (header, steps) = (test.header, test.steps)
+# def is_test_clone(test: Test, other_tests:abc.Container = None) -> bool:
+#     other_tests = get_tests('')
+#     (header, steps) = (test.header, test.steps)
     
-    return None
+#     return None
 
 
 
@@ -147,13 +154,13 @@ def is_misplaced_result(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('ERAS')
+    tests = get_tests('')
     print(tests)
     cnt = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_test_clone(test)
+            result = is_eager_test(test)
             print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
             cnt += 1
             cnt2 += 1
