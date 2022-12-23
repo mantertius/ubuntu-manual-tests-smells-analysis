@@ -1,4 +1,5 @@
 <dl>
+<!-- Aimless Test -->
     <dt>Open Firefox and navigate to http://launchpad.net/</dt>
         <dd>The site opens and displays a prompt asking if you want ubuntu to integrate with the website</dd>
     <dt>Click on the button "Integrate".</dt>

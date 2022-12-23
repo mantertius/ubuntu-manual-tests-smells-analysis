@@ -1,12 +1,14 @@
 from collections import abc
+
+import numpy as np
+import spacy
 #from pprint import pprint as print
 from rich import print
-import numpy as np
 from spacy import displacy
 
-
+from data import (Test, get_tests, k_closest_words, matcher_if, matcher_optional,
+                  matcher_wait, nlp, smells_loader)
 from dependency_matchers import MatchersFactory
-from data import get_tests, matcher_wait, matcher_if, matcher_optional, k_closest_words, nlp, smells_loader
 
 
 def is_unverified_step(test: abc.Container) -> bool:
@@ -23,47 +25,61 @@ def is_precondition_as_step(tests: abc.Container) -> bool:
                     return True
     return False
 
-def is_exception_handling(test: abc.Container) -> bool:
+def is_exception_handling(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
     exceptional_steps = [step for step in test if '?' in step.action]
     return len(exceptional_steps) > 0
 
-def is_eager_test(test: abc.Container) -> bool:
-    eager_test = [step for step in test if len(step.reactions) > 1]
-    return len(eager_test) > 0
+# def is_eager_test(test: abc.Container) -> bool:
+#     eager_test = [step for step in test if len(step.reactions) > 1]
+#     return len(eager_test) > 0
 
 def is_eager_step(test: abc.Container) -> bool:
-    eager_step = [step for step in test for action in step.actions if action[0].tag_ in ['VB', 'VBP']]
-    return len(eager_step) > 0
+    #breakpoint()
+    eager_step = 0 #[step for step in test.steps for action in step.action if action[0].tag_ in ['VB', 'VBP']]
+    steps = test.steps
+    for step in steps:
+        #breakpoint()
+        for i in range(len(step.action)):
+            if step.action[i].tag_ in ['VB','VBP']:
+                eager_step +=1
+    return eager_step > 0
 
-def is_expected_results_as_step(test: abc.Container) -> bool:
+def is_misplaced_step(test: abc.Container) -> bool:
     """
     Steps usually come on the imperative format. Imperative sentences usually start with a verb in second person.
     https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     This function checks if one of the steps of a test is an imperative sentence.
     """
+    def has_imperative_sentence(doc: spacy.tokens.Doc) -> bool:
+        for sentence in doc.sents:
+            if sentence[0].tag_ in ['VB', 'VBP']:
+                return True
+        return False
+
+    steps = test.steps
     marked_steps = [
-        step for step in test for reaction in step.reactions if reaction[0].tag_ in ['VB', 'VBP']]
+        step for step in steps for reaction in step.reactions if has_imperative_sentence(reaction)]
     # breakpoint()
     return len(marked_steps) > 0
 
-def is_unspecified_parameter(test:abc.Container) -> bool:
-    matcher = MatchersFactory.unspecified_parameter_matcher()
-    for step in test:
-        matches = []
-        action_matches = matcher(step.action)
-        if action_matches:
-            if action_matches:
-                return True
-        for reaction in step.reactions:
-            reaction_matches = matcher(reaction)
-            if reaction_matches:
-                return True
-    return False
+# def is_unspecified_parameter(test:abc.Container) -> bool:
+#     matcher = MatchersFactory.unspecified_parameter_matcher()
+#     for step in test:
+#         matches = []
+#         action_matches = matcher(step.action)
+#         if action_matches:
+#             if action_matches:
+#                 return True
+#         for reaction in step.reactions:
+#             reaction_matches = matcher(reaction)
+#             if reaction_matches:
+#                 return True
+#     return False
 
 def is_conditional_test(test:abc.Container) -> bool:
     matcher = MatchersFactory.conditional_test_matcher()
-    for step in test.steps: 
+    for step in test.steps:
             #breakpoint()
             matches = []
             action_matches = matcher(step.action)
@@ -73,7 +89,7 @@ def is_conditional_test(test:abc.Container) -> bool:
 
 def is_undefined_wait(test: abc.Container) -> bool:
     matcher = MatchersFactory.undefined_wait_matcher()
-    for step in test.steps: 
+    for step in test.steps:
             #breakpoint()
             matches = []
             action_matches = matcher(step.action)
@@ -81,17 +97,23 @@ def is_undefined_wait(test: abc.Container) -> bool:
                 return True
     return False
 
-def is_optional_test(test: abc.Container) -> bool:
-    matcher = MatchersFactory.optional_test_matcher()
-    for step in test.steps: 
-            #breakpoint()
-            matches = []
-            action_matches = matcher(step.action)
-            header_matches = matcher(test.header)
-            any_match = action_matches+header_matches
-            if action_matches:
-                return True
-    return False
+# def is_optional_test(test: abc.Container) -> bool:
+#     matcher = MatchersFactory.optional_test_matcher()
+#     for step in test.steps:
+#             matches = []
+#             action_matches = matcher(step.action)
+#             header_matches = matcher(test.header)
+#             any_match = action_matches+header_matches
+#             if action_matches:
+#                 return True
+#     return False
+
+# def is_test_clone(test: Test, other_tests:abc.Container = None) -> bool:
+#     other_tests = get_tests('')
+#     (header, steps) = (test.header, test.steps)
+    
+#     return None
+
 
 
 
@@ -132,13 +154,13 @@ def is_misplaced_result(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests("image/1552_EC2CloudImages test")
+    tests = get_tests('')
     print(tests)
     cnt = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_optional_test(test)
+            result = is_eager_test(test)
             print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
             cnt += 1
             cnt2 += 1

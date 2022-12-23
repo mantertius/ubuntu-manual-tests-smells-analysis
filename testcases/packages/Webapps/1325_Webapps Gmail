@@ -1,5 +1,6 @@
 This test checks whether gmail integration is working properly
 <dl>
+    <!-- good -->
     <dt>Open Firefox and go to http://www.gmail.com</dt>
         <dd>Gmail loads</dd>
     <dt>Login with your username and password</dt>
