@@ -3,6 +3,7 @@ Server basic RAID1 install
 <em>Proceed in your native language if you wish. Instructions will remain in English</em>
 
 <dl>
+    <!-- Unverified Steps, Eager Test (nested test), Misplaced Step, Misplaced Pre-Condition -->
     <dt>NB: A more exhaustive set of test instructions to be used in KVM environments can be found on the <a href="https://wiki.ubuntu.com/BootDegradedRaid#Implementation">BootDegradedRaid wiki page</a></dt>
     <dt>Boot CD and run the CD self-check (then reboot)</dt>
     <dt>Select Install Ubuntu Server or ""Install to Hard Disk""</dt>
@@ -28,6 +29,7 @@ Server basic RAID1 install
         <dd>for i in $(sudo mdadm -Q --detail $(df -P /boot | grep ^/dev/ | cut -d" " -f1) | grep " /dev/" | awk '{print $NF}' | sed -e 's/[0-9]$//'); do sudo dd if=$i bs=512 count=1 2>/dev/null | strings -a | grep -q GRUB && echo $i: ok || echo $i: FAIL; done</dd>
     <dt>Make sure that the BOOT_DEGRADED setting is "TRUE" in /etc/initramfs-tools/conf.d/mdadm:</dt>
         <dd>cat /etc/initramfs-tools/conf.d/mdadm</dd>
+        <!-- is this eager test? -->
     <dt>Test booting from a cold-degraded array:</dt>
         <dd>Power off the system</dd>
         <dd>Disconnect one of the disk (disk 2) - disk 1 connected, disk2 disconnected.</dd>
@@ -56,6 +58,7 @@ Server basic RAID1 install
         <dd>Power off the system</dd>
         <dd>Reconnect the first disk (so both are now connected)</dd>
         <dd>Power on the system</dd>
+        <!-- Undefined Wait -->
     <dt>Wait for both drives to be back in sync:</dt>
         <dd>cat /proc/mdstat</dd>
     <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
@@ -92,6 +95,7 @@ Server basic RAID1 install
 Server with LUKS on RAID1 install
 
 <dl>
+    <!-- Test Clone -->
     <dt>Boot CD and run the CD self-check (then reboot)</dt>
     <dt>Select Install to hard disk</dt>
     <dt>Choose your language, country and keyboard layout</dt>
@@ -210,6 +214,7 @@ Server with LVM on LUKS on RAID1 install
         <dd>Poweroff the system</dd>
         <dd>Reconnect the first disk (so both are now connected)</dd>
         <dd>Poweron the system</dd>
+        <!-- undefined wait -->
     <dt>Wait for both drives to be back in sync:</dt>
         <dd>cat /proc/mdstat</dd>
     <dt>Change "Do you want to boot degraded?" answer to "No":</dt>
