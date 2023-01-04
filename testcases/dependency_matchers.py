@@ -1,20 +1,19 @@
 from spacy.matcher import DependencyMatcher
-import spacy
 from data import nlp
-from dependency_rules import unspecified_parameter, conditional_test, pre_condition_as_step_test, optional_test, undefined_wait
+from dependency_rules import conditional_test, misplaced_precondition, undefined_wait
 
 class MatchersFactory:
-    def unspecified_parameter_matcher():
-        return MatchersFactory._build_matcher(unspecified_parameter.patterns)
+    # def unspecified_parameter_matcher():
+    #     return MatchersFactory._build_matcher(unspecified_parameter.patterns)
 
     def conditional_test_matcher():
         return MatchersFactory._build_matcher(conditional_test.patterns)
 
-    def pre_condition_as_step_matcher():
-        return MatchersFactory._build_matcher(pre_condition_as_step_test.patterns)
+    def misplaced_precondition_matcher():
+        return MatchersFactory._build_matcher(misplaced_precondition.patterns)
 
-    def optional_test_matcher():
-        return MatchersFactory._build_matcher(optional_test.patterns)
+    # def optional_test_matcher():
+    #     return MatchersFactory._build_matcher(optional_test.patterns)
 
     def undefined_wait_matcher():
         return MatchersFactory._build_matcher(undefined_wait.patterns)

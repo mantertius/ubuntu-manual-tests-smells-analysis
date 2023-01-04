@@ -1,4 +1,5 @@
 import re
+from glob import glob
 from pathlib import Path, PosixPath
 from collections import namedtuple, abc
 from functools import singledispatch
@@ -40,6 +41,9 @@ def smells_loader_closure():
 
     return smells_loader
 
+
+    
+
 smells_loader = smells_loader_closure()
 
 def k_closest_words_closure():
@@ -54,7 +58,7 @@ def k_closest_words_closure():
 
 def expand_words(words, k=5) -> tuple:
     expanded_words = [k_closest_words(w, k) for w in words]
-    print(expanded_words)
+    print(f'{words}:{expanded_words}\n')
     return tuple(set([word.lower() for word_list in expanded_words for word in word_list]))
 
 k_closest_words = k_closest_words_closure()

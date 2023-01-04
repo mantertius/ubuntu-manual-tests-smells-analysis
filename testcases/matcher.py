@@ -32,8 +32,8 @@ def is_unverified_step(test: abc.Container) -> bool:
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
-def is_precondition_as_step(tests: abc.Container) -> bool:
-    matcher = MatchersFactory.pre_condition_as_step_matcher()
+def is_misplaced_precondition(tests: abc.Container) -> bool:
+    matcher = MatchersFactory.misplaced_precondition_matcher()
     for test in tests:
         for step in test.steps:
             doc = nlp(step.action)
@@ -42,10 +42,10 @@ def is_precondition_as_step(tests: abc.Container) -> bool:
                     return True
     return False
 
-def is_exception_handling(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
+def is_bad_verification_format(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
-    exceptional_steps = [step for step in test if '?' in step.action]
-    return len(exceptional_steps) > 0
+    bad_verification_format_steps = [step for step in test if '?' in step.action]
+    return len(bad_verification_format_steps) > 0
 
 def is_misplaced_step(test: abc.Container) -> bool:
     """
@@ -64,7 +64,6 @@ def is_misplaced_step(test: abc.Container) -> bool:
         step for step in steps for reaction in step.reactions if has_imperative_sentence(reaction)]
     return len(marked_steps) > 0
 
-
 def is_undefined_wait(test: abc.Container) -> bool:
     matcher = MatchersFactory.undefined_wait_matcher()
     for step in test.steps:
@@ -77,8 +76,23 @@ def is_undefined_wait(test: abc.Container) -> bool:
 def is_misplaced_result(test: abc.Container) -> bool:
     """
     Checks for active pronouns on the test.reaction field.
+
+    A verification verb (check, verify, observe, recheck) in the step description
+    Declarative sentence after any imperative one in the steps
+    something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
+    """
+    
+    pass
+
+def is_ambiguous_test(test: abc.Container) -> bool:
+    """
+    Imperative + indefinite pronoun/article
+    list of options separated by slash '/ ' or between parenthesis and separated by slash, comma or pipe
+    Use of 'etc.', 'different', 'multiple'
+    Use of adverb of manner
     """
     pass
+
 
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
@@ -89,7 +103,7 @@ if __name__ == '__main__':
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_eager_test(test)
+            result = is_bad_verification_format(test)
             print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
             cnt += 1
             cnt2 += 1
