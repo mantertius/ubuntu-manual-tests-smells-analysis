@@ -11,7 +11,11 @@ from data import (Test, get_tests, k_closest_words, matcher_if,
                 )
 from dependency_matchers import MatchersFactory
 
-def is_conditional_test(test:abc.Container) -> bool:
+def is_conditional_test(test:abc.Container) -> bool: #missing 'or'
+    """
+    1) It uses coordinating conjunctions, such as "and" or "or".
+    2) Or uses a conditional "if".
+    """
     matcher = MatchersFactory.conditional_test_matcher()
     for step in test.steps:
             matches = []
@@ -20,7 +24,10 @@ def is_conditional_test(test:abc.Container) -> bool:
                 return True
     return False
 
-def is_eager_step(test: abc.Container) -> bool:
+def is_eager_step(test: abc.Container) -> bool: #OK!
+    """
+    More than one imperative verb per step
+    """
     eager_step = 0
     steps = test.steps
     for step in steps:
@@ -28,7 +35,10 @@ def is_eager_step(test: abc.Container) -> bool:
         eager_step = eager_step + len(actions)
     return eager_step > 0
 
-def is_unverified_step(test: abc.Container) -> bool:
+def is_unverified_step(test: abc.Container) -> bool: #OK!
+    """
+    Missing verification step
+    """
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
