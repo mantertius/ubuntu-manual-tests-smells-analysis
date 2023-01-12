@@ -49,7 +49,7 @@ def smells_loader_closure_v2():
     print(df)
     return df.reset_index(drop=True)
 
-smells_loader = smells_loader_closure_v2()
+smells_loader = smells_loader_closure()
 
 def k_closest_words_closure():
     vocab_ids = [x for x in nlp.vocab.vectors.keys()]
@@ -62,6 +62,7 @@ def k_closest_words_closure():
     return k_closest_words
 
 def expand_words(words, k=5) -> tuple:
+    #TODO: FIX THIS FUNCTION WHEN number of words = 1
     expanded_words = [k_closest_words(w, k) for w in words]
     print(f'{words}:{expanded_words}\n')
     return tuple(set([word.lower() for word_list in expanded_words for word in word_list]))

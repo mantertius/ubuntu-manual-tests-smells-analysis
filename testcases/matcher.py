@@ -11,7 +11,7 @@ from data import (Test, get_tests, k_closest_words, matcher_if,
                 )
 from dependency_matchers import MatchersFactory
 
-def is_conditional_test(test:abc.Container) -> bool: #missing 'or'
+def is_conditional_test(test:abc.Container) -> bool: #OK
     """
     1) It uses coordinating conjunctions, such as "and" or "or".
     2) Or uses a conditional "if".
@@ -42,7 +42,7 @@ def is_unverified_step(test: abc.Container) -> bool: #OK!
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
-def is_misplaced_precondition(tests: abc.Container) -> bool:
+def is_misplaced_precondition(tests: abc.Container) -> bool: #naelson vai dar uma olhada
     matcher = MatchersFactory.misplaced_precondition_matcher()
     for test in tests:
         for step in test.steps:
