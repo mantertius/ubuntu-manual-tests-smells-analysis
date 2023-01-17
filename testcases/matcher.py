@@ -49,7 +49,6 @@ def is_misplaced_precondition(test: abc.Container) -> bool: #naelson vai dar uma
         for sentence in doc.sents:
             if matcher(sentence):
                 print(sentence)
-                breakpoint()
                 return True
     return False
 
@@ -93,8 +92,14 @@ def is_misplaced_result(test: abc.Container) -> bool:
     Declarative sentence after any imperative one in the steps
     something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
     """
-
-    pass
+    matcher = MatchersFactory.misplaced_result_matcher()
+    for step in test.steps:
+        matches = []
+        action_matches = matcher(step.action)
+        if action_matches:
+            print(step.action)
+            return True
+    return False
 
 def is_ambiguous_test(test: abc.Container) -> bool:
     """
@@ -109,13 +114,13 @@ def is_ambiguous_test(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('PCAS')
+    tests = get_tests('AT')
     print(tests)
     cnt = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_misplaced_precondition(test)
+            result = is_misplaced_result(test)
             print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
             cnt += 1
             cnt2 += 1

@@ -1,6 +1,6 @@
 from spacy.matcher import DependencyMatcher
 from data import nlp
-from dependency_rules import conditional_test, misplaced_precondition, undefined_wait
+from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result
 
 class MatchersFactory:
     # def unspecified_parameter_matcher():
@@ -17,6 +17,9 @@ class MatchersFactory:
 
     def undefined_wait_matcher():
         return MatchersFactory._build_matcher(undefined_wait.patterns)
+
+    def misplaced_result_matcher():
+        return MatchersFactory._build_matcher(misplaced_result.patterns)
 
     def _build_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)
