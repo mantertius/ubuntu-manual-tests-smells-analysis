@@ -5,38 +5,68 @@ NAME_COL = 'Summary'
 PRECON_COL = 'Initial Condition'
 STEPS_COL = 'Step Description'	
 RESULTS_COL = 'Expected Results'
-
+SMELL_COL = 'How to detect?'
 Test = namedtuple('Test',['name','header','steps'])
 Step = namedtuple('Step',['action','reactions'])
 
 
-def moto_loader_closure():
+def moto_smell_loader_closure():
     df = pd.read_csv('moto_exp.csv')
     df = df.fillna('')
-    df = df[[NAME_COL,PRECON_COL,STEPS_COL,RESULTS_COL]]
+    df = df[[NAME_COL, PRECON_COL, STEPS_COL, RESULTS_COL, SMELL_COL]]
+    print(df)
+    def smells_loader(smell_acronym: str) -> pd.DataFrame:
+        return df.loc[df[SMELL_COL].apply(lambda x: smell_acronym in x)].reset_index(drop=True)
+    return smells_loader
+
+smells_loader = moto_smell_loader_closure()
+
+
+def moto_ambt():
+    df = pd.read_csv('moto_exp.csv', index_col=False)
+    df = df.fillna('')
+    df = df[[NAME_COL, PRECON_COL, STEPS_COL, RESULTS_COL, SMELL_COL]]
     #print(df)
-    return df.reset_index(drop=True)
+    #df = df.reset_index(drop=True)
+    new_df = df[df['How to detect?'].str.contains('AmbT')]
+    #print(new_df)
+    new_df = new_df.reset_index(drop=True)
+    new_df.rename(columns= {NAME_COL : 'NUMERO E NOME DO ARQUIVO', 'How to detect?' : 'QUAL SMELL?' }, inplace=True)
+    new_df.to_csv('ambt_moto.csv')
+
 
 def extract_texts(text:str) -> abc.Container:
+    print(text)
     spaces = r'\s{2,}'
-    breaks = r'\n'
+    breaks = r'\n+'
     steps_number = r'\*\s*(step|Step)\s*\d+\*'
-    null = r'\*\s*(step|Step)\s*\d+\* null\n?'
-    breakpoint()
+    null = r'\*\s*(step|Step)\s*\d+\* null\n+?'
     text = re.sub(re.compile(null), '', text)
-    text = re.split(re.compile(steps_number), '\n', text)
+    breakpoint()
+    text = re.split(re.compile(steps_number), text) #TODO resolver isso aqui, pois isso retorna uma lista e eu não estou tratando isso
     text = re.sub(re.compile(breaks), '', text)
     text = re.sub(re.compile(spaces),' ', text)
     print(text)
 
+def get_tests(smell_acronym : str):
+    df = smells_loader(smell_acronym)
+    print(df)
+    result = []
+    for row in df.itertuples(name = 'Teste', index=False):
+        extract_texts(row[1])
+        temp = [Test(name=row[0], header=row[1], steps=Step(row[2], row[3]))]
+        result.append(temp)
+        # breakpoint()
+    
+
 if __name__ == '__main__':
-    df = moto_loader_closure()
-    text = '''*Step 1*
-  1. Test on projects that support Wireless Charging (Reverse Charging)
-  2. First time that Power Sharing is being used on DUT
-  3. Mobile phone power is at least 20%
-  4. Power sharing will be automatically disabled after 1 minute if isn't detect a device
-*Step 2* null
-*Step 2* null'''
-    extract_texts(text)
-        
+    df = moto_smell_loader_closure()
+#     text = '''*Step 1*
+#   1. Test on projects that support Wireless Charging (Reverse Charging)
+#   2. First time that Power Sharing is being used on DUT
+#   3. Mobile phone power is at least 20%
+#   4. Power sharing will be automatically disabled after 1 minute if isn't detect a device
+# *Step 2* null
+# *Step 2* null'''
+#     extract_texts(text)#moto_ambt()
+    get_tests('AmbT')
