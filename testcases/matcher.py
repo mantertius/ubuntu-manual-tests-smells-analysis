@@ -42,19 +42,20 @@ def is_unverified_step(test: abc.Container) -> bool: #OK!
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
-def is_misplaced_precondition(tests: abc.Container) -> bool: #naelson vai dar uma olhada
+def is_misplaced_precondition(test: abc.Container) -> bool: #naelson vai dar uma olhada
     matcher = MatchersFactory.misplaced_precondition_matcher()
-    for test in tests:
-        for step in test.steps:
-            doc = nlp(step.action)
-            for sentence in doc.sents:
-                if matcher(sentence):
-                    return True
+    for step in test.steps:
+        doc = nlp(step.action)
+        for sentence in doc.sents:
+            if matcher(sentence):
+                print(sentence)
+                return True
     return False
 
 def is_bad_verification_format(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
-    bad_verification_format_steps = [step for step in test if '?' in step.action]
+    steps = test.steps
+    bad_verification_format_steps = [step for step in test if '?' in steps]
     return len(bad_verification_format_steps) > 0
 
 def is_misplaced_step(test: abc.Container) -> bool:
@@ -91,8 +92,14 @@ def is_misplaced_result(test: abc.Container) -> bool:
     Declarative sentence after any imperative one in the steps
     something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
     """
-    
-    pass
+    matcher = MatchersFactory.misplaced_result_matcher()
+    for step in test.steps:
+        matches = []
+        action_matches = matcher(step.action)
+        if action_matches:
+            print(step.action)
+            return True
+    return False
 
 def is_ambiguous_test(test: abc.Container) -> bool:
     """
@@ -107,13 +114,13 @@ def is_ambiguous_test(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('')
+    tests = get_tests('AT')
     print(tests)
     cnt = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_bad_verification_format(test)
+            result = is_misplaced_result(test)
             print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
             cnt += 1
             cnt2 += 1

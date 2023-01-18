@@ -6,6 +6,9 @@ ensure_like = expand_words(('ensure', 'check'), k=15)
 
 patterns = [
             [
-                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'POS': {'IN': ['VERB', 'VB'], 'LOWER': {'IN': ensure_like}}, 'IS_SENT_START':True}}
+                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'POS': {'IN': ['VERB', 'VB']}, 'IS_SENT_START':True}},
             ]
         ]
+
+#"RIGHT_ATTRS": {"DEP": "nsubj"}
+#4 - Misplaced Pre-Condition

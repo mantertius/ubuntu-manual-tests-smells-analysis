@@ -30,7 +30,7 @@ def smells_loader_closure():
     df = df[[FILE_COL, SMELL_COL]]
     df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
     df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
-    
+
     def smells_loader(smell_acronym:str) -> pd.DataFrame:
         """
         Will return every filepath that has the smell_acronym. If no acronym is passed, returns all.
