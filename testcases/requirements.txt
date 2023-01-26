@@ -47,6 +47,7 @@ numpy==1.22.3
     # via
     #   blis
     #   pandas
+    #   scipy
     #   spacy
     #   thinc
 packaging==21.3
@@ -74,6 +75,8 @@ pytz==2022.1
 requests==2.27.1
     # via spacy
 rich==13.2.0
+    # via manual-test-smells (setup.py)
+scipy==1.10.0
     # via manual-test-smells (setup.py)
 six==1.16.0
     # via python-dateutil
