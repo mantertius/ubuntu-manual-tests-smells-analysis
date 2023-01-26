@@ -6,9 +6,7 @@ import spacy
 from rich import print
 from spacy import displacy
 
-from data import (Test, get_tests, k_closest_words, matcher_if,
-                    matcher_optional, matcher_wait, nlp, smells_loader
-                )
+from data import Test, get_tests, k_closest_words, nlp, smells_loader
 from dependency_matchers import MatchersFactory
 
 def is_conditional_test(test:abc.Container) -> bool: #OK
@@ -114,15 +112,16 @@ def is_ambiguous_test(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('AT')
+
+    tests = get_tests('CT')
     print(tests)
-    cnt = 0
+    counter = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_misplaced_result(test)
-            print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
-            cnt += 1
+            result = is_conditional_test(test)
+            print(f'[{counter}] {test.file}[{cnt2}]: {result}')
+            counter += 1
             cnt2 += 1
             #displacy.serve()
         # if not result:
