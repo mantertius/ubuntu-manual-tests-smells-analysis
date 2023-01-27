@@ -1,7 +1,7 @@
-from data import expand_words
+from keywords import Keywords
 
-actions = ('check', 'verify', 'observe', 'recheck')
-actions = expand_words(actions, k=5)
+keywords = Keywords('english')
+actions = keywords.keywords['actions']
 
 patterns = [
             [

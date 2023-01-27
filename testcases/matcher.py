@@ -50,6 +50,8 @@ def is_misplaced_precondition(test: abc.Container) -> bool: #naelson vai dar uma
                 return True
     return False
 
+
+
 def is_bad_verification_format(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
     steps = test.steps
@@ -113,16 +115,18 @@ if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
 
-    tests = get_tests('PCAS')
+    tests = get_tests('ERAS')
     print(tests)
     counter = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_misplaced_precondition(test)
-            print(f'[{counter}] {test.file}[{cnt2}]: {result}')
+            result = is_misplaced_result(test)
+            print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
             counter += 1
             cnt2 += 1
+            if not result:
+                print(test)
             #displacy.serve()
         # if not result:
         #     actions = [t.action for t in test]
