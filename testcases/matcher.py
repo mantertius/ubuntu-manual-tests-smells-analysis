@@ -115,13 +115,13 @@ if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
 
-    tests = get_tests('ERAS')
+    tests = get_tests('SAER')
     print(tests)
     counter = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_misplaced_result(test)
+            result = is_undefined_wait(test)
             print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
             counter += 1
             cnt2 += 1

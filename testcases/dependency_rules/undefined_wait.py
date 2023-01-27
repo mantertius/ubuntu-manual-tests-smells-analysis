@@ -5,6 +5,7 @@ wait_words = expand_words(('wait', 'halt', 'rest', 'holdup'), k=3)
 patterns = [
             [
                 {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': wait_words}}},
+                {'RIGHT_ID': 'time', 'LEFT_ID':'anchor', 'REL_OP': '<','RIGHT_ATTRS': {'LIKE_NUM': True}, 'OP': '!'},
             ],
             [
                 {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': wait_words}}},

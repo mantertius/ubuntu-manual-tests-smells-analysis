@@ -25,6 +25,7 @@ class MatchersFactory:
         matcher = DependencyMatcher(nlp.vocab)
         patterns = enumerate(patterns)
         for idx, pattern in patterns:
+            breakpoint()
             matcher.add('rule'+str(idx), [pattern])
         return matcher
 
