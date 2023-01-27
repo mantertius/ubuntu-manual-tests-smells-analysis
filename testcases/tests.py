@@ -2,17 +2,19 @@ from data import nlp
 from spacy.matcher import DependencyMatcher
 from spacy import displacy
 wait_words = ('wait', 'halt', 'rest', 'holdup')
-
+VERBS = ['VBD', 'VBG', 'VBN', 'VBZ']
 if __name__ == '__main__':
-    text = 'I would like to buy a coke'
+    text = 'Click in the pencil of the "WebcamDisabled" A pop-up will open. Click in the Configure button. '
     doc = nlp(text)
     # displacy.serve(doc)
     matcher = DependencyMatcher(nlp.vocab)
+
     rule = \
             [
-                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': wait_words}}},
-                {'RIGHT_ID': 'units','RIGHT_ATTRS': {}, 'LEFT_ID':'anchor', 'REL_OP': '>>'},
-                {'RIGHT_ID': 'time', 'LEFT_ID':'units', 'REL_OP': '>','RIGHT_ATTRS': {'LIKE_NUM': True}},
+                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'POS': {'IN': ['VB', 'VBP']}}},
+                {'RIGHT_ID': 'second_verb','LEFT_ID':'anchor', 'RIGHT_ATTRS': {'POS': {'IN': VERBS}}, 'REL_OP': '>>'}
             ]
+
     matcher.add('whatever', [rule])
+
     print(matcher(doc))

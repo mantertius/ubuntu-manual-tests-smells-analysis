@@ -31,7 +31,7 @@ def is_eager_step(test: abc.Container) -> bool: #OK!
     for step in steps:
         actions = [action for action in step.action if action.tag_ in ['VB', 'VBP']]
         eager_step = eager_step + len(actions)
-    return eager_step > 0
+    return eager_step > 1
 
 def is_unverified_step(test: abc.Container) -> bool: #OK!
     """
@@ -92,13 +92,24 @@ def is_misplaced_result(test: abc.Container) -> bool:
     Declarative sentence after any imperative one in the steps
     something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
     """
+    VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
+    IMPERATIVE_VERBS = ['VB', 'VBP']
     matcher = MatchersFactory.misplaced_result_matcher()
     for step in test.steps:
         matches = []
+        #first test
         action_matches = matcher(step.action)
         if action_matches:
             print(step.action)
             return True
+        #Second test
+        verbs = [token.tag_ for token in step.action if token.tag_ in VERBS]
+        found_first = False
+        for verb in verbs:
+            if verb in IMPERATIVE_VERBS:
+                found_first=True
+            if found_first and verb not in IMPERATIVE_VERBS:
+                return True
     return False
 
 def is_ambiguous_test(test: abc.Container) -> bool:
@@ -115,13 +126,13 @@ if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
 
-    tests = get_tests('SAER')
+    tests = get_tests('ERAS')
     print(tests)
     counter = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_bad_verification_format(test)
+            result = is_misplaced_result(test)
             print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
             counter += 1
             cnt2 += 1
