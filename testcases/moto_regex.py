@@ -1,10 +1,13 @@
+import sys
 from collections import abc, namedtuple
 import re
 import pandas as pd
 from rich import print
 import spacy
+from keywords import Keywords
 
-nlp = spacy.load('en_core_web_lg')
+Keywords(sys.argv[1]) #Instantiates the singleton Keyword objects with the selected language
+nlp = spacy.load('en_core_web_lg') #TODO: Change the model based on the language
 
 NAME_COL = 'Summary'
 PRECON_COL = 'Initial Condition'
