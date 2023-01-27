@@ -121,7 +121,7 @@ if __name__ == '__main__':
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_undefined_wait(test)
+            result = is_bad_verification_format(test)
             print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
             counter += 1
             cnt2 += 1

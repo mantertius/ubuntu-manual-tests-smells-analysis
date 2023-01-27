@@ -8,7 +8,7 @@ nlp = spacy.load('en_core_web_lg')
 
 NAME_COL = 'Summary'
 PRECON_COL = 'Initial Condition'
-STEPS_COL = 'Step Description'	
+STEPS_COL = 'Step Description'
 RESULTS_COL = 'Expected Results'
 SMELL_COL = 'How to detect?'
 
@@ -57,7 +57,7 @@ def extract_texts(text:str) -> abc.Container:
     print(stripped_text)
     #breakpoint()
     if stripped_text and len(stripped_text) == 1:
-        if re.findall(r'\d+\.', stripped_text[0]): #type(stripped_text)== list and 
+        if re.findall(r'\d+\.', stripped_text[0]): #type(stripped_text)== list and
             stripped_text = re.split(r'\d+\. ',stripped_text[0])
     #print(f'This is the new text: {stripped_text}')
 
@@ -88,20 +88,20 @@ def pipeline(raw_text:str) -> abc.Container:
     if len(clean_text) > 1 and type(clean_text) == list:
         chunks = [nlp(element) for element in clean_text if len(clean_text) > 1]
     else:
-        chunks = nlp(clean_text)   
+        chunks = nlp(clean_text)
     #print(chunks)
     return chunks
-        
+
 def get_tests(smell_acronym : str):
     df = smells_loader(smell_acronym)
-    print(df)
     result = []
+    df = df.head(1)
     for row in df.itertuples(name = 'Teste', index=False):
         name = row[0]
-        print(name)
         header = pipeline(row[1])
         actions = pipeline(row[2])
         reactions = pipeline(row[3])
+        #TODO: Fazer com que cada step tenha sua única action e criar vários steps. Atualmente tá criando um único step com todas as actions
         temp = [Test(name= name, header=header, steps=Step(actions, reactions))]
         result.append(temp)
         # breakpoint()
@@ -124,7 +124,7 @@ def get_tests_from_name(test_name:str):
 
 if __name__ == '__main__':
     df = moto_smell_loader_closure()
-    result = get_tests('None')
+    result = get_tests('AmbT')
     print(result)
     # rs = get_tests_from_name('TC - [Folio]-Turn on/off Folio when the screen is lock/Unlock')
     # print(rs)

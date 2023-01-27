@@ -4,7 +4,7 @@ from spacy import displacy
 wait_words = ('wait', 'halt', 'rest', 'holdup')
 
 if __name__ == '__main__':
-    text = 'Wait 10 seconds'
+    text = 'I would like to buy a coke'
     doc = nlp(text)
     # displacy.serve(doc)
     matcher = DependencyMatcher(nlp.vocab)
