@@ -7,10 +7,8 @@ if __name__ == '__main__':
     doc = nlp(text)
     matcher = DependencyMatcher(nlp.vocab)
     rule = [
-                {
-                    'RIGHT_ID': 'anchor',
-                    'RIGHT_ATTRS': {'POS': {'IN': ['VERB', 'VB'], 'IS_SENT_START' : True}}
-                }
+                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': wait_words}}},
+                {'RIGHT_ID': 'time', 'LEFT_ID':'anchor', 'REL_OP': '<','RIGHT_ATTRS': {'LIKE_NUM': True}, 'OP': '!'},
             ]
     matcher.add('whatever', [rule])
     print(matcher(doc))
