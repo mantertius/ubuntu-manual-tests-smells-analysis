@@ -1,14 +1,18 @@
 from data import nlp
 from spacy.matcher import DependencyMatcher
-
+from spacy import displacy
+wait_words = ('wait', 'halt', 'rest', 'holdup')
 
 if __name__ == '__main__':
-    text = 'Wait for the window to pop or until timeout'
+    text = 'Wait 10 seconds'
     doc = nlp(text)
+    # displacy.serve(doc)
     matcher = DependencyMatcher(nlp.vocab)
-    rule = [
+    rule = \
+            [
                 {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': wait_words}}},
-                {'RIGHT_ID': 'time', 'LEFT_ID':'anchor', 'REL_OP': '<','RIGHT_ATTRS': {'LIKE_NUM': True}, 'OP': '!'},
+                {'RIGHT_ID': 'units','RIGHT_ATTRS': {}, 'LEFT_ID':'anchor', 'REL_OP': '>>'},
+                {'RIGHT_ID': 'time', 'LEFT_ID':'units', 'REL_OP': '>','RIGHT_ATTRS': {'LIKE_NUM': True}},
             ]
     matcher.add('whatever', [rule])
     print(matcher(doc))
