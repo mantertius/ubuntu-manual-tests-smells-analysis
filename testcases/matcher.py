@@ -8,6 +8,8 @@ from spacy import displacy
 
 from data import Test, get_tests, k_closest_words, nlp, smells_loader
 from dependency_matchers import MatchersFactory
+VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
+IMPERATIVE_VERBS = ['VB', 'VBP']
 
 def is_conditional_test(test:abc.Container) -> bool: #OK
     """
@@ -29,7 +31,7 @@ def is_eager_step(test: abc.Container) -> bool: #OK!
     eager_step = 0
     steps = test.steps
     for step in steps:
-        actions = [action for action in step.action if action.tag_ in ['VB', 'VBP']]
+        actions = [action for action in step.action if action.tag_ in IMPERATIVE_VERBS]
         eager_step = eager_step + len(actions)
     return eager_step > 1
 
@@ -40,14 +42,12 @@ def is_unverified_step(test: abc.Container) -> bool: #OK!
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
-def is_misplaced_precondition(test: abc.Container) -> bool: #naelson vai dar uma olhada
-    matcher = MatchersFactory.misplaced_precondition_matcher()
-    for step in test.steps:
-        doc = nlp(step.action)
-        for sentence in doc.sents:
-            if matcher(sentence):
-                print(sentence)
-                return True
+def is_misplaced_precondition(test: abc.Container) -> bool:
+    def get_tags(sentence) -> list:
+        return [token.tag_ for token in sentence if token.tag_ in VERBS]
+    actions = get_tags(test.steps[0].action)
+    if not actions or actions[0] not in IMPERATIVE_VERBS:
+        return True
     return False
 
 
@@ -66,7 +66,7 @@ def is_misplaced_step(test: abc.Container) -> bool:
     """
     def has_imperative_sentence(doc: spacy.tokens.Doc) -> bool:
         for sentence in doc.sents:
-            if sentence[0].tag_ in ['VB', 'VBP']:
+            if sentence[0].tag_ in IMPERATIVE_VERBS:
                 return True
         return False
 
@@ -92,8 +92,7 @@ def is_misplaced_result(test: abc.Container) -> bool:
     Declarative sentence after any imperative one in the steps
     something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
     """
-    VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
-    IMPERATIVE_VERBS = ['VB', 'VBP']
+
     matcher = MatchersFactory.misplaced_result_matcher()
     for step in test.steps:
         matches = []
@@ -126,13 +125,13 @@ if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
 
-    tests = get_tests('ERAS')
+    tests = get_tests('PCAS')
     print(tests)
     counter = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_misplaced_result(test)
+            result = is_misplaced_precondition(test)
             print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
             counter += 1
             cnt2 += 1
