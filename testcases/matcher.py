@@ -6,10 +6,10 @@ import spacy
 from rich import print
 from spacy import displacy
 
-from data import (Test, get_tests, k_closest_words, matcher_if,
-                    matcher_optional, matcher_wait, nlp, smells_loader
-                )
+from data import Test, get_tests, k_closest_words, nlp, smells_loader
 from dependency_matchers import MatchersFactory
+VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
+IMPERATIVE_VERBS = ['VB', 'VBP']
 
 def is_conditional_test(test:abc.Container) -> bool: #OK
     """
@@ -31,9 +31,9 @@ def is_eager_step(test: abc.Container) -> bool: #OK!
     eager_step = 0
     steps = test.steps
     for step in steps:
-        actions = [action for action in step.action if action.tag_ in ['VB', 'VBP']]
+        actions = [action for action in step.action if action.tag_ in IMPERATIVE_VERBS]
         eager_step = eager_step + len(actions)
-    return eager_step > 0
+    return eager_step > 1
 
 def is_unverified_step(test: abc.Container) -> bool: #OK!
     """
@@ -42,15 +42,15 @@ def is_unverified_step(test: abc.Container) -> bool: #OK!
     steps = test.steps
     return len([step for step in steps if len(step.reactions) == 0]) > 0
 
-def is_misplaced_precondition(test: abc.Container) -> bool: #naelson vai dar uma olhada
-    matcher = MatchersFactory.misplaced_precondition_matcher()
-    for step in test.steps:
-        doc = nlp(step.action)
-        for sentence in doc.sents:
-            if matcher(sentence):
-                print(sentence)
-                return True
+def is_misplaced_precondition(test: abc.Container) -> bool:
+    def get_tags(sentence) -> list:
+        return [token.tag_ for token in sentence if token.tag_ in VERBS]
+    actions = get_tags(test.steps[0].action)
+    if not actions or actions[0] not in IMPERATIVE_VERBS:
+        return True
     return False
+
+
 
 def is_bad_verification_format(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
@@ -66,7 +66,7 @@ def is_misplaced_step(test: abc.Container) -> bool:
     """
     def has_imperative_sentence(doc: spacy.tokens.Doc) -> bool:
         for sentence in doc.sents:
-            if sentence[0].tag_ in ['VB', 'VBP']:
+            if sentence[0].tag_ in IMPERATIVE_VERBS:
                 return True
         return False
 
@@ -92,13 +92,23 @@ def is_misplaced_result(test: abc.Container) -> bool:
     Declarative sentence after any imperative one in the steps
     something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
     """
+
     matcher = MatchersFactory.misplaced_result_matcher()
     for step in test.steps:
         matches = []
+        #first test
         action_matches = matcher(step.action)
         if action_matches:
             print(step.action)
             return True
+        #Second test
+        verbs = [token.tag_ for token in step.action if token.tag_ in VERBS]
+        found_first = False
+        for verb in verbs:
+            if verb in IMPERATIVE_VERBS:
+                found_first=True
+            if found_first and verb not in IMPERATIVE_VERBS:
+                return True
     return False
 
 def is_ambiguous_test(test: abc.Container) -> bool:
@@ -114,16 +124,19 @@ def is_ambiguous_test(test: abc.Container) -> bool:
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
-    tests = get_tests('AT')
+
+    tests = get_tests('PCAS')
     print(tests)
-    cnt = 0
+    counter = 0
     for Test in tests:
         cnt2 = 0
         for test in Test:
-            result = is_misplaced_result(test)
-            print(f'[{cnt}] {test.file}[{cnt2}]: {result}')
-            cnt += 1
+            result = is_misplaced_precondition(test)
+            print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
+            counter += 1
             cnt2 += 1
+            if not result:
+                print(test)
             #displacy.serve()
         # if not result:
         #     actions = [t.action for t in test]

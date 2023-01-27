@@ -1,10 +1,10 @@
-from data import expand_words
+from keywords import Keywords
 
-actions = ('check', 'verify', 'observe', 'recheck')
-actions = expand_words(actions, k=5)
+keywords = Keywords()
+actions = keywords.keywords['actions']
 
 patterns = [
             [
                 {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': actions}, 'IS_SENT_START': True}}
-            ]
+            ],
         ]
