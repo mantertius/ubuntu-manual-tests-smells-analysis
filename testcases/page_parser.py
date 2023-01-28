@@ -1,6 +1,10 @@
+from collections import namedtuple
 from bs4 import BeautifulStoneSoup, BeautifulSoup
 import pandas as pd
+from rich import print
 
+Test = namedtuple('Test',['name','header','steps'])
+Step = namedtuple('Step', ['action', 'reactions'])
 
 def split_test_case(tc_soup:BeautifulSoup) -> list:
     body = tc_soup.tbody
@@ -15,10 +19,20 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
     header = [tag.text.strip() for tag in header.find_all('td')]
     steps  = [_clear_td(step) for step in steps]
     df = pd.DataFrame(steps,columns=header)
-    df['test_case'] = test_case
+    df['test_case'] = test_case #Testcase name
     df['objective'] = objective
     df['preconditions'] = preconditions
     return df
+def pipeline(text:str) -> str:
+    """Receives text and returns the text clean"""
+    pattern = r'\\n{0,}\\t{0,}' #TODO arrumar esse pattern. ele deixa escapar alguns \n
+    
+def generate_Test(df:pd.DataFrame) -> list(Test):
+    for row in df.itertuples(index=False):
+        name = pipeline(row[3].values[0])
+        header = pipeline(row[:-1].values[0])
+        actions = pipeline(row[1].values[0])
+        reactions  =pipeline(row[2].values[0])
 
 def parse_tests(soup:BeautifulSoup) -> list:
     tests = soup.find_all('table', attrs = {'class':'tc'})
@@ -53,3 +67,4 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print('You must add the tests html file on the path \'page.htm\'. This file is ignored via .gitignore')
     tests = parse_tests(soup)
+    breakpoint()
