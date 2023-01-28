@@ -12,13 +12,11 @@ from scipy.spatial import distance
 from moto_data import get_tests as moto_get_tests
 
 from pipeline import nlp
+from pipeline import Test, Step
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
 SMELL_COL = 'QUAL SMELL?'
-
-Test = namedtuple('Test',['file','header','steps'])
-Step = namedtuple('Step', ['action', 'reactions']) #Step([action],[reactions])
 
 
 def smells_loader_closure():

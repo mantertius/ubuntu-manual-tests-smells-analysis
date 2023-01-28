@@ -2,7 +2,6 @@ import sys
 from rich import print
 from keywords import Keywords
 from data import get_tests
-from ubuntu_matcher import get_tests as ubuntu_get_tests
 import matchers
 
 
@@ -12,17 +11,14 @@ if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
 
-    # tests = get_tests('AmbT')
     tests = get_tests('AmbT')
+    # tests = get_tests('PCAS')
     print(tests)
     counter = 0
-    for Test in tests:
-        cnt2 = 0
-        for test in Test:
+    for (file_index, test_file) in enumerate(tests):
+        for (test_index, test) in enumerate(test_file):
             result = matchers.is_misplaced_precondition(test)
-            print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
-            counter += 1
-            cnt2 += 1
+            print(f'[{test_index}] {test.file}[{file_index}]: {result}\n')
             if not result:
                 print(test)
             #displacy.serve()

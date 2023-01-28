@@ -4,16 +4,13 @@ import pandas as pd
 from rich import print
 import spacy
 
-from pipeline import nlp
+from pipeline import nlp, Step, Test
 
 NAME_COL = 'Summary'
 PRECON_COL = 'Initial Condition'
 STEPS_COL = 'Step Description'
 RESULTS_COL = 'Expected Results'
 SMELL_COL = 'How to detect?'
-
-Test = namedtuple('Test',['name','header','steps'])
-Step = namedtuple('Step',['action','reactions'])
 
 
 def moto_smell_loader_closure():
@@ -108,8 +105,8 @@ def get_tests(smell_acronym : str):
             for (action, reactions) in zip(actions, reactions):
                 step = Step(action, reactions)
                 steps.append(step)
-            test = Test(name=name, header=header, steps=steps)
-            result.append(test)
+            test = Test(file=name, header=header, steps=steps)
+            result.append([test])
     return result
 
 def has_substeps(action_or_reaction:str) -> bool:
