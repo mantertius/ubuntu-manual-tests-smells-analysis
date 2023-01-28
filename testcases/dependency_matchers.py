@@ -1,5 +1,5 @@
 from spacy.matcher import DependencyMatcher
-from data import nlp
+from pipeline import nlp
 from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result
 
 class MatchersFactory:
