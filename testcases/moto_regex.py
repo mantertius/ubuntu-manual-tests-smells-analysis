@@ -83,7 +83,7 @@ def pipeline(raw_text:str) -> abc.Container:
     return chunks
 
 def pipeline_reactions(reactions_raw_text:str) -> dict:
-    regex =re.compile(r'(\*.+\*)')
+    regex = re.compile(r'(\*.+\*)')
     splits = [split for split in regex.split(reactions_raw_text) if split]
     action_identifiers = [int(re.compile('\d+').findall(key)[0]) for key in splits[0:-1:2]]
     reactions = [reaction.strip() for reaction in splits[1::2]]

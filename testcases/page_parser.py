@@ -1,4 +1,5 @@
-from collections import namedtuple
+import re
+from collections import namedtuple,abc
 from bs4 import BeautifulStoneSoup, BeautifulSoup
 import pandas as pd
 from rich import print
@@ -23,16 +24,34 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
     df['objective'] = objective
     df['preconditions'] = preconditions
     return df
-def pipeline(text:str) -> str:
-    """Receives text and returns the text clean"""
-    pattern = r'\\n{0,}\\t{0,}' #TODO arrumar esse pattern. ele deixa escapar alguns \n
-    
-def generate_Test(df:pd.DataFrame) -> list(Test):
-    for row in df.itertuples(index=False):
-        name = pipeline(row[3].values[0])
-        header = pipeline(row[:-1].values[0])
-        actions = pipeline(row[1].values[0])
-        reactions  =pipeline(row[2].values[0])
+
+def pipeline(list_of_dfs) -> Test:
+    '''Receives a list of dataFrames and returns a list of clean Tests after using some inside functions'''
+    def extract_texts(raw_text:str) -> list:
+        pattern = r'\\{0,2}n{0,}\\t{0,}'
+        breaks = r'\n{2,}'
+        spaces = r'\s{2,}'
+        text = re.sub(pattern, '\n', raw_text)
+        text = re.sub(breaks, '\n', text)
+        text = re.sub(spaces, ' ', text)
+        print(text)~
+        breakpoint()
+
+    def generate_Test(df:pd.DataFrame) -> list:
+        name =      extract_texts(df['test_case'])
+        header =    extract_texts(df['preconditions']) #estamos ignorando os objetivos
+        steps = list()
+        actions = []
+        reactions = []
+        for row in df.itertuples(index=False):
+            breakpoint()
+            actions.append(extract_texts(row[1]))
+            reactions.append(extract_texts(row[2]))
+        new_Test = Test(name=name, header=header, steps = Step(action,reactions))
+
+    for df in list_of_dfs:
+        breakpoint()
+        test:list = generate_Test(df)
 
 def parse_tests(soup:BeautifulSoup) -> list:
     tests = soup.find_all('table', attrs = {'class':'tc'})
@@ -59,6 +78,8 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
         preconditions = ''
     return preconditions
 
+def get_tests(smell_acronym:str) -> list:
+    pass
 
 if __name__ == '__main__':
     try:
@@ -68,3 +89,4 @@ if __name__ == '__main__':
         print('You must add the tests html file on the path \'page.htm\'. This file is ignored via .gitignore')
     tests = parse_tests(soup)
     breakpoint()
+    tests = pipeline(tests)
