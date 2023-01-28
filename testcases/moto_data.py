@@ -1,13 +1,10 @@
-import sys
 from collections import abc, namedtuple
 import re
 import pandas as pd
 from rich import print
 import spacy
-from keywords import Keywords
 
-Keywords(sys.argv[1]) #Instantiates the singleton Keyword objects with the selected language
-nlp = spacy.load('en_core_web_lg') #TODO: Change the model based on the language
+from pipeline import nlp
 
 NAME_COL = 'Summary'
 PRECON_COL = 'Initial Condition'
@@ -101,18 +98,23 @@ def get_tests(smell_acronym : str):
     result = []
     # df = df.head(1)
     for row in df.itertuples(name = 'Teste', index=False):
-        name = row[0]
-        header = pipeline(row[1])
-        actions = pipeline(row[2])
-        reactions = pipeline_reactions(row[3])
-        #TODO: Fazer com que cada step tenha sua única action e criar vários steps. Atualmente tá criando um único step com todas as actions
-
-        steps = list()
-        for (action, reactions) in zip(actions, reactions):
-            step = Step(action, reactions)
-            steps.append(step)
-        test = Test(name=name, header=header, steps=steps)
+        test_have_substeps = has_substeps(row[2]) and has_substeps(row[3])
+        if not test_have_substeps:
+            name = row[0]
+            header = pipeline(row[1])
+            actions = pipeline(row[2])
+            reactions = pipeline_reactions(row[3])
+            steps = list()
+            for (action, reactions) in zip(actions, reactions):
+                step = Step(action, reactions)
+                steps.append(step)
+            test = Test(name=name, header=header, steps=steps)
+            result.append(test)
     return result
+
+def has_substeps(action_or_reaction:str) -> bool:
+    substep_marker = re.compile('\n\W*\d+\.\s*\w+')
+    return len(substep_marker.findall(action_or_reaction)) > 0
 
 def get_tests_from_name(test_name:str):
     df = smells_loader('')
@@ -129,7 +131,7 @@ def get_tests_from_name(test_name:str):
     return result
 
 if __name__ == '__main__':
-    df = moto_smell_loader_closure()
+    # df = moto_smell_loader_closure()
     result = get_tests('AmbT')
 
     # rs = get_tests_from_name('TC - [Folio]-Turn on/off Folio when the screen is lock/Unlock')

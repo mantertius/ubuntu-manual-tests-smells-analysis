@@ -1,4 +1,4 @@
-from data import nlp
+from pipeline import nlp
 from spacy.matcher import DependencyMatcher
 from spacy import displacy
 wait_words = ('wait', 'halt', 'rest', 'holdup')

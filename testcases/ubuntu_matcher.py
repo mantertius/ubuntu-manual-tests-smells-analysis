@@ -1,19 +1,12 @@
-import sys
 from rich import print
-from keywords import Keywords
 from data import get_tests
-from ubuntu_matcher import get_tests as ubuntu_get_tests
 import matchers
-
-
-Keywords(sys.argv[1]) #Instantiates the singleton Keyword objects with the selected language
 
 if __name__ == '__main__':
     # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
     # tests = get_tests(_in)
 
-    # tests = get_tests('AmbT')
-    tests = get_tests('AmbT')
+    tests = get_tests('PCAS')
     print(tests)
     counter = 0
     for Test in tests:
@@ -25,4 +18,3 @@ if __name__ == '__main__':
             cnt2 += 1
             if not result:
                 print(test)
-            #displacy.serve()
