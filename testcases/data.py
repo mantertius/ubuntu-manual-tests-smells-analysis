@@ -9,15 +9,14 @@ import pandas as pd
 import numpy as np
 import spacy
 from scipy.spatial import distance
+from moto_data import get_tests as moto_get_tests
 
-nlp = spacy.load('en_core_web_lg')
+from pipeline import nlp
+from pipeline import Test, Step
 
 DIR_COL = 'DIRETÓRIO'
 FILE_COL = 'NUMERO E NOME DO ARQUIVO'
 SMELL_COL = 'QUAL SMELL?'
-
-Test = namedtuple('Test',['file','header','steps'])
-Step = namedtuple('Step', ['action', 'reactions']) #Step([action],[reactions])
 
 
 def smells_loader_closure():
@@ -148,9 +147,10 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
-    test_list = [test for path in smells_loader(smell_acronym)[FILE_COL]
+    ubuntu_tests = [test for path in smells_loader(smell_acronym)[FILE_COL]
                         for test in split_tests(path.read_text(encoding='utf-8'),path)]
-    return test_list
+    moto_tests = moto_get_tests(smell_acronym)
+    return ubuntu_tests + moto_tests
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):
