@@ -4,8 +4,7 @@ from bs4 import BeautifulStoneSoup, BeautifulSoup
 import pandas as pd
 from rich import print
 
-Test = namedtuple('Test',['name','header','steps'])
-Step = namedtuple('Step', ['action', 'reactions'])
+from pipeline import nlp, Step, Test
 
 def split_test_case(tc_soup:BeautifulSoup) -> list:
     body = tc_soup.tbody
@@ -25,33 +24,64 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
     df['preconditions'] = preconditions
     return df
 
-def pipeline(list_of_dfs) -> Test:
+def pipeline(list_of_dfs) -> list:
     '''Receives a list of dataFrames and returns a list of clean Tests after using some inside functions'''
+
     def extract_texts(raw_text:str) -> list:
+        '''Extracts texts from a string'''
         pattern = r'\\{0,2}n{0,}\\t{0,}'
         breaks = r'\n{2,}'
         spaces = r'\s{2,}'
         text = re.sub(pattern, '\n', raw_text)
         text = re.sub(breaks, '\n', text)
         text = re.sub(spaces, ' ', text)
-        print(text)~
-        breakpoint()
+        return text
+        #print(text)
+        #breakpoint()
 
-    def generate_Test(df:pd.DataFrame) -> list:
-        name =      extract_texts(df['test_case'])
-        header =    extract_texts(df['preconditions']) #estamos ignorando os objetivos
-        steps = list()
-        actions = []
-        reactions = []
-        for row in df.itertuples(index=False):
+    def generate_Test(df:pd.DataFrame) -> Test:
+        '''Creates a Test'''
+        # breakpoint()
+        try:
+            if df is not None:
+                name = _pipeline(df['test_case'][0])
+                header = _pipeline(df['preconditions'][0]) #estamos ignorando os objetivos
+        except:
             breakpoint()
-            actions.append(extract_texts(row[1]))
-            reactions.append(extract_texts(row[2]))
-        new_Test = Test(name=name, header=header, steps = Step(action,reactions))
-
+        steps = list()
+        # try:
+        for row in df.itertuples(index=False):
+            #breakpoint()
+            action = _pipeline(row[1])
+            reactions = _pipeline(row[2])
+            step = Step(action,reactions)
+            steps.append(step)
+        new_Test = Test(file=name, header=header, steps = steps)
+        return new_Test
+    # except:
+    def _pipeline(raw_text):
+        '''Recieves raw_text and returns clean_text as a Doc'''
+        clean_text = extract_texts(raw_text)
+        print(clean_text)
+        #breakpoint()
+        if not clean_text:
+            return None
+        if isinstance(clean_text,list) and len(clean_text) > 1:
+            chunks = [nlp(element) for element in clean_text if len(clean_text) > 1]
+        else:
+            chunks = nlp(clean_text)
+        return chunks
+    all_Tests = list()
     for df in list_of_dfs:
-        breakpoint()
-        test:list = generate_Test(df)
+    #breakpoint()
+        try:
+            new_Test = generate_Test(df)
+            all_Tests.append(new_Test)
+            # breakpoint()
+        except:
+            continue
+    return all_Tests
+
 
 def parse_tests(soup:BeautifulSoup) -> list:
     tests = soup.find_all('table', attrs = {'class':'tc'})
@@ -79,6 +109,7 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
     return preconditions
 
 def get_tests(smell_acronym:str) -> list:
+    #TODO: integrar a análise feita em manual_test_smells.csv na lista de tests, somente desse jeito será possível acessar por classificação.
     pass
 
 if __name__ == '__main__':
@@ -88,5 +119,5 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print('You must add the tests html file on the path \'page.htm\'. This file is ignored via .gitignore')
     tests = parse_tests(soup)
-    breakpoint()
+    #breakpoint()
     tests = pipeline(tests)
