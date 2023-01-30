@@ -26,7 +26,6 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
 
 def pipeline(list_of_dfs) -> list:
     '''Receives a list of dataFrames and returns a list of clean Tests after using some inside functions'''
-
     def extract_texts(raw_text:str) -> list:
         '''Extracts texts from a string'''
         pattern = r'\\{0,2}n{0,}\\t{0,}'
@@ -59,11 +58,11 @@ def pipeline(list_of_dfs) -> list:
         new_Test = Test(file=name, header=header, steps = steps)
         return new_Test
     # except:
-    def _pipeline(raw_text):
+    def _pipeline(raw_text:str):
         '''Recieves raw_text and returns clean_text as a Doc'''
         clean_text = extract_texts(raw_text)
-        print(clean_text)
-        #breakpoint()
+        print('.', end='')
+        #reakpoint()
         if not clean_text:
             return None
         if isinstance(clean_text,list) and len(clean_text) > 1:
@@ -71,15 +70,20 @@ def pipeline(list_of_dfs) -> list:
         else:
             chunks = nlp(clean_text)
         return chunks
+
     all_Tests = list()
     for df in list_of_dfs:
-    #breakpoint()
-        try:
-            new_Test = generate_Test(df)
-            all_Tests.append(new_Test)
-            # breakpoint()
-        except:
-            continue
+        '''Each df is a testcase.'''
+        if df is not None:
+            #print(f'Esse é o df: {df}')
+            try:
+                new_Test = generate_Test(df)
+                all_Tests.append(new_Test)
+                # breakpoint()
+            except:
+                print('FAIL.')
+                break
+    #print(COUNTER)
     return all_Tests
 
 
@@ -110,6 +114,7 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
 
 def get_tests(smell_acronym:str) -> list:
     #TODO: integrar a análise feita em manual_test_smells.csv na lista de tests, somente desse jeito será possível acessar por classificação.
+    
     pass
 
 if __name__ == '__main__':
@@ -119,5 +124,10 @@ if __name__ == '__main__':
     except FileNotFoundError:
         print('You must add the tests html file on the path \'page.htm\'. This file is ignored via .gitignore')
     tests = parse_tests(soup)
-    #breakpoint()
     tests = pipeline(tests)
+    # for test in tests:
+    #     if test is not None:
+    #         print(test)
+    #     else:
+    #         print('')
+    #breakpoint()
