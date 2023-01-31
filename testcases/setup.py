@@ -14,6 +14,7 @@ setup(
     install_requires=['spacy',
                         'pandas',
                         'rich',
-                        'scipy'
+                        'scipy',
+                        'lxml'
                         ]
 )

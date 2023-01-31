@@ -1,13 +1,11 @@
 from collections import abc
-
 import numpy as np
 import spacy
-#from pprint import pprint as print
 from rich import print
 from spacy import displacy
-
-from data import Test, get_tests, k_closest_words, nlp, smells_loader
 from dependency_matchers import MatchersFactory
+from data import Test,  nlp
+
 VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 IMPERATIVE_VERBS = ['VB', 'VBP']
 
@@ -49,8 +47,6 @@ def is_misplaced_precondition(test: abc.Container) -> bool:
     if not actions or actions[0] not in IMPERATIVE_VERBS:
         return True
     return False
-
-
 
 def is_bad_verification_format(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
 # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
@@ -119,30 +115,3 @@ def is_ambiguous_test(test: abc.Container) -> bool:
     Use of adverb of manner
     """
     pass
-
-
-if __name__ == '__main__':
-    # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
-    # tests = get_tests(_in)
-
-    tests = get_tests('PCAS')
-    print(tests)
-    counter = 0
-    for Test in tests:
-        cnt2 = 0
-        for test in Test:
-            result = is_misplaced_precondition(test)
-            print(f'[{counter}] {test.file}[{cnt2}]: {result}\n')
-            counter += 1
-            cnt2 += 1
-            if not result:
-                print(test)
-            #displacy.serve()
-        # if not result:
-        #     actions = [t.action for t in test]
-        #     _actions = list(enumerate(actions))
-        #     pprint(_actions)
-        #     node = input('Which node to serve? ')
-        #     displacy.serve(nlp(actions[int(node)]))
-        # print(result)
-        # print()
