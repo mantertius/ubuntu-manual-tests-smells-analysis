@@ -112,12 +112,8 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
         preconditions = ''
     return preconditions
 
-def get_tests(smell_acronym:str) -> list:
-    #TODO: integrar a análise feita em manual_test_smells.csv na lista de tests, somente desse jeito será possível acessar por classificação.
-    
-    pass
 
-if __name__ == '__main__':
+def get_tests() -> list:
     try:
         with open('page.htm', 'r') as f:
             soup = BeautifulSoup(f, 'lxml')
@@ -125,6 +121,10 @@ if __name__ == '__main__':
         print('You must add the tests html file on the path \'page.htm\'. This file is ignored via .gitignore')
     tests = parse_tests(soup)
     tests = pipeline(tests)
+    return tests
+
+if __name__ == '__main__':
+    tests = get_tests()
     # for test in tests:
     #     if test is not None:
     #         print(test)
