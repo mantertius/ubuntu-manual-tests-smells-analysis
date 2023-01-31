@@ -6,6 +6,8 @@ from rich import print
 
 from pipeline import nlp, Step, Test
 
+
+
 def split_test_case(tc_soup:BeautifulSoup) -> list:
     body = tc_soup.tbody
     steps = [step for step in body.find_all('tr') if len(step.find_all('td')) == 3] # Each step has 3 columns on the table
@@ -22,6 +24,15 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
     df['test_case'] = test_case #Testcase name
     df['objective'] = objective
     df['preconditions'] = preconditions
+
+    def sync_df(unsynced_df) -> pd.DataFrame:
+        df = pd.read_csv('box.csv')
+        df = df[['NÚMERO','QUAL SMELL?']]
+        for row in unsynced_df:
+            if df[[]]
+
+    breakpoint()
+    df['QUAL SMELL?'] = new_df[]
     return df
 
 def pipeline(list_of_dfs) -> list:
@@ -114,7 +125,7 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
 
 def get_tests(smell_acronym:str) -> list:
     #TODO: integrar a análise feita em manual_test_smells.csv na lista de tests, somente desse jeito será possível acessar por classificação.
-    
+
     pass
 
 if __name__ == '__main__':
