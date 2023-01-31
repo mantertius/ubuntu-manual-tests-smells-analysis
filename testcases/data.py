@@ -10,6 +10,7 @@ import numpy as np
 import spacy
 from scipy.spatial import distance
 from moto_data import get_tests as moto_get_tests
+from ballot_data import get_tests as ballot_get_tests
 
 from pipeline import nlp
 from pipeline import Test, Step
@@ -150,7 +151,8 @@ def _(smell_acronym:str):
     ubuntu_tests = [test for path in smells_loader(smell_acronym)[FILE_COL]
                         for test in split_tests(path.read_text(encoding='utf-8'),path)]
     moto_tests = moto_get_tests(smell_acronym)
-    return ubuntu_tests + moto_tests
+    ballot_tests = ballot_get_tests(smell_acronym)
+    return ubuntu_tests + moto_tests + ballot_tests
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):

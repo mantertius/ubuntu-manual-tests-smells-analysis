@@ -55,8 +55,8 @@ def pipeline(list_of_dfs) -> list:
             reactions = _pipeline(row[2])
             step = Step(action,reactions)
             steps.append(step)
-        new_Test = Test(file=name, header=header, steps = steps)
-        return new_Test
+        new_test = Test(file=name, header=header, steps = steps)
+        return new_test
     # except:
     def _pipeline(raw_text:str):
         '''Recieves raw_text and returns clean_text as a Doc'''
@@ -71,20 +71,20 @@ def pipeline(list_of_dfs) -> list:
             chunks = nlp(clean_text)
         return chunks
 
-    all_Tests = list()
+    all_tests = list()
     for df in list_of_dfs:
         '''Each df is a testcase.'''
         if df is not None:
             #print(f'Esse é o df: {df}')
             try:
-                new_Test = generate_Test(df)
-                all_Tests.append(new_Test)
+                new_test = generate_Test(df)
+                all_tests.append([new_test])
                 # breakpoint()
             except:
                 print('FAIL.')
                 break
     #print(COUNTER)
-    return all_Tests
+    return all_tests
 
 
 def parse_tests(soup:BeautifulSoup) -> list:
@@ -113,7 +113,7 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
     return preconditions
 
 
-def get_tests() -> list:
+def get_tests(smell_acronym:str) -> list:
     try:
         with open('page.htm', 'r') as f:
             soup = BeautifulSoup(f, 'lxml')
