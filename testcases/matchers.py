@@ -48,11 +48,6 @@ def is_misplaced_precondition(test: abc.Container) -> bool:
         return True
     return False
 
-def is_bad_verification_format(test: abc.Container) -> bool:  #BAD VERIFICATION FORMAT
-# There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
-    steps = test.steps
-    bad_verification_format_steps = [step for step in test if '?' in steps]
-    return len(bad_verification_format_steps) > 0
 
 def is_misplaced_step(test: abc.Container) -> bool:
     """
@@ -107,11 +102,29 @@ def is_misplaced_result(test: abc.Container) -> bool:
                 return True
     return False
 
-def is_ambiguous_test(test: abc.Container) -> bool:
+def is_vague_step(test: abc.Container) -> bool: #bad verification format
     """
-    Imperative + indefinite pronoun/article
-    list of options separated by slash '/ ' or between parenthesis and separated by slash, comma or pipe
-    Use of 'etc.', 'different', 'multiple'
-    Use of adverb of manner
+    Pra Vague Step, olhar so os passos (actions) e procurar POS=ADJ && Tag=JJ #is_ambiguous_test
     """
-    pass
+    breakpoint()
+    for step in test.steps:
+        tag_pos = [[token.tag_ for token in step.action],[token.pos_ for token in step.reactions]]
+        if tag_pos[1] in ['ADJ'] and tag_pos[0] in ['JJ']:
+            return True
+    return False
+
+def is_vague_verification(test: abc.Container) -> bool:  #is_bad_verification_formatT
+# There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
+# Pra Vague Verification, olhar só os resultados (reactions) e procurar (POS=ADJ && Tag=JJR) || (POS=ADV && Tag=RB)
+    breakpoint()
+    for step in test.step:
+        tag_pos = [[token.tag_ for token in step.reactions],[token.pos_ for token in step.reactions]]
+        if tag_pos[1] in ['ADJ'] and tag_pos[0] in ['JJR']:
+            return True
+        if tag_pos[1] in ['ADV'] and tag_pos[0] in ['RB']:
+            return True
+    return False
+
+    # steps = test.steps
+    # bad_verification_format_steps = [step for step in test if '?' in steps]
+    # return len(bad_verification_format_steps) > 0
