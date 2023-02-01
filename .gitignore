@@ -3,5 +3,6 @@
 \venv
 testcases/moto_exp.csv
 testcases/ambt_moto.csv
-*.htm
 *.html
+*.htm
+testcases/page.htm
