@@ -4,7 +4,7 @@ from bs4 import BeautifulStoneSoup, BeautifulSoup
 import pandas as pd
 from rich import print
 
-from pipeline import nlp, Step, Test
+from pipeline import nlp_pt, Step, Test
 
 def split_test_case(tc_soup:BeautifulSoup) -> list:
     body = tc_soup.tbody
@@ -22,15 +22,6 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
     df['test_case'] = test_case #Testcase name
     df['objective'] = objective
     df['preconditions'] = preconditions
-
-    # def sync_df(unsynced_df) -> pd.DataFrame:
-    #     df = pd.read_csv('box.csv')
-    #     df = df[['NÚMERO','QUAL SMELL?']]
-    #     for row in unsynced_df:
-    #         if df[[]]
-
-    # breakpoint()
-    # df['QUAL SMELL?'] = new_df[]
     return df
 
 def pipeline(list_of_dfs) -> list:
@@ -75,9 +66,9 @@ def pipeline(list_of_dfs) -> list:
         if not clean_text:
             return None
         if isinstance(clean_text,list) and len(clean_text) > 1:
-            chunks = [nlp(element) for element in clean_text if len(clean_text) > 1]
+            chunks = [nlp_pt(element) for element in clean_text if len(clean_text) > 1]
         else:
-            chunks = nlp(clean_text)
+            chunks = nlp_pt(clean_text)
         return chunks
 
     all_tests = list()
@@ -120,6 +111,7 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
     else:
         preconditions = ''
     return preconditions
+
 
 def get_tests(smell_acronym:str) -> list:
     try:
