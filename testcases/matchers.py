@@ -12,8 +12,7 @@ IMPERATIVE_VERBS = ['VB', 'VBP']
 
 def is_conditional_test(test:abc.Container) -> bool: #OK
     """
-    1) It uses coordinating conjunctions, such as "and" or "or".
-    2) Or uses a conditional "if".
+    Subordinating conjunctions
     """
     matcher = MatchersFactory.conditional_test_matcher()
     for step in test.steps:
@@ -103,6 +102,7 @@ def is_misplaced_result(test: abc.Container) -> bool:
                 return True
     return False
 
+
 def is_vague_step(test: abc.Container) -> bool: #bad verification format
     """
     Pra Vague Step, olhar so os passos (actions) e procurar POS=ADJ && Tag=JJ #is_ambiguous_test
@@ -133,5 +133,59 @@ def is_vague_verification(test: abc.Container) -> bool:  #is_bad_verification_fo
 def all_at_once_at_the_same_time(test: abc.Container) -> list:
     df = pd.DataFrame()
     breakpoint()
-    df = df["File/Testcase"] = test.
+    df = df["File/Testcase"] = test.file
 
+
+def is_ambiguous_test_indefinite_determiners(test: abc.Container) -> bool:
+    """
+    For actions and reactions:
+        Comparative adverbs (RBR)
+        Adverbs of manner (RB)
+    """
+    matcher = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
+    for step in test.steps:
+        # Searching in actions
+        action_matches = matcher(step.action)
+        for match_id, start, end in action_matches:
+            # string_id = nlp.vocab.strings[match_id]  # Matcher name
+            span = step.action[start:end]  # The matched span of tokens
+            if "Definite=Def" not in str(span[1].morph):  # spaCy recognizes definite determiners, which we don't want
+                # print(string_id, span.text)
+                return True
+        # Searching in reactions
+        reaction_matches = matcher(step.reactions)
+        for match_id, start, end in reaction_matches:
+            # string_id = nlp.vocab.strings[match_id]  # Matcher name
+            span = step.reactions[start:end]  # The matched span of tokens
+            if "Definite=Def" not in str(span[1].morph):  # spaCy recognizes definite determiners, which we don't want
+                # print(string_id, span.text)
+                return True
+    return False
+
+def is_ambiguous_test_adjectives(test: abc.Container) -> bool:
+    """
+    For actions and reactions:
+        Comparative adjectives (JJR)
+        Superlative adjectives (JJS)
+    """
+    matcher = MatchersFactory.ambiguous_test_adjectives_matcher()
+    for step in test.steps:
+        action_matches = matcher(step.action)
+        reaction_matches = matcher(step.reactions)
+        if action_matches or reaction_matches:
+            return True
+    return False
+
+def is_ambiguous_test_adverbs(test: abc.Container) -> bool:
+    """
+    For actions and reactions:
+        Comparative adverbs (RBR)
+        Adverbs of manner (RB)
+    """
+    matcher = MatchersFactory.ambiguous_test_adverbs_matcher()
+    for step in test.steps:
+        action_matches = matcher(step.action)
+        reaction_matches = matcher(step.reactions)
+        if action_matches or reaction_matches:
+            return True
+    return False

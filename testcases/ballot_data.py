@@ -22,6 +22,15 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
     df['test_case'] = test_case #Testcase name
     df['objective'] = objective
     df['preconditions'] = preconditions
+
+    # def sync_df(unsynced_df) -> pd.DataFrame:
+    #     df = pd.read_csv('box.csv')
+    #     df = df[['NÚMERO','QUAL SMELL?']]
+    #     for row in unsynced_df:
+    #         if df[[]]
+
+    # breakpoint()
+    # df['QUAL SMELL?'] = new_df[]
     return df
 
 def pipeline(list_of_dfs) -> list:
@@ -111,7 +120,6 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
     else:
         preconditions = ''
     return preconditions
-
 
 def get_tests(smell_acronym:str) -> list:
     try:

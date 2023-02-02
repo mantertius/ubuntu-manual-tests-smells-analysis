@@ -1,10 +1,8 @@
 from spacy.matcher import DependencyMatcher
 from pipeline import nlp
-from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result
+from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result, ambiguous_test_adjectives, ambiguous_test_adverbs, ambiguous_test_indefinite_determiners
 
 class MatchersFactory:
-    # def unspecified_parameter_matcher():
-    #     return MatchersFactory._build_matcher(unspecified_parameter.patterns)
 
     def conditional_test_matcher():
         return MatchersFactory._build_matcher(conditional_test.patterns)
@@ -12,14 +10,20 @@ class MatchersFactory:
     def misplaced_precondition_matcher():
         return MatchersFactory._build_matcher(misplaced_precondition.patterns)
 
-    # def optional_test_matcher():
-    #     return MatchersFactory._build_matcher(optional_test.patterns)
-
     def undefined_wait_matcher():
         return MatchersFactory._build_matcher(undefined_wait.patterns)
 
     def misplaced_result_matcher():
         return MatchersFactory._build_matcher(misplaced_result.patterns)
+
+    def ambiguous_test_adjectives_matcher():
+        return MatchersFactory._build_matcher(ambiguous_test_adjectives.patterns)
+
+    def ambiguous_test_adverbs_matcher():
+        return MatchersFactory._build_matcher(ambiguous_test_adverbs.patterns)
+
+    def ambiguous_test_indefinite_determiners_matcher():
+        return MatchersFactory._build_matcher(ambiguous_test_indefinite_determiners.patterns)
 
     def _build_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)
@@ -57,4 +61,3 @@ if __name__ == '__main__':
     for i in range(len(token_ids)):
         print(doc[token_ids[i]].text)
     print(r)
-
