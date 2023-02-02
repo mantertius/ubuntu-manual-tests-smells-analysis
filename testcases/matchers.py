@@ -5,6 +5,7 @@ from rich import print
 from spacy import displacy
 from dependency_matchers import MatchersFactory
 from data import Test,  nlp
+import pandas as pd
 
 VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 IMPERATIVE_VERBS = ['VB', 'VBP']
@@ -128,3 +129,9 @@ def is_vague_verification(test: abc.Container) -> bool:  #is_bad_verification_fo
     # steps = test.steps
     # bad_verification_format_steps = [step for step in test if '?' in steps]
     # return len(bad_verification_format_steps) > 0
+
+def all_at_once_at_the_same_time(test: abc.Container) -> list:
+    df = pd.DataFrame()
+    breakpoint()
+    df = df["File/Testcase"] = test.
+
