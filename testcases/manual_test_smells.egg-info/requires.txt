@@ -1,0 +1,5 @@
+spacy
+pandas
+rich
+scipy
+lxml

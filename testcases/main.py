@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     for (file_index, test_file) in enumerate(tests):
         for (test_index, test) in enumerate(test_file):
-            result = matchers.is_misplaced_precondition(test)
+            result = matchers.is_conditional_test(test)
             print(f'[{test_index}] {test.file}[{file_index}]: {result}\n')
             # if not result:
             #     print(test)
