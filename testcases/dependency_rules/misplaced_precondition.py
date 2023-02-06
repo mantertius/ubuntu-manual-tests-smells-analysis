@@ -22,22 +22,24 @@
 
 patterns = [
             [
+                # anchor token: verb
                 {
-                    'RIGHT_ID': 'noun',
-                    'RIGHT_ATTRS': {'POS': {'IN': ['PROPN', 'NOUN']}}
-                },
-
-                {
-                    'LEFT_ID': 'noun',
-                    'RIGHT_ID': 'aux',
-                    'RIGHT_ATTRS': {'POS': 'AUX', 'DEP': {'IN': ['aux', 'auxpass', 'cop']}},
-                    'REL_OP': '.*'
-                },
-                {
-                    'LEFT_ID': 'aux',
                     'RIGHT_ID': 'verb',
-                    'RIGHT_ATTRS': {'POS': 'VERB'},
-                    'REL_OP': '>'
+                    'RIGHT_ATTRS': {'POS': 'VERB'}
+                },
+                # verb -> subject
+                {
+                    "LEFT_ID": "verb",
+                    "REL_OP": ">",
+                    'RIGHT_ID': 'subject',
+                    'RIGHT_ATTRS': {'POS': 'NOUN', 'DEP': {'IN': ['nsubj', 'nsubjpass']}}
+                },
+                # verb -> auxiliary
+                {
+                    'LEFT_ID': 'verb',
+                    'REL_OP': '>',
+                    'RIGHT_ID': 'auxiliary',
+                    'RIGHT_ATTRS': {'POS': 'AUX', 'DEP': {'IN': ['aux', 'auxpass', 'cop']}}
                 },
             ],
         ]

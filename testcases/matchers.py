@@ -46,23 +46,6 @@ def find_eager_step(test: abc.Container):  # OK!
     """
     More than one imperative verb per step
     """
-
-    # # Steps
-    # for step in test.steps:
-    #     action_matches = matcher(step.action)
-    #     if action_matches:
-    #         for match_id, token_ids in action_matches:
-    #             for token_id in token_ids:
-    #                 resultsWritter().write([test.file, 'Conditional Test Logic', 'subordinating conjunction', 'step', step.action[token_id], step.action])
-    #
-    # # Verifications
-    # for step in test.steps:
-    #     for reaction in step.reactions:
-    #         reaction_matches = matcher(reaction)
-    #         for match_id, token_ids in reaction_matches:
-    #             for token_id in token_ids:
-    #                 resultsWritter().write([test.file, 'Conditional Test Logic', 'subordinating conjunction', 'verification', reaction[token_id], reaction])
-
     steps = test.steps
     for step in steps:
         actions = [action for action in step.action if action.tag_ in IMPERATIVE_VERBS]
@@ -82,27 +65,31 @@ def find_unverified_step(test: abc.Container):  # OK!
 
 def find_misplaced_precondition(test: abc.Container):
     """
-        Declarations about SUT state (e.g. 'wifi is turned off') with no verification
+        Unverified steps, at the beginning of the test, that declare SUT state (e.g. 'wifi is turned off')
     """
-    def get_root(doc: Doc) -> list:
-        return [token.tag_ for token in doc if token.dep_ == 'ROOT']
+    def get_first_unverified_steps() -> list:
+        first_unverified_steps = []
+        for step in test.steps:
+            if step.reactions:
+                break
+            else:
+                first_unverified_steps.append(step)
+        return first_unverified_steps
 
     matcher = MatchersFactory.misplaced_precondition_matcher()
-
-    for step in test.steps:
-        if len(step.reactions) > 0:
-            break
+    unverified_steps = get_first_unverified_steps()
+    for step in unverified_steps:
         action_matches = matcher(step.action)
         if action_matches:
             for match_id, token_ids in action_matches:
-                # verbform = [token_id for token_id in token_ids if "VerbForm=Fin" in str(step.action[token_id].morph)]
-                # if verbform:
-                words = [step.action[token_id] for token_id in token_ids]
-                resultsWritter().write([test.file, 'Misplaced Precondition', '', 'step', words, step.action])
-                print('Sentence: ', step.action)
-                print(f"{'text':{12}} {'POS':{6}} {'TAG':{6}} {'Dep':{10}}")
-                for token in step.action:
-                    print(f'{token.text:{12}} {token.pos_:{6}} {token.tag_:{6}} {token.dep_:{10}}')
+               ind_mood_verb = [token_id for token_id in token_ids if "Mood=Ind" in str(step.action[token_id].morph)]
+                if ind_mood_verb:
+                    words = [step.action[token_id] for token_id in sorted(token_ids)]
+                    resultsWritter().write([test.file, 'misplaced precondition', '', 'step', words, step.action])
+                # print('Sentence: ', step.action)
+                # print(f"{'text':{12}} {'POS':{6}} {'TAG':{6}} {'Dep':{10}}")
+                # for token in step.action:
+                #     print(f'{token.text:{12}} {token.pos_:{6}} {token.tag_:{6}} {token.dep_:{10}}')
 
 
 
@@ -140,53 +127,46 @@ def find_misplaced_step(test: abc.Container):
 
 def find_misplaced_result(test: abc.Container):
     """
-    Checks for active pronouns on the test.reaction field.
-
     A verification verb (check, verify, observe, recheck) in the step description
-    Declarative sentence after any imperative one in the steps
-    something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
-
-    A verification verb (check, verify, observe, recheck) in the step description
-    Declarative sentence after any imperative one in all steps
     Interrogative sentences as steps
+    Declarative sentence after any imperative one in all steps
     """
+    def get_root(doc: Doc) -> list:
+        return [token.tag_ for token in doc if token.dep_ == 'ROOT']
 
     def is_imperative_sentence(sent: Doc) -> bool:
-        return sent[0].tag_ in IMPERATIVE_VERBS
+        root = get_root(sent)
+        return root[0] in IMPERATIVE_VERBS
 
     def is_interrogative_sentence(sent: Doc) -> bool:
         return sent[-1].text == '?'
 
-    def is_declarative_sentence(sent: Doc) -> bool:
-        return not (is_imperative_sentence(sent) or is_interrogative_sentence(sent))
-
-    matcher = MatchersFactory.misplaced_result_matcher()
-    found_first_imperative_sentence = False
+    matcher = MatchersFactory.misplaced_result_verification_matcher()
     for step in test.steps:
-        # first test: A verification verb (check, verify, observe, recheck) in the step description
+        # First test: A verification verb (check, verify, observe, recheck) in the step description
         action_matches = matcher(step.action)
         for match_id, token_ids in action_matches:
             for token_id in token_ids:
                 resultsWritter().write([test.file, 'Misplaced Result', 'verification performed', 'step', step.action[token_id], step.action])
 
-        # # Second test: Declarative sentence after any imperative one considering all steps
-        # for sentence in step.action.sents:
-        #     # verbs = [token for token in sentence if token.tag_ in VERBS]
-        #     # for verb in verbs:
-        #     #     if (not found_first) and verb.tag_ in IMPERATIVE_VERBS and verb.is_sent_start is True:
-        #     #         found_first = True
-        #     #     elif found_first and verb.tag_ not in IMPERATIVE_VERBS:
-        #     #         resultsWritter().write([test.file, 'misplaced result', 'verification instead of action', 'step', '', sentence])
-        #     if is_imperative_sentence(sentence):
-        #         found_first_imperative_sentence = True
-        #     elif found_first_imperative_sentence and is_declarative_sentence(sentence):
-        #         resultsWritter().write([test.file, 'misplaced result', 'verification instead of action', 'step', '', sentence])
-
-        # Third test: Interrogative sentences as step
+        # Second test: Interrogative sentences as step
         for sentence in step.action.sents:
             if is_interrogative_sentence(sentence):
                 resultsWritter().write(
                     [test.file, 'Misplaced Result', 'question as step', 'step', '', sentence])
+
+    # Third test: Declarative sentence after any imperative one considering all steps
+    matcher = MatchersFactory.misplaced_result_affirmative_sentences()
+    verified_steps = [step for step in test.steps if step.reactions]
+    for step in verified_steps:
+        for sentence in step.action.sents:
+            if not (is_interrogative_sentence(sentence) or is_imperative_sentence(sentence)):
+                action_matches = matcher(sentence)
+                for match_id, token_ids in action_matches:
+                    words = [sentence[token_id] for token_id in sorted(token_ids)]
+                    resultsWritter().write([test.file, 'Misplaced Result', 'SUT state declaration', 'step', words, sentence])
+
+
 
 # def all_at_once_at_the_same_time(test: abc.Container) -> df:
 #     df = pd.DataFrame()

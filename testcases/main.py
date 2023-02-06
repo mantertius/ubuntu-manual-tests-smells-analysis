@@ -28,7 +28,7 @@ if __name__ == '__main__':
             matchers.find_unverified_step(test)
             matchers.find_misplaced_step(test)
             matchers.find_misplaced_result(test)
-            # matchers.find_misplaced_precondition(test)
+            matchers.find_misplaced_precondition(test)
 
             # result = matchers.is_misplaced_precondition(test)
             # print(f'[{test_index}] {test.file}[{file_index}]: {result}\n')
