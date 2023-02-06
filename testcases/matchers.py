@@ -82,7 +82,7 @@ def find_misplaced_precondition(test: abc.Container):
         action_matches = matcher(step.action)
         if action_matches:
             for match_id, token_ids in action_matches:
-               ind_mood_verb = [token_id for token_id in token_ids if "Mood=Ind" in str(step.action[token_id].morph)]
+                ind_mood_verb = [token_id for token_id in token_ids if "Mood=Ind" in str(step.action[token_id].morph)]
                 if ind_mood_verb:
                     words = [step.action[token_id] for token_id in sorted(token_ids)]
                     resultsWritter().write([test.file, 'misplaced precondition', '', 'step', words, step.action])
