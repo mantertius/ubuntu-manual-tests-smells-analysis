@@ -5,8 +5,8 @@ from rich import print
 from spacy import displacy
 from matchers_factory import MatchersFactory
 from data import Test, nlp
-from testcases.keywords import Keywords
-from testcases.csv_writter import resultsWritter
+from keywords import Keywords
+from csv_writter import resultsWritter
 from spacy.tokens import Doc
 from data import Test,  nlp
 import pandas as pd
@@ -98,7 +98,7 @@ def find_misplaced_precondition(test: abc.Container):
                 # verbform = [token_id for token_id in token_ids if "VerbForm=Fin" in str(step.action[token_id].morph)]
                 # if verbform:
                 words = [step.action[token_id] for token_id in token_ids]
-                resultsWritter().write([test.file, 'misplaced precondition', '', 'step', words, step.action])
+                resultsWritter().write([test.file, 'Misplaced Precondition', '', 'step', words, step.action])
                 print('Sentence: ', step.action)
                 print(f"{'text':{12}} {'POS':{6}} {'TAG':{6}} {'Dep':{10}}")
                 for token in step.action:
@@ -167,7 +167,7 @@ def find_misplaced_result(test: abc.Container):
         action_matches = matcher(step.action)
         for match_id, token_ids in action_matches:
             for token_id in token_ids:
-                resultsWritter().write([test.file, 'misplaced result', 'verification performed', 'step', step.action[token_id], step.action])
+                resultsWritter().write([test.file, 'Misplaced Result', 'verification performed', 'step', step.action[token_id], step.action])
 
         # # Second test: Declarative sentence after any imperative one considering all steps
         # for sentence in step.action.sents:
@@ -186,7 +186,7 @@ def find_misplaced_result(test: abc.Container):
         for sentence in step.action.sents:
             if is_interrogative_sentence(sentence):
                 resultsWritter().write(
-                    [test.file, 'misplaced result', 'question as step', 'step', '', sentence])
+                    [test.file, 'Misplaced Result', 'question as step', 'step', '', sentence])
 
 # def all_at_once_at_the_same_time(test: abc.Container) -> df:
 #     df = pd.DataFrame()
@@ -212,16 +212,24 @@ def find_ambiguous_test(test: abc.Container) -> bool:
     # Comparative adverbs (RBR)
     matcher = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
 
-    # Actions
-    for step in test.steps:
-        action_matches = matcher(step.action)
-        for match_id, start, end in action_matches:
-            span = step.action[start:end]  # The matched span of tokens
-            resultsWritter().write([test.file, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
 
+    # Actions
+    try:
+        for step in test.steps:
+            action_matches = matcher(step.action)
+            # breakpoint()
+            for match_id, start, end in action_matches:
+                span = step.action[start:end]  # The matched span of tokens
+                resultsWritter().write([test.file, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
+    except:
+        breakpoint()
     # Results
     for step in test.steps:
+        # reactions = step.reactions 
+        # if len(step.reactions) == 1:
+        #     reactions = [step.reactions]  
         for reaction in step.reactions:
+            # breakpoint()
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]  # The matched span of tokens

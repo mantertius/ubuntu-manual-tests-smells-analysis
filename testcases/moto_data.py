@@ -76,19 +76,23 @@ def pipeline(raw_text:str) -> abc.Container:
         chunks = nlp(clean_text)
     return chunks
 
-def pipeline_reactions(reactions_raw_text:str) -> dict:
+def pipeline_reactions(reactions_raw_text:str) -> list:
     regex = re.compile(r'(\*.+\*)')
     splits = [split for split in regex.split(reactions_raw_text) if split]
     action_identifiers = [int(re.compile('\d+').findall(key)[0]) for key in splits[0:-1:2]]
-    reactions = [reaction.strip() for reaction in splits[1::2]]
+    reactions = [nlp(reaction.strip()) for reaction in splits[1::2]]
     paired_reactions = dict(zip(action_identifiers,reactions))
     result = list()
     for action_number in action_identifiers:
         if (current_reaction := paired_reactions.get(action_number)):
+            #breakpoint()
             result.append(current_reaction)
         else:
             result.append('')
     return result
+
+# def _pipeline_reactions_nlp(reactions_list:list) ->
+
 
 def get_tests(smell_acronym : str):
     df = smells_loader(smell_acronym)
@@ -103,7 +107,7 @@ def get_tests(smell_acronym : str):
             reactions = pipeline_reactions(row[3])
             steps = list()
             for (action, reactions) in zip(actions, reactions):
-                step = Step(action, reactions)
+                step = Step(action, [reactions])
                 steps.append(step)
             test = Test(file=name, header=header, steps=steps)
             result.append([test])
@@ -129,6 +133,6 @@ def get_tests_from_name(test_name:str):
 
 if __name__ == '__main__':
     # df = moto_smell_loader_closure()
-    result = get_tests('AmbT')
+    result = get_tests('')
 
     # rs = get_tests_from_name('TC - [Folio]-Turn on/off Folio when the screen is lock/Unlock')
