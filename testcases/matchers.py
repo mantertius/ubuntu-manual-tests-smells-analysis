@@ -65,10 +65,19 @@ def find_unverified_step(test: abc.Container):  # OK!
 
 def find_misplaced_precondition(test: abc.Container):
     """
-        Declarations about SUT state (e.g. 'wifi is turned off') with no verification steps
+        Unverified steps, at the beginning of the test, that declare SUT state (e.g. 'wifi is turned off')
     """
+    def get_first_unverified_steps() -> list:
+        first_unverified_steps = []
+        for step in test.steps:
+            if step.reactions:
+                break
+            else:
+                first_unverified_steps.append(step)
+        return first_unverified_steps
+
     matcher = MatchersFactory.misplaced_precondition_matcher()
-    unverified_steps = [step for step in test.steps if not step.reactions]
+    unverified_steps = get_first_unverified_steps()
     for step in unverified_steps:
         action_matches = matcher(step.action)
         for match_id, token_ids in action_matches:
