@@ -3,196 +3,309 @@ import numpy as np
 import spacy
 from rich import print
 from spacy import displacy
-from dependency_matchers import MatchersFactory
+from matchers_factory import MatchersFactory
+from data import Test, nlp
+from testcases.keywords import Keywords
+from testcases.csv_writter import resultsWritter
+from spacy.tokens import Doc
 from data import Test,  nlp
 import pandas as pd
 
 VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 IMPERATIVE_VERBS = ['VB', 'VBP']
 
-def is_conditional_test(test:abc.Container) -> bool: #OK
+
+def find_conditional_test_logic(test: abc.Container):  # OK
     """
-    Subordinating conjunctions
+    Subordinate (dependent clauses). They start with a subordinating conjunction
     """
     matcher = MatchersFactory.conditional_test_matcher()
-    for step in test.steps:
-            matches = []
-            action_matches = matcher(step.action)
-            if action_matches:
-                return True
-    return False
 
-def is_eager_step(test: abc.Container) -> bool: #OK!
+    for step in test.steps:
+        # Steps
+        doc = nlp(step.action)
+        for sentence in doc.sents:  # Analyze individual sentences, not the entire step text
+            action_matches = matcher(sentence)
+            for match_id, start, end in action_matches:
+                span = sentence[start:end]
+                resultsWritter().write(
+                    [test.file, 'Conditional Test Logic', 'dependent clause', 'step', span, sentence])
+
+        # Verifications
+        for reaction in step.reactions:
+            doc = nlp(reaction)
+            for sentence in doc.sents:
+                reaction_matches = matcher(sentence)
+                for match_id, start, end in reaction_matches:
+                    span = sentence[start:end]
+                    resultsWritter().write(
+                        [test.file, 'Conditional Test Logic', 'dependent clause', 'verification', span, sentence])
+
+
+def find_eager_step(test: abc.Container):  # OK!
     """
     More than one imperative verb per step
     """
-    eager_step = 0
+
+    # # Steps
+    # for step in test.steps:
+    #     action_matches = matcher(step.action)
+    #     if action_matches:
+    #         for match_id, token_ids in action_matches:
+    #             for token_id in token_ids:
+    #                 resultsWritter().write([test.file, 'Conditional Test Logic', 'subordinating conjunction', 'step', step.action[token_id], step.action])
+    #
+    # # Verifications
+    # for step in test.steps:
+    #     for reaction in step.reactions:
+    #         reaction_matches = matcher(reaction)
+    #         for match_id, token_ids in reaction_matches:
+    #             for token_id in token_ids:
+    #                 resultsWritter().write([test.file, 'Conditional Test Logic', 'subordinating conjunction', 'verification', reaction[token_id], reaction])
+
     steps = test.steps
     for step in steps:
         actions = [action for action in step.action if action.tag_ in IMPERATIVE_VERBS]
-        eager_step = eager_step + len(actions)
-    return eager_step > 1
+        if len(actions) > 1:
+            resultsWritter().write([test.file, 'Eager Step', '', 'step', actions, step.action])
 
-def is_unverified_step(test: abc.Container) -> bool: #OK!
+
+def find_unverified_step(test: abc.Container):  # OK!
     """
     Missing verification step
     """
     steps = test.steps
-    return len([step for step in steps if len(step.reactions) == 0]) > 0
-
-def is_misplaced_precondition(test: abc.Container) -> bool:
-    def get_tags(sentence) -> list:
-        return [token.tag_ for token in sentence if token.tag_ in VERBS]
-    actions = get_tags(test.steps[0].action)
-    if not actions or actions[0] not in IMPERATIVE_VERBS:
-        return True
-    return False
+    unverified_steps = [step for step in steps if len(step.reactions) == 0]
+    for step in unverified_steps:
+        resultsWritter().write([test.file, 'Unverified Step', '', 'step', '', step.action])
 
 
-def is_misplaced_step(test: abc.Container) -> bool:
+def find_misplaced_precondition(test: abc.Container):
+    """
+        Declarations about SUT state (e.g. 'wifi is turned off') with no verification
+    """
+    def get_root(doc: Doc) -> list:
+        return [token.tag_ for token in doc if token.dep_ == 'ROOT']
+
+    matcher = MatchersFactory.misplaced_precondition_matcher()
+
+    for step in test.steps:
+        if len(step.reactions) > 0:
+            break
+        action_matches = matcher(step.action)
+        if action_matches:
+            for match_id, token_ids in action_matches:
+                # verbform = [token_id for token_id in token_ids if "VerbForm=Fin" in str(step.action[token_id].morph)]
+                # if verbform:
+                words = [step.action[token_id] for token_id in token_ids]
+                resultsWritter().write([test.file, 'misplaced precondition', '', 'step', words, step.action])
+                print('Sentence: ', step.action)
+                print(f"{'text':{12}} {'POS':{6}} {'TAG':{6}} {'Dep':{10}}")
+                for token in step.action:
+                    print(f'{token.text:{12}} {token.pos_:{6}} {token.tag_:{6}} {token.dep_:{10}}')
+
+
+
+
+# def is_bad_verification_format(test: abc.Container) -> bool:  # BAD VERIFICATION FORMAT
+#     # There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
+#     steps = test.steps
+#     bad_verification_format_steps = [step for step in test if '?' in steps]
+#     return len(bad_verification_format_steps) > 0
+
+
+def find_misplaced_step(test: abc.Container):
     """
     Steps usually come on the imperative format. Imperative sentences usually start with a verb in second person.
     https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     This function checks if one of the steps of a test is an imperative sentence.
     """
-    def has_imperative_sentence(doc: spacy.tokens.Doc) -> bool:
-        for sentence in doc.sents:
-            if sentence[0].tag_ in IMPERATIVE_VERBS:
-                return True
-        return False
-
-    steps = test.steps
-    marked_steps = [
-        step for step in steps for reaction in step.reactions if has_imperative_sentence(reaction)]
-    return len(marked_steps) > 0
-
-def is_undefined_wait(test: abc.Container) -> bool:
-    matcher = MatchersFactory.undefined_wait_matcher()
     for step in test.steps:
-            matches = []
-            action_matches = matcher(step.action)
-            if action_matches:
-                return True
-    return False
+        for reaction in step.reactions:
+            for sentence in reaction.sents:
+                token = sentence[0]
+                if token.tag_ in IMPERATIVE_VERBS and token.text.lower() not in Keywords().keywords['verifications']:
+                    resultsWritter().write([test.file, 'Misplaced Step', '', 'verification', token.text, reaction])
 
-def is_misplaced_result(test: abc.Container) -> bool:
+
+# def is_undefined_wait(test: abc.Container) -> bool:
+#     matcher = MatchersFactory.undefined_wait_matcher()
+#     for step in test.steps:
+#         matches = []
+#         action_matches = matcher(step.action)
+#         if action_matches:
+#             return True
+#     return False
+
+
+def find_misplaced_result(test: abc.Container):
     """
     Checks for active pronouns on the test.reaction field.
 
     A verification verb (check, verify, observe, recheck) in the step description
     Declarative sentence after any imperative one in the steps
     something (must verb) - verbos modais de obrigatoriedade devem entrar na classificação de verbos de verificação
+
+    A verification verb (check, verify, observe, recheck) in the step description
+    Declarative sentence after any imperative one in all steps
+    Interrogative sentences as steps
     """
+
+    def is_imperative_sentence(sent: Doc) -> bool:
+        return sent[0].tag_ in IMPERATIVE_VERBS
+
+    def is_interrogative_sentence(sent: Doc) -> bool:
+        return sent[-1].text == '?'
+
+    def is_declarative_sentence(sent: Doc) -> bool:
+        return not (is_imperative_sentence(sent) or is_interrogative_sentence(sent))
 
     matcher = MatchersFactory.misplaced_result_matcher()
+    found_first_imperative_sentence = False
     for step in test.steps:
-        matches = []
-        #first test
+        # first test: A verification verb (check, verify, observe, recheck) in the step description
         action_matches = matcher(step.action)
-        if action_matches:
-            print(step.action)
-            return True
-        #Second test
-        verbs = [token.tag_ for token in step.action if token.tag_ in VERBS]
-        found_first = False
-        for verb in verbs:
-            if verb in IMPERATIVE_VERBS:
-                found_first=True
-            if found_first and verb not in IMPERATIVE_VERBS:
-                return True
-    return False
+        for match_id, token_ids in action_matches:
+            for token_id in token_ids:
+                resultsWritter().write([test.file, 'misplaced result', 'verification performed', 'step', step.action[token_id], step.action])
+
+        # # Second test: Declarative sentence after any imperative one considering all steps
+        # for sentence in step.action.sents:
+        #     # verbs = [token for token in sentence if token.tag_ in VERBS]
+        #     # for verb in verbs:
+        #     #     if (not found_first) and verb.tag_ in IMPERATIVE_VERBS and verb.is_sent_start is True:
+        #     #         found_first = True
+        #     #     elif found_first and verb.tag_ not in IMPERATIVE_VERBS:
+        #     #         resultsWritter().write([test.file, 'misplaced result', 'verification instead of action', 'step', '', sentence])
+        #     if is_imperative_sentence(sentence):
+        #         found_first_imperative_sentence = True
+        #     elif found_first_imperative_sentence and is_declarative_sentence(sentence):
+        #         resultsWritter().write([test.file, 'misplaced result', 'verification instead of action', 'step', '', sentence])
+
+        # Third test: Interrogative sentences as step
+        for sentence in step.action.sents:
+            if is_interrogative_sentence(sentence):
+                resultsWritter().write(
+                    [test.file, 'misplaced result', 'question as step', 'step', '', sentence])
+
+# def all_at_once_at_the_same_time(test: abc.Container) -> df:
+#     df = pd.DataFrame()
+#     breakpoint()
+#     df["File/Testcase"] = test.file
+#     cond_result, cond_match = is_conditional_test(test)
+#     df['Conditional Test Logic'] = cond_result
+#     df['Undefined Wait'] = wait_result
+#     df['Misplaced Result'] = mis_result_result
+#     df['Misplaced Pre-Condition'] = mis_precon_result
+#     df['Eager Step'] =
+#     df['Unverified Step']
+#     df['Eager Step']
 
 
-def is_vague_step(test: abc.Container) -> bool: #bad verification format
+def find_ambiguous_test(test: abc.Container) -> bool:
     """
-    Pra Vague Step, olhar so os passos (actions) e procurar POS=ADJ && Tag=JJ #is_ambiguous_test
-    """
-    breakpoint()
-    for step in test.steps:
-        tag_pos = [[token.tag_ for token in step.action],[token.pos_ for token in step.reactions]]
-        if tag_pos[1] in ['ADJ'] and tag_pos[0] in ['JJ']:
-            return True
-    return False
-
-def is_vague_verification(test: abc.Container) -> bool:  #is_bad_verification_formatT
-# There are more accurate methods which works even without the question mark egg: https://github.com/kartikn27/nlp-question-detection
-# Pra Vague Verification, olhar só os resultados (reactions) e procurar (POS=ADJ && Tag=JJR) || (POS=ADV && Tag=RB)
-    breakpoint()
-    for step in test.step:
-        tag_pos = [[token.tag_ for token in step.reactions],[token.pos_ for token in step.reactions]]
-        if tag_pos[1] in ['ADJ'] and tag_pos[0] in ['JJR']:
-            return True
-        if tag_pos[1] in ['ADV'] and tag_pos[0] in ['RB']:
-            return True
-    return False
-
-    # steps = test.steps
-    # bad_verification_format_steps = [step for step in test if '?' in steps]
-    # return len(bad_verification_format_steps) > 0
-
-def all_at_once_at_the_same_time(test: abc.Container) -> df:
-    df = pd.DataFrame()
-    breakpoint()
-    df["File/Testcase"] = test.file
-    cond_result, cond_match = is_conditional_test(test)
-    df['Conditional Test Logic'] = cond_result
-    df['Undefined Wait'] = wait_result
-    df['Misplaced Result'] = mis_result_result
-    df['Misplaced Pre-Condition'] = mis_precon_result
-    df['Eager Step'] =
-    df['Unverified Step']
-    df['Eager Step']
-
-def is_ambiguous_test_indefinite_determiners(test: abc.Container) -> bool:
-    """
-    For actions and reactions:
         Comparative adverbs (RBR)
-        Adverbs of manner (RB)
+        Adverbs of manner(RB)
+        Comparative and superlative adjectives (JJR, JJS)
+        Indefinite pronouns (PRON)
     """
-    matcher = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
+    # Comparative adverbs (RBR)
+    matcher = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
+
+    # Actions
     for step in test.steps:
-        # Searching in actions
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
-            # string_id = nlp.vocab.strings[match_id]  # Matcher name
             span = step.action[start:end]  # The matched span of tokens
-            if "Definite=Def" not in str(span[1].morph):  # spaCy recognizes definite determiners, which we don't want
-                # print(string_id, span.text)
-                return True
-        # Searching in reactions
-        reaction_matches = matcher(step.reactions)
-        for match_id, start, end in reaction_matches:
-            # string_id = nlp.vocab.strings[match_id]  # Matcher name
-            span = step.reactions[start:end]  # The matched span of tokens
-            if "Definite=Def" not in str(span[1].morph):  # spaCy recognizes definite determiners, which we don't want
-                # print(string_id, span.text)
-                return True
-    return False
+            resultsWritter().write([test.file, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
 
-def is_ambiguous_test_adjectives(test: abc.Container) -> bool:
-    """
-    For actions and reactions:
-        Comparative adjectives (JJR)
-        Superlative adjectives (JJS)
-    """
+    # Results
+    for step in test.steps:
+        for reaction in step.reactions:
+            reaction_matches = matcher(reaction)
+            for match_id, start, end in reaction_matches:
+                span = reaction[start:end]  # The matched span of tokens
+                resultsWritter().write(
+                    [test.file, 'Ambiguous Test', 'comparative adverb', 'verification', span, reaction])
+
+    # Adverbs of manner(RB)
+    matcher = MatchersFactory.ambiguous_test_adverbs_of_manner_matcher()
+
+    # Actions
+    for step in test.steps:
+        action_matches = matcher(step.action)
+        for match_id, start, end in action_matches:
+            span = step.action[start:end]
+            if str(span[-1]).endswith(('ly', 'mente')):
+                resultsWritter().write([test.file, 'Ambiguous Test', 'adverb of manner', 'step', span, step.action])
+
+    # Results
+    for step in test.steps:
+        for reaction in step.reactions:
+            reaction_matches = matcher(reaction)
+            for match_id, start, end in reaction_matches:
+                span = reaction[start:end]
+                if str(span[-1]).endswith(('ly', 'mente')):
+                    resultsWritter().write(
+                        [test.file, 'Ambiguous Test', 'adverb of manner', 'verification', span, reaction])
+
+    # Adjectives
     matcher = MatchersFactory.ambiguous_test_adjectives_matcher()
-    for step in test.steps:
-        action_matches = matcher(step.action)
-        reaction_matches = matcher(step.reactions)
-        if action_matches or reaction_matches:
-            return True
-    return False
 
-def is_ambiguous_test_adverbs(test: abc.Container) -> bool:
-    """
-    For actions and reactions:
-        Comparative adverbs (RBR)
-        Adverbs of manner (RB)
-    """
-    matcher = MatchersFactory.ambiguous_test_adverbs_matcher()
+    # Actions
     for step in test.steps:
         action_matches = matcher(step.action)
-        reaction_matches = matcher(step.reactions)
-        if action_matches or reaction_matches:
-            return True
-    return False
+        for match_id, start, end in action_matches:
+            span = step.action[start:end]
+            resultsWritter().write([test.file, 'Ambiguous Test', 'adjective', 'step', span, step.action])
+
+    # Results
+    for step in test.steps:
+        for reaction in step.reactions:
+            reaction_matches = matcher(reaction)
+            for match_id, start, end in reaction_matches:
+                span = reaction[start:end]
+                resultsWritter().write([test.file, 'Ambiguous Test', 'adjective', 'verification', span, reaction])
+
+    # Verb + indefinite determiner
+    matcher = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
+
+    # Actions
+    for step in test.steps:
+        action_matches = matcher(step.action)
+        for match_id, start, end in action_matches:
+            span = step.action[start:end]
+            if "Definite=Def" not in str(span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
+                resultsWritter().write(
+                    [test.file, 'Ambiguous Test', 'verb + indefinite determiner', 'step', span, step.action])
+
+    # Results
+    for step in test.steps:
+        for reaction in step.reactions:
+            reaction_matches = matcher(reaction)
+            for match_id, start, end in reaction_matches:
+                span = reaction[start:end]
+                if "Definite=Def" not in str(
+                        span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
+                    resultsWritter().write(
+                        [test.file, 'Ambiguous Test', 'verb + indefinite determiner', 'verification', span, reaction])
+
+    # Indefinite pronouns
+    matcher = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
+
+    # Actions
+    for step in test.steps:
+        action_matches = matcher(step.action)
+        for match_id, start, end in action_matches:
+            span = step.action[start:end]
+            if "PronType=Ind" in str(span[-1].morph):
+                resultsWritter().write([test.file, 'Ambiguous Test', 'indefinite pronoun', 'step', span, step.action])
+
+    # Results
+    for step in test.steps:
+        for reaction in step.reactions:
+            reaction_matches = matcher(reaction)
+            for match_id, start, end in reaction_matches:
+                span = reaction[start:end]
+                if "PronType=Ind" in str(span[-1].morph):
+                    resultsWritter().write([test.file, 'Ambiguous Test', 'indefinite pronoun', 'step', span, reaction])

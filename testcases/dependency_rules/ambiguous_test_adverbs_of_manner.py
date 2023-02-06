@@ -1,5 +1,5 @@
 patterns = [
             [
-                {'TAG': {'IN': ['RBR', 'RB']}}
+                {'POS': 'ADV', 'TAG': 'RB'}
             ]
         ]

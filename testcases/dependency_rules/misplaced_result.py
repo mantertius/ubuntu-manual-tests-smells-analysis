@@ -1,10 +1,10 @@
-from keywords import Keywords
+from testcases.keywords import Keywords
 
-keywords = Keywords()
-actions = keywords.keywords['actions']
+verifications = Keywords().keywords['verifications']
 
 patterns = [
             [
-                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': actions}, 'IS_SENT_START': True}}
+                {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': verifications}}}
+                # {'RIGHT_ID': 'anchor','RIGHT_ATTRS': {'LOWER': {'IN': actions}, 'IS_SENT_START': True}}
             ],
         ]

@@ -20,13 +20,14 @@ class Keywords(metaclass=Singleton):
         self.selector()
 
     def _english(self):
-        actions = ('check', 'verify', 'observe', 'recheck')
-        actions = expand_words(actions, k=5)
-        self.keywords['actions'] = actions
+        verifications = ('check', 'verify', 'observe', 'recheck')
+        # verifications = expand_words(verifications, k=5)
+        verifications = ('verify', 'validate', 'observing', 'observe', 'checking', 'check', 'recheck', 'rechecked')
+        self.keywords['verifications'] = verifications
 
     def _portuguese(self):
-        actions = ('checar', 'verificar', 'observar', 'rechecar', 're-rechecar')
-        self.keywords['actions'] = actions
+        verifications = ('checar', 'verificar', 'observar', 'rechecar', 're-rechecar')
+        self.keywords['verifications'] = verifications
 
 if __name__ == '__main__':
     k = Keywords('portuguese')

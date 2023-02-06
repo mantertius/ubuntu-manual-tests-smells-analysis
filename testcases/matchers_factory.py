@@ -1,6 +1,9 @@
-from spacy.matcher import DependencyMatcher
+from spacy.matcher import DependencyMatcher, Matcher
 from pipeline import nlp
-from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result, ambiguous_test_adjectives, ambiguous_test_adverbs, ambiguous_test_indefinite_determiners
+from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result, \
+    ambiguous_test_adjectives, ambiguous_test_comparative_adverbs, ambiguous_test_adverbs_of_manner, \
+    ambiguous_test_indefinite_determiners, ambiguous_test_indefinite_pronouns
+
 
 class MatchersFactory:
 
@@ -8,29 +11,43 @@ class MatchersFactory:
         return MatchersFactory._build_matcher(conditional_test.patterns)
 
     def misplaced_precondition_matcher():
-        return MatchersFactory._build_matcher(misplaced_precondition.patterns)
+        return MatchersFactory._build_dependency_matcher(misplaced_precondition.patterns)
 
-    def undefined_wait_matcher():
-        return MatchersFactory._build_matcher(undefined_wait.patterns)
+    # def undefined_wait_matcher():
+    #     return MatchersFactory._build_dependency_matcher(undefined_wait.patterns)
 
     def misplaced_result_matcher():
-        return MatchersFactory._build_matcher(misplaced_result.patterns)
+        return MatchersFactory._build_dependency_matcher(misplaced_result.patterns)
 
     def ambiguous_test_adjectives_matcher():
         return MatchersFactory._build_matcher(ambiguous_test_adjectives.patterns)
 
-    def ambiguous_test_adverbs_matcher():
-        return MatchersFactory._build_matcher(ambiguous_test_adverbs.patterns)
+    def ambiguous_test_comparative_adverbs_matcher():
+        return MatchersFactory._build_matcher(ambiguous_test_comparative_adverbs.patterns)
+
+    def ambiguous_test_adverbs_of_manner_matcher():
+        return MatchersFactory._build_matcher(ambiguous_test_adverbs_of_manner.patterns)
 
     def ambiguous_test_indefinite_determiners_matcher():
         return MatchersFactory._build_matcher(ambiguous_test_indefinite_determiners.patterns)
 
-    def _build_matcher(patterns):
+    def ambiguous_test_indefinite_pronouns_matcher():
+        return MatchersFactory._build_matcher(ambiguous_test_indefinite_pronouns.patterns)
+
+    def _build_dependency_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)
         patterns = enumerate(patterns)
         for idx, pattern in patterns:
-            matcher.add('rule'+str(idx), [pattern])
+            matcher.add('rule' + str(idx), [pattern])
         return matcher
+
+    def _build_matcher(patterns):
+        matcher = Matcher(nlp.vocab)
+        patterns = enumerate(patterns)
+        for idx, pattern in patterns:
+            matcher.add('rule' + str(idx), [pattern])
+        return matcher
+
 
 if __name__ == '__main__':
     a = """
