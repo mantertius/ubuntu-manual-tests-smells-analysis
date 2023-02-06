@@ -7,3 +7,4 @@ testcases/ambt_moto.csv
 *.htm
 testcases/page.htm
 testcases/results.csv
+*.csv
