@@ -118,7 +118,6 @@ def get_tests(smell_acronym:str) -> list:
         with open('page.htm', 'r', encoding='utf8') as f:
             soup = BeautifulSoup(f, 'lxml')
     except FileNotFoundError:
-        print('You must add the tests html file on the path \'page.htm\'. This file is ignored via .gitignore')
     tests = parse_tests(soup)
     tests = pipeline(tests)
     return tests

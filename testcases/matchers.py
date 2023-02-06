@@ -130,11 +130,18 @@ def is_vague_verification(test: abc.Container) -> bool:  #is_bad_verification_fo
     # bad_verification_format_steps = [step for step in test if '?' in steps]
     # return len(bad_verification_format_steps) > 0
 
-def all_at_once_at_the_same_time(test: abc.Container) -> list:
+def all_at_once_at_the_same_time(test: abc.Container) -> df:
     df = pd.DataFrame()
     breakpoint()
-    df = df["File/Testcase"] = test.file
-
+    df["File/Testcase"] = test.file
+    cond_result, cond_match = is_conditional_test(test)
+    df['Conditional Test Logic'] = cond_result
+    df['Undefined Wait'] = wait_result
+    df['Misplaced Result'] = mis_result_result
+    df['Misplaced Pre-Condition'] = mis_precon_result
+    df['Eager Step'] =
+    df['Unverified Step']
+    df['Eager Step']
 
 def is_ambiguous_test_indefinite_determiners(test: abc.Container) -> bool:
     """
