@@ -118,6 +118,7 @@ def get_tests(smell_acronym:str) -> list:
         with open('page.htm', 'r', encoding='utf8') as f:
             soup = BeautifulSoup(f, 'lxml')
     except FileNotFoundError:
+        print('adicione o page.htm')
     tests = parse_tests(soup)
     tests = pipeline(tests)
     return tests
