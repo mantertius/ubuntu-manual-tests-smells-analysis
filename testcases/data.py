@@ -148,13 +148,13 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
-    # ubuntu_tests = [test for path in smells_loader(smell_acronym)[FILE_COL]
-    #                     for test in split_tests(path.read_text(encoding='utf-8'),path)]
+    ubuntu_tests = [test for path in smells_loader(smell_acronym)[FILE_COL]
+                    for test in split_tests(path.read_text(encoding='utf-8'),path)]
     moto_tests = moto_get_tests(smell_acronym)
-    # ballot_tests = ballot_get_tests(smell_acronym)
+    ballot_tests = ballot_get_tests(smell_acronym)
     return moto_tests \
-        #    + ubuntu_tests + \
-        #    ballot_tests
+            + ubuntu_tests + \
+            ballot_tests
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):
