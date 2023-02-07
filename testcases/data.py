@@ -153,10 +153,8 @@ def _(smell_acronym:str):
     moto_tests = moto_get_tests(smell_acronym)
     # ballot_tests = ballot_get_tests(smell_acronym)
     return moto_tests \
-        #    + ubuntu_tests + \ 
-        #    ballot_tests 
-            
-            
+        #    + ubuntu_tests + \
+        #    ballot_tests
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):

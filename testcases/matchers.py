@@ -194,21 +194,22 @@ def find_ambiguous_test(test: abc.Container) -> bool:
 
 
     # Actions
-    try:
-        for step in test.steps:
-            action_matches = matcher(step.action)
-            # breakpoint()
-            for match_id, start, end in action_matches:
-                span = step.action[start:end]  # The matched span of tokens
-                resultsWritter().write([test.file, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
-    except:
+    for step in test.steps:
         breakpoint()
+        action_matches = matcher(step.action)
+        for match_id, start, end in action_matches:
+            span = step.action[start:end]  # The matched span of tokens
+            resultsWritter().write([test.file, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
+
     # Results
     for step in test.steps:
-        # reactions = step.reactions 
+        # reactions = step.reactions
         # if len(step.reactions) == 1:
-        #     reactions = [step.reactions]  
+        #     reactions = [step.reactions]
         for reaction in step.reactions:
+            # step.reactions = [reaction1,reaction2]
+            # step.reactions = [Doc]
+            # token
             # breakpoint()
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:

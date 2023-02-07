@@ -1,7 +1,0 @@
-README.md
-setup.py
-manual_test_smells.egg-info/PKG-INFO
-manual_test_smells.egg-info/SOURCES.txt
-manual_test_smells.egg-info/dependency_links.txt
-manual_test_smells.egg-info/requires.txt
-manual_test_smells.egg-info/top_level.txt

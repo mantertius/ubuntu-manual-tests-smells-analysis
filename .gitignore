@@ -8,3 +8,4 @@ testcases/ambt_moto.csv
 testcases/page.htm
 testcases/results.csv
 *.csv
+manual_test_smells.egg-info
