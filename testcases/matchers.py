@@ -206,11 +206,10 @@ def find_ambiguous_test(test: abc.Container) -> bool:
         # if len(step.reactions) == 1:
         #     reactions = [step.reactions]
         for reaction in step.reactions:
-            # step.reactions = [reaction1,reaction2]
-            # step.reactions = [Doc]
-            # token
-            # breakpoint()
-            reaction_matches = matcher(reaction)
+            try:
+                reaction_matches = matcher(reaction)
+            except:
+                breakpoint()
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]  # The matched span of tokens
                 resultsWritter().write(
