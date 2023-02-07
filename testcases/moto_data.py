@@ -107,7 +107,7 @@ def get_tests(smell_acronym : str):
             reactions = pipeline_reactions(row[3])
             steps = list()
             for (action, reactions) in zip(actions, reactions):
-                step = Step([action], [reactions])
+                step = Step(action, [reactions])
                 assert isinstance(step.reactions, list)
                 steps.append(step)
             test = Test(file=name, header=header, steps=steps)
