@@ -107,13 +107,8 @@ def get_tests(smell_acronym : str):
             assert isinstance(actions[0], spacy.tokens.Doc)
             assert isinstance(reactions[0], spacy.tokens.Doc)
             steps = list()
-<<<<<<< HEAD
             for (action, reaction) in zip(actions, reactions):
                 step = Step(action, [reaction])
-=======
-            for (action, reactions) in zip(actions, reactions):
-                step = Step(action, [reactions])
->>>>>>> 4456a506bcc4b4238ee210951b8c109d4c1c836e
                 assert isinstance(step.reactions, list)
                 steps.append(step)
             test = Test(file=name, header=header, steps=steps)
