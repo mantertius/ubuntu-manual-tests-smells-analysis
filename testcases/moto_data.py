@@ -39,7 +39,6 @@ def moto_ambt():
 
 
 def extract_texts(text:str) -> abc.Container:
-
     spaces = r'\s{2,}'
     breaks = r'\n+'
     before_breaks = r'\s+\n+'
@@ -73,7 +72,7 @@ def pipeline(raw_text:str) -> abc.Container:
     if isinstance(clean_text, list) and len(clean_text) > 1:
         chunks = [nlp(element) for element in clean_text if len(clean_text) > 1]
     else:
-        chunks = nlp(clean_text)
+        chunks = [nlp(clean_text)]
     return chunks
 
 def pipeline_reactions(reactions_raw_text:str) -> list:
@@ -105,9 +104,11 @@ def get_tests(smell_acronym : str):
             header = pipeline(row[1])
             actions = pipeline(row[2])
             reactions = pipeline_reactions(row[3])
+            assert isinstance(actions[0], spacy.tokens.Doc)
+            assert isinstance(reactions[0], spacy.tokens.Doc)
             steps = list()
-            for (action, reactions) in zip(actions, reactions):
-                step = Step([action], [reactions])
+            for (action, reaction) in zip(actions, reactions):
+                step = Step(action, [reaction])
                 assert isinstance(step.reactions, list)
                 steps.append(step)
             test = Test(file=name, header=header, steps=steps)
@@ -117,20 +118,6 @@ def get_tests(smell_acronym : str):
 def has_substeps(action_or_reaction:str) -> bool:
     substep_marker = re.compile('\n\W*\d+\.\s*\w+')
     return len(substep_marker.findall(action_or_reaction)) > 0
-
-def get_tests_from_name(test_name:str):
-    df = smells_loader('')
-    test_row = df.loc[df[NAME_COL].apply(lambda x: test_name in x)]
-    result = []
-    for row in test_row.itertuples(name = 'Teste', index=False):
-        name = row[0]
-
-        header = pipeline(row[1])
-        actions = pipeline(row[2])
-        reactions = pipeline(row[3])
-        temp = [Test(name= name, header=header, steps=Step(actions, reactions))]
-        result.append(temp)
-    return result
 
 if __name__ == '__main__':
     # df = moto_smell_loader_closure()

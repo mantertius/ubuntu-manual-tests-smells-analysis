@@ -195,7 +195,6 @@ def find_ambiguous_test(test: abc.Container) -> bool:
 
     # Actions
     for step in test.steps:
-        breakpoint()
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
             span = step.action[start:end]  # The matched span of tokens
