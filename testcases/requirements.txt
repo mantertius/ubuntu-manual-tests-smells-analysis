@@ -5,9 +5,7 @@
 #    pip-compile
 #
 blis==0.7.8
-    # via
-    #   spacy
-    #   thinc
+    # via thinc
 catalogue==2.0.7
     # via
     #   spacy
@@ -18,13 +16,9 @@ certifi==2021.10.8
 charset-normalizer==2.0.12
     # via requests
 click==8.0.4
-    # via
-    #   spacy
-    #   typer
+    # via typer
 colorama==0.4.6
-    # via
-    #   click
-    #   tqdm
+    # via tqdm
 cymem==2.0.6
     # via
     #   preshed
@@ -51,7 +45,6 @@ murmurhash==1.0.6
     #   thinc
 numpy==1.23
     # via
-    #   blis
     #   pandas
     #   scipy
     #   spacy
@@ -60,7 +53,7 @@ packaging==21.3
     # via spacy
 pandas==1.4.2
     # via manual-test-smells (setup.py)
-pathy==0.6.1
+pathy==0.10.1
     # via spacy
 preshed==3.0.6
     # via
@@ -87,10 +80,12 @@ scipy==1.10.0
 six==1.16.0
     # via python-dateutil
 smart-open==5.2.1
-    # via pathy
-spacy==3.4.1
+    # via
+    #   pathy
+    #   spacy
+spacy==3.5
     # via manual-test-smells (setup.py)
-spacy-legacy==3.0.9
+spacy-legacy==3.0.12
     # via spacy
 spacy-loggers==1.0.2
     # via spacy
