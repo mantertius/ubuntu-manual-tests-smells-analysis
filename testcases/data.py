@@ -106,14 +106,16 @@ def extract_texts(text:str, filepath:str) -> abc.Container:
     headers = [remove_html(header) for header in headers]
 
     tests = list(re.findall(tags,text)) #textão único, juntando tudo que tá dentro de <dl>
-    tests = [erase_split(text=r,erase='</dt>',split='<dt>') for r in tests] #separa cada grupo formado por [passo e steps] dos outros [passo e steps]
+    tests = [erase_split(text=r,erase='</dt>',split='<dt>') for r in tests] #se tiver mais de um caso de teste por arquivo, retorna todos os casos de teste separados
+    # if len(tests)>1:
+    #     breakpoint()
     return tests, headers
 
-def split_tests(text:str, filepath:str) -> Test:
+def split_tests(text:str, filepath:str) -> list:
     tests, headers = extract_texts(text, filepath)
     tests = split_tests_steps(tests)
 
-    result = []
+    result = [] #lista de testes para cada filepath
     for test in tests:
         temp = [Test(file=filepath,header=[header for header in headers],steps=[steps for steps in test])]
         result.append(temp)
@@ -148,13 +150,18 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
-    # ubuntu_tests = [test for path in smells_loader(smell_acronym)[FILE_COL]
-    #                     for test in split_tests(path.read_text(encoding='utf-8'),path)]
-    moto_tests = moto_get_tests(smell_acronym)
+    ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
+    # moto_tests = moto_get_tests(smell_acronym)
     # ballot_tests = ballot_get_tests(smell_acronym)
-    return moto_tests \
-        #    + ubuntu_tests + \
-        #    ballot_tests
+    return ubuntu_tests
+
+def ubuntu_get_tests(smell_acronym):
+    filepaths : list = [path for path in smells_loader(smell_acronym)[FILE_COL]]
+    result = list()
+    for path in filepaths:
+        tests_in_path = [test for test in split_tests(path.read_text(encoding='utf-8'),path)] #retorna todos os testes de um path
+        result.append(tests_in_path)
+    return result
 
 @get_tests.register(PosixPath)
 def _(filepath:PosixPath):

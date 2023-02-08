@@ -4,24 +4,22 @@ from keywords import Keywords
 from data import get_tests
 import matchers
 import pandas as pd
-
+import logger as log
 try:
     Keywords(sys.argv[1]) #Instantiates the singleton Keyword objects with the selected language
 except IndexError:
     Keywords('english')
 
 if __name__ == '__main__':
-    # _in = input("Type the Manual Test Smell Acronym or the Posix Path:")
-    # tests = get_tests(_in)
+    log.info('Commencing analysis...') #logging.info
 
-    print('Commencing analysis...')
+    tests:list = get_tests('') #lista com todos os testes
 
-    tests = get_tests('')
-    # tests = get_tests('PCAS')
-    print(f'Total tests: {len(tests)}')
+    log.info(f'Total tests: {len(tests)}')
 
     for (file_index, test_file) in enumerate(tests):
         for (test_index, test) in enumerate(test_file):
+            breakpoint()
             matchers.find_ambiguous_test(test)
             matchers.find_conditional_test_logic(test)
             matchers.find_eager_step(test)
