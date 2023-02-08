@@ -17,7 +17,7 @@ class resultsWritter(metaclass=SingletonMeta):
     csv_writer = ''
 
     def __init__(self):
-        csv_header = ['Test name/file', 'Test Smell', 'Hint', 'Where', 'Term', 'Sentence']
+        csv_header = ['Test file', 'Test index', 'Smell', 'Hint', 'Where', 'Term', 'Sentence']
         timestr = time.strftime("%Y%m%d-%H%M%S")
         filename = 'results-' + timestr + '.csv'
         file = open(filename, 'w', encoding="UTF8", newline='')

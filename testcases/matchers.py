@@ -8,14 +8,14 @@ from data import Test, nlp
 from keywords import Keywords
 from csv_writter import resultsWritter
 from spacy.tokens import Doc
-from data import Test,  nlp
+from data import Test, nlp
 import pandas as pd
 
 VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 IMPERATIVE_VERBS = ['VB', 'VBP']
 
 
-def find_conditional_test_logic(test: abc.Container):  # OK
+def find_conditional_test_logic(index: int, test: abc.Container):
     """
     Subordinate (dependent clauses). They start with a subordinating conjunction
     """
@@ -29,7 +29,7 @@ def find_conditional_test_logic(test: abc.Container):  # OK
             for match_id, start, end in action_matches:
                 span = sentence[start:end]
                 resultsWritter().write(
-                    [test.file, 'Conditional Test Logic', 'dependent clause', 'step', span, sentence])
+                    [test.file, index, 'Conditional Test Logic', 'dependent clause', 'step', span, sentence])
 
         # Verifications
         for reaction in step.reactions:
@@ -39,10 +39,11 @@ def find_conditional_test_logic(test: abc.Container):  # OK
                 for match_id, start, end in reaction_matches:
                     span = sentence[start:end]
                     resultsWritter().write(
-                        [test.file, 'Conditional Test Logic', 'dependent clause', 'verification', span, sentence])
+                        [test.file, index, 'Conditional Test Logic', 'dependent clause', 'verification', span,
+                         sentence])
 
 
-def find_eager_step(test: abc.Container):  # OK!
+def find_eager_step(index: int, test: abc.Container):
     """
     More than one imperative verb per step
     """
@@ -50,23 +51,24 @@ def find_eager_step(test: abc.Container):  # OK!
     for step in steps:
         actions = [action for action in step.action if action.tag_ in IMPERATIVE_VERBS]
         if len(actions) > 1:
-            resultsWritter().write([test.file, 'Eager Step', '', 'step', actions, step.action])
+            resultsWritter().write([test.file, index, 'Eager Step', '', 'step', actions, step.action])
 
 
-def find_unverified_step(test: abc.Container):  # OK!
+def find_unverified_step(index: int, test: abc.Container):
     """
     Missing verification step
     """
     steps = test.steps
     unverified_steps = [step for step in steps if len(step.reactions) == 0]
     for step in unverified_steps:
-        resultsWritter().write([test.file, 'Unverified Step', '', 'step', '', step.action])
+        resultsWritter().write([test.file, index, 'Unverified Step', '', 'step', '', step.action])
 
 
-def find_misplaced_precondition(test: abc.Container):
+def find_misplaced_precondition(index: int, test: abc.Container):
     """
         Unverified steps, at the beginning of the test, that declare SUT state (e.g. 'wifi is turned off')
     """
+
     def get_first_unverified_steps() -> list:
         first_unverified_steps = []
         for step in test.steps:
@@ -85,13 +87,7 @@ def find_misplaced_precondition(test: abc.Container):
                 ind_mood_verb = [token_id for token_id in token_ids if "Mood=Ind" in str(step.action[token_id].morph)]
                 if ind_mood_verb:
                     words = [step.action[token_id] for token_id in sorted(token_ids)]
-                    resultsWritter().write([test.file, 'misplaced precondition', '', 'step', words, step.action])
-                # print('Sentence: ', step.action)
-                # print(f"{'text':{12}} {'POS':{6}} {'TAG':{6}} {'Dep':{10}}")
-                # for token in step.action:
-                #     print(f'{token.text:{12}} {token.pos_:{6}} {token.tag_:{6}} {token.dep_:{10}}')
-
-
+                    resultsWritter().write([test.file, index, 'Misplaced Precondition', '', 'step', words, step.action])
 
 
 # def is_bad_verification_format(test: abc.Container) -> bool:  # BAD VERIFICATION FORMAT
@@ -101,7 +97,7 @@ def find_misplaced_precondition(test: abc.Container):
 #     return len(bad_verification_format_steps) > 0
 
 
-def find_misplaced_step(test: abc.Container):
+def find_misplaced_step(index: int, test: abc.Container):
     """
     Steps usually come on the imperative format. Imperative sentences usually start with a verb in second person.
     https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
@@ -112,7 +108,8 @@ def find_misplaced_step(test: abc.Container):
             for sentence in reaction.sents:
                 token = sentence[0]
                 if token.tag_ in IMPERATIVE_VERBS and token.text.lower() not in Keywords().keywords['verifications']:
-                    resultsWritter().write([test.file, 'Misplaced Step', '', 'verification', token.text, reaction])
+                    resultsWritter().write(
+                        [test.file, index, 'Misplaced Step', '', 'verification', token.text, reaction])
 
 
 # def is_undefined_wait(test: abc.Container) -> bool:
@@ -125,12 +122,13 @@ def find_misplaced_step(test: abc.Container):
 #     return False
 
 
-def find_misplaced_result(test: abc.Container):
+def find_misplaced_result(index: int, test: abc.Container):
     """
     A verification verb (check, verify, observe, recheck) in the step description
     Interrogative sentences as steps
     Declarative sentence after any imperative one in all steps
     """
+
     def get_root(doc: Doc) -> list:
         return [token.tag_ for token in doc if token.dep_ == 'ROOT']
 
@@ -147,13 +145,15 @@ def find_misplaced_result(test: abc.Container):
         action_matches = matcher(step.action)
         for match_id, token_ids in action_matches:
             for token_id in token_ids:
-                resultsWritter().write([test.file, 'Misplaced Result', 'verification performed', 'step', step.action[token_id], step.action])
+                resultsWritter().write(
+                    [test.file, index, 'Misplaced Result', 'verification performed', 'step', step.action[token_id],
+                     step.action])
 
         # Second test: Interrogative sentences as step
         for sentence in step.action.sents:
             if is_interrogative_sentence(sentence):
                 resultsWritter().write(
-                    [test.file, 'Misplaced Result', 'question as step', 'step', '', sentence])
+                    [test.file, index, 'Misplaced Result', 'question as step', 'step', '', sentence])
 
     # Third test: Declarative sentence after any imperative one considering all steps
     matcher = MatchersFactory.misplaced_result_affirmative_sentences()
@@ -164,8 +164,8 @@ def find_misplaced_result(test: abc.Container):
                 action_matches = matcher(sentence)
                 for match_id, token_ids in action_matches:
                     words = [sentence[token_id] for token_id in sorted(token_ids)]
-                    resultsWritter().write([test.file, 'Misplaced Result', 'SUT state declaration', 'step', words, sentence])
-
+                    resultsWritter().write(
+                        [test.file, index, 'Misplaced Result', 'SUT state declaration', 'step', words, sentence])
 
 
 # def all_at_once_at_the_same_time(test: abc.Container) -> df:
@@ -182,7 +182,7 @@ def find_misplaced_result(test: abc.Container):
 #     df['Eager Step']
 
 
-def find_ambiguous_test(test: abc.Container) -> bool:
+def find_ambiguous_test(index: int, test: abc.Container):
     """
         Comparative adverbs (RBR)
         Adverbs of manner(RB)
@@ -192,13 +192,13 @@ def find_ambiguous_test(test: abc.Container) -> bool:
     # Comparative adverbs (RBR)
     matcher = MatchersFactory.ambiguous_test_comparative_adverbs_matcher()
 
-
     # Actions
     for step in test.steps:
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
             span = step.action[start:end]  # The matched span of tokens
-            resultsWritter().write([test.file, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
+            resultsWritter().write(
+                [test.file, index, 'Ambiguous Test', 'comparative adverb', 'step', span, step.action])
 
     # Results
     for step in test.steps:
@@ -213,7 +213,7 @@ def find_ambiguous_test(test: abc.Container) -> bool:
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]  # The matched span of tokens
                 resultsWritter().write(
-                    [test.file, 'Ambiguous Test', 'comparative adverb', 'verification', span, reaction])
+                    [test.file, index, 'Ambiguous Test', 'comparative adverb', 'verification', span, reaction])
 
     # Adverbs of manner(RB)
     matcher = MatchersFactory.ambiguous_test_adverbs_of_manner_matcher()
@@ -224,7 +224,8 @@ def find_ambiguous_test(test: abc.Container) -> bool:
         for match_id, start, end in action_matches:
             span = step.action[start:end]
             if str(span[-1]).endswith(('ly', 'mente')):
-                resultsWritter().write([test.file, 'Ambiguous Test', 'adverb of manner', 'step', span, step.action])
+                resultsWritter().write(
+                    [test.file, index, 'Ambiguous Test', 'adverb of manner', 'step', span, step.action])
 
     # Results
     for step in test.steps:
@@ -234,7 +235,7 @@ def find_ambiguous_test(test: abc.Container) -> bool:
                 span = reaction[start:end]
                 if str(span[-1]).endswith(('ly', 'mente')):
                     resultsWritter().write(
-                        [test.file, 'Ambiguous Test', 'adverb of manner', 'verification', span, reaction])
+                        [test.file, index, 'Ambiguous Test', 'adverb of manner', 'verification', span, reaction])
 
     # Adjectives
     matcher = MatchersFactory.ambiguous_test_adjectives_matcher()
@@ -244,7 +245,7 @@ def find_ambiguous_test(test: abc.Container) -> bool:
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
             span = step.action[start:end]
-            resultsWritter().write([test.file, 'Ambiguous Test', 'adjective', 'step', span, step.action])
+            resultsWritter().write([test.file, index, 'Ambiguous Test', 'adjective', 'step', span, step.action])
 
     # Results
     for step in test.steps:
@@ -252,7 +253,8 @@ def find_ambiguous_test(test: abc.Container) -> bool:
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]
-                resultsWritter().write([test.file, 'Ambiguous Test', 'adjective', 'verification', span, reaction])
+                resultsWritter().write(
+                    [test.file, index, 'Ambiguous Test', 'adjective', 'verification', span, reaction])
 
     # Verb + indefinite determiner
     matcher = MatchersFactory.ambiguous_test_indefinite_determiners_matcher()
@@ -264,7 +266,7 @@ def find_ambiguous_test(test: abc.Container) -> bool:
             span = step.action[start:end]
             if "Definite=Def" not in str(span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
                 resultsWritter().write(
-                    [test.file, 'Ambiguous Test', 'verb + indefinite determiner', 'step', span, step.action])
+                    [test.file, index, 'Ambiguous Test', 'verb + indefinite determiner', 'step', span, step.action])
 
     # Results
     for step in test.steps:
@@ -275,7 +277,8 @@ def find_ambiguous_test(test: abc.Container) -> bool:
                 if "Definite=Def" not in str(
                         span[-1].morph):  # spaCy recognizes definite determiners, which we don't want
                     resultsWritter().write(
-                        [test.file, 'Ambiguous Test', 'verb + indefinite determiner', 'verification', span, reaction])
+                        [test.file, index, 'Ambiguous Test', 'verb + indefinite determiner', 'verification', span,
+                         reaction])
 
     # Indefinite pronouns
     matcher = MatchersFactory.ambiguous_test_indefinite_pronouns_matcher()
@@ -286,7 +289,8 @@ def find_ambiguous_test(test: abc.Container) -> bool:
         for match_id, start, end in action_matches:
             span = step.action[start:end]
             if "PronType=Ind" in str(span[-1].morph):
-                resultsWritter().write([test.file, 'Ambiguous Test', 'indefinite pronoun', 'step', span, step.action])
+                resultsWritter().write(
+                    [test.file, index, 'Ambiguous Test', 'indefinite pronoun', 'step', span, step.action])
 
     # Results
     for step in test.steps:
@@ -295,4 +299,5 @@ def find_ambiguous_test(test: abc.Container) -> bool:
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]
                 if "PronType=Ind" in str(span[-1].morph):
-                    resultsWritter().write([test.file, 'Ambiguous Test', 'indefinite pronoun', 'step', span, reaction])
+                    resultsWritter().write(
+                        [test.file, index, 'Ambiguous Test', 'indefinite pronoun', 'step', span, reaction])
