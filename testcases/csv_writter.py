@@ -1,5 +1,6 @@
 import csv
 import time
+from pipeline import model_name
 
 class SingletonMeta(type):
 
@@ -19,7 +20,7 @@ class resultsWritter(metaclass=SingletonMeta):
     def __init__(self):
         csv_header = ['Test file', 'Test index', 'Smell', 'Hint', 'Where', 'Term', 'Sentence']
         timestr = time.strftime("%Y%m%d-%H%M%S")
-        filename = 'results-' + timestr + '.csv'
+        filename = 'results-' + timestr +'-'+model_name+'.csv'
         file = open(filename, 'w', encoding="UTF8", newline='')
         self.csv_writer = csv.writer(file)
         self.csv_writer.writerow(csv_header)

@@ -61,7 +61,7 @@ def pipeline(list_of_dfs) -> list:
     def _pipeline(raw_text:str):
         '''Recieves raw_text and returns clean_text as a Doc'''
         clean_text = extract_texts(raw_text)
-        print('.', end='')
+        log.debug(f'')
         #reakpoint()
         if not clean_text:
             return None

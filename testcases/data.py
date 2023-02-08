@@ -4,7 +4,8 @@ from pathlib import Path, PosixPath
 from collections import namedtuple, abc
 from functools import singledispatch
 from rich import print
-
+import logging
+log = logging.getLogger(__name__)
 import pandas as pd
 import numpy as np
 import spacy
@@ -151,6 +152,7 @@ def get_tests(arg):
 @get_tests.register(str)
 def _(smell_acronym:str):
     ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
+    log.info(f'{len(ubuntu_tests)} Ubuntu tests retrieved.')
     # moto_tests = moto_get_tests(smell_acronym)
     # ballot_tests = ballot_get_tests(smell_acronym)
     return ubuntu_tests
@@ -161,6 +163,7 @@ def ubuntu_get_tests(smell_acronym):
     for path in filepaths:
         tests_in_path = [test for test in split_tests(path.read_text(encoding='utf-8'),path)] #retorna todos os testes de um path
         result.append(tests_in_path)
+    log.debug('End of ubuntu retrieving')
     return result
 
 @get_tests.register(PosixPath)
