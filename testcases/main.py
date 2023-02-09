@@ -24,9 +24,6 @@ if __name__ == '__main__':
     log.info('Analyzing...')
     for (file_index, test_file) in enumerate(tests):
         for (test_index, test) in enumerate(test_file):
-            if isinstance(test,list):
-                test = test_file[test_index][0]
-                # breakpoint()
             log.debug('Starting matchers...')
             matchers.find_ambiguous_test(test_index, test)
             matchers.find_conditional_test_logic(test_index, test)
@@ -36,5 +33,4 @@ if __name__ == '__main__':
             matchers.find_misplaced_result(test_index, test)
             matchers.find_misplaced_precondition(test_index, test)
             log.debug('End of matchers.')
-
     log.info('Analysis complete!')

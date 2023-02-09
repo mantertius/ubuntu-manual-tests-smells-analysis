@@ -4,11 +4,9 @@ import logging
 
 log = logging.getLogger(__name__)
 #TODO: Turn it into a singleton
-# nlp = spacy.load('en_core_web_trf') #this model is too big.
 SM = 'en_core_web_sm'
 TRF = 'en_core_web_trf'
 nlp = spacy.load(SM)
-# breakpoint()
 lang = nlp.meta['lang']
 name = nlp.meta['name']
 model_name = lang + '_' + name

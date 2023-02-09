@@ -1,14 +1,13 @@
-import re
-from collections import namedtuple,abc
-from bs4 import BeautifulStoneSoup, BeautifulSoup
-import pandas as pd
-from rich import print
-import logging
 import logging.config
-logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
-log = logging.getLogger(__name__)
+import re
+
+import pandas as pd
+from bs4 import BeautifulSoup
 
 from pipeline import nlp_pt, Step, Test
+
+logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
+log = logging.getLogger(__name__)
 
 def split_test_case(tc_soup:BeautifulSoup) -> list:
     body = tc_soup.tbody
@@ -41,12 +40,11 @@ def pipeline(list_of_dfs) -> list:
         text = re.sub(breaks, '\n', text)
         text = re.sub(spaces, ' ', text)
         return text
-        #print(text)
-        #breakpoint()
+
 
     def generate_Test(df:pd.DataFrame) -> Test:
         '''Creates a Test'''
-        # breakpoint()
+
         log.debug('Creating a new test')
         try:
             if df is not None:
@@ -56,24 +54,22 @@ def pipeline(list_of_dfs) -> list:
             log.error('Algo deu errado.')
 
         steps = list()
-        # try:
+
         for row in df.itertuples(index=False):
-            #breakpoint()
             action = _pipeline(row[1])
             reactions = _pipeline(row[2])
             step = Step(action,[reactions])
             steps.append(step)
-        new_test = Test(file=name, header = header, steps = steps)
+        new_test = Test(file=name, header=header, steps=steps)
         log.debug('New test created')
         return new_test
-    # except:
+
     def _pipeline(raw_text:str):
         '''Recieves raw_text and returns clean_text as a Doc'''
         clean_text = extract_texts(raw_text)
         log.debug(f'Texts extracted. Passing nlp...')
-        #reakpoint()
         if not clean_text:
-            return None
+            return nlp_pt('')
         if isinstance(clean_text,list) and len(clean_text) > 1:
             chunks = [nlp_pt(element) for element in clean_text if len(clean_text) > 1]
         else:
@@ -84,15 +80,12 @@ def pipeline(list_of_dfs) -> list:
     for df in list_of_dfs:
         '''Each df is a testcase.'''
         if df is not None:
-            #print(f'Esse é o df: {df}')
             try:
                 new_test = generate_Test(df)
                 all_tests.append([new_test])
-                # breakpoint()
             except:
                 log.error('FAIL.')
                 break
-    #print(COUNTER)
     return all_tests
 
 
@@ -135,12 +128,3 @@ def get_tests(smell_acronym:str) -> list:
     tests = pipeline(tests)
     log.info('End of Ballot retrieving.')
     return tests
-
-if __name__ == '__main__':
-    tests = get_tests('')
-    # for test in tests:
-    #     if test is not None:
-    #         print(test)
-    #     else:
-    #         print('')
-    #breakpoint()

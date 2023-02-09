@@ -118,7 +118,7 @@ def split_tests(text:str, filepath:str) -> list:
 
     result = [] #lista de testes para cada filepath
     for test in tests:
-        temp = [Test(file=filepath,header=[header for header in headers],steps=[steps for steps in test])]
+        temp = Test(file=filepath,header=[header for header in headers],steps=[steps for steps in test])
         result.append(temp)
     return result
 
@@ -151,23 +151,26 @@ def get_tests(arg):
     pass
 
 @get_tests.register(str)
-def _(smell_acronym:str):
+def _(smell_acronym: str):
     log.debug(f'Starting Ubuntu Retrieving...')
     ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
     log.info(f'{len(ubuntu_tests)} Ubuntu tests retrieved.')
+
     log.debug('Starting Moto Retrieving...')
     moto_tests = moto_get_tests(smell_acronym)
     log.info(f'{len(moto_tests)} Moto tests retrieved.')
+
     log.debug('Starting Ballot Retrieving...')
     ballot_tests = ballot_get_tests(smell_acronym)
-    log.info(f'{len(moto_tests)} Ballot tests retrieved.')
+    log.info(f'{len(ballot_tests)} Ballot tests retrieved.')
+
     return ubuntu_tests + moto_tests + ballot_tests
 
 def ubuntu_get_tests(smell_acronym):
-    filepaths : list = [path for path in smells_loader(smell_acronym)[FILE_COL]]
+    filepaths = [path for path in smells_loader(smell_acronym)[FILE_COL]]
     result = list()
     for path in filepaths:
-        tests_in_path = [test for test in split_tests(path.read_text(encoding='utf-8'),path)] #retorna todos os testes de um path
+        tests_in_path = [test for test in split_tests(path.read_text(encoding='utf-8'), path)] #retorna todos os testes de um path
         result.append(tests_in_path)
     log.debug('End of ubuntu retrieving')
     return result
