@@ -124,6 +124,7 @@ def split_tests(text:str, filepath:str) -> list:
 
 def pipeline(text:str) -> str:
     result = remove_html(text)
+    log.debug('Running spacy through text')
     return nlp(result)
 
 def remove_html(text:str):
@@ -151,6 +152,7 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
+    log.info(f'Starting Ubuntu Retrieving...')
     ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
     log.info(f'{len(ubuntu_tests)} Ubuntu tests retrieved.')
     # moto_tests = moto_get_tests(smell_acronym)

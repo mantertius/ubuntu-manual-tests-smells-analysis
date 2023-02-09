@@ -27,6 +27,7 @@ if __name__ == '__main__':
             if isinstance(test,list):
                 test = test_file[test_index][0]
                 # breakpoint()
+            log.debug('Starting matchers...')
             matchers.find_ambiguous_test(test_index, test)
             matchers.find_conditional_test_logic(test_index, test)
             matchers.find_eager_step(test_index, test)
@@ -34,5 +35,6 @@ if __name__ == '__main__':
             matchers.find_misplaced_step(test_index, test)
             matchers.find_misplaced_result(test_index, test)
             matchers.find_misplaced_precondition(test_index, test)
+            log.debug('End of matchers.')
 
     log.info('Analysis complete!')

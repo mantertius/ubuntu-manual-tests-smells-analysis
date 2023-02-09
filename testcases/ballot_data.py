@@ -3,6 +3,8 @@ from collections import namedtuple,abc
 from bs4 import BeautifulStoneSoup, BeautifulSoup
 import pandas as pd
 from rich import print
+import logging
+log = logging.getLogger(__name__)
 
 from pipeline import nlp_pt, Step, Test
 
@@ -114,13 +116,15 @@ def _get_preconditions(soup:BeautifulSoup) -> str:
 
 
 def get_tests(smell_acronym:str) -> list:
+    log.info('Start of Ballot retrieving...')
     try:
         with open('page.htm', 'r', encoding='utf8') as f:
             soup = BeautifulSoup(f, 'lxml')
     except FileNotFoundError:
-        print('adicione o page.htm')
+        log.error('adicione o page.htm')
     tests = parse_tests(soup)
     tests = pipeline(tests)
+    log.info('End of Ballot retrieving.')
     return tests
 
 if __name__ == '__main__':

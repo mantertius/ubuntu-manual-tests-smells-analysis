@@ -3,7 +3,8 @@ import re
 import pandas as pd
 from rich import print
 import spacy
-
+import logging
+log = logging.getLogger(__name__)
 from pipeline import nlp, Step, Test
 
 NAME_COL = 'Summary'
@@ -88,12 +89,14 @@ def pipeline_reactions(reactions_raw_text:str) -> list:
             result.append(current_reaction)
         else:
             result.append('')
+    log.debug('')
     return result
 
 # def _pipeline_reactions_nlp(reactions_list:list) ->
 
 
 def get_tests(smell_acronym : str):
+    log.info('Start of Moto retrieving...')
     df = smells_loader(smell_acronym)
     result = []
     # df = df.head(1)
@@ -113,6 +116,7 @@ def get_tests(smell_acronym : str):
                 steps.append(step)
             test = Test(file=name, header=header, steps=steps)
             result.append([test])
+    log.info('End of Moto retrieving.')
     return result
 
 def has_substeps(action_or_reaction:str) -> bool:
