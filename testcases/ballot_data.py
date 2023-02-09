@@ -53,16 +53,17 @@ def pipeline(list_of_dfs) -> list:
                 name = _pipeline(df['test_case'][0])
                 header = _pipeline(df['preconditions'][0]) #estamos ignorando os objetivos
         except:
-            breakpoint()
+            log.error('Algo deu errado.')
+
         steps = list()
         # try:
         for row in df.itertuples(index=False):
             #breakpoint()
             action = _pipeline(row[1])
             reactions = _pipeline(row[2])
-            step = Step(action,reactions)
+            step = Step(action,[reactions])
             steps.append(step)
-        new_test = Test(file=name, header=header, steps = steps)
+        new_test = Test(file=name, header = header, steps = steps)
         log.debug('New test created')
         return new_test
     # except:

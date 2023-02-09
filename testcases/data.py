@@ -152,12 +152,16 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym:str):
-    log.info(f'Starting Ubuntu Retrieving...')
+    log.debug(f'Starting Ubuntu Retrieving...')
     ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
     log.info(f'{len(ubuntu_tests)} Ubuntu tests retrieved.')
-    # moto_tests = moto_get_tests(smell_acronym)
-    # ballot_tests = ballot_get_tests(smell_acronym)
-    return ubuntu_tests
+    log.debug('Starting Moto Retrieving...')
+    moto_tests = moto_get_tests(smell_acronym)
+    log.info(f'{len(moto_tests)} Moto tests retrieved.')
+    log.debug('Starting Ballot Retrieving...')
+    ballot_tests = ballot_get_tests(smell_acronym)
+    log.info(f'{len(moto_tests)} Ballot tests retrieved.')
+    return ubuntu_tests + moto_tests + ballot_tests
 
 def ubuntu_get_tests(smell_acronym):
     filepaths : list = [path for path in smells_loader(smell_acronym)[FILE_COL]]
