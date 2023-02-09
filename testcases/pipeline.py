@@ -8,7 +8,7 @@ log = logging.getLogger(__name__)
 SM = 'en_core_web_sm'
 TRF = 'en_core_web_trf'
 nlp = spacy.load(SM)
-breakpoint()
+# breakpoint()
 lang = nlp.meta['lang']
 name = nlp.meta['name']
 model_name = lang + '_' + name
