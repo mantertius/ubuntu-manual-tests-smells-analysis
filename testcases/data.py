@@ -154,7 +154,10 @@ def get_tests(arg):
 def _(smell_acronym: str):
     log.debug(f'Starting Ubuntu Retrieving...')
     ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
-    log.info(f'{len(ubuntu_tests)} Ubuntu tests retrieved.')
+    sum_ubuntu_tests = 0
+    for test_list in ubuntu_tests:
+        sum_ubuntu_tests += len(test_list)
+    log.info(f'{sum_ubuntu_tests} Ubuntu tests retrieved.')
 
     log.debug('Starting Moto Retrieving...')
     moto_tests = moto_get_tests(smell_acronym)
@@ -163,6 +166,8 @@ def _(smell_acronym: str):
     log.debug('Starting Ballot Retrieving...')
     ballot_tests = ballot_get_tests(smell_acronym)
     log.info(f'{len(ballot_tests)} Ballot tests retrieved.')
+
+    log.info(f'Total tests: {sum_ubuntu_tests + len(moto_tests) + len(ballot_tests)}')
 
     return ubuntu_tests + moto_tests + ballot_tests
 

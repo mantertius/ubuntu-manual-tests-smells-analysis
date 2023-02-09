@@ -16,10 +16,7 @@ except IndexError:
 
 if __name__ == '__main__':
     log.info('Retrieving tests...') #logging.info
-
     tests:list = get_tests('') #lista com todos os testes
-
-    log.info(f'Total tests: {len(tests)}')
 
     log.info('Analyzing...')
     for (file_index, test_file) in enumerate(tests):
