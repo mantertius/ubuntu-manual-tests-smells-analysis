@@ -16,7 +16,7 @@ log.info(f'spaCy model: {model_name}')
 try:
     nlp_pt = spacy.load('pt_core_news_lg')
 except OSError:
-    print('Instale o modelo:\npython -m spacy download pt_core_news_lg')
+    log.error('Instale o modelo:\npython -m spacy download pt_core_news_lg')
 
 Test = namedtuple('Test',['file','header','steps'])
 Step = namedtuple('Step', ['action', 'reactions']) #Step([action],[reactions])

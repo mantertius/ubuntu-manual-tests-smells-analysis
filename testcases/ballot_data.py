@@ -4,6 +4,8 @@ from bs4 import BeautifulStoneSoup, BeautifulSoup
 import pandas as pd
 from rich import print
 import logging
+import logging.config
+logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
 log = logging.getLogger(__name__)
 
 from pipeline import nlp_pt, Step, Test
@@ -28,8 +30,10 @@ def split_test_case(tc_soup:BeautifulSoup) -> list:
 
 def pipeline(list_of_dfs) -> list:
     '''Receives a list of dataFrames and returns a list of clean Tests after using some inside functions'''
+    log.debug('Starting pipeline')
     def extract_texts(raw_text:str) -> list:
         '''Extracts texts from a string'''
+        log.debug('Starting text extraction')
         pattern = r'\\{0,2}n{0,}\\t{0,}'
         breaks = r'\n{2,}'
         spaces = r'\s{2,}'
@@ -43,6 +47,7 @@ def pipeline(list_of_dfs) -> list:
     def generate_Test(df:pd.DataFrame) -> Test:
         '''Creates a Test'''
         # breakpoint()
+        log.debug('Creating a new test')
         try:
             if df is not None:
                 name = _pipeline(df['test_case'][0])
@@ -58,12 +63,13 @@ def pipeline(list_of_dfs) -> list:
             step = Step(action,reactions)
             steps.append(step)
         new_test = Test(file=name, header=header, steps = steps)
+        log.debug('New test created')
         return new_test
     # except:
     def _pipeline(raw_text:str):
         '''Recieves raw_text and returns clean_text as a Doc'''
         clean_text = extract_texts(raw_text)
-        log.debug(f'')
+        log.debug(f'Texts extracted. Passing nlp...')
         #reakpoint()
         if not clean_text:
             return None
@@ -83,15 +89,17 @@ def pipeline(list_of_dfs) -> list:
                 all_tests.append([new_test])
                 # breakpoint()
             except:
-                print('FAIL.')
+                log.error('FAIL.')
                 break
     #print(COUNTER)
     return all_tests
 
 
 def parse_tests(soup:BeautifulSoup) -> list:
+    log.debug('Start parsing.')
     tests = soup.find_all('table', attrs = {'class':'tc'})
     tests = [split_test_case(test) for test in tests if test]
+    log.debug('Parsing successful')
     return tests
 
 def _clear_td(td_soup:BeautifulSoup) -> list:
@@ -128,7 +136,7 @@ def get_tests(smell_acronym:str) -> list:
     return tests
 
 if __name__ == '__main__':
-    tests = get_tests()
+    tests = get_tests('')
     # for test in tests:
     #     if test is not None:
     #         print(test)
