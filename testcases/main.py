@@ -1,22 +1,14 @@
-import sys
-from rich import print
-from keywords import Keywords
-from data import get_tests
-import matchers
-import pandas as pd
-import logging
 import logging.config
+
+from data import get_tests
+from testcases import matchers
+
 logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
 log = logging.getLogger(__name__)
 
-try:
-    Keywords(sys.argv[1]) #Instantiates the singleton Keyword objects with the selected language
-except IndexError:
-    Keywords('english')
-
 if __name__ == '__main__':
-    log.info('Retrieving tests...') #logging.info
-    tests:list = get_tests('') #lista com todos os testes
+    log.info('Retrieving tests...')  # logging.info
+    tests = get_tests('')  # lista com todos os testes
 
     log.info('Analyzing...')
     for (file_index, test_file) in enumerate(tests):

@@ -104,55 +104,55 @@ image/,,1740_RaspberryPi 400 Post-install,,NÃO,,
 image/,,1741_RaspberryPi CM4 2GB Post-install,,NÃO,,
 image/,,1742_RaspberryPi CM4 4GB Post-install,,NÃO,,
 image/,,1743_RaspberryPi CM4 8GB Post-install,,NÃO,,
-image/,,EMPTY - 1317_Upgrade to dev - ubuntu-desktop - text mode - non interactive,0,SIM,NÃO,--
-image/,,GOOD - 1304_VMWare Easy Install,1,SIM,NÃO,--
-image/,,GOOD - 1412_Unity GSetting Migration,1,SIM,NÃO,--
-image/,,SMELLY - 1300_Install (entire disk),1,SIM,SIM,"AT, UWT, CT"
-image/,,SMELLY - 1301_Install (auto-resize),1,SIM,SIM,"ET, US, CT"
-image/,,SMELLY - 1302_Install (manual partitioning),1,SIM,SIM,"AT, ET, CT"
-image/,,SMELLY - 1303_Live Session,2,SIM,SIM,UP
-image/,,SMELLY - 1305_Install (OEM setup),1,SIM,SIM,"AT, CT, ET"
-image/,,SMELLY - 1307_Free Software Only,1,SIM,SIM,"AT, CT, ET"
-image/,,SMELLY - 1309_Install (Screen Reader),1,SIM,SIM,"US, UWT, UP"
-image/,,SMELLY - 1310_Upgrade,1,SIM,SIM,"CT, ET"
-image/,,SMELLY - 1311_Non-English Installation Full Network Support,1,SIM,SIM,"ET, CT"
-image/,,SMELLY - 1312_Non-English Installation No Network,1,SIM,SIM,"ET, CT"
-image/,,SMELLY - 1313_Installation Broken Internet,1,SIM,SIM,"ET,CT"
-image/,,SMELLY - 1314_Non-English Live Session & Installation; No Network,1,SIM,SIM,"US, ET, CT"
-image/,,SMELLY - 1315_Non-English Live Session & Installation; Full Network Support,1,SIM,SIM,US
-image/,,SMELLY - 1316_Non-English Installation Full Network Support & CJK Input,1,SIM,SIM,"ET, CT"
-image/,,SMELLY - 1318_Ubuntu Core Image Smoke Test,1,SIM,SIM,US
-image/,,SMELLY - 1337_Install (Default),1,SIM,SIM,"US, UWT"
-image,,SMELLY - 1401_Install (Bind9),1,SIM,SIM,"ET, US, CT"
-image/,,SMELLY - 1402_Install (Default + LVM),1,SIM,SIM,"US, ERAS"
-image/,,SMELLY - 1403_Install (Default + crypted LVM),1,SIM,SIM,"US, ERAS"
-image/,,SMELLY - 1404_Install (LAMP),1,SIM,SIM,"US, ERAS, NT, UP"
-image/,,SMELLY - 1405_Install (Mail server),1,SIM,SIM,"US, ERAS"
-image/,,SMELLY - 1406_Install (OpenSSH server),1,SIM,SIM,"US, CT"
-image/,,SMELLY - 1407_Install (PostgreSQL database server),1,SIM,SIM,US
-image/,,SMELLY - 1408_Install (Print server),1,SIM,SIM,US
-image/,,SMELLY - 1409_Install (Samba server),1,SIM,SIM,US
-image/,,SMELLY - 1410_Install (Tomcat Java server),2,SIM,SIM,OS
-image/,,SMELLY - 1411_Install (Virtualization host),1,SIM,SIM,US
-image/,,SMELLY - 1413_Install (Preseed),1,SIM,SIM,US
-hardware/,,GOOD - 1479_Touchpad,1,SIM,NÃO,---
-hardware/,,SMELLY - 1467_External Microphone,1,SIM,SIM,US
-hardware/,,SMELLY - 1472_Headphones,1,SIM,SIM,"PCAS, US"
-hardware/,,SMELLY - 1473_Recording Internal Microphone,1,SIM,SIM,"PCAS, US"
-hardware/,,SMELLY - 1474_Speakers,1,SIM,SIM,"PCAS, US"
-hardware/,,SMELLY - 1475_Firewire,1,SIM,SIM,US
-hardware/,,SMELLY - 1476_USB Ports,1,SIM,SIM,"US, OS"
-hardware/,,SMELLY - 1477_Builtin Keyboard,3,SIM,SIM,US
-hardware/,,SMELLY - 1478_Hotkeys,5,SIM,SIM,US
-hardware/,,SMELLY - 1480_USB Mouse,2,SIM,SIM,US
-hardware/,,SMELLY - 1481_Wired Networking,2,SIM,SIM,US
-hardware/,,SMELLY - 1482_Wireless Networking,2,SIM,SIM,"US, ERAS"
-hardware/,,SMELLY - 1483_Builtin Webcam,1,SIM,SIM,"PCAS, US"
-hardware/,,SMELLY - 1484_Internal Data Card Reader,2,SIM,SIM,US
-hardware/,,SMELLY - 1486_Suspend & Resume,1,SIM,SIM,"US, UP"
-hardware/,,SMELLY - 1487_Builtin Screen,1,SIM,SIM,US
-hardware/,,SMELLY - 1488_External Screen,1,SIM,SIM,US
-hardware/,,SMELLY - 1618_System Config Printer,8,SIM,SIM,"PCAS, US"
+image/,,1317_Upgrade to dev - ubuntu-desktop - text mode - non interactive,0,SIM,NÃO,--
+image/,,1304_VMWare Easy Install,1,SIM,NÃO,--
+image/,,1412_Unity GSetting Migration,1,SIM,NÃO,--
+image/,,1300_Install (entire disk),1,SIM,SIM,"AT, UWT, CT"
+image/,,1301_Install (auto-resize),1,SIM,SIM,"ET, US, CT"
+image/,,1302_Install (manual partitioning),1,SIM,SIM,"AT, ET, CT"
+image/,,1303_Live Session,2,SIM,SIM,UP
+image/,,1305_Install (OEM setup),1,SIM,SIM,"AT, CT, ET"
+image/,,1307_Free Software Only,1,SIM,SIM,"AT, CT, ET"
+image/,,1309_Install (Screen Reader),1,SIM,SIM,"US, UWT, UP"
+image/,,1310_Upgrade,1,SIM,SIM,"CT, ET"
+image/,,1311_Non-English Installation Full Network Support,1,SIM,SIM,"ET, CT"
+image/,,1312_Non-English Installation No Network,1,SIM,SIM,"ET, CT"
+image/,,1313_Installation Broken Internet,1,SIM,SIM,"ET,CT"
+image/,,1314_Non-English Live Session & Installation; No Network,1,SIM,SIM,"US, ET, CT"
+image/,,1315_Non-English Live Session & Installation; Full Network Support,1,SIM,SIM,US
+image/,,1316_Non-English Installation Full Network Support & CJK Input,1,SIM,SIM,"ET, CT"
+image/,,1318_Ubuntu Core Image Smoke Test,1,SIM,SIM,US
+image/,,1337_Install (Default),1,SIM,SIM,"US, UWT"
+image/,,1401_Install (Bind9),1,SIM,SIM,"ET, US, CT"
+image/,,1402_Install (Default + LVM),1,SIM,SIM,"US, ERAS"
+image/,,1403_Install (Default + crypted LVM),1,SIM,SIM,"US, ERAS"
+image/,,1404_Install (LAMP),1,SIM,SIM,"US, ERAS, NT, UP"
+image/,,1405_Install (Mail server),1,SIM,SIM,"US, ERAS"
+image/,,1406_Install (OpenSSH server),1,SIM,SIM,"US, CT"
+image/,,1407_Install (PostgreSQL database server),1,SIM,SIM,US
+image/,,1408_Install (Print server),1,SIM,SIM,US
+image/,,1409_Install (Samba server),1,SIM,SIM,US
+image/,,1410_Install (Tomcat Java server),2,SIM,SIM,OS
+image/,,1411_Install (Virtualization host),1,SIM,SIM,US
+image/,,1413_Install (Preseed),1,SIM,SIM,US
+hardware/,,1479_Touchpad,1,SIM,NÃO,---
+hardware/,,1467_External Microphone,1,SIM,SIM,US
+hardware/,,1472_Headphones,1,SIM,SIM,"PCAS, US"
+hardware/,,1473_Recording Internal Microphone,1,SIM,SIM,"PCAS, US"
+hardware/,,1474_Speakers,1,SIM,SIM,"PCAS, US"
+hardware/,,1475_Firewire,1,SIM,SIM,US
+hardware/,,1476_USB Ports,1,SIM,SIM,"US, OS"
+hardware/,,1477_Builtin Keyboard,3,SIM,SIM,US
+hardware/,,1478_Hotkeys,5,SIM,SIM,US
+hardware/,,1480_USB Mouse,2,SIM,SIM,US
+hardware/,,1481_Wired Networking,2,SIM,SIM,US
+hardware/,,1482_Wireless Networking,2,SIM,SIM,"US, ERAS"
+hardware/,,1483_Builtin Webcam,1,SIM,SIM,"PCAS, US"
+hardware/,,1484_Internal Data Card Reader,2,SIM,SIM,US
+hardware/,,1486_Suspend & Resume,1,SIM,SIM,"US, UP"
+hardware/,,1487_Builtin Screen,1,SIM,SIM,US
+hardware/,,1488_External Screen,1,SIM,SIM,US
+hardware/,,1618_System Config Printer,8,SIM,SIM,"PCAS, US"
 packages/Studio/,,1577_Audacity,,NÃO,,
 packages/Studio/,,1662_Agave,,NÃO,,
 packages/Studio/,,1664_krita,3,SIM,SIM,"OS, SAER"
@@ -302,4 +302,4 @@ packages/,,1681_Thunar additional tests 1512120,1,SIM,SIM,US
 packages/,,1682_Thunar additional tests 1514912,,NÃO,,
 packages/,,1685_Xubuntu_gnome_screensaver,,NÃO,,
 packages/,,1686_Xubuntu_xscreensaver,1,SIM,SIM,US
-packages/,,SMELLY - 1336_Pulseaudio (smoke),,SIM,SIM,
+packages/,,1336_Pulseaudio (smoke),,SIM,SIM,

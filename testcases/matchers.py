@@ -1,15 +1,10 @@
 from collections import abc
-import numpy as np
-import spacy
-from rich import print
-from spacy import displacy
-from matchers_factory import MatchersFactory
-from data import Test, nlp
-from keywords import Keywords
-from csv_writter import resultsWritter
+
 from spacy.tokens import Doc
-from data import Test, nlp
-import pandas as pd
+
+from csv_writter import resultsWritter
+from keywords import Keywords
+from matchers_factory import MatchersFactory
 
 VERBS = ['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']
 IMPERATIVE_VERBS = ['VB', 'VBP']
@@ -23,8 +18,7 @@ def find_conditional_test_logic(index: int, test: abc.Container):
 
     for step in test.steps:
         # Steps
-        doc = nlp(step.action)
-        for sentence in doc.sents:  # Analyze individual sentences, not the entire step text
+        for sentence in step.action.sents:  # Analyze individual sentences, not the entire step text
             action_matches = matcher(sentence)
             for match_id, start, end in action_matches:
                 span = sentence[start:end]
@@ -33,8 +27,7 @@ def find_conditional_test_logic(index: int, test: abc.Container):
 
         # Verifications
         for reaction in step.reactions:
-            doc = nlp(reaction)
-            for sentence in doc.sents:
+            for sentence in reaction.sents:
                 reaction_matches = matcher(sentence)
                 for match_id, start, end in reaction_matches:
                     span = sentence[start:end]
@@ -49,7 +42,8 @@ def find_eager_step(index: int, test: abc.Container):
     """
     steps = test.steps
     for step in steps:
-        actions = [action for action in step.action if action.tag_ in IMPERATIVE_VERBS]
+        # actions = [action for action in step.action if (action.tag_ in IMPERATIVE_VERBS) or (action.pos_ == 'VERB' and 'VerbForm=Inf' in str(action.morph))]
+        actions = [action for action in step.action if action.pos_ == 'VERB' and 'VerbForm=Inf' in str(action.morph)]
         if len(actions) > 1:
             resultsWritter().write([test.file, index, 'Eager Step', '', 'step', actions, step.action])
 
@@ -107,9 +101,9 @@ def find_misplaced_step(index: int, test: abc.Container):
         for reaction in step.reactions:
             for sentence in reaction.sents:
                 token = sentence[0]
-                if token.tag_ in IMPERATIVE_VERBS and token.text.lower() not in Keywords().keywords['verifications']:
-                    resultsWritter().write(
-                        [test.file, index, 'Misplaced Step', '', 'verification', token.text, reaction])
+                # if token.tag_ in IMPERATIVE_VERBS and token.text.lower() not in Keywords().keywords['verifications']:
+                if (token.pos_ == 'VERB' and 'VerbForm=Inf' in str(token.morph)) and token.text.lower() not in Keywords().keywords['verifications']:
+                    resultsWritter().write([test.file, index, 'Misplaced Step', '', 'verification', token.text, reaction])
 
 
 # def is_undefined_wait(test: abc.Container) -> bool:
@@ -130,18 +124,22 @@ def find_misplaced_result(index: int, test: abc.Container):
     """
 
     def get_root(doc: Doc) -> list:
-        return [token.tag_ for token in doc if token.dep_ == 'ROOT']
+        return [token for token in doc if token.dep_ == 'ROOT']
 
     def is_imperative_sentence(sent: Doc) -> bool:
         root = get_root(sent)
-        return root[0] in IMPERATIVE_VERBS
+        # if root and ((root[0].tag_ in IMPERATIVE_VERBS) or (root[0].pos_ == 'VERB' and 'VerbForm=Inf' in str(root[0].morph))):
+        if root and root[0].pos_ == 'VERB' and 'VerbForm=Inf' in str(root[0].morph):
+            return True
+        else:
+            return False
 
     def is_interrogative_sentence(sent: Doc) -> bool:
         return sent[-1].text == '?'
 
     matcher = MatchersFactory.misplaced_result_verification_matcher()
     for step in test.steps:
-        # First test: A verification verb (check, verify, observe, recheck) in the step description
+        # First test: A verification verb in the step description
         action_matches = matcher(step.action)
         for match_id, token_ids in action_matches:
             for token_id in token_ids:

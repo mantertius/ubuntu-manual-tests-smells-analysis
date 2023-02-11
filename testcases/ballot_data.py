@@ -4,7 +4,7 @@ import re
 import pandas as pd
 from bs4 import BeautifulSoup
 
-from pipeline import nlp_pt, Step, Test
+from pipeline import nlp, Step, Test
 
 logging.config.fileConfig(fname='log.config', disable_existing_loggers=False)
 log = logging.getLogger(__name__)
@@ -69,11 +69,11 @@ def pipeline(list_of_dfs) -> list:
         clean_text = extract_texts(raw_text)
         log.debug(f'Texts extracted. Passing nlp...')
         if not clean_text:
-            return nlp_pt('')
+            return nlp('')
         if isinstance(clean_text,list) and len(clean_text) > 1:
-            chunks = [nlp_pt(element) for element in clean_text if len(clean_text) > 1]
+            chunks = [nlp(element) for element in clean_text if len(clean_text) > 1]
         else:
-            chunks = nlp_pt(clean_text)
+            chunks = nlp(clean_text)
         return chunks
 
     all_tests = list()

@@ -1,4 +1,5 @@
 import re
+import sys
 from glob import glob
 from pathlib import Path, PosixPath
 from collections import namedtuple, abc
@@ -22,6 +23,13 @@ SMELL_COL = 'QUAL SMELL?'
 
 
 def smells_loader_closure():
+    def file_exists(file) -> bool:
+        if Path(file).exists():
+            return True
+        else:
+            log.warning('Test file not found: ' + file)
+            return False
+
     df = pd.read_csv('files.csv')           #lê o caminho dos dados
     df[SMELL_COL] = df[SMELL_COL].fillna('')
     df[SMELL_COL] = df[SMELL_COL].apply(lambda x: x.replace(' ', '').split(','))
@@ -29,7 +37,7 @@ def smells_loader_closure():
     #print(df2[FILE_COL])
     df[FILE_COL] = df[DIR_COL]+df[FILE_COL]
     df = df[[FILE_COL, SMELL_COL]]
-    df = df.loc[df[FILE_COL].apply(lambda x: Path(x).exists())]
+    df = df.loc[df[FILE_COL].apply(lambda x: file_exists(x))]
     df[FILE_COL] = df[FILE_COL].apply(lambda x: Path(x))
 
     def smells_loader(smell_acronym:str) -> pd.DataFrame:
@@ -152,24 +160,29 @@ def get_tests(arg):
 
 @get_tests.register(str)
 def _(smell_acronym: str):
-    log.debug(f'Starting Ubuntu Retrieving...')
-    ubuntu_tests = ubuntu_get_tests(smell_acronym) #o  segundo me da todos teste de cada arquivo
-    sum_ubuntu_tests = 0
-    for test_list in ubuntu_tests:
-        sum_ubuntu_tests += len(test_list)
-    log.info(f'{sum_ubuntu_tests} Ubuntu tests retrieved.')
+    try:
+        language = sys.argv[1]
+    except IndexError:
+        language = 'english'
 
-    log.debug('Starting Moto Retrieving...')
-    moto_tests = moto_get_tests(smell_acronym)
-    log.info(f'{len(moto_tests)} Moto tests retrieved.')
+    if language == 'portuguese':
+        log.debug('Starting Ballot Retrieving...')
+        ballot_tests = ballot_get_tests(smell_acronym)
+        log.info(f'{len(ballot_tests)} Ballot tests retrieved.')
+        return ballot_tests
+    else:
+        log.debug(f'Starting Ubuntu Retrieving...')
+        ubuntu_tests = ubuntu_get_tests(smell_acronym)
+        sum_ubuntu_tests = 0
+        for test_list in ubuntu_tests:
+            sum_ubuntu_tests += len(test_list)
+        log.info(f'{sum_ubuntu_tests} Ubuntu tests retrieved.')
 
-    log.debug('Starting Ballot Retrieving...')
-    ballot_tests = ballot_get_tests(smell_acronym)
-    log.info(f'{len(ballot_tests)} Ballot tests retrieved.')
+        log.debug('Starting Moto Retrieving...')
+        moto_tests = moto_get_tests(smell_acronym)
+        log.info(f'{len(moto_tests)} Moto tests retrieved.')
+        return ubuntu_tests + moto_tests
 
-    log.info(f'Total tests: {sum_ubuntu_tests + len(moto_tests) + len(ballot_tests)}')
-
-    return ubuntu_tests + moto_tests + ballot_tests
 
 def ubuntu_get_tests(smell_acronym):
     filepaths = [path for path in smells_loader(smell_acronym)[FILE_COL]]
