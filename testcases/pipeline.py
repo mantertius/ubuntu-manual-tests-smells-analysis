@@ -14,7 +14,7 @@ try:
     else:
         model = 'en_core_web_trf'
 except IndexError:
-    model = 'en_core_web_sm'  # Development only
+    model = 'en_core_web_lg'  # Development only
 
 nlp = spacy.load(model)
 

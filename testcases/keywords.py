@@ -28,7 +28,9 @@ class Keywords(metaclass=Singleton):
         # verifications = expand_words(verifications, k=5)
         verifications = ('verify', 'validate', 'observing', 'observe', 'checking', 'check', 'recheck', 'rechecked')
         self.keywords['verifications'] = verifications
+        self.keywords['adverbs_of_manner_termination'] = 'ly'
 
     def _portuguese(self):
         verifications = ('observe', 'validar', 'conferir', 'verificar', 'observar')
         self.keywords['verifications'] = verifications
+        self.keywords['adverbs_of_manner_termination'] = 'mente'

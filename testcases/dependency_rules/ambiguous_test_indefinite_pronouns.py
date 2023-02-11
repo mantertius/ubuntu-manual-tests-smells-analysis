@@ -1,5 +1,5 @@
 patterns = [
             [
-                {'POS': 'PRON'}
+                {'POS': 'PRON', 'MORPH': {'IS_SUPERSET': ['PronType=Ind']}}
             ]
         ]

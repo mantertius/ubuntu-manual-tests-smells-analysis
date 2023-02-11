@@ -2,7 +2,8 @@ from spacy.matcher import DependencyMatcher, Matcher
 from pipeline import nlp
 from dependency_rules import conditional_test, misplaced_precondition, undefined_wait, misplaced_result_verification, \
     ambiguous_test_adjectives, ambiguous_test_comparative_adverbs, ambiguous_test_adverbs_of_manner, \
-    ambiguous_test_indefinite_determiners, ambiguous_test_indefinite_pronouns, misplaced_result_affirmative_sentences
+    ambiguous_test_indefinite_determiners, ambiguous_test_indefinite_pronouns, misplaced_result_affirmative_sentences, \
+    eager_step, misplaced_step
 
 
 class MatchersFactory:
@@ -12,6 +13,9 @@ class MatchersFactory:
 
     def misplaced_precondition_matcher():
         return MatchersFactory._build_dependency_matcher(misplaced_precondition.patterns)
+
+    def misplaced_step_matcher():
+        return MatchersFactory._build_matcher(misplaced_step.patterns)
 
     # def undefined_wait_matcher():
     #     return MatchersFactory._build_dependency_matcher(undefined_wait.patterns)
@@ -36,6 +40,9 @@ class MatchersFactory:
 
     def ambiguous_test_indefinite_pronouns_matcher():
         return MatchersFactory._build_matcher(ambiguous_test_indefinite_pronouns.patterns)
+
+    def eager_step_matcher():
+        return MatchersFactory._build_matcher(eager_step.patterns)
 
     def _build_dependency_matcher(patterns):
         matcher = DependencyMatcher(nlp.vocab)

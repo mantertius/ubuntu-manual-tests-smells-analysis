@@ -13,13 +13,18 @@ if __name__ == '__main__':
     log.info('Analyzing...')
     for (file_index, test_file) in enumerate(tests):
         for (test_index, test) in enumerate(test_file):
-            log.debug('Starting matchers...')
-            matchers.find_ambiguous_test(test_index, test)
             matchers.find_conditional_test_logic(test_index, test)
             matchers.find_eager_step(test_index, test)
             matchers.find_unverified_step(test_index, test)
+            matchers.find_misplaced_precondition(test_index, test)
             matchers.find_misplaced_step(test_index, test)
             matchers.find_misplaced_result(test_index, test)
-            matchers.find_misplaced_precondition(test_index, test)
-            log.debug('End of matchers.')
+            matchers.find_ambiguous_test(test_index, test)
+
     log.info('Analysis complete!')
+
+    # Pro artigo:
+    # PS1: Não há unverified step na urna
+    # PS2: Não há misplaced precondition na urna
+    # PS3: Em ambiguous tests, a urna só pega 'verb + indefinite determiner' e 'indefinite pronoun'. Tipos de
+    # advérbios e de adjetivos não são reconhecidos pelo modelo em pt
