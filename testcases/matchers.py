@@ -13,22 +13,20 @@ def find_conditional_test_logic(index: int, test: abc.Container):
     matcher = MatchersFactory.conditional_test_matcher()
     for step in test.steps:
         # Actions
-        for sentence in step.action.sents:  # Analyze individual sentences, not the entire step text
-            action_matches = matcher(sentence)
-            for match_id, start, end in action_matches:
-                span = sentence[start:end]
-                resultsWritter().write(
-                    [test.file, index, 'Conditional Test Logic', 'dependent clause', 'action', span, sentence])
+        action_matches = matcher(step.action)
+        for match_id, start, end in action_matches:
+            span = step.action[start:end]
+            resultsWritter().write(
+                [test.file, index, 'Conditional Test Logic', 'dependent clause', 'action', span, step.action])
 
         # Verifications
         for reaction in step.reactions:
-            for sentence in reaction.sents:
-                reaction_matches = matcher(sentence)
-                for match_id, start, end in reaction_matches:
-                    span = sentence[start:end]
-                    resultsWritter().write(
-                        [test.file, index, 'Conditional Test Logic', 'dependent clause', 'verification', span,
-                         sentence])
+            reaction_matches = matcher(reaction)
+            for match_id, start, end in reaction_matches:
+                span = reaction[start:end]
+                resultsWritter().write(
+                    [test.file, index, 'Conditional Test Logic', 'dependent clause', 'verification', span,
+                     reaction])
 
 
 def find_eager_step(index: int, test: abc.Container):
@@ -175,7 +173,8 @@ def find_ambiguous_test(index: int, test: abc.Container):
         action_matches = matcher(step.action)
         for match_id, start, end in action_matches:
             span = step.action[start:end]
-            resultsWritter().write([test.file, index, 'Ambiguous Test', 'adverb of manner', 'action', span, step.action])
+            resultsWritter().write(
+                [test.file, index, 'Ambiguous Test', 'adverb of manner', 'action', span, step.action])
 
     # Verifications
     for step in test.steps:
