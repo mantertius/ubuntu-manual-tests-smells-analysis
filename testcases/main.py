@@ -28,3 +28,8 @@ if __name__ == '__main__':
     # PS2: Não há misplaced precondition na urna
     # PS3: Em ambiguous tests, a urna só pega 'verb + indefinite determiner' e 'indefinite pronoun'. Tipos de
     # advérbios e de adjetivos não são reconhecidos pelo modelo em pt
+    # PS4: Para Conditional Test Logic, estabelecer que a regra é a presença de cláusulas subordinadas (que representam
+    # a condição a ser satisfeita). No entanto, o Spacy não oferece a divisão de cláusulas (independente e subordinada)
+    # de uma sentença. Assim, nossa implementação ficou limitada à identificação de conjunções subordinativas no início
+    # da sentença.
+

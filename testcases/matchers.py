@@ -53,25 +53,15 @@ def find_unverified_step(index: int, test: abc.Container):
 
 def find_misplaced_precondition(index: int, test: abc.Container):
     """
-        Unverified steps, at the beginning of the test, that declare SUT state (e.g. 'wifi is turned off')
+        The first action step declares the SUT state (e.g. 'wifi is turned off')
     """
-
-    def get_first_unverified_steps() -> list:
-        first_unverified_steps = []
-        for step in test.steps:
-            if step.reactions:
-                break
-            else:
-                first_unverified_steps.append(step)
-        return first_unverified_steps
-
     matcher = MatchersFactory.misplaced_precondition_matcher()
-    for step in get_first_unverified_steps():
-        action_matches = matcher(step.action)
-        for match_id, token_ids in action_matches:
-            words = [step.action[token_id] for token_id in sorted(token_ids)]
-            resultsWritter().write(
-                [test.file, index, 'Misplaced Precondition', 'SUT state', 'action', words, step.action])
+    step = test.steps[0]
+    action_matches = matcher(step.action)
+    for match_id, token_ids in action_matches:
+        words = [step.action[token_id] for token_id in sorted(token_ids)]
+        resultsWritter().write(
+            [test.file, index, 'Misplaced Precondition', 'SUT state', 'action', words, step.action])
 
 
 def find_misplaced_step(index: int, test: abc.Container):
@@ -93,7 +83,7 @@ def find_misplaced_result(index: int, test: abc.Container):
     """
     A verification verb (check, verify, observe, recheck) in the step description
     Interrogative sentences as steps
-    Declarative sentence after any imperative one in all steps
+    SUT state declaration after any action
     """
 
     def get_root(doc: Doc) -> list:
@@ -125,10 +115,9 @@ def find_misplaced_result(index: int, test: abc.Container):
                 resultsWritter().write(
                     [test.file, index, 'Misplaced Result', 'question as step', 'action', '', sentence])
 
-    # Third test: Declarative sentence after any imperative one considering all steps
+    # Third test: SUT state declaration after any action
     matcher = MatchersFactory.misplaced_result_affirmative_sentences()
-    verified_steps = [step for step in test.steps if step.reactions]
-    for step in verified_steps:
+    for step in test.steps[1:]:
         for sentence in step.action.sents:
             if not (is_interrogative_sentence(sentence) or is_imperative_sentence(sentence)):
                 action_matches = matcher(sentence)
