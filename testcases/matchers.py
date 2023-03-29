@@ -38,7 +38,7 @@ def find_eager_step(index: int, test: abc.Container):
         action_matches = matcher(step.action)
         if len(action_matches) > 1:
             span = [step.action[start:end] for match_id, start, end in action_matches]
-            resultsWritter().write([test.file, index, 'Eager Step', 'multiple actions', 'action', span, step.action])
+            resultsWritter().write([test.file, index, 'Eager Action', 'multiple actions', 'action', span, step.action])
 
 
 def find_unverified_step(index: int, test: abc.Container):
@@ -48,7 +48,7 @@ def find_unverified_step(index: int, test: abc.Container):
     steps = test.steps
     unverified_steps = [step for step in steps if len(step.reactions) == 0]
     for step in unverified_steps:
-        resultsWritter().write([test.file, index, 'Unverified Step', '', 'action', '', step.action])
+        resultsWritter().write([test.file, index, 'Unverified Action', '', 'action', '', step.action])
 
 
 def find_misplaced_precondition(index: int, test: abc.Container):
@@ -76,7 +76,7 @@ def find_misplaced_step(index: int, test: abc.Container):
             reaction_matches = matcher(reaction)
             for match_id, start, end in reaction_matches:
                 span = reaction[start:end]
-                resultsWritter().write([test.file, index, 'Misplaced Step', '', 'verification', span, reaction])
+                resultsWritter().write([test.file, index, 'Misplaced Action', '', 'verification', span, reaction])
 
 
 def find_misplaced_result(index: int, test: abc.Container):
@@ -106,14 +106,14 @@ def find_misplaced_result(index: int, test: abc.Container):
         for match_id, token_ids in action_matches:
             for token_id in token_ids:
                 resultsWritter().write(
-                    [test.file, index, 'Misplaced Result', 'verification performed', 'action', step.action[token_id],
+                    [test.file, index, 'Misplaced Verification', 'verification performed', 'action', step.action[token_id],
                      step.action])
 
         # Second test: Interrogative sentences as step
         for sentence in step.action.sents:
             if is_interrogative_sentence(sentence):
                 resultsWritter().write(
-                    [test.file, index, 'Misplaced Result', 'question as step', 'action', '', sentence])
+                    [test.file, index, 'Misplaced Verification', 'question as step', 'action', '', sentence])
 
     # Third test: SUT state declaration after any action
     matcher = MatchersFactory.misplaced_result_affirmative_sentences()
@@ -124,7 +124,7 @@ def find_misplaced_result(index: int, test: abc.Container):
                 for match_id, token_ids in action_matches:
                     words = [sentence[token_id] for token_id in sorted(token_ids)]
                     resultsWritter().write(
-                        [test.file, index, 'Misplaced Result', 'SUT state declaration', 'action', words, sentence])
+                        [test.file, index, 'Misplaced Verification', 'SUT state declaration', 'action', words, sentence])
 
 
 def find_ambiguous_test(index: int, test: abc.Container):
