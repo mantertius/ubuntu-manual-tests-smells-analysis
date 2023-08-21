@@ -32,7 +32,7 @@ langcodes==3.3.0
     # via spacy
 lxml==4.9.2
     # via manual-test-smells (setup.py)
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
     # via rich
 markupsafe==2.1.1
     # via jinja2
